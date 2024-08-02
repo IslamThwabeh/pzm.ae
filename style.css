@@ -19,6 +19,7 @@ header {
 
 main {
     padding: 20px;
+    padding-bottom: 80px; /* Add padding to the bottom to prevent overlap with the footer */
 }
 
 section {
