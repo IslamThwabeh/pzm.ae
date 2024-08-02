@@ -11,12 +11,31 @@ header {
     text-align: center;
 }
 
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
 main {
     padding: 20px;
 }
 
 section {
     margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 45%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 footer {
