@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favico.svg" type="image/svg+xml">
     <title>PZM Computers & Mobile Phones</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favico.ico" type="image/svg+xml">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header>
@@ -16,53 +13,45 @@
         <h1>PZM Computers & Mobile Phones</h1>
     </header>
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We specialize in selling, buying, trade-ins, repairs, recycling, and providing brand new & secondhand products. We also build custom gaming PCs.</p>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <div class="services-slider">
-                <div><img src="images/Services/repairing_services.jpg" alt="Repairing Services"></div>
-                <div><img src="images/Services/Sell_Your_Old_iPhones.jpg" alt="Sell Your Old iPhones"></div>
-                <div><img src="images/Services/reignite_your_macbook.jpg" alt="Reignite Your Macbook"></div>
-                <div><img src="images/Services/sell_old_mackbook.jpg" alt="Sell Old Macbook"></div>
-                <div><img src="images/Services/macbook.jpg" alt="Macbook"></div>
-                <div><img src="images/Services/sell_old_iphones.jpg" alt="Sell Old iPhones"></div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Contact us for more information about our services and products.</p>
-            <p>Call us at <a href="tel:+971528026677">+971 528026677</a></p>
-            <p>PZM Computers & Mobile Phones</p>
-            <p>Hessa Street Branch</p>
-            <p>Chat with us at <a href="https://wa.me/971528026677">+971 528026677</a></p>
-            <p>Inside Hessa Union Coop Hypermarket, Ground floor</p>
-            <p><a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic">View on Google Maps</a></p>
-            <p>We are open every day from 10 AM to 10:59 PM.</p>
-        </section>
+        <h2>About Us</h2>
+        <p>We provide a range of services including buying and selling new and used mobile phones and laptops, custom gaming PC builds, and repairs.</p>
+
+        <h2>Services</h2>
+        <p>Sell, Buy, Trade-in, Repair, Recycle, Brand New & Secondhand, Gaming PCs</p>
+        <div class="services-slider">
+            <img src="images/Services/repairing_services.jpg" alt="Repairing Services">
+            <img src="images/Services/Sell_Your_Old_iPhones.jpg" alt="Sell Your Old iPhones">
+            <img src="images/Services/reignite_your_macbook.jpg" alt="Reignite Your MacBook">
+            <img src="images/Services/sell_old_mackbook.jpg" alt="Sell Old MacBook">
+        </div>
+
+        <h2>Maintenance Services</h2>
+        <div class="image-container">
+            <img src="images/mobile_maintenance.jpg" alt="Mobile Maintenance">
+            <img src="images/laptop_maintenance.jpg" alt="Laptop Maintenance">
+        </div>
+
+        <h2>Contact</h2>
+        <p>Contact us for more information about our services and products.</p>
+        <p><a href="tel:+971528026677">Call us at Phone: +971 528026677</a></p>
+        <p>PZM Computers & Mobile Phones<br>
+           Hessa Street Branch<br>
+           <a href="https://wa.me/971528026677">Chat with us at Phone: +971 528026677</a><br>
+           Inside Hessa Union Coop Hypermarket, Ground floor<br>
+           <a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic">View on Google Maps</a><br>
+           We are open every day from 10 AM to 10:59 PM.
+        </p>
     </main>
     <footer>
-        <p>&copy; 2024 PZM Computers & Mobile Phones. All rights reserved!</p>
-        <div class="fixed-contact">
-            <a href="https://wa.me/971528026677"><img src="images/Chat_With_Us.jpg" alt="Chat With Us"></a>
-            <a href="tel:+971528026677"><img src="images/Call_Us.jpg" alt="Call Us"></a>
-        </div>
+        <p>&copy; 2023 PZM Computers & Mobile Phones. All rights reserved.</p>
     </footer>
-    <script>
-        $(document).ready(function(){
-            $('.services-slider').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                adaptiveHeight: true
-            });
-        });
-    </script>
+
+    <div class="fixed-contact">
+        <a href="tel:+971528026677"><img src="images/Call_Us.jpg" alt="Call Us"></a>
+        <a href="https://wa.me/971528026677"><img src="images/Chat_With_Us.jpg" alt="Chat With Us"></a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 

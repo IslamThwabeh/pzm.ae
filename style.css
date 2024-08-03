@@ -62,24 +62,43 @@ ul li {
     border-radius: 8px;
 }
 
-.services-banner {
+.services-slider {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
-.services-banner img {
-    width: 30%;
+.services-slider img {
+    width: 100%;
     height: auto;
-    margin: 10px;
-    border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.services-banner img:hover {
+.services-slider img:hover {
     transform: scale(1.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
 }
 
 footer {
@@ -90,7 +109,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    overflow: hidden; /* Prevent footer overflow */
 }
 
 /* Fixed Contact Icons */
@@ -120,11 +138,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .image-container img, .services-banner img {
+    .image-container img, .services-slider img {
         width: 80%; /* Increase image size on mobile */
     }
 
-    .services-banner img:hover {
+    .services-slider img:hover {
         transform: scale(1.2); /* Slightly reduce the hover scale on mobile */
     }
 
@@ -135,43 +153,11 @@ footer {
     main {
         padding: 10px;
     }
-
-    .services-slider img {
-        width: 100%; /* Ensure slider images are responsive */
-    }
-}
-
-.services-slider {
-    margin: 20px 0;
 }
 
 .services-slider img {
     width: 100%;
-    height: 400px; /* Set a consistent height */
+    height: auto;
     border-radius: 8px;
-    object-fit: cover; /* Ensure images fit within this height without stretching */
-}
-
-.slick-prev, .slick-next {
-    background-color: #4CAF50;
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
-    font-size: 1.5rem; /* Increase arrow size */
-}
-
-.slick-prev:hover, .slick-next:hover {
-    background-color: #45a049;
-}
-
-/* Ensure slider container height consistency */
-.services-slider .slick-list {
-    height: 400px; /* Set a fixed height to match the height of images */
-}
-
-/* Remove margin/padding that might cause overflow */
-html, body {
-    margin: 0;
-    padding: 0;
 }
 
