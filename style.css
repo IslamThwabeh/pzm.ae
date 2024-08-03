@@ -89,7 +89,8 @@ footer {
     color: white;
     position: relative;
     bottom: 0;
-    width: 100%;
+    /*width: 100%; */
+    width: 100vw;
 }
 
 /* Fixed Contact Icons */
@@ -167,6 +168,10 @@ footer {
     max-height: 400px; /* Set a max height */
     object-fit: cover; /* Ensure images fit within this height without stretching */
     width: 100%;
-    height: auto;
+    /*height: auto;*/
+    height: inherit; /* Set the height to inherit from the parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
