@@ -1,51 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.logo {
-    width: 150px;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-main {
-    padding: 20px;
-    padding-bottom: 80px; /* Add padding to the bottom to prevent overlap with the footer */
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.image-container img {
-    width: 45%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Add these styles to style.css */
+.fixed-contact {
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.fixed-contact img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
