@@ -147,9 +147,8 @@ footer {
 
 .services-slider img {
     width: 100%;
-    height: auto;
+    height: 400px; /* Set a consistent height */
     border-radius: 8px;
-    max-height: 400px; /* Set a max height */
     object-fit: cover; /* Ensure images fit within this height without stretching */
 }
 
@@ -167,7 +166,7 @@ footer {
 
 /* Ensure slider container height consistency */
 .services-slider .slick-list {
-    height: 400px; /* Set a fixed height to match the max-height of images */
+    height: 400px; /* Set a fixed height to match the height of images */
 }
 
 /* Remove margin/padding that might cause overflow */
