@@ -1,42 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slider = document.querySelector('.services-slider');
-    const images = slider.querySelectorAll('img');
-    const leftButton = document.createElement('button');
-    const rightButton = document.createElement('button');
+    const slides = document.querySelectorAll('.slider img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentSlide = 0;
 
-    leftButton.classList.add('slider-button', 'left');
-    rightButton.classList.add('slider-button', 'right');
-    leftButton.textContent = '<';
-    rightButton.textContent = '>';
-
-    slider.appendChild(leftButton);
-    slider.appendChild(rightButton);
-
-    let index = 0;
-
-    function showImage(index) {
-        images.forEach((img, i) => {
-            img.style.transform = `translateX(${100 * (i - index)}%)`;
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = i === index ? 'block' : 'none';
         });
     }
 
-    leftButton.addEventListener('click', () => {
-        index = (index > 0) ? index - 1 : images.length - 1;
-        showImage(index);
-    });
-
-    rightButton.addEventListener('click', () => {
-        index = (index < images.length - 1) ? index + 1 : 0;
-        showImage(index);
-    });
-
-    function autoScroll() {
-        index = (index < images.length - 1) ? index + 1 : 0;
-        showImage(index);
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
     }
 
-    setInterval(autoScroll, 3000); // Change image every 3 seconds
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
 
-    showImage(index);
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+
+    // Auto-scroll
+    setInterval(nextSlide, 3000);
+
+    // Initial display
+    showSlide(currentSlide);
 });
 

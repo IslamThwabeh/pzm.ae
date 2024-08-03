@@ -6,9 +6,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -29,7 +26,6 @@ h1 {
 }
 
 main {
-    flex: 1;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -66,39 +62,41 @@ ul li {
     border-radius: 8px;
 }
 
-.services-slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
+.slider {
     position: relative;
     width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
-.services-slider img {
-    flex-shrink: 0;
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
 }
 
-.slider-button {
+.prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    border-radius: 50%;
+    z-index: 1000;
 }
 
-.slider-button.left {
+.prev {
     left: 10px;
 }
 
-.slider-button.right {
+.next {
     right: 10px;
 }
 
@@ -107,9 +105,9 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    width: 100%;
-    flex-shrink: 0;
     position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Fixed Contact Icons */
@@ -139,12 +137,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .image-container img, .services-slider img {
-        width: 80%; /* Increase image size on mobile */
+    .image-container img, .slider img {
+        width: 100%; /* Increase image size on mobile */
     }
 
-    .services-slider img:hover {
-        transform: scale(1.2); /* Slightly reduce the hover scale on mobile */
+    .prev, .next {
+        padding: 5px;
     }
 
     header h1 {
@@ -156,7 +154,7 @@ footer {
     }
 }
 
-.services-slider img {
+.slider img {
     width: 100%;
     height: auto;
     border-radius: 8px;
