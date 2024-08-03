@@ -89,7 +89,8 @@ footer {
     color: white;
     position: relative;
     bottom: 0;
-    width: 100%; 
+    width: 100%;
+    overflow: hidden; /* Prevent footer overflow */
 }
 
 /* Fixed Contact Icons */
@@ -148,6 +149,8 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    max-height: 400px; /* Set a max height */
+    object-fit: cover; /* Ensure images fit within this height without stretching */
 }
 
 .slick-prev, .slick-next {
@@ -162,11 +165,14 @@ footer {
     background-color: #45a049;
 }
 
-/* Adjust images in slider to same height */
-.services-slider .slick-slide img {
-    max-height: 400px; /* Set a max height */
-    object-fit: cover; /* Ensure images fit within this height without stretching */
-    width: 100%;
-    height: auto;
+/* Ensure slider container height consistency */
+.services-slider .slick-list {
+    height: 400px; /* Set a fixed height to match the max-height of images */
+}
+
+/* Remove margin/padding that might cause overflow */
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
