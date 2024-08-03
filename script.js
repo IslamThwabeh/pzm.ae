@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
         showImage(index);
     });
 
+    function autoScroll() {
+        index = (index < images.length - 1) ? index + 1 : 0;
+        showImage(index);
+    }
+
+    setInterval(autoScroll, 3000); // Change image every 3 seconds
+
     showImage(index);
 });
 
