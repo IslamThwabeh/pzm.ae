@@ -134,11 +134,30 @@ footer {
     main {
         padding: 10px;
     }
+
+    .services-slider img {
+        width: 100%; /* Ensure slider images are responsive */
+    }
+}
+
+.services-slider {
+    margin: 20px 0;
 }
 
 .services-slider img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+.slick-prev, .slick-next {
+    background-color: #4CAF50;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #45a049;
 }
 
