@@ -155,9 +155,18 @@ footer {
     border-radius: 50%;
     padding: 10px;
     color: white;
+    font-size: 1.5rem; /* Increase arrow size */
 }
 
 .slick-prev:hover, .slick-next:hover {
     background-color: #45a049;
+}
+
+/* Adjust images in slider to same height */
+.services-slider .slick-slide img {
+    max-height: 400px; /* Set a max height */
+    object-fit: cover; /* Ensure images fit within this height without stretching */
+    width: 100%;
+    height: auto;
 }
 
