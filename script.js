@@ -1,12 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slider img');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slides img');
     let currentSlide = 0;
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
-            slide.style.display = i === index ? 'block' : 'none';
+            slide.classList.toggle('active', i === index);
         });
     }
 
@@ -20,13 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentSlide);
     }
 
-    prevButton.addEventListener('click', prevSlide);
-    nextButton.addEventListener('click', nextSlide);
+    document.querySelector('.next').addEventListener('click', nextSlide);
+    document.querySelector('.prev').addEventListener('click', prevSlide);
 
-    // Auto-scroll
-    setInterval(nextSlide, 3000);
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
-    // Initial display
+    // Show the first slide
     showSlide(currentSlide);
 });
 
