@@ -117,7 +117,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px; /* Adjust the width to make the logo smaller */
+    width: 100px; /* Adjust the width to make the logo smaller */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000;
 }
