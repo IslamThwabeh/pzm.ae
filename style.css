@@ -1,10 +1,16 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+.content {
+    flex: 1;
 }
 
 header {
@@ -25,6 +31,7 @@ h1 {
     color: #333;
 }
 
+/* Slider Styles */
 .slider {
     position: relative;
     width: 100%;
@@ -46,7 +53,7 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
@@ -62,6 +69,7 @@ h1 {
     right: 10px;
 }
 
+/* Services Section Styles */
 .services {
     text-align: center;
     padding: 20px;
@@ -78,6 +86,7 @@ h1 {
     height: auto;
 }
 
+/* Contact Section Styles */
 .contact {
     padding: 20px;
     background-color: #f8f9fa;
@@ -91,23 +100,22 @@ h1 {
     font-style: normal;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: white;
     position: relative;
-    bottom: 0;
     width: 100%;
-    padding: 20px;
-    bottom:0;
 }
 
+/* Fixed Logo Styles */
 .fixed-logo {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 50px;  /* Adjust the width to make the logo smaller */
+    width: 50px; /* Adjust the width to make the logo smaller */
     height: auto; /* Maintain aspect ratio */
     z-index: 1000;
 }
