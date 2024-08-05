@@ -126,3 +126,6 @@ footer {
     bottom: 100px; /* Adjust the position to have some space between the two logos */
 }
 
+.uppercase-domain {
+    text-transform: uppercase;
+}
