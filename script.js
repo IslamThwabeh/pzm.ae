@@ -1,4 +1,3 @@
-			   
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.slides img');
     let currentSlide = 0;
@@ -26,12 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Show the first slide
     showSlide(currentSlide);
-   
-
-
-    // Ensure domain names are displayed in uppercase
-    document.querySelectorAll('.uppercase-domain').forEach(function(element) {
-        element.textContent = element.textContent.toUpperCase();
-    });
 });
+
 
