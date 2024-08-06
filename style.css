@@ -71,36 +71,24 @@ h1 {
     right: 10px;
 }
 
-/* Categories Section Styles */
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+/* Services Section Styles */
+.services {
     text-align: center;
+    padding: 20px;
 }
 
-.category {
-    flex: 1 1 30%;
-    margin: 10px;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
+.service-item {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    position: relative;
 }
 
-.category:hover {
-    transform: scale(1.05);
-}
-
-.category img {
+.service-item img {
     width: 100%;
-    height: auto;
-}
-
-.category h3 {
-    margin: 10px 0;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* This ensures the image covers the entire container while maintaining aspect ratio */
 }
 
 /* Contact Section Styles */
