@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Show the first slide
     showSlide(currentSlide);
+
+    // Get the current year and set it in the footer
+    const currentYear = new Date().getFullYear();
+    document.getElementById('year').textContent = currentYear;
 });
 
 
