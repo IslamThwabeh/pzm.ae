@@ -103,6 +103,23 @@ h1 {
     margin: 10px 0;
 }
 
+/* Transparency, Pickup & Delivery, and Sustainability Sections */
+.transparency, .pickup-delivery, .sustainability {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.transparency h2, .pickup-delivery h2, .sustainability h2 {
+    margin-top: 0;
+}
+
+.transparency ul, .pickup-delivery ul, .sustainability ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 /* Contact Section Styles */
 .contact {
     padding: 20px;
@@ -132,12 +149,12 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 75px; /* Adjust the width to make the logo smaller */
-    height: auto; /* Maintain aspect ratio */
+    width: 75px;
+    height: auto;
     z-index: 1000;
 }
 
 .fixed-logo.chat {
-    bottom: 100px; /* Adjust the position to have some space between the two logos */
+    bottom: 100px;
 }
 
