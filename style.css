@@ -55,8 +55,6 @@ h1 {
 .fixed-header img {
     width: 40px;
     height: auto;
-    border: 1px solid #000; /* Black border */
-    border-radius: 5px;
     display: block; /* Ensures the image is treated as a block-level element */
     margin: 0;
     padding: 0;
