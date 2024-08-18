@@ -187,7 +187,13 @@ footer {
 }
 
 .fixed-logo.chat {
-    bottom: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 220px;
+    height: auto;
+    z-index: 1000;
+
 
 }
 
