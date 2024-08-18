@@ -46,7 +46,6 @@ h1 {
     border: none;
     outline: none;
     overflow: hidden;
-    background-color: transparent;
 }
 
 .fixed-header a {
@@ -62,6 +61,8 @@ h1 {
     margin: 0;
     padding: 0;
     background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 /* Slider Styles */
