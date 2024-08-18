@@ -187,13 +187,41 @@ footer {
     z-index: 1000;
 }
 */
+
+/*
 .fixed-logo {
     position: fixed;
     bottom: 2%;
     right: 2%;
-    width: 35vw; /* 10% of the viewport width */
+    width: 35vw; 
     height: auto;
     z-index: 1000;
+}
+*/
+
+/* Fixed Logo Styles */
+.fixed-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: auto;
+    z-index: 1000;
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    .fixed-logo {
+        width: 90px; /* Adjust size for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .fixed-logo {
+        width: 60px; /* Adjust size for mobile phones */
+        bottom: 15px; /* Adjust position to fit smaller screens */
+        right: 15px;
+    }
 }
 
 
