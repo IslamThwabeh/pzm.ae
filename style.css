@@ -191,7 +191,7 @@ footer {
     position: fixed;
     bottom: 2%;
     right: 2%;
-    width: 50vw; /* 10% of the viewport width */
+    width: 35vw; /* 10% of the viewport width */
     height: auto;
     z-index: 1000;
 }
