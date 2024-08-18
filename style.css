@@ -60,6 +60,7 @@ h1 {
     display: inline-block;
     margin: 0;
     padding: 0;
+    background-color: transparent;
 }
 
 /* Slider Styles */
