@@ -177,6 +177,7 @@ footer {
 }
 
 /* Fixed Logo Styles */
+/*
 .fixed-logo {
     position: fixed;
     bottom: 20px;
@@ -185,17 +186,16 @@ footer {
     height: auto;
     z-index: 1000;
 }
-
-.fixed-logo.chat {
+*/
+.fixed-logo {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 220px;
+    bottom: 2%;
+    right: 2%;
+    width: 10vw; /* 10% of the viewport width */
     height: auto;
     z-index: 1000;
-
-
 }
+
 
 @keyframes shake {
     0% { transform: translateX(0); }
