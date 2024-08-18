@@ -57,7 +57,7 @@ h1 {
     height: auto;
     border: none;
     outline: none;
-    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
 }
