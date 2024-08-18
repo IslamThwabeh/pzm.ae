@@ -56,6 +56,9 @@ h1 {
     height: auto;
     border: none;
     outline: none;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 /* Slider Styles */
