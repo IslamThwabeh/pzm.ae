@@ -38,32 +38,33 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff; /* Or another color */
+    background-color: #fff;
     z-index: 1000;
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border: none;
-    outline: none;
     overflow: hidden;
 }
 
 .fixed-header a {
     margin: 0 15px;
+    display: inline-block; /* Ensures the anchor behaves as a block-level element for consistent styling */
+    line-height: 0; /* Remove any additional line height that could cause dashes */
 }
 
 .fixed-header img {
-    width: 40px; /* Adjust the size as needed */
+    width: 40px;
     height: auto;
-    border: none;
-    outline: none;
-    display: inline-block;
+    border: 1px solid #000; /* Black border */
+    border-radius: 5px;
+    display: block; /* Ensures the image is treated as a block-level element */
     margin: 0;
     padding: 0;
     background-color: transparent;
-    border: 1px solid #000;
-    border-radius: 5px;
+    line-height: 0; /* Remove any extra line height */
+    vertical-align: middle; /* Aligns the image vertically to the middle of the line */
 }
+
 
 /* Slider Styles */
 .slider {
