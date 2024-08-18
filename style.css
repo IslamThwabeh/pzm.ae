@@ -61,6 +61,7 @@ h1 {
     background-color: transparent;
     line-height: 0; /* Remove any extra line height */
     vertical-align: middle; /* Aligns the image vertically to the middle of the line */
+    animation: shake 2s ease-in-out infinite;
 }
 
 
@@ -189,3 +190,17 @@ footer {
     bottom: 100px;
 }
 
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.fixed-header a:hover img {
+    animation: shake 0.5s ease-in-out;
+}
+
+.no-shake {
+    animation: none;
