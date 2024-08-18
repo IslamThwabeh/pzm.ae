@@ -181,13 +181,14 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 75px;
+    width: 120px;
     height: auto;
     z-index: 1000;
 }
 
 .fixed-logo.chat {
     bottom: 100px;
+
 }
 
 @keyframes shake {
