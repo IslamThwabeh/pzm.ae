@@ -52,6 +52,11 @@ h1 {
 .fixed-header img {
     width: 40px; /* Adjust the size as needed */
     height: auto;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0;
+    vertical-align: middle;
 }
 
 /* Slider Styles */
