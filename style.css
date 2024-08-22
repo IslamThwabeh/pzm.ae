@@ -128,7 +128,7 @@ h1 {
 
 .category img {
     width: 100%;
-    height: 70%;
+    height: auto;
 }
 
 .category h3 {
