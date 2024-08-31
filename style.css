@@ -253,6 +253,10 @@ footer {
 .no-shake {
     animation: none;
 
+#whatsapp-banner {
+    text-decoration: none;
+}
+
 #quotation-banner {
     position: fixed;
     bottom: 20px;
@@ -271,6 +275,21 @@ footer {
 
 #quotation-banner iframe {
     margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Make the GIF larger on laptops */
+@media (min-width: 1024px) {
+    #quotation-banner iframe {
+        width: 150px;
+        height: 150px;
+    }
+
+    #quotation-banner {
+        padding: 15px;
+        font-size: 18px;
+    }
 }
 
 @keyframes bounce {
