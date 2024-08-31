@@ -65,7 +65,7 @@ h1 {
 }
 
 
-/* Slider Styles */
+/* Default Slider Styles for Mobile */
 .slider {
     position: relative;
     width: 100%;
@@ -83,6 +83,7 @@ h1 {
     display: block;
 }
 
+/* Styles for Previous and Next Buttons */
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -102,6 +103,18 @@ h1 {
 .next {
     right: 10px;
 }
+
+/* Media Query for Desktop Screens */
+@media screen and (min-width: 768px) {
+    .slider {
+        max-width: 1200px; /* Adjust the width for desktop */
+    }
+
+    .slides img {
+        height: 500px; /* Adjust height for desktop */
+    }
+}
+
 
 /* Categories Section Styles */
 .categories {
