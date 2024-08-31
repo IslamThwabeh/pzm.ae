@@ -252,3 +252,33 @@ footer {
 
 .no-shake {
     animation: none;
+
+#quotation-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#quotation-banner iframe {
+    margin-right: 10px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
