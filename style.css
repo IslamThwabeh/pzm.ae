@@ -212,32 +212,6 @@ footer {
 }
 */
 
-/* Fixed Logo Styles */
-.fixed-logo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 360px;
-    height: auto;
-    z-index: 1000;
-}
-
-/* Responsive Design for Smaller Devices */
-@media (max-width: 768px) {
-    .fixed-logo {
-        width: 270px; /* Adjust size for tablets and smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .fixed-logo {
-        width: 180px; /* Adjust size for mobile phones */
-        bottom: 15px; /* Adjust position to fit smaller screens */
-        right: 15px;
-    }
-}
-
-
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
