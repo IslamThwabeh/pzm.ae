@@ -234,21 +234,33 @@ footer {
     right: 20px;
     background-color: #25d366;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 25px;  /* Increased padding for better visibility */
     border-radius: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
     animation: bounce 2s infinite;
-    font-size: 16px;
+    font-size: 18px;  /* Increased font size */
     font-weight: bold;
+    z-index: 9999;  /* Ensure the banner stays on top */
 }
 
 #person-animation {
-    width: 50px;
+    width: 70px;  /* Increased size for mobile and laptop */
     height: auto;
-    margin-right: 10px;
+    margin-right: 15px;  /* Increased margin for better spacing */
     animation: handWave 1.5s infinite;
+}
+
+@media (min-width: 1024px) {
+    #person-animation {
+        width: 100px;  /* Larger size for laptops */
+    }
+
+    #quotation-banner {
+        padding: 20px 30px;  /* Increased padding for larger screens */
+        font-size: 20px;  /* Increased font size for laptops */
+    }
 }
 
 @keyframes bounce {
@@ -267,5 +279,4 @@ footer {
     75% { transform: rotate(-10deg); }
     100% { transform: rotate(0deg); }
 }
-
 
