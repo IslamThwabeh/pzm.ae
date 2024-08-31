@@ -42,10 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	
-document.querySelector('iframe.giphy-embed').addEventListener('click', function(e) {
-    e.preventDefault();  
-    window.open('https://wa.me/971528026677', '_blank');
-
+    document.getElementById('quotation-banner').onclick = function() {
+    window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
+};
 
 
 });
