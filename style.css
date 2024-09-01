@@ -243,6 +243,7 @@ footer {
     font-size: 18px;  /* Increased font size */
     font-weight: bold;
     z-index: 9999;  /* Ensure the banner stays on top */
+    user-select: none; /* Prevent text selection during drag */
 }
 
 #person-animation {
