@@ -42,11 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     //add shaking for GIF	
+
 let banner = document.getElementById('quotation-banner');
 let isDragging = false;
 let offsetX, offsetY;
 
-// Handle mouse events
+// Handle mouse down event (start dragging)
 banner.addEventListener('mousedown', function(e) {
     isDragging = true;
     offsetX = e.clientX - banner.getBoundingClientRect().left;
@@ -54,6 +55,7 @@ banner.addEventListener('mousedown', function(e) {
     banner.style.cursor = 'grabbing';
 });
 
+// Handle mouse move event (dragging)
 document.addEventListener('mousemove', function(e) {
     if (isDragging) {
         banner.style.top = (e.clientY - offsetY) + 'px';
@@ -63,10 +65,37 @@ document.addEventListener('mousemove', function(e) {
     }
 });
 
+// Handle mouse up event (stop dragging and snap to nearest corner)
 document.addEventListener('mouseup', function() {
     if (isDragging) {
         isDragging = false;
         banner.style.cursor = 'pointer';
+
+        // Get banner's current position
+        let bannerRect = banner.getBoundingClientRect();
+
+        // Calculate distances to corners
+        let distanceToTop = bannerRect.top;
+        let distanceToBottom = window.innerHeight - bannerRect.bottom;
+        let distanceToLeft = bannerRect.left;
+        let distanceToRight = window.innerWidth - bannerRect.right;
+
+        // Snap to nearest corner
+        if (distanceToTop < distanceToBottom) {
+            banner.style.top = '20px';
+            banner.style.bottom = 'unset';
+        } else {
+            banner.style.bottom = '20px';
+            banner.style.top = 'unset';
+        }
+
+        if (distanceToLeft < distanceToRight) {
+            banner.style.left = '20px';
+            banner.style.right = 'unset';
+        } else {
+            banner.style.right = '20px';
+            banner.style.left = 'unset';
+        }
     }
 });
 
@@ -77,7 +106,7 @@ banner.addEventListener('click', function(e) {
     }
 });
 
-// Handle touch events for mobile devices
+// Handle touch start event (start dragging on mobile devices)
 banner.addEventListener('touchstart', function(e) {
     let touch = e.touches[0];
     isDragging = true;
@@ -86,6 +115,7 @@ banner.addEventListener('touchstart', function(e) {
     banner.style.cursor = 'grabbing';
 });
 
+// Handle touch move event (dragging on mobile devices)
 document.addEventListener('touchmove', function(e) {
     if (isDragging) {
         let touch = e.touches[0];
@@ -96,13 +126,39 @@ document.addEventListener('touchmove', function(e) {
     }
 });
 
+// Handle touch end event (stop dragging and snap to nearest corner on mobile devices)
 document.addEventListener('touchend', function() {
     if (isDragging) {
         isDragging = false;
         banner.style.cursor = 'pointer';
+
+        // Get banner's current position
+        let bannerRect = banner.getBoundingClientRect();
+
+        // Calculate distances to corners
+        let distanceToTop = bannerRect.top;
+        let distanceToBottom = window.innerHeight - bannerRect.bottom;
+        let distanceToLeft = bannerRect.left;
+        let distanceToRight = window.innerWidth - bannerRect.right;
+
+        // Snap to nearest corner
+        if (distanceToTop < distanceToBottom) {
+            banner.style.top = '20px';
+            banner.style.bottom = 'unset';
+        } else {
+            banner.style.bottom = '20px';
+            banner.style.top = 'unset';
+        }
+
+        if (distanceToLeft < distanceToRight) {
+            banner.style.left = '20px';
+            banner.style.right = 'unset';
+        } else {
+            banner.style.right = '20px';
+            banner.style.left = 'unset';
+        }
     }
 });
-
 
 });
 
