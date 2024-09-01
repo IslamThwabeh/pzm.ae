@@ -164,6 +164,35 @@ document.addEventListener('touchend', function() {
     }
 });
 
+
+  const banner = document.getElementById("draggable-banner");
+
+  let isDragging = false;
+
+  banner.addEventListener("mousedown", function(e) {
+    isDragging = true;
+  });
+
+  document.addEventListener("mousemove", function(e) {
+    if (isDragging) {
+      // Move the banner with the mouse
+      banner.style.left = e.clientX - banner.offsetWidth / 2 + "px";
+      banner.style.top = e.clientY - banner.offsetHeight / 2 + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", function() {
+    // When the mouse button is released, stop dragging
+    isDragging = false;
+  });
+
+  banner.addEventListener("click", function(e) {
+    if (!isDragging) {
+      // Redirect to WhatsApp only if not dragging
+      window.location.href = "https://wa.me/your_whatsapp_number";
+    }
+  });
+
 });
 
 
