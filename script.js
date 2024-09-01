@@ -58,6 +58,7 @@ banner.addEventListener('mousedown', function(e) {
 // Handle mouse move event (dragging)
 document.addEventListener('mousemove', function(e) {
     if (isDragging) {
+        banner.style.transition = 'none'; // Disable transition during drag
         banner.style.top = (e.clientY - offsetY) + 'px';
         banner.style.left = (e.clientX - offsetX) + 'px';
         banner.style.bottom = 'unset'; // Reset bottom to allow movement
@@ -70,6 +71,7 @@ document.addEventListener('mouseup', function() {
     if (isDragging) {
         isDragging = false;
         banner.style.cursor = 'pointer';
+        banner.style.transition = 'top 0.5s ease, left 0.5s ease'; // Add smooth transition
 
         // Get banner's current position
         let bannerRect = banner.getBoundingClientRect();
@@ -80,7 +82,7 @@ document.addEventListener('mouseup', function() {
         let distanceToLeft = bannerRect.left;
         let distanceToRight = window.innerWidth - bannerRect.right;
 
-        // Snap to nearest corner
+        // Snap to nearest corner with smooth transition
         if (distanceToTop < distanceToBottom) {
             banner.style.top = '20px';
             banner.style.bottom = 'unset';
@@ -119,6 +121,7 @@ banner.addEventListener('touchstart', function(e) {
 document.addEventListener('touchmove', function(e) {
     if (isDragging) {
         let touch = e.touches[0];
+        banner.style.transition = 'none'; // Disable transition during drag
         banner.style.top = (touch.clientY - offsetY) + 'px';
         banner.style.left = (touch.clientX - offsetX) + 'px';
         banner.style.bottom = 'unset'; // Reset bottom to allow movement
@@ -131,6 +134,7 @@ document.addEventListener('touchend', function() {
     if (isDragging) {
         isDragging = false;
         banner.style.cursor = 'pointer';
+        banner.style.transition = 'top 0.5s ease, left 0.5s ease'; // Add smooth transition
 
         // Get banner's current position
         let bannerRect = banner.getBoundingClientRect();
@@ -141,7 +145,7 @@ document.addEventListener('touchend', function() {
         let distanceToLeft = bannerRect.left;
         let distanceToRight = window.innerWidth - bannerRect.right;
 
-        // Snap to nearest corner
+        // Snap to nearest corner with smooth transition
         if (distanceToTop < distanceToBottom) {
             banner.style.top = '20px';
             banner.style.bottom = 'unset';
