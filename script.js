@@ -41,35 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000); // Shake interval in milliseconds
 
 
-    //add shaking for GIF	
+	
+    document.getElementById('quotation-banner').onclick = function() {
+    window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
+};
 
-  const banner = document.getElementById("draggable-banner");
-
-  let isDragging = false;
-
-  banner.addEventListener("mousedown", function(e) {
-    isDragging = true;
-  });
-
-  document.addEventListener("mousemove", function(e) {
-    if (isDragging) {
-      // Move the banner with the mouse
-      banner.style.left = e.clientX - banner.offsetWidth / 2 + "px";
-      banner.style.top = e.clientY - banner.offsetHeight / 2 + "px";
-    }
-  });
-
-  document.addEventListener("mouseup", function() {
-    // When the mouse button is released, stop dragging
-    isDragging = false;
-  });
-
-  banner.addEventListener("click", function(e) {
-    if (!isDragging) {
-      // Redirect to WhatsApp only if not dragging
-      window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
-    }
-  });
 
 });
 
