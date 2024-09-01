@@ -44,13 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
     //add shaking for GIF	
 let banner = document.getElementById('quotation-banner');
 let isDragging = false;
-let isClicking = true;  // To differentiate between drag and click
 let offsetX, offsetY;
 
 // Handle mouse events
 banner.addEventListener('mousedown', function(e) {
     isDragging = true;
-    isClicking = true;
     offsetX = e.clientX - banner.getBoundingClientRect().left;
     offsetY = e.clientY - banner.getBoundingClientRect().top;
     banner.style.cursor = 'grabbing';
@@ -58,7 +56,6 @@ banner.addEventListener('mousedown', function(e) {
 
 document.addEventListener('mousemove', function(e) {
     if (isDragging) {
-        isClicking = false;
         banner.style.top = (e.clientY - offsetY) + 'px';
         banner.style.left = (e.clientX - offsetX) + 'px';
         banner.style.bottom = 'unset'; // Reset bottom to allow movement
@@ -70,50 +67,27 @@ document.addEventListener('mouseup', function() {
     if (isDragging) {
         isDragging = false;
         banner.style.cursor = 'pointer';
-
-        // Snap to top or bottom
-        if (window.innerHeight - banner.getBoundingClientRect().top > window.innerHeight / 2) {
-            banner.style.bottom = '20px';
-            banner.style.top = 'unset';
-        } else {
-            banner.style.top = '20px';
-            banner.style.bottom = 'unset';
-        }
-
-        // Snap to left or right
-        if (window.innerWidth - banner.getBoundingClientRect().left > window.innerWidth / 2) {
-            banner.style.right = '20px';
-            banner.style.left = 'unset';
-        } else {
-            banner.style.left = '20px';
-            banner.style.right = 'unset';
-        }
-
-        setTimeout(() => {
-            isClicking = true; // Reset isClicking after drag ends
-        }, 100);
     }
 });
 
-// Handle click event for redirection
+// Prevent default click action if dragging occurred
 banner.addEventListener('click', function(e) {
-    if (!isClicking) {
-        e.preventDefault(); // Prevent click redirection during drag
+    if (isDragging) {
+        e.preventDefault();
     }
 });
 
-// Handle touch events
+// Handle touch events for mobile devices
 banner.addEventListener('touchstart', function(e) {
     let touch = e.touches[0];
     isDragging = true;
-    isClicking = true;
     offsetX = touch.clientX - banner.getBoundingClientRect().left;
     offsetY = touch.clientY - banner.getBoundingClientRect().top;
+    banner.style.cursor = 'grabbing';
 });
 
 document.addEventListener('touchmove', function(e) {
     if (isDragging) {
-        isClicking = false;
         let touch = e.touches[0];
         banner.style.top = (touch.clientY - offsetY) + 'px';
         banner.style.left = (touch.clientX - offsetX) + 'px';
@@ -125,30 +99,11 @@ document.addEventListener('touchmove', function(e) {
 document.addEventListener('touchend', function() {
     if (isDragging) {
         isDragging = false;
-
-        // Snap to top or bottom
-        if (window.innerHeight - banner.getBoundingClientRect().top > window.innerHeight / 2) {
-            banner.style.bottom = '20px';
-            banner.style.top = 'unset';
-        } else {
-            banner.style.top = '20px';
-            banner.style.bottom = 'unset';
-        }
-
-        // Snap to left or right
-        if (window.innerWidth - banner.getBoundingClientRect().left > window.innerWidth / 2) {
-            banner.style.right = '20px';
-            banner.style.left = 'unset';
-        } else {
-            banner.style.left = '20px';
-            banner.style.right = 'unset';
-        }
-
-        setTimeout(() => {
-            isClicking = true; // Reset isClicking after drag ends
-        }, 100);
+        banner.style.cursor = 'pointer';
     }
 });
+
+
 });
 
 
