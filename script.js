@@ -44,56 +44,29 @@ document.addEventListener('DOMContentLoaded', function () {
     //add shaking for GIF	
 let banner = document.getElementById('quotation-banner');
 let isDragging = false;
+let isClicking = true;  // To differentiate between drag and click
 let offsetX, offsetY;
 
 // Handle mouse events
 banner.addEventListener('mousedown', function(e) {
-    startDrag(e.clientX, e.clientY);
+    isDragging = true;
+    isClicking = true;
+    offsetX = e.clientX - banner.getBoundingClientRect().left;
+    offsetY = e.clientY - banner.getBoundingClientRect().top;
+    banner.style.cursor = 'grabbing';
 });
 
 document.addEventListener('mousemove', function(e) {
     if (isDragging) {
-        moveBanner(e.clientX, e.clientY);
+        isClicking = false;
+        banner.style.top = (e.clientY - offsetY) + 'px';
+        banner.style.left = (e.clientX - offsetX) + 'px';
+        banner.style.bottom = 'unset'; // Reset bottom to allow movement
+        banner.style.right = 'unset';  // Reset right to allow movement
     }
 });
 
 document.addEventListener('mouseup', function() {
-    endDrag();
-});
-
-// Handle touch events
-banner.addEventListener('touchstart', function(e) {
-    let touch = e.touches[0];
-    startDrag(touch.clientX, touch.clientY);
-});
-
-document.addEventListener('touchmove', function(e) {
-    if (isDragging) {
-        let touch = e.touches[0];
-        moveBanner(touch.clientX, touch.clientY);
-    }
-});
-
-document.addEventListener('touchend', function() {
-    endDrag();
-});
-
-// Common functions for drag logic
-function startDrag(clientX, clientY) {
-    isDragging = true;
-    offsetX = clientX - banner.getBoundingClientRect().left;
-    offsetY = clientY - banner.getBoundingClientRect().top;
-    banner.style.cursor = 'grabbing';
-}
-
-function moveBanner(clientX, clientY) {
-    banner.style.top = (clientY - offsetY) + 'px';
-    banner.style.left = (clientX - offsetX) + 'px';
-    banner.style.bottom = 'unset'; // Reset bottom to allow movement
-    banner.style.right = 'unset';  // Reset right to allow movement
-}
-
-function endDrag() {
     if (isDragging) {
         isDragging = false;
         banner.style.cursor = 'pointer';
@@ -115,10 +88,67 @@ function endDrag() {
             banner.style.left = '20px';
             banner.style.right = 'unset';
         }
+
+        setTimeout(() => {
+            isClicking = true; // Reset isClicking after drag ends
+        }, 100);
     }
-}
+});
 
+// Handle click event for redirection
+banner.addEventListener('click', function(e) {
+    if (!isClicking) {
+        e.preventDefault(); // Prevent click redirection during drag
+    }
+});
 
+// Handle touch events
+banner.addEventListener('touchstart', function(e) {
+    let touch = e.touches[0];
+    isDragging = true;
+    isClicking = true;
+    offsetX = touch.clientX - banner.getBoundingClientRect().left;
+    offsetY = touch.clientY - banner.getBoundingClientRect().top;
+});
+
+document.addEventListener('touchmove', function(e) {
+    if (isDragging) {
+        isClicking = false;
+        let touch = e.touches[0];
+        banner.style.top = (touch.clientY - offsetY) + 'px';
+        banner.style.left = (touch.clientX - offsetX) + 'px';
+        banner.style.bottom = 'unset'; // Reset bottom to allow movement
+        banner.style.right = 'unset';  // Reset right to allow movement
+    }
+});
+
+document.addEventListener('touchend', function() {
+    if (isDragging) {
+        isDragging = false;
+
+        // Snap to top or bottom
+        if (window.innerHeight - banner.getBoundingClientRect().top > window.innerHeight / 2) {
+            banner.style.bottom = '20px';
+            banner.style.top = 'unset';
+        } else {
+            banner.style.top = '20px';
+            banner.style.bottom = 'unset';
+        }
+
+        // Snap to left or right
+        if (window.innerWidth - banner.getBoundingClientRect().left > window.innerWidth / 2) {
+            banner.style.right = '20px';
+            banner.style.left = 'unset';
+        } else {
+            banner.style.left = '20px';
+            banner.style.right = 'unset';
+        }
+
+        setTimeout(() => {
+            isClicking = true; // Reset isClicking after drag ends
+        }, 100);
+    }
+});
 });
 
 
