@@ -43,128 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //add shaking for GIF	
 
-let banner = document.getElementById('quotation-banner');
-let isDragging = false;
-let offsetX, offsetY;
-
-// Handle mouse down event (start dragging)
-banner.addEventListener('mousedown', function(e) {
-    isDragging = true;
-    offsetX = e.clientX - banner.getBoundingClientRect().left;
-    offsetY = e.clientY - banner.getBoundingClientRect().top;
-    banner.style.cursor = 'grabbing';
-});
-
-// Handle mouse move event (dragging)
-document.addEventListener('mousemove', function(e) {
-    if (isDragging) {
-        banner.style.transition = 'none'; // Disable transition during drag
-        banner.style.top = (e.clientY - offsetY) + 'px';
-        banner.style.left = (e.clientX - offsetX) + 'px';
-        banner.style.bottom = 'unset'; // Reset bottom to allow movement
-        banner.style.right = 'unset';  // Reset right to allow movement
-    }
-});
-
-// Handle mouse up event (stop dragging and snap to nearest corner)
-document.addEventListener('mouseup', function() {
-    if (isDragging) {
-        isDragging = false;
-        banner.style.cursor = 'pointer';
-        banner.style.transition = 'top 0.5s ease, left 0.5s ease'; // Add smooth transition
-
-        // Get banner's current position
-        let bannerRect = banner.getBoundingClientRect();
-
-        // Calculate distances to corners
-        let distanceToTop = bannerRect.top;
-        let distanceToBottom = window.innerHeight - bannerRect.bottom;
-        let distanceToLeft = bannerRect.left;
-        let distanceToRight = window.innerWidth - bannerRect.right;
-
-        // Snap to nearest corner with smooth transition
-        if (distanceToTop < distanceToBottom) {
-            banner.style.top = '20px';
-            banner.style.bottom = 'unset';
-        } else {
-            banner.style.bottom = '20px';
-            banner.style.top = 'unset';
-        }
-
-        if (distanceToLeft < distanceToRight) {
-            banner.style.left = '20px';
-            banner.style.right = 'unset';
-        } else {
-            banner.style.right = '20px';
-            banner.style.left = 'unset';
-        }
-    }
-});
-
-// Prevent default click action if dragging occurred
-banner.addEventListener('click', function(e) {
-    if (isDragging) {
-        e.preventDefault();
-    }
-});
-
-// Handle touch start event (start dragging on mobile devices)
-banner.addEventListener('touchstart', function(e) {
-    let touch = e.touches[0];
-    isDragging = true;
-    offsetX = touch.clientX - banner.getBoundingClientRect().left;
-    offsetY = touch.clientY - banner.getBoundingClientRect().top;
-    banner.style.cursor = 'grabbing';
-});
-
-// Handle touch move event (dragging on mobile devices)
-document.addEventListener('touchmove', function(e) {
-    if (isDragging) {
-        let touch = e.touches[0];
-        banner.style.transition = 'none'; // Disable transition during drag
-        banner.style.top = (touch.clientY - offsetY) + 'px';
-        banner.style.left = (touch.clientX - offsetX) + 'px';
-        banner.style.bottom = 'unset'; // Reset bottom to allow movement
-        banner.style.right = 'unset';  // Reset right to allow movement
-    }
-});
-
-// Handle touch end event (stop dragging and snap to nearest corner on mobile devices)
-document.addEventListener('touchend', function() {
-    if (isDragging) {
-        isDragging = false;
-        banner.style.cursor = 'pointer';
-        banner.style.transition = 'top 0.5s ease, left 0.5s ease'; // Add smooth transition
-
-        // Get banner's current position
-        let bannerRect = banner.getBoundingClientRect();
-
-        // Calculate distances to corners
-        let distanceToTop = bannerRect.top;
-        let distanceToBottom = window.innerHeight - bannerRect.bottom;
-        let distanceToLeft = bannerRect.left;
-        let distanceToRight = window.innerWidth - bannerRect.right;
-
-        // Snap to nearest corner with smooth transition
-        if (distanceToTop < distanceToBottom) {
-            banner.style.top = '20px';
-            banner.style.bottom = 'unset';
-        } else {
-            banner.style.bottom = '20px';
-            banner.style.top = 'unset';
-        }
-
-        if (distanceToLeft < distanceToRight) {
-            banner.style.left = '20px';
-            banner.style.right = 'unset';
-        } else {
-            banner.style.right = '20px';
-            banner.style.left = 'unset';
-        }
-    }
-});
-
-
   const banner = document.getElementById("draggable-banner");
 
   let isDragging = false;
@@ -189,7 +67,7 @@ document.addEventListener('touchend', function() {
   banner.addEventListener("click", function(e) {
     if (!isDragging) {
       // Redirect to WhatsApp only if not dragging
-      window.location.href = "https://wa.me/your_whatsapp_number";
+      window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
     }
   });
 
