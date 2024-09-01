@@ -41,10 +41,82 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000); // Shake interval in milliseconds
 
 
-	
-    document.getElementById('quotation-banner').onclick = function() {
-    window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
-};
+    //add shaking for GIF	
+let banner = document.getElementById('quotation-banner');
+let isDragging = false;
+let offsetX, offsetY;
+
+// Handle mouse events
+banner.addEventListener('mousedown', function(e) {
+    startDrag(e.clientX, e.clientY);
+});
+
+document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+        moveBanner(e.clientX, e.clientY);
+    }
+});
+
+document.addEventListener('mouseup', function() {
+    endDrag();
+});
+
+// Handle touch events
+banner.addEventListener('touchstart', function(e) {
+    let touch = e.touches[0];
+    startDrag(touch.clientX, touch.clientY);
+});
+
+document.addEventListener('touchmove', function(e) {
+    if (isDragging) {
+        let touch = e.touches[0];
+        moveBanner(touch.clientX, touch.clientY);
+    }
+});
+
+document.addEventListener('touchend', function() {
+    endDrag();
+});
+
+// Common functions for drag logic
+function startDrag(clientX, clientY) {
+    isDragging = true;
+    offsetX = clientX - banner.getBoundingClientRect().left;
+    offsetY = clientY - banner.getBoundingClientRect().top;
+    banner.style.cursor = 'grabbing';
+}
+
+function moveBanner(clientX, clientY) {
+    banner.style.top = (clientY - offsetY) + 'px';
+    banner.style.left = (clientX - offsetX) + 'px';
+    banner.style.bottom = 'unset'; // Reset bottom to allow movement
+    banner.style.right = 'unset';  // Reset right to allow movement
+}
+
+function endDrag() {
+    if (isDragging) {
+        isDragging = false;
+        banner.style.cursor = 'pointer';
+
+        // Snap to top or bottom
+        if (window.innerHeight - banner.getBoundingClientRect().top > window.innerHeight / 2) {
+            banner.style.bottom = '20px';
+            banner.style.top = 'unset';
+        } else {
+            banner.style.top = '20px';
+            banner.style.bottom = 'unset';
+        }
+
+        // Snap to left or right
+        if (window.innerWidth - banner.getBoundingClientRect().left > window.innerWidth / 2) {
+            banner.style.right = '20px';
+            banner.style.left = 'unset';
+        } else {
+            banner.style.left = '20px';
+            banner.style.right = 'unset';
+        }
+    }
+}
 
 
 });
