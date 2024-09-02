@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	
 // Function to make the quotation-banner draggable
+// Function to make the quotation-banner draggable
 function makeDraggable(element) {
     let posX = 0, posY = 0, initialX = 0, initialY = 0;
     let isDragging = false;
@@ -54,7 +55,7 @@ function makeDraggable(element) {
     function dragMouseDown(e) {
         e.preventDefault();
         isDragging = true;
-        
+
         // Get initial mouse or touch positions
         initialX = e.clientX || e.touches[0].clientX;
         initialY = e.clientY || e.touches[0].clientY;
@@ -64,30 +65,30 @@ function makeDraggable(element) {
         document.ontouchend = closeDragElement;  // For touch devices
         document.onmousemove = elementDrag;
         document.ontouchmove = elementDrag;  // For touch devices
+
+        // Disable the transition during dragging
+        element.style.transition = "none";
     }
 
     function elementDrag(e) {
         if (!isDragging) return;
-        
+
         // Calculate new positions
         posX = initialX - (e.clientX || e.touches[0].clientX);
         posY = initialY - (e.clientY || e.touches[0].clientY);
         initialX = e.clientX || e.touches[0].clientX;
         initialY = e.clientY || e.touches[0].clientY;
 
-        // Move the element by changing its top and left properties
+        // Move the element by updating its top and left properties
         element.style.top = (element.offsetTop - posY) + "px";
         element.style.left = (element.offsetLeft - posX) + "px";
-
-        // Disable the transition during dragging
-        element.style.transition = "none";
     }
 
     function closeDragElement() {
         isDragging = false;
 
         // Enable the slow-motion transition after dragging
-        element.style.transition = `transform ${transitionTime}ms ease-in-out`;
+        element.style.transition = `top ${transitionTime}ms ease-in-out, left ${transitionTime}ms ease-in-out`;
 
         // Ensure the element stays within bounds after releasing
         if (element.offsetTop < 0) element.style.top = "0px";
