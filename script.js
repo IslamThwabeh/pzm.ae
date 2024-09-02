@@ -41,55 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000); // Shake interval in milliseconds
 
 
-
-function makeDraggable(element) {
-    let posX = 0, posY = 0, initialX = 0, initialY = 0;
-    let isDragging = false;
-
-    element.onmousedown = dragMouseDown;
-    element.ontouchstart = dragMouseDown;
-
-    function dragMouseDown(e) {
-        e.preventDefault();
-        isDragging = true;
-
-        // Get the initial cursor position
-        initialX = e.clientX || e.touches[0].clientX;
-        initialY = e.clientY || e.touches[0].clientY;
-
-        document.onmouseup = closeDragElement;
-        document.ontouchend = closeDragElement;
-        document.onmousemove = elementDrag;
-        document.ontouchmove = elementDrag;
-
-        element.style.transition = "none"; // Disable transition during dragging
-    }
-
-    function elementDrag(e) {
-        if (!isDragging) return;
-
-        posX = initialX - (e.clientX || e.touches[0].clientX);
-        posY = initialY - (e.clientY || e.touches[0].clientY);
-
-        initialX = e.clientX || e.touches[0].clientX;
-        initialY = e.clientY || e.touches[0].clientY;
-
-        element.style.top = (element.offsetTop - posY) + "px";
-        element.style.left = (element.offsetLeft - posX) + "px";
-    }
-
-    function closeDragElement() {
-        isDragging = false;
-        element.style.transition = "top 0.2s ease, left 0.2s ease";
-        document.onmouseup = null;
-        document.onmousemove = null;
-        document.ontouchend = null;
-        document.ontouchmove = null;
-    }
-}
-
-makeDraggable(document.getElementById('quotation-banner'));
-
+	
+    document.getElementById('quotation-banner').onclick = function() {
+    window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
+};
 
 
 });
