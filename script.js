@@ -43,50 +43,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	
 // Function to make the quotation-banner draggable
+
 function makeDraggable(element) {
-    let initialX = 0, initialY = 0, posX = 0, posY = 0;
+    let initialX = 0, initialY = 0, currentX = 0, currentY = 0;
     let isDragging = false;
     
-    // Set initial positions
-    let initialTop = element.offsetTop;
-    let initialLeft = element.offsetLeft;
-
-    // Set the transition time based on device type
-    const transitionTime = window.innerWidth >= 1024 ? '2s' : '1s';
-    element.style.transition = `top ${transitionTime}, left ${transitionTime}`;
-
     element.onmousedown = dragMouseDown;
-    element.ontouchstart = dragMouseDown;
+    element.ontouchstart = dragMouseDown;  // For touch devices
 
     function dragMouseDown(e) {
         e.preventDefault();
         isDragging = true;
 
-        // Get initial touch/mouse positions
+        // Get initial positions when drag starts
         initialX = e.clientX || e.touches[0].clientX;
         initialY = e.clientY || e.touches[0].clientY;
 
+        // Attach event listeners for dragging
         document.onmouseup = closeDragElement;
-        document.ontouchend = closeDragElement;
+        document.ontouchend = closeDragElement;  // For touch devices
         document.onmousemove = elementDrag;
-        document.ontouchmove = elementDrag;
+        document.ontouchmove = elementDrag;  // For touch devices
 
-        // Disable the transition during dragging
-        element.style.transition = 'none';
+        // Remove transition during dragging
+        element.style.transition = "none";
     }
 
     function elementDrag(e) {
         if (!isDragging) return;
 
-        // Calculate new cursor positions
-        posX = initialX - (e.clientX || e.touches[0].clientX);
-        posY = initialY - (e.clientY || e.touches[0].clientY);
+        // Calculate movement
+        currentX = (e.clientX || e.touches[0].clientX) - initialX;
+        currentY = (e.clientY || e.touches[0].clientY) - initialY;
 
-        // Set the element's new position
-        element.style.top = `${element.offsetTop - posY}px`;
-        element.style.left = `${element.offsetLeft - posX}px`;
+        // Update element's position
+        element.style.top = (element.offsetTop + currentY) + "px";
+        element.style.left = (element.offsetLeft + currentX) + "px";
 
-        // Update initial positions for the next iteration
+        // Update initial positions for next movement
         initialX = e.clientX || e.touches[0].clientX;
         initialY = e.clientY || e.touches[0].clientY;
     }
@@ -94,20 +88,10 @@ function makeDraggable(element) {
     function closeDragElement() {
         isDragging = false;
 
-        // Enable the transition after dragging
-        element.style.transition = `top ${transitionTime}, left ${transitionTime}`;
+        // Reapply transition for smooth movement after drag ends
+        element.style.transition = "top 0.2s ease, left 0.2s ease";
 
-        // Ensure the element stays within bounds after dragging
-        if (element.offsetTop < 0) element.style.top = '0px';
-        if (element.offsetLeft < 0) element.style.left = '0px';
-        if (element.offsetTop + element.offsetHeight > window.innerHeight) {
-            element.style.top = `${window.innerHeight - element.offsetHeight}px`;
-        }
-        if (element.offsetLeft + element.offsetWidth > window.innerWidth) {
-            element.style.left = `${window.innerWidth - element.offsetWidth}px`;
-        }
-
-        // Remove event listeners
+        // Detach event listeners when dragging ends
         document.onmouseup = null;
         document.ontouchend = null;
         document.onmousemove = null;
