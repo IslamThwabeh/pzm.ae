@@ -228,38 +228,40 @@ footer {
     animation: none;
 }
 
+/* Update the quotation-banner to make it draggable */
 #quotation-banner {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #25d366;
     color: white;
-    padding: 15px 25px;  /* Increased padding for better visibility */
+    padding: 15px 25px;
     border-radius: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
     animation: bounce 2s infinite;
-    font-size: 18px;  /* Increased font size */
+    font-size: 18px;
     font-weight: bold;
-    z-index: 9999;  /* Ensure the banner stays on top */
+    z-index: 9999;
+    transition: transform 2s ease-in-out;  /* Slow motion transition */
 }
 
 #person-animation {
-    width: 70px;  /* Increased size for mobile and laptop */
+    width: 70px;
     height: auto;
-    margin-right: 15px;  /* Increased margin for better spacing */
+    margin-right: 15px;
     animation: handWave 1.5s infinite;
 }
 
 @media (min-width: 1024px) {
     #person-animation {
-        width: 100px;  /* Larger size for laptops */
+        width: 100px;
     }
 
     #quotation-banner {
-        padding: 20px 30px;  /* Increased padding for larger screens */
-        font-size: 20px;  /* Increased font size for laptops */
+        padding: 20px 30px;
+        font-size: 20px;
     }
 }
 
