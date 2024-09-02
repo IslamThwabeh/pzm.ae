@@ -228,7 +228,6 @@ footer {
     animation: none;
 }
 
-/* Update the quotation-banner to make it draggable */
 #quotation-banner {
     position: fixed;
     bottom: 20px;
@@ -243,32 +242,6 @@ footer {
     font-size: 18px;
     font-weight: bold;
     z-index: 9999;
-    transition: top 2s ease-in-out, left 2s ease-in-out;  /* Smooth transition for movement */
-}
-
-#person-animation {
-    width: 70px;
-    height: auto;
-    margin-right: 15px;
-    animation: handWave 1.5s infinite;
-}
-
-@media (min-width: 1024px) {
-    #person-animation {
-        width: 100px;
-    }
-
-    #quotation-banner {
-        padding: 20px 30px;
-        font-size: 20px;
-    }
-}
-
-@keyframes handWave {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-10deg); }
-    100% { transform: rotate(0deg); }
+    transition: none; /* Disable transition during drag */
 }
 

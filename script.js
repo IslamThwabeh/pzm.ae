@@ -41,66 +41,55 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 5000); // Shake interval in milliseconds
 
 
-	
-// Function to make the quotation-banner draggable
 
 function makeDraggable(element) {
-    let initialX = 0, initialY = 0, currentX = 0, currentY = 0;
+    let posX = 0, posY = 0, initialX = 0, initialY = 0;
     let isDragging = false;
-    
+
     element.onmousedown = dragMouseDown;
-    element.ontouchstart = dragMouseDown;  // For touch devices
+    element.ontouchstart = dragMouseDown;
 
     function dragMouseDown(e) {
         e.preventDefault();
         isDragging = true;
 
-        // Get initial positions when drag starts
+        // Get the initial cursor position
         initialX = e.clientX || e.touches[0].clientX;
         initialY = e.clientY || e.touches[0].clientY;
 
-        // Attach event listeners for dragging
         document.onmouseup = closeDragElement;
-        document.ontouchend = closeDragElement;  // For touch devices
+        document.ontouchend = closeDragElement;
         document.onmousemove = elementDrag;
-        document.ontouchmove = elementDrag;  // For touch devices
+        document.ontouchmove = elementDrag;
 
-        // Remove transition during dragging
-        element.style.transition = "none";
+        element.style.transition = "none"; // Disable transition during dragging
     }
 
     function elementDrag(e) {
         if (!isDragging) return;
 
-        // Calculate movement
-        currentX = (e.clientX || e.touches[0].clientX) - initialX;
-        currentY = (e.clientY || e.touches[0].clientY) - initialY;
+        posX = initialX - (e.clientX || e.touches[0].clientX);
+        posY = initialY - (e.clientY || e.touches[0].clientY);
 
-        // Update element's position
-        element.style.top = (element.offsetTop + currentY) + "px";
-        element.style.left = (element.offsetLeft + currentX) + "px";
-
-        // Update initial positions for next movement
         initialX = e.clientX || e.touches[0].clientX;
         initialY = e.clientY || e.touches[0].clientY;
+
+        element.style.top = (element.offsetTop - posY) + "px";
+        element.style.left = (element.offsetLeft - posX) + "px";
     }
 
     function closeDragElement() {
         isDragging = false;
-
-        // Reapply transition for smooth movement after drag ends
         element.style.transition = "top 0.2s ease, left 0.2s ease";
-
-        // Detach event listeners when dragging ends
         document.onmouseup = null;
-        document.ontouchend = null;
         document.onmousemove = null;
+        document.ontouchend = null;
         document.ontouchmove = null;
     }
 }
 
-// Initialize draggable functionality on the banner
 makeDraggable(document.getElementById('quotation-banner'));
+
 
 
 });
