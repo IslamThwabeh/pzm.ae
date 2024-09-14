@@ -128,7 +128,7 @@ h1 {
 
 .category {
     width: 100%; /* Full width by default */
-    max-width: 300px; /* Limit max size on larger screens */
+    max-width: 400px; /* Limit max size on larger screens */
     margin: 10px auto; /* Center items */
     cursor: pointer;
     border: 1px solid #ddd;
