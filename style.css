@@ -123,11 +123,13 @@ h1 {
     justify-content: center;
     padding: 20px;
     text-align: center;
+    gap: 20px; /* Add some spacing between items */
 }
 
 .category {
-    flex: 1 1 100%; /* Make each category take full width */
-    margin: 10px;
+    width: 100%; /* Full width by default */
+    max-width: 300px; /* Limit max size on larger screens */
+    margin: 10px auto; /* Center items */
     cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -148,6 +150,18 @@ h1 {
     margin: 10px 0;
 }
 
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+    .category {
+        width: 48%; /* Two images per row on medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .category {
+        width: 30%; /* Three images per row on large screens */
+    }
+}
 
 /* Transparency, Pickup & Delivery, and Sustainability Sections */
 .transparency, .pickup-delivery, .sustainability {
