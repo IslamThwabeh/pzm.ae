@@ -126,7 +126,7 @@ h1 {
 }
 
 .category {
-    flex: 1 1 30%;
+    flex: 1 1 100%; /* Make each category take full width */
     margin: 10px;
     cursor: pointer;
     border: 1px solid #ddd;
@@ -141,12 +141,13 @@ h1 {
 
 .category img {
     width: 100%;
-    height: 80%;
+    height: auto;
 }
 
 .category h3 {
     margin: 10px 0;
 }
+
 
 /* Transparency, Pickup & Delivery, and Sustainability Sections */
 .transparency, .pickup-delivery, .sustainability {
