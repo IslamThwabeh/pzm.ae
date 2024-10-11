@@ -3,8 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="3;url=https://wa.me/971528026677">
   <title>Redirecting to WhatsApp</title>
+
+  <!-- Favicon link -->
+  <link rel="icon" href="images/favico.ico" type="image/x-icon">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYVRVKG3MZ"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KYVRVKG3MZ');
+  </script>
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PZM Computers & Mobile Phones",
+    "image": "https://pzm.ae/images/logo.png",
+    "@id": "https://pzm.ae",
+    "url": "https://pzm.ae",
+    "telephone": "+971528026677",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hessa Street Branch, Inside Hessa Union Coop Hypermarket, Ground floor",
+      "addressLocality": "Dubai",
+      "addressRegion": "DU",
+      "postalCode": "00000",
+      "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.276987,
+      "longitude": 55.296249
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "22:59"
+    },
+    "sameAs": [
+      "https://wa.me/971528026677",
+      "https://www.google.com/maps/place/PZM+Computers+%26+Mobile+Phones/@25.276987,55.296249,17z"
+    ]
+  }
+  </script>
+
+  <!-- Redirect to WhatsApp with predefined message -->
+  <meta http-equiv="refresh" content="3;url=https://wa.me/971528026677?text=Welcome%20to%20PZM%20World,%20we%20will%20answer%20you%20shortly">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,16 +78,15 @@
     }
   </style>
   <script>
-    // If you want to use JavaScript for more control over the redirect
     setTimeout(function() {
-      window.location.href = "https://wa.me/971528026677";
-    }, 0000); // 0 seconds delay before redirection
+      window.location.href = "https://wa.me/971528026677?text=Welcome%20to%20PZM%20World,%20we%20will%20answer%20you%20shortly";
+    }, 1000); // 1 seconds delay before redirection
   </script>
 </head>
 <body>
   <div class="message">
     <p>Redirecting you to WhatsApp...</p>
-    <p>If you are not redirected, <a href="https://wa.me/971528026677">click here to chat with us on WhatsApp</a>.</p>
+    <p>If you are not redirected, <a href="https://wa.me/971528026677?text=Welcome%20to%20PZM%20World,%20we%20will%20answer%20you%20shortly">click here to chat with us on WhatsApp</a>.</p>
   </div>
 </body>
 </html>
