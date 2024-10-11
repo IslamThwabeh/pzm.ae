@@ -46,6 +46,29 @@ document.addEventListener('DOMContentLoaded', function () {
     window.open('https://wa.me/971528026677?text=I%20would%20like%20an%20instant%20quotation', '_blank');
 };
 
+// Get the modal element
+var modal = document.getElementById("whatsappModal");
+
+// Get the close button element
+var span = document.getElementsByClassName("close")[0];
+
+// Show the modal after 3 seconds
+setTimeout(function() {
+  modal.style.display = "block";
+}, 3000);
+
+// Close the modal when the user clicks on the close button
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close the modal if the user clicks anywhere outside of the modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
 });
 
