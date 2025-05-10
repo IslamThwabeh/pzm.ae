@@ -23,7 +23,7 @@
     --space-lg: 1.5rem;
     --space-xl: 2rem;
     --space-xxl: 3rem;
-    --header-height: 100px;
+    --header-height: 80px;
     --transition-fast: 0.15s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: var(--header-height);
+    padding-top: calc(var(--header-height) + 45px);
 }
 
 main {

@@ -1,36 +1,3 @@
-/* Quick Contact Header */
-.quick-contact {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: var(--bg-white);
-    padding: var(--space-xs) var(--space-md);
-    display: flex;
-    justify-content: center;
-    gap: var(--space-md);
-    box-shadow: var(--shadow-sm);
-    height: 35px;
-}
-
-.contact-icon {
-    display: flex;
-    align-items: center;
-    padding: var(--space-xs);
-    transition: all var(--transition-fast);
-}
-
-.contact-icon:hover {
-    transform: scale(1.1);
-    filter: brightness(1.1);
-}
-
-.contact-icon img {
-    width: 24px;
-    height: 24px;
-}
-
 /* Main Header */
 .header-content {
     display: flex;
@@ -41,11 +8,11 @@
     background-color: var(--bg-white);
     box-shadow: var(--shadow-md);
     position: fixed;
-    top: 35px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 999;
-    height: calc(var(--header-height) - 35px);
+    height: var(--header-height);
 }
 
 .logo {
