@@ -58,8 +58,8 @@
 @media (max-width: 768px) {
     .slider {
         aspect-ratio: 4/3;
-        margin: 0 calc(-1 * var(--space-md));
-        width: calc(100% + (var(--space-md) * 2));
+        margin: 0 -1rem;
+        width: calc(100% + 2rem);
         border-radius: 0;
     }
 }
