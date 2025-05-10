@@ -1,0 +1,60 @@
+/* WhatsApp Banner */
+#whatsapp-banner {
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    z-index: 9999;
+    text-decoration: none;
+    touch-action: none; /* Enable drag on mobile */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#quotation-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+    cursor: move; /* Show move cursor */
+}
+
+#quotation-banner:hover {
+    transform: translateY(-5px);
+}
+
+#person-animation {
+    width: 50px;
+    height: auto;
+    margin-right: var(--space-md);
+}
+
+#quotation-banner span {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Make banner draggable on mobile */
+@media (max-width: 768px) {
+    #whatsapp-banner {
+        position: fixed;
+        bottom: 70px; /* Adjusted to not cover footer */
+        right: 10px;
+        max-width: 80vw;
+    }
+    
+    #quotation-banner {
+        padding: var(--space-sm) var(--space-md);
+    }
+    
+    #person-animation {
+        width: 40px;
+    }
+    
+    #quotation-banner span {
+        font-size: 14px;
+    }
+}
