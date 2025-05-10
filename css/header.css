@@ -1,0 +1,115 @@
+/* Quick Contact Header */
+.quick-contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bg-white);
+    padding: var(--space-xs) var(--space-md);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    padding: var(--space-xs);
+    transition: transform var(--transition-fast);
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Header */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg) var(--space-md);
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: var(--space-sm);
+}
+
+.header-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-xs);
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation */
+.main-nav {
+    position: fixed;
+    top: calc(var(--header-height) - 1px);
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.main-nav a {
+    color: white;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: var(--space-md);
+    }
+
+    .header-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .main-nav {
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .main-nav::-webkit-scrollbar {
+        display: none;
+    }
+}
