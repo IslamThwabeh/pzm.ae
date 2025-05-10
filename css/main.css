@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
     --primary-color: #0070cc;
-    --secondary-color: #25d366; /* WhatsApp green */
+    --secondary-color: #25d366;
     --accent-color: #ff6b00;
     --success-color: #28a745;
     --warning-color: #ffc107;
@@ -23,6 +23,7 @@
     --space-lg: 24px;
     --space-xl: 32px;
     --space-xxl: 48px;
+    --header-height: 130px;
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
@@ -37,8 +38,8 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 120px; /* Adjust for fixed header */
-    touch-action: manipulation; /* Prevent zoom gestures */
+    scroll-padding-top: var(--header-height);
+    touch-action: manipulation;
 }
 
 body {
@@ -49,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: var(--header-height);
 }
 
 main {
@@ -66,6 +67,26 @@ section {
     border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
+    padding: var(--space-lg);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: relative;
+}
+
+section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -105,6 +126,12 @@ li {
     margin-bottom: var(--space-sm);
 }
 
+/* Reviews Section */
+.reviews {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -114,14 +141,64 @@ footer {
     margin-top: var(--space-xl);
 }
 
-/* Responsive utilities */
-@media (min-width: 768px) {
-    body {
-        padding-top: 70px;
+/* WhatsApp Banner */
+#whatsapp-banner {
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    z-index: 999;
+}
+
+#quotation-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+#quotation-banner:hover {
+    transform: translateY(-5px);
+}
+
+#person-animation {
+    width: 40px;
+    height: auto;
+    margin-right: var(--space-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 110px;
     }
-    
-    main {
-        padding: var(--space-lg);
+
+    section {
+        padding: var(--space-md);
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #whatsapp-banner {
+        bottom: var(--space-md);
+        right: var(--space-md);
+    }
+
+    #quotation-banner {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    #person-animation {
+        width: 30px;
+    }
+
+    #quotation-banner span {
+        font-size: 14px;
     }
 }
 
