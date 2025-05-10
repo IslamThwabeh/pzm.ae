@@ -11,6 +11,7 @@
     justify-content: center;
     gap: var(--space-md);
     box-shadow: var(--shadow-sm);
+    height: 35px; /* Fixed height */
 }
 
 .contact-icon {
@@ -35,20 +36,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-sm) var(--space-md); /* Reduced padding */
     background-color: var(--bg-white);
     box-shadow: var(--shadow-sm);
     position: fixed;
-    top: 40px;
+    top: 35px; /* Adjusted to match quick-contact height */
     left: 0;
     right: 0;
     z-index: 999;
+    height: calc(var(--header-height) - 35px); /* Subtract quick-contact height */
 }
 
 .logo {
-    width: 100px; /* Increased from 60px */
+    width: 80px; /* Adjusted size */
     height: auto;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs); /* Reduced margin */
     transition: transform var(--transition-fast);
 }
 
@@ -57,13 +59,13 @@
 }
 
 .header-content h1 {
-    font-size: 1.5rem;
-    margin-bottom: var(--space-xs);
+    font-size: 1.3rem; /* Slightly reduced */
+    margin-bottom: 0;
     text-align: center;
 }
 
 .tagline {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Slightly reduced */
     color: var(--text-light);
     margin: 0;
     text-align: center;
@@ -72,7 +74,7 @@
 /* Navigation */
 .main-nav {
     position: fixed;
-    top: calc(var(--header-height) - 1px);
+    top: var(--header-height);
     left: 0;
     right: 0;
     z-index: 998;
@@ -97,19 +99,19 @@
 
 @media (max-width: 768px) {
     .header-content {
-        padding: var(--space-md);
+        padding: var(--space-sm);
     }
 
     .logo {
-        width: 80px; /* Slightly smaller on mobile */
+        width: 60px; /* Smaller on mobile */
     }
 
     .header-content h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .tagline {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .main-nav {
