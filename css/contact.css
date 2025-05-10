@@ -1,60 +1,77 @@
-/* WhatsApp Banner */
-#whatsapp-banner {
-    position: fixed;
-    bottom: var(--space-lg);
-    right: var(--space-lg);
-    z-index: 9999;
-    text-decoration: none;
-    touch-action: none; /* Enable drag on mobile */
-    user-select: none;
-    -webkit-user-select: none;
+/* Contact Section */
+.contact {
+    padding: var(--space-xl);
+    background-color: var(--bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
 }
 
-#quotation-banner {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: var(--space-md) var(--space-lg);
-    border-radius: 60px;
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    padding: var(--space-lg);
+    background-color: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-method {
     display: flex;
     align-items: center;
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal);
-    cursor: move; /* Show move cursor */
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast);
 }
 
-#quotation-banner:hover {
-    transform: translateY(-5px);
+.contact-method:hover {
+    background-color: var(--bg-white);
 }
 
-#person-animation {
-    width: 50px;
-    height: auto;
-    margin-right: var(--space-md);
+.contact-icon-small {
+    width: 24px;
+    height: 24px;
 }
 
-#quotation-banner span {
-    font-weight: 600;
-    white-space: nowrap;
+.address {
+    padding: var(--space-lg);
+    background-color: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
 }
 
-/* Make banner draggable on mobile */
+.address h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.hours {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
 @media (max-width: 768px) {
-    #whatsapp-banner {
-        position: fixed;
-        bottom: 70px; /* Adjusted to not cover footer */
-        right: 10px;
-        max-width: 80vw;
+    .contact {
+        padding: var(--space-lg);
     }
-    
-    #quotation-banner {
-        padding: var(--space-sm) var(--space-md);
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
-    
-    #person-animation {
-        width: 40px;
-    }
-    
-    #quotation-banner span {
-        font-size: 14px;
+
+    .contact-info, 
+    .address {
+        padding: var(--space-md);
     }
 }
