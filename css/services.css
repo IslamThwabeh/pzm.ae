@@ -95,13 +95,19 @@
 @media (max-width: 1024px) {
     .categories {
         grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
     }
 }
 
 @media (max-width: 768px) {
+    .services {
+        padding: var(--space-md);
+    }
+
     .categories {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--space-md);
+        padding: var(--space-md) 0;
     }
 
     .category {
