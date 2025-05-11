@@ -129,14 +129,28 @@
     }
 
     .main-nav {
-        justify-content: space-between;
-        padding: 0 var(--space-sm);
-        overflow-x: visible;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        height: auto;
+        padding: 1px;
+        background: #4CAF50;
     }
 
     .main-nav a {
-        padding: 0 var(--space-sm);
-        font-size: 0.875rem;
-        white-space: nowrap;
+        padding: 10px 5px;
+        font-size: 0.75rem;
+        text-align: center;
+        justify-content: center;
+        background: linear-gradient(to right, #4CAF50, #8BC34A);
+        height: 40px;
+    }
+
+    .main-nav a:after {
+        display: none;
+    }
+
+    .main-nav a.active {
+        background: rgba(255, 255, 255, 0.15);
     }
 }
