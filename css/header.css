@@ -19,8 +19,8 @@
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
+    width: 120px;
+    height: 50px;
     margin-bottom: 0;
     transition: transform var(--transition-fast);
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
@@ -121,8 +121,8 @@
     }
 
     .logo {
-        width: 35px;
-        height: 35px;
+        width: 90px;
+        height: 40px;
         padding: 3px;
     }
 
