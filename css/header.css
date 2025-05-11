@@ -19,15 +19,21 @@
 }
 
 .logo {
-    width: 30px;
-    height: auto;
+    width: 45px;
+    height: 45px;
     margin-bottom: 0;
     transition: transform var(--transition-fast);
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 4px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .logo:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .header-content h1 {
@@ -115,7 +121,9 @@
     }
 
     .logo {
-        width: 25px;
+        width: 35px;
+        height: 35px;
+        padding: 3px;
     }
 
     .header-content h1 {
