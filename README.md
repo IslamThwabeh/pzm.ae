@@ -1,1 +1,1 @@
-pzm2.ae
+pzm.ae
