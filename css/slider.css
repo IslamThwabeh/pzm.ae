@@ -1,4 +1,3 @@
-/* Slider Section */
 .slider {
     position: relative;
     width: 100%;
@@ -20,9 +19,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    background-color: var(--bg-white);
 }
 
 .slides img.active {
@@ -57,7 +57,8 @@
 
 @media (max-width: 768px) {
     .slider {
-        aspect-ratio: 4/3;
+        aspect-ratio: auto;
+        height: 300px;
         margin: 0 -1rem;
         width: calc(100% + 2rem);
         border-radius: 0;
