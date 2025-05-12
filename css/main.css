@@ -1,3 +1,4 @@
+/* Remove the quick-quote class and related styles */
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #000000;
@@ -243,26 +244,6 @@ footer {
 }
 
 .category .book-now:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
-}
-
-/* Quick Quote Button */
-.quick-quote {
-    position: fixed;
-    top: var(--space-md);
-    right: var(--space-md);
-    padding: var(--space-sm) var(--space-lg);
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: var(--radius-md);
-    font-weight: bold;
-    box-shadow: var(--shadow-md);
-    transition: all var(--transition-normal);
-    z-index: 1000;
-}
-
-.quick-quote:hover {
     background-color: var(--secondary-color);
     transform: scale(1.05);
 }

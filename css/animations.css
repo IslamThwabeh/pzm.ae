@@ -1,67 +1,61 @@
 /* Animations */
-@keyframes fadeIn {
+@keyframes fadeInRight {
     from {
         opacity: 0;
+        transform: translateX(50px);
     }
     to {
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
-@keyframes slideDown {
+@keyframes fadeInLeft {
     from {
-        transform: translateY(-100px);
         opacity: 0;
+        transform: translateX(-50px);
     }
     to {
-        transform: translateY(0);
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
 }
 
-/* Apply animations */
-.fade-in {
-    animation: fadeIn 0.5s ease-in;
+/* Scroll Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.slide-down {
-    animation: slideDown 0.5s ease-out;
+.animate-from-right {
+    transform: translateX(50px);
 }
 
-.bounce {
-    animation: bounce 2s infinite;
+.animate-from-left {
+    transform: translateX(-50px);
 }
 
-/* Hover animations */
-.hover-scale {
-    transition: transform 0.3s ease;
+.animate-from-bottom {
+    transform: translateY(50px);
 }
 
-.hover-scale:hover {
-    transform: scale(1.05);
+.visible {
+    opacity: 1;
+    transform: translate(0);
 }
 
-.hover-lift {
-    transition: transform 0.3s ease;
-}
-
-.hover-lift:hover {
-    transform: translateY(-5px);
-}
-
-/* Loading animations */
+/* Enhanced Loading Animation */
 .loading {
     display: inline-block;
     width: 50px;
@@ -78,39 +72,21 @@
     }
 }
 
-/* Pulse animation for notifications */
-.pulse {
-    animation: pulse 2s infinite;
+/* Enhanced Hover Effects */
+.hover-scale {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+.hover-scale:hover {
+    transform: scale(1.05);
 }
 
-/* Shake animation for alerts */
-.shake {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes shake {
-    10%, 90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-    20%, 80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    40%, 60% {
-        transform: translate3d(4px, 0, 0);
-    }
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
