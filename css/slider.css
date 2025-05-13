@@ -25,6 +25,7 @@
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.1);
+    padding: var(--space-md);
 }
 
 .slides img.active {
@@ -58,13 +59,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--text-dark);
     font-weight: bold;
     font-size: 24px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
-    background-color: rgba(0,0,0,0.3);
-    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
     z-index: 2;
     opacity: 0;
     backdrop-filter: blur(4px);
@@ -84,8 +85,9 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: var(--primary-color);
+    background-color: white;
     transform: translateY(-50%) scale(1.1);
+    box-shadow: var(--shadow-md);
 }
 
 /* Slide Indicators */
@@ -97,13 +99,17 @@
     display: flex;
     gap: 10px;
     z-index: 3;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
 }
 
 .indicator {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -135,7 +141,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 0.5rem;
+        padding: var(--space-sm);
     }
 
     .prev, .next {
@@ -143,6 +149,7 @@
         height: 40px;
         font-size: 20px;
         opacity: 1;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     .next {
@@ -153,16 +160,13 @@
         left: 10px;
     }
 
-    .slide-content {
-        padding: 1rem;
-    }
-
     .slide-indicators {
         bottom: 10px;
+        padding: 6px 10px;
     }
 
     .indicator {
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
     }
 }

@@ -4,7 +4,12 @@ async function fetchBusinessHours() {
     const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
     
     try {
-        const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=opening_hours&key=${apiKey}`);
+        const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=opening_hours&key=${apiKey}`, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        });
         const data = await response.json();
         
         if (data.result && data.result.opening_hours) {
@@ -46,7 +51,10 @@ function initMap() {
     if (mapElement) {
         const map = new google.maps.Map(mapElement, {
             center: location,
-            zoom: 15,
+            zoom: 16,
+            mapTypeControl: false,
+            fullscreenControl: false,
+            streetViewControl: false,
             styles: [
                 {
                     featureType: "poi",
@@ -59,14 +67,16 @@ function initMap() {
         const marker = new google.maps.Marker({
             position: location,
             map: map,
-            title: 'PZM Computer Phone Trading & Repair'
+            title: 'PZM Computer Phone Trading & Repair',
+            animation: google.maps.Animation.DROP
         });
 
         const infoWindow = new google.maps.InfoWindow({
             content: `
-                <div style="padding: 10px;">
-                    <h3 style="margin: 0 0 5px;">PZM Computer Phone Trading & Repair</h3>
-                    <p style="margin: 0;">Inside Hessa Union Coop Hypermarket, Ground floor</p>
+                <div style="padding: 10px; max-width: 200px;">
+                    <h3 style="margin: 0 0 5px; color: #4CAF50; font-size: 16px;">PZM Computer Phone Trading & Repair</h3>
+                    <p style="margin: 0; font-size: 14px;">Inside Hessa Union Coop Hypermarket, Ground floor</p>
+                    <p style="margin: 5px 0 0; font-size: 14px;">Open daily: 10:00 AM - 10:59 PM</p>
                 </div>
             `
         });
@@ -74,6 +84,9 @@ function initMap() {
         marker.addListener('click', () => {
             infoWindow.open(map, marker);
         });
+
+        // Open info window by default
+        infoWindow.open(map, marker);
     }
 }
 
