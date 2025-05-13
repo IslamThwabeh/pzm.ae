@@ -50,33 +50,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Handle mobile touch events for services dropdown
-    let touchStartY = 0;
-    let touchStartX = 0;
-
-    servicesLink.addEventListener('click', (e) => {
+    // Toggle dropdown on mobile
+    function toggleDropdown(e) {
         if (window.innerWidth <= 768) {
             e.preventDefault();
-            servicesDropdown.classList.toggle('active');
+            const wasActive = servicesDropdown.classList.contains('active');
+            
+            // Close all other dropdowns first
+            document.querySelectorAll('.services-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+            
+            if (!wasActive) {
+                servicesDropdown.classList.add('active');
+            }
+            
+            e.stopPropagation();
         }
-    });
+    }
 
-    // Close dropdown when clicking outside
+    // Handle mobile touch events for services dropdown
+    servicesLink.addEventListener('touchstart', toggleDropdown);
+    servicesLink.addEventListener('click', toggleDropdown);
+
+    // Close dropdown when touching/clicking outside
+    document.addEventListener('touchstart', (e) => {
+        if (!servicesDropdown.contains(e.target)) {
+            servicesDropdown.classList.remove('active');
+        }
+    }, { passive: true });
+
     document.addEventListener('click', (e) => {
         if (!servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
         }
     });
 
-    // Handle touch events
-    servicesDropdown.addEventListener('touchstart', (e) => {
-        touchStartY = e.touches[0].clientY;
-        touchStartX = e.touches[0].clientX;
-    }, { passive: true });
-
-    servicesDropdown.addEventListener('touchmove', (e) => {
-        if (servicesDropdown.classList.contains('active')) {
-            e.stopPropagation();
+    // Close dropdown when scrolling
+    window.addEventListener('scroll', () => {
+        if (window.innerWidth <= 768) {
+            servicesDropdown.classList.remove('active');
         }
     }, { passive: true });
 

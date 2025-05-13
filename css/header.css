@@ -104,6 +104,8 @@
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .services-dropdown > a:after {
@@ -204,12 +206,21 @@
         max-height: calc(100vh - 100px);
         overflow-y: auto;
         border-radius: 0;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(10px);
+        display: none;
+    }
+
+    .services-dropdown.active .dropdown-content {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 
     .dropdown-content a {
-        padding: var(--space-md);
+        padding: var(--space-lg);
         border-bottom: 1px solid var(--bg-light);
+        font-size: 1rem;
     }
 }
