@@ -113,7 +113,8 @@
     transition: transform 0.3s ease;
 }
 
-.services-dropdown:hover > a:after {
+.services-dropdown:hover > a:after,
+.services-dropdown.active > a:after {
     transform: rotate(180deg);
 }
 
@@ -132,7 +133,8 @@
     z-index: 1000;
 }
 
-.services-dropdown:hover .dropdown-content {
+.services-dropdown:hover .dropdown-content,
+.services-dropdown.active .dropdown-content {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);

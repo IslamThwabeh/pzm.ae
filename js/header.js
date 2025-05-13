@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let ticking = false;
     const header = document.querySelector('.header-content');
     const nav = document.querySelector('.main-nav');
+    const servicesDropdown = document.querySelector('.services-dropdown');
+    const servicesLink = servicesDropdown.querySelector('a');
 
     function updateHeader() {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -47,6 +49,36 @@ document.addEventListener('DOMContentLoaded', () => {
             ticking = true;
         }
     }
+
+    // Handle mobile touch events for services dropdown
+    let touchStartY = 0;
+    let touchStartX = 0;
+
+    servicesLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            servicesDropdown.classList.toggle('active');
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!servicesDropdown.contains(e.target)) {
+            servicesDropdown.classList.remove('active');
+        }
+    });
+
+    // Handle touch events
+    servicesDropdown.addEventListener('touchstart', (e) => {
+        touchStartY = e.touches[0].clientY;
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    servicesDropdown.addEventListener('touchmove', (e) => {
+        if (servicesDropdown.classList.contains('active')) {
+            e.stopPropagation();
+        }
+    }, { passive: true });
 
     window.addEventListener('scroll', onScroll, { passive: true });
 });
