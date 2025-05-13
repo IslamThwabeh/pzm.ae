@@ -60,6 +60,25 @@
     color: var(--accent-color);
 }
 
+/* Store Status Styles */
+.open-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--success-color);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+}
+
+.closed-status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--error-color);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+}
+
 /* Map Container */
 .map-container {
     margin-top: var(--space-xl);
