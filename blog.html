@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
     <meta name="description" content="Latest tech news, iPhone updates, PC building tips, and repair guides from Dubai's leading tech experts.">
     <link rel="canonical" href="https://pzm.ae/blog" />
 </head>
 <body>
-    <!-- Main Header -->
+    <!-- Header and Nav sections remain the same -->
     <header>
         <div class="header-content">
             <img src="images/mini_logo.png" alt="PZM Logo" class="logo">
@@ -23,69 +24,57 @@
         </div>
     </header>
 
-    <!-- Navigation Menu -->
     <nav class="main-nav">
         <a href="index.html">Home</a>
-        <a href="services/brand-new.html">New</a>
-        <a href="services/secondhand.html">Used</a>
-        <a href="services/repair.html">Repair</a>
-        <a href="services/gaming-pc.html">Gaming</a>
-        <a href="services/sell-gadgets.html">Sell</a>
+        <div class="services-dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+                <a href="services/brand-new.html">New Devices</a>
+                <a href="services/secondhand.html">Used Devices</a>
+                <a href="services/repair.html">Repair Services</a>
+                <a href="services/gaming-pc.html">Gaming PC</a>
+                <a href="services/sell-gadgets.html">Sell Devices</a>
+                <a href="services/accessories.html">Accessories</a>
+            </div>
+        </div>
+        <a href="blog.html" class="active">Blog</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <main>
         <section class="blog-grid">
-            <article class="blog-card">
-                <img src="https://images.pexels.com/photos/1294886/pexels-photo-1294886.jpeg" alt="iPhone 15 Pro Features" class="blog-image">
-                <div class="blog-content">
-                    <span class="blog-category">iPhone</span>
-                    <h2>iPhone 15 Pro: A Photography Powerhouse</h2>
-                    <p>Discover how the latest iPhone 15 Pro is revolutionizing mobile photography with its advanced camera system...</p>
-                    <a href="blog/posts/iphone-15-pro-camera-features.html" class="read-more">Read More</a>
-                    <div class="blog-meta">
-                        <span>5 min read</span>
-                        <span>March 15, 2024</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="blog-card">
-                <img src="https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg" alt="Gaming PC Build Guide" class="blog-image">
-                <div class="blog-content">
-                    <span class="blog-category">Gaming PC</span>
-                    <h2>Building Your First Gaming PC: A Complete Guide</h2>
-                    <p>Everything you need to know about building a custom gaming PC, from choosing components to final assembly...</p>
-                    <a href="blog/posts/gaming-pc-build-guide.html" class="read-more">Read More</a>
-                    <div class="blog-meta">
-                        <span>10 min read</span>
-                        <span>March 14, 2024</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="blog-card">
-                <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg" alt="Laptop Battery Tips" class="blog-image">
-                <div class="blog-content">
-                    <span class="blog-category">Tips & Tricks</span>
-                    <h2>Extend Your Laptop's Battery Life</h2>
-                    <p>Essential tips and tricks to maximize your laptop's battery life and maintain its health for longer...</p>
-                    <a href="blog/posts/laptop-battery-tips.html" class="read-more">Read More</a>
-                    <div class="blog-meta">
-                        <span>7 min read</span>
-                        <span>March 13, 2024</span>
-                    </div>
-                </div>
-            </article>
+            <!-- Blog posts will be dynamically loaded here -->
+            <div class="loading">Loading posts...</div>
         </section>
 
-        <section class="newsletter-signup">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for the latest tech news and updates</p>
-            <form id="newsletter-form" class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
+        <!-- Contact section remains the same -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Need help with our services or products? Get in touch!</p>
+                    <div id="store-status"></div>
+                    <div class="contact-method">
+                        <img src="images/Header/call-logo.png" alt="Phone" class="contact-icon-small">
+                        <a href="tel:+971528026677">+971 528026677</a>
+                    </div>
+                    <div class="contact-method">
+                        <img src="images/Header/whatsapp-logo.png" alt="WhatsApp" class="contact-icon-small">
+                        <a href="https://wa.me/971528026677">Chat on WhatsApp</a>
+                    </div>
+                    <div class="contact-method">
+                        <img src="images/Header/map-logo.png" alt="Location" class="contact-icon-small">
+                        <a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic">Find us on Google Maps</a>
+                    </div>
+                </div>
+                <div class="address">
+                    <h3>Visit Our Store</h3>
+                    <p>PZM Computer Phone Trading & Repair</p>
+                    <p>Hessa Street Branch</p>
+                    <p>Inside Hessa Union Coop Hypermarket, Ground floor</p>
+                    <p class="hours">Open daily: 10:00 AM - 10:59 PM</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -94,6 +83,8 @@
     </footer>
 
     <script src="js/header.js"></script>
+    <script src="js/store-status.js"></script>
+    <script src="js/blog.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>

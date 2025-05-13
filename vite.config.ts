@@ -12,7 +12,17 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
   },
+  css: {
+    preprocessorOptions: {
+      css: {
+        additionalData: `@import "./css/main.css";`
+      }
+    }
+  },
   server: {
     open: true,
-  },
+    watch: {
+      usePolling: true
+    }
+  }
 });

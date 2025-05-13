@@ -71,56 +71,6 @@
     font-size: 0.875rem;
 }
 
-/* Newsletter Section */
-.newsletter-signup {
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    padding: var(--space-xl);
-    text-align: center;
-    border-radius: var(--radius-lg);
-    margin: var(--space-xl) 0;
-    color: white;
-}
-
-.newsletter-signup h2 {
-    color: white;
-    margin-bottom: var(--space-md);
-}
-
-.newsletter-signup p {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: var(--space-lg);
-}
-
-.newsletter-form {
-    display: flex;
-    gap: var(--space-md);
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.newsletter-form input {
-    flex: 1;
-    padding: var(--space-md);
-    border: none;
-    border-radius: var(--radius-sm);
-    font-size: 1rem;
-}
-
-.newsletter-form button {
-    padding: var(--space-md) var(--space-xl);
-    background: var(--secondary-color);
-    color: white;
-    border: none;
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.newsletter-form button:hover {
-    background: var(--bg-white);
-    color: var(--secondary-color);
-}
-
 @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: 1fr;
@@ -130,13 +80,5 @@
 
     .blog-image {
         height: 180px;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-    }
-
-    .newsletter-form button {
-        width: 100%;
     }
 }

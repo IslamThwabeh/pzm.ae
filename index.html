@@ -6,14 +6,14 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>PZM Computer Phone Trading & Repair | Dubai</title>
-    <link rel="icon" href="/images/favico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/slider.css">
-    <link rel="stylesheet" href="/css/services.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/animations.css">
-    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="icon" href="images/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/faq.css">
     <meta name="description" content="PZM Computer Phone Trading & Repair: Expert laptop and mobile phone repair in Dubai. New and used devices, gaming PC builds, and accessories with transparent pricing and pickup & delivery services.">
     <meta name="keywords" content="Computers, Mobile Phones, Laptop Repair, Gaming PC, Sell, Fix, Used, New, Build, Accessories, Dubai">
     <meta name="author" content="PZM Computer Phone Trading & Repair">
@@ -39,12 +39,56 @@
 
     <!-- Elfsight Widgets -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "PZM Computer Phone Trading & Repair",
+      "image": "https://pzm.ae/images/logo.png",
+      "@id": "https://pzm.ae",
+      "url": "https://pzm.ae",
+      "telephone": "+971528026677",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hessa Street Branch, Inside Hessa Union Coop Hypermarket, Ground floor",
+        "addressLocality": "Dubai",
+        "addressRegion": "DU",
+        "postalCode": "00000",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.276987,
+        "longitude": 55.296249
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "22:59"
+      },
+      "sameAs": [
+        "https://wa.me/971528026677",
+        "https://www.google.com/maps/place/PZM+Computers+%26+Mobile+Phones/@25.276987,55.296249,17z"
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Main Header -->
     <header>
         <div class="header-content">
-            <img src="/images/mini_logo.png" alt="PZM Logo" class="logo">
+            <img src="images/mini_logo.png" alt="PZM Logo" class="logo">
             <div class="header-text">
                 <h1>PZM Computer Phone Trading & Repair</h1>
                 <p class="tagline">(New, Used, Sell, Build)</p>
@@ -54,12 +98,19 @@
 
     <!-- Navigation Menu -->
     <nav class="main-nav">
-        <a href="/" class="active">Home</a>
-        <a href="/services/brand-new.html">New</a>
-        <a href="/services/secondhand.html">Used</a>
-        <a href="/services/repair.html">Repair</a>
-        <a href="/services/gaming-pc.html">Gaming</a>
-        <a href="/services/sell-gadgets.html">Sell</a>
+        <a href="index.html" class="active">Home</a>
+        <div class="services-dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+                <a href="services/brand-new.html">New Devices</a>
+                <a href="services/secondhand.html">Used Devices</a>
+                <a href="services/repair.html">Repair Services</a>
+                <a href="services/gaming-pc.html">Gaming PC</a>
+                <a href="services/sell-gadgets.html">Sell Devices</a>
+                <a href="services/accessories.html">Accessories</a>
+            </div>
+        </div>
+        <a href="blog.html">Blog</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -70,83 +121,60 @@
             <button class="prev" aria-label="Previous slide">&#10094;</button>
             <button class="next" aria-label="Next slide">&#10095;</button>
             <div class="slides">
-                <img src="/images/Services/Sell_Your_Old_iPhones.jpg" alt="Sell Your Old iPhones" class="active">
-                <img src="/images/Services/repairing_services.jpg" alt="Repairing Services">
-                <img src="/images/Services/reignite_your_macbook.jpg" alt="Reignite Your MacBook">
-                <img src="/images/Services/sell_old_mackbook.jpg" alt="Sell Old MacBook">
-                <img src="/images/Services/all_services_pic.jpg" alt="All Services">
+                <img src="images/Services/Sell_Your_Old_iPhones.jpg" alt="Sell Your Old iPhones" class="active">
+                <img src="images/Services/repairing_services.jpg" alt="Repairing Services">
+                <img src="images/Services/reignite_your_macbook.jpg" alt="Reignite Your MacBook">
+                <img src="images/Services/sell_old_mackbook.jpg" alt="Sell Old MacBook">
+                <img src="images/Services/all_services_pic.jpg" alt="All Services">
             </div>
+            <div class="slide-indicators"></div>
         </section>
 
         <!-- Services Section -->
         <section class="services">
             <h2>Our Services</h2>
             <div class="categories">
-                <div class="category" onclick="window.location.href='/services/brand-new.html'">
+                <div class="category" onclick="window.location.href='services/brand-new.html'">
                     <div class="category-img">
-                        <img src="/images/Catigories/mini_brand_new.webp" alt="Brand-new">
+                        <img src="images/Catigories/mini_brand_new.webp" alt="Brand-new">
                     </div>
-                    <div class="category-content">
-                        <h3>Brand-New Devices</h3>
-                        <p>Latest phones, laptops & accessories</p>
-                        <div class="price">Starting from AED 299</div>
-                        <a href="https://wa.me/971528026677" class="book-now">Book Now</a>
-                    </div>
+                    <h3>Brand-New Devices</h3>
+                    <p>Latest phones, laptops & accessories</p>
                 </div>
-                <div class="category" onclick="window.location.href='/services/secondhand.html'">
+                <div class="category" onclick="window.location.href='services/secondhand.html'">
                     <div class="category-img">
-                        <img src="/images/Catigories/mini_Used_Phones.webp" alt="Secondhand">
+                        <img src="images/Catigories/mini_Used_Phones.webp" alt="Secondhand">
                     </div>
-                    <div class="category-content">
-                        <h3>Secondhand Devices</h3>
-                        <p>Quality pre-owned electronics</p>
-                        <div class="price">Starting from AED 199</div>
-                        <a href="https://wa.me/971528026677" class="book-now">Book Now</a>
-                    </div>
+                    <h3>Secondhand Devices</h3>
+                    <p>Quality pre-owned electronics</p>
                 </div>
-                <div class="category" onclick="window.location.href='/services/repair.html'">
+                <div class="category" onclick="window.location.href='services/repair.html'">
                     <div class="category-img">
-                        <img src="/images/Catigories/mini_laptop_maintenance.webp" alt="Repair">
+                        <img src="images/Catigories/mini_laptop_maintenance.webp" alt="Repair">
                     </div>
-                    <div class="category-content">
-                        <h3>Device Repair</h3>
-                        <p>Expert repair services</p>
-                        <div class="price">Starting from AED 99</div>
-                        <a href="https://wa.me/971528026677" class="book-now">Book Now</a>
-                    </div>
+                    <h3>Device Repair</h3>
+                    <p>Expert repair services</p>
                 </div>
-                <div class="category" onclick="window.location.href='/services/gaming-pc.html'">
+                <div class="category" onclick="window.location.href='services/gaming-pc.html'">
                     <div class="category-img">
-                        <img src="/images/Catigories/mini_GamingPC.webp" alt="Gaming PC Build">
+                        <img src="images/Catigories/mini_GamingPC.webp" alt="Gaming PC Build">
                     </div>
-                    <div class="category-content">
-                        <h3>Gaming PC Build</h3>
-                        <p>Custom gaming rigs</p>
-                        <div class="price">Starting from AED 2999</div>
-                        <a href="https://wa.me/971528026677" class="book-now">Book Now</a>
-                    </div>
+                    <h3>Gaming PC Build</h3>
+                    <p>Custom gaming rigs</p>
                 </div>
-                <div class="category" onclick="window.location.href='/services/sell-gadgets.html'">
+                <div class="category" onclick="window.location.href='services/sell-gadgets.html'">
                     <div class="category-img">
-                        <img src="/images/Catigories/mini_sell-gadgets.webp" alt="Sell Old Gadgets">
+                        <img src="images/Catigories/mini_sell-gadgets.webp" alt="Sell Old Gadgets">
                     </div>
-                    <div class="category-content">
-                        <h3>Sell Old Gadgets</h3>
-                        <p>Best prices for your devices</p>
-                        <div class="price">Get instant quote</div>
-                        <a href="https://wa.me/971528026677" class="book-now">Book Now</a>
-                    </div>
+                    <h3>Sell Old Gadgets</h3>
+                    <p>Best prices for your devices</p>
                 </div>
-                <div class="category" onclick="window.location.href='/services/accessories.html'">
+                <div class="category" onclick="window.location.href='services/accessories.html'">
                     <div class="category-img">
-                        <img src="/images/Catigories/mini_mobile_accessories.webp" alt="Accessories">
+                        <img src="images/Catigories/mini_mobile_accessories.webp" alt="Accessories">
                     </div>
-                    <div class="category-content">
-                        <h3>Accessories</h3>
-                        <p>Premium device accessories</p>
-                        <div class="price">Starting from AED 29</div>
-                        <a href="https://wa.me/971528026677" class="book-now">Book Now</a>
-                    </div>
+                    <h3>Accessories</h3>
+                    <p>Premium device accessories</p>
                 </div>
             </div>
         </section>
@@ -182,16 +210,17 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <p>Need help with our services or products? Get in touch!</p>
+                    <div id="store-status"></div>
                     <div class="contact-method">
-                        <img src="/images/Header/call-logo.png" alt="Phone" class="contact-icon-small">
+                        <img src="images/Header/call-logo.png" alt="Phone" class="contact-icon-small">
                         <a href="tel:+971528026677">+971 528026677</a>
                     </div>
                     <div class="contact-method">
-                        <img src="/images/Header/whatsapp-logo.png" alt="WhatsApp" class="contact-icon-small">
+                        <img src="images/Header/whatsapp-logo.png" alt="WhatsApp" class="contact-icon-small">
                         <a href="https://wa.me/971528026677">Chat on WhatsApp</a>
                     </div>
                     <div class="contact-method">
-                        <img src="/images/Header/map-logo.png" alt="Location" class="contact-icon-small">
+                        <img src="images/Header/map-logo.png" alt="Location" class="contact-icon-small">
                         <a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic">Find us on Google Maps</a>
                     </div>
                 </div>
@@ -218,7 +247,7 @@
     <!-- WhatsApp Banner -->
     <a href="https://wa.me/971528026677" target="_blank" id="whatsapp-banner" aria-label="Get instant price quotation on WhatsApp">
         <div id="quotation-banner">
-            <img src="/images/hello.gif" alt="Waving Person" id="person-animation">
+            <img src="images/hello.gif" alt="Waving Person" id="person-animation">
             <span>Click for Instant Price Quotation</span>
         </div>
     </a>
@@ -229,8 +258,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="/js/slider.js"></script>
-    <script type="module" src="/js/header.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/store-status.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
