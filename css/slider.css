@@ -5,9 +5,10 @@
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 21/9;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
+    background-color: var(--bg-light);
 }
 
 .slides {
@@ -24,7 +25,6 @@
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.1);
-    background-color: #f5f5f5;
 }
 
 .slides img.active {
@@ -115,10 +115,11 @@
 
 @media (max-width: 768px) {
     .slider {
-        aspect-ratio: 4/3;
+        aspect-ratio: 16/9;
         margin: 0;
         border-radius: 0;
         height: auto;
+        background-color: var(--bg-light);
     }
 
     .slides {
@@ -134,7 +135,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .prev, .next {
