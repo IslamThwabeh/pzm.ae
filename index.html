@@ -40,50 +40,6 @@
 
     <!-- Elfsight Widgets -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "PZM Computer Phone Trading & Repair",
-      "image": "https://pzm.ae/images/logo.png",
-      "@id": "https://pzm.ae",
-      "url": "https://pzm.ae",
-      "telephone": "+971528026677",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Hessa Street Branch, Inside Hessa Union Coop Hypermarket, Ground floor",
-        "addressLocality": "Dubai",
-        "addressRegion": "DU",
-        "postalCode": "00000",
-        "addressCountry": "AE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 25.276987,
-        "longitude": 55.296249
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "10:00",
-        "closes": "22:59"
-      },
-      "sameAs": [
-        "https://wa.me/971528026677",
-        "https://www.google.com/maps/place/PZM+Computers+%26+Mobile+Phones/@25.276987,55.296249,17z"
-      ]
-    }
-    </script>
 </head>
 <body>
     <!-- Main Header -->
@@ -134,7 +90,54 @@
         <section class="services">
             <h2>Our Services</h2>
             <div class="categories">
-                <!-- Service categories content remains unchanged -->
+                <div class="category">
+                    <div class="category-img">
+                        <img src="images/Catigories/mini_brand_new.webp" alt="New Devices">
+                    </div>
+                    <h3>New Devices</h3>
+                    <p>Latest smartphones, laptops, and accessories</p>
+                    <a href="services/brand-new.html" class="read-more">Learn More</a>
+                </div>
+                <div class="category">
+                    <div class="category-img">
+                        <img src="images/Catigories/mini_Used_Phones.webp" alt="Used Devices">
+                    </div>
+                    <h3>Used Devices</h3>
+                    <p>Quality checked pre-owned devices</p>
+                    <a href="services/secondhand.html" class="read-more">Learn More</a>
+                </div>
+                <div class="category">
+                    <div class="category-img">
+                        <img src="images/Catigories/mini_laptop_maintenance.webp" alt="Repair Services">
+                    </div>
+                    <h3>Repair Services</h3>
+                    <p>Expert device repair and maintenance</p>
+                    <a href="services/repair.html" class="read-more">Learn More</a>
+                </div>
+                <div class="category">
+                    <div class="category-img">
+                        <img src="images/Catigories/mini_GamingPC.webp" alt="Gaming PC">
+                    </div>
+                    <h3>Gaming PC</h3>
+                    <p>Custom gaming PC builds</p>
+                    <a href="services/gaming-pc.html" class="read-more">Learn More</a>
+                </div>
+                <div class="category">
+                    <div class="category-img">
+                        <img src="images/Catigories/mini_sell-gadgets.webp" alt="Sell Devices">
+                    </div>
+                    <h3>Sell Devices</h3>
+                    <p>Get the best price for your devices</p>
+                    <a href="services/sell-gadgets.html" class="read-more">Learn More</a>
+                </div>
+                <div class="category">
+                    <div class="category-img">
+                        <img src="images/Catigories/mini_mobile_accessories.webp" alt="Accessories">
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Wide range of genuine accessories</p>
+                    <a href="services/accessories.html" class="read-more">Learn More</a>
+                </div>
             </div>
         </section>
 
@@ -150,25 +153,6 @@
         <section class="reviews">
             <h2>Customer Reviews</h2>
             <div class="elfsight-app-69b4a752-7f66-44fe-8388-276e68bc6823" data-elfsight-app-lazy></div>
-        </section>
-
-        <!-- Transparency Section -->
-        <section class="transparency">
-            <h2>Service Transparency</h2>
-            <p>At PZM Computers & Phones, we believe in full transparency. Here's what you can expect:</p>
-            <ul>
-                <li>No hidden fees – the price you see is the price you pay.</li>
-                <li>Free diagnosis and upfront pricing for all repair services.</li>
-                <li>Genuine parts with a 1-year warranty.</li>
-                <li>Regular updates on repair progress via WhatsApp or email.</li>
-                <li>Payment upon satisfaction – pay only when you're completely happy with our service.</li>
-            </ul>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div class="elfsight-app-f5d197a3-7325-43ff-a3fa-787de403682f" data-elfsight-app-lazy></div>
         </section>
 
         <!-- Contact Section -->
@@ -203,7 +187,7 @@
 
     <script src="js/header.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/blog.js"></script>
+    <script type="module" src="js/blog.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
