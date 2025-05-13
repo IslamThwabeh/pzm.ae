@@ -17,7 +17,6 @@
     max-width: 1200px;
     margin: 0 auto;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
 }
 
 .logo {
@@ -71,10 +70,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 var(--space-md);
+    gap: var(--space-lg);
+    padding: 0;
     box-shadow: var(--shadow-md);
     height: var(--nav-height);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-nav a {
@@ -83,11 +82,9 @@
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
     font-weight: 500;
-    position: relative;
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
-    gap: var(--space-xs);
     font-size: 1rem;
 }
 
@@ -100,11 +97,10 @@
 .services-dropdown > a {
     color: white;
     padding: 0 var(--space-lg);
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: var(--space-xs);
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
 }
 
 .services-dropdown > a:after {
@@ -114,48 +110,36 @@
     transition: transform 0.3s ease;
 }
 
-.services-dropdown:hover > a:after,
-.services-dropdown.active > a:after {
-    transform: rotate(180deg);
-}
-
 .dropdown-content {
-    display: none;
-    position: fixed;
-    top: calc(var(--header-height) + var(--nav-height));
-    left: 0;
-    right: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 200px;
     background: var(--bg-white);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
     box-shadow: var(--shadow-lg);
-    z-index: 1000;
-    animation: dropdownFade 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    transform-origin: top center;
+    transform: translateX(-50%) scaleY(0.9);
 }
 
-@keyframes dropdownFade {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.services-dropdown:hover .dropdown-content,
-.services-dropdown.active .dropdown-content {
-    display: block;
+.services-dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scaleY(1);
 }
 
 .dropdown-content a {
     color: var(--text-dark);
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
     display: block;
     transition: all var(--transition-fast);
+    white-space: nowrap;
     height: auto;
     border-bottom: 1px solid var(--bg-light);
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .dropdown-content a:last-child {
@@ -165,7 +149,7 @@
 .dropdown-content a:hover {
     background-color: var(--bg-light);
     color: var(--primary-color);
-    padding-left: calc(var(--space-md) + 10px);
+    padding-left: calc(var(--space-lg) + 5px);
 }
 
 .main-nav a:hover,
@@ -173,27 +157,9 @@
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Mobile Menu Toggle */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius-sm);
-    transition: all var(--transition-fast);
-}
-
-.menu-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
 @media (max-width: 768px) {
     .header-content {
-        height: 60px;
-        padding: var(--space-xs) var(--space-sm);
+        padding: var(--space-xs);
     }
 
     .logo {
@@ -210,54 +176,39 @@
     }
 
     .main-nav {
-        top: 60px;
-        height: 50px;
+        height: var(--nav-height);
         padding: 0;
-        justify-content: flex-start;
+        justify-content: space-around;
+        gap: 0;
     }
 
-    .menu-toggle {
-        display: block;
+    .main-nav a {
+        padding: 0 var(--space-sm);
+        font-size: 0.9rem;
     }
 
-    .main-nav > a,
     .services-dropdown > a {
-        display: none;
-    }
-
-    .main-nav.open {
-        height: auto;
-        background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-    }
-
-    .main-nav.open > a,
-    .main-nav.open .services-dropdown > a {
-        display: block;
-        width: 100%;
-        padding: var(--space-md);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0 var(--space-sm);
     }
 
     .dropdown-content {
-        position: static;
-        box-shadow: none;
-        background: rgba(0, 0, 0, 0.1);
-        animation: none;
+        position: fixed;
+        top: calc(var(--header-height) + var(--nav-height));
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: none;
+        border-radius: 0;
+        max-height: calc(100vh - var(--header-height) - var(--nav-height));
+        overflow-y: auto;
+    }
+
+    .services-dropdown:hover .dropdown-content {
+        transform: none;
     }
 
     .dropdown-content a {
-        color: white;
-        padding-left: calc(var(--space-md) * 2);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .dropdown-content a:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
-    }
-
-    .services-dropdown > a:after {
-        position: absolute;
-        right: var(--space-md);
+        padding: var(--space-lg);
+        text-align: center;
     }
 }

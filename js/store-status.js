@@ -1,106 +1,90 @@
-// Store status functionality
-async function fetchBusinessHours() {
-    const placeId = 'ChIJLxLxL2VZXz4RgqjxGwvJxac'; // PZM Computer Phone Trading & Repair Place ID
-    const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-    
-    try {
-        const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=opening_hours&key=${apiKey}`, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        });
-        const data = await response.json();
-        
-        if (data.result && data.result.opening_hours) {
-            return data.result.opening_hours;
-        }
-    } catch (error) {
-        console.error('Error fetching business hours:', error);
+// Store hours functionality
+const STORE_HOURS = {
+    0: { // Sunday
+        open: '7 AM',
+        close: '1 AM'
+    },
+    1: { // Monday
+        open: '8 AM',
+        close: '12 AM'
+    },
+    2: { // Tuesday
+        open: '8 AM',
+        close: '12 AM'
+    },
+    3: { // Wednesday
+        open: '8 AM',
+        close: '1 AM'
+    },
+    4: { // Thursday
+        open: '8 AM',
+        close: '11 PM'
+    },
+    5: { // Friday
+        open: '8 AM',
+        close: '12 AM'
+    },
+    6: { // Saturday
+        open: '7 AM',
+        close: '1 AM'
     }
-    
-    // Fallback hours if API fails
-    return {
-        open: 10, // 10 AM
-        close: 22 // 10 PM
-    };
-}
+};
 
-async function checkStoreStatus() {
+function updateStoreStatus() {
     const now = new Date();
+    const day = now.getDay();
     const hours = now.getHours();
     const minutes = now.getMinutes();
-    const currentTime = hours * 100 + minutes;
+    const currentTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
     
-    const businessHours = await fetchBusinessHours();
-    const isOpen = currentTime >= 1000 && currentTime < 2200;
-    
+    const todayHours = STORE_HOURS[day];
     const statusElement = document.getElementById('store-status');
-    if (statusElement) {
-        statusElement.innerHTML = isOpen ? 
-            '<span class="open-status">We\'re Open!</span>' : 
-            '<span class="closed-status">Currently Closed</span>';
-    }
-}
-
-// Initialize Google Maps
-function initMap() {
-    const location = { lat: 25.0657001, lng: 55.2126007 };
-    const mapElement = document.getElementById('google-map');
+    const hoursElement = document.querySelector('.hours');
     
-    if (mapElement) {
-        const map = new google.maps.Map(mapElement, {
-            center: location,
-            zoom: 16,
-            mapTypeControl: false,
-            fullscreenControl: false,
-            streetViewControl: false,
-            styles: [
-                {
-                    featureType: "poi",
-                    elementType: "labels",
-                    stylers: [{ visibility: "off" }]
-                }
-            ]
-        });
+    if (!statusElement || !hoursElement) return;
 
-        const marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            title: 'PZM Computer Phone Trading & Repair',
-            animation: google.maps.Animation.DROP
-        });
+    // Convert store hours to 24-hour format for comparison
+    const openTime = convertTo24Hour(todayHours.open);
+    const closeTime = convertTo24Hour(todayHours.close);
+    
+    const isOpen = isCurrentlyOpen(currentTime, openTime, closeTime);
+    
+    // Update status
+    statusElement.innerHTML = isOpen ? 
+        '<span class="open-status">Open</span>' : 
+        '<span class="closed-status">Closed</span>';
 
-        const infoWindow = new google.maps.InfoWindow({
-            content: `
-                <div style="padding: 10px; max-width: 200px;">
-                    <h3 style="margin: 0 0 5px; color: #4CAF50; font-size: 16px;">PZM Computer Phone Trading & Repair</h3>
-                    <p style="margin: 0; font-size: 14px;">Inside Hessa Union Coop Hypermarket, Ground floor</p>
-                    <p style="margin: 5px 0 0; font-size: 14px;">Open daily: 10:00 AM - 10:59 PM</p>
-                </div>
-            `
-        });
-
-        marker.addListener('click', () => {
-            infoWindow.open(map, marker);
-        });
-
-        // Open info window by default
-        infoWindow.open(map, marker);
-    }
+    // Update hours display
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let hoursText = '';
+    
+    daysOfWeek.forEach((dayName, index) => {
+        const dayHours = STORE_HOURS[index];
+        hoursText += `${dayName}: ${dayHours.open}–${dayHours.close}\n`;
+    });
+    
+    hoursElement.textContent = hoursText;
 }
 
-// Check store status on page load and every minute
+function convertTo24Hour(timeStr) {
+    const [time, period] = timeStr.split(' ');
+    let [hours] = time.split(':');
+    hours = parseInt(hours);
+    
+    if (period === 'PM' && hours !== 12) hours += 12;
+    if (period === 'AM' && hours === 12) hours = 0;
+    
+    return hours.toString().padStart(2, '0') + ':00';
+}
+
+function isCurrentlyOpen(current, open, close) {
+    if (close === '01:00') close = '25:00'; // Handle 1 AM closing time
+    return current >= open && current < close;
+}
+
+// Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    checkStoreStatus();
-    setInterval(checkStoreStatus, 60000);
-    
-    // Load Google Maps
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_GOOGLE_MAPS_API_KEY}&callback=initMap`;
-    script.async = true;
-    script.defer = true;
-    document.head.appendChild(script);
+    updateStoreStatus();
+    // Update status every minute
+    setInterval(updateStoreStatus, 60000);
 });
-
-window.initMap = initMap;

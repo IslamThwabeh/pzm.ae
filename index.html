@@ -179,11 +179,19 @@
                     <p>PZM Computer Phone Trading & Repair</p>
                     <p>Hessa Street Branch</p>
                     <p>Inside Hessa Union Coop Hypermarket, Ground floor</p>
-                    <p class="hours">Open daily: 10:00 AM - 10:59 PM</p>
                     <div id="store-status"></div>
+                    <div class="hours"></div>
                 </div>
                 <div class="map-container">
-                    <div id="google-map"></div>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.231830114033!2d55.1992671!3d25.0848627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dc0bc49a6d5%3A0x158c13f2d688b32e!2sPZM%20Computer%20Phone%20Trading%20%26%20Repair%20(Sell%2CUsed%2CNew%2CBuild)!5e0!3m2!1sen!2sae!4v1715590341023!5m2!1sen!2sae" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -199,6 +207,7 @@
     <script src="js/header.js"></script>
     <script src="js/slider.js"></script>
     <script type="module" src="js/blog.js"></script>
+    <script src="js/store-status.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
