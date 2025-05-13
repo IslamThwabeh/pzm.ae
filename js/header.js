@@ -1,3 +1,4 @@
+// Use requestAnimationFrame for smoother header animations
 document.addEventListener('DOMContentLoaded', () => {
     let lastScrollTop = 0;
     let ticking = false;
@@ -44,41 +45,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Mobile dropdown handling
+    // Always keep dropdown visible on mobile for testing
+    if (window.innerWidth <= 768) {
+        servicesDropdown.classList.add('active');
+        const dropdownContent = servicesDropdown.querySelector('.dropdown-content');
+        if (dropdownContent) {
+            dropdownContent.style.display = 'block';
+        }
+    }
+
+    // Toggle dropdown on mobile
     function toggleDropdown(e) {
         if (window.innerWidth <= 768) {
             e.preventDefault();
             e.stopPropagation();
-            servicesDropdown.classList.toggle('active');
+            servicesDropdown.classList.add('active');
+            const dropdownContent = servicesDropdown.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'block';
+            }
         }
     }
 
-    // Add both click and touch events for better mobile support
     servicesLink.addEventListener('touchstart', toggleDropdown, { passive: false });
     servicesLink.addEventListener('click', toggleDropdown);
 
-    // Close dropdown when clicking/touching outside
-    document.addEventListener('click', (e) => {
-        if (!servicesDropdown.contains(e.target)) {
-            servicesDropdown.classList.remove('active');
+    // Keep dropdown visible on orientation change
+    window.addEventListener('orientationchange', () => {
+        if (window.innerWidth <= 768) {
+            servicesDropdown.classList.add('active');
+            const dropdownContent = servicesDropdown.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.style.display = 'block';
+            }
         }
     });
-
-    document.addEventListener('touchstart', (e) => {
-        if (!servicesDropdown.contains(e.target)) {
-            servicesDropdown.classList.remove('active');
-        }
-    }, { passive: true });
-
-    // Close dropdown on scroll
-    window.addEventListener('scroll', () => {
-        servicesDropdown.classList.remove('active');
-    }, { passive: true });
 
     window.addEventListener('scroll', onScroll, { passive: true });
-
-    // Handle orientation change
-    window.addEventListener('orientationchange', () => {
-        servicesDropdown.classList.remove('active');
-    });
 });
