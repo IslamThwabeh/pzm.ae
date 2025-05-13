@@ -128,6 +128,10 @@
         padding: var(--space-lg) 0;
     }
 
+    .blog-image {
+        height: 180px;
+    }
+
     .newsletter-form {
         flex-direction: column;
     }

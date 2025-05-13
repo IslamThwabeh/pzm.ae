@@ -26,6 +26,8 @@
     transition: all var(--transition-normal);
     text-align: center;
     aspect-ratio: 3/4;
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 .category:hover {
@@ -35,7 +37,7 @@
 
 .category-img {
     width: 100%;
-    height: 70%;
+    height: 200px;
     overflow: hidden;
     border-radius: var(--radius-sm);
     margin-bottom: var(--space-md);
@@ -79,7 +81,7 @@
 
 .service-image {
     width: 100%;
-    aspect-ratio: 1;
+    max-height: 300px;
     object-fit: cover;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
@@ -111,7 +113,12 @@
     }
 
     .category {
-        aspect-ratio: 1;
+        aspect-ratio: auto;
+        padding: var(--space-sm);
+    }
+
+    .category-img {
+        height: 150px;
     }
 
     .service-content {
@@ -120,7 +127,7 @@
     }
 
     .service-image {
-        aspect-ratio: 16/9;
+        max-height: 250px;
     }
 
     .service-description {
@@ -131,5 +138,9 @@
 @media (max-width: 480px) {
     .categories {
         grid-template-columns: 1fr;
+    }
+
+    .category {
+        max-width: 100%;
     }
 }
