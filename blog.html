@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/contact.css">
     <meta name="description" content="Latest tech news, iPhone updates, PC building tips, and repair guides from Dubai's leading tech experts.">
     <link rel="canonical" href="https://pzm.ae/blog" />
+    <!-- Add Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
     <!-- Header and Nav sections remain the same -->
@@ -42,12 +44,13 @@
     </nav>
 
     <main>
-        <section class="blog-grid">
-            <!-- Blog posts will be dynamically loaded here -->
-            <div class="loading">Loading posts...</div>
+        <section class="blog-section">
+            <div class="blog-grid">
+                <div class="loading">Loading posts...</div>
+            </div>
         </section>
 
-        <!-- Contact section remains the same -->
+        <!-- Contact section -->
         <section class="contact" id="contact">
             <h2>Contact Us</h2>
             <div class="contact-container">
