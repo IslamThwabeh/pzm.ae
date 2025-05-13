@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | PZM Computer Phone Trading & Repair</title>
+    <link rel="icon" href="images/favico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Elfsight WhatsApp Chat Widget -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-870cae90-5572-445a-bf05-2750504d4f2a" data-elfsight-app-lazy></div>
+</head>
+<body>
+    <!-- Main Header -->
+    <header>
+        <div class="header-content">
+            <img src="images/mini_logo.png" alt="PZM Logo" class="logo">
+            <div class="header-text">
+                <h1>PZM Computer Phone Trading & Repair</h1>
+                <p class="tagline">(New, Used, Sell, Build)</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <div class="services-dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+                <a href="services/brand-new.html">New Devices</a>
+                <a href="services/secondhand.html">Used Devices</a>
+                <a href="services/repair.html">Repair Services</a>
+                <a href="services/gaming-pc.html">Gaming PC</a>
+                <a href="services/sell-gadgets.html">Sell Devices</a>
+                <a href="services/accessories.html">Accessories</a>
+            </div>
+        </div>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <article class="blog-post">
+            <div id="post-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </article>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Need help with our services or products? Get in touch!</p>
+                    <div class="contact-method">
+                        <img src="images/Header/call-logo.png" alt="Phone" class="contact-icon-small">
+                        <a href="tel:+971528026677">+971 528026677</a>
+                    </div>
+                    <div class="contact-method">
+                        <img src="images/Header/whatsapp-logo.png" alt="WhatsApp" class="contact-icon-small">
+                        <a href="https://wa.me/971528026677">Chat on WhatsApp</a>
+                    </div>
+                    <div class="contact-method">
+                        <img src="images/Header/map-logo.png" alt="Location" class="contact-icon-small">
+                        <a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic">Find us on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>PZM Computer Phone Trading & Repair<br> &copy; <span id="year"></span> All rights reserved.</p>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script type="module" src="js/blog.js"></script>
+    <script type="module" src="js/blog-post.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
