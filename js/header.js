@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateHeader() {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
         
+        // Don't hide elements when at the top of the page
         if (currentScroll <= 0) {
             header.style.transform = 'translateY(0)';
             nav.style.transform = 'translateY(0)';
@@ -18,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Determine scroll direction
         if (currentScroll > lastScrollTop) {
+            // Scrolling down
             requestAnimationFrame(() => {
                 if (!servicesDropdown.classList.contains('active')) {
                     header.style.transform = `translateY(-${header.offsetHeight}px)`;
@@ -27,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ticking = false;
             });
         } else {
+            // Scrolling up
             requestAnimationFrame(() => {
                 header.style.transform = 'translateY(0)';
                 nav.style.transform = 'translateY(0)';
@@ -37,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollTop = currentScroll;
     }
 
+    // Throttle scroll events
     function onScroll() {
         if (!ticking) {
             requestAnimationFrame(() => {
@@ -51,17 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleDropdown(e) {
         if (window.innerWidth <= 768) {
             e.preventDefault();
-            const wasActive = servicesDropdown.classList.contains('active');
-            
-            // Close all other dropdowns first
-            document.querySelectorAll('.services-dropdown').forEach(dropdown => {
-                dropdown.classList.remove('active');
-            });
-            
             servicesDropdown.classList.toggle('active');
             
-            // Prevent header from hiding when dropdown is active
-            if (!wasActive) {
+            if (servicesDropdown.classList.contains('active')) {
                 header.style.transform = 'translateY(0)';
                 nav.style.transform = 'translateY(0)';
             }
@@ -74,13 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
     servicesLink.addEventListener('touchstart', toggleDropdown, { passive: false });
     servicesLink.addEventListener('click', toggleDropdown);
 
-    // Close dropdown when touching/clicking outside
+    // Close dropdown when touching outside
     document.addEventListener('touchstart', (e) => {
         if (!servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
         }
     }, { passive: true });
 
+    // Close dropdown when clicking outside
     document.addEventListener('click', (e) => {
         if (!servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
