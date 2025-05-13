@@ -20,7 +20,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.1);
@@ -115,7 +115,7 @@
 
 @media (max-width: 768px) {
     .slider {
-        aspect-ratio: 1/1;
+        aspect-ratio: 4/3;
         margin: 0;
         border-radius: 0;
         height: auto;
@@ -129,11 +129,12 @@
     .slides img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         object-position: center;
         position: absolute;
         top: 0;
         left: 0;
+        padding: 1rem;
     }
 
     .prev, .next {
