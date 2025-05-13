@@ -1,4 +1,3 @@
-// Use requestAnimationFrame for smoother header animations
 document.addEventListener('DOMContentLoaded', () => {
     let lastScrollTop = 0;
     let ticking = false;
@@ -6,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.main-nav');
     const servicesDropdown = document.querySelector('.services-dropdown');
     const servicesLink = servicesDropdown.querySelector('a');
+    let touchStartY = 0;
+    let touchEndY = 0;
 
     function updateHeader() {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
         
-        // Don't hide elements when at the top of the page
         if (currentScroll <= 0) {
             header.style.transform = 'translateY(0)';
             nav.style.transform = 'translateY(0)';
@@ -19,16 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Determine scroll direction
         if (currentScroll > lastScrollTop) {
-            // Scrolling down
             requestAnimationFrame(() => {
                 header.style.transform = `translateY(-${header.offsetHeight}px)`;
                 nav.style.transform = `translateY(-${header.offsetHeight}px)`;
                 ticking = false;
             });
         } else {
-            // Scrolling up
             requestAnimationFrame(() => {
                 header.style.transform = 'translateY(0)';
                 nav.style.transform = 'translateY(0)';
@@ -39,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollTop = currentScroll;
     }
 
-    // Throttle scroll events
     function onScroll() {
         if (!ticking) {
             requestAnimationFrame(() => {
@@ -50,13 +46,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Toggle dropdown on mobile
+    // Improved mobile dropdown handling
     function toggleDropdown(e) {
         if (window.innerWidth <= 768) {
             e.preventDefault();
+            e.stopPropagation();
+            
             const wasActive = servicesDropdown.classList.contains('active');
             
-            // Close all other dropdowns first
+            // Close all dropdowns first
             document.querySelectorAll('.services-dropdown').forEach(dropdown => {
                 dropdown.classList.remove('active');
             });
@@ -64,22 +62,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!wasActive) {
                 servicesDropdown.classList.add('active');
             }
-            
-            e.stopPropagation();
         }
     }
 
-    // Handle mobile touch events for services dropdown
-    servicesLink.addEventListener('touchstart', toggleDropdown);
+    // Enhanced touch event handling
+    servicesLink.addEventListener('touchstart', (e) => {
+        touchStartY = e.touches[0].clientY;
+        toggleDropdown(e);
+    }, { passive: false });
+
+    servicesLink.addEventListener('touchend', (e) => {
+        touchEndY = e.changedTouches[0].clientY;
+        if (Math.abs(touchEndY - touchStartY) < 10) {
+            toggleDropdown(e);
+        }
+    }, { passive: false });
+
     servicesLink.addEventListener('click', toggleDropdown);
 
-    // Close dropdown when touching/clicking outside
+    // Close dropdown when touching outside
     document.addEventListener('touchstart', (e) => {
         if (!servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
         }
     }, { passive: true });
 
+    // Close dropdown when clicking outside
     document.addEventListener('click', (e) => {
         if (!servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
@@ -87,11 +95,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close dropdown when scrolling
+    let scrollTimeout;
     window.addEventListener('scroll', () => {
-        if (window.innerWidth <= 768) {
-            servicesDropdown.classList.remove('active');
-        }
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            if (window.innerWidth <= 768) {
+                servicesDropdown.classList.remove('active');
+            }
+        }, 150);
     }, { passive: true });
 
     window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Close dropdown when window is resized
+    window.addEventListener('resize', () => {
+        servicesDropdown.classList.remove('active');
+    }, { passive: true });
 });
