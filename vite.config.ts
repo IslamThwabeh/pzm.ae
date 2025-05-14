@@ -15,18 +15,9 @@ export default defineConfig({
             return;
           }
 
-          // Redirect /blog.html to /blog
-          if (req.url === '/blog.html') {
-            res.writeHead(301, { Location: '/blog' });
-            res.end();
-            return;
-          }
-
-          // Redirect /index.html to /
-          if (req.url === '/index.html') {
-            res.writeHead(301, { Location: '/' });
-            res.end();
-            return;
+          // Handle SPA routing
+          if (req.url.startsWith('/services/') || req.url === '/blog' || req.url === '/blog-post') {
+            req.url = '/';
           }
 
           next();
@@ -42,13 +33,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-  },
-  css: {
-    preprocessorOptions: {
-      css: {
-        additionalData: `@import "./css/main.css";`
-      }
-    }
   },
   server: {
     open: true,

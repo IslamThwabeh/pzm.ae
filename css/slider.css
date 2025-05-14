@@ -1,9 +1,12 @@
 /* Modern Slider */
 .slider {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - var(--header-height) - var(--nav-height));
-    margin: 0;
+    margin: 0 -50vw;
+    left: 50%;
+    right: 50%;
+    position: relative;
     overflow: hidden;
     background-color: var(--bg-light);
 }
@@ -18,7 +21,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.1);
