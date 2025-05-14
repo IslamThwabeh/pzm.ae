@@ -9,12 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth <= 768) {
             e.preventDefault();
             servicesDropdown.classList.toggle('active');
+            
+            // Close other dropdowns
+            document.querySelectorAll('.services-dropdown').forEach(dropdown => {
+                if (dropdown !== servicesDropdown) {
+                    dropdown.classList.remove('active');
+                }
+            });
         }
     });
 
     // Close menus when clicking outside
     document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target)) {
+        if (!servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
         }
     });

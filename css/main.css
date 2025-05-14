@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #4CAF50;
     --secondary-color: #000000;
@@ -29,24 +35,11 @@
     --transition-slow: 0.5s ease;
 }
 
-@media (max-width: 768px) {
-    :root {
-        --header-height: 50px;
-        --nav-height: 40px;
-    }
-}
-
-/* Reset & Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: calc(var(--header-height) + var(--nav-height));
     touch-action: manipulation;
+    height: 100%;
 }
 
 body {
@@ -64,9 +57,9 @@ body {
 main {
     flex: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: var(--space-md);
+    padding: 0;
 }
 
 section {
@@ -147,14 +140,12 @@ li {
     font-size: 1.125rem;
 }
 
-/* Reviews Section */
 .reviews {
     text-align: center;
     padding: var(--space-xxl) var(--space-xl);
     background: linear-gradient(to bottom, var(--bg-white), var(--bg-light));
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: var(--space-xl);
@@ -163,7 +154,6 @@ footer {
     margin-top: var(--space-xl);
 }
 
-/* WhatsApp Banner */
 #whatsapp-banner {
     position: fixed;
     bottom: var(--space-lg);
@@ -193,7 +183,6 @@ footer {
     margin-right: var(--space-md);
 }
 
-/* Categories Enhancement */
 .category {
     position: relative;
     overflow: hidden;
@@ -247,7 +236,6 @@ footer {
     transform: scale(1.05);
 }
 
-/* Enhanced Service Cards */
 .service-card {
     background: white;
     border-radius: var(--radius-lg);
@@ -277,8 +265,12 @@ footer {
     margin-bottom: var(--space-md);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
+    :root {
+        --header-height: 50px;
+        --nav-height: 40px;
+    }
+    
     section {
         padding: var(--space-lg);
         margin-bottom: var(--space-lg);
