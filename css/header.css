@@ -163,16 +163,18 @@
     }
 
     .logo {
-        width: 140px;
-        height: 40px;
+        width: 120px;
+        height: 35px;
+        min-width: 120px;
     }
 
     .header-text h1 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        line-height: 1.1;
     }
 
     .tagline {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .main-nav {
