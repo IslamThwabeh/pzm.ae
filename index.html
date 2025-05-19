@@ -21,27 +21,35 @@
     <meta name="author" content="PZM Computer Phone Trading & Repair">
     <meta name="robots" content="index, follow">
 	<meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' 
-        https://www.googletagmanager.com 
-        https://static.elfsight.com 
-        https://maps.googleapis.com 
-        https://maps.gstatic.com 
-        'unsafe-inline' 
-        'unsafe-eval';
-    img-src 'self' 
-        https://images.pexels.com 
-        https://maps.gstatic.com 
-        https://maps.googleapis.com 
-        data:;
-    frame-src 'self' 
-        https://www.google.com 
-        https://maps.google.com;
-    connect-src 'self' 
-        https://maps.googleapis.com 
-        https://www.google-analytics.com 
-        https://region1.google-analytics.com;
-">
+		default-src 'self';
+		script-src 'self' 
+			https://www.googletagmanager.com 
+			https://static.elfsight.com 
+			https://maps.googleapis.com 
+			https://maps.gstatic.com 
+			https://core.service.elfsight.com 
+			'unsafe-inline' 
+			'unsafe-eval';
+		style-src 'self' 
+			'unsafe-inline' 
+			https://fonts.googleapis.com;
+		img-src 'self' 
+			https://images.pexels.com 
+			https://maps.gstatic.com 
+			https://maps.googleapis.com 
+			data:;
+		frame-src 'self' 
+			https://www.google.com 
+			https://maps.google.com;
+		connect-src 'self' 
+			https://maps.googleapis.com 
+			https://www.google-analytics.com 
+			https://region1.google-analytics.com 
+			https://cors-anywhere.herokuapp.com 
+			https://core.service.elfsight.com;
+		font-src 'self' 
+			https://fonts.gstatic.com;
+	">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSJ08ST3JL"></script>
