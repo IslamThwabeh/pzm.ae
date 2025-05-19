@@ -1,34 +1,66 @@
 document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
+    let isPlaying = true;
+    let slideInterval;
     const slides = document.querySelectorAll('.slides img');
     const totalSlides = slides.length;
     
-    // Create slide indicators
-    const indicatorsContainer = document.createElement('div');
-    indicatorsContainer.className = 'slide-indicators';
-    for (let i = 0; i < totalSlides; i++) {
-        const indicator = document.createElement('div');
-        indicator.className = `indicator ${i === 0 ? 'active' : ''}`;
-        indicator.addEventListener('click', () => showSlide(i));
-        indicatorsContainer.appendChild(indicator);
-    }
-    document.querySelector('.slider').appendChild(indicatorsContainer);
+    // Create slide containers and descriptions
+    const slidesContainer = document.querySelector('.slides');
+    slidesContainer.innerHTML = '';
+    
+    const descriptions = [
+        "Get the best value for your old iPhones. Professional evaluation and instant payment.",
+        "Expert repair services for all your devices. Fast, reliable, and warranty-backed repairs.",
+        "Breathe new life into your MacBook with our professional repair and upgrade services.",
+        "Sell your old MacBook for the best price. Quick evaluation and same-day payment.",
+        "Comprehensive tech solutions under one roof. Sales, repairs, and professional support."
+    ];
+    
+    slides.forEach((img, index) => {
+        const slide = document.createElement('div');
+        slide.className = `slide ${index === 0 ? 'active' : ''}`;
+        slide.innerHTML = `
+            <img src="${img.src}" alt="${img.alt}" class="slide-image">
+            <div class="slide-content">
+                <p class="slide-description">${descriptions[index]}</p>
+            </div>
+        `;
+        slidesContainer.appendChild(slide);
+    });
+    
+    // Create slider controls
+    const controls = document.createElement('div');
+    controls.className = 'slider-controls';
+    controls.innerHTML = `
+        <button class="control-button prev-button" aria-label="Previous slide">
+            <span>⟨</span>
+        </button>
+        <button class="control-button play-pause" aria-label="Play/Pause slideshow">
+            <span class="play-icon">❙❙</span>
+        </button>
+        <button class="control-button next-button" aria-label="Next slide">
+            <span>⟩</span>
+        </button>
+        <div class="slide-indicators">
+            ${Array(totalSlides).fill().map((_, i) => 
+                `<div class="indicator ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+            ).join('')}
+        </div>
+    `;
+    document.querySelector('.slider').appendChild(controls);
     
     function showSlide(n) {
-        // Remove active class from all slides and indicators
-        slides.forEach(slide => {
-            slide.classList.remove('active');
-            slide.style.zIndex = 0;
-        });
-        document.querySelectorAll('.indicator').forEach(ind => ind.classList.remove('active'));
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
         
-        // Reset to first slide if we've reached the end
+        slides.forEach(slide => slide.classList.remove('active'));
+        indicators.forEach(ind => ind.classList.remove('active'));
+        
         currentSlide = n >= totalSlides ? 0 : n < 0 ? totalSlides - 1 : n;
         
-        // Show the current slide
         slides[currentSlide].classList.add('active');
-        slides[currentSlide].style.zIndex = 1;
-        document.querySelectorAll('.indicator')[currentSlide].classList.add('active');
+        indicators[currentSlide].classList.add('active');
     }
     
     function nextSlide() {
@@ -39,14 +71,61 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide - 1);
     }
     
-    // Add click handlers for next/prev buttons
-    document.querySelector('.next').addEventListener('click', nextSlide);
-    document.querySelector('.prev').addEventListener('click', prevSlide);
+    function togglePlayPause() {
+        const playPauseBtn = document.querySelector('.play-pause');
+        isPlaying = !isPlaying;
+        
+        if (isPlaying) {
+            playPauseBtn.innerHTML = '<span class="play-icon">❙❙</span>';
+            startSlideshow();
+        } else {
+            playPauseBtn.innerHTML = '<span class="play-icon">▶</span>';
+            stopSlideshow();
+        }
+    }
     
-    // Auto-advance slides every 5 seconds
-    setInterval(nextSlide, 5000);
+    function startSlideshow() {
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 5000);
+    }
     
-    // Touch support for mobile
+    function stopSlideshow() {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+            slideInterval = null;
+        }
+    }
+    
+    // Event Listeners
+    document.querySelector('.prev').addEventListener('click', () => {
+        prevSlide();
+        if (isPlaying) {
+            stopSlideshow();
+            startSlideshow();
+        }
+    });
+    
+    document.querySelector('.next').addEventListener('click', () => {
+        nextSlide();
+        if (isPlaying) {
+            stopSlideshow();
+            startSlideshow();
+        }
+    });
+    
+    document.querySelector('.play-pause').addEventListener('click', togglePlayPause);
+    
+    document.querySelectorAll('.indicator').forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            showSlide(index);
+            if (isPlaying) {
+                stopSlideshow();
+                startSlideshow();
+            }
+        });
+    });
+    
+    // Touch support
     let touchStartX = 0;
     let touchEndX = 0;
     
@@ -71,37 +150,14 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 prevSlide();
             }
+            
+            if (isPlaying) {
+                stopSlideshow();
+                startSlideshow();
+            }
         }
     }
-
-    // Add scroll animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Add animation classes to elements
-    document.querySelectorAll('.category').forEach((el, index) => {
-        el.classList.add('animate-on-scroll');
-        el.classList.add(index % 2 === 0 ? 'animate-from-left' : 'animate-from-right');
-        observer.observe(el);
-    });
-
-    document.querySelectorAll('section').forEach((el, index) => {
-        if (!el.classList.contains('slider')) {
-            el.classList.add('animate-on-scroll');
-            el.classList.add('animate-from-bottom');
-            observer.observe(el);
-        }
-    });
+    
+    // Start the slideshow
+    startSlideshow();
 });
