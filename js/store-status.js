@@ -10,7 +10,7 @@ const FALLBACK_WEEKDAY_TEXT = [
   "Thursday: 8:00 AM – 11:00 PM",
   "Friday: 8:00 AM – 12:00 AM",
   "Saturday: 7:00 AM – 1:00 AM",
-  "Sunday: 7:00 AM – 1:00 PM"
+  "Sunday: 7:00 AM – 1:00 AM"
 ];
 
 async function fetchBusinessHours() {
