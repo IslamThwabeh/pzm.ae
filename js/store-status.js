@@ -1,7 +1,7 @@
 // store-status.js
 function loadBusinessHours() {
     const hoursDivs = document.querySelectorAll('.hours');
-    const apiUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ1aZJvMBtXz4RLrOI1vITjBU&fields=opening_hours&key=AIzaSyBcD7hYodf1KBgvfejaxk9Lk-vVEcV1go8`;
+    // const apiUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ1aZJvMBtXz4RLrOI1vITjBU&fields=opening_hours&key=AIzaSyBcD7hYodf1KBgvfejaxk9Lk-vVEcV1go8`;
 	// store-status.js
 	const apiUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ1aZJvMBtXz4RLrOI1vITjBU&fields=opening_hours&key=AIzaSyBcD7hYodf1KBgvfejaxk9Lk-vVEcV1go8`;
 
