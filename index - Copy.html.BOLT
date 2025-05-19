@@ -214,7 +214,7 @@
     <script src="js/header.js"></script>
     <script src="js/slider.js"></script>
     <script type="module" src="js/blog.js"></script>
-	<script type="module" src="store-status.js"></script>
+    <script src="js/store-status.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
