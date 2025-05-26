@@ -21,7 +21,7 @@
 
 .logo {
     width: 90px;
-    height: 55px;
+    height: 57px;
     margin-bottom: 0px;
     transition: transform var(--transition-fast);
     object-fit: cover;
