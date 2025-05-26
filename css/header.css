@@ -20,14 +20,23 @@
 }
 
 .logo {
-    width: 90px;
-    height: 57px;
-    margin-bottom: 0px;
-    transition: transform var(--transition-fast);
-    object-fit: cover;
-    border-radius: 10px;
-    padding: 0px;
-    background: white;
+  width: 90px;
+  height: 57px;
+  margin-bottom: 0px;
+  transition: transform var(--transition-fast);
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 0px;
+  background: white;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  .logo {
+    width: 60px;   /* smaller width */
+    height: 38px;  /* smaller height */
+    border-radius: 7px;
+  }
 }
 
 .logo:hover {
