@@ -30,15 +30,6 @@
   background: white;
 }
 
-/* Responsive styles for mobile devices */
-@media (max-width: 600px) {
-  .logo {
-    width: 60px;   /* smaller width */
-    height: 38px;  /* smaller height */
-    border-radius: 7px;
-  }
-}
-
 .logo:hover {
     transform: scale(1.05);
 }
@@ -171,11 +162,11 @@
         padding: var(--space-xs);
     }
 
-    .logo {
-        width: 120px;
-        height: 35px;
-        min-width: 120px;
-    }
+  .logo {
+    width: 60px;   /* smaller width */
+    height: 38px;  /* smaller height */
+    border-radius: 7px;
+  }
 
     .header-text h1 {
         font-size: 0.9rem;
