@@ -15,7 +15,7 @@ const blogPosts = [
 
     Finally, don't forget about cooling and airflow. Whether you choose air cooling or liquid cooling, ensure your case has adequate airflow with strategically placed fans. Modern cases with mesh fronts and multiple fan mounts can significantly improve thermal performance.`,
     excerpt: "A comprehensive guide to building your dream gaming PC with the right components, from CPU and GPU selection to cooling solutions.",
-    image_url: "https://images.pexels.com/photos/1034312/pexels-photo-1034312.jpeg",
+    image_url: "images/blog/gaming-pc-build.jpg",
     category: "Gaming"
   },
   {
