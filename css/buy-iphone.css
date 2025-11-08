@@ -1,0 +1,279 @@
+/* Buy iPhone Page Styles */
+
+.iphone-hero {
+    text-align: center;
+    padding: var(--space-xxl) var(--space-xl);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    margin-bottom: var(--space-xl);
+}
+
+.iphone-hero h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.iphone-hero h2:after {
+    background: white;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+.iphone-model-section {
+    max-width: 1200px;
+    margin: 0 auto var(--space-xxl) auto;
+    padding: var(--space-xl);
+    background-color: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.model-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--space-md);
+    position: relative;
+    padding-bottom: var(--space-md);
+}
+
+.model-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: var(--radius-sm);
+}
+
+.model-description {
+    text-align: center;
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: var(--space-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iphone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.iphone-card {
+    background-color: var(--bg-light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.iphone-image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg);
+}
+
+.iphone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform var(--transition-normal);
+}
+
+.iphone-card:hover .iphone-image {
+    transform: scale(1.05);
+}
+
+.iphone-info {
+    padding: var(--space-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.iphone-info h4 {
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    margin-bottom: var(--space-xs);
+}
+
+.color-name {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+}
+
+.buy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.buy-btn:hover {
+    background: linear-gradient(135deg, #128C7E, #075E54);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    color: white;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Why Buy Section */
+.why-buy-section {
+    max-width: 1200px;
+    margin: 0 auto var(--space-xxl) auto;
+    padding: var(--space-xl);
+    background: linear-gradient(135deg, var(--bg-light), var(--bg-white));
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.why-buy-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--space-xl);
+    position: relative;
+    padding-bottom: var(--space-md);
+}
+
+.why-buy-section h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: var(--radius-sm);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+}
+
+.benefit-card {
+    background-color: var(--bg-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    border-left: 4px solid var(--primary-color);
+}
+
+.benefit-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+}
+
+.benefit-card h4 {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-bottom: var(--space-sm);
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .iphone-hero h2 {
+        font-size: 1.875rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .model-title {
+        font-size: 1.5rem;
+    }
+
+    .model-description {
+        font-size: 1rem;
+    }
+
+    .iphone-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .iphone-model-section {
+        padding: var(--space-lg);
+    }
+
+    .why-buy-section {
+        padding: var(--space-lg);
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .buy-btn {
+        font-size: 0.875rem;
+        padding: var(--space-sm) var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .iphone-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iphone-hero {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .iphone-hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
