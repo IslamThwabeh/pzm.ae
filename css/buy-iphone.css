@@ -1,279 +1,301 @@
-/* Buy iPhone Page Styles */
+/* Buy iPhone Page Styles - Updated for Single Multi-Color Images */
 
 .iphone-hero {
     text-align: center;
-    padding: var(--space-xxl) var(--space-xl);
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #00A76F 0%, #008f5d 100%);
     color: white;
-    margin-bottom: var(--space-xl);
 }
 
-.iphone-hero h2 {
-    color: white;
+.iphone-hero h1 {
     font-size: 2.5rem;
-    margin-bottom: var(--space-md);
-}
-
-.iphone-hero h2:after {
-    background: white;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 0;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .iphone-model-section {
+    padding: 60px 20px;
     max-width: 1200px;
-    margin: 0 auto var(--space-xxl) auto;
-    padding: var(--space-xl);
-    background-color: var(--bg-white);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    margin: 0 auto;
 }
 
 .model-title {
-    text-align: center;
     font-size: 2rem;
-    color: var(--secondary-color);
-    margin-bottom: var(--space-md);
-    position: relative;
-    padding-bottom: var(--space-md);
-}
-
-.model-title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: var(--primary-color);
-    border-radius: var(--radius-sm);
+    color: #161C24;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .model-description {
     text-align: center;
-    font-size: 1.125rem;
-    color: var(--text-light);
-    margin-bottom: var(--space-xl);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #637381;
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
 }
 
-.iphone-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-xl);
-    margin-top: var(--space-xl);
-}
-
-.iphone-card {
-    background-color: var(--bg-light);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: all var(--transition-normal);
+/* Single Display Layout */
+.iphone-single-display {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.iphone-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+.iphone-card-large {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iphone-card-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 167, 111, 0.2);
 }
 
 .iphone-image-container {
     width: 100%;
-    aspect-ratio: 1;
-    overflow: hidden;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #f8f9fa;
+    padding: 30px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: var(--space-lg);
+    align-items: center;
 }
 
-.iphone-image {
+.iphone-image-large {
     width: 100%;
-    height: 100%;
+    max-width: 700px;
+    height: auto;
     object-fit: contain;
-    transition: transform var(--transition-normal);
 }
 
-.iphone-card:hover .iphone-image {
-    transform: scale(1.05);
-}
-
-.iphone-info {
-    padding: var(--space-lg);
+.iphone-info-large {
+    padding: 30px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
 }
 
-.iphone-info h4 {
-    font-size: 1.125rem;
-    color: var(--text-dark);
-    margin-bottom: var(--space-xs);
+.iphone-info-large h3 {
+    font-size: 1.8rem;
+    color: #161C24;
+    margin-bottom: 15px;
 }
 
-.color-name {
-    font-size: 1rem;
-    color: var(--text-light);
-    font-weight: 600;
-    margin-bottom: var(--space-md);
+.colors-list {
+    font-size: 1.1rem;
+    color: #637381;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-.buy-btn {
+.price {
+    font-size: 1.5rem;
+    color: #00A76F;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.offer-note {
+    font-size: 0.9rem;
+    color: #919EAB;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.buy-btn-large {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
-    padding: var(--space-md) var(--space-lg);
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    gap: 10px;
+    background: #25D366;
     color: white;
-    border-radius: var(--radius-sm);
-    font-weight: 600;
-    font-size: 0.95rem;
+    padding: 15px 40px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: all var(--transition-fast);
-    box-shadow: var(--shadow-sm);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
-.buy-btn:hover {
-    background: linear-gradient(135deg, #128C7E, #075E54);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    color: white;
+.buy-btn-large:hover {
+    background: #20BA5A;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .whatsapp-icon {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) invert(1);
+    width: 24px;
+    height: 24px;
 }
 
-/* Why Buy Section */
-.why-buy-section {
-    max-width: 1200px;
-    margin: 0 auto var(--space-xxl) auto;
-    padding: var(--space-xl);
-    background: linear-gradient(135deg, var(--bg-light), var(--bg-white));
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+/* Benefits Section */
+.benefits-section {
+    background: #f8f9fa;
+    padding: 60px 20px;
 }
 
-.why-buy-section h3 {
+.benefits-section h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--secondary-color);
-    margin-bottom: var(--space-xl);
-    position: relative;
-    padding-bottom: var(--space-md);
-}
-
-.why-buy-section h3:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: var(--primary-color);
-    border-radius: var(--radius-sm);
+    color: #161C24;
+    margin-bottom: 40px;
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .benefit-card {
-    background-color: var(--bg-white);
-    padding: var(--space-lg);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    transition: all var(--transition-normal);
-    border-left: 4px solid var(--primary-color);
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
 .benefit-card:hover {
-    transform: translateX(5px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-5px);
 }
 
-.benefit-card h4 {
-    font-size: 1.125rem;
-    color: var(--primary-color);
-    margin-bottom: var(--space-sm);
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    color: #161C24;
+    margin-bottom: 10px;
 }
 
 .benefit-card p {
-    font-size: 1rem;
-    color: var(--text-light);
-    margin-bottom: 0;
+    color: #637381;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #161C24;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.contact-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-item strong {
+    color: #161C24;
+    font-size: 1.1rem;
+}
+
+.contact-item a {
+    color: #00A76F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item span {
+    color: #637381;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .iphone-hero h2 {
-        font-size: 1.875rem;
+    .iphone-hero h1 {
+        font-size: 2rem;
     }
-
+    
     .hero-subtitle {
         font-size: 1rem;
     }
-
+    
     .model-title {
         font-size: 1.5rem;
     }
-
+    
     .model-description {
         font-size: 1rem;
     }
-
-    .iphone-grid {
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: var(--space-lg);
+    
+    .iphone-info-large h3 {
+        font-size: 1.4rem;
     }
-
-    .iphone-model-section {
-        padding: var(--space-lg);
+    
+    .price {
+        font-size: 1.3rem;
     }
-
-    .why-buy-section {
-        padding: var(--space-lg);
+    
+    .buy-btn-large {
+        padding: 12px 30px;
+        font-size: 1rem;
     }
-
+    
     .benefits-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-md);
     }
-
-    .buy-btn {
-        font-size: 0.875rem;
-        padding: var(--space-sm) var(--space-md);
+    
+    .contact-info {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    .iphone-grid {
-        grid-template-columns: 1fr;
-    }
-
     .iphone-hero {
-        padding: var(--space-xl) var(--space-md);
+        padding: 40px 15px;
     }
-
-    .iphone-hero h2 {
-        font-size: 1.5rem;
+    
+    .iphone-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .iphone-model-section {
+        padding: 40px 15px;
+    }
+    
+    .iphone-image-container {
+        padding: 20px;
+    }
+    
+    .iphone-info-large {
+        padding: 20px;
     }
 }
 
