@@ -1,16 +1,12 @@
-// Store hours functionality using Vercel proxy, with fallback
-
-const PROXY_URL = "https://v0-new-project-qzwov1iaoxx.vercel.app/api/google-places-proxy";
-
 // Hardcoded fallback hours
 const FALLBACK_WEEKDAY_TEXT = [
-  "Monday: 8:00 AM – 12:00 AM",
-  "Tuesday: 8:00 AM – 12:00 AM",
-  "Wednesday: 8:00 AM – 1:00 AM",
-  "Thursday: 8:00 AM – 11:00 PM",
-  "Friday: 8:00 AM – 12:00 AM",
-  "Saturday: 7:00 AM – 1:00 AM",
-  "Sunday: 7:00 AM – 1:00 AM"
+  "Monday: 9:30 AM – 11:00 PM",
+  "Tuesday: 9:30 AM – 11:00 PM",
+  "Wednesday: 9:30 AM – 11:00 PM",
+  "Thursday: 9:30 AM – 11:00 PM",
+  "Friday: 9:30 AM – 11:00 PM",
+  "Saturday: 9:30 AM – 11:00 PM",
+  "Sunday: 9:30 AM – 1:00 AM"
 ];
 
 async function fetchBusinessHours() {
