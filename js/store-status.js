@@ -3,11 +3,11 @@ const PROXY_URL = 'https://test.pzm.ae/api/business-hours';
 
 // Hardcoded fallback hours (used if API fails)
 const FALLBACK_WEEKDAY_TEXT = [
-  "Monday: 8 AM – 12 AM",
-  "Tuesday: 8 AM – 12 AM",
-  "Wednesday: 8 AM – 12 AM",
-  "Thursday: 8 AM – 12 AM",
-  "Friday: 9:30 AM – 12 AM",
+  "Monday: 8 AM – 11 PM",
+  "Tuesday: 8 AM – 11 PM",
+  "Wednesday: 8 AM – 11 PM",
+  "Thursday: 8 AM – 11 PM",
+  "Friday: 9:30 AM – 11 PM",
   "Saturday: 7 AM – 1 AM",
   "Sunday: 7 AM – 1 AM"
 ];
@@ -47,7 +47,7 @@ async function updateStoreStatus() {
 
   // Set status (open/closed)
   if (hoursData.openNow === true) {
-    statusElement.innerHTML = '<span class="open-status">Open</span>';
+    statusElement.innerHTML = '<span class="open-status">Open Now</span>';
   } else if (hoursData.openNow === false) {
     statusElement.innerHTML = '<span class="closed-status">Closed</span>';
   } else {
@@ -67,7 +67,7 @@ function displayHours(weekdayText) {
   
   // Generate HTML with proper structure for two-column layout
   const hoursHTML = weekdayText.map(dayText => {
-    // Parse "Monday: 8 AM – 12 AM" format
+    // Parse "Monday: 8 AM – 11 PM" format
     const colonIndex = dayText.indexOf(':');
     if (colonIndex === -1) {
       return `<div class="hours-item"><span>${dayText}</span></div>`;
