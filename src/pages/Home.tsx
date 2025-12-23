@@ -131,8 +131,9 @@ export function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
               <div className="space-y-2">
-                <p><strong>Monday - Saturday:</strong> 10:00 AM - 10:00 PM</p>
-                <p><strong>Sunday:</strong> 11:00 AM - 9:00 PM</p>
+                <p><strong>Monday - Thursday:</strong> 8 AM – 12 AM</p>
+                <p><strong>Friday:</strong> 9:30 AM – 12 AM</p>
+                <p><strong>Saturday - Sunday:</strong> 7 AM – 1 AM</p>
                 <p className="mt-4">
                   Extended hours available by appointment for emergency repairs and corporate clients.
                 </p>
