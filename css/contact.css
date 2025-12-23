@@ -109,6 +109,8 @@
     font-weight: 500;
     font-size: 0.9rem;
     text-align: right;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    letter-spacing: 0.5px;
 }
 
 /* Store Status Styles */
