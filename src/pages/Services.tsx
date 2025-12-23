@@ -9,7 +9,7 @@ export function Services() {
       case 'brand-new':
         return {
           title: 'Brand New Devices',
-          description: `At PZM Computer Phone Trading & Repair, we offer a comprehensive selection of brand new devices from leading manufacturers. All our products come with official warranty and genuine accessories.
+          description: `At PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build, we offer a comprehensive selection of brand new devices from leading manufacturers. All our products come with official warranty and genuine accessories.
 
 Smartphones & Mobile Devices:
 - Latest iPhone models with all storage configurations
@@ -73,7 +73,7 @@ Visit our store today to explore our latest collection of brand new devices. Our
       case 'secondhand':
         return {
           title: 'Quality Pre-owned Devices',
-          description: `At PZM Computer Phone Trading & Repair, we specialize in providing high-quality pre-owned devices that combine reliability with affordability. Each device undergoes our comprehensive certification process to ensure you receive a dependable product that meets our strict quality standards.
+          description: `At PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build, we specialize in providing high-quality pre-owned devices that combine reliability with affordability. Each device undergoes our comprehensive certification process to ensure you receive a dependable product that meets our strict quality standards.
 
           Our Pre-owned Device Categories:
           
@@ -172,7 +172,7 @@ Visit our store today to explore our latest collection of brand new devices. Our
       case 'sell-gadgets':
         return {
           title: 'Sell Your Devices',
-          description: `Get the best value for your used electronics with our transparent and efficient buying process. At PZM Computer Phone Trading & Repair, we offer competitive prices and instant payment for your devices.
+          description: `Get the best value for your used electronics with our transparent and efficient buying process. At PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build, we offer competitive prices and instant payment for your devices.
 
           Devices We Accept:
           - iPhones (iPhone X and newer)

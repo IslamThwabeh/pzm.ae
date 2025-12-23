@@ -19,10 +19,10 @@ export function Home() {
 
       {/* Introduction Section */}
       <section className="intro-section bg-white p-8 rounded-lg shadow-md mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-center">Welcome to PZM Computer Phone Trading & Repair</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center">Welcome to PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build</h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg mb-4">
-            Located in the heart of Dubai, PZM Computer Phone Trading & Repair is your trusted destination for all things tech. 
+            Located in the heart of Dubai, PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build is your trusted destination for all things tech. 
             With over a decade of experience, we specialize in providing comprehensive solutions for your electronic devices, 
             from sales and repairs to custom builds and accessories.
           </p>

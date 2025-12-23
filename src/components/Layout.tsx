@@ -9,7 +9,7 @@ export function Layout() {
         <div className="header-content">
           <img src="/images/mini_logo.png" alt="PZM Logo" className="logo" />
           <div className="header-text">
-            <h1>PZM Computer Phone Trading & Repair</h1>
+            <h1>PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build</h1>
             <p className="tagline">(New, Used, Sell, Build)</p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export function Layout() {
 
       {/* Footer */}
       <footer>
-        <p>PZM Computer Phone Trading & Repair<br /> &copy; {new Date().getFullYear()} All rights reserved.</p>
+        <p>PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build<br /> &copy; {new Date().getFullYear()} All rights reserved.</p>
       </footer>
     </div>
   );
