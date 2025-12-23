@@ -1,39 +1,32 @@
 // PZM Business Hours - Fetches from your Cloudflare Worker API
 const PROXY_URL = 'https://test.pzm.ae/api/business-hours';
 
-// Hardcoded fallback hours in 24-hour format
+// Hardcoded fallback hours in hh:mm AM/PM format
 const FALLBACK_WEEKDAY_TEXT = [
-  "Monday: 08:00 – 23:00",
-  "Tuesday: 08:00 – 23:00",
-  "Wednesday: 08:00 – 23:00",
-  "Thursday: 08:00 – 23:00",
-  "Friday: 09:30 – 23:00",
-  "Saturday: 07:00 – 01:00",
-  "Sunday: 07:00 – 01:00"
+  "Monday: 08:00 AM – 11:00 PM",
+  "Tuesday: 08:00 AM – 11:00 PM",
+  "Wednesday: 08:00 AM – 11:00 PM",
+  "Thursday: 08:00 AM – 11:00 PM",
+  "Friday: 09:30 AM – 11:00 PM",
+  "Saturday: 07:00 AM – 01:00 AM",
+  "Sunday: 07:00 AM – 01:00 AM"
 ];
 
-// Convert 12-hour format to 24-hour format
-function convertTo24Hour(timeStr) {
+// Convert time to hh:mm AM/PM format
+function formatTime(timeStr) {
   // Handle formats like "8 AM", "9:30 AM", "11 PM", "1 AM"
-  const match = timeStr.match(/(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/i);
+  const match = timeStr.trim().match(/(\d{1,2})(?::(\d{2}))?\s*(AM|PM)/i);
   if (!match) return timeStr;
   
-  let hours = parseInt(match[1]);
+  const hours = match[1].padStart(2, '0');
   const minutes = match[2] || '00';
   const period = match[3].toUpperCase();
   
-  if (period === 'PM' && hours !== 12) {
-    hours += 12;
-  } else if (period === 'AM' && hours === 12) {
-    hours = 0;
-  }
-  
-  return `${hours.toString().padStart(2, '0')}:${minutes}`;
+  return `${hours}:${minutes} ${period}`;
 }
 
-// Convert full day text to 24-hour format
-function convertDayTo24Hour(dayText) {
-  // Parse "Monday: 8 AM – 11 PM" format
+// Convert full day text to hh:mm AM/PM format
+function formatDayText(dayText) {
   const colonIndex = dayText.indexOf(':');
   if (colonIndex === -1) return dayText;
   
@@ -44,8 +37,8 @@ function convertDayTo24Hour(dayText) {
   const times = timePart.split(/\s*[–-]\s*/);
   if (times.length !== 2) return dayText;
   
-  const startTime = convertTo24Hour(times[0].trim());
-  const endTime = convertTo24Hour(times[1].trim());
+  const startTime = formatTime(times[0]);
+  const endTime = formatTime(times[1]);
   
   return `${day}: ${startTime} – ${endTime}`;
 }
@@ -77,13 +70,11 @@ async function updateStoreStatus() {
   const hoursData = await fetchBusinessHours();
 
   if (!hoursData) {
-    // Fallback: unknown open/closed status, show fallback hours
     statusElement.innerHTML = '<span class="closed-status">Business Hours</span>';
-    displayHours(FALLBACK_WEEKDAY_TEXT, true); // true = already in 24h format
+    displayHours(FALLBACK_WEEKDAY_TEXT, true);
     return;
   }
 
-  // Set status (open/closed)
   if (hoursData.openNow === true) {
     statusElement.innerHTML = '<span class="open-status">Open Now</span>';
   } else if (hoursData.openNow === false) {
@@ -92,38 +83,31 @@ async function updateStoreStatus() {
     statusElement.innerHTML = '<span class="closed-status">Business Hours</span>';
   }
 
-  // Show the Google-formatted business hours (convert to 24h)
   displayHours(hoursData.weekdayText, false);
 }
 
-function displayHours(weekdayText, alreadyConverted = false) {
+function displayHours(weekdayText, alreadyFormatted = false) {
   const hoursElement = document.querySelector('.hours');
   if (!weekdayText || !Array.isArray(weekdayText)) {
     hoursElement.textContent = "Business hours unavailable.";
     return;
   }
   
-  // Generate HTML with proper structure for two-column layout
   const hoursHTML = weekdayText.map(dayText => {
-    // Convert to 24-hour format if needed
-    const convertedText = alreadyConverted ? dayText : convertDayTo24Hour(dayText);
-    
-    // Parse "Monday: 08:00 – 23:00" format
-    const colonIndex = convertedText.indexOf(':');
+    const formattedText = alreadyFormatted ? dayText : formatDayText(dayText);
+    const colonIndex = formattedText.indexOf(':');
     if (colonIndex === -1) {
-      return `<div class="hours-item"><span>${convertedText}</span></div>`;
+      return `<div class="hours-item"><span>${formattedText}</span></div>`;
     }
-    const day = convertedText.substring(0, colonIndex).trim();
-    const time = convertedText.substring(colonIndex + 1).trim();
+    const day = formattedText.substring(0, colonIndex).trim();
+    const time = formattedText.substring(colonIndex + 1).trim();
     return `<div class="hours-item"><span class="hours-day">${day}</span><span class="hours-time">${time}</span></div>`;
   }).join('');
   
   hoursElement.innerHTML = hoursHTML;
 }
 
-// Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   updateStoreStatus();
-  // Update status every minute
   setInterval(updateStoreStatus, 60000);
 });
