@@ -10,7 +10,6 @@ export function Layout() {
           <img src="/images/mini_logo.png" alt="PZM Logo" className="logo" />
           <div className="header-text">
             <h1>PZM Computers & Phones Store -Buy•Sell•Fix•Used•PC•Build</h1>
-            <p className="tagline">(New, Used, Sell, Build)</p>
           </div>
         </div>
       </header>
