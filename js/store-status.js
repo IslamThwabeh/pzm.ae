@@ -1,4 +1,7 @@
-// Hardcoded fallback hours
+// PZM Business Hours - Fetches from your Cloudflare Worker API
+const PROXY_URL = 'https://test.pzm.ae/api/business-hours';
+
+// Hardcoded fallback hours (used if API fails)
 const FALLBACK_WEEKDAY_TEXT = [
   "Monday: 8 AM – 12 AM",
   "Tuesday: 8 AM – 12 AM",
@@ -43,9 +46,13 @@ async function updateStoreStatus() {
   }
 
   // Set status (open/closed)
-  statusElement.innerHTML = hoursData.openNow
-    ? '<span class="open-status">Open</span>'
-    : '<span class="closed-status">Closed</span>';
+  if (hoursData.openNow === true) {
+    statusElement.innerHTML = '<span class="open-status">Open</span>';
+  } else if (hoursData.openNow === false) {
+    statusElement.innerHTML = '<span class="closed-status">Closed</span>';
+  } else {
+    statusElement.innerHTML = '<span class="closed-status">Business Hours</span>';
+  }
 
   // Show the Google-formatted business hours
   displayHours(hoursData.weekdayText);
@@ -57,8 +64,20 @@ function displayHours(weekdayText) {
     hoursElement.textContent = "Business hours unavailable.";
     return;
   }
-  // Join using line breaks for readability
-  hoursElement.textContent = weekdayText.join('\n');
+  
+  // Generate HTML with proper structure for two-column layout
+  const hoursHTML = weekdayText.map(dayText => {
+    // Parse "Monday: 8 AM – 12 AM" format
+    const colonIndex = dayText.indexOf(':');
+    if (colonIndex === -1) {
+      return `<div class="hours-item"><span>${dayText}</span></div>`;
+    }
+    const day = dayText.substring(0, colonIndex).trim();
+    const time = dayText.substring(colonIndex + 1).trim();
+    return `<div class="hours-item"><span class="hours-day">${day}</span><span class="hours-time">${time}</span></div>`;
+  }).join('');
+  
+  hoursElement.innerHTML = hoursHTML;
 }
 
 // Initialize when DOM is ready

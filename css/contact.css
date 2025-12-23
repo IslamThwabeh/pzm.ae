@@ -75,8 +75,27 @@
     border-top: 1px solid rgba(0,0,0,0.1);
     font-weight: 500;
     color: var(--text-dark);
-    white-space: pre-line;
-    line-height: 1.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 1.5rem;
+    line-height: 1.5;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.hours-day {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.hours-time {
+    color: var(--text-muted);
+    text-align: right;
 }
 
 /* Store Status Styles */
@@ -135,6 +154,10 @@
     .contact-info, 
     .address {
         padding: var(--space-md);
+    }
+
+    .hours {
+        grid-template-columns: 1fr;
     }
 
     .map-container {
