@@ -23,6 +23,25 @@
       <image:title>iPhone 17 Pro Silver Dubai</image:title>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://pzm.ae/services/buy-used.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</image:loc>
+      <image:title>Used iPhone 16 Pro Max Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_iphone_15_pro_max_main.webp</image:loc>
+      <image:title>Used iPhone 15 Pro Max Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</image:loc>
+      <image:title>Used Laptops Collection Dubai</image:title>
+    </image:image>
+  </url>
   
   <url>
     <loc>https://pzm.ae/blog.html</loc>
