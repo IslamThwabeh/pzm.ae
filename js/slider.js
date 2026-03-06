@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const slide = document.createElement('div');
         slide.className = `slide ${index === 0 ? 'active' : ''}`;
         slide.innerHTML = `
-            <img src="${img.src}" alt="${img.alt}" class="slide-image">
+            <img src="${img.src}" alt="${img.alt}" class="slide-image" ${index === 0 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
             <div class="slide-content">
                 <p class="slide-description">${descriptions[index]}</p>
             </div>
