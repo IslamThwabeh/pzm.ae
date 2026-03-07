@@ -7,6 +7,13 @@
     color: #fff;
     position: relative;
     overflow: hidden;
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.inventory-hero:hover {
+    transform: none;
 }
 
 .inventory-hero.brand-new {
@@ -29,12 +36,18 @@
 .inventory-hero p {
     position: relative;
     z-index: 2;
+    color: #fff;
 }
 
 .inventory-hero h1 {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 12px;
+    color: #fff;
+}
+
+.inventory-hero h1::after {
+    display: none;
 }
 
 .inventory-hero p {
@@ -43,13 +56,21 @@
     font-size: 1.15rem;
     line-height: 1.6;
     opacity: 0.95;
+    color: rgba(255, 255, 255, 0.92);
 }
 
-/* Inventory sections */
+/* Inventory sections — override global section styles */
 .inventory-section {
     max-width: 960px;
     margin: 0 auto;
     padding: 40px 20px 10px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.inventory-section:hover {
+    transform: none;
 }
 
 .inventory-category-title {
@@ -58,6 +79,11 @@
     margin-bottom: 16px;
     padding-bottom: 8px;
     border-bottom: 3px solid #00A76F;
+    text-align: left;
+}
+
+.inventory-category-title::after {
+    display: none;
 }
 
 .inventory-list {
@@ -67,21 +93,28 @@
     overflow: hidden;
 }
 
-.inventory-item {
+/* Clickable item row → links to WhatsApp */
+a.inventory-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 14px 20px;
-    border-bottom: 1px solid #f4f6f8;
+    border-bottom: 1px solid #f0f0f0;
     gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+    transition: background 0.15s;
+    cursor: pointer;
 }
 
-.inventory-item:last-child {
+a.inventory-item:last-child {
     border-bottom: none;
 }
 
-.inventory-item:hover {
-    background: #f9fafb;
+a.inventory-item:hover {
+    background: #e8f5e9;
+    color: inherit;
 }
 
 .item-info {
@@ -93,7 +126,7 @@
     display: block;
     font-size: 0.95rem;
     color: #212B36;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .item-details {
@@ -112,15 +145,27 @@
 .item-price {
     font-weight: 700;
     color: #00A76F;
-    font-size: 1rem;
+    font-size: 1.05rem;
     white-space: nowrap;
     flex-shrink: 0;
 }
 
 .item-price.contact {
-    color: #919EAB;
+    color: #637381;
     font-weight: 500;
     font-size: 0.85rem;
+}
+
+.item-whatsapp-hint {
+    display: none;
+    font-size: 0.75rem;
+    color: #25D366;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+a.inventory-item:hover .item-whatsapp-hint {
+    display: block;
 }
 
 /* CTA at bottom of inventory */
@@ -131,6 +176,11 @@
     padding: 30px 20px;
     background: #f4f6f8;
     border-radius: 12px;
+    box-shadow: none;
+}
+
+.inventory-cta:hover {
+    transform: none;
 }
 
 .inventory-cta p {
@@ -153,6 +203,7 @@
 
 .inventory-cta .cta-button:hover {
     background: #128C7E;
+    color: #fff;
     transform: translateY(-2px);
 }
 
@@ -162,7 +213,7 @@
         font-size: 2rem;
     }
 
-    .inventory-item {
+    a.inventory-item {
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
@@ -178,7 +229,7 @@
         font-size: 1.5rem;
     }
 
-    .inventory-item {
+    a.inventory-item {
         padding: 12px 16px;
     }
 }
