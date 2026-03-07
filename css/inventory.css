@@ -1,0 +1,184 @@
+/* Inventory Page Styles — shared across brand-new and buy-used pages */
+
+/* Hero banner */
+.inventory-hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.inventory-hero.brand-new {
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+}
+
+.inventory-hero.preowned {
+    background: linear-gradient(135deg, #00A76F, #008f5d);
+}
+
+.inventory-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.08);
+    z-index: 1;
+}
+
+.inventory-hero h1,
+.inventory-hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.inventory-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.inventory-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Inventory sections */
+.inventory-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px 10px;
+}
+
+.inventory-category-title {
+    font-size: 1.5rem;
+    color: #161C24;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #00A76F;
+}
+
+.inventory-list {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.inventory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #f4f6f8;
+    gap: 16px;
+}
+
+.inventory-item:last-child {
+    border-bottom: none;
+}
+
+.inventory-item:hover {
+    background: #f9fafb;
+}
+
+.item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.item-name {
+    display: block;
+    font-size: 0.95rem;
+    color: #212B36;
+    font-weight: 500;
+}
+
+.item-details {
+    display: block;
+    font-size: 0.82rem;
+    color: #637381;
+    margin-top: 2px;
+}
+
+.item-note {
+    font-size: 0.8rem;
+    color: #919EAB;
+    font-style: italic;
+}
+
+.item-price {
+    font-weight: 700;
+    color: #00A76F;
+    font-size: 1rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.item-price.contact {
+    color: #919EAB;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+/* CTA at bottom of inventory */
+.inventory-cta {
+    max-width: 960px;
+    margin: 30px auto 40px;
+    text-align: center;
+    padding: 30px 20px;
+    background: #f4f6f8;
+    border-radius: 12px;
+}
+
+.inventory-cta p {
+    color: #637381;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+.inventory-cta .cta-button {
+    display: inline-block;
+    background: #25D366;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.inventory-cta .cta-button:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inventory-hero h1 {
+        font-size: 2rem;
+    }
+
+    .inventory-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-hero {
+        padding: 40px 16px;
+    }
+
+    .inventory-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .inventory-item {
+        padding: 12px 16px;
+    }
+}

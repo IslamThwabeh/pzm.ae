@@ -136,3 +136,34 @@
         padding: 10px 24px;
     }
 }
+
+/* Banner Container — two side-by-side banners on homepage */
+.top-banners {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto var(--space-xl) auto;
+    padding: 0 var(--space-lg);
+}
+
+.top-banners .iphone-banner {
+    flex: 1;
+    margin: 0;
+}
+
+.iphone-banner.used-devices-banner {
+    background: linear-gradient(135deg, #0288d1, #01579b);
+}
+
+@media (max-width: 768px) {
+    .top-banners {
+        flex-direction: column;
+        padding: 0 var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .top-banners {
+        padding: 0 var(--space-sm);
+    }
+}
