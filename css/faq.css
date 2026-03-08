@@ -36,6 +36,37 @@
     --eapps-faq-item-text-color: var(--text-light) !important;
 }
 
+.faq-quick-answer {
+    margin-top: var(--space-lg);
+    background: var(--bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-md) var(--space-lg);
+    border-left: 4px solid var(--primary-color);
+}
+
+.faq-quick-answer h3 {
+    margin: 0 0 0.5rem;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+}
+
+.faq-quick-answer p {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.faq-quick-answer a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.faq-quick-answer a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .faq {
         padding: var(--space-lg);
@@ -44,5 +75,9 @@
 
     .faq h2 {
         font-size: 1.875rem;
+    }
+
+    .faq-quick-answer {
+        padding: var(--space-md);
     }
 }

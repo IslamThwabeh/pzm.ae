@@ -1,12 +1,19 @@
 import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
 
-const PLACE_ID = 'ChIJ1aZJvMBtXz4RLrOI1vITjBU';
-const API_KEY = Deno.env.get('GOOGLE_MAPS_API_KEY');
-
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
+
+const STATIC_WEEKDAY_TEXT = [
+  'Sunday: 10:00 AM - 01:00 AM',
+  'Monday: 10:00 AM - 11:00 PM',
+  'Tuesday: 10:00 AM - 10:30 PM',
+  'Wednesday: 10:00 AM - 11:00 PM',
+  'Thursday: 10:00 AM - 11:00 PM',
+  'Friday: 10:00 AM - 11:00 PM',
+  'Saturday: 10:00 AM - 12:00 AM',
+];
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -14,9 +21,16 @@ serve(async (req) => {
   }
 
   try {
-    const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ1aZJvMBtXz4RLrOI1vITjBU&fields=name,opening_hours&key=AIzaSyBcD7hYodf1KBgvfejaxk9Lk-vVEcV1go8`;
-    const response = await fetch(url);
-    const data = await response.json();
+    // Static-only response to avoid external API dependency and runtime fetch errors.
+    const data = {
+      result: {
+        opening_hours: {
+          open_now: null,
+          weekday_text: STATIC_WEEKDAY_TEXT,
+        },
+      },
+      source: 'static',
+    };
 
     return new Response(
       JSON.stringify(data),

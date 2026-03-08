@@ -146,6 +146,20 @@
     font-size: 0.9rem;
 }
 
+.outside-hours-msg {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #4a5568;
+    font-style: italic;
+}
+
+.hours-today {
+    background: rgba(72, 187, 120, 0.08);
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 /* Map Container */
 .map-container {
     grid-column: 1 / -1;

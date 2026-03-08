@@ -162,5 +162,39 @@ export const blogPosts = [
     excerpt: "Learn how to extend your smartphone's battery life and maintain its health.",
     image_url: "https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg",
     category: "Mobile"
+  },
+  {
+    title: "How Iran-US Tensions Are Affecting Mobile and PC Prices in UAE (2026)",
+    slug: "iran-us-tensions-mobile-pc-prices-uae-2026",
+    content: `<p>Customers across Dubai have started asking the same question: why do prices change faster now for phones, laptops, gaming PCs, and accessories? One major reason is geopolitical pressure in the region, especially periods of heightened tension between Iran and the United States. Even when there is no direct disruption in local stores, global supply chains react quickly, and retail prices follow.</p>
+
+    <h3>1. Shipping and insurance costs rise first</h3>
+    <p>When regional risk increases, freight companies and insurers often raise rates. This affects sea and air cargo moving electronics from manufacturing hubs to GCC markets. Importers pay more per shipment, and that cost is eventually reflected in retail prices for smartphones, laptops, GPUs, and parts.</p>
+
+    <h3>2. Currency swings impact distributor pricing</h3>
+    <p>Electronics are priced internationally in major currencies. During geopolitical uncertainty, currency volatility can make landed costs less predictable. Distributors may update price lists more frequently, and stores need to adjust faster than usual to avoid stock losses.</p>
+
+    <h3>3. Component supply gets tighter</h3>
+    <p>Mobile and PC products depend on global component chains: chips, memory, displays, batteries, and controllers. Any delay in one layer can create shortages in final products. That is why some specific models, storage tiers, and colors become expensive or harder to find before others.</p>
+
+    <h3>4. High-demand models move first</h3>
+    <p>Flagship iPhones, gaming laptops, premium GPUs, and fast-selling accessories are usually the first to shift in price. Entry-level and older-generation models tend to stay stable longer, then adjust later if pressure continues.</p>
+
+    <h3>5. What smart buyers can do right now</h3>
+    <ul>
+      <li>Compare specs-to-price, not just model names.</li>
+      <li>Be flexible on color, storage, and generation.</li>
+      <li>Ask about open-box and certified used options for better value.</li>
+      <li>Lock your deal quickly when stock is confirmed.</li>
+      <li>Prioritize warranty and after-sales support over a small short-term discount.</li>
+    </ul>
+
+    <h3>Our view for the coming months</h3>
+    <p>Price movement will likely remain model-specific rather than uniform across all categories. Devices with fragile supply or high demand may continue to fluctuate, while mainstream inventory should stay more predictable. Buyers who stay flexible and purchase from trusted local sellers can still get strong value.</p>
+
+    <p>If you want, our team can recommend current best-value options in real time based on your budget for iPhone, Android, laptop, gaming PC, or accessories.</p>`,
+    excerpt: "A practical UAE market guide on how Iran-US geopolitical tensions can influence smartphone, laptop, and PC pricing, plus smart buying tips.",
+    image_url: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg",
+    category: "Market"
   }
 ];
