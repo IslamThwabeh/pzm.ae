@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://pzm.ae" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/slider-lab.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -97,16 +97,34 @@
         </div>
 
         <!-- Hero Slider Section -->
-        <section class="slider">
-            <button class="prev" aria-label="Previous slide">&#10094;</button>
-            <button class="next" aria-label="Next slide">&#10095;</button>
-            <div class="slides">
-                <img src="images/Services/1778x1000/Sell_Your_Old_iPhones_1000_1778.jpg" alt="Sell Your Old iPhones" class="active" fetchpriority="high" decoding="async">
-                <img src="images/Services/1778x1000/repairing_services_1000_1778.jpg" alt="Repairing Services" loading="lazy" decoding="async">
-                <img src="images/Services/1778x1000/reignite_your_macbook_1000_1778.jpg" alt="Reignite Your MacBook" loading="lazy" decoding="async">
-                <img src="images/Services/1778x1000/sell_old_mackbook_1000_1778.jpg" alt="Sell Old MacBook" loading="lazy" decoding="async">
-                <img src="images/Services/1778x1000/all_services_pic_1000_1778.jpg" alt="All Services" loading="lazy" decoding="async">
+        <section class="slider-lab" aria-label="Hero slider" tabindex="0">
+            <div class="slider-lab-track">
+                <figure class="slider-lab-slide is-active" data-caption="Get the best value for your old iPhones. Professional evaluation and instant payment.">
+                    <img src="images/Services/1778x1000/Sell_Your_Old_iPhones_1000_1778.jpg" alt="Sell Your Old iPhones" fetchpriority="high" decoding="async">
+                </figure>
+                <figure class="slider-lab-slide" data-caption="Expert repair services for all your devices. Fast, reliable, and warranty-backed repairs.">
+                    <img src="images/Services/1778x1000/repairing_services_1000_1778.jpg" alt="Repairing Services" loading="lazy" decoding="async">
+                </figure>
+                <figure class="slider-lab-slide" data-caption="Breathe new life into your MacBook with our professional repair and upgrade services.">
+                    <img src="images/Services/1778x1000/reignite_your_macbook_1000_1778.jpg" alt="Reignite Your MacBook" loading="lazy" decoding="async">
+                </figure>
+                <figure class="slider-lab-slide" data-caption="Sell your old MacBook for the best price. Quick evaluation and same-day payment.">
+                    <img src="images/Services/1778x1000/sell_old_mackbook_1000_1778.jpg" alt="Sell Old MacBook" loading="lazy" decoding="async">
+                </figure>
+                <figure class="slider-lab-slide" data-caption="Comprehensive tech solutions under one roof. Sales, repairs, and professional support.">
+                    <img src="images/Services/1778x1000/all_services_pic_1000_1778.jpg" alt="All Services" loading="lazy" decoding="async">
+                </figure>
             </div>
+
+            <button class="slider-lab-arrow prev" type="button" data-action="prev" aria-label="Previous slide">&#10094;</button>
+            <button class="slider-lab-arrow next" type="button" data-action="next" aria-label="Next slide">&#10095;</button>
+
+            <div class="slider-lab-ui">
+                <button class="slider-lab-play" type="button" data-action="toggle" aria-label="Pause slideshow">&#10074;&#10074;</button>
+                <div class="slider-lab-dots" aria-label="Slide navigation"></div>
+            </div>
+
+            <p class="slider-lab-caption" aria-live="polite"></p>
         </section>
 
         <!-- Services Section -->
@@ -207,7 +225,7 @@
     <div class="elfsight-app-870cae90-5572-445a-bf05-2750504d4f2a" data-elfsight-app-lazy></div>
 
     <script src="js/header.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/slider-lab.js"></script>
     <script type="module" src="js/blog.js"></script>
     <script src="/js/contact-loader.js"></script>
 </body>
