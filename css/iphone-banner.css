@@ -159,11 +159,13 @@
     .top-banners {
         flex-direction: column;
         padding: 0 var(--space-md);
+        margin-top: var(--space-sm);
     }
 }
 
 @media (max-width: 480px) {
     .top-banners {
         padding: 0 var(--space-sm);
+        margin-top: var(--space-sm);
     }
 }

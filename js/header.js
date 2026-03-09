@@ -2,33 +2,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header-content');
     const nav = document.querySelector('.main-nav');
     const servicesDropdown = document.querySelector('.services-dropdown');
-    const servicesLink = servicesDropdown.querySelector('a');
+    const servicesLink = servicesDropdown ? servicesDropdown.querySelector('a') : null;
+
+    if (!header || !nav) {
+        return;
+    }
 
     // Handle services dropdown
-    servicesLink.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            servicesDropdown.classList.toggle('active');
-            
-            // Close other dropdowns
-            document.querySelectorAll('.services-dropdown').forEach(dropdown => {
-                if (dropdown !== servicesDropdown) {
-                    dropdown.classList.remove('active');
-                }
-            });
-        }
-    });
+    if (servicesDropdown && servicesLink) {
+        servicesLink.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                servicesDropdown.classList.toggle('active');
+
+                // Close other dropdowns
+                document.querySelectorAll('.services-dropdown').forEach(dropdown => {
+                    if (dropdown !== servicesDropdown) {
+                        dropdown.classList.remove('active');
+                    }
+                });
+            }
+        });
+    }
 
     // Close menus when clicking outside
     document.addEventListener('click', (e) => {
-        if (!servicesDropdown.contains(e.target)) {
+        if (servicesDropdown && !servicesDropdown.contains(e.target)) {
             servicesDropdown.classList.remove('active');
         }
     });
 
     // Close menus on resize
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 768 && servicesDropdown) {
             servicesDropdown.classList.remove('active');
         }
     });
@@ -36,34 +42,59 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle scroll behavior
     let lastScrollTop = 0;
     let ticking = false;
+    let hideTimer = null;
+
+    function showHeader() {
+        header.style.transform = 'translateY(0)';
+        nav.style.transform = 'translateY(0)';
+    }
+
+    function hideHeader() {
+        header.style.transform = `translateY(-${header.offsetHeight}px)`;
+        nav.style.transform = `translateY(-${header.offsetHeight}px)`;
+    }
+
+    function scheduleAutoHide(currentScroll) {
+        if (hideTimer) {
+            clearTimeout(hideTimer);
+        }
+
+        // Keep header visible near top of the page.
+        if (currentScroll < 80) {
+            return;
+        }
+
+        hideTimer = setTimeout(() => {
+            hideHeader();
+        }, 2500);
+    }
 
     function updateHeader() {
         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (currentScroll <= 0) {
-            header.style.transform = 'translateY(0)';
-            nav.style.transform = 'translateY(0)';
+            if (hideTimer) {
+                clearTimeout(hideTimer);
+                hideTimer = null;
+            }
+            showHeader();
             lastScrollTop = 0;
-            ticking = false;
             return;
         }
 
         if (currentScroll > lastScrollTop) {
             // Scrolling down
-            requestAnimationFrame(() => {
-                header.style.transform = `translateY(-${header.offsetHeight}px)`;
-                nav.style.transform = `translateY(-${header.offsetHeight}px)`;
-                ticking = false;
-            });
+            if (hideTimer) {
+                clearTimeout(hideTimer);
+                hideTimer = null;
+            }
+            hideHeader();
         } else {
             // Scrolling up
-            requestAnimationFrame(() => {
-                header.style.transform = 'translateY(0)';
-                nav.style.transform = 'translateY(0)';
-                ticking = false;
-            });
+            showHeader();
+            scheduleAutoHide(currentScroll);
         }
-        
+
         lastScrollTop = currentScroll;
     }
 
