@@ -50,8 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function hideHeader() {
-        header.style.transform = `translateY(-${header.offsetHeight}px)`;
-        nav.style.transform = `translateY(-${header.offsetHeight}px)`;
+        const headerHeight = header.offsetHeight;
+        const navHeight = nav.offsetHeight;
+
+        // Move each bar fully above viewport.
+        header.style.transform = `translateY(-${headerHeight}px)`;
+        nav.style.transform = `translateY(-${headerHeight + navHeight}px)`;
     }
 
     function scheduleAutoHide(currentScroll) {
@@ -59,8 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout(hideTimer);
         }
 
-        // Keep header visible near top of the page.
-        if (currentScroll < 80) {
+        // Keep header visible only when we are exactly at top.
+        if (currentScroll <= 0) {
             return;
         }
 
