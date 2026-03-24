@@ -3,6 +3,7 @@
 .iphone-hero {
     text-align: center;
     padding: 80px 20px;
+    margin-top: 10px;
     background: linear-gradient(135deg, #00A76F 0%, #008f5d 100%);
     color: white;
     position: relative;
@@ -184,6 +185,12 @@
     color: #00A76F;
     font-weight: 800;
     margin-bottom: 15px;
+}
+
+.contact-price {
+    color: #637381;
+    font-style: italic;
+    font-size: 1.4rem;
 }
 
 .offer-note {
