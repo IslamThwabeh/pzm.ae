@@ -4,12 +4,13 @@
 Static HTML website for PZM Computers & Phones Store in Al Barsha, Dubai.
 Hosted on GitHub Pages at **pzm.ae**. No server-side rendering or build step for the HTML pages.
 
-## Site Structure (20 HTML pages)
+## Site Structure (21 HTML pages)
 
 ```
 index.html                  # Homepage
 blog.html / blog-post.html  # Blog listing & post
 services/
+  index.html                # "Our Services" hub
   buy-iphone.html           # New iPhone models (iPhone 17 line)
   buy-used.html             # Used device inventory (phones, laptops, tablets, PCs, monitors)
   brand-new.html            # Brand new devices inventory
