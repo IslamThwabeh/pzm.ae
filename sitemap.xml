@@ -15,12 +15,20 @@
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
-      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17/iPhone_17_Black.jpg</image:loc>
-      <image:title>iPhone 17 Black Dubai</image:title>
+      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg</image:loc>
+      <image:title>iPhone 17 Pro Max All Colors Dubai</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17_Pro/iPhone_17_Pro_Silver.jpg</image:loc>
-      <image:title>iPhone 17 Pro Silver Dubai</image:title>
+      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_all_colors.jpg</image:loc>
+      <image:title>iPhone 17 Pro All Colors Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17_Air_all_colors.jpg</image:loc>
+      <image:title>iPhone 17 Air All Colors Dubai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17_all_colors.jpg</image:loc>
+      <image:title>iPhone 17 All Colors Dubai</image:title>
     </image:image>
   </url>
 
