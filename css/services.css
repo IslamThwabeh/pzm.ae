@@ -14,7 +14,7 @@
     width: 100%;
 }
 
-.category {
+a.category {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,11 +28,14 @@
     aspect-ratio: 3/4;
     max-width: 350px;
     margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
 }
 
-.category:hover {
+a.category:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
+    color: inherit;
 }
 
 .category-img {
