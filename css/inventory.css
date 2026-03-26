@@ -108,20 +108,28 @@ a.inventory-item {
     cursor: pointer;
 }
 
-/* Product thumbnail inside inventory row */
+/* Product thumbnail inside inventory row — hidden by default, expands on hover */
 .item-thumb {
-    width: 64px;
-    height: 64px !important;
-    min-width: 64px;
-    border-radius: 8px;
+    width: 0;
+    height: 0 !important;
+    min-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 10px;
     object-fit: contain;
     background: #f8f9fa;
     flex-shrink: 0;
     display: inline-block !important;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
+    padding: 0;
 }
 
-a.inventory-item:has(.item-thumb) {
-    padding: 10px 20px;
+a.inventory-item:hover .item-thumb {
+    width: 100px;
+    height: 100px !important;
+    min-width: 100px;
+    opacity: 1;
+    padding: 4px;
 }
 
 a.inventory-item:last-child {
@@ -309,17 +317,22 @@ a.inventory-item:hover .item-whatsapp-hint {
         gap: 8px;
     }
 
+    /* Mobile: always show small thumbnails (no hover available) */
+    .item-thumb {
+        width: 48px;
+        height: 48px !important;
+        min-width: 48px;
+        opacity: 1;
+        overflow: visible;
+        padding: 0;
+        transition: none;
+    }
+
     /* Items without thumbnails stack vertically */
     a.inventory-item:not(:has(.item-thumb)) {
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
-    }
-
-    .item-thumb {
-        width: 56px;
-        height: 56px !important;
-        min-width: 56px;
     }
 }
 
@@ -337,8 +350,8 @@ a.inventory-item:hover .item-whatsapp-hint {
     }
 
     .item-thumb {
-        width: 48px;
-        height: 48px !important;
-        min-width: 48px;
+        width: 40px;
+        height: 40px !important;
+        min-width: 40px;
     }
 }
