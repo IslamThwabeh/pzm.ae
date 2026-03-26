@@ -196,5 +196,77 @@ export const blogPosts = [
     excerpt: "A practical UAE market guide on how Iran-US geopolitical tensions can influence smartphone, laptop, and PC pricing, plus smart buying tips.",
     image_url: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg",
     category: "Market"
+  },
+  {
+    title: "How US Tariffs in 2026 Are Changing Electronics Prices in Dubai",
+    slug: "us-tariffs-2026-electronics-prices-dubai",
+    content: `<p>If you have been shopping for a new iPhone, laptop, or gaming PC in Dubai recently, you may have noticed prices shifting in ways that do not always make sense. A major driver behind these changes is the latest round of US tariffs on technology imports, which started affecting global electronics supply chains in early 2026.</p>
+
+      <p>Even though the UAE is not directly targeted by these tariffs, the effects ripple across every market that depends on components manufactured in or routed through the United States and China. Here is what is happening and how it affects your next tech purchase in Dubai.</p>
+
+      <h3>1. Why US tariffs matter for Dubai buyers</h3>
+      <p>Most consumer electronics — smartphones, laptops, GPUs, gaming consoles, and accessories — are built using components that cross multiple borders before reaching retail shelves. When the US imposes tariffs on Chinese-made goods (or vice versa), manufacturers adjust pricing globally to protect margins. That means a tariff increase in Washington can raise the wholesale cost of an <a href="/services/buy-iphone.html">iPhone</a> or a <a href="/services/gaming-pc.html">gaming GPU</a> in Dubai within weeks.</p>
+
+      <h3>2. Which products are most affected</h3>
+      <ul>
+        <li><strong>Smartphones:</strong> Flagship models like the iPhone 17 series and Samsung Galaxy S26 use chips and displays sourced from tariff-affected supply chains. <a href="/services/buy-iphone.html">New iPhone prices</a> have seen 5–12% increases on certain storage tiers since January 2026.</li>
+        <li><strong>Laptops and MacBooks:</strong> Assembly in China means direct tariff exposure. <a href="/services/brand-new.html">Brand-new laptops</a> are among the fastest to reflect price changes, especially premium configurations.</li>
+        <li><strong>Gaming PCs and GPUs:</strong> NVIDIA and AMD GPUs are heavily impacted. If you are planning a <a href="/services/gaming-pc.html">custom gaming PC build</a>, component prices are volatile right now.</li>
+        <li><strong>Accessories:</strong> Chargers, cases, cables, and peripherals made in China face the steepest tariff percentages but remain affordable in absolute terms. Check current <a href="/services/accessories.html">accessory prices</a> before bulk buying.</li>
+      </ul>
+
+      <h3>3. The used and refurbished market advantage</h3>
+      <p>One of the clearest winners in a tariff-driven price surge is the <a href="/services/buy-used.html">used and certified pre-owned market</a>. Devices that were imported before tariff increases carry their original cost basis, meaning buyers can find flagship phones and laptops at pre-tariff pricing. This is why demand for quality used devices has surged across Dubai in Q1 2026.</p>
+
+      <h3>4. Smart buying strategies during tariff uncertainty</h3>
+      <ul>
+        <li>Buy sooner rather than later — prices tend to step up, not down, during active tariff periods.</li>
+        <li>Consider <a href="/services/buy-used.html">certified used devices</a> for 20–40% savings over new retail.</li>
+        <li>Compare storage tiers carefully — higher-storage models often see larger percentage increases.</li>
+        <li>If you have an older device to <a href="/services/sell-gadgets.html">trade in or sell</a>, its value has likely increased too.</li>
+        <li>For <a href="/services/gaming-pc.html">gaming PC builds</a>, lock in GPU prices when available since restocks are unpredictable.</li>
+      </ul>
+
+      <h3>5. What we expect for the rest of 2026</h3>
+      <p>Trade negotiations are ongoing, and tariff rates could change in either direction. However, the pattern from previous tariff cycles shows that retail prices are slow to come back down even after tariffs ease. The best strategy for Dubai buyers is to act on confirmed stock at current prices rather than waiting for theoretical reductions.</p>
+
+      <p>Our team at PZM tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. Visit us in Al Barsha or message us on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick quote.</p>`,
+    excerpt: "How the latest US tariffs are pushing up smartphone, laptop, and gaming PC prices in Dubai — and practical strategies to get the best deals in 2026.",
+    image_url: "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg",
+    category: "Market"
+  },
+  {
+    title: "Gold Prices Hit Record Highs — What It Means for Tech Buyers in Dubai (2026)",
+    slug: "gold-record-highs-tech-buyers-dubai-2026",
+    content: `<p>Gold has broken through historic price barriers in 2026, crossing $3,100 per ounce and sending waves through financial markets worldwide. In Dubai — a city where gold is deeply embedded in both culture and commerce — the effects go far beyond jewellery shops. Rising gold prices are reshaping how consumers think about spending, saving, and investing in technology.</p>
+
+      <h3>1. The gold-tech connection most people miss</h3>
+      <p>Gold is not just a safe-haven asset — it is a literal component inside your devices. Every smartphone, laptop, and gaming PC contains small amounts of gold in circuit board connectors, processors, and memory modules. When gold prices surge, raw material costs for electronics manufacturers increase. This is a minor but real factor that adds to wholesale pricing over time.</p>
+
+      <h3>2. How gold prices shift consumer spending in the UAE</h3>
+      <p>When gold prices rise sharply, many UAE residents who hold gold see their net worth increase. This often leads to a confidence boost in discretionary spending — including electronics. Simultaneously, others tighten budgets because the cost of gold gifts for weddings, holidays, and savings goes up. The result is a split market: demand for both premium devices and budget-friendly options rises at the same time.</p>
+
+      <h3>3. Winner: the certified used and trade-in market</h3>
+      <p>High gold prices create an interesting dynamic for <a href="/services/buy-used.html">used electronics</a>. Consumers looking to offset rising gold costs for personal events may <a href="/services/sell-gadgets.html">sell or trade in their current phones and laptops</a> to free up cash. This increases the supply of quality pre-owned devices, creating better deals for buyers. If you are in the market for a <a href="/services/buy-used.html">used iPhone, MacBook, or gaming laptop</a>, now is a strong time to shop.</p>
+
+      <h3>4. New device pricing in a high-gold environment</h3>
+      <p>For buyers looking at <a href="/services/buy-iphone.html">new iPhones</a> or <a href="/services/brand-new.html">brand-new laptops</a>, the direct gold cost impact is modest — typically under 1% of retail price. The bigger concern is the combined effect of gold, tariffs, and shipping costs stacking up. <a href="/services/gaming-pc.html">Custom gaming PC builds</a> that use high-end motherboards and processors with gold-plated connectors may see slightly higher component pricing than six months ago.</p>
+
+      <h3>5. Practical advice for Dubai tech shoppers right now</h3>
+      <ul>
+        <li>If you have old devices collecting dust, their <a href="/services/sell-gadgets.html">trade-in value</a> is strong right now — sell while demand is high.</li>
+        <li>Consider <a href="/services/buy-used.html">certified pre-owned devices</a> to stretch your dirham further during uncertain economic conditions.</li>
+        <li>For new purchases, the <a href="/services/buy-iphone.html">iPhone 17 series</a> and latest MacBooks remain competitively priced in the UAE compared to many global markets.</li>
+        <li>If you need <a href="/services/repair.html">device repair</a> instead of replacement, it is an especially cost-effective choice when new device prices are elevated.</li>
+        <li>Protect your investment with quality <a href="/services/accessories.html">cases, screen protectors, and accessories</a> — replacement costs are not going down.</li>
+      </ul>
+
+      <h3>6. Our outlook</h3>
+      <p>Gold prices are expected to remain elevated through 2026 as global uncertainty continues. For tech buyers in Dubai, this means being strategic: buy what you need now rather than waiting for prices to drop, consider the used market seriously, and maintain your current devices well. The best deals go to informed buyers who act when stock and pricing align.</p>
+
+      <p>Visit PZM in Al Barsha for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/repair.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
+    excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
+    image_url: "https://images.pexels.com/photos/610525/pexels-photo-610525.jpeg",
+    category: "Market"
   }
 ];
