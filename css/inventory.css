@@ -111,11 +111,13 @@ a.inventory-item {
 /* Product thumbnail inside inventory row */
 .item-thumb {
     width: 64px;
-    height: 64px;
+    height: 64px !important;
+    min-width: 64px;
     border-radius: 8px;
     object-fit: contain;
     background: #f8f9fa;
     flex-shrink: 0;
+    display: inline-block !important;
 }
 
 a.inventory-item:has(.item-thumb) {
@@ -303,12 +305,11 @@ a.inventory-item:hover .item-whatsapp-hint {
     }
 
     a.inventory-item {
-        flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        gap: 12px;
+        gap: 8px;
     }
 
+    /* Items without thumbnails stack vertically */
     a.inventory-item:not(:has(.item-thumb)) {
         flex-direction: column;
         align-items: flex-start;
@@ -317,18 +318,8 @@ a.inventory-item:hover .item-whatsapp-hint {
 
     .item-thumb {
         width: 56px;
-        height: 56px;
-    }
-
-    a.inventory-item:has(.item-thumb) .item-info {
-        flex: 1;
-        min-width: 0;
-    }
-
-    a.inventory-item:has(.item-thumb) .item-price {
-        width: 100%;
-        text-align: right;
-        padding-left: 68px;
+        height: 56px !important;
+        min-width: 56px;
     }
 }
 
@@ -347,6 +338,7 @@ a.inventory-item:hover .item-whatsapp-hint {
 
     .item-thumb {
         width: 48px;
-        height: 48px;
+        height: 48px !important;
+        min-width: 48px;
     }
 }
