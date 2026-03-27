@@ -29,14 +29,13 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero-slider.css">
     <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/faq.css">
-    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/iphone-banner.css">
-    <link rel="stylesheet" href="css/inventory.css">
+    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/animations.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/faq.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/blog.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/inventory.css" media="print" onload="this.media='all'">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSJ08ST3JL"></script>
@@ -293,59 +292,12 @@
             </section>
         </div>
 
-        <!-- Hero Slider Section -->
-        <section class="slider-lab" aria-label="Hero slider" tabindex="0">
-            <div class="slider-lab-track">
-                <figure class="slider-lab-slide is-active" data-caption="Eid Mubarak from PZM Computers & Phones — exclusive Eid offers on devices and repairs!">
-                    <img src="images/2026-march/eid-mubarak-pzm-2026.jpg" alt="Eid Mubarak — PZM Computers &amp; Phones Eid Offers" width="1024" height="1024" fetchpriority="high" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="PZM — your integrated device solutions hub in Al Barsha, Dubai.">
-                    <img src="images/2026-march/pzm-integrated-solutions.jpg" alt="PZM Integrated Device Solutions" width="1536" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Get the best value for your old iPhones. Professional evaluation and instant payment.">
-                    <img src="images/Services/1778x1000/Sell_Your_Old_iPhones_1000_1778.jpg" alt="Sell Your Old iPhones" width="1778" height="1000" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Build your dream gaming PC — custom configurations, top-tier components, expert assembly.">
-                    <img src="images/2026-march/build-dream-gaming-pc.jpg" alt="Build Your Dream Gaming PC at PZM" width="1024" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Expert repair services for all your devices. Fast, reliable, and warranty-backed repairs.">
-                    <img src="images/Services/1778x1000/repairing_services_1000_1778.jpg" alt="Repairing Services" width="1778" height="1000" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Professional MacBook repair services — screen, battery, logic board, and more.">
-                    <img src="images/2026-march/macbook-repair-services.jpg" alt="Professional MacBook Repair Services" width="1024" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Breathe new life into your MacBook with our professional repair and upgrade services.">
-                    <img src="images/Services/1778x1000/reignite_your_macbook_1000_1778.jpg" alt="Reignite Your MacBook" width="1778" height="1000" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Complete PS5 repair solutions — HDMI, overheating, disc drive, and controller fixes.">
-                    <img src="images/2026-march/ps5-repair-solutions.jpg" alt="Complete PS5 Repair Solutions" width="1024" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Gaming laptop deep cleaning service — restore performance and extend your laptop's life.">
-                    <img src="images/2026-march/gaming-laptop-deep-cleaning.jpg" alt="Gaming Laptop Deep Cleaning Service" width="1024" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Sell your old MacBook for the best price. Quick evaluation and same-day payment.">
-                    <img src="images/Services/1778x1000/sell_old_mackbook_1000_1778.jpg" alt="Sell Old MacBook" width="1778" height="1000" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Shop and repair in one trip — buy devices, get repairs, all at PZM Al Barsha.">
-                    <img src="images/2026-march/shop-repair-one-trip.jpg" alt="Shop and Repair in One Trip at PZM" width="1024" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="The Expert Fix — get your device repaired while you shop at PZM.">
-                    <img src="images/2026-march/expert-fix-while-you-shop.jpg" alt="Expert Device Fix While You Shop" width="1024" height="1024" loading="lazy" decoding="async">
-                </figure>
-                <figure class="slider-lab-slide" data-caption="Comprehensive tech solutions under one roof. Sales, repairs, and professional support.">
-                    <img src="images/Services/1778x1000/all_services_pic_1000_1778.jpg" alt="All Services" width="1778" height="1000" loading="lazy" decoding="async">
-                </figure>
-            </div>
-
-            <button class="slider-lab-arrow prev" type="button" data-action="prev" aria-label="Previous slide">&#10094;</button>
-            <button class="slider-lab-arrow next" type="button" data-action="next" aria-label="Next slide">&#10095;</button>
-
-            <div class="slider-lab-ui">
-                <button class="slider-lab-play" type="button" data-action="toggle" aria-label="Pause slideshow">&#10074;&#10074;</button>
-                <div class="slider-lab-dots" aria-label="Slide navigation"></div>
-            </div>
-
-            <p class="slider-lab-caption" aria-live="polite"></p>
+        <!-- Hero Image -->
+        <section class="hero-image" aria-label="PZM Eid Sale 2026">
+            <picture>
+                <source srcset="images/2026-march/eid-mubarak-pzm-2026.webp" type="image/webp">
+                <img src="images/2026-march/eid-mubarak-pzm-2026.jpg" alt="Eid Mubarak — PZM Computers &amp; Phones Eid Offers on devices and repairs in Dubai" width="1024" height="1024" fetchpriority="high" decoding="async" style="width:100%;height:auto;max-height:78vh;object-fit:cover;display:block;border-radius:12px;margin:0 auto">
+            </picture>
         </section>
 
         <!-- Services Section -->
@@ -462,7 +414,6 @@
     <div class="elfsight-app-870cae90-5572-445a-bf05-2750504d4f2a" data-elfsight-app-lazy></div>
 
     <script src="js/header.js"></script>
-    <script src="js/hero-slider.js"></script>
     <script type="module" src="js/blog.js"></script>
     <script src="/js/contact-loader.js"></script>
 </body>
