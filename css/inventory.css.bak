@@ -1,12 +1,9 @@
-/* ===================================================================
-   INVENTORY PAGE STYLES — Glass-Morphism Theme (2026 Refresh)
-   Shared across brand-new.html and buy-used.html
-   =================================================================== */
+/* Inventory Page Styles — shared across brand-new and buy-used pages */
 
 /* Hero banner */
 .inventory-hero {
     text-align: center;
-    padding: 70px 20px 60px;
+    padding: 60px 20px;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -15,35 +12,24 @@
     box-shadow: none;
 }
 
-.inventory-hero:hover { transform: none; }
+.inventory-hero:hover {
+    transform: none;
+}
 
 .inventory-hero.brand-new {
-    background: linear-gradient(135deg, var(--dark, #0f172a) 0%, #1a2744 50%, var(--accent-dark, #0284c7) 100%);
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
 }
 
 .inventory-hero.preowned {
-    background: linear-gradient(135deg, var(--dark, #0f172a) 0%, #162032 50%, var(--primary-dark, #00a87a) 100%);
+    background: linear-gradient(135deg, #00A76F, #008f5d);
 }
 
 .inventory-hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(14,165,233,0.15) 0%, transparent 60%),
-                radial-gradient(circle at 70% 80%, rgba(0,200,150,0.12) 0%, transparent 50%);
+    background: rgba(0, 0, 0, 0.08);
     z-index: 1;
-}
-
-.inventory-hero::after {
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(14,165,233,0.08) 0%, transparent 70%);
-    z-index: 0;
 }
 
 .inventory-hero h1,
@@ -58,21 +44,22 @@
     font-weight: 800;
     margin-bottom: 12px;
     color: #fff;
-    letter-spacing: -0.5px;
 }
 
-.inventory-hero h1::after { display: none; }
+.inventory-hero h1::after {
+    display: none;
+}
 
 .inventory-hero p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.15rem;
     line-height: 1.6;
-    opacity: 0.92;
-    color: rgba(255, 255, 255, 0.9);
+    opacity: 0.95;
+    color: rgba(255, 255, 255, 0.92);
 }
 
-/* Inventory sections */
+/* Inventory sections — override global section styles */
 .inventory-section {
     max-width: 960px;
     margin: 0 auto;
@@ -82,57 +69,46 @@
     border-radius: 0;
 }
 
-.inventory-section:hover { transform: none; }
+.inventory-section:hover {
+    transform: none;
+}
 
 .inventory-category-title {
-    font-size: 1.4rem;
-    color: var(--dark, #0f172a);
+    font-size: 1.5rem;
+    color: #161C24;
     margin-bottom: 16px;
-    padding-bottom: 10px;
-    border-bottom: none;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #00A76F;
     text-align: left;
-    font-weight: 700;
-    position: relative;
 }
 
 .inventory-category-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(to right, var(--accent, #0ea5e9), var(--primary, #00c896));
-    border-radius: 3px;
-    display: block;
+    display: none;
 }
 
 .inventory-list {
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-radius: 14px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
     overflow: hidden;
 }
 
-/* Clickable item row */
+/* Clickable item row → links to WhatsApp */
 a.inventory-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px;
-    border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f0f0;
     gap: 16px;
     text-decoration: none;
     color: inherit;
     font-weight: normal;
-    transition: all 0.2s ease;
+    transition: background 0.15s;
     cursor: pointer;
 }
 
-/* Product thumbnail */
+/* Product thumbnail inside inventory row — hidden by default, expands on hover */
 .item-thumb {
     width: 0;
     height: 0 !important;
@@ -141,7 +117,7 @@ a.inventory-item {
     overflow: hidden;
     border-radius: 10px;
     object-fit: contain;
-    background: rgba(241, 245, 249, 0.8);
+    background: #f8f9fa;
     flex-shrink: 0;
     display: inline-block !important;
     transition: width 0.3s ease, height 0.3s ease, opacity 0.25s ease, padding 0.3s ease;
@@ -161,7 +137,7 @@ a.inventory-item:last-child {
 }
 
 a.inventory-item:hover {
-    background: rgba(14, 165, 233, 0.06);
+    background: #e8f5e9;
     color: inherit;
 }
 
@@ -173,33 +149,33 @@ a.inventory-item:hover {
 .item-name {
     display: block;
     font-size: 0.95rem;
-    color: var(--dark, #0f172a);
+    color: #212B36;
     font-weight: 600;
 }
 
 .item-details {
     display: block;
     font-size: 0.82rem;
-    color: var(--gray-500, #64748b);
+    color: #637381;
     margin-top: 2px;
 }
 
 .item-note {
     font-size: 0.8rem;
-    color: var(--gray-400, #94a3b8);
+    color: #919EAB;
     font-style: italic;
 }
 
 .item-price {
     font-weight: 700;
-    color: var(--accent, #0ea5e9);
+    color: #00A76F;
     font-size: 1.05rem;
     white-space: nowrap;
     flex-shrink: 0;
 }
 
 .item-price.contact {
-    color: var(--gray-500, #64748b);
+    color: #637381;
     font-weight: 500;
     font-size: 0.85rem;
 }
@@ -207,7 +183,7 @@ a.inventory-item:hover {
 .item-whatsapp-hint {
     display: none;
     font-size: 0.75rem;
-    color: var(--primary, #00c896);
+    color: #25D366;
     font-weight: 500;
     margin-top: 2px;
 }
@@ -216,45 +192,43 @@ a.inventory-item:hover .item-whatsapp-hint {
     display: block;
 }
 
-/* CTA at bottom */
+/* CTA at bottom of inventory */
 .inventory-cta {
     max-width: 960px;
     margin: 30px auto 40px;
     text-align: center;
-    padding: 30px 24px;
-    background: rgba(255, 255, 255, 0.72);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    padding: 30px 20px;
+    background: #f4f6f8;
+    border-radius: 12px;
+    box-shadow: none;
 }
 
-.inventory-cta:hover { transform: none; }
+.inventory-cta:hover {
+    transform: none;
+}
 
 .inventory-cta p {
-    color: var(--gray-500, #64748b);
+    color: #637381;
     margin-bottom: 16px;
     font-size: 0.95rem;
 }
 
 .inventory-cta .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    background: #25D366;
     color: #fff;
     padding: 14px 32px;
-    border-radius: 50px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+    transition: background 0.2s, transform 0.2s;
 }
 
 .inventory-cta .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+    background: #128C7E;
     color: #fff;
+    transform: translateY(-2px);
 }
 
 /* Eid Sale Banner */
@@ -267,8 +241,13 @@ a.inventory-item:hover .item-whatsapp-hint {
     border-radius: 0;
 }
 
-.eid-banner:hover { transform: none; }
-.eid-banner::after { display: none; }
+.eid-banner:hover {
+    transform: none;
+}
+
+.eid-banner::after {
+    display: none;
+}
 
 .eid-banner-inner {
     max-width: 760px;
@@ -291,7 +270,9 @@ a.inventory-item:hover .item-whatsapp-hint {
     margin-bottom: 8px;
 }
 
-.eid-banner h2::after { display: none; }
+.eid-banner h2::after {
+    display: none;
+}
 
 .eid-banner p {
     font-size: 1rem;
@@ -302,27 +283,75 @@ a.inventory-item:hover .item-whatsapp-hint {
 
 .eid-cta {
     display: inline-block;
-    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    background: #00A76F;
     color: #fff !important;
     padding: 13px 30px;
-    border-radius: 50px;
+    border-radius: 8px;
     font-weight: 700;
     font-size: 1rem;
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .eid-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+    background: #007a52;
     color: #fff !important;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .eid-banner h2 {
+        font-size: 1.4rem;
+    }
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+    .inventory-hero h1 {
+        font-size: 2rem;
+    }
+
+    a.inventory-item {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* Mobile: always show small thumbnails (no hover available) */
+    .item-thumb {
+        width: 48px;
+        height: 48px !important;
+        min-width: 48px;
+        opacity: 1;
+        overflow: visible;
+        padding: 0;
+        transition: none;
+    }
+
+    /* Items without thumbnails stack vertically */
+    a.inventory-item:not(:has(.item-thumb)) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
+
 @media (max-width: 480px) {
-    .inventory-hero h1 { font-size: 1.8rem; }
-    .inventory-hero p { font-size: 1rem; }
-    .eid-banner h2 { font-size: 1.4rem; }
-    a.inventory-item { padding: 14px 16px; }
+    .inventory-hero {
+        padding: 40px 16px;
+    }
+
+    .inventory-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    a.inventory-item {
+        padding: 12px 16px;
+    }
+
+    .item-thumb {
+        width: 40px;
+        height: 40px !important;
+        min-width: 40px;
+    }
 }
