@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://pzm.ae" />
     <meta name="description" content="Eid Sale 2026 at PZM Al Barsha, Dubai — Offers on iPhones, MacBooks, gaming PCs, laptops. Expert repair, PC builds & accessories.">
     <meta name="keywords" content="Eid sale Dubai 2026, Eid phone offers UAE, Eid gift iPhone Dubai, Ramadan sale phones Dubai, buy iPhone Dubai, used iPhone Dubai, MacBook Dubai, gaming PC build Dubai, laptop repair Dubai, phone repair Dubai, used laptops Dubai, Samsung offers UAE, PZM store Dubai, Hessa Street tech shop, Al Barsha phone shop, Al Barsha laptop repair, البرشا محل هواتف, buy phone Al Barsha Dubai, computer repair Al Barsha, gaming PC build Al Barsha, custom liquid cooling PC Dubai, MacBook repair near me Dubai Marina, used laptop Al Quoz, phone repair Al Sufouh, تصليح لابتوب البرشا, تجميعات جيمنج دبي">
-    <meta name="author" content="PZM Computers & Phones Store">
+    <meta name="author" content="PZM Computers & Phones Store -New•Used•Repair•PC•Build">
     <meta name="robots" content="index, follow">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,7 +19,7 @@
     <meta property="og:description" content="Eid Sale 2026 at PZM Al Barsha, Dubai — Special prices on brand new & used iPhones, MacBooks, Samsung, gaming PCs. Expert repairs. Limited stock!">
     <meta property="og:url" content="https://pzm.ae">
     <meta property="og:image" content="https://pzm.ae/images/Catigories/mini_brand_new.webp">
-    <meta property="og:site_name" content="PZM Computers & Phones Store Dubai">
+    <meta property="og:site_name" content="PZM Computers & Phones Store -New•Used•Repair•PC•Build">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -45,7 +45,7 @@
     {
         "@context": "https://schema.org",
         "@type": "ComputerStore",
-        "name": "PZM Computers & Phones Store",
+        "name": "PZM Computers & Phones Store -New•Used•Repair•PC•Build",
         "description": "Buy, sell, fix, and build. New and used iPhones, Samsung, MacBooks, gaming PCs, repairs, and accessories in Al Barsha, Dubai. Serving Al Barsha, Al Quoz, Al Sufouh, Dubai Marina, JBR, Emirates Hills and Palm Jumeirah.",
         "url": "https://pzm.ae",
         "telephone": "+971528026677",
@@ -81,6 +81,22 @@
             { "@type": "Place", "name": "Internet City, Dubai" }
         ],
         "sameAs": ["https://wa.me/971528026677"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Do you offer warranty on used devices?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! All certified pre-owned devices come with a warranty. iPhones and MacBooks include a 30-day warranty covering hardware defects. Gaming PCs and laptops are tested thoroughly before sale."}},
+            {"@type": "Question", "name": "How long does a phone or laptop repair take?", "acceptedAnswer": {"@type": "Answer", "text": "Most phone repairs (screen, battery, charging port) are completed within 30–60 minutes. Laptop repairs and motherboard-level fixes may take 1–3 business days depending on complexity and parts availability."}},
+            {"@type": "Question", "name": "Can I sell my old phone or laptop to you?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely! We buy used iPhones, Samsung phones, MacBooks, Windows laptops, iPads, gaming consoles, and smartwatches. Visit our store or message us on WhatsApp for an instant price quote."}},
+            {"@type": "Question", "name": "Do you build custom gaming PCs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! We offer fully custom gaming PC builds — from budget setups to high-end liquid-cooled rigs. Choose your specs or let us recommend the best build for your budget. All builds include cable management and testing."}},
+            {"@type": "Question", "name": "What payment methods do you accept?", "acceptedAnswer": {"@type": "Answer", "text": "We accept cash, bank transfer, and card payments (Visa/Mastercard). For online orders via WhatsApp, we can arrange bank transfer or cash on delivery within Dubai."}},
+            {"@type": "Question", "name": "Where is your store located?", "acceptedAnswer": {"@type": "Answer", "text": "We're located inside Hessa Union Coop Hypermarket, Ground Floor, on Hessa Street in Al Barsha, Dubai. Easy parking available. We also offer delivery across Dubai."}},
+            {"@type": "Question", "name": "Can I order online and get delivery?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! Message us on WhatsApp with your order and delivery address. We offer same-day delivery within Dubai for most items. Delivery charges may apply depending on location."}},
+            {"@type": "Question", "name": "What are your working hours?", "acceptedAnswer": {"@type": "Answer", "text": "We're open 7 days a week. Sunday: 10 AM – 1 AM, Monday–Friday: 10 AM – 11 PM, Saturday: 10 AM – 12 AM."}}
+        ]
     }
     </script>
 
@@ -800,6 +816,76 @@
             color: var(--gray-400);
         }
 
+        /* ===== FAQ ===== */
+        .faq-section {
+            padding: 80px 24px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 40px;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .faq-item:hover { box-shadow: var(--shadow-md); }
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--dark);
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: inherit;
+            gap: 12px;
+        }
+        .faq-question:hover { color: var(--primary); }
+        .faq-icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--gray-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--gray-500);
+            transition: all 0.3s;
+        }
+        .faq-item.active .faq-icon {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            color: #fff;
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+        }
+        .faq-answer p {
+            padding: 0 24px 20px;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
         /* ===== AREAS SERVED ===== */
         .areas-section {
             background: var(--dark);
@@ -1098,6 +1184,7 @@
             .blog-grid { grid-template-columns: 1fr 1fr; }
             .trust-grid { grid-template-columns: repeat(2, 1fr); }
             .contact-grid { grid-template-columns: 1fr; }
+            .faq-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (max-width: 768px) {
@@ -1147,6 +1234,7 @@
             .blog-grid { grid-template-columns: 1fr; }
             .reviews-grid { grid-template-columns: 1fr; }
             .trust-grid { grid-template-columns: 1fr 1fr; }
+            .faq-grid { grid-template-columns: 1fr; }
 
             .footer-inner { flex-direction: column; text-align: center; }
             .footer-links { flex-wrap: wrap; justify-content: center; }
@@ -1189,10 +1277,33 @@
                 </div>
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#products">Products</a>
-                <a href="#blog">Blog</a>
+                <a href="/">Home</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Services</button>
+                    <div class="nav-dropdown-content">
+                        <a href="/services/buy-iphone.html">Buy iPhone</a>
+                        <a href="/services/brand-new.html">New Devices</a>
+                        <a href="/services/buy-used.html">Used Devices</a>
+                        <a href="/services/repair.html">Repair Services</a>
+                        <a href="/services/gaming-pc.html">Gaming PC</a>
+                        <a href="/services/sell-gadgets.html">Sell Devices</a>
+                        <a href="/services/accessories.html">Accessories</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Areas</button>
+                    <div class="nav-dropdown-content">
+                        <a href="/areas/al-barsha.html">Al Barsha</a>
+                        <a href="/areas/al-quoz.html">Al Quoz</a>
+                        <a href="/areas/dubai-marina.html">Dubai Marina</a>
+                        <a href="/areas/emirates-hills.html">Emirates Hills</a>
+                        <a href="/areas/jbr.html">JBR</a>
+                        <a href="/areas/jumeirah.html">Jumeirah</a>
+                        <a href="/areas/jumeirah-village.html">Jumeirah Village</a>
+                        <a href="/areas/tecom.html">Tecom</a>
+                    </div>
+                </div>
+                <a href="/blog.html">Blog</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="nav-actions" id="navActions">
@@ -1223,7 +1334,7 @@
         <div class="hero-shape hero-shape-2"></div>
         <div class="hero-inner">
             <div class="hero-text">
-                <h1>PZM Computers<br>&amp; Phones Store —<br><span>Repair Specialists</span></h1>
+                <h1>PZM Computers<br>&amp; Phones Store<br><span>New•Used•Repair•PC•Build</span></h1>
                 <p>Your integrated device solutions hub in Al Barsha, Dubai. Expert repairs, brand new &amp; certified used devices, custom gaming PC builds — all under one roof.</p>
                 <div class="hero-btns">
                     <a href="services/brand-new.html" class="btn-primary">
@@ -1446,6 +1557,73 @@
         <div class="elfsight-app-69b4a752-7f66-44fe-8388-276e68bc6823" data-elfsight-app-lazy></div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq">
+        <div class="section-header fade-up">
+            <span class="section-badge">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our services, pricing, and warranty.</p>
+        </div>
+        <div class="faq-grid fade-up">
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>Do you offer warranty on used devices?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>Yes! All certified pre-owned devices come with a warranty. iPhones and MacBooks include a 30-day warranty covering hardware defects. Gaming PCs and laptops are tested thoroughly before sale.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>How long does a phone or laptop repair take?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>Most phone repairs (screen, battery, charging port) are completed within 30–60 minutes. Laptop repairs and motherboard-level fixes may take 1–3 business days depending on complexity and parts availability.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>Can I sell my old phone or laptop to you?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>Absolutely! We buy used iPhones, Samsung phones, MacBooks, Windows laptops, iPads, gaming consoles, and smartwatches. Visit our store or message us on WhatsApp for an instant price quote.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>Do you build custom gaming PCs?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>Yes! We offer fully custom gaming PC builds — from budget setups to high-end liquid-cooled rigs. Choose your specs or let us recommend the best build for your budget. All builds include cable management and testing.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>What payment methods do you accept?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>We accept cash, bank transfer, and card payments (Visa/Mastercard). For online orders via WhatsApp, we can arrange bank transfer or cash on delivery within Dubai.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>Where is your store located?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>We're located inside Hessa Union Coop Hypermarket, Ground Floor, on Hessa Street in Al Barsha, Dubai. Easy parking available. We also offer delivery across Dubai.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>Can I order online and get delivery?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>Yes! Message us on WhatsApp with your order and delivery address. We offer same-day delivery within Dubai for most items. Delivery charges may apply depending on location.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    <span>What are your working hours?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer"><p>We're open 7 days a week. Sunday: 10 AM – 1 AM, Monday–Friday: 10 AM – 11 PM, Saturday: 10 AM – 12 AM. Check our Google listing or call us for live availability.</p></div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== AREAS SERVED ===== -->
     <section class="areas-section">
         <div class="areas-inner fade-up">
@@ -1530,7 +1708,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            PZM Computers &amp; Phones Store &copy; 2026 All rights reserved.
+            PZM Computers &amp; Phones Store -New•Used•Repair•PC•Build &copy; 2026 All rights reserved.
         </div>
     </footer>
 
@@ -1585,12 +1763,13 @@
             selectedTime = btn.dataset.time;
         });
 
-        // Set min date to today (Dubai time)
+        // Set min date to 2 days from now (Dubai time) — encourages walk-in visits
         (function setMinDate() {
             const now = new Date();
             const dubaiOffset = 4 * 60;
             const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
             const dubai = new Date(utc + (dubaiOffset * 60000));
+            dubai.setDate(dubai.getDate() + 2);
             const yyyy = dubai.getFullYear();
             const mm = String(dubai.getMonth() + 1).padStart(2, '0');
             const dd = String(dubai.getDate()).padStart(2, '0');
