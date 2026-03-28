@@ -23,9 +23,8 @@
     <meta name="twitter:title" content="Phone & Laptop Store Near Jumeirah Village | PZM Dubai">
     <meta name="twitter:description" content="Nearest phone & laptop shop to Jumeirah Village (JVC/JVT). iPhones, MacBooks, repairs & gaming PC builds.">
     <meta name="twitter:image" content="https://pzm.ae/images/mini_logo.png">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../css/contact.css">
 
     <!-- Google Analytics -->
@@ -68,6 +67,34 @@
     </script>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">PZM</span><span class="logo-store">STORE</span></div></a>
+            <div class="nav-links" id="navLinks">
+                <a href="/">Home</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Services</button>
+                    <div class="nav-dropdown-content">
+                        <a href="/services/buy-iphone.html">Buy iPhone</a>
+                        <a href="/services/brand-new.html">New Devices</a>
+                        <a href="/services/buy-used.html">Used Devices</a>
+                        <a href="/services/repair.html">Repair Services</a>
+                        <a href="/services/gaming-pc.html">Gaming PC</a>
+                        <a href="/services/sell-gadgets.html">Sell Devices</a>
+                        <a href="/services/accessories.html">Accessories</a>
+                    </div>
+                </div>
+                <a href="/blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions" id="navActions">
+                <a href="tel:+971528026677" class="btn-login"> Call Us</a>
+                <a href="https://wa.me/971528026677?text=Hi%2C%20I%27m%20interested%20in%20your%20services.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
     <header>
         <div class="header-content">
             <img src="../images/mini_logo.png" alt="PZM Logo" class="logo" width="500" height="500">
@@ -76,26 +103,7 @@
             </div>
         </div>
     </header>
-
-    <nav class="main-nav">
-        <a href="/">Home</a>
-        <div class="services-dropdown">
-            <a href="#">Services</a>
-            <div class="dropdown-content">
-                <a href="../services/buy-iphone.html">Buy iPhone</a>
-                <a href="../services/buy-used.html">Buy Used iPhones &amp; Laptops</a>
-                <a href="../services/brand-new.html">New Devices</a>
-                <a href="../services/repair.html">Repair Services</a>
-                <a href="../services/gaming-pc.html">Gaming PC</a>
-                <a href="../services/sell-gadgets.html">Sell Devices</a>
-                <a href="../services/accessories.html">Accessories</a>
-            </div>
-        </div>
-        <a href="/blog.html">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <main>
+<main>
         <section class="service-details">
             <h1>Phone &amp; Laptop Store Near Jumeirah Village, Dubai</h1>
             <div class="service-description">
@@ -144,7 +152,7 @@
         <div id="contact-section"></div>
     </main>
 
-    <script src="../js/header.js"></script>
+    <script src="/js/navbar.js"></script>
     <script src="/js/contact-loader.js"></script>
 </body>
 </html>

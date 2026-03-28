@@ -56,7 +56,20 @@ areas/
 ## Limitations
 
 - No server-side headers (HSTS, CSP, etc.) — GitHub Pages restriction.
+- No cache-control headers — GitHub Pages restriction.
 - `rg` (ripgrep) not available in terminal; use workspace search tools or PowerShell.
+
+## Performance — Do NOT Attempt
+
+The mobile PageSpeed score (~70) is limited by third-party scripts (Elfsight, dual GA4) and GitHub Pages caching constraints. These optimizations were **tested and proven ineffective** — do not retry:
+
+- Removing or reducing the hero slider (13 slides) — score unchanged, hurt desktop UX.
+- Deferring CSS files — no measurable FCP improvement.
+- Converting images to WebP — negligible savings (images are already small).
+
+**Why 70 is acceptable**: Google ranks using real user data (CrUX), not lab scores. PZM has no CrUX data = no penalty. CLS is 0 (perfect). Structured data, content quality, and mobile-friendliness matter far more than chasing PageSpeed points.
+
+**What actually improves Google visibility**: Product schema (prices, reviews, ratings), proper JSON-LD, content relevance, and correct `.html` links.
 
 ## React / Vite App (src/)
 

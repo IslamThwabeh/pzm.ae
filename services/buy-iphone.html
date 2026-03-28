@@ -23,9 +23,8 @@
   <meta name="twitter:title" content="Buy iPhone 17 Pro Max, Pro & Air Dubai | PZM">
   <meta name="twitter:description" content="Buy iPhone 17 Pro Max, Pro, Air & iPhone 17 in Al Barsha, Dubai. All colors, Cash on Delivery, genuine products.">
   <meta name="twitter:image" content="https://pzm.ae/images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/theme.css">
+<link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/buy-iphone.css">
 
@@ -600,37 +599,35 @@
 
 </head>
 <body>
-    <!-- Main Header -->
-    <header>
-        <div class="header-content">
-            <img src="../images/mini_logo.png" alt="PZM Logo" class="logo" width="500" height="500">
-            <div class="header-text">
-                <p>PZM Computers & Phones Store -New•Used•Repair•PC•Build</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">PZM</span><span class="logo-store">STORE</span></div></a>
+            <div class="nav-links" id="navLinks">
+                <a href="/">Home</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-trigger">Services</button>
+                    <div class="nav-dropdown-content">
+                        <a href="/services/buy-iphone.html">Buy iPhone</a>
+                        <a href="/services/brand-new.html">New Devices</a>
+                        <a href="/services/buy-used.html">Used Devices</a>
+                        <a href="/services/repair.html">Repair Services</a>
+                        <a href="/services/gaming-pc.html">Gaming PC</a>
+                        <a href="/services/sell-gadgets.html">Sell Devices</a>
+                        <a href="/services/accessories.html">Accessories</a>
+                    </div>
+                </div>
+                <a href="/blog.html">Blog</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
-    </header>
-
-    <!-- Navigation Menu -->
-    <nav class="main-nav">
-        <a href="/">Home</a>
-        <div class="services-dropdown">
-            <a href="#">Services</a>
-            <div class="dropdown-content">
-                <a href="/services/brand-new.html">New Devices</a>
-                <a href="/services/buy-used.html">Used Devices</a>
-                <a href="/services/repair.html">Repair Services</a>
-                <a href="/services/gaming-pc.html">Gaming PC</a>
-                <a href="/services/sell-gadgets.html">Sell Devices</a>
-                <a href="/services/accessories.html">Accessories</a>
-                <a href="/services/buy-used.html">Buy Used iPhones and Laptops</a>
-                <a href="/services/buy-iphone.html" class="active">Buy iPhone</a>
+            <div class="nav-actions" id="navActions">
+                <a href="tel:+971528026677" class="btn-login"> Call Us</a>
+                <a href="https://wa.me/971528026677?text=Hi%2C%20I%27m%20interested%20in%20your%20services.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a>
             </div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
         </div>
-        <a href="/blog.html">Blog</a>
-        <a href="#contact">Contact</a>
     </nav>
-
-    <!-- Main Content -->
+<!-- Main Content -->
     <main>
         <section class="iphone-hero">
         <h1>Buy iPhone 17 Pro Max, Pro, Air & iPhone 17 in Dubai, UAE</h1>
@@ -806,7 +803,8 @@
 
         <!-- Contact Section (loaded from /components/contact.html) -->
         <div id="contact-section"></div>
-    </main>
+    </main>    <script src="/js/navbar.js"></script>
+
 
     <script src="/js/contact-loader.js"></script>
 </body>
