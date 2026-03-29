@@ -172,13 +172,22 @@
         }
         .logo-pzm { color: var(--dark); }
         .logo-store {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             font-weight: 600;
+            color: var(--dark);
+            letter-spacing: 0;
+            text-transform: none;
+            display: inline;
+            margin-top: 0;
+        }
+        .logo-tagline {
+            font-size: 0.55rem;
+            font-weight: 500;
             color: var(--accent);
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             display: block;
-            margin-top: -4px;
+            margin-top: -2px;
         }
         .logo-group { display: flex; flex-direction: column; }
         .nav-links {
@@ -1288,6 +1297,10 @@
             .hamburger { display: flex; }
             .navbar-inner { height: 60px; }
 
+            .logo { font-size: 1.1rem; letter-spacing: 0; }
+            .logo-store { font-size: 0.55rem; }
+            .logo-tagline { font-size: 0.4rem; letter-spacing: 1px; }
+
             /* Mobile menu */
             .nav-links.open {
                 display: flex;
@@ -1296,9 +1309,10 @@
                 top: 60px;
                 left: 0;
                 right: 0;
-                bottom: 0;
+                height: calc(100vh - 60px);
+                height: calc(100dvh - 60px);
                 background: #fff;
-                padding: 40px 24px;
+                padding: 40px 24px 100px;
                 gap: 24px;
                 z-index: 999;
                 animation: slideDown 0.3s ease;
@@ -1352,7 +1366,7 @@
                 padding: 20px 24px;
                 background: #fff;
                 border-top: 1px solid var(--gray-200);
-                z-index: 999;
+                z-index: 1001;
                 justify-content: center;
             }
 
