@@ -475,7 +475,7 @@
         }
         .appointment-card .subtitle {
             font-size: 0.85rem;
-            color: var(--gray-400);
+            color: var(--gray-600);
             margin-bottom: 24px;
         }
         .form-group { margin-bottom: 16px; }
@@ -788,7 +788,7 @@
             font-size: 2.2rem;
             margin-bottom: 16px;
         }
-        .trust-card h4 {
+        .trust-card h3 {
             font-size: 1rem;
             font-weight: 700;
             color: var(--dark);
@@ -864,7 +864,7 @@
         }
         .blog-date {
             font-size: 0.8rem;
-            color: var(--gray-400);
+            color: var(--gray-600);
         }
 
         /* ===== REVIEWS ===== */
@@ -918,7 +918,7 @@
         }
         .review-author-info span {
             font-size: 0.8rem;
-            color: var(--gray-400);
+            color: var(--gray-600);
         }
 
         /* ===== FAQ ===== */
@@ -1008,7 +1008,7 @@
             margin-bottom: 8px;
         }
         .areas-inner > p {
-            color: var(--gray-400);
+            color: var(--gray-600);
             margin-bottom: 28px;
         }
         .areas-tags {
@@ -1110,7 +1110,7 @@
             padding: 24px;
             margin-top: 28px;
         }
-        .hours-card h4 {
+        .hours-card h3 {
             font-size: 1rem;
             font-weight: 700;
             color: var(--dark);
@@ -1473,6 +1473,7 @@
         </div>
     </nav>
 
+    <main>
     <!-- ===== EID BANNER ===== -->
     <div class="eid-banner">
         <div class="eid-banner-content">
@@ -1601,22 +1602,22 @@
         <div class="trust-grid">
             <div class="trust-card fade-up">
                 <div class="trust-icon">🛡️</div>
-                <h4>Warranty Included</h4>
+                <h3>Warranty Included</h3>
                 <p>All devices come with genuine warranty coverage for your peace of mind.</p>
             </div>
             <div class="trust-card fade-up">
                 <div class="trust-icon">⚡</div>
-                <h4>Same-Day Repair</h4>
+                <h3>Same-Day Repair</h3>
                 <p>Most repairs completed within hours. Drop off in the morning, pick up by evening.</p>
             </div>
             <div class="trust-card fade-up">
                 <div class="trust-icon">✅</div>
-                <h4>Certified Pre-Owned</h4>
+                <h3>Certified Pre-Owned</h3>
                 <p>Every used device goes through a comprehensive 30-point inspection before sale.</p>
             </div>
             <div class="trust-card fade-up">
                 <div class="trust-icon">🚗</div>
-                <h4>Pickup &amp; Delivery</h4>
+                <h3>Pickup &amp; Delivery</h3>
                 <p>Can't visit? We'll pick up your device and deliver it back after repair.</p>
             </div>
         </div>
@@ -1842,8 +1843,8 @@
             </div>
             <div class="appointment-card">
                 <div class="form-group">
-                    <label>Service Type</label>
-                    <select>
+                    <label for="apptService">Service Type</label>
+                    <select id="apptService">
                         <option>MacBook Repair</option>
                         <option>iPhone / Android Repair</option>
                         <option>Custom Gaming PC Build</option>
@@ -1853,17 +1854,17 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" placeholder="Enter your name">
+                    <label for="apptName">Your Name</label>
+                    <input type="text" id="apptName" placeholder="Enter your name">
                 </div>
                 <div class="form-group">
-                    <label>Phone / WhatsApp</label>
-                    <input type="tel" placeholder="+971 5XX XXX XXXX">
+                    <label for="apptPhone">Phone / WhatsApp</label>
+                    <input type="tel" id="apptPhone" placeholder="+971 5XX XXX XXXX">
                 </div>
                 <div class="form-group">
                     <div class="date-time-row">
                         <div>
-                            <label>Preferred Date</label>
+                            <label for="apptDate">Preferred Date</label>
                             <input type="date" id="apptDate">
                         </div>
                         <div>
@@ -1918,7 +1919,7 @@
                     </a>
                 </div>
                 <div class="hours-card" id="hoursCard">
-                    <h4>🕐 Working Hours</h4>
+                    <h3>🕐 Working Hours</h3>
                     <div id="storeStatus"></div>
                     <div class="hours-row" data-day="0"><span class="day">Sunday</span><span>10:00 AM – 1:00 AM</span></div>
                     <div class="hours-row" data-day="1"><span class="day">Monday</span><span>10:00 AM – 11:00 PM</span></div>
@@ -1934,6 +1935,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer>
