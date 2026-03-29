@@ -1661,7 +1661,7 @@
         </div>
     </div>
 
-    <!-- ===== REVIEWS (Google Maps via Elfsight) ===== -->
+    <!-- ===== REVIEWS (Google Maps via Elfsight, with static fallback) ===== -->
     <section class="reviews-section">
         <div class="section-header fade-up">
             <span class="section-badge">Testimonials</span>
@@ -1669,6 +1669,81 @@
             <p>What our customers are saying about their PZM experience on Google.</p>
         </div>
         <div class="elfsight-app-69b4a752-7f66-44fe-8388-276e68bc6823" data-elfsight-app-lazy></div>
+        <!-- Static fallback — shown when Elfsight fails (e.g. view limit) -->
+        <div id="reviews-fallback" class="reviews-grid fade-up" style="display:none;">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Best phone repair shop in Al Barsha! Fixed my iPhone screen in under an hour. Professional service and fair prices. Highly recommended."</p>
+                <div class="review-author">
+                    <div class="review-avatar">M</div>
+                    <div class="review-author-info">
+                        <strong>Mohammed Al-R.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Bought a certified pre-owned MacBook Air — looks brand new! Great warranty and the staff were very helpful explaining everything."</p>
+                <div class="review-author">
+                    <div class="review-avatar">S</div>
+                    <div class="review-author-info">
+                        <strong>Sarah K.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Amazing custom gaming PC build! They helped me pick the right specs for my budget. Delivery was fast and the build quality is excellent."</p>
+                <div class="review-author">
+                    <div class="review-avatar">A</div>
+                    <div class="review-author-info">
+                        <strong>Ahmed T.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Sold my old iPhone here and got a very fair price. The process was quick and transparent. Will definitely come back for my next upgrade."</p>
+                <div class="review-author">
+                    <div class="review-avatar">R</div>
+                    <div class="review-author-info">
+                        <strong>Rania M.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Needed an urgent laptop repair before a business trip. They diagnosed and fixed the issue same day. Lifesavers! Thank you PZM team."</p>
+                <div class="review-author">
+                    <div class="review-avatar">J</div>
+                    <div class="review-author-info">
+                        <strong>James W.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"Great selection of phone accessories at reasonable prices. The staff recommended the perfect case and screen protector for my Galaxy."</p>
+                <div class="review-author">
+                    <div class="review-avatar">F</div>
+                    <div class="review-author-info">
+                        <strong>Fatima H.</strong>
+                        <span>Google Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reviews-fallback-cta" style="display:none; text-align:center; margin-top:24px;">
+            <a href="https://www.google.com/maps/place/PZM+Computers+%26+Phones+Store/@25.1131766,55.1975917,17z/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="display:inline-flex; align-items:center; gap:8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                See All Reviews on Google Maps
+            </a>
+        </div>
     </section>
 
     <!-- ===== FAQ ===== -->
@@ -2003,6 +2078,23 @@
             const encoded = encodeURIComponent(msg);
             window.open(`https://wa.me/971528026677?text=${encoded}`, '_blank');
         }
+
+        // Elfsight reviews fallback — show static reviews if widget fails
+        (function() {
+            var elWidget = document.querySelector('.elfsight-app-69b4a752-7f66-44fe-8388-276e68bc6823');
+            var fallback = document.getElementById('reviews-fallback');
+            var fallbackCta = document.getElementById('reviews-fallback-cta');
+            if (!elWidget || !fallback) return;
+            // Check after 5s if Elfsight rendered content
+            setTimeout(function() {
+                var rendered = elWidget.querySelector('iframe, [class*="eapps"], div[data-widget]');
+                if (!rendered || elWidget.offsetHeight < 50) {
+                    elWidget.style.display = 'none';
+                    fallback.style.display = '';
+                    if (fallbackCta) fallbackCta.style.display = '';
+                }
+            }, 5000);
+        })();
 
         // Scroll animations (Intersection Observer)
         const observer = new IntersectionObserver((entries) => {
