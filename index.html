@@ -666,9 +666,10 @@
         }
         .service-icon.repair { background: #fef3c7; }
         .service-icon.shop { background: #dbeafe; }
+        .service-icon.used { background: #d1fae5; }
         .service-icon.build { background: #ede9fe; }
         .service-icon.iphone { background: #fce7f3; }
-        .service-icon.sell { background: #d1fae5; }
+        .service-icon.sell { background: #fef9c3; }
         .service-icon.accessories { background: #e0e7ff; }
         .service-card h3 {
             font-size: 1.15rem;
@@ -1516,11 +1517,17 @@
                 <p>Expert device repair and maintenance for iPhones, MacBooks, Samsung, and all major brands. Same-day service available.</p>
                 <span class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </a>
-            <a href="services/buy-used.html" class="service-card fade-up">
+            <a href="services/brand-new.html" class="service-card fade-up">
                 <div class="service-icon shop">🛍️</div>
-                <h3>Shop New &amp; Used</h3>
-                <p>Certified pre-owned phones, laptops, tablets, and gaming PCs — thoroughly tested with warranty and transparent grading.</p>
-                <span class="service-link">Browse devices <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                <h3>Shop Brand New</h3>
+                <p>iPhones, Samsung, MacBooks, gaming consoles — official warranty and best prices in Dubai. Latest models in stock.</p>
+                <span class="service-link">Browse new devices <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+            <a href="services/buy-used.html" class="service-card fade-up">
+                <div class="service-icon used">✅</div>
+                <h3>Certified Pre-Owned</h3>
+                <p>Tested &amp; graded iPhones, laptops, MacBooks &amp; tablets with warranty. Quality you can trust at prices that make sense.</p>
+                <span class="service-link">Browse used devices <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </a>
             <a href="services/gaming-pc.html" class="service-card fade-up">
                 <div class="service-icon build">🖥️</div>
@@ -1877,16 +1884,52 @@
     <script>
         // Mobile menu toggle
         function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('open');
-            document.getElementById('navActions').classList.toggle('open');
+            var navLinks = document.getElementById('navLinks');
+            var navActions = document.getElementById('navActions');
+            var isOpening = !navLinks.classList.contains('open');
+            navLinks.classList.toggle('open');
+            navActions.classList.toggle('open');
+            if (isOpening) {
+                document.body.appendChild(navActions);
+            } else {
+                document.querySelector('.navbar-inner').appendChild(navActions);
+            }
         }
 
         // Close mobile menu on link click
         document.querySelectorAll('#navLinks a').forEach(link => {
             link.addEventListener('click', () => {
+                var navActions = document.getElementById('navActions');
                 document.getElementById('navLinks').classList.remove('open');
-                document.getElementById('navActions').classList.remove('open');
+                navActions.classList.remove('open');
+                var navbarInner = document.querySelector('.navbar-inner');
+                if (navActions.parentNode !== navbarInner) navbarInner.appendChild(navActions);
             });
+        });
+
+        // Handle mobile dropdown toggle
+        document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
+            trigger.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    trigger.closest('.nav-dropdown').classList.toggle('active');
+                }
+            });
+        });
+
+        // Close menus on resize to desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                var navLinks = document.getElementById('navLinks');
+                var navActions = document.getElementById('navActions');
+                if (navLinks) navLinks.classList.remove('open');
+                if (navActions) {
+                    navActions.classList.remove('open');
+                    var navbarInner = document.querySelector('.navbar-inner');
+                    if (navActions.parentNode !== navbarInner) navbarInner.appendChild(navActions);
+                }
+                document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('active'); });
+            }
         });
 
         // ===== TIME SLOT PICKER =====
