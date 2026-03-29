@@ -1,8 +1,19 @@
 // PZM Navbar — Mobile menu toggle & dropdown handling
 
 function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('open');
-    document.getElementById('navActions').classList.toggle('open');
+    var navLinks = document.getElementById('navLinks');
+    var navActions = document.getElementById('navActions');
+    var isOpening = !navLinks.classList.contains('open');
+
+    navLinks.classList.toggle('open');
+    navActions.classList.toggle('open');
+
+    // Move nav-actions to body when open (escapes backdrop-filter containing block)
+    if (isOpening) {
+        document.body.appendChild(navActions);
+    } else {
+        document.querySelector('.navbar-inner').appendChild(navActions);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -35,7 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
             var navLinks = document.getElementById('navLinks');
             var navActions = document.getElementById('navActions');
             if (navLinks) navLinks.classList.remove('open');
-            if (navActions) navActions.classList.remove('open');
+            if (navActions) {
+                navActions.classList.remove('open');
+                // Return nav-actions to navbar if it was moved to body
+                var navbarInner = document.querySelector('.navbar-inner');
+                if (navActions.parentNode !== navbarInner) {
+                    navbarInner.appendChild(navActions);
+                }
+            }
             document.querySelectorAll('.nav-dropdown').forEach(function (d) {
                 d.classList.remove('active');
             });

@@ -319,10 +319,25 @@ a.inventory-item:hover .item-whatsapp-hint {
     color: #fff !important;
 }
 
-/* Responsive */
+/* Responsive — Tablet */
+@media (max-width: 768px) {
+    .item-thumb {
+        width: 48px;
+        height: 48px !important;
+        min-width: 48px;
+        opacity: 1;
+        padding: 2px;
+    }
+}
+
+/* Responsive — Phone */
 @media (max-width: 480px) {
     .inventory-hero h1 { font-size: 1.8rem; }
     .inventory-hero p { font-size: 1rem; }
-    .eid-banner h2 { font-size: 1.4rem; }
     a.inventory-item { padding: 14px 16px; }
+    .item-thumb {
+        width: 40px;
+        height: 40px !important;
+        min-width: 40px;
+    }
 }
