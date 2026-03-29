@@ -738,6 +738,8 @@ footer {
         padding: 14px 16px;
         font-size: 1.05rem;
         border-radius: 8px;
+        text-align: left;
+        width: 100%;
     }
     .nav-links.open > a:hover {
         background: var(--gray-100);
