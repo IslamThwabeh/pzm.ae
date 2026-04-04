@@ -478,6 +478,79 @@
             color: var(--gray-600);
             margin-bottom: 24px;
         }
+        .booking-mode-group {
+            position: relative;
+            z-index: 1;
+        }
+        .booking-mode-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gray-500);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .booking-mode-tabs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .booking-mode-tab {
+            padding: 14px 12px;
+            border: 1.5px solid var(--gray-200);
+            border-radius: 14px;
+            background: #fff;
+            text-align: left;
+            font-family: inherit;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .booking-mode-tab strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+        .booking-mode-tab span {
+            display: block;
+            font-size: 0.8rem;
+            line-height: 1.45;
+            color: var(--gray-500);
+        }
+        .booking-mode-tab:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-1px);
+        }
+        .booking-mode-tab.active {
+            border-color: rgba(14,165,233,0.22);
+            background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(0,200,150,0.12));
+            box-shadow: 0 10px 24px rgba(14,165,233,0.10);
+        }
+        .booking-mode-tab.active strong {
+            color: var(--accent);
+        }
+        .booking-mode-note {
+            margin-top: 12px;
+            padding: 14px 16px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.94), rgba(239,246,255,0.96));
+            border: 1px solid rgba(14,165,233,0.14);
+            font-size: 0.88rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+        .booking-mode-note strong {
+            display: block;
+            font-size: 0.92rem;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+        .booking-mode-note.pickup {
+            background: linear-gradient(135deg, rgba(255,255,255,0.94), rgba(240,253,250,0.98));
+            border-color: rgba(0,200,150,0.18);
+        }
         .form-group { margin-bottom: 16px; }
         .form-group label {
             display: block;
@@ -503,6 +576,27 @@
         }
         .form-group select:focus,
         .form-group input:focus { border-color: var(--accent); }
+        .form-feedback {
+            display: none;
+            margin-top: 16px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        .form-feedback.error {
+            display: block;
+            background: #fff1f2;
+            color: #be123c;
+            border: 1px solid #fecdd3;
+        }
+        .form-feedback.info {
+            display: block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
         .btn-book {
             width: 100%;
             padding: 14px;
@@ -1205,6 +1299,16 @@
             color: #fff;
             border-color: var(--accent);
         }
+        .time-period-tab.disabled {
+            border-color: var(--gray-200);
+            background: var(--gray-100);
+            color: var(--gray-400);
+            cursor: not-allowed;
+        }
+        .time-period-tab.disabled:hover {
+            border-color: var(--gray-200);
+            color: var(--gray-400);
+        }
         .time-slots-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -1228,6 +1332,22 @@
             background: linear-gradient(135deg, var(--accent), var(--primary));
             color: #fff;
             border-color: transparent;
+        }
+        .time-slots-empty {
+            grid-column: 1 / -1;
+            padding: 14px 12px;
+            border: 1px dashed var(--gray-200);
+            border-radius: 12px;
+            background: var(--gray-100);
+            color: var(--gray-500);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        .booking-rule-hint {
+            margin-top: 12px;
+            font-size: 0.82rem;
+            color: var(--gray-600);
+            line-height: 1.6;
         }
 
         /* ===== RESPONSIVE ===== */
@@ -1356,7 +1476,9 @@
             .trust-grid { grid-template-columns: 1fr; }
             .areas-tags { gap: 8px; }
             .area-tag { font-size: 0.8rem; padding: 8px 16px; }
+            .booking-mode-tabs { grid-template-columns: 1fr; }
             .date-time-row { grid-template-columns: 1fr; }
+            .time-slots-grid { grid-template-columns: repeat(3, 1fr); }
         }
 
         @keyframes slideDown {
@@ -1786,17 +1908,34 @@
         <div class="appointment-inner fade-up">
             <div class="appointment-text">
                 <span class="section-badge">Book Now</span>
-                <h2>Book Appointment &amp; Pickup</h2>
-                <p>Schedule an in-store visit or request a doorstep pickup. Choose your preferred date and time — we'll confirm via WhatsApp.</p>
+                <h2>Book Drop-Off or Pickup</h2>
+                <p>Choose whether you will bring the device to our Al Barsha store or ask us to collect and return it. Store drop-off can be booked for the same day, while pickup &amp; return needs at least 24 hours notice.</p>
             </div>
             <div class="appointment-card">
+                <div class="form-group booking-mode-group">
+                    <span class="booking-mode-label">Booking Method</span>
+                    <div class="booking-mode-tabs" role="tablist" aria-label="Booking method">
+                        <button type="button" class="booking-mode-tab active" data-mode="store" role="tab" aria-selected="true">
+                            <strong>I will bring my device</strong>
+                            <span>Same-day drop-off at our Al Barsha store.</span>
+                        </button>
+                        <button type="button" class="booking-mode-tab" data-mode="pickup" role="tab" aria-selected="false">
+                            <strong>Pick up &amp; return</strong>
+                            <span>We collect it from you and return it after service.</span>
+                        </button>
+                    </div>
+                    <div class="booking-mode-note store" id="bookingModeNote">
+                        <strong>Store drop-off</strong>
+                        Same-day booking is available. Choose any upcoming Dubai time slot and bring the device to our store.
+                    </div>
+                </div>
                 <div class="form-group">
-                    <label for="apptService">Service Type</label>
+                    <label for="apptService">Required Service</label>
                     <select id="apptService">
                         <option>MacBook Repair</option>
                         <option>iPhone / Android Repair</option>
+                        <option>Device Cleaning / Maintenance</option>
                         <option>Custom Gaming PC Build</option>
-                        <option>Device Pickup Service</option>
                         <option>Sell My Device</option>
                         <option>Other Inquiry</option>
                     </select>
@@ -1830,7 +1969,9 @@
                             <!-- Populated by JS -->
                         </div>
                     </div>
+                    <p class="booking-rule-hint" id="bookingRuleHint">Same-day store drop-off is available. Only upcoming time slots are shown for today.</p>
                 </div>
+                <div class="form-feedback" id="appointmentFeedback" aria-live="polite"></div>
                 <button class="btn-book" onclick="bookAppointment()">Book Now →</button>
             </div>
         </div>
@@ -1962,69 +2103,307 @@
             }
         });
 
-        // ===== TIME SLOT PICKER =====
+        // ===== APPOINTMENT BOOKING =====
         const timeSlots = {
             morning:   ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','12:30 PM'],
             afternoon: ['1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM','4:30 PM'],
             evening:   ['5:00 PM','5:30 PM','6:00 PM','6:30 PM','7:00 PM','7:30 PM','8:00 PM','8:30 PM','9:00 PM','9:30 PM','10:00 PM','10:30 PM']
         };
+        const bookingModes = {
+            store: {
+                label: 'Store drop-off',
+                note: 'Same-day booking is available. Choose any upcoming Dubai time slot and bring the device to our store.',
+                hintToday: 'Same-day store drop-off is available. Only upcoming time slots are shown for today.',
+                hintFuture: 'Store drop-off can be booked for this date during regular working hours.'
+            },
+            pickup: {
+                label: 'Pickup & return',
+                note: 'We collect the device from you and return it after service. Please allow at least 24 hours for scheduling and coordination. Transport starts from AED 60 round trip and may vary by area, in addition to the selected service.',
+                hintThreshold: 'Pickup & return needs at least 24 hours notice. Only time slots after that window are shown.',
+                hintLater: 'Pickup & return bookings need at least 24 hours notice. Transport starts from AED 60 round trip and may vary by area.'
+            }
+        };
+        const appointmentElements = {
+            modeTabs: document.querySelectorAll('.booking-mode-tab'),
+            periodTabs: document.querySelectorAll('.time-period-tab'),
+            modeNote: document.getElementById('bookingModeNote'),
+            service: document.getElementById('apptService'),
+            name: document.getElementById('apptName'),
+            phone: document.getElementById('apptPhone'),
+            date: document.getElementById('apptDate'),
+            slotsGrid: document.getElementById('timeSlotsGrid'),
+            ruleHint: document.getElementById('bookingRuleHint'),
+            feedback: document.getElementById('appointmentFeedback')
+        };
+        let selectedMode = 'store';
+        let selectedPeriod = 'morning';
         let selectedTime = '';
 
-        function renderSlots(period) {
-            const grid = document.getElementById('timeSlotsGrid');
-            grid.innerHTML = timeSlots[period].map(t =>
-                `<button type="button" class="time-slot${t === selectedTime ? ' selected' : ''}" data-time="${t}">${t}</button>`
-            ).join('');
+        function getDubaiNow() {
+            const parts = new Intl.DateTimeFormat('en-GB', {
+                timeZone: 'Asia/Dubai',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            }).formatToParts(new Date()).reduce((accumulator, part) => {
+                if (part.type !== 'literal') accumulator[part.type] = part.value;
+                return accumulator;
+            }, {});
+
+            return new Date(
+                Number(parts.year),
+                Number(parts.month) - 1,
+                Number(parts.day),
+                Number(parts.hour),
+                Number(parts.minute),
+                Number(parts.second)
+            );
         }
 
-        // Period tabs
-        document.querySelectorAll('.time-period-tab').forEach(tab => {
+        function formatDateInput(date) {
+            const yyyy = date.getFullYear();
+            const mm = String(date.getMonth() + 1).padStart(2, '0');
+            const dd = String(date.getDate()).padStart(2, '0');
+            return `${yyyy}-${mm}-${dd}`;
+        }
+
+        function formatDisplayDate(dateValue) {
+            const [year, month, day] = dateValue.split('-').map(Number);
+            return new Date(year, month - 1, day).toLocaleDateString('en-GB', {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+
+        function parseTimeLabel(label) {
+            const [time, meridiem] = label.split(' ');
+            let [hour, minute] = time.split(':').map(Number);
+
+            if (meridiem === 'PM' && hour !== 12) hour += 12;
+            if (meridiem === 'AM' && hour === 12) hour = 0;
+
+            return { hour, minute };
+        }
+
+        function createAppointmentDateTime(dateValue, timeLabel) {
+            if (!dateValue || !timeLabel) return null;
+
+            const [year, month, day] = dateValue.split('-').map(Number);
+            const { hour, minute } = parseTimeLabel(timeLabel);
+
+            return new Date(year, month - 1, day, hour, minute, 0, 0);
+        }
+
+        function getMinimumDateTimeForMode(mode) {
+            const dubaiNow = getDubaiNow();
+            return mode === 'pickup'
+                ? new Date(dubaiNow.getTime() + 24 * 60 * 60 * 1000)
+                : dubaiNow;
+        }
+
+        function getAvailableSlots(period, dateValue) {
+            if (!dateValue) return [];
+
+            const minimumTime = getMinimumDateTimeForMode(selectedMode).getTime();
+            return timeSlots[period].filter(timeLabel => {
+                const slotDateTime = createAppointmentDateTime(dateValue, timeLabel);
+                return slotDateTime && slotDateTime.getTime() >= minimumTime;
+            });
+        }
+
+        function setAppointmentFeedback(message, type) {
+            appointmentElements.feedback.textContent = message || '';
+            appointmentElements.feedback.className = message ? `form-feedback ${type}` : 'form-feedback';
+        }
+
+        function clearAppointmentFeedback() {
+            setAppointmentFeedback('', '');
+        }
+
+        function updateModeTabs() {
+            appointmentElements.modeTabs.forEach(tab => {
+                const isActive = tab.dataset.mode === selectedMode;
+                tab.classList.toggle('active', isActive);
+                tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+        }
+
+        function updateModeCopy() {
+            const modeConfig = bookingModes[selectedMode];
+            appointmentElements.modeNote.className = `booking-mode-note ${selectedMode}`;
+            appointmentElements.modeNote.innerHTML = `<strong>${modeConfig.label}</strong>${modeConfig.note}`;
+        }
+
+        function updateRuleHint() {
+            const dubaiToday = formatDateInput(getDubaiNow());
+            const thresholdDate = formatDateInput(getMinimumDateTimeForMode(selectedMode));
+
+            if (selectedMode === 'store') {
+                appointmentElements.ruleHint.textContent = appointmentElements.date.value === dubaiToday
+                    ? bookingModes.store.hintToday
+                    : bookingModes.store.hintFuture;
+                return;
+            }
+
+            appointmentElements.ruleHint.textContent = appointmentElements.date.value === thresholdDate
+                ? bookingModes.pickup.hintThreshold
+                : bookingModes.pickup.hintLater;
+        }
+
+        function updatePeriodTabs() {
+            appointmentElements.periodTabs.forEach(tab => {
+                const hasSlots = getAvailableSlots(tab.dataset.period, appointmentElements.date.value).length > 0;
+                const isActive = tab.dataset.period === selectedPeriod;
+
+                tab.classList.toggle('active', isActive);
+                tab.classList.toggle('disabled', !hasSlots);
+                tab.disabled = !hasSlots;
+                tab.setAttribute('aria-disabled', hasSlots ? 'false' : 'true');
+            });
+        }
+
+        function renderSlots(period) {
+            const availableSlots = getAvailableSlots(period, appointmentElements.date.value);
+
+            if (!availableSlots.includes(selectedTime)) {
+                selectedTime = '';
+            }
+
+            appointmentElements.slotsGrid.innerHTML = availableSlots.length
+                ? availableSlots.map(timeLabel =>
+                    `<button type="button" class="time-slot${timeLabel === selectedTime ? ' selected' : ''}" data-time="${timeLabel}">${timeLabel}</button>`
+                ).join('')
+                : `<div class="time-slots-empty">${selectedMode === 'pickup'
+                    ? 'No pickup slots are available in this period yet. Please choose a later period or date.'
+                    : 'No upcoming slots remain in this period. Please choose another period or date.'}</div>`;
+        }
+
+        function refreshAppointmentAvailability() {
+            const minimumDate = formatDateInput(getMinimumDateTimeForMode(selectedMode));
+
+            appointmentElements.date.min = minimumDate;
+            if (!appointmentElements.date.value || appointmentElements.date.value < minimumDate) {
+                appointmentElements.date.value = minimumDate;
+            }
+
+            const firstAvailablePeriod = Object.keys(timeSlots).find(period =>
+                getAvailableSlots(period, appointmentElements.date.value).length > 0
+            );
+
+            if (firstAvailablePeriod && !getAvailableSlots(selectedPeriod, appointmentElements.date.value).length) {
+                selectedPeriod = firstAvailablePeriod;
+            }
+
+            updateModeTabs();
+            updateModeCopy();
+            updateRuleHint();
+            updatePeriodTabs();
+            renderSlots(selectedPeriod);
+
+            if (!firstAvailablePeriod) {
+                setAppointmentFeedback(
+                    selectedMode === 'pickup'
+                        ? 'Pickup & return requires at least 24 hours notice. Please choose a later date.'
+                        : 'No time slots are left for this date. Please choose another date.',
+                    'info'
+                );
+                return;
+            }
+
+            clearAppointmentFeedback();
+        }
+
+        appointmentElements.modeTabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                document.querySelectorAll('.time-period-tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                renderSlots(tab.dataset.period);
+                selectedMode = tab.dataset.mode;
+                selectedTime = '';
+                refreshAppointmentAvailability();
             });
         });
 
+        appointmentElements.periodTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                if (tab.disabled) return;
+
+                selectedPeriod = tab.dataset.period;
+                selectedTime = '';
+                updatePeriodTabs();
+                renderSlots(selectedPeriod);
+                clearAppointmentFeedback();
+            });
+        });
+
+        appointmentElements.date.addEventListener('change', () => {
+            selectedTime = '';
+            refreshAppointmentAvailability();
+        });
+
         // Time slot selection (delegate)
-        document.getElementById('timeSlotsGrid').addEventListener('click', (e) => {
+        appointmentElements.slotsGrid.addEventListener('click', (e) => {
             const btn = e.target.closest('.time-slot');
             if (!btn) return;
             document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
             btn.classList.add('selected');
             selectedTime = btn.dataset.time;
+            clearAppointmentFeedback();
         });
 
-        // Set min date to 2 days from now (Dubai time) — encourages walk-in visits
-        (function setMinDate() {
-            const now = new Date();
-            const dubaiOffset = 4 * 60;
-            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-            const dubai = new Date(utc + (dubaiOffset * 60000));
-            dubai.setDate(dubai.getDate() + 2);
-            const yyyy = dubai.getFullYear();
-            const mm = String(dubai.getMonth() + 1).padStart(2, '0');
-            const dd = String(dubai.getDate()).padStart(2, '0');
-            const dateEl = document.getElementById('apptDate');
-            dateEl.min = `${yyyy}-${mm}-${dd}`;
-            dateEl.value = `${yyyy}-${mm}-${dd}`;
-        })();
+        function validateAppointment() {
+            if (!selectedMode || !bookingModes[selectedMode]) {
+                setAppointmentFeedback('Please choose how you want to book this service.', 'error');
+                return false;
+            }
 
-        // Initial render
-        renderSlots('morning');
+            if (!appointmentElements.date.value) {
+                setAppointmentFeedback('Please choose your preferred date.', 'error');
+                appointmentElements.date.focus();
+                return false;
+            }
+
+            if (!selectedTime) {
+                setAppointmentFeedback('Please choose an available time slot before continuing.', 'error');
+                return false;
+            }
+
+            if (!getAvailableSlots(selectedPeriod, appointmentElements.date.value).includes(selectedTime)) {
+                selectedTime = '';
+                refreshAppointmentAvailability();
+                setAppointmentFeedback(
+                    selectedMode === 'pickup'
+                        ? 'Pickup & return bookings need at least 24 hours notice. Please choose a later date or time slot.'
+                        : 'This time slot is no longer available. Please choose another slot.',
+                    'error'
+                );
+                return false;
+            }
+
+            return true;
+        }
+
+        refreshAppointmentAvailability();
 
         // Book appointment via WhatsApp
         function bookAppointment() {
-            const service = document.querySelector('.appointment-card select').value;
-            const name = document.querySelector('.appointment-card input[type="text"]').value;
-            const phone = document.querySelector('.appointment-card input[type="tel"]').value;
-            const date = document.getElementById('apptDate').value;
+            if (!validateAppointment()) return;
 
-            let msg = `Hi, I'd like to book an appointment.\n\nService: ${service}`;
+            const bookingMode = bookingModes[selectedMode];
+            const service = appointmentElements.service.value;
+            const name = appointmentElements.name.value.trim();
+            const phone = appointmentElements.phone.value.trim();
+            const date = appointmentElements.date.value;
+
+            let msg = `Hi, I'd like to book a service.\n\nBooking Method: ${bookingMode.label}\nService: ${service}\nPreferred Date: ${formatDisplayDate(date)}\nPreferred Time: ${selectedTime} (Dubai time)`;
+            if (selectedMode === 'pickup') {
+                msg += `\nPickup & Return Note: Transport starts from AED 60 round trip and may vary by area, in addition to the selected service.`;
+            }
             if (name) msg += `\nName: ${name}`;
             if (phone) msg += `\nPhone: ${phone}`;
-            if (date) msg += `\nDate: ${date}`;
-            if (selectedTime) msg += `\nTime: ${selectedTime}`;
             msg += `\n\n(via pzm.ae)`;
 
             const encoded = encodeURIComponent(msg);
