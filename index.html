@@ -103,6 +103,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/contact.css">
     <style>
         /* ===== RESET & BASE ===== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1080,182 +1082,6 @@
             border-color: var(--primary);
         }
 
-        /* ===== CONTACT / CTA ===== */
-        .contact-section {
-            padding: 80px 24px;
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: start;
-        }
-        .contact-info h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 16px;
-        }
-        .contact-info > p {
-            color: var(--gray-500);
-            margin-bottom: 32px;
-            line-height: 1.7;
-        }
-        .contact-methods {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .contact-method {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        .contact-method-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            flex-shrink: 0;
-        }
-        .contact-method-icon.phone { background: #dbeafe; }
-        .contact-method-icon.whatsapp { background: #dcfce7; }
-        .contact-method-icon.map { background: #fef3c7; }
-        .contact-method strong {
-            display: block;
-            font-size: 0.95rem;
-            color: var(--dark);
-            margin-bottom: 2px;
-        }
-        .contact-method span {
-            font-size: 0.85rem;
-            color: var(--gray-500);
-        }
-        .map-container {
-            border-radius: var(--radius);
-            overflow: hidden;
-            border: 1px solid var(--gray-200);
-            height: 100%;
-            min-height: 320px;
-        }
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* Store hours */
-        .hours-card {
-            background: #fff;
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius);
-            padding: 24px;
-            margin-top: 28px;
-        }
-        .hours-card h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .store-status {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            padding: 4px 12px;
-            border-radius: 50px;
-            margin-bottom: 14px;
-        }
-        .store-status.open {
-            background: #dcfce7;
-            color: #166534;
-        }
-        .store-status.closed {
-            background: #fee2e2;
-            color: #991b1b;
-        }
-        .store-status .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .store-status.open .dot { background: #22c55e; }
-        .store-status.closed .dot { background: #ef4444; }
-        .hours-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 6px 0;
-            font-size: 0.85rem;
-            color: var(--gray-600);
-            border-radius: 6px;
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        .hours-row .day { font-weight: 500; }
-        .hours-row.today {
-            background: rgba(14,165,233,0.06);
-            font-weight: 600;
-            color: var(--dark);
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background: var(--dark);
-            color: var(--gray-400);
-            padding: 48px 24px 24px;
-        }
-        .footer-inner {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-        .footer-logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #fff;
-        }
-        .footer-logo small {
-            display: block;
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--gray-400);
-            letter-spacing: 1px;
-        }
-        .footer-links {
-            display: flex;
-            gap: 24px;
-        }
-        .footer-links a {
-            font-size: 0.85rem;
-            color: var(--gray-400);
-            transition: 0.2s;
-        }
-        .footer-links a:hover { color: #fff; }
-        .footer-bottom {
-            max-width: var(--max-width);
-            margin: 24px auto 0;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.06);
-            text-align: center;
-            font-size: 0.8rem;
-            color: var(--gray-500);
-        }
-
         /* ===== TIME SLOT PICKER ===== */
         .date-time-row {
             display: grid;
@@ -1363,7 +1189,6 @@
             .featured-grid { grid-template-columns: 1fr; }
             .blog-grid { grid-template-columns: 1fr 1fr; }
             .trust-grid { grid-template-columns: repeat(2, 1fr); }
-            .contact-grid { grid-template-columns: 1fr; }
             .faq-grid { grid-template-columns: 1fr 1fr; }
         }
 
@@ -1455,7 +1280,7 @@
             .btn-primary, .btn-secondary { justify-content: center; }
             .appointment-card { max-width: 100%; }
 
-            .section, .trust-section, .reviews-section, .contact-section { padding: 50px 20px; }
+            .section, .trust-section, .reviews-section { padding: 50px 20px; }
             .section-header h2 { font-size: 1.7rem; }
 
             .services-grid { grid-template-columns: 1fr 1fr; }
@@ -1466,8 +1291,6 @@
             .featured-card { flex-direction: column; }
             .featured-img { width: 100%; min-height: 180px; max-height: 220px; }
 
-            .footer-inner { flex-direction: column; text-align: center; }
-            .footer-links { flex-wrap: wrap; justify-content: center; }
         }
 
         @media (max-width: 480px) {
@@ -1977,132 +1800,15 @@
         </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section class="contact-section" id="contact">
-        <div class="contact-grid">
-            <div class="contact-info fade-up">
-                <span class="section-badge">Get in Touch</span>
-                <h2>Contact Us</h2>
-                <p>Need help with our services or products? We're here to help. Visit our store inside Hessa Union Coop Hypermarket or reach out anytime.</p>
-                <div class="contact-methods">
-                    <a href="tel:+971528026677" class="contact-method">
-                        <div class="contact-method-icon phone">📞</div>
-                        <div>
-                            <strong>Call Us</strong>
-                            <span>+971 528 026 677</span>
-                        </div>
-                    </a>
-                    <a href="https://wa.me/971528026677?text=Hi%2C%20I%27m%20interested%20in%20the%20services%20listed%20on%20your%20website.%20Can%20you%20tell%20me%20more%3F%20(via%20pzm.ae)" target="_blank" rel="noopener" class="contact-method">
-                        <div class="contact-method-icon whatsapp">💬</div>
-                        <div>
-                            <strong>WhatsApp</strong>
-                            <span>Chat with us instantly</span>
-                        </div>
-                    </a>
-                    <a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic" target="_blank" rel="noopener" class="contact-method">
-                        <div class="contact-method-icon map">📍</div>
-                        <div>
-                            <strong>Visit Our Store</strong>
-                            <span>Hessa Union Coop Hypermarket, Ground Floor — Al Barsha, Dubai</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="hours-card" id="hoursCard">
-                    <h3>🕐 Working Hours</h3>
-                    <div id="storeStatus"></div>
-                    <div class="hours-row" data-day="0"><span class="day">Sunday</span><span>10:00 AM – 1:00 AM</span></div>
-                    <div class="hours-row" data-day="1"><span class="day">Monday</span><span>10:00 AM – 11:00 PM</span></div>
-                    <div class="hours-row" data-day="2"><span class="day">Tuesday</span><span>10:00 AM – 10:30 PM</span></div>
-                    <div class="hours-row" data-day="3"><span class="day">Wednesday</span><span>10:00 AM – 11:00 PM</span></div>
-                    <div class="hours-row" data-day="4"><span class="day">Thursday</span><span>10:00 AM – 11:00 PM</span></div>
-                    <div class="hours-row" data-day="5"><span class="day">Friday</span><span>10:00 AM – 11:00 PM</span></div>
-                    <div class="hours-row" data-day="6"><span class="day">Saturday</span><span>10:00 AM – 12:00 AM</span></div>
-                </div>
-            </div>
-            <div class="map-container fade-up">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.231830114033!2d55.1992671!3d25.0848627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dc0bc49a6d5%3A0x158c13f2d688b32e!2sPZM%20Computer%20Phone%20Trading%20%26%20Repair%20(Sell%2CUsed%2CNew%2CBuild)!5e0!3m2!1sen!2sae!4v1715590341023!5m2!1sen!2sae" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PZM Store Location"></iframe>
-            </div>
-        </div>
-    </section>
+    <div id="contact-section"></div>
 
     </main>
-
-    <!-- ===== FOOTER ===== -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-logo">
-                PZM
-                <small>Computers & Phones Store</small>
-            </div>
-            <div class="footer-links">
-                <a href="/">Home</a>
-                <a href="services/repair.html">Repair</a>
-                <a href="services/brand-new.html">Shop</a>
-                <a href="services/gaming-pc.html">PC Build</a>
-                <a href="blog.html">Blog</a>
-                <a href="return-policy.html">Return Policy</a>
-                <a href="terms.html">Terms</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            PZM Computers &amp; Phones Store -New•Used•Repair•PC•Build &copy; 2026 All rights reserved.
-        </div>
-    </footer>
 
 
 
     <!-- ===== SCRIPTS ===== -->
+    <script src="/js/navbar.js"></script>
     <script>
-        // Mobile menu toggle
-        function toggleMenu() {
-            var navLinks = document.getElementById('navLinks');
-            var navActions = document.getElementById('navActions');
-            var isOpening = !navLinks.classList.contains('open');
-            navLinks.classList.toggle('open');
-            navActions.classList.toggle('open');
-            if (isOpening) {
-                document.body.appendChild(navActions);
-            } else {
-                document.querySelector('.navbar-inner').appendChild(navActions);
-            }
-        }
-
-        // Close mobile menu on link click
-        document.querySelectorAll('#navLinks a').forEach(link => {
-            link.addEventListener('click', () => {
-                var navActions = document.getElementById('navActions');
-                document.getElementById('navLinks').classList.remove('open');
-                navActions.classList.remove('open');
-                var navbarInner = document.querySelector('.navbar-inner');
-                if (navActions.parentNode !== navbarInner) navbarInner.appendChild(navActions);
-            });
-        });
-
-        // Handle mobile dropdown toggle
-        document.querySelectorAll('.nav-dropdown-trigger').forEach(function(trigger) {
-            trigger.addEventListener('click', function(e) {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    trigger.closest('.nav-dropdown').classList.toggle('active');
-                }
-            });
-        });
-
-        // Close menus on resize to desktop
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                var navLinks = document.getElementById('navLinks');
-                var navActions = document.getElementById('navActions');
-                if (navLinks) navLinks.classList.remove('open');
-                if (navActions) {
-                    navActions.classList.remove('open');
-                    var navbarInner = document.querySelector('.navbar-inner');
-                    if (navActions.parentNode !== navbarInner) navbarInner.appendChild(navActions);
-                }
-                document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('active'); });
-            }
-        });
-
         // ===== APPOINTMENT BOOKING =====
         const timeSlots = {
             morning:   ['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','12:30 PM'],
@@ -2438,200 +2144,7 @@
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        // ===== STORE OPEN/CLOSED STATUS (Dubai time, UTC+4) =====
-        (function storeHoursWidget() {
-            const HOURS_ENDPOINT = 'https://pzm-business-hours.islam-thwabeh.workers.dev/hours';
-            const HOURS_FETCH_TIMEOUT_MS = 5000;
-            const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            const DAY_INDEX = {
-                sunday: 0,
-                monday: 1,
-                tuesday: 2,
-                wednesday: 3,
-                thursday: 4,
-                friday: 5,
-                saturday: 6
-            };
-
-            // closeHour > 24 means next day (e.g., 25 = 1:00 AM next day)
-            const fallbackSchedule = {
-                0: [10, 0, 25, 0],
-                1: [10, 0, 23, 0],
-                2: [10, 0, 22, 30],
-                3: [10, 0, 23, 0],
-                4: [10, 0, 23, 0],
-                5: [10, 0, 23, 0],
-                6: [10, 0, 24, 0]
-            };
-
-            let activeSchedule = { ...fallbackSchedule };
-
-            function getDubaiNow() {
-                return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Dubai' }));
-            }
-
-            function parseTime12h(value) {
-                const match = String(value).trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
-                if (!match) return null;
-
-                let hour = parseInt(match[1], 10);
-                const minute = parseInt(match[2], 10);
-                const period = match[3].toUpperCase();
-
-                if (period === 'AM') {
-                    if (hour === 12) hour = 0;
-                } else if (hour !== 12) {
-                    hour += 12;
-                }
-
-                return [hour, minute];
-            }
-
-            function parseScheduleFromLines(lines) {
-                if (!Array.isArray(lines) || lines.length === 0) return null;
-
-                const next = {};
-                for (let i = 0; i < lines.length; i += 1) {
-                    const line = String(lines[i] || '').trim();
-                    const splitAt = line.indexOf(':');
-                    if (splitAt === -1) return null;
-
-                    const dayName = line.substring(0, splitAt).trim().toLowerCase();
-                    const day = DAY_INDEX[dayName];
-                    if (typeof day !== 'number') return null;
-
-                    const rangeText = line.substring(splitAt + 1).trim().replace(/[–—]/g, '-');
-                    if (!rangeText || /closed/i.test(rangeText)) return null;
-
-                    const parts = rangeText.split('-');
-                    if (parts.length !== 2) return null;
-
-                    const open = parseTime12h(parts[0]);
-                    const close = parseTime12h(parts[1]);
-                    if (!open || !close) return null;
-
-                    let closeMinutes = close[0] * 60 + close[1];
-                    const openMinutes = open[0] * 60 + open[1];
-                    if (closeMinutes <= openMinutes) closeMinutes += 24 * 60;
-
-                    next[day] = [open[0], open[1], Math.floor(closeMinutes / 60), closeMinutes % 60];
-                }
-
-                return Object.keys(next).length === 7 ? next : null;
-            }
-
-            function formatTime(hour24, minute) {
-                const normalized = hour24 >= 24 ? hour24 - 24 : hour24;
-                const ampm = normalized >= 12 ? 'PM' : 'AM';
-                const h12 = normalized % 12 || 12;
-                return `${h12}:${String(minute).padStart(2, '0')} ${ampm}`;
-            }
-
-            function formatRange(scheduleLine) {
-                return `${formatTime(scheduleLine[0], scheduleLine[1])} - ${formatTime(scheduleLine[2], scheduleLine[3])}`;
-            }
-
-            function formatCloseTime(scheduleLine) {
-                return formatTime(scheduleLine[2], scheduleLine[3]);
-            }
-
-            function updateHoursRows(day) {
-                document.querySelectorAll('.hours-row[data-day]').forEach(function (row) {
-                    const rowDay = parseInt(row.dataset.day, 10);
-                    const daySpan = row.querySelector('.day');
-                    const timeSpan = row.querySelector('span:last-child');
-                    if (!daySpan || !timeSpan || !activeSchedule[rowDay]) return;
-
-                    daySpan.textContent = DAY_NAMES[rowDay];
-                    row.classList.remove('today');
-                    if (rowDay === day) {
-                        row.classList.add('today');
-                        daySpan.textContent += ' (Today)';
-                    }
-
-                    timeSpan.textContent = formatRange(activeSchedule[rowDay]);
-                });
-            }
-
-            function updateStoreStatus() {
-                const statusEl = document.getElementById('storeStatus');
-                if (!statusEl) return;
-
-                const dubai = getDubaiNow();
-                const day = dubai.getDay();
-                const hour = dubai.getHours();
-                const min = dubai.getMinutes();
-                const currentMinutes = hour * 60 + min;
-
-                const todaySchedule = activeSchedule[day];
-                if (!todaySchedule) return;
-
-                const openMinutes = todaySchedule[0] * 60 + todaySchedule[1];
-                const closeMinutes = todaySchedule[2] * 60 + todaySchedule[3];
-
-                let isOpen = false;
-                if (closeMinutes > 24 * 60) {
-                    isOpen = currentMinutes >= openMinutes || currentMinutes < (closeMinutes - 24 * 60);
-                } else {
-                    isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
-                }
-
-                if (!isOpen) {
-                    const yesterday = (day + 6) % 7;
-                    const ySchedule = activeSchedule[yesterday];
-                    if (ySchedule) {
-                        const yClose = ySchedule[2] * 60 + ySchedule[3];
-                        if (yClose > 24 * 60 && currentMinutes < (yClose - 24 * 60)) {
-                            isOpen = true;
-                        }
-                    }
-                }
-
-                if (isOpen) {
-                    statusEl.innerHTML = `<div class="store-status open"><span class="dot"></span> Open now · Closes at ${formatCloseTime(todaySchedule)}</div><p style="font-size:0.8rem;color:var(--gray-400);margin-bottom:8px;">Today is ${DAY_NAMES[day]}</p>`;
-                } else {
-                    statusEl.innerHTML = '<div class="store-status closed"><span class="dot"></span> Closed</div><p style="font-size:0.8rem;color:var(--gray-400);margin-bottom:8px;">We are still receiving your calls and messages outside working hours</p>';
-                }
-
-                updateHoursRows(day);
-            }
-
-            function fetchLiveHours() {
-                const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-                const timeoutId = setTimeout(function () {
-                    if (controller) controller.abort();
-                }, HOURS_FETCH_TIMEOUT_MS);
-
-                fetch(HOURS_ENDPOINT, {
-                    signal: controller ? controller.signal : undefined,
-                    cache: 'no-store'
-                })
-                    .then(function (response) {
-                        if (!response.ok) throw new Error('hours fetch failed');
-                        return response.json();
-                    })
-                    .then(function (payload) {
-                        const lines = Array.isArray(payload) ? payload : (Array.isArray(payload && payload.hours) ? payload.hours : null);
-                        if (!lines || !lines.length) return;
-
-                        const parsed = parseScheduleFromLines(lines);
-                        if (!parsed) return;
-
-                        activeSchedule = parsed;
-                        updateStoreStatus();
-                    })
-                    .catch(function () {
-                        // Keep fallback unchanged if live endpoint fails.
-                    })
-                    .finally(function () {
-                        clearTimeout(timeoutId);
-                    });
-            }
-
-            updateStoreStatus();
-            fetchLiveHours();
-            setInterval(updateStoreStatus, 60000);
-        })();
     </script>
+    <script src="/js/contact-loader.js"></script>
 </body>
 </html>
