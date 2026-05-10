@@ -2439,80 +2439,198 @@
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
         // ===== STORE OPEN/CLOSED STATUS (Dubai time, UTC+4) =====
-        (function updateStoreStatus() {
-            // Store hours: [openHour, openMin, closeHour, closeMin] in 24h Dubai time
-            // closeHour > 24 means next day (e.g., 25 = 1:00 AM next day)
-            const schedule = {
-                0: [10, 0, 25, 0],   // Sunday: 10:00 AM – 1:00 AM (next day)
-                1: [10, 0, 23, 0],   // Monday: 10:00 AM – 11:00 PM
-                2: [10, 0, 22, 30],  // Tuesday: 10:00 AM – 10:30 PM
-                3: [10, 0, 23, 0],   // Wednesday: 10:00 AM – 11:00 PM
-                4: [10, 0, 23, 0],   // Thursday: 10:00 AM – 11:00 PM
-                5: [10, 0, 23, 0],   // Friday: 10:00 AM – 11:00 PM
-                6: [10, 0, 24, 0],   // Saturday: 10:00 AM – 12:00 AM (midnight)
+        (function storeHoursWidget() {
+            const HOURS_ENDPOINT = 'https://pzm-business-hours.islam-thwabeh.workers.dev/hours';
+            const HOURS_FETCH_TIMEOUT_MS = 5000;
+            const DAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const DAY_INDEX = {
+                sunday: 0,
+                monday: 1,
+                tuesday: 2,
+                wednesday: 3,
+                thursday: 4,
+                friday: 5,
+                saturday: 6
             };
 
-            const now = new Date();
-            // Convert to Dubai time (UTC+4)
-            const dubaiOffset = 4 * 60; // minutes
-            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-            const dubai = new Date(utc + (dubaiOffset * 60000));
+            // closeHour > 24 means next day (e.g., 25 = 1:00 AM next day)
+            const fallbackSchedule = {
+                0: [10, 0, 25, 0],
+                1: [10, 0, 23, 0],
+                2: [10, 0, 22, 30],
+                3: [10, 0, 23, 0],
+                4: [10, 0, 23, 0],
+                5: [10, 0, 23, 0],
+                6: [10, 0, 24, 0]
+            };
 
-            const day = dubai.getDay();
-            const hour = dubai.getHours();
-            const min = dubai.getMinutes();
-            const currentMinutes = hour * 60 + min;
+            let activeSchedule = { ...fallbackSchedule };
 
-            const todaySchedule = schedule[day];
-            const openMinutes = todaySchedule[0] * 60 + todaySchedule[1];
-            const closeMinutes = todaySchedule[2] * 60 + todaySchedule[3];
-
-            let isOpen = false;
-            if (closeMinutes > 24 * 60) {
-                // Crosses midnight
-                isOpen = currentMinutes >= openMinutes || currentMinutes < (closeMinutes - 24 * 60);
-            } else {
-                isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
+            function getDubaiNow() {
+                return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Dubai' }));
             }
 
-            // Also check if we're in the overflow from previous day
-            if (!isOpen) {
-                const yesterday = (day + 6) % 7;
-                const ySchedule = schedule[yesterday];
-                const yClose = ySchedule[2] * 60 + ySchedule[3];
-                if (yClose > 24 * 60) {
-                    const overflowEnd = yClose - 24 * 60;
-                    if (currentMinutes < overflowEnd) isOpen = true;
+            function parseTime12h(value) {
+                const match = String(value).trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+                if (!match) return null;
+
+                let hour = parseInt(match[1], 10);
+                const minute = parseInt(match[2], 10);
+                const period = match[3].toUpperCase();
+
+                if (period === 'AM') {
+                    if (hour === 12) hour = 0;
+                } else if (hour !== 12) {
+                    hour += 12;
                 }
+
+                return [hour, minute];
             }
 
-            const statusEl = document.getElementById('storeStatus');
-            const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-            const todayName = dayNames[day];
+            function parseScheduleFromLines(lines) {
+                if (!Array.isArray(lines) || lines.length === 0) return null;
 
-            if (isOpen) {
-                statusEl.innerHTML = `<div class="store-status open"><span class="dot"></span> Open now · Closes at ${formatCloseTime(todaySchedule)}</div><p style="font-size:0.8rem;color:var(--gray-400);margin-bottom:8px;">Today is ${todayName}</p>`;
-            } else {
-                statusEl.innerHTML = `<div class="store-status closed"><span class="dot"></span> Closed</div><p style="font-size:0.8rem;color:var(--gray-400);margin-bottom:8px;">We are still receiving your calls and messages outside working hours</p>`;
+                const next = {};
+                for (let i = 0; i < lines.length; i += 1) {
+                    const line = String(lines[i] || '').trim();
+                    const splitAt = line.indexOf(':');
+                    if (splitAt === -1) return null;
+
+                    const dayName = line.substring(0, splitAt).trim().toLowerCase();
+                    const day = DAY_INDEX[dayName];
+                    if (typeof day !== 'number') return null;
+
+                    const rangeText = line.substring(splitAt + 1).trim().replace(/[–—]/g, '-');
+                    if (!rangeText || /closed/i.test(rangeText)) return null;
+
+                    const parts = rangeText.split('-');
+                    if (parts.length !== 2) return null;
+
+                    const open = parseTime12h(parts[0]);
+                    const close = parseTime12h(parts[1]);
+                    if (!open || !close) return null;
+
+                    let closeMinutes = close[0] * 60 + close[1];
+                    const openMinutes = open[0] * 60 + open[1];
+                    if (closeMinutes <= openMinutes) closeMinutes += 24 * 60;
+
+                    next[day] = [open[0], open[1], Math.floor(closeMinutes / 60), closeMinutes % 60];
+                }
+
+                return Object.keys(next).length === 7 ? next : null;
             }
 
-            function formatCloseTime(s) {
-                let h = s[2];
-                const m = s[3];
-                if (h >= 24) h -= 24;
-                const ampm = h >= 12 ? 'PM' : 'AM';
-                const h12 = h % 12 || 12;
-                return m > 0 ? `${h12}:${String(m).padStart(2,'0')} ${ampm}` : `${h12}:00 ${ampm}`;
+            function formatTime(hour24, minute) {
+                const normalized = hour24 >= 24 ? hour24 - 24 : hour24;
+                const ampm = normalized >= 12 ? 'PM' : 'AM';
+                const h12 = normalized % 12 || 12;
+                return `${h12}:${String(minute).padStart(2, '0')} ${ampm}`;
             }
 
-            // Highlight today's row
-            document.querySelectorAll('.hours-row[data-day]').forEach(row => {
-                if (parseInt(row.dataset.day) === day) {
-                    row.classList.add('today');
+            function formatRange(scheduleLine) {
+                return `${formatTime(scheduleLine[0], scheduleLine[1])} - ${formatTime(scheduleLine[2], scheduleLine[3])}`;
+            }
+
+            function formatCloseTime(scheduleLine) {
+                return formatTime(scheduleLine[2], scheduleLine[3]);
+            }
+
+            function updateHoursRows(day) {
+                document.querySelectorAll('.hours-row[data-day]').forEach(function (row) {
+                    const rowDay = parseInt(row.dataset.day, 10);
                     const daySpan = row.querySelector('.day');
-                    daySpan.textContent += ' (Today)';
+                    const timeSpan = row.querySelector('span:last-child');
+                    if (!daySpan || !timeSpan || !activeSchedule[rowDay]) return;
+
+                    daySpan.textContent = DAY_NAMES[rowDay];
+                    row.classList.remove('today');
+                    if (rowDay === day) {
+                        row.classList.add('today');
+                        daySpan.textContent += ' (Today)';
+                    }
+
+                    timeSpan.textContent = formatRange(activeSchedule[rowDay]);
+                });
+            }
+
+            function updateStoreStatus() {
+                const statusEl = document.getElementById('storeStatus');
+                if (!statusEl) return;
+
+                const dubai = getDubaiNow();
+                const day = dubai.getDay();
+                const hour = dubai.getHours();
+                const min = dubai.getMinutes();
+                const currentMinutes = hour * 60 + min;
+
+                const todaySchedule = activeSchedule[day];
+                if (!todaySchedule) return;
+
+                const openMinutes = todaySchedule[0] * 60 + todaySchedule[1];
+                const closeMinutes = todaySchedule[2] * 60 + todaySchedule[3];
+
+                let isOpen = false;
+                if (closeMinutes > 24 * 60) {
+                    isOpen = currentMinutes >= openMinutes || currentMinutes < (closeMinutes - 24 * 60);
+                } else {
+                    isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
                 }
-            });
+
+                if (!isOpen) {
+                    const yesterday = (day + 6) % 7;
+                    const ySchedule = activeSchedule[yesterday];
+                    if (ySchedule) {
+                        const yClose = ySchedule[2] * 60 + ySchedule[3];
+                        if (yClose > 24 * 60 && currentMinutes < (yClose - 24 * 60)) {
+                            isOpen = true;
+                        }
+                    }
+                }
+
+                if (isOpen) {
+                    statusEl.innerHTML = `<div class="store-status open"><span class="dot"></span> Open now · Closes at ${formatCloseTime(todaySchedule)}</div><p style="font-size:0.8rem;color:var(--gray-400);margin-bottom:8px;">Today is ${DAY_NAMES[day]}</p>`;
+                } else {
+                    statusEl.innerHTML = '<div class="store-status closed"><span class="dot"></span> Closed</div><p style="font-size:0.8rem;color:var(--gray-400);margin-bottom:8px;">We are still receiving your calls and messages outside working hours</p>';
+                }
+
+                updateHoursRows(day);
+            }
+
+            function fetchLiveHours() {
+                const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+                const timeoutId = setTimeout(function () {
+                    if (controller) controller.abort();
+                }, HOURS_FETCH_TIMEOUT_MS);
+
+                fetch(HOURS_ENDPOINT, {
+                    signal: controller ? controller.signal : undefined,
+                    cache: 'no-store'
+                })
+                    .then(function (response) {
+                        if (!response.ok) throw new Error('hours fetch failed');
+                        return response.json();
+                    })
+                    .then(function (payload) {
+                        const lines = Array.isArray(payload) ? payload : (Array.isArray(payload && payload.hours) ? payload.hours : null);
+                        if (!lines || !lines.length) return;
+
+                        const parsed = parseScheduleFromLines(lines);
+                        if (!parsed) return;
+
+                        activeSchedule = parsed;
+                        updateStoreStatus();
+                    })
+                    .catch(function () {
+                        // Keep fallback unchanged if live endpoint fails.
+                    })
+                    .finally(function () {
+                        clearTimeout(timeoutId);
+                    });
+            }
+
+            updateStoreStatus();
+            fetchLiveHours();
+            setInterval(updateStoreStatus, 60000);
         })();
     </script>
 </body>
