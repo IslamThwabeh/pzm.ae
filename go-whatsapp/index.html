@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to WhatsApp | PZM Store</title>
+    <link rel="icon" href="/images/favico.ico" type="image/x-icon">
+    <link rel="canonical" href="https://pzm.ae/go-whatsapp/" />
+    <meta name="description" content="You are being redirected to PZM WhatsApp chat to continue your request.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSJ08ST3JL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NSJ08ST3JL');
+      gtag('config', 'G-KYVRVKG3MZ');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #00c896;
+            --primary-dark: #00a87a;
+            --accent: #0ea5e9;
+            --dark: #0f172a;
+            --muted: #475569;
+            --bg: #f1f7ff;
+            --surface: #ffffff;
+            --border: #dbe7f3;
+            --shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+            --radius: 18px;
+            --max-width: 1080px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--dark);
+            background:
+                radial-gradient(circle at 10% 10%, rgba(14, 165, 233, 0.12), transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(0, 200, 150, 0.14), transparent 44%),
+                var(--bg);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.82);
+            border-bottom: 1px solid rgba(219, 231, 243, 0.8);
+        }
+
+        .navbar-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            height: 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo-pzm {
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            font-size: 1.55rem;
+        }
+
+        .logo-meta {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.05;
+        }
+
+        .logo-store {
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .logo-tagline {
+            font-size: 0.56rem;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .nav-note {
+            font-size: 0.92rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 40px 16px 32px;
+        }
+
+        .redirect-card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, #ffffff 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 28px 24px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: #0369a1;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+
+        .subtext {
+            color: var(--muted);
+            font-size: 1.02rem;
+            margin-bottom: 20px;
+            max-width: 66ch;
+        }
+
+        .status-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 126px;
+            border-radius: 999px;
+            background: #e6fffa;
+            border: 1px solid #b2f5ea;
+            color: #0f766e;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 8px 14px;
+        }
+
+        .countdown {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 6px;
+            background: #ecfeff;
+            border: 1px solid #bae6fd;
+            color: #0c4a6e;
+            border-radius: 999px;
+            padding: 8px 14px;
+        }
+
+        .count-number {
+            font-size: 1.2rem;
+            font-weight: 800;
+            width: 1.4ch;
+            text-align: center;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .btn {
+            border: 1px solid transparent;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 11px 16px;
+            text-decoration: none;
+            transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn:hover { transform: translateY(-1px); }
+
+        .btn-primary {
+            color: white;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            box-shadow: 0 10px 24px rgba(0, 168, 122, 0.25);
+        }
+
+        .btn-secondary {
+            color: #0f172a;
+            border-color: #cbd5e1;
+            background: white;
+        }
+
+        .micro {
+            font-size: 0.86rem;
+            color: #64748b;
+            margin-top: 14px;
+        }
+
+        .home-strip {
+            margin-top: 18px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .tile {
+            border: 1px solid var(--border);
+            background: #f8fbff;
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .tile strong {
+            display: block;
+            font-size: 0.94rem;
+            margin-bottom: 2px;
+        }
+
+        .tile span {
+            font-size: 0.82rem;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-inner { height: 64px; }
+            .nav-note { display: none; }
+            .redirect-card { padding: 22px 16px; }
+            .home-strip { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="/index.html" class="logo" aria-label="PZM Home">
+                <span class="logo-pzm">PZM</span>
+                <span class="logo-meta">
+                    <span class="logo-store">Computers &amp; Phones Store</span>
+                    <span class="logo-tagline">New • Used • Repair • PC • Build</span>
+                </span>
+            </a>
+            <div class="nav-note">Preparing secure WhatsApp handoff...</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="redirect-card" aria-live="polite">
+            <div class="eyebrow">Google Maps Ads Landing</div>
+            <h1>You are being redirected to our WhatsApp support</h1>
+            <p class="subtext">
+                Please wait a moment while we open chat with PZM. If WhatsApp does not open automatically,
+                use the button below.
+            </p>
+
+            <div class="status-row">
+                <div class="pill" id="statusText">Redirecting now</div>
+                <div class="countdown">
+                    <span>In</span>
+                    <span id="countdown" class="count-number">3</span>
+                    <span>sec</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <a id="waNowButton" class="btn btn-primary" href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20help.%20(via%20pzm.ae)">
+                    Open WhatsApp Now
+                </a>
+                <a class="btn btn-secondary" href="/index.html">Back to Home</a>
+            </div>
+
+            <p class="micro" id="fallbackText">If nothing happens, tap Open WhatsApp Now.</p>
+
+            <div class="home-strip" aria-hidden="true">
+                <div class="tile">
+                    <strong>New &amp; Used Devices</strong>
+                    <span>iPhones, MacBooks, laptops and more.</span>
+                </div>
+                <div class="tile">
+                    <strong>Quick Repairs</strong>
+                    <span>Screen, battery, charging and board-level fixes.</span>
+                </div>
+                <div class="tile">
+                    <strong>Gaming PC Builds</strong>
+                    <span>Custom builds tuned for your budget.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        (function () {
+            var countdownEl = document.getElementById('countdown');
+            var statusEl = document.getElementById('statusText');
+            var fallbackEl = document.getElementById('fallbackText');
+            var waNowButton = document.getElementById('waNowButton');
+
+            var waNumber = '971528026677';
+            var searchParams = new URLSearchParams(window.location.search);
+            var customText = searchParams.get('text');
+            var defaultText = 'Hi PZM, I found you on Google Maps ad and would like help. (via pzm.ae)';
+
+            var refKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'gclid', 'gbraid', 'wbraid'];
+            var refs = [];
+            refKeys.forEach(function (key) {
+                var val = searchParams.get(key);
+                if (val) refs.push(key + '=' + val);
+            });
+
+            var finalText = customText && customText.trim() ? customText.trim() : defaultText;
+            if (finalText.indexOf('(via pzm.ae)') === -1) {
+                finalText += ' (via pzm.ae)';
+            }
+            if (refs.length > 0) {
+                finalText += ' [ref: ' + refs.join(';') + ']';
+            }
+
+            var waUrl = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(finalText);
+            waNowButton.href = waUrl;
+
+            try {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'whatsapp_interstitial_view', {
+                        event_category: 'engagement',
+                        event_label: 'go-whatsapp',
+                        page_path: window.location.pathname,
+                        countdown_seconds: 3
+                    });
+                }
+            } catch (err) {
+                // Silent fail to avoid blocking redirect.
+            }
+
+            var remaining = 3;
+            countdownEl.textContent = String(remaining);
+
+            var interval = setInterval(function () {
+                remaining -= 1;
+                if (remaining > 0) {
+                    countdownEl.textContent = String(remaining);
+                    return;
+                }
+
+                clearInterval(interval);
+                countdownEl.textContent = '0';
+                statusEl.textContent = 'Opening WhatsApp';
+                fallbackEl.textContent = 'If WhatsApp is blocked, tap Open WhatsApp Now.';
+
+                try {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'whatsapp_interstitial_redirect', {
+                            event_category: 'conversion_path',
+                            event_label: 'auto_redirect',
+                            page_path: window.location.pathname
+                        });
+                    }
+                } catch (err) {
+                    // Silent fail to avoid blocking redirect.
+                }
+
+                window.location.href = waUrl;
+            }, 1000);
+        })();
+    </script>
+</body>
+</html>
