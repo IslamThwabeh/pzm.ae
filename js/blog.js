@@ -326,13 +326,6 @@ function displayBlogPosts() {
         <h2>${post.title}</h2>
         <p>${post.excerpt}</p>
         <a href="blog-post.html?slug=${post.slug}" class="read-more">Read More</a>
-        <div class="blog-meta">
-          <span>${new Date().toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}</span>
-        </div>
       </div>
     `;
 

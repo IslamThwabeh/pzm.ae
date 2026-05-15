@@ -5,21 +5,74 @@
   const placeholder = document.getElementById('contact-section');
   if (!placeholder) return;
 
-  fetch('/components/contact.html')
-    .then(function (res) { return res.text(); })
-    .then(function (html) {
-      placeholder.innerHTML = html;
+  placeholder.innerHTML = `
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p>Need help with our services or products? We're here to help.</p>
+      <div class="contact-method">
+        <img src="/images/Header/call-logo.png" alt="Phone" class="contact-icon-small">
+        <a href="tel:+971528026677">+971 528 026 677</a>
+      </div>
+      <div class="contact-method">
+        <img src="/images/Header/whatsapp-logo.png" alt="WhatsApp" class="contact-icon-small">
+        <a href="https://wa.me/971528026677?text=Hi%2C%20I%27m%20interested%20in%20the%20services%20listed%20on%20your%20website.%20Can%20you%20tell%20me%20more%3F%20(via%20pzm.ae)" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-method">
+        <img src="/images/Header/map-logo.png" alt="Location" class="contact-icon-small">
+        <a href="https://maps.app.goo.gl/e5Rhfo8YY3i8CatM7?g_st=ic" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a>
+      </div>
+    </div>
+    <div class="address">
+      <h3>Visit Our Store</h3>
+      <p>PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build</p>
+      <p>Hessa Street - Al Barsha, Dubai</p>
+      <p>Inside Hessa Union Coop Hypermarket, Ground Floor</p>
+      <div id="store-status"></div>
+      <div id="working-hours" class="hours"></div>
+    </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.231830114033!2d55.1992671!3d25.0848627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dc0bc49a6d5%3A0x158c13f2d688b32e!2sPZM%20Computer%20Phone%20Trading%20%26%20Repair%20(Sell%2CUsed%2CNew%2CBuild)!5e0!3m2!1sen!2sae!4v1715590341023!5m2!1sen!2sae"
+        title="PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build location map"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
 
-      // Set the copyright year
-      var yearEl = placeholder.querySelector('#year');
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build
+    </div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/services/repair.html">Repair</a>
+      <a href="/services/brand-new.html">Shop</a>
+      <a href="/services/gaming-pc.html">PC Build</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/return-policy.html">Return Policy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    PZM Computers &amp; Mobile Phones - Sell Fix New Used Laptop PC Build &copy; <span id="year"></span> All rights reserved.
+  </div>
+</footer>`;
 
-      // Load store-status.js to populate hours & open/closed badge
-      var script = document.createElement('script');
-      script.src = '/js/store-status.js';
-      document.body.appendChild(script);
-    })
-    .catch(function (err) {
-      console.error('Failed to load contact section:', err);
-    });
+  // Set the copyright year
+  var yearEl = placeholder.querySelector('#year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Load store-status.js to populate hours & open/closed badge
+  var script = document.createElement('script');
+  script.src = '/js/store-status.js';
+  document.body.appendChild(script);
 })();

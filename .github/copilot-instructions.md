@@ -35,7 +35,7 @@ areas/
 
 - **Links**: Always use `.html` extension for internal links (GitHub Pages static hosting).
 - **Header**: Uses `<p>` for the tagline (not `<h1>`). Each page has a unique `<h1>` in content. CSS selector: `.header-text p`.
-- **Contact section**: Loaded dynamically via `js/contact-loader.js` from `components/contact.html`. Area pages must use `id="contact-section"` (not `id="contact"`).
+- **Contact section**: Loaded dynamically by `js/contact-loader.js` via inline markup. Area pages must use `id="contact-section"` (not `id="contact"`).
 - **Store hours**: Rendered by `js/store-status.js`.
 - **FAQ widget**: Elfsight (id `elfsight-app-f5d197a3-7325-43ff-a3fa-787de403682f`) — configured externally, not in repo.
 - **WhatsApp**: All links use `wa.me/971528026677` with `?text=` prefilled messages ending in `(via pzm.ae)`.
