@@ -21,7 +21,8 @@ const blogPosts = [
       <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU prices</a>. At PZM in Al Barsha, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. Want to discuss your dream build? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> or visit our store.</p>`,
     excerpt: "Your 2026 guide to building the perfect gaming PC — from Ryzen 9000 and Arrow Lake CPUs to RTX 5070 and RX 9070 GPUs, with Dubai-specific buying advice.",
     image_url: "images/blog/gaming-pc-build.jpg",
-    category: "Gaming"
+    category: "Gaming",
+    date: "2025-12-15"
   },
   {
     title: "Top 5 iPhone Repair Tips Every Owner Should Know in 2026",
@@ -46,7 +47,8 @@ const blogPosts = [
       <p>Need a repair quote? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20an%20iPhone%20repair%20quote%20(via%20pzm.ae)" target="_blank" rel="noopener">Send us a WhatsApp message</a> with your model and issue for a fast estimate.</p>`,
     excerpt: "Practical iPhone repair and maintenance tips for 2026 — from screen cracks and battery health to knowing when to repair vs. upgrade.",
     image_url: "https://images.pexels.com/photos/4195325/pexels-photo-4195325.jpeg",
-    category: "Repair"
+    category: "Repair",
+    date: "2026-01-10"
   },
   {
     title: "The Smart Buyer's Guide to Used Laptops in Dubai (2026)",
@@ -82,7 +84,8 @@ const blogPosts = [
       <p>Browse our current <a href="/services/buy-used.html">used laptop inventory</a> or <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20am%20looking%20for%20a%20used%20laptop%20(via%20pzm.ae)" target="_blank" rel="noopener">message us on WhatsApp</a> with your requirements.</p>`,
     excerpt: "How to find the best deals on used laptops in Dubai in 2026 — what to check, which models to target, and where to buy with confidence.",
     image_url: "https://images.pexels.com/photos/18105/pexels-photo.jpg",
-    category: "Used"
+    category: "Used",
+    date: "2026-01-25"
   },
   {
     title: "Essential PC Maintenance Tips to Avoid Costly Repairs (2026)",
@@ -108,7 +111,8 @@ const blogPosts = [
       <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/repair.html">PZM offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
-    category: "PC"
+    category: "PC",
+    date: "2026-02-08"
   },
   {
     title: "Must-Have Phone and Laptop Accessories in 2026",
@@ -138,7 +142,8 @@ const blogPosts = [
       <p>Visit <a href="/services/accessories.html">PZM's accessories section</a> in Al Barsha or <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model and we will recommend the best accessories for your setup.</p>`,
     excerpt: "The best phone and laptop accessories worth buying in 2026 — from tempered glass and MagSafe chargers to USB-C hubs and portable SSDs.",
     image_url: "https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg",
-    category: "Accessories"
+    category: "Accessories",
+    date: "2026-02-20"
   },
   {
     title: "Why Your Phone Battery Dies So Fast — And How to Fix It (2026)",
@@ -179,7 +184,8 @@ const blogPosts = [
       <p><a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20phone%20battery%20drains%20fast%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your phone model and we will tell you if a battery swap will solve your problem.</p>`,
     excerpt: "The real reasons your phone battery dies fast in 2026, which charging myths to ignore, and when it is time for a battery replacement.",
     image_url: "https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg",
-    category: "Mobile"
+    category: "Mobile",
+    date: "2026-03-05"
   },
   {
     title: "How Iran-US Tensions Are Affecting Mobile and PC Prices in UAE (2026)",
@@ -215,7 +221,8 @@ const blogPosts = [
     `,
     excerpt: "A practical UAE market guide on how Iran-US geopolitical tensions can influence smartphone, laptop, and PC pricing, plus smart buying tips.",
     image_url: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg",
-    category: "Market"
+    category: "Market",
+    date: "2026-03-18"
   },
   {
     title: "How US Tariffs in 2026 Are Changing Electronics Prices in Dubai",
@@ -253,7 +260,8 @@ const blogPosts = [
       <p>Our team at PZM tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. Visit us in Al Barsha or message us on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick quote.</p>`,
     excerpt: "How the latest US tariffs are pushing up smartphone, laptop, and gaming PC prices in Dubai — and practical strategies to get the best deals in 2026.",
     image_url: "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg",
-    category: "Market"
+    category: "Market",
+    date: "2026-03-25"
   },
   {
     title: "Gold Prices Hit Record Highs — What It Means for Tech Buyers in Dubai (2026)",
@@ -287,7 +295,8 @@ const blogPosts = [
       <p>Visit PZM in Al Barsha for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/repair.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
     image_url: "https://images.pexels.com/photos/610525/pexels-photo-610525.jpeg",
-    category: "Market"
+    category: "Market",
+    date: "2026-03-28"
   }
 ];
 

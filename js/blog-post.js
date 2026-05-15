@@ -15,6 +15,7 @@ function updateBlogPostMetadata(post, slug) {
 
     const imageUrl = new URL(post.image_url, window.location.origin).href;
     const pageTitle = `${post.title} | PZM Dubai Tech Blog`;
+    const publishedISO = post.date ? new Date(post.date).toISOString() : undefined;
 
     document.title = pageTitle;
     setMetaContent('meta-description', post.excerpt);
@@ -25,6 +26,11 @@ function updateBlogPostMetadata(post, slug) {
     setMetaContent('meta-twitter-title', pageTitle);
     setMetaContent('meta-twitter-description', post.excerpt);
     setMetaContent('meta-twitter-image', imageUrl);
+
+    // The base blog-post.html ships with robots="noindex, follow" so the empty
+    // shell never gets indexed. Once we have a valid slug + content, flip it
+    // to index so per-slug articles can be discovered.
+    setMetaContent('meta-robots', 'index, follow');
 
     const canonicalLink = document.getElementById('canonical-link');
     if (canonicalLink) {
@@ -39,9 +45,11 @@ function updateBlogPostMetadata(post, slug) {
         image: imageUrl,
         mainEntityOfPage: pageUrl.href,
         inLanguage: 'en',
+        ...(publishedISO ? { datePublished: publishedISO, dateModified: publishedISO } : {}),
         author: {
             '@type': 'Organization',
-            name: 'PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build'
+            name: 'PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build',
+            url: 'https://pzm.ae/'
         },
         publisher: {
             '@type': 'Organization',
