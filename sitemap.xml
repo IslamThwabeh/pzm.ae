@@ -77,9 +77,15 @@
   </url>
   <url>
     <loc>https://pzm.ae/services/brand-new.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/services/brand-new.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://pzm.ae/services/repair.html</loc>
@@ -95,21 +101,39 @@
   </url>
   <url>
     <loc>https://pzm.ae/services/gaming-pc.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/services/gaming-pc.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://pzm.ae/services/sell-gadgets.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://pzm.ae/ar/services/sell-gadgets.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://pzm.ae/services/accessories.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/services/accessories.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.65</priority>
   </url>
 
   <!-- Policy Pages -->
