@@ -18,7 +18,7 @@ const blogPosts = [
       <p>Modern GPUs are power-hungry. Budget at least 850W for a mid-range build and 1000W for high-end. Choose an 80+ Gold or Platinum certified PSU from a reputable brand. For cooling, a 360mm AIO liquid cooler handles any current CPU, while quality tower coolers like the Noctua NH-D15 G2 remain excellent air-cooling options.</p>
 
       <h3>Why build with PZM</h3>
-      <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU prices</a>. At PZM in Al Barsha, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. Want to discuss your dream build? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> or visit our store.</p>`,
+      <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU pricing for custom builds</a>. From <a href="/areas/al-barsha.html">our Al Barsha store</a>, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. Want to discuss your dream build? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting.</p>`,
     excerpt: "Your 2026 guide to building the perfect gaming PC — from Ryzen 9000 and Arrow Lake CPUs to RTX 5070 and RX 9070 GPUs, with Dubai-specific buying advice.",
     image_url: "images/blog/gaming-pc-build.jpg",
     category: "Gaming",
@@ -30,10 +30,10 @@ const blogPosts = [
     content: `<p>iPhones are built to last, but even the most careful owners run into issues over time. Whether you have the latest iPhone 17 or are still using an iPhone 13, these repair and maintenance tips will help you avoid costly mistakes and keep your device running at its best.</p>
 
       <h3>1. Screen damage — act fast, but choose wisely</h3>
-      <p>A cracked screen is the most common iPhone repair. If the crack is small and does not affect touch response, a tempered glass screen protector can prevent it from spreading while you schedule a proper fix. For any crack that reaches the display edges or causes touch issues, get it repaired quickly — moisture and dust entering through cracks can damage internal components. At <a href="/services/repair.html">PZM's repair shop in Al Barsha</a>, we use quality replacement screens and complete most iPhone screen repairs within an hour.</p>
+      <p>A cracked screen is the most common iPhone repair. If the crack is small and does not affect touch response, a tempered glass screen protector can prevent it from spreading while you schedule a proper fix. For any crack that reaches the display edges or causes touch issues, get it repaired quickly — moisture and dust entering through cracks can damage internal components. At <a href="/services/repair.html">PZM's iPhone repair service</a> from our <a href="/areas/al-barsha.html">Al Barsha store</a>, we use quality replacement screens and explain the next step before you make the trip.</p>
 
       <h3>2. Battery health below 80%? Time to replace</h3>
-      <p>Check your battery health in Settings → Battery → Battery Health & Charging. If maximum capacity has dropped below 80%, your iPhone is throttling performance to prevent shutdowns. A battery replacement costs a fraction of a new phone and can make your device feel brand new. We offer same-day <a href="/services/repair.html">iPhone battery replacement</a> for all models from iPhone 11 onwards.</p>
+      <p>Check your battery health in Settings → Battery → Battery Health & Charging. If maximum capacity has dropped below 80%, your iPhone is throttling performance to prevent shutdowns. A battery replacement costs a fraction of a new phone and can make your device feel brand new. We handle <a href="/services/repair.html">iPhone battery replacement</a> for models from iPhone 11 onwards and confirm timing after inspection.</p>
 
       <h3>3. Charging port problems are usually debris</h3>
       <p>Before assuming your charging port is broken, try cleaning it. Pocket lint compresses into the Lightning or USB-C port over time, preventing the cable from seating properly. Use a wooden toothpick (never metal) to gently clear debris. If cleaning does not help, the port may need professional replacement — a straightforward repair that avoids the cost of a new device.</p>
@@ -81,7 +81,7 @@ const blogPosts = [
       <h3>5. Trade up: sell your old device toward an upgrade</h3>
       <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to PZM for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
 
-      <p>Browse our current <a href="/services/buy-used.html">used laptop inventory</a> or <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20am%20looking%20for%20a%20used%20laptop%20(via%20pzm.ae)" target="_blank" rel="noopener">message us on WhatsApp</a> with your requirements.</p>`,
+      <p>Browse our current <a href="/services/buy-used.html">used laptop inventory</a> or, if you are planning the visit from <a href="/areas/tecom.html">Tecom or Barsha Heights</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20am%20looking%20for%20a%20used%20laptop%20(via%20pzm.ae)" target="_blank" rel="noopener">message us on WhatsApp</a> with your requirements first.</p>`,
     excerpt: "How to find the best deals on used laptops in Dubai in 2026 — what to check, which models to target, and where to buy with confidence.",
     image_url: "https://images.pexels.com/photos/18105/pexels-photo.jpg",
     category: "Used",
@@ -108,7 +108,7 @@ const blogPosts = [
       <p>Dubai's power grid is generally stable, but micro-surges and brownouts happen — especially during summer peak loads. Use a quality surge protector at minimum, or better yet, a UPS (uninterruptible power supply). A sudden power loss during a Windows update or BIOS flash can brick your system. A basic 650VA UPS costs less than a single component replacement.</p>
 
       <h3>When to call in the professionals</h3>
-      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/repair.html">PZM offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment.</p>`,
+      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/repair.html">PZM offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/jumeirah-village.html">Jumeirah Village</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
     category: "PC",
@@ -139,7 +139,7 @@ const blogPosts = [
         <li><strong>Portable SSDs:</strong> Samsung T7 Shield or SanDisk Extreme — fast, rugged, and perfect for backups and file transfers.</li>
       </ul>
 
-      <p>Visit <a href="/services/accessories.html">PZM's accessories section</a> in Al Barsha or <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model and we will recommend the best accessories for your setup.</p>`,
+      <p>Visit <a href="/services/accessories.html">PZM's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/jbr.html">JBR</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
     excerpt: "The best phone and laptop accessories worth buying in 2026 — from tempered glass and MagSafe chargers to USB-C hubs and portable SSDs.",
     image_url: "https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg",
     category: "Accessories",
@@ -181,7 +181,7 @@ const blogPosts = [
       <h3>4. Repair, upgrade, or replace?</h3>
       <p>If your phone is 1–2 years old, a <a href="/services/repair.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the fix is easier and cheaper than most people think.</p>
 
-      <p><a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20phone%20battery%20drains%20fast%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your phone model and we will tell you if a battery swap will solve your problem.</p>`,
+      <p><a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20phone%20battery%20drains%20fast%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your phone model and battery symptoms before visiting, especially if you are planning the trip from <a href="/areas/dubai-marina.html">Dubai Marina</a>.</p>`,
     excerpt: "The real reasons your phone battery dies fast in 2026, which charging myths to ignore, and when it is time for a battery replacement.",
     image_url: "https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg",
     category: "Mobile",
@@ -217,7 +217,7 @@ const blogPosts = [
       <h3>Our view for the coming months</h3>
       <p>Price movement will likely remain model-specific rather than uniform across all categories. Devices with fragile supply or high demand may continue to fluctuate, while mainstream inventory should stay more predictable. Buyers who stay flexible and purchase from trusted local sellers can still get strong value.</p>
 
-      <p>If you want, our team can recommend current best-value options in real time based on your budget for iPhone, Android, laptop, gaming PC, or accessories.</p>
+      <p>If you want, our team can recommend current best-value options in real time based on your budget for <a href="/services/buy-iphone.html">iPhone</a>, <a href="/services/brand-new.html">brand-new devices</a>, <a href="/services/buy-used.html">certified used laptops and phones</a>, <a href="/services/gaming-pc.html">gaming PC builds</a>, or <a href="/services/accessories.html">accessories</a>. You can also use our <a href="/areas/al-barsha.html">Al Barsha store page</a> before visiting.</p>
     `,
     excerpt: "A practical UAE market guide on how Iran-US geopolitical tensions can influence smartphone, laptop, and PC pricing, plus smart buying tips.",
     image_url: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg",
@@ -257,7 +257,7 @@ const blogPosts = [
       <h3>5. What we expect for the rest of 2026</h3>
       <p>Trade negotiations are ongoing, and tariff rates could change in either direction. However, the pattern from previous tariff cycles shows that retail prices are slow to come back down even after tariffs ease. The best strategy for Dubai buyers is to act on confirmed stock at current prices rather than waiting for theoretical reductions.</p>
 
-      <p>Our team at PZM tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. Visit us in Al Barsha or message us on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick quote.</p>`,
+      <p>Our team at PZM tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. If you are planning the visit from <a href="/areas/tecom.html">Tecom or Barsha Heights</a>, message us on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before you travel for a quick quote.</p>`,
     excerpt: "How the latest US tariffs are pushing up smartphone, laptop, and gaming PC prices in Dubai — and practical strategies to get the best deals in 2026.",
     image_url: "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg",
     category: "Market",
@@ -292,13 +292,154 @@ const blogPosts = [
       <h3>6. Our outlook</h3>
       <p>Gold prices are expected to remain elevated through 2026 as global uncertainty continues. For tech buyers in Dubai, this means being strategic: buy what you need now rather than waiting for prices to drop, consider the used market seriously, and maintain your current devices well. The best deals go to informed buyers who act when stock and pricing align.</p>
 
-      <p>Visit PZM in Al Barsha for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/repair.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
+      <p>Visit PZM in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/repair.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
     image_url: "https://images.pexels.com/photos/610525/pexels-photo-610525.jpeg",
     category: "Market",
     date: "2026-03-28"
   }
 ];
+
+const postJourneys = {
+  "how-to-choose-perfect-gaming-pc-build": {
+    moneyPage: {
+      href: "/services/gaming-pc.html",
+      label: "Plan a custom gaming PC build",
+      shortLabel: "Gaming PC builds",
+      description: "Send your budget, target games, and monitor size before you visit."
+    },
+    areaPage: {
+      href: "/areas/jumeirah-village.html",
+      label: "Planning from Jumeirah Village?",
+      shortLabel: "Jumeirah Village",
+      description: "Use the JVC and JVT area page if you want to filter the build before the drive."
+    }
+  },
+  "top-5-iphone-repair-tips": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Start with phone repair guidance",
+      shortLabel: "Repair services",
+      description: "Use repair services for screen, battery, and device fault checks before replacing the phone."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for store access, directions, and pre-visit repair guidance."
+    }
+  },
+  "ultimate-guide-buying-used-laptops": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "Browse tested used laptops",
+      shortLabel: "Used laptops",
+      description: "Compare MacBook and Windows options with warranty-backed used stock."
+    },
+    areaPage: {
+      href: "/areas/tecom.html",
+      label: "Planning from Tecom?",
+      shortLabel: "Tecom",
+      description: "Use the Tecom page if you want a practical laptop-buying route from Barsha Heights."
+    }
+  },
+  "essential-pc-maintenance-tips": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Check PC repair and upgrade options",
+      shortLabel: "PC repair",
+      description: "Use repair services for diagnostics, deep cleaning, thermal work, and performance upgrades."
+    },
+    areaPage: {
+      href: "/areas/jumeirah-village.html",
+      label: "Planning from Jumeirah Village?",
+      shortLabel: "Jumeirah Village",
+      description: "Useful for JVC and JVT owners who want to sort PC maintenance before the trip."
+    }
+  },
+  "latest-mobile-accessories-2025": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Match the right accessories",
+      shortLabel: "Accessories",
+      description: "Confirm chargers, cases, hubs, and protectors for your exact phone or laptop."
+    },
+    areaPage: {
+      href: "/areas/jbr.html",
+      label: "Planning from JBR?",
+      shortLabel: "JBR",
+      description: "Use the JBR page if you want to confirm fit and stock direction before leaving the waterfront."
+    }
+  },
+  "understanding-smartphone-battery-life": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Check phone battery replacement",
+      shortLabel: "Battery repair",
+      description: "Start with repair guidance if you want to fix battery life before upgrading."
+    },
+    areaPage: {
+      href: "/areas/dubai-marina.html",
+      label: "Planning from Dubai Marina?",
+      shortLabel: "Dubai Marina",
+      description: "Use the Dubai Marina page for the best pre-visit route when the battery is failing."
+    }
+  },
+  "iran-us-tensions-mobile-pc-prices-uae-2026": {
+    moneyPage: {
+      href: "/services/brand-new.html",
+      label: "Compare current new-device pricing",
+      shortLabel: "Brand-new devices",
+      description: "Use the new devices page when you want a direct view of current retail options."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "The Al Barsha page is the fastest store route if you want live pricing guidance."
+    }
+  },
+  "us-tariffs-2026-electronics-prices-dubai": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "Compare certified used value",
+      shortLabel: "Certified used",
+      description: "The used devices page is the strongest hedge when new-device prices move fast."
+    },
+    areaPage: {
+      href: "/areas/tecom.html",
+      label: "Planning from Tecom?",
+      shortLabel: "Tecom",
+      description: "Use the Tecom page if you want to check value before crossing Dubai for a purchase."
+    }
+  },
+  "gold-record-highs-tech-buyers-dubai-2026": {
+    moneyPage: {
+      href: "/services/sell-gadgets.html",
+      label: "Check trade-in and sell-device options",
+      shortLabel: "Trade-ins",
+      description: "Use the sell devices page if you want to turn older tech into upgrade budget."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Start with the Al Barsha page for the clearest route into the store and current pricing."
+    }
+  }
+};
+
+function formatBlogDate(dateString) {
+  if (!dateString) {
+    return '';
+  }
+
+  return new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
 
 function getFeaturedPosts() {
   // Featured posts for homepage: 2 newest (last in array) + 1 rotating from the rest
@@ -325,6 +466,8 @@ function displayBlogPosts() {
   const posts = isBlogPage ? getAllPosts() : getFeaturedPosts();
 
   posts.forEach(post => {
+    const journey = postJourneys[post.slug];
+    const dateLabel = formatBlogDate(post.date);
     const article = document.createElement('article');
     article.className = 'blog-card';
 
@@ -334,6 +477,10 @@ function displayBlogPosts() {
         <span class="blog-category">${post.category}</span>
         <h2>${post.title}</h2>
         <p>${post.excerpt}</p>
+        <div class="blog-meta">
+          <span>${dateLabel}</span>
+          <span>${journey ? journey.moneyPage.shortLabel : 'PZM Dubai'}</span>
+        </div>
         <a href="blog-post.html?slug=${post.slug}" class="read-more">Read More</a>
       </div>
     `;
@@ -345,4 +492,4 @@ function displayBlogPosts() {
 // Initialize blog posts when DOM is ready
 document.addEventListener('DOMContentLoaded', displayBlogPosts);
 
-export { blogPosts }
+export { blogPosts, postJourneys, formatBlogDate };

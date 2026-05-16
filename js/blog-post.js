@@ -1,5 +1,5 @@
 // Import blog posts data
-import { blogPosts } from './blog.js';
+import { blogPosts, postJourneys, formatBlogDate } from './blog.js';
 
 function setMetaContent(id, value) {
     const element = document.getElementById(id);
@@ -14,7 +14,7 @@ function updateBlogPostMetadata(post, slug) {
     pageUrl.searchParams.set('slug', slug);
 
     const imageUrl = new URL(post.image_url, window.location.origin).href;
-    const pageTitle = `${post.title} | PZM Dubai Tech Blog`;
+    const pageTitle = `${post.title} | PZM Computers & Phones Store Blog`;
     const publishedISO = post.date ? new Date(post.date).toISOString() : undefined;
 
     document.title = pageTitle;
@@ -48,12 +48,12 @@ function updateBlogPostMetadata(post, slug) {
         ...(publishedISO ? { datePublished: publishedISO, dateModified: publishedISO } : {}),
         author: {
             '@type': 'Organization',
-            name: 'PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build',
+            name: 'PZM Computers & Phones Store',
             url: 'https://pzm.ae/'
         },
         publisher: {
             '@type': 'Organization',
-            name: 'PZM Computers & Mobile Phones - Sell Fix New Used Laptop PC Build',
+            name: 'PZM Computers & Phones Store',
             logo: {
                 '@type': 'ImageObject',
                 url: 'https://pzm.ae/images/mini_logo.png'
@@ -76,6 +76,32 @@ function findPostBySlug(slug) {
     return blogPosts.find(post => post.slug === slug);
 }
 
+function renderJourneySection(post) {
+    const journey = postJourneys[post.slug];
+
+    if (!journey) {
+        return '';
+    }
+
+    return `
+        <aside class="blog-next-steps">
+            <p class="blog-next-steps-label">Best next steps</p>
+            <div class="blog-next-steps-grid">
+                <a href="${journey.moneyPage.href}" class="blog-next-step-card">
+                    <span class="blog-next-step-eyebrow">Service page</span>
+                    <strong>${journey.moneyPage.label}</strong>
+                    <span>${journey.moneyPage.description}</span>
+                </a>
+                <a href="${journey.areaPage.href}" class="blog-next-step-card">
+                    <span class="blog-next-step-eyebrow">Local page</span>
+                    <strong>${journey.areaPage.label}</strong>
+                    <span>${journey.areaPage.description}</span>
+                </a>
+            </div>
+        </aside>
+    `;
+}
+
 function displayBlogPost() {
     const slug = getPostSlug();
     const post = findPostBySlug(slug);
@@ -87,15 +113,19 @@ function displayBlogPost() {
     
     const postContent = document.getElementById('post-content');
     updateBlogPostMetadata(post, slug);
+    const publishedLabel = formatBlogDate(post.date);
+    const postMeta = publishedLabel ? `<p class="blog-post-meta">Published ${publishedLabel}</p>` : '';
     
     postContent.innerHTML = `
         <img src="${post.image_url}" alt="${post.title}" class="blog-post-image">
         <div class="blog-post-content">
             <span class="blog-category">${post.category}</span>
+            ${postMeta}
             <h1>${post.title}</h1>
             <div class="blog-content">
                 ${post.content}
             </div>
+            ${renderJourneySection(post)}
         </div>
     `;
 }
