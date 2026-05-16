@@ -71,6 +71,3 @@ The mobile PageSpeed score (~70) is limited by third-party scripts (Elfsight, du
 
 **What actually improves Google visibility**: Product schema (prices, reviews, ratings), proper JSON-LD, content relevance, and correct `.html` links.
 
-## React / Vite App (src/)
-
-A secondary React+TypeScript app exists under `src/` using Vite, TanStack Router, Tailwind, and Supabase. It is separate from the main static HTML site. `tsconfig.app.json` uses `"jsx": "react-jsx"` (no React import needed in components).
