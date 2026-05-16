@@ -6,6 +6,10 @@
     box-shadow: var(--shadow-sm);
 }
 
+.contact h2 {
+    margin-bottom: var(--space-lg);
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,6 +44,11 @@
 .contact-method:hover {
     transform: translateX(5px);
     box-shadow: var(--shadow-sm);
+}
+
+.contact-method a[href^="tel:"] {
+    direction: ltr;
+    unicode-bidi: plaintext;
 }
 
 .contact-icon-small {
@@ -101,6 +110,7 @@
     font-weight: 600;
     font-size: 0.95rem;
     white-space: nowrap;
+    direction: ltr;
 }
 
 /* Store Status Styles */
@@ -180,6 +190,20 @@
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+[dir="rtl"] .contact,
+[dir="rtl"] .contact-info,
+[dir="rtl"] .address {
+    text-align: right;
+}
+
+[dir="rtl"] .contact-method:hover {
+    transform: translateX(-5px);
+}
+
+[dir="rtl"] .hours-item {
+    direction: rtl;
 }
 
 @media (max-width: 768px) {

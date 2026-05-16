@@ -97,6 +97,12 @@ a.category:hover {
     box-shadow: var(--shadow-sm);
 }
 
+[dir="rtl"] .service-details,
+[dir="rtl"] .service-description,
+[dir="rtl"] .services {
+    text-align: right;
+}
+
 @media (max-width: 1024px) {
     .categories {
         grid-template-columns: repeat(2, 1fr);

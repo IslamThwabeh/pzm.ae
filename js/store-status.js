@@ -34,8 +34,39 @@ const DAY_INDEX = {
   saturday: 6
 };
 
+const DAY_NAMES = {
+  en: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+  ar: ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت']
+};
+
+const UI_TEXT = {
+  en: {
+    openNow: 'Open Now',
+    closed: 'Closed',
+    outsideHours: 'We are still receiving your calls and messages outside working hours',
+    today: 'Today',
+    unavailable: 'Business hours unavailable.'
+  },
+  ar: {
+    openNow: 'مفتوح الآن',
+    closed: 'مغلق الآن',
+    outsideHours: 'نستقبل مكالماتكم ورسائلكم أيضاً خارج أوقات العمل',
+    today: 'اليوم',
+    unavailable: 'ساعات العمل غير متاحة حالياً.'
+  }
+};
+
 let activeWeekdayText = FALLBACK_WEEKDAY_TEXT.slice();
 let activeStoreHours = { ...FALLBACK_STORE_HOURS };
+
+function getCurrentLocale() {
+  const lang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+  const path = window.location.pathname;
+  if (lang.startsWith('ar') || path === '/ar' || path === '/ar/' || path.startsWith('/ar/')) {
+    return 'ar';
+  }
+  return 'en';
+}
 
 function getDubaiTime() {
   return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Dubai' }));
@@ -78,16 +109,18 @@ function isStoreOpen() {
 function updateStoreStatus() {
   const statusElement = document.getElementById('store-status');
   const hoursElement = document.querySelector('.hours');
+  const locale = getCurrentLocale();
+  const copy = UI_TEXT[locale];
 
   if (!statusElement || !hoursElement) return;
 
   const open = isStoreOpen();
 
   if (open) {
-    statusElement.innerHTML = '<span class="open-status">Open Now</span>';
+    statusElement.innerHTML = `<span class="open-status">${copy.openNow}</span>`;
   } else {
-    statusElement.innerHTML = '<span class="closed-status">Closed</span>' +
-      '<p class="outside-hours-msg">We are still receiving your calls and messages outside working hours</p>';
+    statusElement.innerHTML = `<span class="closed-status">${copy.closed}</span>` +
+      `<p class="outside-hours-msg">${copy.outsideHours}</p>`;
   }
 
   displayHours(activeWeekdayText);
@@ -95,15 +128,16 @@ function updateStoreStatus() {
 
 function displayHours(weekdayText) {
   const hoursElement = document.querySelector('.hours');
+  const locale = getCurrentLocale();
+  const copy = UI_TEXT[locale];
   if (!hoursElement) return;
   if (!weekdayText || !Array.isArray(weekdayText)) {
-    hoursElement.textContent = "Business hours unavailable.";
+    hoursElement.textContent = copy.unavailable;
     return;
   }
 
   const now = getDubaiTime();
   const todayDay = now.getDay(); // 0=Sunday
-  const dayNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
   const hoursHTML = weekdayText.map(dayText => {
     const colonIndex = dayText.indexOf(':');
@@ -112,9 +146,12 @@ function displayHours(weekdayText) {
     }
     const day = dayText.substring(0, colonIndex).trim();
     const time = dayText.substring(colonIndex + 1).trim();
-    const isToday = day === dayNames[todayDay];
+    const dayIndex = DAY_INDEX[day.toLowerCase()];
+    const isToday = dayIndex === todayDay;
     const todayClass = isToday ? ' hours-today' : '';
-    return `<div class="hours-item${todayClass}"><span class="hours-day">${day}${isToday ? ' (Today)' : ''}</span><span class="hours-time">${time}</span></div>`;
+    const localizedDay = typeof dayIndex === 'number' ? DAY_NAMES[locale][dayIndex] : day;
+    const todaySuffix = isToday ? ` (${copy.today})` : '';
+    return `<div class="hours-item${todayClass}"><span class="hours-day">${localizedDay}${todaySuffix}</span><span class="hours-time">${time}</span></div>`;
   }).join('');
 
   hoursElement.innerHTML = hoursHTML;
