@@ -231,7 +231,7 @@ a.inventory-item:hover .item-whatsapp-hint {
     transform: translateY(-2px);
 }
 
-/* Eid Sale Banner */
+/* Seasonal promo banner */
 .eid-banner {
     background: linear-gradient(135deg, #b8860b 0%, #ffd700 50%, #b8860b 100%);
     color: #1a1200;
