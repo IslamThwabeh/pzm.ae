@@ -136,11 +136,22 @@
             line-height: 1.8;
         }
 
+        .hero-panel {
+            text-align: center;
+        }
+
         .hero-actions {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
             margin-top: 24px;
+            justify-content: center;
+        }
+
+        .hero-actions .btn-login,
+        .hero-actions .btn-signup {
+            min-width: 168px;
+            text-align: center;
         }
 
         .quick-points {
@@ -175,6 +186,10 @@
             .info-panel {
                 margin: 20px 12px 0;
                 padding: 24px 20px;
+            }
+
+            .hero-actions a {
+                width: 100%;
             }
         }
     </style>

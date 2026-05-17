@@ -112,6 +112,13 @@ function toggleMenu() {
 document.addEventListener('DOMContentLoaded', function () {
     addLanguageSwitchLink();
 
+    if (document.documentElement.getAttribute('lang') === 'ar') {
+        var phoneAction = document.querySelector('#navActions .btn-login[href^="tel:"]');
+        if (phoneAction && phoneAction.textContent.trim() === 'اتصل بنا') {
+            phoneAction.textContent = 'اتصل بالمتجر';
+        }
+    }
+
     // Close mobile menu on link click
     var navLinks = document.getElementById('navLinks');
     if (navLinks) {
