@@ -16,7 +16,7 @@
         repair: '/ar/services/repair.html',
         pcBuild: '/ar/services/gaming-pc.html',
         areas: '/ar/areas/',
-        blog: '/blog.html',
+        blog: '/ar/blog/',
         returns: '/ar/return-policy.html',
         terms: '/ar/terms.html'
       }
