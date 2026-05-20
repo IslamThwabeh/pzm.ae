@@ -27,10 +27,8 @@ function updateBlogPostMetadata(post, slug) {
     setMetaContent('meta-twitter-description', post.excerpt);
     setMetaContent('meta-twitter-image', imageUrl);
 
-    // The base blog-post.html ships with robots="noindex, follow" so the empty
-    // shell never gets indexed. Once we have a valid slug + content, flip it
-    // to index so per-slug articles can be discovered.
-    setMetaContent('meta-robots', 'index, follow');
+    // Keep the legacy query-param shell out of the crawlable URL set.
+    setMetaContent('meta-robots', 'noindex, follow');
 
     const canonicalLink = document.getElementById('canonical-link');
     if (canonicalLink) {

@@ -302,10 +302,22 @@ const blogPosts = [
 
 const staticBlogPostPaths = {
   "how-to-choose-perfect-gaming-pc-build": "/blog/how-to-choose-perfect-gaming-pc-build/",
+  "essential-pc-maintenance-tips": "/blog/essential-pc-maintenance-tips/",
+  "gold-record-highs-tech-buyers-dubai-2026": "/blog/gold-record-highs-tech-buyers-dubai-2026/",
+  "iran-us-tensions-mobile-pc-prices-uae-2026": "/blog/iran-us-tensions-mobile-pc-prices-uae-2026/",
+  "latest-mobile-accessories-2025": "/blog/latest-mobile-accessories-2025/",
   "top-5-iphone-repair-tips": "/blog/top-5-iphone-repair-tips/",
+  "us-tariffs-2026-electronics-prices-dubai": "/blog/us-tariffs-2026-electronics-prices-dubai/",
   "ultimate-guide-buying-used-laptops": "/blog/ultimate-guide-buying-used-laptops/",
   "understanding-smartphone-battery-life": "/blog/understanding-smartphone-battery-life/"
 };
+
+const blogHubFeaturedSlugs = new Set([
+  "how-to-choose-perfect-gaming-pc-build",
+  "top-5-iphone-repair-tips",
+  "ultimate-guide-buying-used-laptops",
+  "understanding-smartphone-battery-life"
+]);
 
 const postJourneys = {
   "how-to-choose-perfect-gaming-pc-build": {
@@ -462,6 +474,10 @@ function getAllPosts() {
   return [...blogPosts].reverse();
 }
 
+function getBlogHubArchivePosts() {
+  return getAllPosts().filter(post => !blogHubFeaturedSlugs.has(post.slug));
+}
+
 function getBlogPostHref(postOrSlug) {
   const slug = typeof postOrSlug === 'string' ? postOrSlug : postOrSlug?.slug;
   if (!slug) {
@@ -484,7 +500,7 @@ function displayBlogPosts() {
 
   // Blog page shows all posts; homepage shows 3 featured
   const isBlogPage = !!document.querySelector('.blog-section h1');
-  const posts = isBlogPage ? getAllPosts().filter(post => !isStaticBlogPost(post)) : getFeaturedPosts();
+  const posts = isBlogPage ? getBlogHubArchivePosts() : getFeaturedPosts();
 
   posts.forEach(post => {
     const journey = postJourneys[post.slug];
