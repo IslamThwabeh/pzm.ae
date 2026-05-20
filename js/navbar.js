@@ -24,6 +24,7 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/services/pc-repair-tecom.html': '/ar/services/repair.html',
     '/services/iphone-repair-dubai-marina.html': '/ar/services/repair.html',
     '/services/iphone-repair-jbr.html': '/ar/services/repair.html',
+    '/services/iphone-repair-jumeirah.html': '/ar/services/repair.html',
     '/services/buy-iphone.html': '/ar/services/buy-iphone.html',
     '/services/buy-used.html': '/ar/services/buy-used.html',
     '/services/gaming-pc.html': '/ar/services/gaming-pc.html',
