@@ -3,7 +3,7 @@ const blogPosts = [
   {
     title: "How to Choose the Perfect Gaming PC Build in 2026",
     slug: "how-to-choose-perfect-gaming-pc-build",
-    content: `<p>Building a gaming PC in 2026 is more rewarding than ever — but with new hardware generations and shifting prices, choosing the right components matters more now. Whether you are a first-time builder in Dubai or upgrading an existing rig, this guide covers everything you need to know.</p>
+    content: `<p>Building a gaming PC in 2026 is more rewarding than ever — but with new hardware generations and shifting prices, choosing the right components matters more now. Whether you are a first-time builder in Dubai or upgrading an existing rig, this guide covers everything you need to know. If your current setup might only need a smarter refresh, our <a href="/services/repair.html">PC repair and upgrade service</a> can help you decide whether an SSD, GPU, cooling, or RAM upgrade is enough before you commit to a full rebuild.</p>
 
       <h3>CPU: The brain of your build</h3>
       <p>AMD's Ryzen 9000 series and Intel's Arrow Lake processors dominate the 2026 landscape. For pure gaming, the Ryzen 7 9800X3D remains the king of frame rates thanks to its massive 3D V-Cache. Intel's Core Ultra 7 265K offers excellent multi-threaded performance if you also stream or create content. Budget builders should look at the Ryzen 5 9600X — it handles 1080p and 1440p gaming without breaking a sweat.</p>
@@ -18,7 +18,7 @@ const blogPosts = [
       <p>Modern GPUs are power-hungry. Budget at least 850W for a mid-range build and 1000W for high-end. Choose an 80+ Gold or Platinum certified PSU from a reputable brand. For cooling, a 360mm AIO liquid cooler handles any current CPU, while quality tower coolers like the Noctua NH-D15 G2 remain excellent air-cooling options.</p>
 
       <h3>Why build with PZM</h3>
-      <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU pricing for custom builds</a>. From <a href="/areas/al-barsha.html">our Al Barsha store</a>, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. Want to discuss your dream build? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting.</p>`,
+      <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU pricing for custom builds</a>. From <a href="/areas/al-barsha.html">our Al Barsha store</a>, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. If you are comparing options before driving in from <a href="/areas/jumeirah-village.html">Jumeirah Village</a>, send your budget and target games first so we can narrow the right parts list. Want to discuss your dream build? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting.</p>`,
     excerpt: "Your 2026 guide to building the perfect gaming PC — from Ryzen 9000 and Arrow Lake CPUs to RTX 5070 and RX 9070 GPUs, with Dubai-specific buying advice.",
     image_url: "images/blog/gaming-pc-build.jpg",
     category: "Gaming",
@@ -96,7 +96,7 @@ const blogPosts = [
       <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/repair.html">PZM for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
 
       <h3>2. Monitor your temperatures</h3>
-      <p>Install HWiNFO64 (free) and check your CPU and GPU temperatures under load. For most modern processors, anything below 85°C under sustained load is acceptable. GPUs should stay below 90°C. If you are hitting higher numbers, it is time to clean, replace thermal paste, or upgrade your cooling solution. Thermal paste should be replaced every 2–3 years for best results.</p>
+      <p>Install HWiNFO64 (free) and check your CPU and GPU temperatures under load. For most modern processors, anything below 85°C under sustained load is acceptable. GPUs should stay below 90°C. If you are hitting higher numbers, it is time to clean, replace thermal paste, or upgrade your cooling solution. If heat stays high after a basic clean, ask about <a href="/services/gaming-pc.html">cooling and airflow upgrades</a> before a minor thermal issue turns into board damage. Thermal paste should be replaced every 2–3 years for best results.</p>
 
       <h3>3. Keep your SSD healthy</h3>
       <p>Modern NVMe SSDs are reliable but not immortal. Check your drive health using CrystalDiskInfo — look for the "Health Status" indicator and the "Total Host Writes" number. Keep at least 15–20% of your SSD capacity free for optimal performance and longevity. If your drive shows warnings, back up immediately and replace it before data loss occurs.</p>
@@ -108,7 +108,7 @@ const blogPosts = [
       <p>Dubai's power grid is generally stable, but micro-surges and brownouts happen — especially during summer peak loads. Use a quality surge protector at minimum, or better yet, a UPS (uninterruptible power supply). A sudden power loss during a Windows update or BIOS flash can brick your system. A basic 650VA UPS costs less than a single component replacement.</p>
 
       <h3>When to call in the professionals</h3>
-      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/repair.html">PZM offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/jumeirah-village.html">Jumeirah Village</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
+      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/repair.html">PZM offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/jumeirah-village.html">Jumeirah Village</a> or <a href="/areas/tecom.html">Tecom</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
     category: "PC",
@@ -123,7 +123,7 @@ const blogPosts = [
       <p>If you have spent thousands on a <a href="/services/buy-iphone.html">new iPhone 17</a> or flagship Samsung, a premium tempered glass protector is the cheapest insurance you can buy. Look for 9H hardness rating, oleophobic coating (anti-fingerprint), and edge-to-edge coverage. Privacy screen protectors are worth considering if you use your phone for banking or work emails in crowded places like the Metro. Browse our full <a href="/services/accessories.html">accessories selection</a> for all major phone models.</p>
 
       <h3>2. Cases that actually protect</h3>
-      <p>Clear cases look great for a month, then yellow. In 2026, the move is toward matte or frosted cases with MagSafe compatibility — they stay clean, offer military-grade drop protection, and work with magnetic chargers and car mounts. For iPhones, Apple's own silicone and FineWoven cases remain top picks. For Samsung, Spigen and UAG offer the best protection-to-bulk ratio.</p>
+      <p>Clear cases look great for a month, then yellow. In 2026, the move is toward matte or frosted cases with MagSafe compatibility — they stay clean, offer military-grade drop protection, and work with magnetic chargers and car mounts. For iPhones, Apple's own silicone and FineWoven cases remain top picks. For Samsung, Spigen and UAG offer the best protection-to-bulk ratio. A strong case and protector combo is still much cheaper than most <a href="/services/repair.html">screen or frame repairs</a> after a bad drop.</p>
 
       <h3>3. GaN chargers: smaller, faster, multi-device</h3>
       <p>GaN (gallium nitride) chargers have essentially replaced traditional brick chargers. A single 65W GaN charger can fast-charge your iPhone, iPad, and MacBook from one compact unit — perfect for travel and desk organization. For <a href="/services/gaming-pc.html">gaming laptop</a> owners, 100W+ GaN chargers now exist that can handle even power-hungry machines. Always buy from reputable brands — cheap chargers can damage your battery or worse.</p>
@@ -133,13 +133,13 @@ const blogPosts = [
 
       <h3>5. Laptop accessories that boost productivity</h3>
       <ul>
-        <li><strong>USB-C hubs:</strong> Essential for MacBook users — get one with HDMI, USB-A, SD card, and passthrough charging.</li>
+        <li><strong>USB-C hubs:</strong> Essential for MacBook users — especially if you picked up a recent <a href="/services/buy-used.html">used MacBook or slim Windows laptop</a> that dropped legacy ports. Get one with HDMI, USB-A, SD card, and passthrough charging.</li>
         <li><strong>Laptop stands:</strong> Elevating your screen to eye level reduces neck strain and improves airflow for cooling.</li>
         <li><strong>External keyboards and mice:</strong> If you use your laptop at a desk, a proper keyboard and mouse transform the experience.</li>
         <li><strong>Portable SSDs:</strong> Samsung T7 Shield or SanDisk Extreme — fast, rugged, and perfect for backups and file transfers.</li>
       </ul>
 
-      <p>Visit <a href="/services/accessories.html">PZM's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/jbr.html">JBR</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
+      <p>Visit <a href="/services/accessories.html">PZM's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/jbr.html">JBR</a> or <a href="/areas/dubai-marina.html">Dubai Marina</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
     excerpt: "The best phone and laptop accessories worth buying in 2026 — from tempered glass and MagSafe chargers to USB-C hubs and portable SSDs.",
     image_url: "https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg",
     category: "Accessories",
