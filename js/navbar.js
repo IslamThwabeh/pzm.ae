@@ -19,6 +19,7 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/services/repair.html': '/ar/services/repair.html',
     '/services/same-day-screen-repair-al-barsha.html': '/ar/services/repair.html',
     '/services/iphone-battery-replacement-al-barsha.html': '/ar/services/repair.html',
+    '/services/iphone-battery-replacement-dubai-marina.html': '/ar/services/repair.html',
     '/services/laptop-repair-al-quoz.html': '/ar/services/repair.html',
     '/services/pc-repair-jumeirah-village.html': '/ar/services/repair.html',
     '/services/pc-repair-tecom.html': '/ar/services/repair.html',
