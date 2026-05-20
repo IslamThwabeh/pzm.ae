@@ -102,9 +102,85 @@
         <section class="blog-section">
             <h1>Dubai Tech Buying Guides and Repair Tips</h1>
             <p class="blog-hub-intro">Use these guides to compare devices, plan repairs, and check value before you visit our <a href="/areas/al-barsha.html">Al Barsha store</a>. If you want the direct route, start from <a href="/services/index.html">our services</a> or <a href="/areas/index.html">areas we serve</a>.</p>
-            <div class="blog-grid">
+            <p class="blog-hub-intro">New in our static article rollout: the guides below now live as standalone crawlable pages on pzm.ae. The archive underneath keeps the remaining legacy library available while we continue migrating articles into the static flow.</p>
+            <div class="blog-grid" aria-label="Featured static guides">
+                <article class="blog-card">
+                    <img src="/images/Services/repairing_services.jpg" alt="Phone repair service at PZM Dubai" class="blog-image" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-category">Repair Guide</span>
+                        <h2>Same Day Phone Screen Repair Explained</h2>
+                        <p>Learn what actually affects same day turnaround in Dubai, how to compare screen quality and price, and what to confirm before you visit our Al Barsha store.</p>
+                        <div class="blog-meta">
+                            <span>May 20, 2026</span>
+                            <span>Repair Services</span>
+                        </div>
+                        <a href="/blog/same-day-phone-screen-repair-explained/" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/4195325/pexels-photo-4195325.jpeg" alt="iPhone repair tips guide" class="blog-image" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-category">Repair</span>
+                        <h2>Top 5 iPhone Repair Tips Every Owner Should Know in 2026</h2>
+                        <p>Practical iPhone repair advice on cracked screens, battery health, charging issues, software checks, and when to repair versus upgrade.</p>
+                        <div class="blog-meta">
+                            <span>January 10, 2026</span>
+                            <span>Repair services</span>
+                        </div>
+                        <a href="/blog/top-5-iphone-repair-tips/" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="Used laptop buying guide" class="blog-image" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-category">Used</span>
+                        <h2>The Smart Buyer's Guide to Used Laptops in Dubai</h2>
+                        <p>How to shortlist used laptops, check battery and screen condition, and avoid the common mistakes that waste money in Dubai.</p>
+                        <div class="blog-meta">
+                            <span>January 25, 2026</span>
+                            <span>Used laptops</span>
+                        </div>
+                        <a href="/blog/ultimate-guide-buying-used-laptops/" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="https://images.pexels.com/photos/4526407/pexels-photo-4526407.jpeg" alt="Phone battery guide" class="blog-image" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-category">Mobile</span>
+                        <h2>Why Your Phone Battery Dies So Fast — And How to Fix It</h2>
+                        <p>The real battery drain causes in 2026, which charging myths to ignore, and when a same-day battery replacement is the smarter move.</p>
+                        <div class="blog-meta">
+                            <span>March 5, 2026</span>
+                            <span>Battery repair</span>
+                        </div>
+                        <a href="/blog/understanding-smartphone-battery-life/" class="read-more">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="/images/blog/gaming-pc-build.jpg" alt="Gaming PC build guide" class="blog-image" loading="lazy">
+                    <div class="blog-content">
+                        <span class="blog-category">Gaming</span>
+                        <h2>How to Choose the Perfect Gaming PC Build in 2026</h2>
+                        <p>A practical Dubai-focused gaming PC guide covering CPUs, GPUs, DDR5 memory, cooling, and how to match parts to your budget.</p>
+                        <div class="blog-meta">
+                            <span>December 15, 2025</span>
+                            <span>Gaming PC builds</span>
+                        </div>
+                        <a href="/blog/how-to-choose-perfect-gaming-pc-build/" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+            <h2 class="blog-subheading">Archive</h2>
+            <p class="blog-hub-intro blog-archive-note">The archive below keeps older posts available while we move more guides into the new static publishing flow.</p>
+            <div class="blog-grid" data-blog-feed="archive">
                 <!-- Blog posts will be dynamically inserted here -->
             </div>
+
+            <section class="blog-soro-section" aria-labelledby="soro-blog-heading">
+                <h2 id="soro-blog-heading" class="blog-subheading">Daily Soro Feed</h2>
+                <p class="blog-hub-intro">This is our live Soro experiment. Our primary published guides remain the standalone pages above, while this feed helps us test daily topic coverage and engagement.</p>
+                <div id="soro-blog"></div>
+            </section>
         </section>
 
         <!-- Contact Section (loaded from /components/contact.html) -->
@@ -113,6 +189,7 @@
 
     <script src="/js/navbar.js"></script>
     <script type="module" src="js/blog.js"></script>
+    <script src="https://app.trysoro.com/api/embed/57b73f1e-37b7-4fd5-9f29-79b5b4903586" defer></script>
     <script src="/js/contact-loader.js"></script>
 </body>
 </html>

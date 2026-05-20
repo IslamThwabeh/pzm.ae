@@ -300,6 +300,13 @@ const blogPosts = [
   }
 ];
 
+const staticBlogPostPaths = {
+  "how-to-choose-perfect-gaming-pc-build": "/blog/how-to-choose-perfect-gaming-pc-build/",
+  "top-5-iphone-repair-tips": "/blog/top-5-iphone-repair-tips/",
+  "ultimate-guide-buying-used-laptops": "/blog/ultimate-guide-buying-used-laptops/",
+  "understanding-smartphone-battery-life": "/blog/understanding-smartphone-battery-life/"
+};
+
 const postJourneys = {
   "how-to-choose-perfect-gaming-pc-build": {
     moneyPage: {
@@ -455,15 +462,29 @@ function getAllPosts() {
   return [...blogPosts].reverse();
 }
 
+function getBlogPostHref(postOrSlug) {
+  const slug = typeof postOrSlug === 'string' ? postOrSlug : postOrSlug?.slug;
+  if (!slug) {
+    return 'blog.html';
+  }
+
+  return staticBlogPostPaths[slug] || `blog-post.html?slug=${slug}`;
+}
+
+function isStaticBlogPost(postOrSlug) {
+  const slug = typeof postOrSlug === 'string' ? postOrSlug : postOrSlug?.slug;
+  return !!(slug && staticBlogPostPaths[slug]);
+}
+
 function displayBlogPosts() {
-  const blogGrid = document.querySelector('.blog-grid');
+  const blogGrid = document.querySelector('[data-blog-feed="archive"]') || document.querySelector('.blog-grid');
   if (!blogGrid) return;
 
   blogGrid.innerHTML = '';
 
   // Blog page shows all posts; homepage shows 3 featured
   const isBlogPage = !!document.querySelector('.blog-section h1');
-  const posts = isBlogPage ? getAllPosts() : getFeaturedPosts();
+  const posts = isBlogPage ? getAllPosts().filter(post => !isStaticBlogPost(post)) : getFeaturedPosts();
 
   posts.forEach(post => {
     const journey = postJourneys[post.slug];
@@ -481,7 +502,7 @@ function displayBlogPosts() {
           <span>${dateLabel}</span>
           <span>${journey ? journey.moneyPage.shortLabel : 'PZM Dubai'}</span>
         </div>
-        <a href="blog-post.html?slug=${post.slug}" class="read-more">Read More</a>
+        <a href="${getBlogPostHref(post)}" class="read-more">Read More</a>
       </div>
     `;
 
@@ -492,4 +513,4 @@ function displayBlogPosts() {
 // Initialize blog posts when DOM is ready
 document.addEventListener('DOMContentLoaded', displayBlogPosts);
 
-export { blogPosts, postJourneys, formatBlogDate };
+export { blogPosts, postJourneys, formatBlogDate, staticBlogPostPaths, getBlogPostHref, isStaticBlogPost };

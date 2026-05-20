@@ -42,6 +42,28 @@
     font-weight: 600;
 }
 
+.blog-subheading {
+    max-width: 1100px;
+    margin: var(--space-xl) auto var(--space-sm);
+    padding: 0 var(--space-md);
+    color: var(--text-dark);
+    font-size: 2rem;
+}
+
+.blog-archive-note {
+    margin-bottom: var(--space-md);
+}
+
+.blog-soro-section {
+    padding-bottom: var(--space-xl);
+}
+
+#soro-blog {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
 .blog-category {
     display: inline-block;
     padding: var(--space-xs) var(--space-sm);
@@ -268,6 +290,10 @@
 
     .blog-post-content h1 {
         font-size: 2rem;
+    }
+
+    .blog-subheading {
+        font-size: 1.65rem;
     }
 
     .blog-next-steps {

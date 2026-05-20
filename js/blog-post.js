@@ -1,5 +1,5 @@
 // Import blog posts data
-import { blogPosts, postJourneys, formatBlogDate } from './blog.js';
+import { blogPosts, postJourneys, formatBlogDate, getBlogPostHref, isStaticBlogPost } from './blog.js';
 
 function setMetaContent(id, value) {
     const element = document.getElementById(id);
@@ -104,6 +104,12 @@ function renderJourneySection(post) {
 
 function displayBlogPost() {
     const slug = getPostSlug();
+
+    if (slug && isStaticBlogPost(slug)) {
+        window.location.replace(getBlogPostHref(slug));
+        return;
+    }
+
     const post = findPostBySlug(slug);
     
     if (!post) {
