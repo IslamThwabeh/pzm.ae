@@ -97,6 +97,40 @@ a.category:hover {
     box-shadow: var(--shadow-sm);
 }
 
+.local-coverage {
+    border: 1px solid rgba(14, 165, 233, 0.12);
+}
+
+.local-coverage p {
+    margin-bottom: 16px;
+}
+
+.service-area-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-area-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.service-area-link:hover {
+    transform: translateY(-1px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
 [dir="rtl"] .service-details,
 [dir="rtl"] .service-description,
 [dir="rtl"] .services {
@@ -141,6 +175,16 @@ a.category:hover {
 
     .service-description {
         padding: var(--space-md);
+    }
+
+    .service-area-links {
+        gap: 8px;
+    }
+
+    .service-area-link {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 }
 
