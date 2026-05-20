@@ -116,7 +116,7 @@ const blogPosts = [
   },
   {
     title: "Must-Have Phone and Laptop Accessories in 2026",
-    slug: "latest-mobile-accessories-2025",
+    slug: "latest-mobile-accessories-2026",
     content: `<p>The right accessories do not just protect your devices — they transform how you use them. Here are the accessories worth your money in 2026, from essential protection to productivity boosters, all available at tech stores across Dubai.</p>
 
       <h3>1. Screen protectors: tempered glass is non-negotiable</h3>
@@ -305,7 +305,7 @@ const staticBlogPostPaths = {
   "essential-pc-maintenance-tips": "/blog/essential-pc-maintenance-tips/",
   "gold-record-highs-tech-buyers-dubai-2026": "/blog/gold-record-highs-tech-buyers-dubai-2026/",
   "iran-us-tensions-mobile-pc-prices-uae-2026": "/blog/iran-us-tensions-mobile-pc-prices-uae-2026/",
-  "latest-mobile-accessories-2025": "/blog/latest-mobile-accessories-2025/",
+  "latest-mobile-accessories-2026": "/blog/latest-mobile-accessories-2026/",
   "top-5-iphone-repair-tips": "/blog/top-5-iphone-repair-tips/",
   "us-tariffs-2026-electronics-prices-dubai": "/blog/us-tariffs-2026-electronics-prices-dubai/",
   "ultimate-guide-buying-used-laptops": "/blog/ultimate-guide-buying-used-laptops/",
@@ -376,7 +376,7 @@ const postJourneys = {
       description: "Useful for JVC and JVT owners who want to sort PC maintenance before the trip."
     }
   },
-  "latest-mobile-accessories-2025": {
+  "latest-mobile-accessories-2026": {
     moneyPage: {
       href: "/services/accessories.html",
       label: "Match the right accessories",
