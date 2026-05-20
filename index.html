@@ -388,17 +388,19 @@
             line-height: 1.7;
         }
         .hero-proof-list {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 12px;
-            max-width: 780px;
+            max-width: 920px;
             margin: 0 auto 28px;
         }
         .hero-proof-item {
+            flex: 1 1 200px;
             background: rgba(255,255,255,0.82);
             border: 1px solid rgba(15,23,42,0.07);
-            border-radius: 16px;
-            padding: 16px 18px;
+            border-radius: 18px;
+            padding: 14px 16px;
             box-shadow: var(--shadow-sm);
             text-align: left;
         }
@@ -1432,7 +1434,7 @@
             .hero { padding: 40px 24px; min-height: auto; }
             .hero-text h1 { font-size: 2rem; }
             .hero-text p { font-size: 0.95rem; }
-            .hero-proof-list { grid-template-columns: 1fr; }
+            .hero-proof-item { flex-basis: calc(50% - 12px); }
             .hero-btns { flex-direction: column; }
             .btn-primary, .btn-secondary { justify-content: center; }
             .appointment-card { max-width: 100%; }
@@ -1454,6 +1456,7 @@
         @media (max-width: 480px) {
             .hero-text h1 { font-size: 1.7rem; }
             .services-grid { grid-template-columns: 1fr; }
+            .hero-proof-item { flex-basis: 100%; }
             .hero-link-row { gap: 12px; }
             .trust-grid { grid-template-columns: 1fr; }
             .areas-tags { gap: 8px; }
@@ -1542,20 +1545,20 @@
                 <p>A practical retail and repair destination inside Union Coop Hypermarket on Hessa Street, Al Barsha. Check availability on WhatsApp, visit for clear device advice, or book repair drop-off with real in-store support.</p>
                 <div class="hero-proof-list">
                     <div class="hero-proof-item">
-                        <strong>Inside Union Coop Hypermarket</strong>
-                        <span>Walk-in store on Hessa Street with easy parking and direct access.</span>
+                        <strong>Walk-in Al Barsha store</strong>
+                        <span>Inside Union Coop Hypermarket with easy parking on Hessa Street.</span>
                     </div>
                     <div class="hero-proof-item">
-                        <strong>Fast WhatsApp support</strong>
-                        <span>Ask about stock, pricing, repairs, or trade-in before you leave home.</span>
+                        <strong>Same-day repair on selected jobs</strong>
+                        <span>Common screen and battery work can move fast when parts and timing allow.</span>
                     </div>
                     <div class="hero-proof-item">
-                        <strong>Clear warranty guidance</strong>
-                        <span>We explain device condition and warranty coverage before payment or pickup.</span>
+                        <strong>Google-reviewed local store</strong>
+                        <span>Check recent customer feedback before you visit or message us.</span>
                     </div>
                     <div class="hero-proof-item">
-                        <strong>Pickup options when suitable</strong>
-                        <span>Store drop-off is simple, and pickup or delivery can be coordinated on selected cases.</span>
+                        <strong>Pickup &amp; return booking available</strong>
+                        <span>Selected orders and repair cases can be arranged around your area and timing.</span>
                     </div>
                 </div>
                 <div class="hero-btns">
