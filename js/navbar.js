@@ -17,6 +17,8 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/services/index.html': '/ar/services/',
     '/services/brand-new.html': '/ar/services/brand-new.html',
     '/services/repair.html': '/ar/services/repair.html',
+    '/services/same-day-screen-repair-al-barsha.html': '/ar/services/repair.html',
+    '/services/iphone-battery-replacement-al-barsha.html': '/ar/services/repair.html',
     '/services/buy-iphone.html': '/ar/services/buy-iphone.html',
     '/services/buy-used.html': '/ar/services/buy-used.html',
     '/services/gaming-pc.html': '/ar/services/gaming-pc.html',
