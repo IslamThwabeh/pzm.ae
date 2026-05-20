@@ -27,7 +27,32 @@
     <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/contact.css">
-    <script id="blog-post-schema" type="application/ld+json"></script>
+    <script id="blog-post-page-schema" type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "PZM Blog Article",
+        "description": "Legacy query-parameter route that keeps older PZM blog article links working.",
+        "url": "https://pzm.ae/blog-post.html",
+        "inLanguage": "en",
+        "isPartOf": {
+            "@type": "Blog",
+            "name": "PZM Dubai Tech Blog",
+            "url": "https://pzm.ae/blog.html"
+        }
+    }
+    </script>
+    <script id="blog-post-breadcrumb-schema" type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pzm.ae/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pzm.ae/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "Blog Article", "item": "https://pzm.ae/blog-post.html" }
+        ]
+    }
+    </script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSJ08ST3JL"></script>
@@ -87,7 +112,15 @@
 <main>
         <article class="blog-post">
             <div id="post-content">
-                <!-- Content will be populated by JavaScript -->
+                <noscript>
+                    <div class="blog-post-content">
+                        <span class="blog-category">PZM Blog</span>
+                        <h1>Looking for a PZM article?</h1>
+                        <div class="blog-content">
+                            <p>This page keeps older shared article links working. If the article does not load automatically, continue to our <a href="/blog.html">blog hub</a> to find the current standalone guides.</p>
+                        </div>
+                    </div>
+                </noscript>
             </div>
         </article>
 

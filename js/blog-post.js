@@ -8,6 +8,19 @@ function setMetaContent(id, value) {
     }
 }
 
+function writeJsonLd(id, payload) {
+    let script = document.getElementById(id);
+
+    if (!script) {
+        script = document.createElement('script');
+        script.id = id;
+        script.type = 'application/ld+json';
+        document.head.appendChild(script);
+    }
+
+    script.textContent = JSON.stringify(payload);
+}
+
 function updateBlogPostMetadata(post, slug) {
     const pageUrl = new URL(window.location.href);
     pageUrl.search = '';
@@ -35,6 +48,45 @@ function updateBlogPostMetadata(post, slug) {
         canonicalLink.setAttribute('href', pageUrl.href);
     }
 
+    const pageSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        name: pageTitle,
+        description: post.excerpt,
+        url: pageUrl.href,
+        inLanguage: 'en',
+        isPartOf: {
+            '@type': 'Blog',
+            name: 'PZM Dubai Tech Blog',
+            url: 'https://pzm.ae/blog.html'
+        }
+    };
+
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://pzm.ae/'
+            },
+            {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Blog',
+                item: 'https://pzm.ae/blog.html'
+            },
+            {
+                '@type': 'ListItem',
+                position: 3,
+                name: post.title,
+                item: pageUrl.href
+            }
+        ]
+    };
+
     const schema = {
         '@context': 'https://schema.org',
         '@type': 'Article',
@@ -42,6 +94,7 @@ function updateBlogPostMetadata(post, slug) {
         description: post.excerpt,
         image: imageUrl,
         mainEntityOfPage: pageUrl.href,
+        url: pageUrl.href,
         inLanguage: 'en',
         ...(publishedISO ? { datePublished: publishedISO, dateModified: publishedISO } : {}),
         author: {
@@ -59,10 +112,9 @@ function updateBlogPostMetadata(post, slug) {
         }
     };
 
-    const schemaScript = document.getElementById('blog-post-schema');
-    if (schemaScript) {
-        schemaScript.textContent = JSON.stringify(schema);
-    }
+    writeJsonLd('blog-post-page-schema', pageSchema);
+    writeJsonLd('blog-post-breadcrumb-schema', breadcrumbSchema);
+    writeJsonLd('blog-post-article-schema', schema);
 }
 
 function getPostSlug() {
