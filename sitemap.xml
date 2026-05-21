@@ -143,6 +143,12 @@
     </image:image>
   </url>
   <url>
+    <loc>https://pzm.ae/ar/services/pc-repair-jumeirah-village.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+  <url>
     <loc>https://pzm.ae/services/pc-repair-tecom.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -151,6 +157,12 @@
       <image:loc>https://pzm.ae/images/blog/essential-pc-maintenance-tips.jpg</image:loc>
       <image:title>PC Repair from Tecom</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/services/pc-repair-tecom.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
   </url>
   <url>
     <loc>https://pzm.ae/services/iphone-repair-jbr.html</loc>
