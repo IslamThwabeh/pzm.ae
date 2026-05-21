@@ -24,9 +24,17 @@
     object-fit: cover;
 }
 
-.blog-image.focus-top,
-.blog-post-image.focus-top {
+.blog-image.focus-top {
     object-position: center top;
+}
+
+.blog-post-image.focus-top {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto var(--space-xl);
 }
 
 .blog-content {
