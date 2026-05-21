@@ -105,6 +105,12 @@
     </image:image>
   </url>
   <url>
+    <loc>https://pzm.ae/ar/services/macbook-repair-al-barsha.html</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
+  </url>
+  <url>
     <loc>https://pzm.ae/ar/services/iphone-battery-replacement-al-barsha.html</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -247,9 +253,29 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/blog/</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/blog/macbook-repair-or-replace-al-barsha/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/macbook-repair-services.jpg</image:loc>
+      <image:title>MacBook Repair or Replace in Al Barsha?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/blog/macbook-repair-or-replace-al-barsha/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/macbook-repair-services.jpg</image:loc>
+      <image:title>هل تصلّح MacBook أم تستبدله في البرشاء؟</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://pzm.ae/blog/same-day-phone-screen-repair-explained/</loc>
