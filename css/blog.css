@@ -24,6 +24,11 @@
     object-fit: cover;
 }
 
+.blog-image.focus-top,
+.blog-post-image.focus-top {
+    object-position: center top;
+}
+
 .blog-content {
     padding: var(--space-lg);
 }
