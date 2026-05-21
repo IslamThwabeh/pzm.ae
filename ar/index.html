@@ -185,11 +185,83 @@
             margin-top: 16px;
         }
 
+        .eid-home-banner {
+            max-width: 1100px;
+            margin: 24px auto 0;
+            padding: 28px 24px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 22px;
+            align-items: center;
+            background: linear-gradient(135deg, #fff4d7 0%, #ffe38a 42%, #fff7e7 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .eid-home-banner-icon {
+            display: block;
+            width: clamp(76px, 14vw, 112px);
+            height: auto;
+            filter: drop-shadow(0 10px 24px rgba(90, 56, 0, 0.2));
+            justify-self: center;
+        }
+
+        .eid-home-banner-copy {
+            max-width: 760px;
+        }
+
+        .eid-home-banner-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            color: #8b5a00;
+            margin-bottom: 10px;
+        }
+
+        .eid-home-banner h2 {
+            color: #1f1600;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .eid-home-banner p {
+            color: #4c3300;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .eid-home-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .eid-home-note {
+            margin-top: 14px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #805300;
+        }
+
         @media (max-width: 768px) {
             .hero-panel,
             .info-panel {
                 margin: 20px 12px 0;
                 padding: 24px 20px;
+            }
+
+            .eid-home-banner {
+                margin: 20px 12px 0;
+                padding: 24px 20px;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                text-align: center;
+            }
+
+            .eid-home-actions {
+                justify-content: center;
             }
 
             .hero-actions a {
@@ -256,6 +328,31 @@
             </div>
         </section>
 
+        <section class="eid-home-banner" aria-label="عروض عيد الأضحى">
+            <svg class="eid-home-banner-icon" viewBox="0 0 120 80" aria-hidden="true" focusable="false">
+                <circle cx="30" cy="34" r="14" fill="#fff4d7"/>
+                <circle cx="46" cy="24" r="16" fill="#fff4d7"/>
+                <circle cx="62" cy="30" r="17" fill="#fff4d7"/>
+                <circle cx="50" cy="43" r="17" fill="#fff8e7"/>
+                <ellipse cx="80" cy="42" rx="13" ry="11" fill="#7a4d00"/>
+                <circle cx="85" cy="39" r="2.4" fill="#1a1200"/>
+                <path d="M90 43c-1 3-4 5-8 5" fill="none" stroke="#1a1200" stroke-linecap="round" stroke-width="2"/>
+                <path d="M72 37l8-7" fill="none" stroke="#7a4d00" stroke-linecap="round" stroke-width="5"/>
+                <path d="M26 54v14M43 57v12M59 57v12M72 54v14" fill="none" stroke="#7a4d00" stroke-linecap="round" stroke-width="5"/>
+                <path d="M82 29c4-6 9-6 13-2M81 28c-4-5-9-4-12 0" fill="none" stroke="#7a4d00" stroke-linecap="round" stroke-width="3"/>
+            </svg>
+            <div class="eid-home-banner-copy">
+                <div class="eid-home-banner-label">عروض عيد الأضحى 2026</div>
+                <h2>عروض عيد الأضحى متوفرة الآن في PZM</h2>
+                <p>أجهزة مناسبة للهدية من الهواتف واللابتوبات وأجهزة الألعاب مع توفر حديث وضمان واضح خلال فترة العيد. تصفح عروض الأجهزة الجديدة أو راسلنا على واتساب قبل زيارة متجر البرشاء.</p>
+                <div class="eid-home-actions">
+                    <a href="/ar/services/brand-new.html" class="btn-login">تصفح عروض العيد</a>
+                    <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%B9%D8%B1%D9%88%D8%B6%20%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B6%D8%AD%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">اسأل على واتساب</a>
+                </div>
+                <div class="eid-home-note">الحملة مفعلة خلال عيد الأضحى والأسبوعين التاليين.</div>
+            </div>
+        </section>
+
         <section class="services">
             <h2 style="text-align:center; margin-bottom: var(--space-lg); color: var(--secondary-color); font-size: 2rem;">الخدمات الأساسية</h2>
             <div class="categories">
@@ -279,9 +376,9 @@
                 </a>
                 <a href="/ar/services/brand-new.html" class="category">
                     <div class="category-img"><img src="/images/Catigories/new-devices.jpg" alt="أجهزة جديدة" width="700" height="400"></div>
-                    <h3>أجهزة جديدة</h3>
-                    <p>هواتف ولابتوبات وملحقات جديدة بأفضل الخيارات في المتجر.</p>
-                    <span class="read-more">اعرف المزيد عن الأجهزة الجديدة</span>
+                    <h3>عروض الأجهزة الجديدة</h3>
+                    <p>هواتف ولابتوبات وأجهزة ألعاب جديدة بعروض عيد الأضحى مع ضمان واضح وتأكيد سريع عبر واتساب.</p>
+                    <span class="read-more">اعرف المزيد عن عروض العيد</span>
                 </a>
                 <a href="/ar/services/gaming-pc.html" class="category">
                     <div class="category-img"><img src="/images/2026-march/build-dream-gaming-pc.jpg" alt="تجميع Gaming PC" width="1024" height="1024"></div>
