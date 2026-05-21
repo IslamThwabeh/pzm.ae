@@ -275,6 +275,19 @@ a.inventory-item:hover .item-whatsapp-hint {
     margin: 0 auto;
 }
 
+.eid-banner-copy {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.eid-banner-icon {
+    display: block;
+    width: 112px;
+    height: auto;
+    margin: 0 auto 14px;
+    filter: drop-shadow(0 10px 24px rgba(90, 56, 0, 0.2));
+}
+
 .eid-banner-label {
     font-size: 0.88rem;
     font-weight: 700;
@@ -321,6 +334,15 @@ a.inventory-item:hover .item-whatsapp-hint {
 
 /* Responsive — Tablet */
 @media (max-width: 768px) {
+    .eid-banner {
+        padding: 28px 16px;
+    }
+
+    .eid-banner-icon {
+        width: 92px;
+        margin-bottom: 12px;
+    }
+
     .item-thumb {
         width: 48px;
         height: 48px !important;
