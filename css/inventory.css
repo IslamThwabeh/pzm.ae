@@ -198,6 +198,38 @@ a.inventory-item:hover {
     flex-shrink: 0;
 }
 
+.item-price-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.item-price-compare {
+    font-size: 0.8rem;
+    color: var(--gray-500, #64748b);
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    white-space: nowrap;
+}
+
+.item-price-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(0, 200, 150, 0.12);
+    color: var(--primary-dark, #00a87a);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
 .item-price.contact {
     color: var(--gray-500, #64748b);
     font-weight: 500;
@@ -361,5 +393,18 @@ a.inventory-item:hover .item-whatsapp-hint {
         width: 40px;
         height: 40px !important;
         min-width: 40px;
+    }
+
+    .item-price-group {
+        gap: 3px;
+    }
+
+    .item-price-compare {
+        font-size: 0.75rem;
+    }
+
+    .item-price-badge {
+        font-size: 0.62rem;
+        padding: 3px 7px;
     }
 }
