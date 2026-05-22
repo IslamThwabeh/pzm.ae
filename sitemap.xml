@@ -812,4 +812,56 @@
     </image:image>
   </url>
 
+  <!-- Phase 4 — New service-area landing pages -->
+  <url>
+    <loc>https://pzm.ae/services/iphone-repair-al-barsha.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/blog/top-5-iphone-repair-tips.jpg</image:loc>
+      <image:title>iPhone Repair in Al Barsha</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/iphone-repair-al-quoz.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/blog/top-5-iphone-repair-tips.jpg</image:loc>
+      <image:title>iPhone Repair in Al Quoz</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/laptop-repair-dubai-marina.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/blog/essential-pc-maintenance-tips.jpg</image:loc>
+      <image:title>Laptop Repair in Dubai Marina</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/laptop-repair-jumeirah.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/blog/essential-pc-maintenance-tips.jpg</image:loc>
+      <image:title>Laptop Repair in Jumeirah</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/macbook-repair-dubai-marina.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/macbook-repair-services.jpg</image:loc>
+      <image:title>MacBook Repair in Dubai Marina</image:title>
+    </image:image>
+  </url>
+
 </urlset>
