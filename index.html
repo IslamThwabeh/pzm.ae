@@ -497,6 +497,122 @@
             font-weight: 600;
             color: #805300;
         }
+        .local-actions-section {
+            padding: 0 24px 34px;
+        }
+        .local-actions-panel {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 30px 32px;
+            border-radius: 28px;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-md);
+        }
+        .local-actions-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 18px 24px;
+            align-items: flex-end;
+            margin-bottom: 24px;
+        }
+        .local-actions-header h2 {
+            font-size: 1.95rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        .local-actions-header p {
+            max-width: 700px;
+            font-size: 1rem;
+            color: var(--gray-500);
+            line-height: 1.7;
+        }
+        .local-actions-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, rgba(14,165,233,0.1), rgba(0,200,150,0.1));
+            color: var(--accent-dark);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        .local-actions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+        }
+        .local-action-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            padding: 24px 22px;
+            border-radius: 22px;
+            background: #fff;
+            border: 1px solid var(--gray-200);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .local-action-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(14,165,233,0.18);
+        }
+        .local-action-label {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--primary-dark);
+        }
+        .local-action-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+        .local-action-card p {
+            font-size: 0.88rem;
+            color: var(--gray-500);
+            line-height: 1.65;
+        }
+        .local-action-arrow {
+            margin-top: auto;
+            padding-top: 16px;
+            font-size: 0.86rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .local-actions-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 16px 24px;
+            align-items: center;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray-200);
+        }
+        .local-actions-footer p {
+            max-width: 680px;
+            font-size: 0.92rem;
+            color: var(--gray-600);
+            line-height: 1.65;
+        }
+        .local-actions-footer .btn-primary,
+        .local-actions-footer .btn-secondary {
+            padding: 12px 22px;
+            font-size: 0.92rem;
+        }
         @media (max-width: 768px) {
             .eid-home-shell {
                 padding: 0 16px 28px;
@@ -509,6 +625,18 @@
             }
             .eid-home-actions {
                 justify-content: center;
+            }
+            .local-actions-section {
+                padding: 0 16px 28px;
+            }
+            .local-actions-panel {
+                padding: 24px 20px;
+            }
+            .local-actions-header h2 {
+                font-size: 1.6rem;
+            }
+            .local-actions-grid {
+                grid-template-columns: 1fr 1fr;
             }
         }
         .btn-primary {
@@ -1522,6 +1650,7 @@
             .faq-grid { grid-template-columns: 1fr; }
             .featured-card { flex-direction: column; }
             .featured-img { width: 100%; min-height: 180px; max-height: 220px; }
+            .local-actions-footer { flex-direction: column; align-items: stretch; }
 
         }
 
@@ -1531,6 +1660,7 @@
             .hero-proof-item { flex-basis: 100%; }
             .hero-link-row { gap: 12px; }
             .trust-grid { grid-template-columns: 1fr; }
+            .local-actions-grid { grid-template-columns: 1fr; }
             .areas-tags { gap: 8px; }
             .area-tag { font-size: 0.8rem; padding: 8px 16px; }
             .booking-mode-tabs { grid-template-columns: 1fr; }
@@ -1675,6 +1805,51 @@
                     <a href="https://wa.me/971528026677?text=Hi%2C%20I%20would%20like%20to%20check%20the%20Eid%20Al-Adha%20offers%20on%20your%20new%20devices.%20(via%20pzm.ae)" class="btn-secondary" target="_blank" rel="noopener">Ask on WhatsApp</a>
                 </div>
                 <div class="eid-home-note">Campaign live through Eid Al-Adha and the following two weeks.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="local-actions-section" aria-labelledby="al-barsha-quick-actions-title">
+        <div class="local-actions-panel fade-up">
+            <div class="local-actions-header">
+                <div>
+                    <span class="local-actions-kicker">Al Barsha shortcuts</span>
+                    <h2 id="al-barsha-quick-actions-title">Quick Actions Before You Visit Al Barsha</h2>
+                    <p>If you already know what brought you here, jump straight to the local page that matches the visit instead of starting from the full service hub.</p>
+                </div>
+            </div>
+            <div class="local-actions-grid">
+                <a href="/services/used-iphone-al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">Buy</span>
+                    <h3>Check used iPhone options</h3>
+                    <p>Start with the Al Barsha used-iPhone route if you want the shortlist before walking into the store.</p>
+                    <span class="local-action-arrow">Open local page</span>
+                </a>
+                <a href="/services/laptop-repair-al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">Repair</span>
+                    <h3>Sort laptop repair first</h3>
+                    <p>Use the local laptop-repair page to compare diagnosis, cleaning, upgrades, and replacement paths before you travel.</p>
+                    <span class="local-action-arrow">Open local page</span>
+                </a>
+                <a href="/services/same-day-screen-repair-al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">Phone</span>
+                    <h3>Check same-day screen repair</h3>
+                    <p>Use the Al Barsha screen-repair page when the main question is whether the repair is realistic today.</p>
+                    <span class="local-action-arrow">Open repair page</span>
+                </a>
+                <a href="/areas/al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">Visit</span>
+                    <h3>Plan the store visit</h3>
+                    <p>See the Al Barsha route, visit notes, and supporting service paths if you want the full local picture first.</p>
+                    <span class="local-action-arrow">Open area page</span>
+                </a>
+            </div>
+            <div class="local-actions-footer">
+                <p>Need a faster answer than browsing? Message PZM with the device model, issue, or budget and we will point you to the shortest Al Barsha route before you leave home.</p>
+                <div class="trust-actions">
+                    <a href="https://wa.me/971528026677?text=Hi%2C%20I%27m%20in%20Al%20Barsha%20and%20want%20help%20choosing%20the%20right%20page%20before%20visiting.%20(via%20pzm.ae)" class="btn-primary" target="_blank" rel="noopener">Ask on WhatsApp</a>
+                    <a href="/areas/al-barsha.html" class="btn-secondary">See full Al Barsha page</a>
+                </div>
             </div>
         </div>
     </section>
