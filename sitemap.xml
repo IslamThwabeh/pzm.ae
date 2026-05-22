@@ -759,4 +759,57 @@
       <image:title>Used MacBook Dubai — MacBook Air M2 &amp; MacBook Pro</image:title>
     </image:image>
   </url>
+
+  <!-- Phase 3 — New static blog articles -->
+  <url>
+    <loc>https://pzm.ae/blog/best-gaming-pc-dubai-2026/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/build-dream-gaming-pc.jpg</image:loc>
+      <image:title>Best Gaming PC Build in Dubai 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/blog/macbook-air-vs-pro-dubai/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/macbook-repair-services.jpg</image:loc>
+      <image:title>MacBook Air M2 vs MacBook Pro in Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/blog/how-to-buy-used-macbook-dubai/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/macbook-repair-services.jpg</image:loc>
+      <image:title>How to Buy a Used MacBook in Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/blog/budget-laptops-under-2000-aed-dubai/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</image:loc>
+      <image:title>Best Budget Laptops Under AED 2,000 in Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/blog/how-to-check-used-iphone-dubai/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</image:loc>
+      <image:title>How to Check a Used iPhone Before Buying in Dubai</image:title>
+    </image:image>
+  </url>
+
 </urlset>
