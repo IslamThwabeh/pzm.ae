@@ -245,6 +245,119 @@
             color: #805300;
         }
 
+        .local-actions-panel {
+            max-width: 1100px;
+            margin: 24px auto 0;
+            padding: 28px 24px;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .local-actions-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .local-actions-kicker {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 7px 14px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(0, 200, 150, 0.1));
+            color: var(--accent-dark);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+        }
+
+        .local-actions-header h2 {
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .local-actions-header p {
+            color: var(--text-light);
+            line-height: 1.8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .local-actions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .local-action-card {
+            display: block;
+            padding: 20px 18px;
+            background: var(--bg-light);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .local-action-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-sm);
+            border-color: rgba(14, 165, 233, 0.16);
+        }
+
+        .local-action-label {
+            display: inline-block;
+            margin-bottom: 12px;
+            font-size: 0.72rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: 0.8px;
+        }
+
+        .local-action-card h3 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        .local-action-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 0.92rem;
+        }
+
+        .local-action-arrow {
+            display: inline-block;
+            margin-top: 14px;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .local-actions-footer {
+            margin-top: 22px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(15, 23, 42, 0.08);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px 24px;
+        }
+
+        .local-actions-footer p {
+            color: var(--text-light);
+            line-height: 1.8;
+            max-width: 660px;
+        }
+
+        .local-actions-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
         @media (max-width: 768px) {
             .hero-panel,
             .info-panel {
@@ -264,12 +377,37 @@
                 justify-content: center;
             }
 
+            .local-actions-panel {
+                margin: 20px 12px 0;
+                padding: 24px 20px;
+            }
+
+            .local-actions-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .local-actions-footer {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .local-actions-links a {
+                width: 100%;
+                text-align: center;
+            }
+
             .hero-actions a {
                 width: 100%;
             }
 
             .services {
                 margin-top: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .local-actions-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -350,6 +488,47 @@
                     <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%B9%D8%B1%D9%88%D8%B6%20%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B6%D8%AD%D9%89%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">اسأل على واتساب</a>
                 </div>
                 <div class="eid-home-note">الحملة مفعلة خلال عيد الأضحى والأسبوعين التاليين.</div>
+            </div>
+        </section>
+
+        <section class="local-actions-panel" aria-labelledby="barsha-quick-actions-title">
+            <div class="local-actions-header">
+                <div class="local-actions-kicker">اختصارات البرشاء</div>
+                <h2 id="barsha-quick-actions-title">خطوات سريعة قبل زيارة متجر البرشاء</h2>
+                <p>إذا كنت تعرف سبب الزيارة من الآن، فابدأ من الصفحة الأقرب للقرار بدل التنقل بين كل الخدمات.</p>
+            </div>
+            <div class="local-actions-grid">
+                <a href="/ar/services/used-iphone-al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">شراء</span>
+                    <h3>ابدأ من iPhone المستعمل في البرشاء</h3>
+                    <p>استخدم المسار المحلي المباشر إذا كان هدفك الأقرب هو تحديد أفضل iPhone مستعمل قبل الوصول إلى المتجر.</p>
+                    <span class="local-action-arrow">افتح الصفحة المناسبة</span>
+                </a>
+                <a href="/ar/services/laptop-repair-al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">لابتوب</span>
+                    <h3>رتّب صيانة اللابتوب أولاً</h3>
+                    <p>استخدم صفحة صيانة اللابتوب في البرشاء إذا كنت تريد فرز التشخيص والتنظيف والترقية قبل التحرك.</p>
+                    <span class="local-action-arrow">افتح صفحة الصيانة</span>
+                </a>
+                <a href="/ar/services/same-day-screen-repair-al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">هاتف</span>
+                    <h3>تحقّق من صيانة الشاشة في نفس اليوم</h3>
+                    <p>هذا هو المسار الأسرع عندما تكون المشكلة الأساسية شاشة الهاتف وتريد معرفة ما إذا كانت الصيانة اليوم واقعية.</p>
+                    <span class="local-action-arrow">افتح صفحة الشاشة</span>
+                </a>
+                <a href="/ar/areas/al-barsha.html" class="local-action-card">
+                    <span class="local-action-label">زيارة</span>
+                    <h3>خطّط زيارة المتجر</h3>
+                    <p>استخدم صفحة البرشاء إذا كنت تريد كل مسارات الزيارة والشراء والصيانة من مكان واحد قبل الخروج.</p>
+                    <span class="local-action-arrow">افتح صفحة البرشاء</span>
+                </a>
+            </div>
+            <div class="local-actions-footer">
+                <p>إذا لم تكن متأكداً من أقصر طريق، أرسل موديل الجهاز أو المشكلة أو الميزانية على واتساب وسنوجّهك إلى الصفحة المناسبة قبل خروجك من البيت.</p>
+                <div class="local-actions-links">
+                    <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A8%D8%B1%D8%B4%D8%A7%D8%A1%20%D9%88%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9%20%D9%84%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1%20%D8%A3%D9%82%D8%B5%D8%B1%20%D8%B7%D8%B1%D9%8A%D9%82%20%D9%82%D8%A8%D9%84%20%D8%A7%D9%84%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">اسأل على واتساب</a>
+                    <a href="/ar/areas/al-barsha.html" class="btn-login">صفحة البرشاء الكاملة</a>
+                </div>
             </div>
         </section>
 

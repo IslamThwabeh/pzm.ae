@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
@@ -74,9 +74,15 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/services/buy-used.html</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/services/used-iphone-al-barsha.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.77</priority>
   </url>
   <url>
     <loc>https://pzm.ae/services/same-day-screen-repair-al-barsha.html</loc>
