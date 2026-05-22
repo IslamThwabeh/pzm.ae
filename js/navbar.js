@@ -147,6 +147,69 @@ function addLanguageSwitchLink() {
     navLinks.appendChild(link);
 }
 
+function pushGaEvent(eventName, payload) {
+    if (typeof window.gtag === 'function') {
+        window.gtag('event', eventName, payload);
+        return;
+    }
+
+    if (Array.isArray(window.dataLayer)) {
+        var fallbackPayload = Object.assign({ event: eventName }, payload || {});
+        window.dataLayer.push(fallbackPayload);
+    }
+}
+
+function classifyContactHref(href) {
+    if (!href) {
+        return null;
+    }
+
+    var normalizedHref = href.toLowerCase();
+    if (normalizedHref.indexOf('tel:') === 0) {
+        return 'phone';
+    }
+
+    if (normalizedHref.indexOf('wa.me/') !== -1 || normalizedHref.indexOf('whatsapp.com/') !== -1) {
+        return 'whatsapp';
+    }
+
+    return null;
+}
+
+function installContactClickTracking() {
+    if (window.__pzmContactTrackingInstalled) {
+        return;
+    }
+
+    window.__pzmContactTrackingInstalled = true;
+
+    document.addEventListener('click', function (event) {
+        if (!event.target || typeof event.target.closest !== 'function') {
+            return;
+        }
+
+        var anchor = event.target.closest('a[href]');
+        if (!anchor) {
+            return;
+        }
+
+        var rawHref = anchor.getAttribute('href') || '';
+        var contactType = classifyContactHref(rawHref);
+        if (!contactType) {
+            return;
+        }
+
+        var href = anchor.href || rawHref;
+        var label = (anchor.textContent || '').replace(/\s+/g, ' ').trim();
+        pushGaEvent(contactType === 'whatsapp' ? 'pzm_whatsapp_click' : 'pzm_call_click', {
+            event_category: 'engagement',
+            event_label: href,
+            link_text: label.slice(0, 120),
+            page_path: window.location.pathname
+        });
+    }, true);
+}
+
 function toggleMenu() {
     var navLinks = document.getElementById('navLinks');
     var navActions = document.getElementById('navActions');
@@ -165,6 +228,7 @@ function toggleMenu() {
 
 document.addEventListener('DOMContentLoaded', function () {
     addLanguageSwitchLink();
+    installContactClickTracking();
 
     if (document.documentElement.getAttribute('lang') === 'ar') {
         var phoneAction = document.querySelector('#navActions .btn-login[href^="tel:"]');

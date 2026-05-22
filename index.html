@@ -2612,6 +2612,14 @@
             msg += `\n\n(via pzm.ae)`;
 
             const encoded = encodeURIComponent(msg);
+            if (typeof window.gtag === 'function') {
+                window.gtag('event', 'pzm_whatsapp_click', {
+                    event_category: 'engagement',
+                    event_label: 'appointment_booking',
+                    link_text: 'Book Now',
+                    page_path: window.location.pathname
+                });
+            }
             window.open(`https://wa.me/971528026677?text=${encoded}`, '_blank');
         }
 
