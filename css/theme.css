@@ -290,6 +290,10 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-1px);
 }
 .btn-signup {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     font-size: 0.9rem;
     font-weight: 600;
     color: #fff;
@@ -299,6 +303,48 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.2s;
 }
 .btn-signup:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+/* Keep CTA buttons readable inside content blocks that recolor inline links. */
+a.btn-login,
+a.btn-login:visited,
+a.btn-login:hover,
+a.btn-login:focus-visible,
+a.btn-secondary,
+a.btn-secondary:visited,
+a.btn-secondary:hover,
+a.btn-secondary:focus-visible {
+    color: var(--dark) !important;
+    text-decoration: none !important;
+}
+
+a.btn-signup,
+a.btn-signup:visited,
+a.btn-signup:hover,
+a.btn-signup:focus-visible,
+a.btn-primary,
+a.btn-primary:visited,
+a.btn-primary:hover,
+a.btn-primary:focus-visible,
+a.buy-btn-large,
+a.buy-btn-large:visited,
+a.buy-btn-large:hover,
+a.buy-btn-large:focus-visible,
+a.cta-button,
+a.cta-button:visited,
+a.cta-button:hover,
+a.cta-button:focus-visible {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+a.btn-signup .whatsapp-icon,
+a.btn-primary .whatsapp-icon,
+a.buy-btn-large .whatsapp-icon,
+a.btn-signup img[src*="whatsapp"],
+a.btn-primary img[src*="whatsapp"],
+a.buy-btn-large img[src*="whatsapp"] {
+    filter: brightness(0) invert(1);
+}
 
 /* Hamburger */
 .hamburger {
