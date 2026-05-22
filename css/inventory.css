@@ -408,3 +408,40 @@ a.inventory-item:hover .item-whatsapp-hint {
         padding: 3px 7px;
     }
 }
+
+/* ── Trust badge strip (buy-used, buy-iphone, brand-new) ── */
+.preowned-trust-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 20px;
+    background: #f8fffe;
+    border-top: 1px solid #e0f5ef;
+    border-bottom: 1px solid #e0f5ef;
+}
+
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    background: #fff;
+    border: 1px solid #c3ece0;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #00633f;
+    white-space: nowrap;
+}
+
+.tbadge-icon {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .preowned-trust-strip {
+        gap: 8px;
+        padding: 14px 12px;
+    }
+}
