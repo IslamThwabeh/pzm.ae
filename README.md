@@ -22,6 +22,15 @@ Implementation assets for "Foundation And Controls" are in:
 - `ops/phase-2-content-cluster/first-5-page-briefs.md`
 - `ops/phase-2-content-cluster/sprint-weekly-board.md`
 
+## Phase 3 Market Enhancements Pack
+
+- `ops/phase-3-market-enhancements/README.md`
+- `ops/phase-3-market-enhancements/phase-3a-conversion-ux-copy.md`
+- `ops/phase-3-market-enhancements/phase-3b-trust-policy-clarity.md`
+- `ops/phase-3-market-enhancements/phase-3c-intent-differentiation.md`
+- `ops/phase-3-market-enhancements/phase-3d-arabic-localization.md`
+- `ops/phase-3-market-enhancements/phase-3e-measurement-loop.md`
+
 ## QA Helper Script
 
 Use this before publishing a new or updated HTML page:
