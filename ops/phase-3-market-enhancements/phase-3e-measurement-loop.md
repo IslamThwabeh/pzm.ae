@@ -20,6 +20,21 @@ This phase can run even if no copy updates are made in the same week.
 2. One prioritized optimization action per week
 3. Monthly summary of what changed and what moved
 
+## Operational Assets
+
+1. Tracker CSV: ops/phase-3-market-enhancements/measurement-loop/weekly-kpi-tracker.csv
+2. Weekly runbook: ops/phase-3-market-enhancements/measurement-loop/weekly-ops-checklist.md
+3. Monthly summary template: ops/phase-3-market-enhancements/measurement-loop/monthly-summary-template.md
+
+## Data Mapping
+
+1. GA4 event names:
+2. pzm_whatsapp_click
+3. pzm_call_click
+4. GA4 breakdown dimension: page_path
+5. Search Console dimensions: page, query (optional for deep dive)
+6. Primary page filters: /services/ and /ar/services/
+
 ## KPI Set
 
 1. Impressions per page
@@ -34,6 +49,14 @@ This phase can run even if no copy updates are made in the same week.
 2. Tuesday: identify 1 to 3 highest-impact page changes.
 3. Wednesday: implement and QA.
 4. Friday: log KPI deltas and decide next iteration.
+
+## Week 0 Baseline Setup
+
+1. Duplicate the 10 template rows in weekly-kpi-tracker.csv for the current week range.
+2. Fill impressions, clicks, ctr_pct, and avg_position from Search Console.
+3. Fill whatsapp_clicks and call_clicks from GA4 events by page_path.
+4. Compute whatsapp_rate_pct and call_rate_pct using page clicks as denominator.
+5. Tag status as baseline for all rows before first optimization cycle.
 
 ## Definition Of Done
 

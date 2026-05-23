@@ -44,3 +44,9 @@ Each phase below can be executed independently. You can run one phase only, then
 1. At least one full optimization cycle completed for all 10 target pages.
 2. WhatsApp CTR and call CTR monitored weekly with page-level breakdown.
 3. Content updates are documented with date, owner, and observed KPI movement.
+
+## Phase 3E Assets
+
+1. ops/phase-3-market-enhancements/measurement-loop/weekly-kpi-tracker.csv
+2. ops/phase-3-market-enhancements/measurement-loop/weekly-ops-checklist.md
+3. ops/phase-3-market-enhancements/measurement-loop/monthly-summary-template.md
