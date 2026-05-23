@@ -14,6 +14,14 @@ Implementation assets for "Foundation And Controls" are in:
 - `ops/phase-1-foundation/baseline-metrics-template.md`
 - `ops/phase-1-foundation/weekly-kpi-report-template.md`
 
+## Phase 2 Content Cluster Pack
+
+- `ops/phase-2-content-cluster/README.md`
+- `ops/phase-2-content-cluster/cluster-backlog-20-pages.md`
+- `ops/phase-2-content-cluster/page-brief-template.md`
+- `ops/phase-2-content-cluster/first-5-page-briefs.md`
+- `ops/phase-2-content-cluster/sprint-weekly-board.md`
+
 ## QA Helper Script
 
 Use this before publishing a new or updated HTML page:
