@@ -2,7 +2,7 @@
 
 Date: 2026-05-23
 Owner: SEO / Content Ops
-Status: Ready to run
+Status: In progress (live pre-checks complete)
 
 ## Target URLs (Arabic)
 
@@ -19,6 +19,26 @@ Status: Ready to run
 3. Confirm robots meta is index, follow.
 4. Confirm JSON-LD exists on each page.
 5. Confirm each URL exists in sitemap.xml.
+
+## Execution Log (2026-05-23)
+
+Automated live checks were executed for all 5 target URLs before Search Console submission.
+
+| URL | HTTP | Canonical Self | Robots Index/Follow | JSON-LD | In Live Sitemap |
+|---|---|---|---|---|---|
+| https://pzm.ae/ar/services/used-macbook-air-dubai.html | 200 | Yes | Yes | Yes | Yes |
+| https://pzm.ae/ar/services/used-macbook-pro-dubai.html | 200 | Yes | Yes | Yes | Yes |
+| https://pzm.ae/ar/services/used-business-laptops-dubai.html | 200 | Yes | Yes | Yes | Yes |
+| https://pzm.ae/ar/services/student-laptops-dubai.html | 200 | Yes | Yes | Yes | Yes |
+| https://pzm.ae/ar/services/gaming-laptops-dubai.html | 200 | Yes | Yes | Yes | Yes |
+
+Result: No pre-submission blockers detected.
+
+## Remaining Manual Steps (Search Console)
+
+1. Re-submit sitemap: https://pzm.ae/sitemap.xml
+2. URL Inspection + Request Indexing for each of the 5 URLs
+3. Log date/time and owner for each requested URL
 
 ### Optional quick PowerShell check
 
