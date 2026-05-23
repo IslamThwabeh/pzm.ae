@@ -759,6 +759,56 @@
       <image:title>Used MacBook Dubai — MacBook Air M2 &amp; MacBook Pro</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://pzm.ae/services/used-macbook-air-dubai.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</image:loc>
+      <image:title>Used MacBook Air Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/used-macbook-pro-dubai.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/2026-march/macbook-repair-services.jpg</image:loc>
+      <image:title>Used MacBook Pro Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/used-business-laptops-dubai.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</image:loc>
+      <image:title>Used Business Laptops Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/student-laptops-dubai.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</image:loc>
+      <image:title>Student Laptops Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/gaming-laptops-dubai.html</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/blog/how-to-choose-perfect-gaming-pc-build.jpg</image:loc>
+      <image:title>Gaming Laptops Dubai</image:title>
+    </image:image>
+  </url>
 
   <!-- Phase 3 — New static blog articles -->
   <url>
