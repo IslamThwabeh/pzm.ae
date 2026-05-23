@@ -15,7 +15,9 @@ Publish a focused cluster of high-intent pages with strong internal linking and 
 ## Assets In This Folder
 
 - `cluster-backlog-20-pages.md`
+- `first-5-page-briefs.md`
 - `page-brief-template.md`
+- `search-console-revalidation-ar-laptop-pages.md`
 - `sprint-weekly-board.md`
 
 ## Exit Criteria
