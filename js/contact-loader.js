@@ -78,7 +78,7 @@
         footerReturns: 'سياسة الإرجاع',
         footerPrivacy: 'الخصوصية',
         footerTerms: 'الشروط والأحكام',
-        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade-In',
+        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade&#8209;In',
         footerCopy: 'جميع الحقوق محفوظة.'
       }
     : {
@@ -119,7 +119,7 @@
         footerReturns: 'Return Policy',
         footerPrivacy: 'Privacy',
         footerTerms: 'Terms',
-        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade-In',
+        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade&#8209;In',
         footerCopy: 'All rights reserved.'
       };
 
