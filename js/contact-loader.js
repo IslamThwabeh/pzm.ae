@@ -78,7 +78,7 @@
         footerReturns: 'سياسة الإرجاع',
         footerPrivacy: 'الخصوصية',
         footerTerms: 'الشروط والأحكام',
-        footerTagline: 'New&#8226;Used&#8226;Phones&#8226;PC&#8226;Trade-In',
+        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade-In',
         footerCopy: 'جميع الحقوق محفوظة.'
       }
     : {
@@ -119,7 +119,7 @@
         footerReturns: 'Return Policy',
         footerPrivacy: 'Privacy',
         footerTerms: 'Terms',
-        footerTagline: 'New&#8226;Used&#8226;Phones&#8226;PC&#8226;Trade-In',
+        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade-In',
         footerCopy: 'All rights reserved.'
       };
 
@@ -233,7 +233,8 @@
     var waStyle = document.createElement('style');
     waStyle.textContent = [
       '#pzm-wa-float{',
-        'position:fixed;bottom:24px;', isArabic ? 'left:24px;' : 'right:24px;',
+        'position:fixed;bottom:calc(24px + env(safe-area-inset-bottom, 0px));',
+        isArabic ? 'left:calc(24px + env(safe-area-inset-left, 0px));' : 'right:calc(24px + env(safe-area-inset-right, 0px));',
         'z-index:9999;width:56px;height:56px;',
         'background:#25d366;border-radius:50%;',
         'display:flex;align-items:center;justify-content:center;',
@@ -243,7 +244,7 @@
       '#pzm-wa-float:hover{transform:translateY(-3px) scale(1.07);box-shadow:0 8px 28px rgba(37,211,102,.6)}',
       '#pzm-wa-float svg{width:30px;height:30px;fill:#fff}',
       '@media(max-width:480px){',
-        '#pzm-wa-float{bottom:18px;', isArabic ? 'left:14px;' : 'right:14px;', 'width:50px;height:50px}',
+        '#pzm-wa-float{bottom:calc(18px + env(safe-area-inset-bottom, 0px));', isArabic ? 'left:calc(20px + env(safe-area-inset-left, 0px));' : 'right:calc(20px + env(safe-area-inset-right, 0px));', 'width:50px;height:50px}',
         '#pzm-wa-float svg{width:26px;height:26px}',
       '}'
     ].join('');

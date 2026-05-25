@@ -49,6 +49,11 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/blog/iran-us-tensions-mobile-pc-prices-uae-2026/': '/ar/blog/iran-us-tensions-mobile-pc-prices-uae-2026/',
     '/blog/us-tariffs-2026-electronics-prices-dubai/': '/ar/blog/us-tariffs-2026-electronics-prices-dubai/',
     '/blog/gold-record-highs-tech-buyers-dubai-2026/': '/ar/blog/gold-record-highs-tech-buyers-dubai-2026/',
+    '/blog/used-iphone-vs-new-iphone-dubai-2026/': '/ar/blog/',
+    '/blog/iphone-battery-replacement-cost-dubai-2026/': '/ar/blog/',
+    '/blog/gaming-laptop-vs-gaming-pc-dubai-2026/': '/ar/blog/',
+    '/blog/best-time-buy-laptops-dubai-2026/': '/ar/blog/',
+    '/blog/sell-used-phone-dubai-best-trade-in-value-2026/': '/ar/blog/',
     '/return-policy.html': '/ar/return-policy.html',
     '/terms.html': '/ar/terms.html',
     '/ar/': '/',
@@ -99,6 +104,11 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/ar/blog/iran-us-tensions-mobile-pc-prices-uae-2026/': '/blog/iran-us-tensions-mobile-pc-prices-uae-2026/',
     '/ar/blog/us-tariffs-2026-electronics-prices-dubai/': '/blog/us-tariffs-2026-electronics-prices-dubai/',
     '/ar/blog/gold-record-highs-tech-buyers-dubai-2026/': '/blog/gold-record-highs-tech-buyers-dubai-2026/',
+    '/ar/blog/used-iphone-vs-new-iphone-dubai-2026/': '/blog/used-iphone-vs-new-iphone-dubai-2026/',
+    '/ar/blog/iphone-battery-replacement-cost-dubai-2026/': '/blog/iphone-battery-replacement-cost-dubai-2026/',
+    '/ar/blog/gaming-laptop-vs-gaming-pc-dubai-2026/': '/blog/gaming-laptop-vs-gaming-pc-dubai-2026/',
+    '/ar/blog/best-time-buy-laptops-dubai-2026/': '/blog/best-time-buy-laptops-dubai-2026/',
+    '/ar/blog/sell-used-phone-dubai-best-trade-in-value-2026/': '/blog/sell-used-phone-dubai-best-trade-in-value-2026/',
     '/ar/return-policy.html': '/return-policy.html',
     '/ar/terms.html': '/terms.html'
 };

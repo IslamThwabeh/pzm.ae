@@ -297,6 +297,166 @@ const blogPosts = [
     image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.jpg",
     category: "Market",
     date: "2026-03-28"
+  },
+  {
+    title: "Used iPhone vs New iPhone in Dubai: Total Cost Guide (2026)",
+    slug: "used-iphone-vs-new-iphone-dubai-2026",
+    content: `<p>Many buyers in Dubai ask the same question before upgrading: should you buy a brand-new iPhone or a certified used one? In 2026, the answer depends less on hype and more on total cost over 12 to 24 months. This guide breaks down where your money really goes so you can buy with confidence.</p>
+
+      <h3>1. Upfront price gap is still the biggest factor</h3>
+      <p>A new iPhone gives you the newest chipset, full launch-year warranty period, and maximum battery health. A certified used iPhone typically saves 20 to 40 percent upfront, especially on one-generation-old Pro models. If your priority is value per dirham, that gap is hard to ignore. You can compare both options side by side at <a href="/services/buy-iphone.html">new iPhone stock</a> and <a href="/services/buy-used.html">certified used iPhones</a>.</p>
+
+      <h3>2. Depreciation: where most people lose money</h3>
+      <p>New phones lose value fastest in the first year. If you buy new at launch and sell after 12 months, the depreciation cost is often higher than expected. A used phone that already passed the first depreciation cycle usually holds value better over the same period. If you rotate devices often, used usually wins on total ownership cost.</p>
+
+      <h3>3. Battery and repair risk in the used market</h3>
+      <p>The main risk with used iPhones is battery health and hidden prior repairs. Always ask for battery health, face ID and camera checks, and charging-port testing before purchase. Buying from a trusted store matters because you get a clear test process and post-sale support. If needed, <a href="/services/repair.html">battery or screen repair service</a> can keep the phone cost-effective for another year or two.</p>
+
+      <h3>4. Who should buy new vs used</h3>
+      <ul>
+        <li><strong>Buy new:</strong> You want the latest camera system, maximum long-term software runway, and lower uncertainty.</li>
+        <li><strong>Buy used:</strong> You want top-tier performance without flagship launch pricing.</li>
+        <li><strong>Best hybrid move:</strong> Buy a certified used Pro model, then protect it with quality accessories and maintain battery health.</li>
+      </ul>
+
+      <h3>5. Smart way to reduce upgrade cost</h3>
+      <p>If you already own a working device, check trade-in first. Converting your current phone into budget can narrow the gap between new and used options more than waiting for random discounts. Start from <a href="/services/sell-gadgets.html">sell and trade-in options</a>, then compare your final net cost across models.</p>
+
+      <p>Want a quick recommendation for your budget? Message PZM on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20help%20me%20compare%20new%20vs%20used%20iPhone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting the <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
+    excerpt: "Compare new vs certified used iPhones in Dubai using total ownership cost, depreciation, battery risk, and trade-in strategy.",
+    image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
+    category: "Buying",
+    date: "2026-05-22"
+  },
+  {
+    title: "iPhone Battery Replacement Cost in Dubai: Repair or Upgrade? (2026)",
+    slug: "iphone-battery-replacement-cost-dubai-2026",
+    content: `<p>If your iPhone drops from 40 percent to 10 percent in an hour, you are not imagining it. Battery aging is one of the most common reasons people feel forced to upgrade too early. In many cases, a battery replacement is the highest ROI fix you can make in 2026.</p>
+
+      <h3>1. Signs your battery is the real problem</h3>
+      <ul>
+        <li>Maximum battery health below 80 percent.</li>
+        <li>Unexpected shutdowns during calls, maps, or camera use.</li>
+        <li>Noticeable lag under normal tasks even after software updates.</li>
+        <li>Device gets hot while charging or during light use.</li>
+      </ul>
+      <p>If these symptoms match your phone, start with a battery check before buying a new device.</p>
+
+      <h3>2. Cost logic: repair first, upgrade second</h3>
+      <p>As a simple rule, if the battery job is a small fraction of your replacement budget, repair first. For many iPhone models, restoring battery health can add 12 to 24 months of comfortable use. That lets you delay a full upgrade and buy when market pricing is better.</p>
+
+      <h3>3. When replacement is not enough</h3>
+      <p>If your phone also has severe board issues, camera faults, or major display damage, compare bundled repair cost against a newer used model. In those cases, moving to a <a href="/services/buy-used.html">certified used iPhone</a> may be smarter than stacking repairs on an aging device. If your current phone still has value, offset the upgrade through <a href="/services/sell-gadgets.html">trade-in</a>.</p>
+
+      <h3>4. How to make battery life last after repair</h3>
+      <ul>
+        <li>Keep charge mostly between 20 and 80 percent for daily use.</li>
+        <li>Avoid heat exposure in cars, dashboards, and direct sun.</li>
+        <li>Use quality chargers and cables with stable output.</li>
+        <li>Review background app activity every few weeks.</li>
+      </ul>
+
+      <h3>5. Practical path for Dubai commuters</h3>
+      <p>If your phone is essential for work, navigation, and WhatsApp business communication, downtime is the real hidden cost. A same-day battery fix through <a href="/services/repair.html">PZM repair service</a> is often cheaper than losing productivity for several days. You can also check the area page if you are coming from <a href="/areas/dubai-marina.html">Dubai Marina</a> before heading to the store.</p>
+
+      <p>For a fast estimate, send your exact model and battery health screenshot on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20an%20iPhone%20battery%20replacement%20quote%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>.</p>`,
+    excerpt: "A practical 2026 guide to iPhone battery replacement in Dubai: when repair makes financial sense and when upgrading is smarter.",
+    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
+    category: "Repair",
+    date: "2026-05-23"
+  },
+  {
+    title: "Gaming Laptop vs Gaming PC in Dubai: Which Gives Better Value in 2026?",
+    slug: "gaming-laptop-vs-gaming-pc-dubai-2026",
+    content: `<p>Choosing between a gaming laptop and a gaming desktop in Dubai is not just about performance. It is about heat, upgrade flexibility, travel habits, and cost per frame over time. Here is the comparison that helps you buy the right machine the first time.</p>
+
+      <h3>1. Performance per dirham</h3>
+      <p>At the same budget, desktops still deliver stronger sustained performance. They run cooler, maintain higher boost clocks, and are easier to tune. Gaming laptops close the gap every year, but thermal limits still affect long sessions. If pure FPS value matters most, a desktop build usually wins.</p>
+
+      <h3>2. Portability and convenience</h3>
+      <p>Laptops win for mobility, especially for students and professionals splitting time between home, office, and cafes. If you need one machine for both work and gaming, a laptop can be the practical choice. For home-first gamers with a fixed setup, a desktop gives more value and easier maintenance.</p>
+
+      <h3>3. Upgrade path over 2 to 3 years</h3>
+      <p>Desktop upgrades are straightforward: swap GPU, add RAM, or expand storage when needed. Laptop upgrades are limited, usually to RAM and SSD in many models. If you plan to improve your system gradually, a <a href="/services/gaming-pc.html">custom gaming PC build</a> is usually a better long-term investment.</p>
+
+      <h3>4. Heat and environment in Dubai</h3>
+      <p>Dubai heat and dust matter. Laptops can throttle faster in warm rooms and need regular cleaning to stay stable. Desktops with proper airflow and quality cooling handle local conditions better. Whichever you choose, schedule periodic cleaning and thermal checks through <a href="/services/repair.html">PC and laptop repair support</a>.</p>
+
+      <h3>5. Decision shortcuts by user type</h3>
+      <ul>
+        <li><strong>Competitive gamer at home:</strong> desktop.</li>
+        <li><strong>Student or mobile creator:</strong> gaming laptop.</li>
+        <li><strong>Balanced buyer:</strong> desktop for home and a midrange laptop for work mobility.</li>
+      </ul>
+
+      <p>If you are comparing options from <a href="/areas/jumeirah-village.html">Jumeirah Village</a>, send your game list, target resolution, and budget to PZM on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20help%20me%20choose%20gaming%20laptop%20vs%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will suggest the strongest value setup.</p>`,
+    excerpt: "A Dubai-focused 2026 comparison of gaming laptops vs gaming desktops, with performance, heat, upgrade, and cost guidance.",
+    image_url: "images/2026-march/gaming-laptop-deep-cleaning.jpg",
+    category: "Gaming",
+    date: "2026-05-24"
+  },
+  {
+    title: "Best Time to Buy Laptops in Dubai: 2026 Price Calendar",
+    slug: "best-time-buy-laptops-dubai-2026",
+    content: `<p>Buying at the right time can save you hundreds of dirhams on laptops in Dubai. Instead of chasing random discounts, use this month-by-month calendar to align your purchase with inventory cycles, back-to-school demand, and retail promotions.</p>
+
+      <h3>1. January to February: strong for value hunters</h3>
+      <p>After holiday campaigns, many retailers rebalance stock. You can often find strong deals on previous-generation models and open-box units. If your budget is tight, compare <a href="/services/brand-new.html">brand-new laptops</a> with <a href="/services/buy-used.html">certified used inventory</a> in this period.</p>
+
+      <h3>2. March to May: selective upgrades</h3>
+      <p>This period is good for buyers who need a machine now and want stable pricing rather than peak discounts. It is also a smart time to trade in older devices before summer campaigns. Use <a href="/services/sell-gadgets.html">sell and trade-in options</a> to cut net purchase cost.</p>
+
+      <h3>3. June to August: mixed results</h3>
+      <p>Tourism and travel periods can shift demand quickly. Some categories drop in price, while high-demand configurations remain tight. If you need specific RAM or storage variants, reserve stock early instead of waiting for last-day promotions.</p>
+
+      <h3>4. Back-to-school season: good bundles, not always lowest price</h3>
+      <p>You may see accessory bundles, free software offers, or installment promotions. Total package value can be strong even when sticker price is not the absolute lowest. This is usually where business and student laptops move fastest.</p>
+
+      <h3>5. Year-end strategy</h3>
+      <p>As new models approach, current-generation inventory can become more flexible in price. If you do not need the newest chipset, this is one of the best windows to buy higher-tier specs at better value. For many buyers, a one-generation-old premium laptop outperforms a brand-new entry model for similar budget.</p>
+
+      <p>If you are planning a store visit from <a href="/areas/tecom.html">Tecom</a>, message PZM on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20what%20is%20the%20best%20time%20to%20buy%20a%20laptop%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your budget and use case first so we can shortlist current best-value options.</p>`,
+    excerpt: "Use this 2026 Dubai laptop-buying calendar to time your purchase around stock cycles, promotions, and trade-in windows.",
+    image_url: "images/buy_used/used_laptops_collection_main.webp",
+    category: "Laptops",
+    date: "2026-05-25"
+  },
+  {
+    title: "How to Sell Your Used Phone in Dubai for the Best Trade-In Value (2026)",
+    slug: "sell-used-phone-dubai-best-trade-in-value-2026",
+    content: `<p>Selling your used phone at the right time can reduce your next upgrade cost dramatically. In Dubai, value depends on model demand, battery condition, cosmetic shape, and how well you prepare the device before valuation. This guide helps you avoid low offers and keep the process smooth.</p>
+
+      <h3>1. Back up and reset properly before valuation</h3>
+      <p>Before you sell, do a full backup, sign out from iCloud or Google account, disable Find My, and factory reset the device. Phones with activation lock still enabled always receive weaker offers because they cannot be resold safely.</p>
+
+      <h3>2. What affects your price most</h3>
+      <ul>
+        <li><strong>Battery health:</strong> especially important for iPhones.</li>
+        <li><strong>Display condition:</strong> cracks and OLED burn lower value quickly.</li>
+        <li><strong>Original parts and repair history:</strong> transparent records help trust.</li>
+        <li><strong>Storage tier and color demand:</strong> some variants move faster.</li>
+        <li><strong>Timing:</strong> value usually drops after major new model launches.</li>
+      </ul>
+
+      <h3>3. Should you repair before selling?</h3>
+      <p>If damage is minor, basic repair can improve resale value. If repair cost is high relative to device value, sell as-is and move on. Ask for both scenarios first: as-is trade-in value vs post-repair value. You can check repair options through <a href="/services/repair.html">device repair service</a> before deciding.</p>
+
+      <h3>4. Trade-in vs private marketplace</h3>
+      <p>Private listings can sometimes get a higher price, but they cost time and carry no-show risk. Trade-in is usually faster, safer, and easier when you want to immediately move into a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">better certified used model</a>.</p>
+
+      <h3>5. Quick checklist before you visit</h3>
+      <ul>
+        <li>Charge the phone above 40 percent.</li>
+        <li>Bring original box or charger if available.</li>
+        <li>Bring Emirates ID if required for transaction records.</li>
+        <li>Note exact model, storage, and battery health in advance.</li>
+      </ul>
+
+      <p>To get a fast estimate, send model, storage, and clear photos to PZM on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-quoz.html">Al Quoz</a> or nearby areas.</p>`,
+    excerpt: "Maximize trade-in value in Dubai with this 2026 guide on preparation, pricing factors, and when to sell your used phone.",
+    image_url: "images/2026-march/shop-repair-one-trip.jpg",
+    category: "Trade-in",
+    date: "2026-05-26"
   }
 ];
 
@@ -309,7 +469,12 @@ const staticBlogPostPaths = {
   "top-5-iphone-repair-tips": "/blog/top-5-iphone-repair-tips/",
   "us-tariffs-2026-electronics-prices-dubai": "/blog/us-tariffs-2026-electronics-prices-dubai/",
   "ultimate-guide-buying-used-laptops": "/blog/ultimate-guide-buying-used-laptops/",
-  "understanding-smartphone-battery-life": "/blog/understanding-smartphone-battery-life/"
+  "understanding-smartphone-battery-life": "/blog/understanding-smartphone-battery-life/",
+  "used-iphone-vs-new-iphone-dubai-2026": "/blog/used-iphone-vs-new-iphone-dubai-2026/",
+  "iphone-battery-replacement-cost-dubai-2026": "/blog/iphone-battery-replacement-cost-dubai-2026/",
+  "gaming-laptop-vs-gaming-pc-dubai-2026": "/blog/gaming-laptop-vs-gaming-pc-dubai-2026/",
+  "best-time-buy-laptops-dubai-2026": "/blog/best-time-buy-laptops-dubai-2026/",
+  "sell-used-phone-dubai-best-trade-in-value-2026": "/blog/sell-used-phone-dubai-best-trade-in-value-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -444,6 +609,76 @@ const postJourneys = {
       label: "Visiting from Al Barsha?",
       shortLabel: "Al Barsha",
       description: "Start with the Al Barsha page for the clearest route into the store and current pricing."
+    }
+  },
+  "used-iphone-vs-new-iphone-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "Compare certified used iPhone options",
+      shortLabel: "Used iPhones",
+      description: "Start with tested used iPhones if you want stronger value versus launch pricing."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Planning from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for store route details before you compare models in person."
+    }
+  },
+  "iphone-battery-replacement-cost-dubai-2026": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Get iPhone battery replacement support",
+      shortLabel: "Battery service",
+      description: "Use repair services to check battery health and same-day replacement options first."
+    },
+    areaPage: {
+      href: "/areas/dubai-marina.html",
+      label: "Visiting from Dubai Marina?",
+      shortLabel: "Dubai Marina",
+      description: "Use the Dubai Marina page for the most practical route before your battery check."
+    }
+  },
+  "gaming-laptop-vs-gaming-pc-dubai-2026": {
+    moneyPage: {
+      href: "/services/gaming-pc.html",
+      label: "Plan a gaming setup around your budget",
+      shortLabel: "Gaming builds",
+      description: "Compare thermals, upgrade path, and FPS targets before committing to a laptop or desktop."
+    },
+    areaPage: {
+      href: "/areas/jumeirah-village.html",
+      label: "Planning from Jumeirah Village?",
+      shortLabel: "Jumeirah Village",
+      description: "Use the Jumeirah Village page if you want to shortlist options before traveling."
+    }
+  },
+  "best-time-buy-laptops-dubai-2026": {
+    moneyPage: {
+      href: "/services/brand-new.html",
+      label: "Compare current laptop offers",
+      shortLabel: "Laptop offers",
+      description: "Review current new-device options and timing windows before finalizing your purchase."
+    },
+    areaPage: {
+      href: "/areas/tecom.html",
+      label: "Planning from Tecom?",
+      shortLabel: "Tecom",
+      description: "Use the Tecom page if you want to confirm stock direction before crossing Dubai."
+    }
+  },
+  "sell-used-phone-dubai-best-trade-in-value-2026": {
+    moneyPage: {
+      href: "/services/sell-gadgets.html",
+      label: "Start your phone trade-in valuation",
+      shortLabel: "Trade-in",
+      description: "Use the sell devices page to convert your current phone into upgrade budget quickly."
+    },
+    areaPage: {
+      href: "/areas/al-quoz.html",
+      label: "Planning from Al Quoz?",
+      shortLabel: "Al Quoz",
+      description: "Use the Al Quoz page to plan your visit and shorten the trade-in turnaround."
     }
   }
 };
