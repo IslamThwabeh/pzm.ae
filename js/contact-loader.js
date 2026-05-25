@@ -12,22 +12,30 @@
   const links = isArabic
     ? {
         home: '/ar/',
+        about: '/about.html',
         services: '/ar/services/',
-        repair: '/ar/services/repair.html',
+        deviceCare: '/ar/services/repair.html',
         pcBuild: '/ar/services/gaming-pc.html',
         areas: '/ar/areas/',
+        contact: '/contact-us.html',
         blog: '/ar/blog/',
+        warranty: '/warranty-information.html',
         returns: '/ar/return-policy.html',
+        privacy: '/privacy-policy.html',
         terms: '/ar/terms.html'
       }
     : {
         home: '/',
+        about: '/about.html',
         services: '/services/index.html',
-        repair: '/services/repair.html',
+        deviceCare: '/services/repair.html',
         pcBuild: '/services/gaming-pc.html',
         areas: '/areas/index.html',
+        contact: '/contact-us.html',
         blog: '/blog.html',
+        warranty: '/warranty-information.html',
         returns: '/return-policy.html',
+        privacy: '/privacy-policy.html',
         terms: '/terms.html'
       };
 
@@ -35,7 +43,7 @@
     ? {
         sectionEyebrow: 'زر المتجر أو اتصل أو راسلنا',
         sectionTitle: 'خطط لزيارتك إلى PZM',
-        intro: 'ابدأ عبر واتساب لمعرفة التوفر أو سعر الصيانة أو تقييم جهازك قبل زيارة المتجر في البرشاء.',
+        intro: 'ابدأ عبر واتساب لمعرفة التوفر والسعر أو تقييم جهازك قبل زيارة المتجر في البرشاء.',
         phoneAlt: 'الهاتف',
         phoneLabel: '+971 528 026 677',
         whatsappAlt: 'واتساب',
@@ -49,30 +57,34 @@
         addressLine1: 'داخل Union Coop Hypermarket، الطابق الأرضي',
         addressLine2: 'شارع حصة، البرشاء، دبي',
         supportTitle1: 'استجابة سريعة',
-        supportText1: 'اسأل عن السعر أو التوفر أو وقت الصيانة قبل أن تتحرك.',
+        supportText1: 'اسأل عن السعر أو التوفر أو قيمة الاستبدال قبل أن تتحرك.',
         supportTitle2: 'خطوات واضحة',
-        supportText2: 'نشرح الضمان والحالة والخطوة التالية قبل تأكيد الطلب أو الصيانة.',
+        supportText2: 'نشرح الضمان والحالة وخيارات الاستلام قبل تأكيد الطلب.',
         supportTitle3: 'خيارات مرنة',
-        supportText3: 'يمكنك الزيارة مباشرة أو ترتيب الاستلام أو التوصيل في الحالات المتاحة.',
+        supportText3: 'يمكنك الزيارة مباشرة أو ترتيب الاستلام أو التوصيل في الطلبات المتاحة.',
         storeTag1: 'زيارة مباشرة',
         storeTag2: 'مواقف سهلة',
         storeTag3: 'تنسيق الاستلام عند الطلب',
         mapTitle: 'خريطة موقع PZM Computers & Phones Store',
         footerHome: 'الرئيسية',
+        footerAbout: 'من نحن',
         footerServices: 'الخدمات',
-        footerRepair: 'الصيانة',
+        footerDeviceCare: 'عناية الأجهزة',
         footerPcBuild: 'تجميع PC',
         footerAreas: 'المناطق',
+        footerContact: 'اتصل بنا',
         footerBlog: 'المدونة',
+        footerWarranty: 'معلومات الضمان',
         footerReturns: 'سياسة الإرجاع',
+        footerPrivacy: 'الخصوصية',
         footerTerms: 'الشروط والأحكام',
-        footerTagline: 'New&#8226;Used&#8226;Repair&#8226;PC&#8226;Build',
+        footerTagline: 'New&#8226;Used&#8226;Phones&#8226;PC&#8226;Trade-In',
         footerCopy: 'جميع الحقوق محفوظة.'
       }
     : {
         sectionEyebrow: 'Visit, Call or WhatsApp',
         sectionTitle: 'Plan Your Visit to PZM',
-        intro: "Start on WhatsApp for availability checks, repair quotes, or trade-in guidance before you visit our Al Barsha store.",
+        intro: "Start on WhatsApp for stock checks, pricing, and trade-in guidance before you visit our Al Barsha store.",
         phoneAlt: 'Phone',
         phoneLabel: '+971 528 026 677',
         whatsappAlt: 'WhatsApp',
@@ -86,24 +98,28 @@
         addressLine1: 'Inside Union Coop Hypermarket, Ground Floor',
         addressLine2: 'Hessa Street, Al Barsha, Dubai',
         supportTitle1: 'Fast next-step help',
-        supportText1: 'Ask about stock, repair timing, or trade-in value before you leave home.',
+        supportText1: 'Ask about stock, pricing, or trade-in value before you leave home.',
         supportTitle2: 'Clear expectations',
-        supportText2: 'We explain warranty details, condition notes, and the next step before you confirm.',
+        supportText2: 'We explain warranty details, condition notes, and delivery options before you confirm.',
         supportTitle3: 'Flexible fulfilment',
-        supportText3: 'Walk in, arrange store pickup, or ask about delivery or device collection where available.',
+        supportText3: 'Walk in, arrange store pickup, or ask about delivery where available.',
         storeTag1: 'Walk-in friendly',
         storeTag2: 'Easy parking',
         storeTag3: 'Pickup coordination on request',
         mapTitle: 'PZM Computers & Phones Store location map',
         footerHome: 'Home',
+        footerAbout: 'About',
         footerServices: 'Services',
-        footerRepair: 'Repair',
+        footerDeviceCare: 'Device Care',
         footerPcBuild: 'PC Build',
         footerAreas: 'Areas',
+        footerContact: 'Contact',
         footerBlog: 'Blog',
+        footerWarranty: 'Warranty',
         footerReturns: 'Return Policy',
+        footerPrivacy: 'Privacy',
         footerTerms: 'Terms',
-        footerTagline: 'New&#8226;Used&#8226;Repair&#8226;PC&#8226;Build',
+        footerTagline: 'New&#8226;Used&#8226;Phones&#8226;PC&#8226;Trade-In',
         footerCopy: 'All rights reserved.'
       };
 
@@ -182,12 +198,16 @@
     </div>
     <div class="footer-links">
       <a href="${links.home}">${copy.footerHome}</a>
+      <a href="${links.about}">${copy.footerAbout}</a>
       <a href="${links.services}">${copy.footerServices}</a>
-      <a href="${links.repair}">${copy.footerRepair}</a>
+      <a href="${links.deviceCare}">${copy.footerDeviceCare}</a>
       <a href="${links.pcBuild}">${copy.footerPcBuild}</a>
       <a href="${links.areas}">${copy.footerAreas}</a>
+      <a href="${links.contact}">${copy.footerContact}</a>
       <a href="${links.blog}">${copy.footerBlog}</a>
+      <a href="${links.warranty}">${copy.footerWarranty}</a>
       <a href="${links.returns}">${copy.footerReturns}</a>
+      <a href="${links.privacy}">${copy.footerPrivacy}</a>
       <a href="${links.terms}">${copy.footerTerms}</a>
     </div>
   </div>
