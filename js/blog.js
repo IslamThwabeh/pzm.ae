@@ -782,6 +782,49 @@ const blogPosts = [
     image_url: "images/blog/same-day-phone-screen-repair-explained.jpg",
     category: "Repair",
     date: "2026-05-30"
+  },
+  {
+    title: "PSG vs Arsenal Final 2026 in Dubai: Best Home Match Setup Under 3,000 AED",
+    slug: "psg-vs-arsenal-final-dubai-2026",
+    content: `<p>Final night is when everyone remembers their TV setup weaknesses: laggy stream, flat sound, poor motion, and cable problems. If you are watching PSG vs Arsenal in Dubai, here is the practical setup plan by budget so you enjoy the match without overspending.</p>
+
+      <h3>1) Under 1,000 AED: quick win bundle</h3>
+      <ul>
+        <li>Certified HDMI 2.1 cable + cable management</li>
+        <li>Surge-protected extension strip</li>
+        <li>Entry compact soundbar</li>
+        <li>Optional hotspot backup data plan for stream stability</li>
+      </ul>
+
+      <h3>2) 1,000 - 2,000 AED: best value for most homes</h3>
+      <ul>
+        <li>Mid-range 2.1 channel soundbar</li>
+        <li>Streaming stick/box with smoother app support</li>
+        <li>Wall mount alignment + viewing-angle correction</li>
+        <li>Basic smart remote and cable cleanup</li>
+      </ul>
+
+      <h3>3) 2,000 - 3,000 AED: final-night premium without full renovation</h3>
+      <ul>
+        <li>Larger panel upgrade (if current TV is old FHD)</li>
+        <li>Stronger soundbar with dedicated subwoofer</li>
+        <li>Higher-refresh input path for smoother motion</li>
+        <li>Same-day accessories + setup advice from one store visit</li>
+      </ul>
+
+      <h3>4) What matters most for football</h3>
+      <ol>
+        <li>Motion handling and stutter control</li>
+        <li>Stable internet path with fallback</li>
+        <li>Audio clarity for commentary and crowd ambience</li>
+        <li>Correct seating distance and screen angle</li>
+      </ol>
+
+      <p>Need a fast quote before match night? Send your room size + current TV model on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20Final-night%20setup%20help.%20Room%20size%3A%20%2C%20TV%20model%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also browse <a href="/services/accessories.html">accessories</a>, compare <a href="/services/brand-new.html">new devices</a>, or check <a href="/services/gaming-pc.html">custom gaming PC builds</a>.</p>`,
+    excerpt: "Watching PSG vs Arsenal final in Dubai? Practical home setup bundles under 1,000 / 2,000 / 3,000 AED with same-day accessory options.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "Accessories",
+    date: "2026-05-30"
   }
 ];
 
@@ -808,7 +851,8 @@ const staticBlogPostPaths = {
   "iphone-battery-health-80-dubai-2026": "/blog/iphone-battery-health-80-dubai-2026/",
   "ps5-vs-gaming-pc-dubai-2026": "/blog/ps5-vs-gaming-pc-dubai-2026/",
   "best-used-iphone-under-1500-aed-dubai-2026": "/blog/best-used-iphone-under-1500-aed-dubai-2026/",
-  "iphone-screen-original-vs-aftermarket-dubai-2026": "/blog/iphone-screen-original-vs-aftermarket-dubai-2026/"
+  "iphone-screen-original-vs-aftermarket-dubai-2026": "/blog/iphone-screen-original-vs-aftermarket-dubai-2026/",
+  "psg-vs-arsenal-final-dubai-2026": "/blog/psg-vs-arsenal-final-dubai-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -1139,6 +1183,20 @@ const postJourneys = {
       label: "Visiting from Al Barsha?",
       shortLabel: "Al Barsha",
       description: "Use the Al Barsha page for the fastest route to the workshop."
+    }
+  },
+  "psg-vs-arsenal-final-dubai-2026": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Get a final-night setup quote",
+      shortLabel: "Accessories",
+      description: "Send room size and TV model to get a practical setup under your AED budget."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
     }
   }
 };
