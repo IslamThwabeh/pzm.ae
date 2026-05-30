@@ -457,6 +457,124 @@ const blogPosts = [
     image_url: "images/2026-march/shop-repair-one-trip.jpg",
     category: "Trade-in",
     date: "2026-05-26"
+  },
+  {
+    title: "iPhone 17 Pro Max vs 16 Pro Max in Dubai: Should You Upgrade in 2026?",
+    slug: "iphone-17-pro-max-vs-16-pro-max-dubai-2026",
+    content: `<p>The iPhone 17 Pro Max is the headline phone of 2026, but most buyers walking into our Al Barsha store are not first-time iPhone owners. The real question is not "is it good," it is "is the upgrade worth it for me, in Dubai, this year." Below is the honest answer based on hundreds of trade-ins.</p>
+
+      <h3>1. What actually changed: 16 Pro Max → 17 Pro Max</h3>
+      <ul>
+        <li><strong>Chip:</strong> A19 Pro replaces A18 Pro — sustained gaming and 4K ProRes export are noticeably cooler and faster.</li>
+        <li><strong>Telephoto:</strong> longer optical reach and better low-light zoom — the biggest single-spec reason to upgrade.</li>
+        <li><strong>Battery:</strong> larger cell + better thermals = longer real screen-on time in UAE summer heat.</li>
+        <li><strong>Frame:</strong> refreshed camera plateau — your <a href="/services/accessories.html">16 Pro Max case will not fit</a>.</li>
+        <li><strong>Display & Face ID:</strong> brighter outdoor peak and faster Face ID in sunlight.</li>
+      </ul>
+
+      <h3>2. Honest Dubai price math (AED)</h3>
+      <p>Brand-new 17 Pro Max sits 800-1,400 AED above 16 Pro Max at the same storage. A certified used 16 Pro Max in great condition sits 1,800-2,800 AED below a new 17 Pro Max — that second gap is where the real value lives. See live stock at <a href="/services/buy-iphone.html">new iPhone 17 line</a> and <a href="/services/buy-used.html">certified used iPhones</a>.</p>
+
+      <h3>3. Trade-in math is the real upgrade math</h3>
+      <p>The 16 Pro Max trade-in window is best in the first 6-9 months after the 17 launch. Get a same-day quote via <a href="/services/sell-gadgets.html">our sell & trade-in page</a> before deciding — the only number that matters is the net upgrade cost.</p>
+
+      <p>Message us on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20help%20me%20decide%20between%20iPhone%2017%20Pro%20Max%20and%2016%20Pro%20Max%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your current model and battery health for a personal recommendation before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
+    excerpt: "Honest 2026 upgrade comparison: iPhone 17 Pro Max vs 16 Pro Max in Dubai. Camera, chip, battery, AED price gap, and trade-in math.",
+    image_url: "images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg",
+    category: "Buying",
+    date: "2026-05-30"
+  },
+  {
+    title: "How Much Is My Used iPhone Worth in Dubai? Trade-In Price Guide 2026",
+    slug: "used-iphone-trade-in-price-guide-dubai-2026",
+    content: `<p>"How much will you give me for my iPhone?" is the most common WhatsApp message we receive. The honest answer depends on 5 things — most buyers overestimate two and underestimate three. Below are realistic 2026 AED ranges before you walk into <a href="/areas/al-barsha.html">our Al Barsha store</a>.</p>
+
+      <h3>1. Realistic AED trade-in ranges (great condition, 88%+ battery)</h3>
+      <ul>
+        <li><strong>iPhone 16 Pro Max:</strong> 3,200 - 4,100 AED</li>
+        <li><strong>iPhone 16 Pro:</strong> 2,700 - 3,400 AED</li>
+        <li><strong>iPhone 15 Pro Max:</strong> 2,400 - 3,100 AED</li>
+        <li><strong>iPhone 15 Pro:</strong> 2,000 - 2,600 AED</li>
+        <li><strong>iPhone 14 Pro Max:</strong> 1,700 - 2,200 AED</li>
+        <li><strong>iPhone 13 Pro Max:</strong> 1,200 - 1,650 AED</li>
+        <li><strong>iPhone 12 series:</strong> 450 - 850 AED</li>
+        <li><strong>iPhone 11 series:</strong> 300 - 600 AED</li>
+      </ul>
+      <p>Confirm via <a href="/services/sell-gadgets.html">our trade-in service</a> before deciding.</p>
+
+      <h3>2. What raises your quote</h3>
+      <ul>
+        <li>Battery health 90%+ adds 100-250 AED.</li>
+        <li>Original box + cable adds 80-150 AED on Pro models.</li>
+        <li>All-Apple repair history holds top value.</li>
+        <li>UAE-bought units price slightly above KSA/EU variants.</li>
+      </ul>
+
+      <h3>3. What kills your quote</h3>
+      <ul>
+        <li>Third-party screen replacement: -250 to -600 AED.</li>
+        <li>Broken Face ID on Pro models: -400 to -900 AED.</li>
+        <li>iCloud lock / Find My on: trade-in cannot complete.</li>
+        <li>Battery below 80%: rebattery cost passes through.</li>
+      </ul>
+
+      <h3>4. 5-minute WhatsApp valuation checklist</h3>
+      <ol>
+        <li>Model + storage.</li>
+        <li>Battery health %.</li>
+        <li>Region purchased.</li>
+        <li>Original box + cable yes/no.</li>
+        <li>2 photos (front + back).</li>
+      </ol>
+
+      <p>Get your quote in 5 minutes on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20a%20trade-in%20quote.%20Model%3A%20%2C%20Storage%3A%20%2C%20Battery%20%25%3A%20%2C%20Region%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>.</p>`,
+    excerpt: "Honest 2026 trade-in valuation guide for used iPhones in Dubai with AED ranges by model and what really moves resale value.",
+    image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
+    category: "Trade-in",
+    date: "2026-05-30"
+  },
+  {
+    title: "Cracked Screen, Water Damage, or Battery? When iPhone Repair Is Worth It in Dubai (2026)",
+    slug: "cracked-screen-vs-replace-iphone-dubai-2026",
+    content: `<p>An iPhone repair is worth it when the cost stays clearly below your phone's current resale value, and when the fault is one isolated thing not three stacked together. Below is the honest 2026 framework with real AED ranges so you can decide before driving in. If the math says "replace," we will tell you that too.</p>
+
+      <h3>1. The one rule that decides everything</h3>
+      <p>If repair cost is <strong>under 55%</strong> of your phone's used resale value, fix it. If <strong>above 55%</strong>, replace it. See the <a href="/blog/used-iphone-trade-in-price-guide-dubai-2026/">used iPhone price guide</a> for AED ranges.</p>
+
+      <h3>2. Cracked screen repair (AED, original OLED)</h3>
+      <ul>
+        <li>iPhone 11 / 12: 350 - 750</li>
+        <li>iPhone 13 / 14: 550 - 1,000</li>
+        <li>iPhone 14 Pro Max: 750 - 1,100</li>
+        <li>iPhone 15 Pro / Pro Max: 850 - 1,300</li>
+        <li>iPhone 16 Pro / Pro Max: 1,000 - 1,500</li>
+      </ul>
+      <p>Third-party screens cost half but reduce future trade-in value by a similar amount. Start with <a href="/services/repair.html">our repair service</a>.</p>
+
+      <h3>3. Battery replacement (AED)</h3>
+      <ul>
+        <li>iPhone 11-13 series: 180 - 280</li>
+        <li>iPhone 14 series: 220 - 320</li>
+        <li>iPhone 15 / 16 series: 280 - 420</li>
+      </ul>
+
+      <h3>4. Water damage — diagnosis first</h3>
+      <p>Logic board clean + only screen/speaker affected: repair (400-1,400 AED). Mild oxidation: repair with honest disclosure (700-1,800 AED). Heavy logic board damage: replacement is smarter.</p>
+
+      <h3>5. When replacement beats repair</h3>
+      <ul>
+        <li>Repair cost above 55% of current used value.</li>
+        <li>Three+ issues stacked on the same phone.</li>
+        <li>iPhone 11 or older with logic board damage.</li>
+        <li>Battery below 75% AND another major fault.</li>
+      </ul>
+      <p>A <a href="/services/buy-used.html">certified used iPhone</a> often costs the same or less than the repair quote.</p>
+
+      <p>Send a photo of the damage on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20a%20repair%20quote.%20Model%3A%20%2C%20Issue%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your model for an honest AED range before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
+    excerpt: "Honest 2026 decision guide: when iPhone repair in Dubai is worth it vs replacing. AED cost ranges for screen, battery, water damage, Face ID per model.",
+    image_url: "images/blog/same-day-phone-screen-repair-explained.jpg",
+    category: "Repair",
+    date: "2026-05-30"
   }
 ];
 
@@ -474,7 +592,10 @@ const staticBlogPostPaths = {
   "iphone-battery-replacement-cost-dubai-2026": "/blog/iphone-battery-replacement-cost-dubai-2026/",
   "gaming-laptop-vs-gaming-pc-dubai-2026": "/blog/gaming-laptop-vs-gaming-pc-dubai-2026/",
   "best-time-buy-laptops-dubai-2026": "/blog/best-time-buy-laptops-dubai-2026/",
-  "sell-used-phone-dubai-best-trade-in-value-2026": "/blog/sell-used-phone-dubai-best-trade-in-value-2026/"
+  "sell-used-phone-dubai-best-trade-in-value-2026": "/blog/sell-used-phone-dubai-best-trade-in-value-2026/",
+  "iphone-17-pro-max-vs-16-pro-max-dubai-2026": "/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026/",
+  "used-iphone-trade-in-price-guide-dubai-2026": "/blog/used-iphone-trade-in-price-guide-dubai-2026/",
+  "cracked-screen-vs-replace-iphone-dubai-2026": "/blog/cracked-screen-vs-replace-iphone-dubai-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -679,6 +800,48 @@ const postJourneys = {
       label: "Planning from Al Quoz?",
       shortLabel: "Al Quoz",
       description: "Use the Al Quoz page to plan your visit and shorten the trade-in turnaround."
+    }
+  },
+  "iphone-17-pro-max-vs-16-pro-max-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-iphone.html",
+      label: "Compare iPhone 17 line stock",
+      shortLabel: "iPhone 17 line",
+      description: "See current 17, 17 Pro, 17 Pro Max, and 17 Air options before deciding to upgrade."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for store route details before the in-person comparison."
+    }
+  },
+  "used-iphone-trade-in-price-guide-dubai-2026": {
+    moneyPage: {
+      href: "/services/sell-gadgets.html",
+      label: "Get a 5-minute trade-in quote",
+      shortLabel: "Trade-in",
+      description: "Send the 5-item checklist on WhatsApp and get a same-day AED price band."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Planning from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for the fastest in-store evaluation route."
+    }
+  },
+  "cracked-screen-vs-replace-iphone-dubai-2026": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Book an iPhone repair check",
+      shortLabel: "Repair",
+      description: "Send a damage photo for an honest same-day AED repair quote before driving in."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for store route details before the workshop check."
     }
   }
 };
