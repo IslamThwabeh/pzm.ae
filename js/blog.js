@@ -575,6 +575,118 @@ const blogPosts = [
     image_url: "images/blog/same-day-phone-screen-repair-explained.jpg",
     category: "Repair",
     date: "2026-05-30"
+  },
+  {
+    title: "Best Used MacBook to Buy in Dubai 2026: Air vs Pro by Year",
+    slug: "best-used-macbook-dubai-2026",
+    content: `<p>A used MacBook is one of the smartest ways to save 30-50% on a great laptop in Dubai — but only if you pick the right year and chip. Below is the honest 2026 buyer's grid we walk customers through in our Al Barsha workshop, including the 3 models we never recommend.</p>
+
+      <h3>1. The one rule: Apple Silicon only</h3>
+      <p>Buy <strong>Apple Silicon (M1 or newer)</strong>. Intel MacBooks from 2018-2019 overheat, eat battery, and are running out of macOS upgrade runway.</p>
+
+      <h3>2. MacBook Air sweet spots (AED, May 2026)</h3>
+      <ul>
+        <li>2020 Air M1 (8/256): 1,500 - 1,900</li>
+        <li>2022 Air M2 (8/256): 1,900 - 2,400</li>
+        <li><strong>2022 Air M2 (16/512): 2,500 - 3,200 — our top pick</strong></li>
+        <li>2024 Air M3 (16/512): 3,400 - 4,200</li>
+        <li>2025 Air M4 (16/512): 4,100 - 5,000</li>
+      </ul>
+
+      <h3>3. MacBook Pro sweet spots</h3>
+      <ul>
+        <li>2021 Pro 14" M1 Pro (16/512): 3,200 - 4,000</li>
+        <li>2023 Pro 14" M2 Pro (16/512): 4,200 - 5,200</li>
+        <li>2024 Pro 14" M3 Pro (18/512): 5,500 - 6,800</li>
+      </ul>
+
+      <h3>4. Air vs Pro in 30 seconds</h3>
+      <p><strong>Air</strong> for browsing, docs, design school, mid-level photo. <strong>Pro</strong> only for 4K video export, Xcode builds, heavy Lightroom batches, or external 5K/6K displays.</p>
+
+      <h3>5. Models we do NOT recommend in 2026</h3>
+      <ul>
+        <li>2018-2019 Intel MacBook Pro (butterfly keyboard, thermal throttling).</li>
+        <li>2017 MacBook 12" (single port, end-of-life).</li>
+        <li>Any unit with battery health below 80% unless price already includes a battery service.</li>
+      </ul>
+
+      <p>Tell us your budget and use case on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20a%20used%20MacBook%20recommendation.%20Budget%3A%20%2C%20Main%20use%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will send 2-3 honest options before you visit <a href="/areas/al-barsha.html">Al Barsha</a>. See current stock at <a href="/services/buy-used.html">used MacBook inventory</a>.</p>`,
+    excerpt: "Honest 2026 buyer's guide to used MacBooks in Dubai with AED price ranges per year and chip, plus the 3 models we never recommend.",
+    image_url: "images/Services/reignite_your_macbook.jpg",
+    category: "Buying",
+    date: "2026-05-30"
+  },
+  {
+    title: "Custom Gaming PC vs Pre-built in Dubai 2026: AED Price Breakdown",
+    slug: "custom-vs-prebuilt-gaming-pc-dubai-2026",
+    content: `<p>If you are buying a gaming PC in Dubai in 2026, the custom vs pre-built question is mostly a cost-per-frame question. Below is the honest AED breakdown by tier, including where pre-builts actually make sense.</p>
+
+      <h3>1. What the pre-built markup usually hides</h3>
+      <p>Pre-built brands ship at attractive headline prices by quietly cutting in 5 places: <strong>slow RAM, undersized PSU, budget motherboard, no-airflow case, smaller SSD</strong>. Read the full component list before comparing.</p>
+
+      <h3>2. Custom build — AED tiers (May 2026, no monitor)</h3>
+      <ul>
+        <li><strong>1080p High:</strong> RTX 5060 / 6-core / 16 GB DDR5 / 1 TB NVMe — 3,400 - 4,200 AED.</li>
+        <li><strong>1440p High (sweet spot):</strong> RTX 5070 / 8-core / 32 GB DDR5 / 1 TB NVMe Gen4 — 5,800 - 7,200 AED.</li>
+        <li><strong>1440p Ultra / 4K High:</strong> RTX 5070 Ti or 5080 / 32 GB / 2 TB NVMe — 8,500 - 11,000 AED.</li>
+        <li><strong>4K Ultra / Creator:</strong> RTX 5080/5090 / 64 GB / 2-4 TB NVMe — 13,000 - 19,000+ AED.</li>
+      </ul>
+
+      <h3>3. Pre-built — same tiers in Dubai</h3>
+      <ul>
+        <li>1080p Pre-built: 3,800 - 4,800 AED.</li>
+        <li>1440p Pre-built: 6,500 - 8,200 AED.</li>
+        <li>4K Ultra Pre-built: 14,000 - 22,000 AED.</li>
+      </ul>
+
+      <h3>4. The 4 components where it pays to spend more</h3>
+      <ol>
+        <li>PSU — 80+ Gold or better.</li>
+        <li>Motherboard — proper VRMs + at least one PCIe 5.0 NVMe slot.</li>
+        <li>RAM — DDR5-6000 CL30 (AMD) or DDR5-6400 CL32 (Intel).</li>
+        <li>Case airflow — mesh front, 3+ included fans for Dubai heat.</li>
+      </ol>
+
+      <p>Tell us your budget and target resolution on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20a%20gaming%20PC%20build%20quote.%20Budget%3A%20%2C%20Target%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a full component list before you visit <a href="/areas/al-barsha.html">Al Barsha</a>. See current builds at <a href="/services/gaming-pc.html">gaming PC service</a>.</p>`,
+    excerpt: "Honest 2026 AED price breakdown for custom vs pre-built gaming PCs in Dubai by 1080p / 1440p / 4K tier, plus where to spend and where to save.",
+    image_url: "images/2026-march/build-dream-gaming-pc.jpg",
+    category: "Gaming PC",
+    date: "2026-05-30"
+  },
+  {
+    title: "iPhone Battery Health at 80%? Replace, Sell, or Keep — Dubai 2026 Guide",
+    slug: "iphone-battery-health-80-dubai-2026",
+    content: `<p>If you opened Battery Health and saw 80% (or the "Battery Service" message), you have three honest options: replace, sell and upgrade, or keep using it. Below is the AED math for each path in Dubai 2026.</p>
+
+      <h3>1. What 80% actually means</h3>
+      <p>You start losing real screen-on hours, and the phone may throttle peak performance to prevent shutdowns — especially in UAE summer heat.</p>
+
+      <h3>2. Option A — Replace the battery (AED, original-quality cell)</h3>
+      <ul>
+        <li>iPhone 11 / 12 / 13: 180 - 280 AED</li>
+        <li>iPhone 14: 220 - 320 AED</li>
+        <li>iPhone 15 / 16: 280 - 420 AED</li>
+      </ul>
+      <p><strong>Choose this if:</strong> the phone is iPhone 13 or newer, screen and Face ID work, and you keep phones 2+ more years. Book via <a href="/services/repair.html">our repair service</a>.</p>
+
+      <h3>3. Option B — Sell and upgrade</h3>
+      <p>Phones at 80% take a trade-in hit because the next buyer needs a rebattery: typically -150 to -300 AED off standard bands, -200 to -400 AED if "Battery Service" warning is showing. See full ranges in our <a href="/blog/used-iphone-trade-in-price-guide-dubai-2026/">trade-in price guide</a>. Choose this if the phone is iPhone 11/12 or has other faults. Compare upgrade options at <a href="/services/buy-iphone.html">new iPhone 17 line</a> or <a href="/services/buy-used.html">certified used iPhones</a>.</p>
+
+      <h3>4. Option C — Keep using it</h3>
+      <p>Charge twice a day and live with shorter runtime. Choose this only if you are 2-3 months from buying a new phone anyway.</p>
+
+      <h3>5. Decision flow</h3>
+      <ol>
+        <li>iPhone 13/14/15/16, otherwise perfect → replace battery.</li>
+        <li>iPhone 11/12 or other faults → sell, trade in, upgrade.</li>
+        <li>Upgrading within 60 days → keep, charge twice, sell when ready.</li>
+      </ol>
+
+      <p>WhatsApp your model + battery health to <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20iPhone%20battery%20is%20at%20%25%20health.%20Model%3A%20.%20What%20do%20you%20recommend%20(via%20pzm.ae)" target="_blank" rel="noopener">our team</a> for the AED math on both paths before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
+    excerpt: "Honest 2026 decision guide for iPhone owners in Dubai whose battery hit 80%: replace, sell and upgrade, or keep — with AED math for each path.",
+    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
+    category: "Repair",
+    date: "2026-05-30"
   }
 ];
 
@@ -595,7 +707,10 @@ const staticBlogPostPaths = {
   "sell-used-phone-dubai-best-trade-in-value-2026": "/blog/sell-used-phone-dubai-best-trade-in-value-2026/",
   "iphone-17-pro-max-vs-16-pro-max-dubai-2026": "/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026/",
   "used-iphone-trade-in-price-guide-dubai-2026": "/blog/used-iphone-trade-in-price-guide-dubai-2026/",
-  "cracked-screen-vs-replace-iphone-dubai-2026": "/blog/cracked-screen-vs-replace-iphone-dubai-2026/"
+  "cracked-screen-vs-replace-iphone-dubai-2026": "/blog/cracked-screen-vs-replace-iphone-dubai-2026/",
+  "best-used-macbook-dubai-2026": "/blog/best-used-macbook-dubai-2026/",
+  "custom-vs-prebuilt-gaming-pc-dubai-2026": "/blog/custom-vs-prebuilt-gaming-pc-dubai-2026/",
+  "iphone-battery-health-80-dubai-2026": "/blog/iphone-battery-health-80-dubai-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -842,6 +957,48 @@ const postJourneys = {
       label: "Visiting from Al Barsha?",
       shortLabel: "Al Barsha",
       description: "Use the Al Barsha page for store route details before the workshop check."
+    }
+  },
+  "best-used-macbook-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "Browse certified used MacBooks",
+      shortLabel: "Used MacBooks",
+      description: "See current stock with 30-day warranty and a verified battery health number."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for the fastest route to the workshop check-in."
+    }
+  },
+  "custom-vs-prebuilt-gaming-pc-dubai-2026": {
+    moneyPage: {
+      href: "/services/gaming-pc.html",
+      label: "Get a custom gaming PC quote",
+      shortLabel: "Gaming PC",
+      description: "Send budget and target resolution on WhatsApp for a full component list."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page to plan the in-store build review."
+    }
+  },
+  "iphone-battery-health-80-dubai-2026": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Book a battery replacement",
+      shortLabel: "Battery service",
+      description: "Same-day battery service with verified-quality cells and a 90-day warranty."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for the fastest route to the workshop."
     }
   }
 };
