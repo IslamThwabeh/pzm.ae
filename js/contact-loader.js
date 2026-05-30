@@ -78,7 +78,7 @@
         footerReturns: 'سياسة الإرجاع',
         footerPrivacy: 'الخصوصية',
         footerTerms: 'الشروط والأحكام',
-        footerTagline: 'Sell&#8226;Fix&#8226;New&#8226;Used&#8226;PC&#8226;Build',
+        footerTagline: '-Sell Fix New Used PC Build',
         footerCopy: 'جميع الحقوق محفوظة.'
       }
     : {
@@ -119,7 +119,7 @@
         footerReturns: 'Return Policy',
         footerPrivacy: 'Privacy',
         footerTerms: 'Terms',
-        footerTagline: 'Sell&#8226;Fix&#8226;New&#8226;Used&#8226;PC&#8226;Build',
+        footerTagline: '-Sell Fix New Used PC Build',
         footerCopy: 'All rights reserved.'
       };
 
