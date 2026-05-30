@@ -42,7 +42,7 @@
   const copy = isArabic
     ? {
         sectionEyebrow: 'زر المتجر أو اتصل أو راسلنا',
-        sectionTitle: 'خطط لزيارتك إلى PZM',
+        sectionTitle: 'خطط لزيارتك إلى P Z M Mobile & Computers',
         intro: 'ابدأ عبر واتساب لمعرفة التوفر والسعر أو تقييم جهازك قبل زيارة المتجر في البرشاء.',
         phoneAlt: 'الهاتف',
         phoneLabel: '+971 528 026 677',
@@ -53,7 +53,7 @@
         mapLabel: 'افتح خرائط جوجل',
         visitTitle: 'زوروا متجرنا في البرشاء',
         locationBadge: 'المتجر الرئيسي',
-        storeName: 'PZM Computers & Phones Store',
+        storeName: 'P Z M Mobile & Computers -Sell Fix New Used PC Build',
         addressLine1: 'داخل Union Coop Hypermarket، الطابق الأرضي',
         addressLine2: 'شارع حصة، البرشاء، دبي',
         supportTitle1: 'استجابة سريعة',
@@ -65,7 +65,7 @@
         storeTag1: 'زيارة مباشرة',
         storeTag2: 'مواقف سهلة',
         storeTag3: 'تنسيق الاستلام عند الطلب',
-        mapTitle: 'خريطة موقع PZM Computers & Phones Store',
+        mapTitle: 'خريطة موقع P Z M Mobile & Computers -Sell Fix New Used PC Build',
         footerHome: 'الرئيسية',
         footerAbout: 'من نحن',
         footerServices: 'الخدمات',
@@ -78,12 +78,12 @@
         footerReturns: 'سياسة الإرجاع',
         footerPrivacy: 'الخصوصية',
         footerTerms: 'الشروط والأحكام',
-        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade&#8209;In',
+        footerTagline: 'Sell&#8226;Fix&#8226;New&#8226;Used&#8226;PC&#8226;Build',
         footerCopy: 'جميع الحقوق محفوظة.'
       }
     : {
         sectionEyebrow: 'Visit, Call or WhatsApp',
-        sectionTitle: 'Plan Your Visit to PZM',
+        sectionTitle: 'Plan Your Visit to P Z M Mobile & Computers',
         intro: "Start on WhatsApp for stock checks, pricing, and trade-in guidance before you visit our Al Barsha store.",
         phoneAlt: 'Phone',
         phoneLabel: '+971 528 026 677',
@@ -94,7 +94,7 @@
         mapLabel: 'Open Google Maps',
         visitTitle: 'Visit Our Al Barsha Store',
         locationBadge: 'Local Store',
-        storeName: 'PZM Computers & Phones Store',
+        storeName: 'P Z M Mobile & Computers -Sell Fix New Used PC Build',
         addressLine1: 'Inside Union Coop Hypermarket, Ground Floor',
         addressLine2: 'Hessa Street, Al Barsha, Dubai',
         supportTitle1: 'Fast next-step help',
@@ -106,7 +106,7 @@
         storeTag1: 'Walk-in friendly',
         storeTag2: 'Easy parking',
         storeTag3: 'Pickup coordination on request',
-        mapTitle: 'PZM Computers & Phones Store location map',
+        mapTitle: 'P Z M Mobile & Computers -Sell Fix New Used PC Build location map',
         footerHome: 'Home',
         footerAbout: 'About',
         footerServices: 'Services',
@@ -119,7 +119,7 @@
         footerReturns: 'Return Policy',
         footerPrivacy: 'Privacy',
         footerTerms: 'Terms',
-        footerTagline: 'New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade&#8209;In',
+        footerTagline: 'Sell&#8226;Fix&#8226;New&#8226;Used&#8226;PC&#8226;Build',
         footerCopy: 'All rights reserved.'
       };
 

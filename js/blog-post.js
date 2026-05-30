@@ -27,7 +27,7 @@ function updateBlogPostMetadata(post, slug) {
     pageUrl.searchParams.set('slug', slug);
 
     const imageUrl = new URL(post.image_url, window.location.origin).href;
-    const pageTitle = `${post.title} | PZM Computers & Phones Store Blog`;
+    const pageTitle = `${post.title} | P Z M Mobile & Computers -Sell Fix New Used PC Build Blog`;
     const publishedISO = post.date ? new Date(post.date).toISOString() : undefined;
 
     document.title = pageTitle;
@@ -57,7 +57,7 @@ function updateBlogPostMetadata(post, slug) {
         inLanguage: 'en',
         isPartOf: {
             '@type': 'Blog',
-            name: 'PZM Dubai Tech Blog',
+            name: 'P Z M Mobile & Computers Dubai Tech Blog',
             url: 'https://pzm.ae/blog.html'
         }
     };
@@ -99,12 +99,12 @@ function updateBlogPostMetadata(post, slug) {
         ...(publishedISO ? { datePublished: publishedISO, dateModified: publishedISO } : {}),
         author: {
             '@type': 'Organization',
-            name: 'PZM Computers & Phones Store',
+            name: 'P Z M Mobile & Computers -Sell Fix New Used PC Build',
             url: 'https://pzm.ae/'
         },
         publisher: {
             '@type': 'Organization',
-            name: 'PZM Computers & Phones Store',
+            name: 'P Z M Mobile & Computers -Sell Fix New Used PC Build',
             logo: {
                 '@type': 'ImageObject',
                 url: 'https://pzm.ae/images/mini_logo.png'

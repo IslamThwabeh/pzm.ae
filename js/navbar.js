@@ -1,4 +1,4 @@
-// PZM Navbar — Mobile menu toggle & dropdown handling
+// P Z M Mobile & Computers Navbar — Mobile menu toggle & dropdown handling
 
 var LANGUAGE_SWITCH_ROUTES = {
     '/': '/ar/',

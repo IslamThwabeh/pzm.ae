@@ -1,4 +1,4 @@
-// PZM Business Hours - Local calculation with Dubai timezone (UTC+4)
+// P Z M Mobile & Computers Business Hours - Local calculation with Dubai timezone (UTC+4)
 
 // Store hours: [openHour, openMin, closeHour, closeMin]
 // closeHour > 23 means next day (e.g. 25 = 1 AM next day)
