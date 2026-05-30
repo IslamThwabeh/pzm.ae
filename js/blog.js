@@ -687,6 +687,101 @@ const blogPosts = [
     image_url: "images/blog/understanding-smartphone-battery-life.jpg",
     category: "Repair",
     date: "2026-05-30"
+  },
+  {
+    title: "PS5 vs Gaming PC in Dubai 2026: Honest AED Math by Use Case",
+    slug: "ps5-vs-gaming-pc-dubai-2026",
+    content: `<p>"PS5 or build a PC?" is the most common gaming question we get from Al Barsha customers in 2026. Most online comparisons stop at the sticker price. The real answer in Dubai is the 3-year total cost — and that flips the winner for most use cases.</p>
+
+      <h3>1. Upfront AED prices (May 2026)</h3>
+      <ul>
+        <li><strong>PS5 Slim (disc):</strong> 1,950 - 2,200 AED</li>
+        <li><strong>PS5 Pro:</strong> 2,900 - 3,400 AED</li>
+        <li><strong>1080p custom gaming PC:</strong> 3,400 - 4,200 AED</li>
+        <li><strong>1440p custom gaming PC (sweet spot):</strong> 5,800 - 7,200 AED</li>
+      </ul>
+
+      <h3>2. The 3-year total — PS5 Slim</h3>
+      <p>Console 2,000 + 2 extra controllers 750 + PS Plus Extra 1,110 + 8-10 full-price games 1,800-2,400 + 1 TB SSD 350 = <strong>~5,200 - 6,000 AED</strong>.</p>
+
+      <h3>3. The 3-year total — 1440p custom gaming PC</h3>
+      <p>PC 6,800 + keyboard/mouse/headset 350 + Game Pass ~2,160 (or Steam sales) + free online + 0 storage = <strong>~7,000 - 9,300 AED</strong> (Game Pass) or ~7,500 - 8,500 AED (Steam). 1,500-3,000 AED more across 3 years — but 1440p high, mods, productivity, GPU-only upgrade at year 4.</p>
+
+      <h3>4. Choose PS5 if</h3>
+      <p>Day-one Sony exclusives matter, you play on a TV with family, friends are on PlayStation, you want zero setup.</p>
+
+      <h3>5. Choose Gaming PC if</h3>
+      <p>1440p/4K at 100+ FPS, free online + Game Pass/Steam sales, you also work/edit/stream, mods/emulation/competitive shooters, plan GPU-only upgrade in 3-4 years.</p>
+
+      <h3>6. Hybrid: PS5 Slim + 1080p PC ~5,500-6,500 AED</h3>
+      <p>Same as Pro+games combo — covers both libraries.</p>
+
+      <p>Send budget + main games on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20PS5%20vs%20Gaming%20PC%20help.%20Budget%3A%20%2C%20Games%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for the smarter path before visiting <a href="/areas/al-barsha.html">Al Barsha</a>. See builds at <a href="/services/gaming-pc.html">gaming PC service</a> or read the <a href="/blog/custom-vs-prebuilt-gaming-pc-dubai-2026/">custom vs pre-built breakdown</a>.</p>`,
+    excerpt: "Honest 2026 AED math: PS5 vs custom gaming PC in Dubai by 3-year total cost, exclusives, mods, and resale value.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "Gaming PC",
+    date: "2026-05-30"
+  },
+  {
+    title: "Best Used iPhone Under 1,500 AED in Dubai 2026: 5 Honest Picks",
+    slug: "best-used-iphone-under-1500-aed-dubai-2026",
+    content: `<p>If your budget is under 1,500 AED and you want a real iPhone experience in Dubai 2026, the model and battery health matter more than marketing. Below are the 5 honest picks we recommend in our Al Barsha workshop, plus the models we tell people to skip.</p>
+
+      <h3>1. iPhone 13 128 GB (1,200 - 1,500 AED) — top of budget</h3>
+      <p>Smartest spend in this range. OLED, A15, MagSafe, great battery, years of iOS support. Aim 85%+ battery.</p>
+
+      <h3>2. iPhone 12 128 GB (750 - 950 AED) — sweet spot</h3>
+      <p>Flat-edge design, OLED, 5G, MagSafe. Insist on 85%+ battery or budget 220 AED for a fresh battery.</p>
+
+      <h3>3. iPhone 11 128 GB (550 - 750 AED) — most popular budget pick</h3>
+      <p>A13 still snappy, great cameras for the price. LCD, no 5G/MagSafe; iOS runway 2-3 more major versions.</p>
+
+      <h3>4. iPhone 12 mini 128 GB (650 - 850 AED) — small + special</h3>
+      <p>One-hand modern iPhone. Small battery — buy 88%+ only.</p>
+
+      <h3>5. iPhone 13 mini 128 GB (1,150 - 1,400 AED) — small + newer</h3>
+      <p>Best small-phone stretch buy if you upgrade from 12 mini or SE without going large.</p>
+
+      <h3>6. Avoid at this budget</h3>
+      <p>iPhone XR/XS/X/8/8 Plus (iOS support running out, tired batteries). Anything below 80% battery without a verified service. iPhone SE 2020/2022 unless you specifically want a home button.</p>
+
+      <p>Send your budget on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20a%20used%20iPhone%20under%201500%20AED.%20Use%20case%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will send 2-3 current options before you visit <a href="/areas/al-barsha.html">Al Barsha</a>. Also see <a href="/blog/used-iphone-trade-in-price-guide-dubai-2026/">trade-in price guide</a>.</p>`,
+    excerpt: "5 honest 2026 picks for the best used iPhone under 1,500 AED in Dubai, with AED ranges per model and what each is great for.",
+    image_url: "images/buy_used/used_iphone_15_pro_max_main.webp",
+    category: "Buying",
+    date: "2026-05-30"
+  },
+  {
+    title: "iPhone Screen Repair Dubai 2026: Original vs Aftermarket — Honest AED & Trade-In Impact",
+    slug: "iphone-screen-original-vs-aftermarket-dubai-2026",
+    content: `<p>If you cracked your iPhone screen in Dubai, the first quote from any street workshop will usually be aftermarket — and look great vs the original price. That gap is real, but so is the cost over the life of the phone. Below is the honest 2026 breakdown so you choose with eyes open.</p>
+
+      <h3>1. AED price gap by model (May 2026)</h3>
+      <ul>
+        <li>iPhone 11 / 12: original 350-750 / aftermarket OLED 180-350 / incell 130-220.</li>
+        <li>iPhone 13 / 14: original 550-1,000 / aftermarket OLED 280-500.</li>
+        <li>iPhone 14 Pro Max: original 750-1,100 / aftermarket OLED 400-650.</li>
+        <li>iPhone 15 Pro / Pro Max: original 850-1,300 / aftermarket OLED 480-750.</li>
+        <li>iPhone 16 Pro / Pro Max: original 1,000-1,500 / aftermarket OLED 550-900.</li>
+      </ul>
+
+      <h3>2. The 3 things you lose with aftermarket</h3>
+      <p>True Tone usually breaks. Peak brightness drops 15-30% (matters in Dubai sun). "Unknown Part" warning appears in Settings forever.</p>
+
+      <h3>3. Trade-in impact in Dubai</h3>
+      <p>Non-original screen reduces trade-in offers by 250-600 AED — the next buyer (or our workshop) needs to fit original to clear the iOS warning. If you sell within 12-24 months, original is the cheaper math.</p>
+
+      <h3>4. When aftermarket is fine</h3>
+      <p>iPhone 11/12 you will keep <12 more months, secondary/kids device, or you will sell privately to a buyer who knows.</p>
+
+      <h3>5. When original is non-negotiable</h3>
+      <p>iPhone 13+ kept 12+ months, any Pro model, planning to trade in within 18 months.</p>
+
+      <p>Send a photo + model on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20an%20iPhone%20screen%20quote%20original%20vs%20aftermarket.%20Model%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for both AED prices and trade-in math before visiting <a href="/areas/al-barsha.html">Al Barsha</a>. See the <a href="/blog/cracked-screen-vs-replace-iphone-dubai-2026/">repair-or-replace decision guide</a>.</p>`,
+    excerpt: "Original vs aftermarket iPhone screen in Dubai 2026: honest AED price gap by model, the 3 things you lose with aftermarket, and how it hits trade-in value.",
+    image_url: "images/blog/same-day-phone-screen-repair-explained.jpg",
+    category: "Repair",
+    date: "2026-05-30"
   }
 ];
 
@@ -710,7 +805,10 @@ const staticBlogPostPaths = {
   "cracked-screen-vs-replace-iphone-dubai-2026": "/blog/cracked-screen-vs-replace-iphone-dubai-2026/",
   "best-used-macbook-dubai-2026": "/blog/best-used-macbook-dubai-2026/",
   "custom-vs-prebuilt-gaming-pc-dubai-2026": "/blog/custom-vs-prebuilt-gaming-pc-dubai-2026/",
-  "iphone-battery-health-80-dubai-2026": "/blog/iphone-battery-health-80-dubai-2026/"
+  "iphone-battery-health-80-dubai-2026": "/blog/iphone-battery-health-80-dubai-2026/",
+  "ps5-vs-gaming-pc-dubai-2026": "/blog/ps5-vs-gaming-pc-dubai-2026/",
+  "best-used-iphone-under-1500-aed-dubai-2026": "/blog/best-used-iphone-under-1500-aed-dubai-2026/",
+  "iphone-screen-original-vs-aftermarket-dubai-2026": "/blog/iphone-screen-original-vs-aftermarket-dubai-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -993,6 +1091,48 @@ const postJourneys = {
       label: "Book a battery replacement",
       shortLabel: "Battery service",
       description: "Same-day battery service with verified-quality cells and a 90-day warranty."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for the fastest route to the workshop."
+    }
+  },
+  "ps5-vs-gaming-pc-dubai-2026": {
+    moneyPage: {
+      href: "/services/gaming-pc.html",
+      label: "Get a custom gaming PC quote",
+      shortLabel: "Gaming PC",
+      description: "Send budget and target resolution on WhatsApp for a full component list."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page to plan the in-store build review."
+    }
+  },
+  "best-used-iphone-under-1500-aed-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "Browse certified used iPhones",
+      shortLabel: "Used iPhones",
+      description: "Current stock under 1,500 AED with 30-day warranty and battery health verified."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for the fastest route to the workshop check-in."
+    }
+  },
+  "iphone-screen-original-vs-aftermarket-dubai-2026": {
+    moneyPage: {
+      href: "/services/repair.html",
+      label: "Book an iPhone screen repair",
+      shortLabel: "Screen repair",
+      description: "Same-day service with original or high-grade OLED options and a written warranty."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
