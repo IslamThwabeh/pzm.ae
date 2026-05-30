@@ -123,7 +123,11 @@
                     <li><strong>Phone:</strong> +971 52 802 6677</li>
                     <li><strong>WhatsApp:</strong> +971 52 802 6677</li>
                     <li><strong>Address:</strong> Inside Union Coop Hypermarket, Hessa Street, Al Barsha, Dubai</li>
-                    <li><strong>Working Hours:</strong> Daily 10:00 AM to 10:00 PM</li>
+                    <li>
+                        <strong>Working Hours:</strong>
+                        <span id="contact-status-mirror" style="margin-left:4px;"></span>
+                        <div id="contact-hours-mirror" style="margin-top:6px;font-size:0.9em;line-height:1.9;"></div>
+                    </li>
                 </ul>
                 <div class="contact-actions">
                     <a class="btn-primary" href="tel:+971528026677">Call Now</a>
@@ -152,5 +156,33 @@
 
     <script src="/js/navbar.js"></script>
     <script src="/js/contact-loader.js"></script>
+    <script>
+      (function () {
+        function mirrorHours() {
+          var status = document.getElementById('store-status');
+          var hours = document.querySelector('.hours');
+          var mStatus = document.getElementById('contact-status-mirror');
+          var mHours = document.getElementById('contact-hours-mirror');
+          if (mStatus && status && status.innerHTML.trim()) {
+            mStatus.innerHTML = status.innerHTML;
+          }
+          if (mHours && hours && hours.innerHTML.trim()) {
+            mHours.innerHTML = hours.innerHTML;
+          }
+        }
+        if (typeof MutationObserver !== 'undefined') {
+          var obs = new MutationObserver(function () {
+            var h = document.querySelector('.hours');
+            if (h && h.innerHTML.trim()) {
+              mirrorHours();
+              obs.disconnect();
+            }
+          });
+          obs.observe(document.body, { childList: true, subtree: true });
+        }
+        // Fallback: copy after 1.5s in case observer misses the update
+        setTimeout(mirrorHours, 1500);
+      })();
+    </script>
 </body>
 </html>
