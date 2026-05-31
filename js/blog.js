@@ -652,6 +652,296 @@ const blogPosts = [
     image_url: "images/PS5/WhitePS5.jpg",
     category: "Accessories",
     date: "2026-05-30"
+  },
+  {
+    title: "iPhone 17 vs iPhone 17 Pro in Dubai 2026: which should you buy?",
+    slug: "iphone-17-vs-iphone-17-pro-dubai-2026",
+    content: `<p>iPhone 17 vs iPhone 17 Pro in Dubai 2026 — AED price gap, what you actually get for the extra spend, and which model wins for most buyers.</p>
+
+      <h3>1) The AED price gap</h3>
+      <p>In Dubai, the iPhone 17 starts around AED 3,200 while the iPhone 17 Pro starts around AED 4,600. That is a 1,400 AED gap before storage — about 44% more for the Pro. The question is whether the extra money buys something you will use every day.</p>
+
+      <h3>2) What you actually get on the Pro</h3>
+      <p>Pro adds telephoto camera, ProMotion 120 Hz display, titanium frame, larger battery, and faster USB-C. For photographers, frequent travelers, and video shooters, those upgrades show every day. For everyone else, the regular iPhone 17 already gets the A-series chip, the same main camera sensor class, and a great OLED.</p>
+
+      <h3>3) The cameras — honest take</h3>
+      <p>If you mostly shoot people, food, and short clips at arm length, the iPhone 17 main + ultrawide is plenty. The Pro telephoto is the real upgrade — 3x to 5x optical zoom changes how you shoot events, concerts, and travel. If you never zoom, do not pay for it.</p>
+
+      <h3>4) Display and feel</h3>
+      <p>ProMotion 120 Hz on the Pro makes scrolling and gaming look smoother — once you use it, 60 Hz feels a step behind. Titanium also makes the Pro lighter than older Pro Max generations. Quality-of-life upgrades, not deal-breakers.</p>
+
+      <h3>5) Battery and longevity</h3>
+      <p>Pro models historically last 1-2 hours longer per charge and resell stronger after 2-3 years. If you upgrade often, that resale gap matters. If you keep phones 4+ years, both will need a battery service eventually.</p>
+
+      <h3>6) Who should buy which</h3>
+      <p>Buy <strong>iPhone 17</strong> if you want the best AED-per-feature value and do not zoom often. Buy <strong>iPhone 17 Pro</strong> if you photograph events, edit on the phone, or want the smoother 120 Hz screen. Pro Max only makes sense if battery life is the single most important spec for you.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20iphone-17-vs-iphone-17-pro-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "iPhone 17 vs iPhone 17 Pro in Dubai 2026 — AED price gap, what you actually get for the extra spend, and which model wins for most buyers.",
+    image_url: "images/buy_iphone/iPhone_17_Pro_all_colors.jpg",
+    category: "Buying",
+    date: "2026-05-31"
+  },
+  {
+    title: "Best used iPhone for students in Dubai 2026: 4 budget picks",
+    slug: "best-used-iphone-students-dubai-2026",
+    content: `<p>The best used iPhone for students in Dubai 2026 — 4 budget picks under 1,800 AED with battery, software runway, and where to buy with warranty.</p>
+
+      <h3>Pick #1 — iPhone 13 128 GB (1,200–1,500 AED)</h3>
+      <p>The smartest student spend in 2026. OLED, A15 chip, MagSafe, years of iOS update runway, and a battery cell that still hits a full school day. Aim for 85%+ battery health.</p>
+
+      <h3>Pick #2 — iPhone 12 128 GB (750–950 AED)</h3>
+      <p>Same flat-edge design as the 15/16, OLED, 5G, MagSafe. The weak link is the older battery — either insist on 85%+ health or budget 220 AED for a fresh battery service.</p>
+
+      <h3>Pick #3 — iPhone 11 128 GB (550–750 AED)</h3>
+      <p>The most popular student starter iPhone. A13 chip is still snappy, cameras are great for the price, and the battery cell is large. Tradeoffs: LCD screen, no 5G, no MagSafe.</p>
+
+      <h3>Pick #4 — iPhone SE 2022 (650–850 AED)</h3>
+      <p>Only pick this if your student specifically wants a small phone with Touch ID. Battery and software runway are good; screen feels dated next to OLED models.</p>
+
+      <h3>What to skip</h3>
+      <p>At student budgets, skip the iPhone XR, XS, X, 8, and 8 Plus. Battery cells are usually tired and Apple is running out of major iOS updates for these models. Also skip anything below 80% battery health unless the seller has already added a fresh battery.</p>
+
+      <h3>How we hand over a student iPhone</h3>
+      <p>Every unit at our Al Barsha store passes a 4-point check: IMEI on Apple Check Coverage, battery health in Settings, original screen and Face/Touch ID verified, all ports + cameras + speakers tested. We also reset and prep the phone for Apple ID sign-in before you leave.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20best-used-iphone-students-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "The best used iPhone for students in Dubai 2026 — 4 budget picks under 1,800 AED with battery, software runway, and where to buy with warranty.",
+    image_url: "images/buy_used/used_iphone_15_pro_max_main.webp",
+    category: "Used",
+    date: "2026-05-31"
+  },
+  {
+    title: "MacBook Air M4 vs MacBook Pro M4 in Dubai 2026: who needs Pro?",
+    slug: "macbook-air-m4-vs-macbook-pro-m4-dubai-2026",
+    content: `<p>MacBook Air M4 vs MacBook Pro M4 in Dubai 2026 — AED price gap, who really needs the Pro display, and the cheaper Air spec that wins for most buyers.</p>
+
+      <h3>1) The honest price gap</h3>
+      <p>In Dubai, a base MacBook Air 13 M4 starts around AED 4,800 while a base MacBook Pro 14 M4 starts around AED 7,200 — a 2,400 AED gap. Move to M4 Pro and you are easily over AED 9,000. That extra spend has to be worth it.</p>
+
+      <h3>2) Who actually needs Pro</h3>
+      <p>You need MacBook Pro M4 if you regularly export 4K video, run heavy Logic Pro sessions, compile large codebases, work in Xcode with large simulators, or push 3D rendering. The extra cores, more RAM ceiling, better cooling, and ProMotion display matter every single day for you.</p>
+
+      <h3>3) Who is being upsold to Pro</h3>
+      <p>If your real use is browsing, email, Word/Excel/Keynote, light Photoshop, occasional Final Cut Express edits, and a lot of video calls — MacBook Air M4 with 16 GB RAM is faster than your old laptop and will stay relevant for 5+ years. You do not need Pro.</p>
+
+      <h3>4) The Air upgrade that matters most</h3>
+      <p>Skip the base 8 GB / 256 GB Air — Apple now offers 16 GB / 256 GB at a small premium and it is the right starting spec for 2026. If you keep many tabs open or run virtualization, jump to 16 GB / 512 GB.</p>
+
+      <h3>5) Display, speakers, and ports</h3>
+      <p>Pro wins on display (mini-LED, ProMotion 120 Hz, much brighter), speakers, and the extra HDMI/SD ports. If you connect to many external monitors and run on stage, those count. For a coffee-shop user, the Air display is excellent.</p>
+
+      <h3>6) Trade-in math from your old laptop</h3>
+      <p>If you have an Intel MacBook or older Air, get a same-day trade-in quote on <a href="/services/sell-gadgets.html">our sell page</a>. A working 2020 MacBook Air typically takes 1,200–1,800 AED off the price of a new Air.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20macbook-air-m4-vs-macbook-pro-m4-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "MacBook Air M4 vs MacBook Pro M4 in Dubai 2026 — AED price gap, who really needs the Pro display, and the cheaper Air spec that wins for most buyers.",
+    image_url: "images/macbook/macbook_air_13_M4.png",
+    category: "MacBook",
+    date: "2026-05-31"
+  },
+  {
+    title: "Used MacBook Air vs new MacBook Air in Dubai 2026: real AED math",
+    slug: "used-macbook-air-vs-new-macbook-air-dubai-2026",
+    content: `<p>Used MacBook Air vs new MacBook Air in Dubai 2026 — real AED gap by model, battery and software runway, and when used is the smarter buy.</p>
+
+      <h3>1) New Air M4 in 2026 — the AED baseline</h3>
+      <p>A new MacBook Air 13 M4 with 16 GB RAM and 256 GB SSD lands around AED 5,200 at Apple AE. With 512 GB SSD, plan AED 5,900. That is the number to compare every used option against.</p>
+
+      <h3>2) Used MacBook Air M2 (2022) — best AED-per-performance</h3>
+      <p>In 2026 a clean used MacBook Air M2 13 with 8 GB / 256 GB sits around 2,400–2,800 AED. With 16 GB / 512 GB, around 3,200–3,600 AED. You save roughly 2,200–2,500 AED for a laptop that still feels modern, runs the latest macOS, and has 4-5 more years of update runway.</p>
+
+      <h3>3) Used MacBook Air M1 (2020) — extreme value</h3>
+      <p>M1 Airs are now 1,800–2,300 AED for an 8 GB / 256 GB unit with healthy battery. Performance is still excellent for daily work, students, and writers. Tradeoffs: older design, 60 Hz screen, no MagSafe, and one less macOS update cycle than M2.</p>
+
+      <h3>4) When new wins</h3>
+      <p>Pay for new Air M4 if you depend on AppleCare, want the brightest screen, plan to keep the laptop 6+ years, or run heavier workloads that benefit from M4 vs M2. A new M4 also has full 1-year warranty and the latest port speeds.</p>
+
+      <h3>5) When used wins</h3>
+      <p>Pick used if your budget is under 3,500 AED, you want maximum AED-per-feature, or you are buying for a student/secondary use. A 30-day warranty plus a free battery health check covers the realistic risk.</p>
+
+      <h3>6) Trade-in to shrink the gap</h3>
+      <p>If you already own a laptop, do not skip a trade-in. Even a 2018 Intel MacBook Air in working condition takes 600–1,000 AED off either new or used. <a href="/services/sell-gadgets.html">Get a same-day quote</a> before you commit.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20used-macbook-air-vs-new-macbook-air-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "Used MacBook Air vs new MacBook Air in Dubai 2026 — real AED gap by model, battery and software runway, and when used is the smarter buy.",
+    image_url: "images/macbook/macbook_air_13_M4.png",
+    category: "Used",
+    date: "2026-05-31"
+  },
+  {
+    title: "Best gaming PC under 5,000 AED in Dubai 2026: 1080p high-refresh build",
+    slug: "best-gaming-pc-under-5000-aed-dubai-2026",
+    content: `<p>Best gaming PC under 5,000 AED in Dubai 2026 — a real 1080p high-refresh parts list, AED breakdown, and what to upgrade later.</p>
+
+      <h3>1) Who this build is for</h3>
+      <p>You want 1080p high-refresh (144 Hz+) gaming on titles like Valorant, Apex, Fortnite, Warzone, CS2, and most AAA games at high settings. The build is balanced — no single bottleneck — and leaves a clear upgrade path for 1440p later.</p>
+
+      <h3>2) The parts list (~4,800 AED)</h3>
+      <p>CPU: Ryzen 5 7600 (~750). Motherboard: B650 ATX (~650). RAM: 32 GB DDR5 6000 MT/s (~520). GPU: RTX 5060 Ti 8 GB or RX 7700 XT (~1,800). SSD: 1 TB Gen4 NVMe (~280). PSU: 750 W 80+ Gold (~360). Case: solid airflow mid-tower (~280). Cooler: tower air cooler (~160). Total: ~4,800 AED before assembly.</p>
+
+      <h3>3) Why these parts</h3>
+      <p>Ryzen 5 7600 is the value king for 1080p — it does not bottleneck the GPU and leaves an AM5 upgrade path to Ryzen 9000 later. 32 GB DDR5 is now the right baseline for modern games. The RTX 5060 Ti / RX 7700 XT class is the sweet spot for 144 Hz at 1080p high.</p>
+
+      <h3>4) What we deliberately skipped</h3>
+      <p>No RGB tax, no AIO liquid cooling at this budget (air cooler is plenty for Ryzen 5), no Wi-Fi 7 board (Wi-Fi 6 is fine), no 1 TB Gen5 SSD (Gen4 saturates SATA and HDD for storage). These trims keep the focus on FPS-per-dirham.</p>
+
+      <h3>5) Performance you should expect</h3>
+      <p>Valorant / CS2: 300+ FPS at 1080p. Apex / Warzone: 165+ FPS competitive settings. AAA titles (Cyberpunk, Starfield) at 1080p high: stable 80-110 FPS with DLSS/FSR. 1440p ultra is possible but you will tweak settings.</p>
+
+      <h3>6) The upgrade path</h3>
+      <p>Year 2: drop in a Ryzen 7 9700X3D for big AAA gains. Year 3: upgrade GPU to the next-gen 70-class card to push 1440p. The PSU, case, RAM, and storage all stay. This is the cheapest way to spread spend over time.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20best-gaming-pc-under-5000-aed-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "Best gaming PC under 5,000 AED in Dubai 2026 — a real 1080p high-refresh parts list, AED breakdown, and what to upgrade later.",
+    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.jpg",
+    category: "Gaming PC",
+    date: "2026-05-31"
+  },
+  {
+    title: "Best gaming PC under 8,000 AED in Dubai 2026: real 1440p ultra build",
+    slug: "best-gaming-pc-under-8000-aed-dubai-2026",
+    content: `<p>Best gaming PC under 8,000 AED in Dubai 2026 — proper 1440p ultra parts list, AED breakdown, and where to spend or save.</p>
+
+      <h3>1) Who this build is for</h3>
+      <p>You want true 1440p ultra at 100+ FPS in modern AAA games, ray tracing on in supported titles, and headroom for AAA releases through 2027. This is also a great content creation box for streaming and 1080p/4K editing.</p>
+
+      <h3>2) The parts list (~7,800 AED)</h3>
+      <p>CPU: Ryzen 7 9700X or 7700X (~1,150). Motherboard: B650E or X670 ATX (~850). RAM: 32 GB DDR5 6000 CL30 (~580). GPU: RTX 5070 Ti or RX 9070 XT (~3,400). SSD: 2 TB Gen4 NVMe (~520). PSU: 850 W 80+ Gold (~480). Case: airflow ATX (~360). Cooler: 240 mm AIO or premium air (~440). Total: ~7,780 AED.</p>
+
+      <h3>3) Where the budget goes</h3>
+      <p>Roughly 44% of the build is GPU. That is correct — at 1440p ultra, the GPU sets your ceiling. Do not be tempted to spend less on GPU to add RGB, faster RAM, or Gen5 SSD; you will regret it within 6 months.</p>
+
+      <h3>4) Why not just buy an RTX 5080</h3>
+      <p>RTX 5080 adds 1,800-2,200 AED for roughly 25% more performance at 1440p. At this resolution you do not see the full benefit. If you mainly play at 1440p, stay with the 5070 Ti / 9070 XT tier and put the savings into a better monitor.</p>
+
+      <h3>5) The monitor decision</h3>
+      <p>Pair this PC with a 27-32 inch 1440p OLED or QD-OLED panel at 165-240 Hz. Budget 1,800-2,800 AED. A bad monitor will hide what this build can do. We carry several options at the store.</p>
+
+      <h3>6) Future upgrade path</h3>
+      <p>AM5 motherboard means you can drop in Ryzen 9 9950X3D later without changing anything else. The 850 W PSU has headroom for next-gen GPUs. The case and cooling are sized for 2028-era hardware. You are not buying a 2026 PC — you are buying a 5-year platform.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20best-gaming-pc-under-8000-aed-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "Best gaming PC under 8,000 AED in Dubai 2026 — proper 1440p ultra parts list, AED breakdown, and where to spend or save.",
+    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.jpg",
+    category: "Gaming PC",
+    date: "2026-05-31"
+  },
+  {
+    title: "PS5 Pro vs PS5 Slim in Dubai 2026: is the upgrade worth 1,200 AED?",
+    slug: "ps5-pro-vs-ps5-slim-dubai-2026",
+    content: `<p>PS5 Pro vs PS5 Slim in Dubai 2026 — AED price gap, real-world performance, and which model is the right buy for your TV and budget.</p>
+
+      <h3>1) The price gap in Dubai</h3>
+      <p>PS5 Slim disc edition lands around AED 2,000-2,200 in 2026. PS5 Pro sits around AED 3,200-3,400 — a 1,200 AED gap, before you add controllers or a disc drive. Worth it? Depends on your TV and how you play.</p>
+
+      <h3>2) What PS5 Pro actually adds</h3>
+      <p>Pro brings a roughly 45% GPU uplift, faster ray tracing, AI upscaling (PSSR) that takes 1080p/1440p renders up to a cleaner 4K, and a faster SSD. On supported titles you get higher framerate at the same fidelity, or higher fidelity at the same framerate.</p>
+
+      <h3>3) Your TV decides this</h3>
+      <p>If you game on a 1080p or 1440p TV/monitor, do not buy Pro — you will not see the upscaling and ray-tracing gains. If you have a real 4K 120 Hz HDR TV or OLED, Pro shows its money every single session.</p>
+
+      <h3>4) The games where Pro matters</h3>
+      <p>Ratchet & Clank, Spider-Man 2, Horizon, Final Fantasy, Alan Wake 2, and most upcoming AAA titles patched for Pro. Sports and indie titles see less benefit.</p>
+
+      <h3>5) Slim is still excellent in 2026</h3>
+      <p>PS5 Slim is the same generation, plays the same games, supports the same accessories, and runs everything at 4K 60 FPS in performance mode. For most players in Dubai, Slim is the smart purchase and saves you 1,200 AED for games and a second controller.</p>
+
+      <h3>6) Bundle math</h3>
+      <p>Pair either with a DualSense Edge or extra DualSense, charging dock, and 2 launch games — that bundle on Slim is often cheaper than Pro alone. Check our <a href="/services/accessories.html">accessories page</a> for current bundles.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20ps5-pro-vs-ps5-slim-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "PS5 Pro vs PS5 Slim in Dubai 2026 — AED price gap, real-world performance, and which model is the right buy for your TV and budget.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "Gaming",
+    date: "2026-05-31"
+  },
+  {
+    title: "Nintendo Switch 2 in Dubai 2026: AED pricing, availability, who should buy",
+    slug: "nintendo-switch-2-dubai-2026",
+    content: `<p>Nintendo Switch 2 in Dubai 2026 — AED pricing, availability at retail, how it compares to the original, and who should upgrade now.</p>
+
+      <h3>1) The Switch 2 AED price</h3>
+      <p>Nintendo Switch 2 lands in Dubai around AED 1,700-1,900 standalone, with launch-game bundles in the AED 2,000-2,200 range. Compare to the original Switch OLED at AED 1,200-1,400 — the gap is 500-600 AED for a much more capable console.</p>
+
+      <h3>2) What Switch 2 adds</h3>
+      <p>Bigger LCD screen, much stronger GPU, 4K via dock to TV, smoother third-party AAA ports, backward compatibility with most original Switch games, and improved Joy-Con 2 with magnetic attachment. Battery life is roughly similar in real-world play.</p>
+
+      <h3>3) Who should upgrade</h3>
+      <p>You should upgrade if you have an original launch Switch with a tired battery, you play a lot of third-party games (where Switch 1 struggles), or you connect to a 4K TV often. If you have an OLED model and mostly play first-party Nintendo titles handheld, you can wait.</p>
+
+      <h3>4) Family math</h3>
+      <p>For families with kids, Switch 2 is the better long-term buy — it will receive games for the next 6-7 years. If your kids are young, an OLED Switch 1 plus 3 games may still be the smarter spend for now.</p>
+
+      <h3>5) Game library at launch</h3>
+      <p>Mario Kart, Zelda Tears of the Kingdom enhanced edition, and a strong first-party slate. Most original Switch games run with better framerate and resolution on Switch 2 without buying new versions.</p>
+
+      <h3>6) Accessories to plan for</h3>
+      <p>Microsd Express (Switch 2 requires the new card class for full speed), screen protector, carrying case, and a second controller. Plan 300-450 AED extra on launch day.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20nintendo-switch-2-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "Nintendo Switch 2 in Dubai 2026 — AED pricing, availability at retail, how it compares to the original, and who should upgrade now.",
+    image_url: "images/brand_new/nintendo_switch.webp",
+    category: "Gaming",
+    date: "2026-05-31"
+  },
+  {
+    title: "Samsung Galaxy S25 vs iPhone 17 in Dubai 2026: honest cross-shop",
+    slug: "samsung-galaxy-s25-vs-iphone-17-dubai-2026",
+    content: `<p>Samsung Galaxy S25 vs iPhone 17 in Dubai 2026 — AED price, cameras, battery, software runway, and which is the right buy for you.</p>
+
+      <h3>1) The price-and-spec table</h3>
+      <p>iPhone 17 (128 GB) sits around AED 3,200. Galaxy S25 (256 GB) sits around AED 3,000-3,200. Roughly the same AED, with Samsung typically including more base storage. Both are flagships, both will last 5+ years, both have excellent cameras.</p>
+
+      <h3>2) Cameras — different strengths</h3>
+      <p>iPhone 17 wins on consistency, color science, and video. Galaxy S25 wins on zoom flexibility (telephoto on base model), AI editing tools, and night mode aggressiveness. If you shoot video, lean iPhone. If you shoot a lot of zoomed stills, lean Samsung.</p>
+
+      <h3>3) Battery and charging</h3>
+      <p>Galaxy S25 charges faster (45 W wired, 25 W wireless) than iPhone 17 (25 W wired, 15 W MagSafe). Battery life is roughly comparable for typical users — Samsung edges ahead on heavy use, iPhone edges ahead on light use thanks to standby efficiency.</p>
+
+      <h3>4) Software and the ecosystem trap</h3>
+      <p>iPhone has Apple ecosystem (iMessage, AirDrop, Apple Watch, AirPods deep integration). Samsung has Galaxy ecosystem (Samsung Watch, Galaxy Buds, DeX desktop mode). If you already own Apple gear, sticking with iPhone makes daily life easier.</p>
+
+      <h3>5) AI features in 2026</h3>
+      <p>Apple Intelligence is improving but Galaxy AI is more aggressive — live translation, generative photo edit, AI summaries are more polished on Samsung in 2026. Heavy AI users currently lean Samsung. Privacy-focused users lean Apple.</p>
+
+      <h3>6) Resale and trade-in</h3>
+      <p>iPhone holds resale value much better in the UAE — typically 15-20% more after 2 years. If you upgrade often, factor that into the real cost. If you keep phones 4+ years, both depreciate to roughly similar levels.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20samsung-galaxy-s25-vs-iphone-17-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "Samsung Galaxy S25 vs iPhone 17 in Dubai 2026 — AED price, cameras, battery, software runway, and which is the right buy for you.",
+    image_url: "images/brand_new/samsung_a56_5g.webp",
+    category: "Buying",
+    date: "2026-05-31"
+  },
+  {
+    title: "Trade-in vs sell privately: best way to sell your iPhone in Dubai 2026",
+    slug: "trade-in-vs-sell-privately-iphone-dubai-2026",
+    content: `<p>Trade-in vs sell privately in Dubai 2026 — real AED differences, time and risk per route, and the smartest way to sell your iPhone.</p>
+
+      <h3>1) The real AED gap</h3>
+      <p>In Dubai 2026, private sale typically nets 8-15% more AED than a shop trade-in. Example: a clean iPhone 14 Pro 256 GB might fetch AED 2,400 privately vs AED 2,100 trade-in. That is 300 AED on the table — real money, but not life-changing.</p>
+
+      <h3>2) Time and effort cost</h3>
+      <p>Private sale costs you: writing the ad, replying to lowballers, arranging meetings, dealing with no-shows, payment-fraud risk (fake bank transfer screenshots, switched cash), and 1-3 weeks of your time. Trade-in is 15 minutes at the store.</p>
+
+      <h3>3) The real risks of private selling</h3>
+      <p>Most common in Dubai: fake bank-transfer screenshots, counterfeit cash, buyer claims the phone is "broken" after handover and demands a refund, and after-sale Find My / iCloud disputes. A shop trade-in eliminates every one of these.</p>
+
+      <h3>4) When private sale wins</h3>
+      <p>Pick private if your phone is recent (last 18 months), in mint condition, you have time to wait, you know how to handle payment safely, and the AED gap is over 400. For older phones, the gap shrinks.</p>
+
+      <h3>5) When trade-in wins</h3>
+      <p>Pick trade-in if you are also buying a replacement at the same store (we often add 50-150 AED on top), if your phone is more than 2 years old, if it has any condition issues, or if you simply do not have a week to play marketplace negotiator.</p>
+
+      <h3>6) The hybrid play</h3>
+      <p>Get a written trade-in quote first (it takes 15 minutes on WhatsApp). Then list privately at 10-15% above that number for one week. If it sells, great. If not, take the trade-in. You lose nothing — and most people end up taking the trade-in once they see how quick it is.</p>
+
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20trade-in-vs-sell-privately-iphone-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
+    excerpt: "Trade-in vs sell privately in Dubai 2026 — real AED differences, time and risk per route, and the smartest way to sell your iPhone.",
+    image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
+    category: "Selling",
+    date: "2026-05-31"
   }
 ];
 
@@ -679,7 +969,17 @@ const staticBlogPostPaths = {
   "ps5-vs-gaming-pc-dubai-2026": "/blog/ps5-vs-gaming-pc-dubai-2026/",
   "best-used-iphone-under-1500-aed-dubai-2026": "/blog/best-used-iphone-under-1500-aed-dubai-2026/",
   "iphone-screen-original-vs-aftermarket-dubai-2026": "/blog/iphone-screen-original-vs-aftermarket-dubai-2026/",
-  "psg-vs-arsenal-final-dubai-2026": "/blog/psg-vs-arsenal-final-dubai-2026/"
+  "psg-vs-arsenal-final-dubai-2026": "/blog/psg-vs-arsenal-final-dubai-2026/",
+  "iphone-17-vs-iphone-17-pro-dubai-2026": "/blog/iphone-17-vs-iphone-17-pro-dubai-2026/",
+  "best-used-iphone-students-dubai-2026": "/blog/best-used-iphone-students-dubai-2026/",
+  "macbook-air-m4-vs-macbook-pro-m4-dubai-2026": "/blog/macbook-air-m4-vs-macbook-pro-m4-dubai-2026/",
+  "used-macbook-air-vs-new-macbook-air-dubai-2026": "/blog/used-macbook-air-vs-new-macbook-air-dubai-2026/",
+  "best-gaming-pc-under-5000-aed-dubai-2026": "/blog/best-gaming-pc-under-5000-aed-dubai-2026/",
+  "best-gaming-pc-under-8000-aed-dubai-2026": "/blog/best-gaming-pc-under-8000-aed-dubai-2026/",
+  "ps5-pro-vs-ps5-slim-dubai-2026": "/blog/ps5-pro-vs-ps5-slim-dubai-2026/",
+  "nintendo-switch-2-dubai-2026": "/blog/nintendo-switch-2-dubai-2026/",
+  "samsung-galaxy-s25-vs-iphone-17-dubai-2026": "/blog/samsung-galaxy-s25-vs-iphone-17-dubai-2026/",
+  "trade-in-vs-sell-privately-iphone-dubai-2026": "/blog/trade-in-vs-sell-privately-iphone-dubai-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -1018,6 +1318,146 @@ const postJourneys = {
       label: "Get a final-night setup quote",
       shortLabel: "Accessories",
       description: "Send room size and TV model to get a practical setup under your AED budget."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "iphone-17-vs-iphone-17-pro-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-iphone.html",
+      label: "Check iPhone 17 availability",
+      shortLabel: "Buy iPhone",
+      description: "Live AED prices, colors, and storage in stock at the Al Barsha store."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "best-used-iphone-students-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "See certified used iPhones",
+      shortLabel: "Used iPhones",
+      description: "Tested battery, original screen, and a 30-day written warranty on every unit."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "macbook-air-m4-vs-macbook-pro-m4-dubai-2026": {
+    moneyPage: {
+      href: "/services/brand-new.html",
+      label: "See current MacBook stock",
+      shortLabel: "New MacBooks",
+      description: "Live AED pricing for new MacBook Air and Pro at our Al Barsha store."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "used-macbook-air-vs-new-macbook-air-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-used.html",
+      label: "Browse used MacBook Air stock",
+      shortLabel: "Used MacBook",
+      description: "Verified battery health, clean SSD, and a 30-day warranty on every unit."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "best-gaming-pc-under-5000-aed-dubai-2026": {
+    moneyPage: {
+      href: "/services/gaming-pc.html",
+      label: "Quote this 5,000 AED build",
+      shortLabel: "Gaming PC build",
+      description: "Send your monitor and games and we lock the parts list before you visit."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "best-gaming-pc-under-8000-aed-dubai-2026": {
+    moneyPage: {
+      href: "/services/gaming-pc.html",
+      label: "Quote this 8,000 AED build",
+      shortLabel: "Gaming PC build",
+      description: "Send your monitor and games and we tune the parts list to your titles."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "ps5-pro-vs-ps5-slim-dubai-2026": {
+    moneyPage: {
+      href: "/services/brand-new.html",
+      label: "See PS5 models in stock",
+      shortLabel: "New PS5",
+      description: "Live AED pricing for PS5 Slim and Pro at our Al Barsha store."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "nintendo-switch-2-dubai-2026": {
+    moneyPage: {
+      href: "/services/brand-new.html",
+      label: "Check Switch 2 availability",
+      shortLabel: "New Switch 2",
+      description: "Live AED pricing and game bundles at our Al Barsha store."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "samsung-galaxy-s25-vs-iphone-17-dubai-2026": {
+    moneyPage: {
+      href: "/services/brand-new.html",
+      label: "See flagship phones in stock",
+      shortLabel: "New flagships",
+      description: "Live AED pricing for iPhone 17 and Galaxy S25 at our Al Barsha store."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "trade-in-vs-sell-privately-iphone-dubai-2026": {
+    moneyPage: {
+      href: "/services/sell-gadgets.html",
+      label: "Get a same-day trade-in quote",
+      shortLabel: "Sell your iPhone",
+      description: "Send model + storage + battery health on WhatsApp for an AED number before you visit."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
