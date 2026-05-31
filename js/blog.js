@@ -3,7 +3,7 @@ const blogPosts = [
   {
     title: "How to Choose the Perfect Gaming PC Build in 2026",
     slug: "how-to-choose-perfect-gaming-pc-build",
-    content: `<p>Building a gaming PC in 2026 is more rewarding than ever — but with new hardware generations and shifting prices, choosing the right components matters more now. Whether you are a first-time builder in Dubai or upgrading an existing rig, this guide covers everything you need to know. If your current setup might only need a smarter refresh, our <a href="/services/repair.html">PC repair and upgrade service</a> can help you decide whether an SSD, GPU, cooling, or RAM upgrade is enough before you commit to a full rebuild.</p>
+    content: `<p>Building a gaming PC in 2026 is more rewarding than ever — but with new hardware generations and shifting prices, choosing the right components matters more now. Whether you are a first-time builder in Dubai or upgrading an existing rig, this guide covers everything you need to know. If your current setup might only need a smarter refresh, our <a href="/services/index.html">PC repair and upgrade service</a> can help you decide whether an SSD, GPU, cooling, or RAM upgrade is enough before you commit to a full rebuild.</p>
 
       <h3>CPU: The brain of your build</h3>
       <p>AMD's Ryzen 9000 series and Intel's Arrow Lake processors dominate the 2026 landscape. For pure gaming, the Ryzen 7 9800X3D remains the king of frame rates thanks to its massive 3D V-Cache. Intel's Core Ultra 7 265K offers excellent multi-threaded performance if you also stream or create content. Budget builders should look at the Ryzen 5 9600X — it handles 1080p and 1440p gaming without breaking a sweat.</p>
@@ -23,32 +23,6 @@ const blogPosts = [
     image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.jpg",
     category: "Gaming",
     date: "2025-12-15"
-  },
-  {
-    title: "Top 5 iPhone Repair Tips Every Owner Should Know in 2026",
-    slug: "top-5-iphone-repair-tips",
-    content: `<p>iPhones are built to last, but even the most careful owners run into issues over time. Whether you have the latest iPhone 17 or are still using an iPhone 13, these repair and maintenance tips will help you avoid costly mistakes and keep your device running at its best.</p>
-
-      <h3>1. Screen damage — act fast, but choose wisely</h3>
-      <p>A cracked screen is the most common iPhone repair. If the crack is small and does not affect touch response, a tempered glass screen protector can prevent it from spreading while you schedule a proper fix. For any crack that reaches the display edges or causes touch issues, get it repaired quickly — moisture and dust entering through cracks can damage internal components. At <a href="/services/repair.html">P Z M Mobile & Computers's iPhone repair service</a> from our <a href="/areas/al-barsha.html">Al Barsha store</a>, we use quality replacement screens and explain the next step before you make the trip.</p>
-
-      <h3>2. Battery health below 80%? Time to replace</h3>
-      <p>Check your battery health in Settings → Battery → Battery Health & Charging. If maximum capacity has dropped below 80%, your iPhone is throttling performance to prevent shutdowns. A battery replacement costs a fraction of a new phone and can make your device feel brand new. We handle <a href="/services/repair.html">iPhone battery replacement</a> for models from iPhone 11 onwards and confirm timing after inspection.</p>
-
-      <h3>3. Charging port problems are usually debris</h3>
-      <p>Before assuming your charging port is broken, try cleaning it. Pocket lint compresses into the Lightning or USB-C port over time, preventing the cable from seating properly. Use a wooden toothpick (never metal) to gently clear debris. If cleaning does not help, the port may need professional replacement — a straightforward repair that avoids the cost of a new device.</p>
-
-      <h3>4. Software issues before hardware repairs</h3>
-      <p>Many performance complaints — lag, freezing, overheating, rapid battery drain — are software-related. Before paying for a repair, try: force restart (press and quickly release Volume Up, then Volume Down, then hold the Side button), reset all settings (this does not delete data), and check for iOS updates. If the problem persists after a clean restore, then it is likely a hardware issue worth having diagnosed professionally.</p>
-
-      <h3>5. Know when to repair vs. replace</h3>
-      <p>General rule: if the repair cost exceeds 40% of the device's current value, consider upgrading instead. For example, fixing an iPhone 12 screen is always worth it, but replacing the motherboard may not be. When upgrading, you can <a href="/services/sell-gadgets.html">sell or trade in your current iPhone</a> at P Z M Mobile & Computers and put the value toward a <a href="/services/buy-iphone.html">new iPhone 17</a> or <a href="/services/buy-used.html">certified used model</a> — whatever fits your budget.</p>
-
-      <p>Need a repair quote? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20an%20iPhone%20repair%20quote%20(via%20pzm.ae)" target="_blank" rel="noopener">Send us a WhatsApp message</a> with your model and issue for a fast estimate.</p>`,
-    excerpt: "Practical iPhone repair and maintenance tips for 2026 — from screen cracks and battery health to knowing when to repair vs. upgrade.",
-    image_url: "images/blog/top-5-iphone-repair-tips.jpg",
-    category: "Repair",
-    date: "2026-01-10"
   },
   {
     title: "The Smart Buyer's Guide to Used Laptops in Dubai (2026)",
@@ -76,7 +50,7 @@ const blogPosts = [
       </ul>
 
       <h3>4. Why buy from a trusted store vs. private sellers</h3>
-      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Mobile & Computers's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/repair.html">post-purchase repair support</a> if anything comes up down the road.</p>
+      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Mobile & Computers's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase repair support</a> if anything comes up down the road.</p>
 
       <h3>5. Trade up: sell your old device toward an upgrade</h3>
       <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to P Z M Mobile & Computers for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
@@ -93,7 +67,7 @@ const blogPosts = [
     content: `<p>Dubai's heat and dust are tough on computers. Whether you have a <a href="/services/gaming-pc.html">custom gaming PC</a> or a work desktop, regular maintenance prevents performance drops, sudden failures, and expensive repairs. Here are the most important things you should be doing in 2026.</p>
 
       <h3>1. Dust cleaning — the single most impactful thing you can do</h3>
-      <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/repair.html">P Z M Mobile & Computers for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
+      <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/index.html">P Z M Mobile & Computers for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
 
       <h3>2. Monitor your temperatures</h3>
       <p>Install HWiNFO64 (free) and check your CPU and GPU temperatures under load. For most modern processors, anything below 85°C under sustained load is acceptable. GPUs should stay below 90°C. If you are hitting higher numbers, it is time to clean, replace thermal paste, or upgrade your cooling solution. If heat stays high after a basic clean, ask about <a href="/services/gaming-pc.html">cooling and airflow upgrades</a> before a minor thermal issue turns into board damage. Thermal paste should be replaced every 2–3 years for best results.</p>
@@ -108,7 +82,7 @@ const blogPosts = [
       <p>Dubai's power grid is generally stable, but micro-surges and brownouts happen — especially during summer peak loads. Use a quality surge protector at minimum, or better yet, a UPS (uninterruptible power supply). A sudden power loss during a Windows update or BIOS flash can brick your system. A basic 650VA UPS costs less than a single component replacement.</p>
 
       <h3>When to call in the professionals</h3>
-      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/repair.html">P Z M Mobile & Computers offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/jumeirah-village.html">Jumeirah Village</a> or <a href="/areas/tecom.html">Tecom</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
+      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Mobile & Computers offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/jumeirah-village.html">Jumeirah Village</a> or <a href="/areas/tecom.html">Tecom</a>, <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "images/blog/essential-pc-maintenance-tips.jpg",
     category: "PC",
@@ -123,7 +97,7 @@ const blogPosts = [
       <p>If you have spent thousands on a <a href="/services/buy-iphone.html">new iPhone 17</a> or flagship Samsung, a premium tempered glass protector is the cheapest insurance you can buy. Look for 9H hardness rating, oleophobic coating (anti-fingerprint), and edge-to-edge coverage. Privacy screen protectors are worth considering if you use your phone for banking or work emails in crowded places like the Metro. Browse our full <a href="/services/accessories.html">accessories selection</a> for all major phone models.</p>
 
       <h3>2. Cases that actually protect</h3>
-      <p>Clear cases look great for a month, then yellow. In 2026, the move is toward matte or frosted cases with MagSafe compatibility — they stay clean, offer military-grade drop protection, and work with magnetic chargers and car mounts. For iPhones, Apple's own silicone and FineWoven cases remain top picks. For Samsung, Spigen and UAG offer the best protection-to-bulk ratio. A strong case and protector combo is still much cheaper than most <a href="/services/repair.html">screen or frame repairs</a> after a bad drop.</p>
+      <p>Clear cases look great for a month, then yellow. In 2026, the move is toward matte or frosted cases with MagSafe compatibility — they stay clean, offer military-grade drop protection, and work with magnetic chargers and car mounts. For iPhones, Apple's own silicone and FineWoven cases remain top picks. For Samsung, Spigen and UAG offer the best protection-to-bulk ratio. A strong case and protector combo is still much cheaper than most <a href="/services/index.html">screen or frame repairs</a> after a bad drop.</p>
 
       <h3>3. GaN chargers: smaller, faster, multi-device</h3>
       <p>GaN (gallium nitride) chargers have essentially replaced traditional brick chargers. A single 65W GaN charger can fast-charge your iPhone, iPad, and MacBook from one compact unit — perfect for travel and desk organization. For <a href="/services/gaming-pc.html">gaming laptop</a> owners, 100W+ GaN chargers now exist that can handle even power-hungry machines. Always buy from reputable brands — cheap chargers can damage your battery or worse.</p>
@@ -176,10 +150,10 @@ const blogPosts = [
         <li>Shows battery health below 80% (check Settings → Battery on iPhone)</li>
         <li>Charges noticeably faster than when new (smaller capacity fills faster)</li>
       </ul>
-      <p>It is time for a battery replacement. This is a straightforward <a href="/services/repair.html">repair that P Z M Mobile & Computers handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
+      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">repair that P Z M Mobile & Computers handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
 
       <h3>4. Repair, upgrade, or replace?</h3>
-      <p>If your phone is 1–2 years old, a <a href="/services/repair.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the fix is easier and cheaper than most people think.</p>
+      <p>If your phone is 1–2 years old, a <a href="/services/index.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the fix is easier and cheaper than most people think.</p>
 
       <p><a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20phone%20battery%20drains%20fast%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your phone model and battery symptoms before visiting, especially if you are planning the trip from <a href="/areas/dubai-marina.html">Dubai Marina</a>.</p>`,
     excerpt: "The real reasons your phone battery dies fast in 2026, which charging myths to ignore, and when it is time for a battery replacement.",
@@ -285,14 +259,14 @@ const blogPosts = [
         <li>If you have old devices collecting dust, their <a href="/services/sell-gadgets.html">trade-in value</a> is strong right now — sell while demand is high.</li>
         <li>Consider <a href="/services/buy-used.html">certified pre-owned devices</a> to stretch your dirham further during uncertain economic conditions.</li>
         <li>For new purchases, the <a href="/services/buy-iphone.html">iPhone 17 series</a> and latest MacBooks remain competitively priced in the UAE compared to many global markets.</li>
-        <li>If you need <a href="/services/repair.html">device repair</a> instead of replacement, it is an especially cost-effective choice when new device prices are elevated.</li>
+        <li>If you need <a href="/services/index.html">device repair</a> instead of replacement, it is an especially cost-effective choice when new device prices are elevated.</li>
         <li>Protect your investment with quality <a href="/services/accessories.html">cases, screen protectors, and accessories</a> — replacement costs are not going down.</li>
       </ul>
 
       <h3>6. Our outlook</h3>
       <p>Gold prices are expected to remain elevated through 2026 as global uncertainty continues. For tech buyers in Dubai, this means being strategic: buy what you need now rather than waiting for prices to drop, consider the used market seriously, and maintain your current devices well. The best deals go to informed buyers who act when stock and pricing align.</p>
 
-      <p>Visit P Z M Mobile & Computers in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/repair.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
+      <p>Visit P Z M Mobile & Computers in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
     image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.jpg",
     category: "Market",
@@ -310,7 +284,7 @@ const blogPosts = [
       <p>New phones lose value fastest in the first year. If you buy new at launch and sell after 12 months, the depreciation cost is often higher than expected. A used phone that already passed the first depreciation cycle usually holds value better over the same period. If you rotate devices often, used usually wins on total ownership cost.</p>
 
       <h3>3. Battery and repair risk in the used market</h3>
-      <p>The main risk with used iPhones is battery health and hidden prior repairs. Always ask for battery health, face ID and camera checks, and charging-port testing before purchase. Buying from a trusted store matters because you get a clear test process and post-sale support. If needed, <a href="/services/repair.html">battery or screen repair service</a> can keep the phone cost-effective for another year or two.</p>
+      <p>The main risk with used iPhones is battery health and hidden prior repairs. Always ask for battery health, face ID and camera checks, and charging-port testing before purchase. Buying from a trusted store matters because you get a clear test process and post-sale support. If needed, <a href="/services/index.html">battery or screen repair service</a> can keep the phone cost-effective for another year or two.</p>
 
       <h3>4. Who should buy new vs used</h3>
       <ul>
@@ -329,43 +303,6 @@ const blogPosts = [
     date: "2026-05-22"
   },
   {
-    title: "iPhone Battery Replacement Cost in Dubai: Repair or Upgrade? (2026)",
-    slug: "iphone-battery-replacement-cost-dubai-2026",
-    content: `<p>If your iPhone drops from 40 percent to 10 percent in an hour, you are not imagining it. Battery aging is one of the most common reasons people feel forced to upgrade too early. In many cases, a battery replacement is the highest ROI fix you can make in 2026.</p>
-
-      <h3>1. Signs your battery is the real problem</h3>
-      <ul>
-        <li>Maximum battery health below 80 percent.</li>
-        <li>Unexpected shutdowns during calls, maps, or camera use.</li>
-        <li>Noticeable lag under normal tasks even after software updates.</li>
-        <li>Device gets hot while charging or during light use.</li>
-      </ul>
-      <p>If these symptoms match your phone, start with a battery check before buying a new device.</p>
-
-      <h3>2. Cost logic: repair first, upgrade second</h3>
-      <p>As a simple rule, if the battery job is a small fraction of your replacement budget, repair first. For many iPhone models, restoring battery health can add 12 to 24 months of comfortable use. That lets you delay a full upgrade and buy when market pricing is better.</p>
-
-      <h3>3. When replacement is not enough</h3>
-      <p>If your phone also has severe board issues, camera faults, or major display damage, compare bundled repair cost against a newer used model. In those cases, moving to a <a href="/services/buy-used.html">certified used iPhone</a> may be smarter than stacking repairs on an aging device. If your current phone still has value, offset the upgrade through <a href="/services/sell-gadgets.html">trade-in</a>.</p>
-
-      <h3>4. How to make battery life last after repair</h3>
-      <ul>
-        <li>Keep charge mostly between 20 and 80 percent for daily use.</li>
-        <li>Avoid heat exposure in cars, dashboards, and direct sun.</li>
-        <li>Use quality chargers and cables with stable output.</li>
-        <li>Review background app activity every few weeks.</li>
-      </ul>
-
-      <h3>5. Practical path for Dubai commuters</h3>
-      <p>If your phone is essential for work, navigation, and WhatsApp business communication, downtime is the real hidden cost. A same-day battery fix through <a href="/services/repair.html">P Z M Mobile & Computers repair service</a> is often cheaper than losing productivity for several days. You can also check the area page if you are coming from <a href="/areas/dubai-marina.html">Dubai Marina</a> before heading to the store.</p>
-
-      <p>For a fast estimate, send your exact model and battery health screenshot on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20an%20iPhone%20battery%20replacement%20quote%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>.</p>`,
-    excerpt: "A practical 2026 guide to iPhone battery replacement in Dubai: when repair makes financial sense and when upgrading is smarter.",
-    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
-    category: "Repair",
-    date: "2026-05-23"
-  },
-  {
     title: "Gaming Laptop vs Gaming PC in Dubai: Which Gives Better Value in 2026?",
     slug: "gaming-laptop-vs-gaming-pc-dubai-2026",
     content: `<p>Choosing between a gaming laptop and a gaming desktop in Dubai is not just about performance. It is about heat, upgrade flexibility, travel habits, and cost per frame over time. Here is the comparison that helps you buy the right machine the first time.</p>
@@ -380,7 +317,7 @@ const blogPosts = [
       <p>Desktop upgrades are straightforward: swap GPU, add RAM, or expand storage when needed. Laptop upgrades are limited, usually to RAM and SSD in many models. If you plan to improve your system gradually, a <a href="/services/gaming-pc.html">custom gaming PC build</a> is usually a better long-term investment.</p>
 
       <h3>4. Heat and environment in Dubai</h3>
-      <p>Dubai heat and dust matter. Laptops can throttle faster in warm rooms and need regular cleaning to stay stable. Desktops with proper airflow and quality cooling handle local conditions better. Whichever you choose, schedule periodic cleaning and thermal checks through <a href="/services/repair.html">PC and laptop repair support</a>.</p>
+      <p>Dubai heat and dust matter. Laptops can throttle faster in warm rooms and need regular cleaning to stay stable. Desktops with proper airflow and quality cooling handle local conditions better. Whichever you choose, schedule periodic cleaning and thermal checks through <a href="/services/index.html">PC and laptop repair support</a>.</p>
 
       <h3>5. Decision shortcuts by user type</h3>
       <ul>
@@ -439,7 +376,7 @@ const blogPosts = [
       </ul>
 
       <h3>3. Should you repair before selling?</h3>
-      <p>If damage is minor, basic repair can improve resale value. If repair cost is high relative to device value, sell as-is and move on. Ask for both scenarios first: as-is trade-in value vs post-repair value. You can check repair options through <a href="/services/repair.html">device repair service</a> before deciding.</p>
+      <p>If damage is minor, basic repair can improve resale value. If repair cost is high relative to device value, sell as-is and move on. Ask for both scenarios first: as-is trade-in value vs post-repair value. You can check repair options through <a href="/services/index.html">device repair service</a> before deciding.</p>
 
       <h3>4. Trade-in vs private marketplace</h3>
       <p>Private listings can sometimes get a higher price, but they cost time and carry no-show risk. Trade-in is usually faster, safer, and easier when you want to immediately move into a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">better certified used model</a>.</p>
@@ -534,49 +471,6 @@ const blogPosts = [
     date: "2026-05-30"
   },
   {
-    title: "Cracked Screen, Water Damage, or Battery? When iPhone Repair Is Worth It in Dubai (2026)",
-    slug: "cracked-screen-vs-replace-iphone-dubai-2026",
-    content: `<p>An iPhone repair is worth it when the cost stays clearly below your phone's current resale value, and when the fault is one isolated thing not three stacked together. Below is the honest 2026 framework with real AED ranges so you can decide before driving in. If the math says "replace," we will tell you that too.</p>
-
-      <h3>1. The one rule that decides everything</h3>
-      <p>If repair cost is <strong>under 55%</strong> of your phone's used resale value, fix it. If <strong>above 55%</strong>, replace it. See the <a href="/blog/used-iphone-trade-in-price-guide-dubai-2026/">used iPhone price guide</a> for AED ranges.</p>
-
-      <h3>2. Cracked screen repair (AED, original OLED)</h3>
-      <ul>
-        <li>iPhone 11 / 12: 350 - 750</li>
-        <li>iPhone 13 / 14: 550 - 1,000</li>
-        <li>iPhone 14 Pro Max: 750 - 1,100</li>
-        <li>iPhone 15 Pro / Pro Max: 850 - 1,300</li>
-        <li>iPhone 16 Pro / Pro Max: 1,000 - 1,500</li>
-      </ul>
-      <p>Third-party screens cost half but reduce future trade-in value by a similar amount. Start with <a href="/services/repair.html">our repair service</a>.</p>
-
-      <h3>3. Battery replacement (AED)</h3>
-      <ul>
-        <li>iPhone 11-13 series: 180 - 280</li>
-        <li>iPhone 14 series: 220 - 320</li>
-        <li>iPhone 15 / 16 series: 280 - 420</li>
-      </ul>
-
-      <h3>4. Water damage — diagnosis first</h3>
-      <p>Logic board clean + only screen/speaker affected: repair (400-1,400 AED). Mild oxidation: repair with honest disclosure (700-1,800 AED). Heavy logic board damage: replacement is smarter.</p>
-
-      <h3>5. When replacement beats repair</h3>
-      <ul>
-        <li>Repair cost above 55% of current used value.</li>
-        <li>Three+ issues stacked on the same phone.</li>
-        <li>iPhone 11 or older with logic board damage.</li>
-        <li>Battery below 75% AND another major fault.</li>
-      </ul>
-      <p>A <a href="/services/buy-used.html">certified used iPhone</a> often costs the same or less than the repair quote.</p>
-
-      <p>Send a photo of the damage on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20a%20repair%20quote.%20Model%3A%20%2C%20Issue%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your model for an honest AED range before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
-    excerpt: "Honest 2026 decision guide: when iPhone repair in Dubai is worth it vs replacing. AED cost ranges for screen, battery, water damage, Face ID per model.",
-    image_url: "images/blog/same-day-phone-screen-repair-explained.jpg",
-    category: "Repair",
-    date: "2026-05-30"
-  },
-  {
     title: "Best Used MacBook to Buy in Dubai 2026: Air vs Pro by Year",
     slug: "best-used-macbook-dubai-2026",
     content: `<p>A used MacBook is one of the smartest ways to save 30-50% on a great laptop in Dubai — but only if you pick the right year and chip. Below is the honest 2026 buyer's grid we walk customers through in our Al Barsha workshop, including the 3 models we never recommend.</p>
@@ -654,41 +548,6 @@ const blogPosts = [
     date: "2026-05-30"
   },
   {
-    title: "iPhone Battery Health at 80%? Replace, Sell, or Keep — Dubai 2026 Guide",
-    slug: "iphone-battery-health-80-dubai-2026",
-    content: `<p>If you opened Battery Health and saw 80% (or the "Battery Service" message), you have three honest options: replace, sell and upgrade, or keep using it. Below is the AED math for each path in Dubai 2026.</p>
-
-      <h3>1. What 80% actually means</h3>
-      <p>You start losing real screen-on hours, and the phone may throttle peak performance to prevent shutdowns — especially in UAE summer heat.</p>
-
-      <h3>2. Option A — Replace the battery (AED, original-quality cell)</h3>
-      <ul>
-        <li>iPhone 11 / 12 / 13: 180 - 280 AED</li>
-        <li>iPhone 14: 220 - 320 AED</li>
-        <li>iPhone 15 / 16: 280 - 420 AED</li>
-      </ul>
-      <p><strong>Choose this if:</strong> the phone is iPhone 13 or newer, screen and Face ID work, and you keep phones 2+ more years. Book via <a href="/services/repair.html">our repair service</a>.</p>
-
-      <h3>3. Option B — Sell and upgrade</h3>
-      <p>Phones at 80% take a trade-in hit because the next buyer needs a rebattery: typically -150 to -300 AED off standard bands, -200 to -400 AED if "Battery Service" warning is showing. See full ranges in our <a href="/blog/used-iphone-trade-in-price-guide-dubai-2026/">trade-in price guide</a>. Choose this if the phone is iPhone 11/12 or has other faults. Compare upgrade options at <a href="/services/buy-iphone.html">new iPhone 17 line</a> or <a href="/services/buy-used.html">certified used iPhones</a>.</p>
-
-      <h3>4. Option C — Keep using it</h3>
-      <p>Charge twice a day and live with shorter runtime. Choose this only if you are 2-3 months from buying a new phone anyway.</p>
-
-      <h3>5. Decision flow</h3>
-      <ol>
-        <li>iPhone 13/14/15/16, otherwise perfect → replace battery.</li>
-        <li>iPhone 11/12 or other faults → sell, trade in, upgrade.</li>
-        <li>Upgrading within 60 days → keep, charge twice, sell when ready.</li>
-      </ol>
-
-      <p>WhatsApp your model + battery health to <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20iPhone%20battery%20is%20at%20%25%20health.%20Model%3A%20.%20What%20do%20you%20recommend%20(via%20pzm.ae)" target="_blank" rel="noopener">our team</a> for the AED math on both paths before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
-    excerpt: "Honest 2026 decision guide for iPhone owners in Dubai whose battery hit 80%: replace, sell and upgrade, or keep — with AED math for each path.",
-    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
-    category: "Repair",
-    date: "2026-05-30"
-  },
-  {
     title: "PS5 vs Gaming PC in Dubai 2026: Honest AED Math by Use Case",
     slug: "ps5-vs-gaming-pc-dubai-2026",
     content: `<p>"PS5 or build a PC?" is the most common gaming question we get from Al Barsha customers in 2026. Most online comparisons stop at the sticker price. The real answer in Dubai is the 3-year total cost — and that flips the winner for most use cases.</p>
@@ -749,38 +608,6 @@ const blogPosts = [
     excerpt: "5 honest 2026 picks for the best used iPhone under 1,500 AED in Dubai, with AED ranges per model and what each is great for.",
     image_url: "images/buy_used/used_iphone_15_pro_max_main.webp",
     category: "Buying",
-    date: "2026-05-30"
-  },
-  {
-    title: "iPhone Screen Repair Dubai 2026: Original vs Aftermarket — Honest AED & Trade-In Impact",
-    slug: "iphone-screen-original-vs-aftermarket-dubai-2026",
-    content: `<p>If you cracked your iPhone screen in Dubai, the first quote from any street workshop will usually be aftermarket — and look great vs the original price. That gap is real, but so is the cost over the life of the phone. Below is the honest 2026 breakdown so you choose with eyes open.</p>
-
-      <h3>1. AED price gap by model (May 2026)</h3>
-      <ul>
-        <li>iPhone 11 / 12: original 350-750 / aftermarket OLED 180-350 / incell 130-220.</li>
-        <li>iPhone 13 / 14: original 550-1,000 / aftermarket OLED 280-500.</li>
-        <li>iPhone 14 Pro Max: original 750-1,100 / aftermarket OLED 400-650.</li>
-        <li>iPhone 15 Pro / Pro Max: original 850-1,300 / aftermarket OLED 480-750.</li>
-        <li>iPhone 16 Pro / Pro Max: original 1,000-1,500 / aftermarket OLED 550-900.</li>
-      </ul>
-
-      <h3>2. The 3 things you lose with aftermarket</h3>
-      <p>True Tone usually breaks. Peak brightness drops 15-30% (matters in Dubai sun). "Unknown Part" warning appears in Settings forever.</p>
-
-      <h3>3. Trade-in impact in Dubai</h3>
-      <p>Non-original screen reduces trade-in offers by 250-600 AED — the next buyer (or our workshop) needs to fit original to clear the iOS warning. If you sell within 12-24 months, original is the cheaper math.</p>
-
-      <h3>4. When aftermarket is fine</h3>
-      <p>iPhone 11/12 you will keep <12 more months, secondary/kids device, or you will sell privately to a buyer who knows.</p>
-
-      <h3>5. When original is non-negotiable</h3>
-      <p>iPhone 13+ kept 12+ months, any Pro model, planning to trade in within 18 months.</p>
-
-      <p>Send a photo + model on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20need%20an%20iPhone%20screen%20quote%20original%20vs%20aftermarket.%20Model%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for both AED prices and trade-in math before visiting <a href="/areas/al-barsha.html">Al Barsha</a>. See the <a href="/blog/cracked-screen-vs-replace-iphone-dubai-2026/">repair-or-replace decision guide</a>.</p>`,
-    excerpt: "Original vs aftermarket iPhone screen in Dubai 2026: honest AED price gap by model, the 3 things you lose with aftermarket, and how it hits trade-in value.",
-    image_url: "images/blog/same-day-phone-screen-repair-explained.jpg",
-    category: "Repair",
     date: "2026-05-30"
   },
   {
@@ -879,7 +706,7 @@ const postJourneys = {
   },
   "top-5-iphone-repair-tips": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Start with phone repair guidance",
       shortLabel: "Repair services",
       description: "Use repair services for screen, battery, and device fault checks before replacing the phone."
@@ -907,7 +734,7 @@ const postJourneys = {
   },
   "essential-pc-maintenance-tips": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Check PC repair and upgrade options",
       shortLabel: "PC repair",
       description: "Use repair services for diagnostics, deep cleaning, thermal work, and performance upgrades."
@@ -935,7 +762,7 @@ const postJourneys = {
   },
   "understanding-smartphone-battery-life": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Check phone battery replacement",
       shortLabel: "Battery repair",
       description: "Start with repair guidance if you want to fix battery life before upgrading."
@@ -1005,7 +832,7 @@ const postJourneys = {
   },
   "iphone-battery-replacement-cost-dubai-2026": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Get iPhone battery replacement support",
       shortLabel: "Battery service",
       description: "Use repair services to check battery health and same-day replacement options first."
@@ -1089,7 +916,7 @@ const postJourneys = {
   },
   "cracked-screen-vs-replace-iphone-dubai-2026": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Book an iPhone repair check",
       shortLabel: "Repair",
       description: "Send a damage photo for an honest same-day AED repair quote before driving in."
@@ -1131,7 +958,7 @@ const postJourneys = {
   },
   "iphone-battery-health-80-dubai-2026": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Book a battery replacement",
       shortLabel: "Battery service",
       description: "Same-day battery service with verified-quality cells and a 90-day warranty."
@@ -1173,7 +1000,7 @@ const postJourneys = {
   },
   "iphone-screen-original-vs-aftermarket-dubai-2026": {
     moneyPage: {
-      href: "/services/repair.html",
+      href: "/services/index.html",
       label: "Book an iPhone screen repair",
       shortLabel: "Screen repair",
       description: "Same-day service with original or high-grade OLED options and a written warranty."

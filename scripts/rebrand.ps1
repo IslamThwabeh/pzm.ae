@@ -5,12 +5,12 @@
 
 $ErrorActionPreference = 'Stop'
 
-$LongBrand  = 'P Z M Mobile & Computers -Sell Fix New Used PC Build'
+$LongBrand  = 'P Z M Mobile & Computers -Sell New Used PC Build'
 $ShortBrand = 'P Z M Mobile & Computers'
 $NewTagline = 'Sell&#8226;Fix&#8226;New&#8226;Used&#8226;PC&#8226;Build'
 
 # JSON-LD escapes & as \u0026; OG meta uses & directly; some pages use &amp;
-$LongBrandJsonEsc = 'P Z M Mobile \u0026 Computers -Sell Fix New Used PC Build'
+$LongBrandJsonEsc = 'P Z M Mobile \u0026 Computers Sell New Used PC Build'
 $ShortBrandJsonEsc = 'P Z M Mobile \u0026 Computers'
 
 # Find HTML files (root + all subfolders), exclude node_modules, .venv, .git
@@ -55,13 +55,13 @@ foreach ($file in $files) {
   # --- PASS 3: meta / OG / Twitter / schema / body — use LONG brand ---
   # Standard text form (HTML or attribute)
   $content = $content -replace 'PZM Computers & Phones Store', $LongBrand
-  $content = $content -replace 'PZM Computers &amp; Phones Store', "P Z M Mobile &amp; Computers -Sell Fix New Used PC Build"
+  $content = $content -replace 'PZM Computers &amp; Phones Store', "P Z M Mobile &amp; Computers Sell New Used PC Build"
 
   # JSON-LD escaped form (\u0026 for &)
   $content = $content -replace 'PZM Computers \\u0026 Phones Store', $LongBrandJsonEsc
 
   # alternateName in JSON-LD — replace Arabic transliteration with long Latin brand
-  $content = $content -replace '"alternateName":\s*"\u0628\u064a \u0632\u062f \u0627\u0645 \u0644\u0644\u0643\u0645\u0628\u064a\u0648\u062a\u0631 \u0648\u0627\u0644\u0647\u0648\u0627\u062a\u0641[^"]*"', '"alternateName": "P Z M Mobile & Computers -Sell Fix New Used PC Build"'
+  $content = $content -replace '"alternateName":\s*"\u0628\u064a \u0632\u062f \u0627\u0645 \u0644\u0644\u0643\u0645\u0628\u064a\u0648\u062a\u0631 \u0648\u0627\u0644\u0647\u0648\u0627\u062a\u0641[^"]*"', '"alternateName": "P Z M Mobile & Computers -Sell New Used PC Build"'
 
   # --- PASS 4: trailing legacy tagline in titles that have NO brand suffix ---
   # (e.g. index.html: <title>PZM Computers & Phones Store New&#8226;Used&#8226;Phone&#8226;PC&#8226;Trade&#8209;In</title>
