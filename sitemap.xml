@@ -73,6 +73,46 @@
     </image:image>
   </url>
   <url>
+    <loc>https://pzm.ae/services/sell-gadgets-al-barsha.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/Services/sell_gadget.jpg</image:loc>
+      <image:title>Sell Your Phone or Laptop in Al Barsha</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/sell-gadgets-dubai-marina.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/Services/sell_gadget.jpg</image:loc>
+      <image:title>Sell Your Phone or Laptop in Dubai Marina</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/buy-used-jumeirah.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</image:loc>
+      <image:title>Buy a Used iPhone or MacBook in Jumeirah</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pzm.ae/services/gaming-pc-tecom.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/Services/gaming_pc.jpg</image:loc>
+      <image:title>Custom Gaming PC Builds Near Tecom &amp; Media City</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://pzm.ae/ar/services/buy-used.html</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
