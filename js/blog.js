@@ -375,8 +375,8 @@ const blogPosts = [
         <li><strong>Timing:</strong> value usually drops after major new model launches.</li>
       </ul>
 
-      <h3>3. Should you repair before selling?</h3>
-      <p>If damage is minor, basic repair can improve resale value. If repair cost is high relative to device value, sell as-is and move on. Ask for both scenarios first: as-is trade-in value vs post-repair value. You can check repair options through <a href="/services/index.html">device repair service</a> before deciding.</p>
+      <h3>3. Should you sell as-is?</h3>
+      <p>If damage is minor, be transparent and ask for an as-is valuation first. If the cost of improving the device is high relative to its value, selling as-is is usually cleaner. Our team can compare the as-is offer against upgrade options so you can decide without wasting time.</p>
 
       <h3>4. Trade-in vs private marketplace</h3>
       <p>Private listings can sometimes get a higher price, but they cost time and carry no-show risk. Trade-in is usually faster, safer, and easier when you want to immediately move into a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">better certified used model</a>.</p>
@@ -391,7 +391,7 @@ const blogPosts = [
 
       <p>To get a fast estimate, send model, storage, and clear photos to P Z M Mobile & Computers on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-quoz.html">Al Quoz</a> or nearby areas.</p>`,
     excerpt: "Maximize trade-in value in Dubai with this 2026 guide on preparation, pricing factors, and when to sell your used phone.",
-    image_url: "images/2026-march/shop-repair-one-trip.jpg",
+    image_url: "images/blog/sell-used-phone-trade-in-dubai-2026.png",
     category: "Trade-in",
     date: "2026-05-26"
   },
@@ -417,7 +417,7 @@ const blogPosts = [
 
       <p>Message us on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20help%20me%20decide%20between%20iPhone%2017%20Pro%20Max%20and%2016%20Pro%20Max%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your current model and battery health for a personal recommendation before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
     excerpt: "Honest 2026 upgrade comparison: iPhone 17 Pro Max vs 16 Pro Max in Dubai. Camera, chip, battery, AED price gap, and trade-in math.",
-    image_url: "images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg",
+    image_url: "images/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026.png",
     category: "Buying",
     date: "2026-05-30"
   },
@@ -959,7 +959,7 @@ const blogPosts = [
 
       <p>Need a real AED recommendation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20read%20the%20iOS%2026.5%20article%20and%20want%20help%20choosing%20an%20iPhone.%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> or visit <a href="/areas/al-barsha.html">our Al Barsha store</a>.</p>`,
     excerpt: "iOS 26.5 brings encrypted RCS messaging, a new Pride wallpaper, Maps changes, and security updates. Here is what Dubai iPhone buyers should know before buying, trading in, or upgrading.",
-    image_url: "images/buy_iphone/iPhone_17_all_colors.jpg",
+    image_url: "images/blog/ios-26-5-update-dubai.png",
     category: "iPhone",
     date: "2026-06-11"
   }
