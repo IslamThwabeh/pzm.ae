@@ -942,6 +942,26 @@ const blogPosts = [
     image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
     category: "Selling",
     date: "2026-05-31"
+  },
+  {
+    title: "iOS 26.5 Update in Dubai: What iPhone Buyers Should Know",
+    slug: "ios-26-5-update-iphone-dubai-2026",
+    content: `<p>Apple's iOS 26.5 update brings encrypted RCS messaging in beta, a new Pride Luminance wallpaper, Maps improvements, and security updates. For Dubai buyers, the update matters most when deciding whether to buy a new iPhone, choose a tested used iPhone, or trade in your current device.</p>
+
+      <h3>1) Why iOS 26.5 matters</h3>
+      <p>The headline feature is end-to-end encrypted RCS messaging in beta for supported carriers. If your family, customers, or team use both iPhone and Android, newer iPhones and well-kept used iPhones that support iOS 26.5 become more practical for everyday messaging.</p>
+
+      <h3>2) New or used after the update?</h3>
+      <p>Start with <a href="/services/buy-iphone.html">new iPhone options</a> if you want the longest software runway and fresh warranty. Choose a <a href="/services/buy-used.html">tested used iPhone</a> if AED value matters more and the device has strong battery health, clean storage, and confirmed iOS 26.5 support.</p>
+
+      <h3>3) Trade-in timing</h3>
+      <p>If your current iPhone still runs well, use iOS 26.5 as a checkpoint. Back up your data, check battery health, then request a <a href="/services/sell-gadgets.html">same-day trade-in quote</a> so you know the real net cost before upgrading.</p>
+
+      <p>Need a real AED recommendation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20read%20the%20iOS%2026.5%20article%20and%20want%20help%20choosing%20an%20iPhone.%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> or visit <a href="/areas/al-barsha.html">our Al Barsha store</a>.</p>`,
+    excerpt: "iOS 26.5 brings encrypted RCS messaging, a new Pride wallpaper, Maps changes, and security updates. Here is what Dubai iPhone buyers should know before buying, trading in, or upgrading.",
+    image_url: "images/buy_iphone/iPhone_17_all_colors.jpg",
+    category: "iPhone",
+    date: "2026-06-11"
   }
 ];
 
@@ -979,17 +999,32 @@ const staticBlogPostPaths = {
   "ps5-pro-vs-ps5-slim-dubai-2026": "/blog/ps5-pro-vs-ps5-slim-dubai-2026/",
   "nintendo-switch-2-dubai-2026": "/blog/nintendo-switch-2-dubai-2026/",
   "samsung-galaxy-s25-vs-iphone-17-dubai-2026": "/blog/samsung-galaxy-s25-vs-iphone-17-dubai-2026/",
-  "trade-in-vs-sell-privately-iphone-dubai-2026": "/blog/trade-in-vs-sell-privately-iphone-dubai-2026/"
+  "trade-in-vs-sell-privately-iphone-dubai-2026": "/blog/trade-in-vs-sell-privately-iphone-dubai-2026/",
+  "ios-26-5-update-iphone-dubai-2026": "/blog/ios-26-5-update-iphone-dubai-2026/"
 };
 
 const blogHubFeaturedSlugs = new Set([
   "how-to-choose-perfect-gaming-pc-build",
-  "top-5-iphone-repair-tips",
+  "ios-26-5-update-iphone-dubai-2026",
   "ultimate-guide-buying-used-laptops",
   "understanding-smartphone-battery-life"
 ]);
 
 const postJourneys = {
+  "ios-26-5-update-iphone-dubai-2026": {
+    moneyPage: {
+      href: "/services/buy-iphone.html",
+      label: "Check new iPhone availability",
+      shortLabel: "Buy iPhone",
+      description: "Compare models, storage, colors, and current AED pricing before visiting."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
   "how-to-choose-perfect-gaming-pc-build": {
     moneyPage: {
       href: "/services/gaming-pc.html",

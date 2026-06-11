@@ -957,6 +957,16 @@
   <!-- Phase 4 — New service-area landing pages -->
 
   <url>
+    <loc>https://pzm.ae/blog/ios-26-5-update-iphone-dubai-2026/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://pzm.ae/images/buy_iphone/iPhone_17_all_colors.jpg</image:loc>
+      <image:title>iOS 26.5 Update for iPhone Buyers in Dubai</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://pzm.ae/blog/iphone-17-vs-iphone-17-pro-dubai-2026/</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
