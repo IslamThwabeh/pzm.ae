@@ -15,6 +15,22 @@ Track and optimize these 10 pages weekly:
 9. /ar/services/student-laptops-dubai.html
 10. /ar/services/gaming-laptops-dubai.html
 
+Secondary timely cluster to watch from June 13, 2026 through the World Cup final weekend:
+
+1. /blog/world-cup-2026-dubai-home-watch-party-tech-setup/
+2. /blog/world-cup-2026-phone-checklist-dubai-fans/
+3. /blog/world-cup-2026-schedule-uae-time-dubai-tech-checklist/
+4. /blog/best-tv-soundbar-projector-world-cup-2026-dubai/
+5. /blog/stop-buffering-world-cup-2026-live-streams-dubai/
+6. Arabic equivalents under /ar/blog/.
+
+World Cup update triggers:
+
+1. If a page gets impressions for a team + "UAE time" or "Dubai time", add a short fixture/result refresh block.
+2. If a query includes "today", "next match", "expected match", "final", or "knockout", update the schedule page first.
+3. If queries mention buffering, live stream, TV, soundbar, projector, charger, or power bank, update the matching support article and strengthen links to accessories or repair.
+4. Do not publish score/result claims until verified from an official or clearly reliable source.
+
 ## Monday - Collect Baseline
 
 1. Open Search Console Performance report.

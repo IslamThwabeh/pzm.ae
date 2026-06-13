@@ -37,3 +37,22 @@ Primary cluster theme: used laptops and MacBook buying/repair intent in Dubai.
 2. Link to at least 1 relevant area page.
 3. Link to at least 1 related blog page.
 4. Include primary CTA to WhatsApp with `(via pzm.ae)`.
+
+## Timely Cluster Memory - World Cup 2026
+
+Published June 13, 2026 as an English + Arabic World Cup traffic cluster:
+
+1. `blog/world-cup-2026-dubai-home-watch-party-tech-setup/`
+2. `blog/world-cup-2026-phone-checklist-dubai-fans/`
+3. `blog/world-cup-2026-schedule-uae-time-dubai-tech-checklist/`
+4. `blog/best-tv-soundbar-projector-world-cup-2026-dubai/`
+5. `blog/stop-buffering-world-cup-2026-live-streams-dubai/`
+6. Arabic equivalents under `/ar/blog/`.
+
+Follow-up opportunities during the tournament:
+
+1. Add match-result and next-match refresh blocks after major UAE-interest or high-demand matches.
+2. Add expected-match pages only when search demand is clear, for example `Argentina next match UAE time`, `Brazil match time Dubai`, `Portugal match today UAE`, or knockout/final fixtures.
+3. Refresh the UAE-time schedule article at the start of each phase: Round of 32, Round of 16, quarter-finals, semi-finals, and final weekend.
+4. Use Search Console queries from June onward to decide which language/version deserves updates first.
+5. Keep all updates tied to PZM conversion paths: accessories, phone battery/charging, TV/audio setup, device checks, and gaming PC/console paths.

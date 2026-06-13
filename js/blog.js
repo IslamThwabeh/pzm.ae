@@ -962,6 +962,187 @@ const blogPosts = [
     image_url: "images/blog/ios-26-5-update-dubai.png",
     category: "iPhone",
     date: "2026-06-11"
+  },
+  {
+    title: "World Cup 2026 in Dubai: Best Home Watch Party Tech Setup",
+    slug: "world-cup-2026-dubai-home-watch-party-tech-setup",
+    content: `<p>World Cup 2026 is the kind of month where one bad cable, weak Wi-Fi corner, or dying remote can ruin the best match of the night. If you are watching from Dubai, the smartest setup is not always a new TV. It is a clean, reliable mix of screen, sound, power, and phone backup that keeps the match running when friends arrive.</p>
+
+      <h3>1) Start with the weak link: internet stability</h3>
+      <p>Live football exposes every network problem. Before buying anything, test the room where people will watch. If the stream buffers when doors close or people connect their phones, add a better router position, mesh node, or Ethernet run to the streaming device. A simple cable can beat a fancy gadget when kickoff starts.</p>
+
+      <h3>2) Upgrade sound before replacing the screen</h3>
+      <p>Most modern TVs look good enough for football, but many sound thin in a crowded room. A compact soundbar with clear dialogue makes commentary, crowd noise, and family viewing more enjoyable. If your budget is under 1,000 AED, sound plus a stable HDMI setup usually delivers the biggest improvement.</p>
+
+      <h3>3) Keep power simple and safe</h3>
+      <p>For match nights, use a quality surge-protected extension strip and avoid stacking cheap adapters. Dubai homes often have phones, laptops, controllers, lamps, and a TV sharing one area. Clean power keeps the setup safer and prevents someone from unplugging the wrong device during a big moment.</p>
+
+      <h3>4) Match-night accessories worth buying</h3>
+      <ul>
+        <li>Certified HDMI 2.1 cable for 4K TVs and consoles</li>
+        <li>Surge-protected extension strip with enough sockets</li>
+        <li>Fast USB-C charger for phones and tablets</li>
+        <li>Power bank for guests who are recording, posting, and messaging</li>
+        <li>Bluetooth speaker or soundbar for smaller apartments</li>
+      </ul>
+
+      <h3>5) Quick setup by budget</h3>
+      <p><strong>Under 500 AED:</strong> HDMI cable, surge protector, charger, and a basic phone stand for video calls during the match.</p>
+      <p><strong>500 - 1,500 AED:</strong> Add a soundbar, power bank, better streaming remote, and cable cleanup.</p>
+      <p><strong>1,500 - 3,000 AED:</strong> Consider a better streaming device, stronger audio, or a TV upgrade only if your current screen has poor brightness or motion blur.</p>
+
+      <h3>6) When a gaming PC or console helps</h3>
+      <p>If you also play football games after the match, a PS5, console accessories, or a <a href="/services/gaming-pc.html">custom gaming PC</a> can turn World Cup month into a full entertainment upgrade. For most homes, though, fix the watching setup first and keep the gaming spend separate.</p>
+
+      <p>Want a quick World Cup setup quote in Dubai? Send your TV model, room size, and budget on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20a%20World%20Cup%202026%20home%20watch%20setup.%20TV%20model%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also browse <a href="/services/accessories.html">accessories</a>, <a href="/services/brand-new.html">new devices</a>, or plan a visit to our <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
+    excerpt: "World Cup 2026 is match-night prime time. Here is a practical Dubai setup guide for Wi-Fi, sound, HDMI, chargers, power banks, and TV upgrades.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "Accessories",
+    date: "2026-06-13"
+  },
+  {
+    title: "World Cup 2026 Phone Checklist: Dubai Fans, Fix These Before Match Night",
+    slug: "world-cup-2026-phone-checklist-dubai-fans",
+    content: `<p>World Cup nights are hard on phones. People stream highlights, record reactions, join group chats, order food, book rides, and use navigation all in the same evening. If your phone is already slow, low on storage, or losing battery by dinner, fix it before the next big match.</p>
+
+      <h3>1) Battery health comes first</h3>
+      <p>If your iPhone battery health is near or below 80%, World Cup month will make the problem obvious. Long screen-on time, 5G, camera use, WhatsApp groups, and delivery apps drain weak batteries quickly. A same-day battery replacement is usually cheaper than rushing into a new phone.</p>
+
+      <h3>2) Free storage before you record</h3>
+      <p>Clear at least 10-20 GB before match night if you plan to record video. Delete old downloads, move photos to cloud storage, remove unused apps, and clear WhatsApp media from large groups. A full phone can miss the clip you actually wanted to keep.</p>
+
+      <h3>3) Check your charger and cable</h3>
+      <p>A tired cable can charge slowly or disconnect when someone moves the table. Use a quality USB-C or Lightning cable and a fast charger from a trusted brand. If guests are coming over, keep one spare charger in the watching area so nobody unplugs the TV or router.</p>
+
+      <h3>4) Power bank checklist</h3>
+      <ul>
+        <li>10,000 mAh is enough for most match nights</li>
+        <li>20,000 mAh is better for travel, fan zones, and long evenings out</li>
+        <li>USB-C PD charging is best for newer phones and tablets</li>
+        <li>Charge the power bank the night before, not five minutes before leaving</li>
+      </ul>
+
+      <h3>5) Camera and screen protection</h3>
+      <p>Big nights mean busy tables, crowded restaurants, and more drops. A fresh tempered glass protector and case are small money compared with a cracked OLED screen. If your camera lens protector is scratched, replace it before blaming the phone for blurry clips.</p>
+
+      <h3>6) Repair or upgrade?</h3>
+      <p>Repair if the phone is otherwise fast and the only problem is battery, charging port, or screen damage. Upgrade if your phone is too old for current apps, has weak storage, or needs multiple repairs at once. If you are unsure, ask for a repair quote and trade-in value side by side.</p>
+
+      <p>Need the phone ready before the next match? Send your model and issue on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20my%20phone%20ready%20for%20World%20Cup%202026.%20Model%3A%20%2C%20Issue%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Start with <a href="/services/index.html">device repair</a>, compare <a href="/services/accessories.html">phone accessories</a>, or check <a href="/services/buy-used.html">tested used phones</a> if replacement makes more sense.</p>`,
+    excerpt: "A practical World Cup 2026 phone checklist for Dubai fans: battery health, storage, chargers, power banks, screen protection, and when to repair or upgrade.",
+    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
+    category: "Mobile",
+    date: "2026-06-13"
+  },
+  {
+    title: "World Cup 2026 Schedule in UAE Time: Dubai Fan Tech Checklist",
+    slug: "world-cup-2026-schedule-uae-time-dubai-tech-checklist",
+    content: `<p>World Cup 2026 runs from June 11 to July 19, with group-stage matches first, then the Round of 32, Round of 16, quarter-finals, semi-finals, third-place match, and final. For Dubai fans, the most useful question is not only “what time is the match?” It is “is my screen, stream, phone, and power setup ready before kickoff in UAE time?”</p>
+
+      <h3>1) Use UAE time before you make plans</h3>
+      <p>Dubai is on Gulf Standard Time, UTC+4. Many match listings online show local stadium time, Eastern Time, Pacific Time, or UK time. Before you invite people, add the match to your calendar in UAE time and check whether it lands at dinner, late night, or early morning.</p>
+
+      <h3>2) Tournament windows to remember</h3>
+      <ul>
+        <li>Group stage: June 11 - June 27, 2026</li>
+        <li>Round of 32: June 28 - July 3, 2026</li>
+        <li>Round of 16: July 4 - July 7, 2026</li>
+        <li>Quarter-finals: July 9 - July 11, 2026</li>
+        <li>Semi-finals: July 14 - July 15, 2026</li>
+        <li>Final weekend: July 18 - July 19, 2026</li>
+      </ul>
+
+      <h3>3) The 60-minute pre-match checklist</h3>
+      <p>One hour before kickoff, restart the streaming device, check the app login, test the Wi-Fi in the watching room, charge the remote, and plug in the soundbar. This sounds basic, but most match-night problems are simple things discovered too late.</p>
+
+      <h3>4) Phone checklist for UAE-time matches</h3>
+      <p>If the match is late at night, your phone may already be at 30% by kickoff. Keep a USB-C charger, power bank, and spare cable near the sofa. If your battery health is weak, fix it before the knockout stage when match importance and phone usage both jump.</p>
+
+      <h3>5) Home setup checklist</h3>
+      <ul>
+        <li>Stable router or Ethernet path to the TV/streaming box</li>
+        <li>HDMI cable that supports your TV resolution and refresh rate</li>
+        <li>Soundbar or speaker tested before guests arrive</li>
+        <li>Surge-protected extension strip for TV, router, and chargers</li>
+        <li>Enough storage on phones for photos and videos</li>
+      </ul>
+
+      <h3>6) Best PZM path for quick prep</h3>
+      <p>If you only have time for one store run, prioritize accessories: HDMI cable, charger, power bank, surge protector, and screen protector. If your TV, phone, or laptop has an existing issue, solve that before spending on extras.</p>
+
+      <p>Need help getting ready before the next UAE-time match? Send your phone model, TV model, and budget on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20a%20World%20Cup%202026%20UAE%20time%20match%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also start from <a href="/services/accessories.html">accessories</a>, <a href="/services/index.html">repair services</a>, or our <a href="/areas/al-barsha.html">Al Barsha store page</a>.</p>`,
+    excerpt: "A Dubai fan checklist for World Cup 2026 in UAE time: schedule windows, pre-match tech checks, phone battery prep, streaming setup, and accessories.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "Accessories",
+    date: "2026-06-13"
+  },
+  {
+    title: "Best TV, Soundbar, and Projector Setup for World Cup 2026 in Dubai",
+    slug: "best-tv-soundbar-projector-world-cup-2026-dubai",
+    content: `<p>The best World Cup 2026 setup in Dubai depends on your room, not only your budget. A bright apartment living room, a small bedroom, and a villa majlis need different choices. Before buying a new TV, projector, or soundbar, use this simple guide to spend where the match experience actually improves.</p>
+
+      <h3>1) TV: what matters for football</h3>
+      <p>For football, look for motion handling, brightness, viewing angle, and app stability. A larger screen helps, but a cheap large TV with weak motion can make the ball look blurry. For most Dubai homes, a good 55-65 inch 4K TV is the practical sweet spot.</p>
+
+      <h3>2) Soundbar: the underrated upgrade</h3>
+      <p>A soundbar often improves match night more than a screen upgrade. Commentary becomes clearer, crowd noise feels bigger, and guests do not need the TV volume pushed too high. A 2.1 soundbar is enough for apartments; a stronger bar with subwoofer suits larger rooms.</p>
+
+      <h3>3) Projector: good for groups, picky about light</h3>
+      <p>A projector is excellent for watch parties if you can control room light and have a clean wall or screen. If your room is bright in the evening, choose a brighter projector or stay with a TV. For casual World Cup nights, do not forget the speaker; many projector speakers are too weak for a room full of people.</p>
+
+      <h3>4) Match setup by room type</h3>
+      <ul>
+        <li><strong>Small apartment:</strong> 50-55 inch TV, compact soundbar, short HDMI cable, clean power strip</li>
+        <li><strong>Family living room:</strong> 55-65 inch TV, 2.1 soundbar, better router position, spare chargers</li>
+        <li><strong>Large villa room:</strong> 65-75 inch TV or projector, stronger audio, mesh Wi-Fi, multiple charging points</li>
+        <li><strong>Outdoor or balcony:</strong> portable speaker, power bank, tablet/phone backup, avoid heat and dust exposure</li>
+      </ul>
+
+      <h3>5) Do not ignore cables and power</h3>
+      <p>Many people buy the big item and forget the small parts. A weak HDMI cable, crowded adapter, or loose extension can ruin a perfect setup. Use a certified cable, surge-protected strip, and enough USB charging ports for guests.</p>
+
+      <h3>6) Buy or fix first?</h3>
+      <p>Buy new if your TV is old, dim, or has poor app support. Fix first if the problem is only Wi-Fi, sound, remote, or cable clutter. A good accessory bundle can make an existing screen feel new for far less money.</p>
+
+      <p>Want a setup recommendation before you buy? Send room size, current TV/projector model, and budget on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20want%20TV%2C%20soundbar%2C%20or%20projector%20advice%20for%20World%20Cup%202026.%20Room%20size%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Browse <a href="/services/accessories.html">accessories</a>, <a href="/services/brand-new.html">new devices</a>, or visit <a href="/areas/al-barsha.html">PZM in Al Barsha</a>.</p>`,
+    excerpt: "A practical Dubai buying guide for World Cup 2026: choose the right TV, soundbar, projector, HDMI, power, and Wi-Fi setup by room type.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "Buying",
+    date: "2026-06-13"
+  },
+  {
+    title: "How to Stop Buffering During World Cup 2026 Live Streams in Dubai",
+    slug: "stop-buffering-world-cup-2026-live-streams-dubai",
+    content: `<p>Nothing kills a World Cup match faster than buffering right before a goal. In Dubai homes, the cause is usually not the TV itself. It is Wi-Fi placement, overloaded devices, old streaming hardware, weak cables, or too many people joining the network at once. Here is the practical fix list before the next match.</p>
+
+      <h3>1) Test the exact watching spot</h3>
+      <p>Do not test internet speed beside the router if the TV is across the apartment. Test near the TV or streaming device. If the speed drops badly in that room, move the router, add a mesh node, or connect the streaming box by Ethernet.</p>
+
+      <h3>2) Restart before kickoff</h3>
+      <p>Restart the router and streaming device 30-60 minutes before the match. Then open the app, sign in, and play any live channel or video preview. This clears many app and memory issues before guests are watching.</p>
+
+      <h3>3) Reduce network pressure</h3>
+      <p>During the match, pause big downloads, cloud backups, console updates, and laptop file syncing. If several people are on video calls or uploading stories, your stream may drop quality. Keep the TV or streaming box as the priority device.</p>
+
+      <h3>4) Check the streaming device</h3>
+      <p>Old smart TV apps can be slower than a dedicated streaming device. If your TV app freezes often, try a newer streaming stick or box with better app support. Also check storage space and updates; full devices can behave badly during live streaming.</p>
+
+      <h3>5) Use the right cable path</h3>
+      <p>For the most stable setup, Ethernet beats Wi-Fi. If Ethernet is not practical, keep the streaming device close to the router path and avoid hiding it behind metal shelves or thick walls. For console or box setups, use a quality HDMI cable so video issues are not mistaken for internet issues.</p>
+
+      <h3>6) Backup plan for big matches</h3>
+      <ul>
+        <li>Keep a charged phone with mobile data ready as a hotspot backup</li>
+        <li>Charge a power bank before kickoff</li>
+        <li>Save the official app login before guests arrive</li>
+        <li>Keep one spare HDMI cable and charger nearby</li>
+      </ul>
+
+      <p>If your stream still buffers, send your router model, TV model, and room layout on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20my%20World%20Cup%202026%20stream%20keeps%20buffering.%20Router%3A%20%2C%20TV%3A%20%2C%20Room%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. PZM can help with <a href="/services/accessories.html">cables, chargers, power banks, and accessories</a>, plus <a href="/services/index.html">device checks</a> if the problem is your TV, phone, laptop, or streaming device.</p>`,
+    excerpt: "Fix World Cup 2026 live stream buffering in Dubai with practical checks for Wi-Fi, router placement, streaming devices, HDMI, power, and hotspot backup.",
+    image_url: "images/blog/essential-pc-maintenance-tips.jpg",
+    category: "Tech Tips",
+    date: "2026-06-13"
   }
 ];
 
@@ -1000,7 +1181,12 @@ const staticBlogPostPaths = {
   "nintendo-switch-2-dubai-2026": "/blog/nintendo-switch-2-dubai-2026/",
   "samsung-galaxy-s25-vs-iphone-17-dubai-2026": "/blog/samsung-galaxy-s25-vs-iphone-17-dubai-2026/",
   "trade-in-vs-sell-privately-iphone-dubai-2026": "/blog/trade-in-vs-sell-privately-iphone-dubai-2026/",
-  "ios-26-5-update-iphone-dubai-2026": "/blog/ios-26-5-update-iphone-dubai-2026/"
+  "ios-26-5-update-iphone-dubai-2026": "/blog/ios-26-5-update-iphone-dubai-2026/",
+  "world-cup-2026-dubai-home-watch-party-tech-setup": "/blog/world-cup-2026-dubai-home-watch-party-tech-setup/",
+  "world-cup-2026-phone-checklist-dubai-fans": "/blog/world-cup-2026-phone-checklist-dubai-fans/",
+  "world-cup-2026-schedule-uae-time-dubai-tech-checklist": "/blog/world-cup-2026-schedule-uae-time-dubai-tech-checklist/",
+  "best-tv-soundbar-projector-world-cup-2026-dubai": "/blog/best-tv-soundbar-projector-world-cup-2026-dubai/",
+  "stop-buffering-world-cup-2026-live-streams-dubai": "/blog/stop-buffering-world-cup-2026-live-streams-dubai/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -1011,6 +1197,76 @@ const blogHubFeaturedSlugs = new Set([
 ]);
 
 const postJourneys = {
+  "world-cup-2026-dubai-home-watch-party-tech-setup": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Build a World Cup watch setup",
+      shortLabel: "Accessories",
+      description: "Pick HDMI, power, audio, chargers, and power banks before the next match."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "world-cup-2026-phone-checklist-dubai-fans": {
+    moneyPage: {
+      href: "/services/index.html",
+      label: "Get your phone match-ready",
+      shortLabel: "Phone repair",
+      description: "Check battery, charging, screen, and storage before another long match night."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for the fastest route to the workshop."
+    }
+  },
+  "world-cup-2026-schedule-uae-time-dubai-tech-checklist": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Prepare for UAE-time matches",
+      shortLabel: "Match setup",
+      description: "Get chargers, cables, power banks, and screen protection before kickoff."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "best-tv-soundbar-projector-world-cup-2026-dubai": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Choose the right match setup",
+      shortLabel: "TV accessories",
+      description: "Compare sound, HDMI, power, and projector accessories before buying."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "stop-buffering-world-cup-2026-live-streams-dubai": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Fix streaming setup weak points",
+      shortLabel: "Stream fixes",
+      description: "Sort HDMI, power, charging, and device reliability before the next match."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visiting from Al Barsha?",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
   "ios-26-5-update-iphone-dubai-2026": {
     moneyPage: {
       href: "/services/buy-iphone.html",
