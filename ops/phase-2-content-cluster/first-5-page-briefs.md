@@ -15,7 +15,7 @@
 - Audience: Power users and creators comparing used options.
 - Title draft: Used MacBook Pro Dubai | Performance Models at P Z M Computers & Mobile Phones -Sell New Used PC Build
 - Meta draft: Explore tested used MacBook Pro options in Dubai with clear condition, battery, and warranty guidance from P Z M Computers & Mobile Phones -Sell New Used PC Build Al Barsha.
-- Internal links: `/services/buy-used.html`, `/services/macbook-repair-dubai.html`, `/areas/al-barsha.html`, `/blog/macbook-air-vs-pro-dubai/`
+- Internal links: `/services/buy-used.html`, `/services/macbook-care-dubai.html`, `/areas/al-barsha.html`, `/blog/macbook-air-vs-pro-dubai/`
 - CTA message topic: Share workload and budget for shortlist.
 
 ## 3) services/used-business-laptops-dubai.html

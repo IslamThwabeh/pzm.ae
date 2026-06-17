@@ -1,4 +1,4 @@
-#requires -Version 7
+﻿#requires -Version 7
 $ErrorActionPreference = 'Stop'
 $base = 'https://pzm.ae'
 $repo = $PSScriptRoot | Split-Path -Parent
@@ -69,7 +69,7 @@ $json = HowTo `
     -Name 'How to Buy a Used MacBook in Dubai' `
     -Desc 'Checklist to verify a used MacBook before paying: battery cycles, screen test, activation lock, keyboard, ports, thermal behaviour, and grading clarity.' `
     -Url "$base/blog/how-to-buy-used-macbook-dubai/" `
-    -Image "$base/images/blog/macbook_repair_alternative.jpg" `
+    -Image "$base/images/blog/macbook_care_alternative.jpg" `
     -Lang 'en' `
     -Steps @(
         @{ name='Check battery cycle count and capacity'; text='Open System Information > Power and review both cycle count and maximum capacity; a healthy used MacBook usually still has more than 85% capacity.' },

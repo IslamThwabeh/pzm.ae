@@ -4,7 +4,7 @@ $lines = Get-Content $FilePath -Encoding UTF8
 $out = @()
 $skip = $false
 $navbarInserted = $false
-$cssPrefix = if ($IsSubDir -eq "yes") { "../" } else { "" }
+$cssPrerestore = if ($IsSubDir -eq "yes") { "../" } else { "" }
 
 foreach ($line in $lines) {
     # Skip Elfsight WhatsApp widget
@@ -26,7 +26,7 @@ foreach ($line in $lines) {
     
     # Replace CSS links
     if ($line -match "css/main\.css") {
-        $out += "    <link rel=`"stylesheet`" href=`"${cssPrefix}css/theme.css`">"
+        $out += "    <link rel=`"stylesheet`" href=`"${cssPrerestore}css/theme.css`">"
         continue
     }
     if ($line -match "css/header\.css") { continue }
@@ -42,7 +42,7 @@ foreach ($line in $lines) {
         $out += $line
         $navbarInserted = $true
         
-        $svcPrefix = if ($IsSubDir -eq "yes") { "/services" } else { "services" }
+        $svcPrerestore = if ($IsSubDir -eq "yes") { "/services" } else { "services" }
         $blogHref = if ($IsSubDir -eq "yes") { "/blog.html" } else { "blog.html" }
         
         $out += '    <!-- Navbar -->'
@@ -54,13 +54,13 @@ foreach ($line in $lines) {
         $out += '                <div class="nav-dropdown">'
         $out += '                    <button class="nav-dropdown-trigger">Services</button>'
         $out += '                    <div class="nav-dropdown-content">'
-        $out += "                        <a href=`"$svcPrefix/buy-iphone.html`">Buy iPhone</a>"
-        $out += "                        <a href=`"$svcPrefix/brand-new.html`">New Devices</a>"
-        $out += "                        <a href=`"$svcPrefix/buy-used.html`">Used Devices</a>"
-        $out += "                        <a href=`"$svcPrefix/repair.html`">Repair Services</a>"
-        $out += "                        <a href=`"$svcPrefix/gaming-pc.html`">Gaming PC</a>"
-        $out += "                        <a href=`"$svcPrefix/sell-gadgets.html`">Sell Devices</a>"
-        $out += "                        <a href=`"$svcPrefix/accessories.html`">Accessories</a>"
+        $out += "                        <a href=`"$svcPrerestore/buy-iphone.html`">Buy iPhone</a>"
+        $out += "                        <a href=`"$svcPrerestore/brand-new.html`">New Devices</a>"
+        $out += "                        <a href=`"$svcPrerestore/buy-used.html`">Used Devices</a>"
+        $out += "                        <a href=`"$svcPrerestore/care.html`">Care Services</a>"
+        $out += "                        <a href=`"$svcPrerestore/gaming-pc.html`">Gaming PC</a>"
+        $out += "                        <a href=`"$svcPrerestore/sell-gadgets.html`">Sell Devices</a>"
+        $out += "                        <a href=`"$svcPrerestore/accessories.html`">Accessories</a>"
         $out += '                    </div>'
         $out += '                </div>'
         $out += "                <a href=`"$blogHref`">Blog</a>"

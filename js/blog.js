@@ -3,7 +3,7 @@ const blogPosts = [
   {
     title: "How to Choose the Perfect Gaming PC Build in 2026",
     slug: "how-to-choose-perfect-gaming-pc-build",
-    content: `<p>Building a gaming PC in 2026 is more rewarding than ever — but with new hardware generations and shifting prices, choosing the right components matters more now. Whether you are a first-time builder in Dubai or upgrading an existing rig, this guide covers everything you need to know. If your current setup might only need a smarter refresh, our <a href="/services/index.html">PC repair and upgrade service</a> can help you decide whether an SSD, GPU, cooling, or RAM upgrade is enough before you commit to a full rebuild.</p>
+    content: `<p>Building a gaming PC in 2026 is more rewarding than ever — but with new hardware generations and shifting prices, choosing the right components matters more now. Whether you are a first-time builder in Dubai or upgrading an existing rig, this guide covers everything you need to know. If your current setup might only need a smarter refresh, our <a href="/services/index.html">PC care and upgrade service</a> can help you decide whether an SSD, GPU, cooling, or RAM upgrade is enough before you commit to a full rebuild.</p>
 
       <h3>CPU: The brain of your build</h3>
       <p>AMD's Ryzen 9000 series and Intel's Arrow Lake processors dominate the 2026 landscape. For pure gaming, the Ryzen 7 9800X3D remains the king of frame rates thanks to its massive 3D V-Cache. Intel's Core Ultra 7 265K offers excellent multi-threaded performance if you also stream or create content. Budget builders should look at the Ryzen 5 9600X — it handles 1080p and 1440p gaming without breaking a sweat.</p>
@@ -45,12 +45,12 @@ const blogPosts = [
       <ul>
         <li><strong>MacBook Air M2 (2022–2023):</strong> Exceptional battery life, silent operation, handles everything except heavy video editing.</li>
         <li><strong>MacBook Pro 14" M2 Pro (2023):</strong> The professional sweet spot — powerful enough for Final Cut Pro and Logic Pro.</li>
-        <li><strong>ThinkPad X1 Carbon Gen 10/11:</strong> The best business ultrabook, excellent keyboard, very repairable.</li>
+        <li><strong>ThinkPad X1 Carbon Gen 10/11:</strong> The best business ultrabook, excellent keyboard, very careable.</li>
         <li><strong>ASUS ROG/Lenovo Legion (RTX 3070+):</strong> Great gaming performance at a fraction of new prices.</li>
       </ul>
 
       <h3>4. Why buy from a trusted store vs. private sellers</h3>
-      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase repair support</a> if anything comes up down the road.</p>
+      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase care support</a> if anything comes up down the road.</p>
 
       <h3>5. Trade up: sell your old device toward an upgrade</h3>
       <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to P Z M Computers & Mobile Phones -Sell New Used PC Build for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
@@ -62,9 +62,9 @@ const blogPosts = [
     date: "2026-01-25"
   },
   {
-    title: "Essential PC Maintenance Tips to Avoid Costly Repairs (2026)",
+    title: "Essential PC Maintenance Tips to Avoid Costly Care (2026)",
     slug: "essential-pc-maintenance-tips",
-    content: `<p>Dubai's heat and dust are tough on computers. Whether you have a <a href="/services/gaming-pc.html">custom gaming PC</a> or a work desktop, regular maintenance prevents performance drops, sudden failures, and expensive repairs. Here are the most important things you should be doing in 2026.</p>
+    content: `<p>Dubai's heat and dust are tough on computers. Whether you have a <a href="/services/gaming-pc.html">custom gaming PC</a> or a work desktop, regular maintenance prevents performance drops, sudden failures, and expensive care. Here are the most important things you should be doing in 2026.</p>
 
       <h3>1. Dust cleaning — the single most impactful thing you can do</h3>
       <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
@@ -76,13 +76,13 @@ const blogPosts = [
       <p>Modern NVMe SSDs are reliable but not immortal. Check your drive health using CrystalDiskInfo — look for the "Health Status" indicator and the "Total Host Writes" number. Keep at least 15–20% of your SSD capacity free for optimal performance and longevity. If your drive shows warnings, back up immediately and replace it before data loss occurs.</p>
 
       <h3>4. Windows and driver updates — do them, but carefully</h3>
-      <p>Keep Windows 11 updated for security patches and performance improvements. For GPU drivers, update when you get a new game but avoid day-one driver releases — wait a week for hotfixes. Create a restore point before major updates. If your PC becomes unstable after an update, use System Restore to roll back quickly.</p>
+      <p>Keep Windows 11 updated for security patches and performance improvements. For GPU drivers, update when you get a new game but avoid day-one driver releases — wait a week for hotrestorees. Create a restore point before major updates. If your PC becomes unstable after an update, use System Restore to roll back quickly.</p>
 
       <h3>5. Power protection matters</h3>
       <p>Dubai's power grid is generally stable, but micro-surges and brownouts happen — especially during summer peak loads. Use a quality surge protector at minimum, or better yet, a UPS (uninterruptible power supply). A sudden power loss during a Windows update or BIOS flash can brick your system. A basic 650VA UPS costs less than a single component replacement.</p>
 
       <h3>When to call in the professionals</h3>
-      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build offers PC diagnostics and repair</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
+      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build offers PC diagnostics and care</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "images/blog/essential-pc-maintenance-tips.jpg",
     category: "PC",
@@ -97,7 +97,7 @@ const blogPosts = [
       <p>If you have spent thousands on a <a href="/services/buy-iphone.html">new iPhone 17</a> or flagship Samsung, a premium tempered glass protector is the cheapest insurance you can buy. Look for 9H hardness rating, oleophobic coating (anti-fingerprint), and edge-to-edge coverage. Privacy screen protectors are worth considering if you use your phone for banking or work emails in crowded places like the Metro. Browse our full <a href="/services/accessories.html">accessories selection</a> for all major phone models.</p>
 
       <h3>2. Cases that actually protect</h3>
-      <p>Clear cases look great for a month, then yellow. In 2026, the move is toward matte or frosted cases with MagSafe compatibility — they stay clean, offer military-grade drop protection, and work with magnetic chargers and car mounts. For iPhones, Apple's own silicone and FineWoven cases remain top picks. For Samsung, Spigen and UAG offer the best protection-to-bulk ratio. A strong case and protector combo is still much cheaper than most <a href="/services/index.html">screen or frame repairs</a> after a bad drop.</p>
+      <p>Clear cases look great for a month, then yellow. In 2026, the move is toward matte or frosted cases with MagSafe compatibility — they stay clean, offer military-grade drop protection, and work with magnetic chargers and car mounts. For iPhones, Apple's own silicone and FineWoven cases remain top picks. For Samsung, Spigen and UAG offer the best protection-to-bulk ratio. A strong case and protector combo is still much cheaper than most <a href="/services/index.html">screen or frame care</a> after a bad drop.</p>
 
       <h3>3. GaN chargers: smaller, faster, multi-device</h3>
       <p>GaN (gallium nitride) chargers have essentially replaced traditional brick chargers. A single 65W GaN charger can fast-charge your iPhone, iPad, and MacBook from one compact unit — perfect for travel and desk organization. For <a href="/services/gaming-pc.html">gaming laptop</a> owners, 100W+ GaN chargers now exist that can handle even power-hungry machines. Always buy from reputable brands — cheap chargers can damage your battery or worse.</p>
@@ -120,9 +120,9 @@ const blogPosts = [
     date: "2026-02-20"
   },
   {
-    title: "Why Your Phone Battery Dies So Fast — And How to Fix It (2026)",
+    title: "Why Your Phone Battery Dies So Fast — And How to Restore It (2026)",
     slug: "understanding-smartphone-battery-life",
-    content: `<p>Battery anxiety is real. If your phone barely makes it through the day, you are not alone — and the problem is almost always fixable. Here is what actually drains your battery in 2026, what myths to ignore, and when it is time for a replacement.</p>
+    content: `<p>Battery anxiety is real. If your phone barely makes it through the day, you are not alone — and the problem is almost always restoreable. Here is what actually drains your battery in 2026, what myths to ignore, and when it is time for a replacement.</p>
 
       <h3>1. The real battery killers</h3>
       <p>Forget the old advice about closing background apps — modern iOS and Android handle that efficiently. The actual battery drain culprits in 2026 are:</p>
@@ -150,10 +150,10 @@ const blogPosts = [
         <li>Shows battery health below 80% (check Settings → Battery on iPhone)</li>
         <li>Charges noticeably faster than when new (smaller capacity fills faster)</li>
       </ul>
-      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">repair that P Z M Computers & Mobile Phones -Sell New Used PC Build handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
+      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">care that P Z M Computers & Mobile Phones -Sell New Used PC Build handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
 
-      <h3>4. Repair, upgrade, or replace?</h3>
-      <p>If your phone is 1–2 years old, a <a href="/services/index.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the fix is easier and cheaper than most people think.</p>
+      <h3>4. Care, upgrade, or replace?</h3>
+      <p>If your phone is 1–2 years old, a <a href="/services/index.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the restore is easier and cheaper than most people think.</p>
 
       <p><a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20phone%20battery%20drains%20fast%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your phone model and battery symptoms before visiting, especially if you are planning the trip from <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
     excerpt: "The real reasons your phone battery dies fast in 2026, which charging myths to ignore, and when it is time for a battery replacement.",
@@ -259,14 +259,14 @@ const blogPosts = [
         <li>If you have old devices collecting dust, their <a href="/services/sell-gadgets.html">trade-in value</a> is strong right now — sell while demand is high.</li>
         <li>Consider <a href="/services/buy-used.html">certified pre-owned devices</a> to stretch your dirham further during uncertain economic conditions.</li>
         <li>For new purchases, the <a href="/services/buy-iphone.html">iPhone 17 series</a> and latest MacBooks remain competitively priced in the UAE compared to many global markets.</li>
-        <li>If you need <a href="/services/index.html">device repair</a> instead of replacement, it is an especially cost-effective choice when new device prices are elevated.</li>
+        <li>If you need <a href="/services/index.html">device care</a> instead of replacement, it is an especially cost-effective choice when new device prices are elevated.</li>
         <li>Protect your investment with quality <a href="/services/accessories.html">cases, screen protectors, and accessories</a> — replacement costs are not going down.</li>
       </ul>
 
       <h3>6. Our outlook</h3>
       <p>Gold prices are expected to remain elevated through 2026 as global uncertainty continues. For tech buyers in Dubai, this means being strategic: buy what you need now rather than waiting for prices to drop, consider the used market seriously, and maintain your current devices well. The best deals go to informed buyers who act when stock and pricing align.</p>
 
-      <p>Visit P Z M Computers & Mobile Phones -Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">repairs</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
+      <p>Visit P Z M Computers & Mobile Phones -Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">care</a>. Or reach out on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
     image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.jpg",
     category: "Market",
@@ -283,8 +283,8 @@ const blogPosts = [
       <h3>2. Depreciation: where most people lose money</h3>
       <p>New phones lose value fastest in the first year. If you buy new at launch and sell after 12 months, the depreciation cost is often higher than expected. A used phone that already passed the first depreciation cycle usually holds value better over the same period. If you rotate devices often, used usually wins on total ownership cost.</p>
 
-      <h3>3. Battery and repair risk in the used market</h3>
-      <p>The main risk with used iPhones is battery health and hidden prior repairs. Always ask for battery health, face ID and camera checks, and charging-port testing before purchase. Buying from a trusted store matters because you get a clear test process and post-sale support. If needed, <a href="/services/index.html">battery or screen repair service</a> can keep the phone cost-effective for another year or two.</p>
+      <h3>3. Battery and care risk in the used market</h3>
+      <p>The main risk with used iPhones is battery health and hidden prior care. Always ask for battery health, face ID and camera checks, and charging-port testing before purchase. Buying from a trusted store matters because you get a clear test process and post-sale support. If needed, <a href="/services/index.html">battery or screen care service</a> can keep the phone cost-effective for another year or two.</p>
 
       <h3>4. Who should buy new vs used</h3>
       <ul>
@@ -311,13 +311,13 @@ const blogPosts = [
       <p>At the same budget, desktops still deliver stronger sustained performance. They run cooler, maintain higher boost clocks, and are easier to tune. Gaming laptops close the gap every year, but thermal limits still affect long sessions. If pure FPS value matters most, a desktop build usually wins.</p>
 
       <h3>2. Portability and convenience</h3>
-      <p>Laptops win for mobility, especially for students and professionals splitting time between home, office, and cafes. If you need one machine for both work and gaming, a laptop can be the practical choice. For home-first gamers with a fixed setup, a desktop gives more value and easier maintenance.</p>
+      <p>Laptops win for mobility, especially for students and professionals splitting time between home, office, and cafes. If you need one machine for both work and gaming, a laptop can be the practical choice. For home-first gamers with a restoreed setup, a desktop gives more value and easier maintenance.</p>
 
       <h3>3. Upgrade path over 2 to 3 years</h3>
       <p>Desktop upgrades are straightforward: swap GPU, add RAM, or expand storage when needed. Laptop upgrades are limited, usually to RAM and SSD in many models. If you plan to improve your system gradually, a <a href="/services/gaming-pc.html">custom gaming PC build</a> is usually a better long-term investment.</p>
 
       <h3>4. Heat and environment in Dubai</h3>
-      <p>Dubai heat and dust matter. Laptops can throttle faster in warm rooms and need regular cleaning to stay stable. Desktops with proper airflow and quality cooling handle local conditions better. Whichever you choose, schedule periodic cleaning and thermal checks through <a href="/services/index.html">PC and laptop repair support</a>.</p>
+      <p>Dubai heat and dust matter. Laptops can throttle faster in warm rooms and need regular cleaning to stay stable. Desktops with proper airflow and quality cooling handle local conditions better. Whichever you choose, schedule periodic cleaning and thermal checks through <a href="/services/index.html">PC and laptop care support</a>.</p>
 
       <h3>5. Decision shortcuts by user type</h3>
       <ul>
@@ -370,7 +370,7 @@ const blogPosts = [
       <ul>
         <li><strong>Battery health:</strong> especially important for iPhones.</li>
         <li><strong>Display condition:</strong> cracks and OLED burn lower value quickly.</li>
-        <li><strong>Original parts and repair history:</strong> transparent records help trust.</li>
+        <li><strong>Original parts and care history:</strong> transparent records help trust.</li>
         <li><strong>Storage tier and color demand:</strong> some variants move faster.</li>
         <li><strong>Timing:</strong> value usually drops after major new model launches.</li>
       </ul>
@@ -443,7 +443,7 @@ const blogPosts = [
       <ul>
         <li>Battery health 90%+ adds 100-250 AED.</li>
         <li>Original box + cable adds 80-150 AED on Pro models.</li>
-        <li>All-Apple repair history holds top value.</li>
+        <li>All-Apple care history holds top value.</li>
         <li>UAE-bought units price slightly above KSA/EU variants.</li>
       </ul>
 
@@ -992,7 +992,7 @@ const blogPosts = [
       <p><strong>1,500 - 3,000 AED:</strong> Consider a better streaming device, stronger audio, or a TV upgrade only if your current screen has poor brightness or motion blur.</p>
 
       <h3>6) When a gaming PC or console helps</h3>
-      <p>If you also play football games after the match, a PS5, console accessories, or a <a href="/services/gaming-pc.html">custom gaming PC</a> can turn World Cup month into a full entertainment upgrade. For most homes, though, fix the watching setup first and keep the gaming spend separate.</p>
+      <p>If you also play football games after the match, a PS5, console accessories, or a <a href="/services/gaming-pc.html">custom gaming PC</a> can turn World Cup month into a full entertainment upgrade. For most homes, though, restore the watching setup first and keep the gaming spend separate.</p>
 
       <p>Want a quick World Cup setup quote in Dubai? Send your TV model, room size, and budget on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20a%20World%20Cup%202026%20home%20watch%20setup.%20TV%20model%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also browse <a href="/services/accessories.html">accessories</a>, <a href="/services/brand-new.html">new devices</a>, or plan a visit to our <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
     excerpt: "World Cup 2026 is match-night prime time. Here is a practical Dubai setup guide for Wi-Fi, sound, HDMI, chargers, power banks, and TV upgrades.",
@@ -1001,9 +1001,9 @@ const blogPosts = [
     date: "2026-06-13"
   },
   {
-    title: "World Cup 2026 Phone Checklist: Dubai Fans, Fix These Before Match Night",
+    title: "World Cup 2026 Phone Checklist: Dubai Fans, Restore These Before Match Night",
     slug: "world-cup-2026-phone-checklist-dubai-fans",
-    content: `<p>World Cup nights are hard on phones. People stream highlights, record reactions, join group chats, order food, book rides, and use navigation all in the same evening. If your phone is already slow, low on storage, or losing battery by dinner, fix it before the next big match.</p>
+    content: `<p>World Cup nights are hard on phones. People stream highlights, record reactions, join group chats, order food, book rides, and use navigation all in the same evening. If your phone is already slow, low on storage, or losing battery by dinner, restore it before the next big match.</p>
 
       <h3>1) Battery health comes first</h3>
       <p>If your iPhone battery health is near or below 80%, World Cup month will make the problem obvious. Long screen-on time, 5G, camera use, WhatsApp groups, and delivery apps drain weak batteries quickly. A same-day battery replacement is usually cheaper than rushing into a new phone.</p>
@@ -1025,11 +1025,11 @@ const blogPosts = [
       <h3>5) Camera and screen protection</h3>
       <p>Big nights mean busy tables, crowded restaurants, and more drops. A fresh tempered glass protector and case are small money compared with a cracked OLED screen. If your camera lens protector is scratched, replace it before blaming the phone for blurry clips.</p>
 
-      <h3>6) Repair or upgrade?</h3>
-      <p>Repair if the phone is otherwise fast and the only problem is battery, charging port, or screen damage. Upgrade if your phone is too old for current apps, has weak storage, or needs multiple repairs at once. If you are unsure, ask for a repair quote and trade-in value side by side.</p>
+      <h3>6) Care or upgrade?</h3>
+      <p>Care if the phone is otherwise fast and the only problem is battery, charging port, or screen damage. Upgrade if your phone is too old for current apps, has weak storage, or needs multiple care at once. If you are unsure, ask for a care quote and trade-in value side by side.</p>
 
-      <p>Need the phone ready before the next match? Send your model and issue on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20my%20phone%20ready%20for%20World%20Cup%202026.%20Model%3A%20%2C%20Issue%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Start with <a href="/services/index.html">device repair</a>, compare <a href="/services/accessories.html">phone accessories</a>, or check <a href="/services/buy-used.html">tested used phones</a> if replacement makes more sense.</p>`,
-    excerpt: "A practical World Cup 2026 phone checklist for Dubai fans: battery health, storage, chargers, power banks, screen protection, and when to repair or upgrade.",
+      <p>Need the phone ready before the next match? Send your model and issue on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20my%20phone%20ready%20for%20World%20Cup%202026.%20Model%3A%20%2C%20Issue%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Start with <a href="/services/index.html">device care</a>, compare <a href="/services/accessories.html">phone accessories</a>, or check <a href="/services/buy-used.html">tested used phones</a> if replacement makes more sense.</p>`,
+    excerpt: "A practical World Cup 2026 phone checklist for Dubai fans: battery health, storage, chargers, power banks, screen protection, and when to care or upgrade.",
     image_url: "images/blog/understanding-smartphone-battery-life.jpg",
     category: "Mobile",
     date: "2026-06-13"
@@ -1056,7 +1056,7 @@ const blogPosts = [
       <p>One hour before kickoff, restart the streaming device, check the app login, test the Wi-Fi in the watching room, charge the remote, and plug in the soundbar. This sounds basic, but most match-night problems are simple things discovered too late.</p>
 
       <h3>4) Phone checklist for UAE-time matches</h3>
-      <p>If the match is late at night, your phone may already be at 30% by kickoff. Keep a USB-C charger, power bank, and spare cable near the sofa. If your battery health is weak, fix it before the knockout stage when match importance and phone usage both jump.</p>
+      <p>If the match is late at night, your phone may already be at 30% by kickoff. Keep a USB-C charger, power bank, and spare cable near the sofa. If your battery health is weak, restore it before the knockout stage when match importance and phone usage both jump.</p>
 
       <h3>5) Home setup checklist</h3>
       <ul>
@@ -1070,7 +1070,7 @@ const blogPosts = [
       <h3>6) Best P Z M Computers & Mobile Phones -Sell New Used PC Build path for quick prep</h3>
       <p>If you only have time for one store run, prioritize accessories: HDMI cable, charger, power bank, surge protector, and screen protector. If your TV, phone, or laptop has an existing issue, solve that before spending on extras.</p>
 
-      <p>Need help getting ready before the next UAE-time match? Send your phone model, TV model, and budget on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20a%20World%20Cup%202026%20UAE%20time%20match%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also start from <a href="/services/accessories.html">accessories</a>, <a href="/services/index.html">repair services</a>, or our <a href="/areas/al-barsha.html">Al Barsha store page</a>.</p>`,
+      <p>Need help getting ready before the next UAE-time match? Send your phone model, TV model, and budget on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20a%20World%20Cup%202026%20UAE%20time%20match%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also start from <a href="/services/accessories.html">accessories</a>, <a href="/services/index.html">care services</a>, or our <a href="/areas/al-barsha.html">Al Barsha store page</a>.</p>`,
     excerpt: "A Dubai fan checklist for World Cup 2026 in UAE time: schedule windows, pre-match tech checks, phone battery prep, streaming setup, and accessories.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "Accessories",
@@ -1101,8 +1101,8 @@ const blogPosts = [
       <h3>5) Do not ignore cables and power</h3>
       <p>Many people buy the big item and forget the small parts. A weak HDMI cable, crowded adapter, or loose extension can ruin a perfect setup. Use a certified cable, surge-protected strip, and enough USB charging ports for guests.</p>
 
-      <h3>6) Buy or fix first?</h3>
-      <p>Buy new if your TV is old, dim, or has poor app support. Fix first if the problem is only Wi-Fi, sound, remote, or cable clutter. A good accessory bundle can make an existing screen feel new for far less money.</p>
+      <h3>6) Buy or restore first?</h3>
+      <p>Buy new if your TV is old, dim, or has poor app support. Restore first if the problem is only Wi-Fi, sound, remote, or cable clutter. A good accessory bundle can make an existing screen feel new for far less money.</p>
 
       <p>Want a setup recommendation before you buy? Send room size, current TV/projector model, and budget on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20TV%2C%20soundbar%2C%20or%20projector%20advice%20for%20World%20Cup%202026.%20Room%20size%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Browse <a href="/services/accessories.html">accessories</a>, <a href="/services/brand-new.html">new devices</a>, or visit <a href="/areas/al-barsha.html">PZM in Al Barsha</a>.</p>`,
     excerpt: "A practical Dubai buying guide for World Cup 2026: choose the right TV, soundbar, projector, HDMI, power, and Wi-Fi setup by room type.",
@@ -1113,7 +1113,7 @@ const blogPosts = [
   {
     title: "How to Stop Buffering During World Cup 2026 Live Streams in Dubai",
     slug: "stop-buffering-world-cup-2026-live-streams-dubai",
-    content: `<p>Nothing kills a World Cup match faster than buffering right before a goal. In Dubai homes, the cause is usually not the TV itself. It is Wi-Fi placement, overloaded devices, old streaming hardware, weak cables, or too many people joining the network at once. Here is the practical fix list before the next match.</p>
+    content: `<p>Nothing kills a World Cup match faster than buffering right before a goal. In Dubai homes, the cause is usually not the TV itself. It is Wi-Fi placement, overloaded devices, old streaming hardware, weak cables, or too many people joining the network at once. Here is the practical restore list before the next match.</p>
 
       <h3>1) Test the exact watching spot</h3>
       <p>Do not test internet speed beside the router if the TV is across the apartment. Test near the TV or streaming device. If the speed drops badly in that room, move the router, add a mesh node, or connect the streaming box by Ethernet.</p>
@@ -1139,7 +1139,7 @@ const blogPosts = [
       </ul>
 
       <p>If your stream still buffers, send your router model, TV model, and room layout on <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20World%20Cup%202026%20stream%20keeps%20buffering.%20Router%3A%20%2C%20TV%3A%20%2C%20Room%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. PZM can help with <a href="/services/accessories.html">cables, chargers, power banks, and accessories</a>, plus <a href="/services/index.html">device checks</a> if the problem is your TV, phone, laptop, or streaming device.</p>`,
-    excerpt: "Fix World Cup 2026 live stream buffering in Dubai with practical checks for Wi-Fi, router placement, streaming devices, HDMI, power, and hotspot backup.",
+    excerpt: "Restore World Cup 2026 live stream buffering in Dubai with practical checks for Wi-Fi, router placement, streaming devices, HDMI, power, and hotspot backup.",
     image_url: "images/blog/essential-pc-maintenance-tips.jpg",
     category: "Tech Tips",
     date: "2026-06-13"
@@ -1152,7 +1152,7 @@ const staticBlogPostPaths = {
   "gold-record-highs-tech-buyers-dubai-2026": "/blog/gold-record-highs-tech-buyers-dubai-2026/",
   "iran-us-tensions-mobile-pc-prices-uae-2026": "/blog/iran-us-tensions-mobile-pc-prices-uae-2026/",
   "latest-mobile-accessories-2026": "/blog/latest-mobile-accessories-2026/",
-  "top-5-iphone-repair-tips": "/blog/top-5-iphone-repair-tips/",
+  "top-5-iphone-care-tips": "/blog/top-5-iphone-care-tips/",
   "us-tariffs-2026-electronics-prices-dubai": "/blog/us-tariffs-2026-electronics-prices-dubai/",
   "ultimate-guide-buying-used-laptops": "/blog/ultimate-guide-buying-used-laptops/",
   "understanding-smartphone-battery-life": "/blog/understanding-smartphone-battery-life/",
@@ -1215,7 +1215,7 @@ const postJourneys = {
     moneyPage: {
       href: "/services/index.html",
       label: "Get your phone match-ready",
-      shortLabel: "Phone repair",
+      shortLabel: "Phone care",
       description: "Check battery, charging, screen, and storage before another long match night."
     },
     areaPage: {
@@ -1256,8 +1256,8 @@ const postJourneys = {
   "stop-buffering-world-cup-2026-live-streams-dubai": {
     moneyPage: {
       href: "/services/accessories.html",
-      label: "Fix streaming setup weak points",
-      shortLabel: "Stream fixes",
+      label: "Restore streaming setup weak points",
+      shortLabel: "Stream restorees",
       description: "Sort HDMI, power, charging, and device reliability before the next match."
     },
     areaPage: {
@@ -1295,18 +1295,18 @@ const postJourneys = {
       description: "Use the Al Barsha and Al Barsha area page if you want to filter the build before the drive."
     }
   },
-  "top-5-iphone-repair-tips": {
+  "top-5-iphone-care-tips": {
     moneyPage: {
       href: "/services/index.html",
-      label: "Start with phone repair guidance",
-      shortLabel: "Repair services",
-      description: "Use repair services for screen, battery, and device fault checks before replacing the phone."
+      label: "Start with phone care guidance",
+      shortLabel: "Care services",
+      description: "Use care services for screen, battery, and device fault checks before replacing the phone."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
       label: "Visiting from Al Barsha?",
       shortLabel: "Al Barsha",
-      description: "Use the Al Barsha page for store access, directions, and pre-visit repair guidance."
+      description: "Use the Al Barsha page for store access, directions, and pre-visit care guidance."
     }
   },
   "ultimate-guide-buying-used-laptops": {
@@ -1326,9 +1326,9 @@ const postJourneys = {
   "essential-pc-maintenance-tips": {
     moneyPage: {
       href: "/services/index.html",
-      label: "Check PC repair and upgrade options",
-      shortLabel: "PC repair",
-      description: "Use repair services for diagnostics, deep cleaning, thermal work, and performance upgrades."
+      label: "Check PC care and upgrade options",
+      shortLabel: "PC care",
+      description: "Use care services for diagnostics, deep cleaning, thermal work, and performance upgrades."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1355,8 +1355,8 @@ const postJourneys = {
     moneyPage: {
       href: "/services/index.html",
       label: "Check phone battery replacement",
-      shortLabel: "Battery repair",
-      description: "Start with repair guidance if you want to fix battery life before upgrading."
+      shortLabel: "Battery care",
+      description: "Start with care guidance if you want to restore battery life before upgrading."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1426,7 +1426,7 @@ const postJourneys = {
       href: "/services/index.html",
       label: "Get iPhone battery replacement support",
       shortLabel: "Battery service",
-      description: "Use repair services to check battery health and same-day replacement options first."
+      description: "Use care services to check battery health and same-day replacement options first."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1508,9 +1508,9 @@ const postJourneys = {
   "cracked-screen-vs-replace-iphone-dubai-2026": {
     moneyPage: {
       href: "/services/index.html",
-      label: "Book an iPhone repair check",
-      shortLabel: "Repair",
-      description: "Send a damage photo for an honest same-day AED repair quote before driving in."
+      label: "Book an iPhone care check",
+      shortLabel: "Care",
+      description: "Send a damage photo for an honest same-day AED care quote before driving in."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1592,8 +1592,8 @@ const postJourneys = {
   "iphone-screen-original-vs-aftermarket-dubai-2026": {
     moneyPage: {
       href: "/services/index.html",
-      label: "Book an iPhone screen repair",
-      shortLabel: "Screen repair",
+      label: "Book an iPhone screen care",
+      shortLabel: "Screen care",
       description: "Same-day service with original or high-grade OLED options and a written warranty."
     },
     areaPage: {
