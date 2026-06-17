@@ -1,10 +1,10 @@
-# PZM.ae – Project Guidelines
+# pzm.ae Project Guidelines
 
 ## Overview
-Static HTML website for PZM Computers & Phones Store in Al Barsha, Dubai.
+Static HTML website for P Z M Computers & Mobile Phones -Sell New Used PC Build in Al Barsha, Dubai.
 Hosted on GitHub Pages at **pzm.ae**. No server-side rendering or build step for the HTML pages.
 
-## Site Structure (21 HTML pages)
+## Site Structure
 
 ```
 index.html                  # Homepage
@@ -19,16 +19,8 @@ services/
   sell-gadgets.html         # Sell/trade-in your gadgets
   accessories.html          # Accessories
   secondhand.html           # Redirect → buy-used.html (noindex)
-areas/
-  index.html                # "Areas We Serve" hub
-  al-barsha.html            # + 8 neighborhood landing pages
-  al-quoz.html
-  dubai-marina.html
-  emirates-hills.html
-  jbr.html
-  jumeirah.html
-  jumeirah-village.html
-  tecom.html
+areas/al-barsha.html
+  al-barsha.html            # Single Al Barsha location page
 ```
 
 ## Key Conventions

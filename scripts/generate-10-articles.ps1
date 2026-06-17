@@ -395,7 +395,7 @@ function Build-EnHtml($a) {
     $headlineEsc = $a.title_en -replace '"','\"'
     $descEsc = $a.desc_en -replace '"','\"'
     $imgAbs = "https://pzm.ae$($a.image)"
-    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/blog/' + $a.slug + '/","url":"https://pzm.ae/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"en","author":{"@type":"Organization","name":"P Z M Mobile & Computers -Sell New Used PC Build","url":"https://pzm.ae/"},"publisher":{"@type":"Organization","name":"P Z M Mobile & Computers -Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
+    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/blog/' + $a.slug + '/","url":"https://pzm.ae/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"en","author":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","url":"https://pzm.ae/"},"publisher":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
     $faqJsonLd = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' + $faqJson + ']}'
 
 @"
@@ -404,9 +404,9 @@ function Build-EnHtml($a) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$($a.title_en) | P Z M Mobile &amp; Computers Dubai</title>
+    <title>$($a.title_en) | P Z M Computers &amp; Mobile Phones -Sell New Used PC Build Dubai</title>
     <meta name="description" content="$($a.desc_en)">
-    <meta name="keywords" content="$($a.slug -replace '-',' '), dubai 2026, p z m mobile computers al barsha">
+    <meta name="keywords" content="$($a.slug -replace '-',' '), dubai 2026, P Z M Computers & Mobile Phones -Sell New Used PC Build al barsha">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="/images/favico.ico" type="image/x-icon">
     <link rel="canonical" href="https://pzm.ae/blog/$($a.slug)/">
@@ -419,7 +419,7 @@ function Build-EnHtml($a) {
     <meta property="og:description" content="$($a.desc_en)">
     <meta property="og:url" content="https://pzm.ae/blog/$($a.slug)/">
     <meta property="og:image" content="$imgAbs">
-    <meta property="og:site_name" content="P Z M Mobile &amp; Computers -Sell New Used PC Build">
+    <meta property="og:site_name" content="P Z M Computers &amp; Mobile Phones -Sell New Used PC Build">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="$($a.title_en)">
@@ -445,7 +445,7 @@ function Build-EnHtml($a) {
 <body>
     <nav class="navbar">
         <div class="navbar-inner">
-            <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M <span class="logo-store">Mobile &amp; Computers</span></span><span class="logo-tagline">Sell New Used PC Build</span></div></a>
+            <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M Computers &amp; Mobile Phones -Sell New Used PC Build</span></div></a>
             <div class="nav-links" id="navLinks">
                 <a href="/">Home</a>
                 <div class="nav-dropdown">
@@ -481,7 +481,7 @@ function Build-EnHtml($a) {
                 <div class="blog-content">
 $sections
 
-                    <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting <a href="/areas/al-barsha.html">our Al Barsha store</a>. You can also <a href="$($a.money_en)">$($a.money_label_en.ToLower())</a>.</p>
+                    <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting <a href="/areas/al-barsha.html">our Al Barsha store</a>. You can also <a href="$($a.money_en)">$($a.money_label_en.ToLower())</a>.</p>
                 </div>
 
                 <aside class="blog-next-steps">
@@ -522,7 +522,7 @@ function Build-ArHtml($a) {
     $headlineEsc = $a.title_ar -replace '"','\"'
     $descEsc = $a.desc_ar -replace '"','\"'
     $imgAbs = "https://pzm.ae$($a.image)"
-    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/ar/blog/' + $a.slug + '/","url":"https://pzm.ae/ar/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"ar-AE","author":{"@type":"Organization","name":"P Z M Mobile & Computers -Sell New Used PC Build","url":"https://pzm.ae/ar/"},"publisher":{"@type":"Organization","name":"P Z M Mobile & Computers -Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
+    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/ar/blog/' + $a.slug + '/","url":"https://pzm.ae/ar/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"ar-AE","author":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","url":"https://pzm.ae/ar/"},"publisher":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
     $faqJsonLd = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' + $faqJson + ']}'
 
 @"
@@ -531,7 +531,7 @@ function Build-ArHtml($a) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$($a.title_ar) | P Z M Mobile &amp; Computers دبي</title>
+    <title>$($a.title_ar) | P Z M Computers &amp; Mobile Phones -Sell New Used PC Build دبي</title>
     <meta name="description" content="$($a.desc_ar)">
     <meta name="keywords" content="$($a.slug -replace '-',' '), دبي 2026, P Z M البرشاء">
     <meta name="robots" content="index, follow">
@@ -546,7 +546,7 @@ function Build-ArHtml($a) {
     <meta property="og:description" content="$($a.desc_ar)">
     <meta property="og:url" content="https://pzm.ae/ar/blog/$($a.slug)/">
     <meta property="og:image" content="$imgAbs">
-    <meta property="og:site_name" content="P Z M Mobile &amp; Computers -Sell New Used PC Build">
+    <meta property="og:site_name" content="P Z M Computers &amp; Mobile Phones -Sell New Used PC Build">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="$($a.title_ar)">
@@ -573,7 +573,7 @@ function Build-ArHtml($a) {
 <body>
     <nav class="navbar">
         <div class="navbar-inner">
-            <a href="/ar/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M <span class="logo-store">Mobile &amp; Computers</span></span><span class="logo-tagline">Sell New Used PC Build</span></div></a>
+            <a href="/ar/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M Computers &amp; Mobile Phones -Sell New Used PC Build</span></div></a>
             <div class="nav-links" id="navLinks">
                 <a href="/ar/">الرئيسية</a>
                 <div class="nav-dropdown">
@@ -609,7 +609,7 @@ function Build-ArHtml($a) {
                 <div class="blog-content">
 $sections
 
-                    <p>تريد رقماً درهمياً حقيقياً يناسب حالتك؟ <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20PZM%2C%20%D8%B3%D8%A4%D8%A7%D9%84%20%D9%85%D9%86%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">راسلنا على واتساب</a> قبل الزيارة إلى <a href="/ar/areas/al-barsha.html">متجر البرشاء</a>. يمكنك أيضاً <a href="$($a.money_ar)">$($a.money_label_ar)</a>.</p>
+                    <p>تريد رقماً درهمياً حقيقياً يناسب حالتك؟ <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20%D8%B3%D8%A4%D8%A7%D9%84%20%D9%85%D9%86%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">راسلنا على واتساب</a> قبل الزيارة إلى <a href="/ar/areas/al-barsha.html">متجر البرشاء</a>. يمكنك أيضاً <a href="$($a.money_ar)">$($a.money_label_ar)</a>.</p>
                 </div>
 
                 <aside class="blog-next-steps">
@@ -668,7 +668,7 @@ $newPostBlocks = foreach ($a in $articles) {
 
 $sectionsHtml
 
-      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>``,
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>``,
     excerpt: "$descEsc",
     image_url: "$imgRel",
     category: "$($a.category_en)",

@@ -20,13 +20,14 @@
         services: '/ar/services/',
         deviceCare: '/ar/services/',
         pcBuild: '/ar/services/gaming-pc.html',
-        areas: '/ar/areas/',
+        alBarsha: '/ar/areas/al-barsha.html',
         contact: '/contact-us.html',
         blog: '/ar/blog/',
         warranty: '/warranty-information.html',
         returns: '/ar/return-policy.html',
         privacy: '/privacy-policy.html',
-        terms: '/ar/terms.html'
+        terms: '/ar/terms.html',
+        facts: '/llms.txt'
       }
     : {
         home: '/',
@@ -34,19 +35,20 @@
         services: '/services/index.html',
         deviceCare: '/services/index.html',
         pcBuild: '/services/gaming-pc.html',
-        areas: '/areas/index.html',
+        alBarsha: '/areas/al-barsha.html',
         contact: '/contact-us.html',
         blog: '/blog.html',
         warranty: '/warranty-information.html',
         returns: '/return-policy.html',
         privacy: '/privacy-policy.html',
-        terms: '/terms.html'
+        terms: '/terms.html',
+        facts: '/llms.txt'
       };
 
   const copy = isArabic
     ? {
         sectionEyebrow: 'زر المتجر أو اتصل أو راسلنا',
-        sectionTitle: 'خطط لزيارتك إلى P Z M Mobile & Computers',
+        sectionTitle: 'خطط لزيارتك إلى P Z M Computers & Mobile Phones -Sell New Used PC Build',
         intro: 'ابدأ عبر واتساب لمعرفة التوفر والسعر أو تقييم جهازك قبل زيارة المتجر في البرشاء.',
         phoneAlt: 'الهاتف',
         phoneLabel: '+971 528 026 677',
@@ -57,37 +59,38 @@
         mapLabel: 'افتح خرائط جوجل',
         visitTitle: 'زوروا متجرنا في البرشاء',
         locationBadge: 'المتجر الرئيسي',
-        storeName: 'P Z M Mobile & Computers -Sell New Used PC Build',
+        storeName: 'P Z M Computers & Mobile Phones -Sell New Used PC Build',
         addressLine1: 'داخل Union Coop Hypermarket، الطابق الأرضي',
         addressLine2: 'شارع حصة، البرشاء، دبي',
         supportTitle1: 'استجابة سريعة',
         supportText1: 'اسأل عن السعر أو التوفر أو قيمة الاستبدال قبل أن تتحرك.',
         supportTitle2: 'خطوات واضحة',
-        supportText2: 'نشرح الضمان والحالة وخيارات الاستلام قبل تأكيد الطلب.',
+        supportText2: 'نشرح الضمان لمدة 6 أشهر على الأجهزة المستعملة والحالة وخيارات الاستلام قبل تأكيد الطلب.',
         supportTitle3: 'خيارات مرنة',
         supportText3: 'يمكنك الزيارة مباشرة أو ترتيب الاستلام أو التوصيل في الطلبات المتاحة.',
         storeTag1: 'زيارة مباشرة',
         storeTag2: 'مواقف سهلة',
         storeTag3: 'تنسيق الاستلام عند الطلب',
-        mapTitle: 'خريطة موقع P Z M Mobile & Computers -Sell New Used PC Build',
+        mapTitle: 'خريطة موقع P Z M Computers & Mobile Phones -Sell New Used PC Build',
         footerHome: 'الرئيسية',
         footerAbout: 'من نحن',
         footerServices: 'الخدمات',
         footerDeviceCare: 'عناية الأجهزة',
         footerPcBuild: 'تجميع PC',
-        footerAreas: 'المناطق',
+        footerAlBarsha: 'البرشاء',
         footerContact: 'اتصل بنا',
         footerBlog: 'المدونة',
         footerWarranty: 'معلومات الضمان',
         footerReturns: 'سياسة الإرجاع',
         footerPrivacy: 'الخصوصية',
         footerTerms: 'الشروط والأحكام',
+        footerFacts: 'Business facts',
         footerTagline: 'Sell  New  Used  PC  Build',
         footerCopy: 'جميع الحقوق محفوظة.'
       }
     : {
         sectionEyebrow: 'Visit, Call or WhatsApp',
-        sectionTitle: 'Plan Your Visit to P Z M Mobile & Computers',
+        sectionTitle: 'Plan Your Visit to P Z M Computers & Mobile Phones -Sell New Used PC Build',
         intro: "Start on WhatsApp for stock checks, pricing, and trade-in guidance before you visit our Al Barsha store.",
         phoneAlt: 'Phone',
         phoneLabel: '+971 528 026 677',
@@ -98,31 +101,32 @@
         mapLabel: 'Open Google Maps',
         visitTitle: 'Visit Our Al Barsha Store',
         locationBadge: 'Local Store',
-        storeName: 'P Z M Mobile & Computers -Sell New Used PC Build',
+        storeName: 'P Z M Computers & Mobile Phones -Sell New Used PC Build',
         addressLine1: 'Inside Union Coop Hypermarket, Ground Floor',
         addressLine2: 'Hessa Street, Al Barsha, Dubai',
         supportTitle1: 'Fast next-step help',
         supportText1: 'Ask about stock, pricing, or trade-in value before you leave home.',
         supportTitle2: 'Clear expectations',
-        supportText2: 'We explain warranty details, condition notes, and delivery options before you confirm.',
+        supportText2: 'We explain the 6-month warranty on pre-owned devices, condition notes, and delivery options before you confirm.',
         supportTitle3: 'Flexible fulfilment',
         supportText3: 'Walk in, arrange store pickup, or ask about delivery where available.',
         storeTag1: 'Walk-in friendly',
         storeTag2: 'Easy parking',
         storeTag3: 'Pickup coordination on request',
-        mapTitle: 'P Z M Mobile & Computers -Sell New Used PC Build location map',
+        mapTitle: 'P Z M Computers & Mobile Phones -Sell New Used PC Build location map',
         footerHome: 'Home',
         footerAbout: 'About',
         footerServices: 'Services',
         footerDeviceCare: 'Device Care',
         footerPcBuild: 'PC Build',
-        footerAreas: 'Areas',
+        footerAlBarsha: 'Al Barsha',
         footerContact: 'Contact',
         footerBlog: 'Blog',
         footerWarranty: 'Warranty',
         footerReturns: 'Return Policy',
         footerPrivacy: 'Privacy',
         footerTerms: 'Terms',
+        footerFacts: 'Business facts',
         footerTagline: 'Sell  New  Used  PC  Build',
         footerCopy: 'All rights reserved.'
       };
@@ -181,7 +185,7 @@
     </div>
     <div class="map-container">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.231830114033!2d55.1992671!3d25.0848627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dc0bc49a6d5%3A0x158c13f2d688b32e!2sPZM%20Computer%20Phone%20Trading%20(Sell%2CUsed%2CNew%2CBuild)!5e0!3m2!1sen!2sae!4v1715590341023!5m2!1sen!2sae"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.231830114033!2d55.1992671!3d25.0848627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6dc0bc49a6d5%3A0x158c13f2d688b32e!2sP%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build!5e0!3m2!1sen!2sae!4v1715590341023!5m2!1sen!2sae"
         title="${copy.mapTitle}"
         width="100%"
         height="100%"
@@ -206,13 +210,14 @@
       <a href="${links.services}">${copy.footerServices}</a>
       <a href="${links.deviceCare}">${copy.footerDeviceCare}</a>
       <a href="${links.pcBuild}">${copy.footerPcBuild}</a>
-      <a href="${links.areas}">${copy.footerAreas}</a>
+      <a href="${links.alBarsha}">${copy.footerAlBarsha}</a>
       <a href="${links.contact}">${copy.footerContact}</a>
       <a href="${links.blog}">${copy.footerBlog}</a>
       <a href="${links.warranty}">${copy.footerWarranty}</a>
       <a href="${links.returns}">${copy.footerReturns}</a>
       <a href="${links.privacy}">${copy.footerPrivacy}</a>
       <a href="${links.terms}">${copy.footerTerms}</a>
+      <a href="${links.facts}">${copy.footerFacts}</a>
     </div>
   </div>
   <div class="footer-bottom">

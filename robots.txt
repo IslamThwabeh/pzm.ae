@@ -1,13 +1,16 @@
 User-agent: *
 Allow: /
 
-# Prioritize important pages for crawling
-Allow: /services/buy-iphone.html
-Allow: /services/
-Allow: /blog.html
+User-agent: GPTBot
+Allow: /
 
-# Sitemap location
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://pzm.ae/sitemap.xml
-
-# Allow crawling of all content
-Disallow:

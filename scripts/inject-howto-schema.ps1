@@ -93,7 +93,7 @@ $json = HowTo `
         @{ name='Choose the GPU'; text='NVIDIA RTX 5070 Ti and AMD RX 9070 XT lead mid-range 1440p; RTX 5080 is the 4K sweet spot; RTX 5090 is enthusiast-only.' },
         @{ name='Choose memory and storage'; text='Use 32GB DDR5 at 6000–6400 MT/s and at least one 2TB Gen4 NVMe SSD; modern games exceed 150GB so plan a secondary 4TB drive if your library is large.' },
         @{ name='Choose power supply and cooling'; text='Use 850W minimum for mid-range builds or 1000W for high-end; pick an 80+ Gold or Platinum PSU and pair with a 360mm AIO or quality air cooler.' },
-        @{ name='Build at PZM in Dubai'; text='Send your budget and target games to PZM in Al Barsha; you will get sourced parts, proper cable management, thermal paste application, and stress testing before pickup.' }
+        @{ name='Build at P Z M Computers & Mobile Phones -Sell New Used PC Build in Dubai'; text='Send your budget and target games to PZM in Al Barsha; you will get sourced parts, proper cable management, thermal paste application, and stress testing before pickup.' }
     )
 Inject-HowTo 'blog\how-to-choose-perfect-gaming-pc-build\index.html' $json
 

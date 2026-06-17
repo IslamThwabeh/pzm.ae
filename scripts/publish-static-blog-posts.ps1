@@ -140,12 +140,12 @@ function Get-SchemaJson {
         inLanguage = 'en'
         author = [ordered]@{
             '@type' = 'Organization'
-            name = 'PZM Computers & Phones Store'
+            name = 'P Z M Computers & Mobile Phones -Sell New Used PC Build'
             url = 'https://pzm.ae/'
         }
         publisher = [ordered]@{
             '@type' = 'Organization'
-            name = 'PZM Computers & Phones Store'
+            name = 'P Z M Computers & Mobile Phones -Sell New Used PC Build'
             logo = [ordered]@{
                 '@type' = 'ImageObject'
                 url = 'https://pzm.ae/images/mini_logo.png'
@@ -192,7 +192,7 @@ function New-ArticleHtml {
     <meta property="og:description" content="__DESCRIPTION__">
     <meta property="og:url" content="__ARTICLE_URL__">
     <meta property="og:image" content="__OG_IMAGE__">
-    <meta property="og:site_name" content="PZM Computers & Phones Store">
+    <meta property="og:site_name" content="P Z M Computers & Mobile Phones -Sell New Used PC Build">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="__PAGE_TITLE__">
@@ -232,19 +232,7 @@ function New-ArticleHtml {
                         <a href="/services/accessories.html">Accessories</a>
                     </div>
                 </div>
-                <div class="nav-dropdown">
-                    <button class="nav-dropdown-trigger">Areas</button>
-                    <div class="nav-dropdown-content">
-                        <a href="/areas/al-barsha.html">Al Barsha</a>
-                        <a href="/areas/al-quoz.html">Al Quoz</a>
-                        <a href="/areas/dubai-marina.html">Dubai Marina</a>
-                        <a href="/areas/emirates-hills.html">Emirates Hills</a>
-                        <a href="/areas/jbr.html">JBR</a>
-                        <a href="/areas/jumeirah.html">Jumeirah</a>
-                        <a href="/areas/jumeirah-village.html">Jumeirah Village</a>
-                        <a href="/areas/tecom.html">Tecom</a>
-                    </div>
-                </div>
+                <a href="/areas/al-barsha.html">Al Barsha</a>
                 <a href="/blog.html">Blog</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -297,7 +285,7 @@ __CONTENT__
     $keywords = @(
         ($Post.slug -replace '-', ' '),
         "$($Post.category) guide Dubai",
-        'PZM Computers & Phones Store',
+        'P Z M Computers & Mobile Phones -Sell New Used PC Build',
         'Dubai electronics blog'
     ) -join ', '
 

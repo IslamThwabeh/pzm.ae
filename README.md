@@ -1,6 +1,6 @@
 # pzm.ae
 
-Static website for P Z M Mobile & Computers -Sell New Used PC Build, hosted on GitHub Pages.
+Static website for P Z M Computers & Mobile Phones -Sell New Used PC Build, hosted on GitHub Pages.
 
 ## Phase 1 Operations Pack
 

@@ -1,25 +1,25 @@
-// P Z M Mobile & Computers Business Hours - Local calculation with Dubai timezone (UTC+4)
+// P Z M Computers & Mobile Phones -Sell New Used PC Build Business Hours - Local calculation with Dubai timezone (UTC+4)
 
 // Store hours: [openHour, openMin, closeHour, closeMin]
 // closeHour > 23 means next day (e.g. 25 = 1 AM next day)
 const FALLBACK_STORE_HOURS = {
-  0: { open: [10, 0], close: [25, 0] },  // Sunday: 10 AM – 1 AM
+  0: { open: [10, 0], close: [23, 0] },  // Sunday: 10 AM - 11 PM
   1: { open: [10, 0], close: [23, 0] },  // Monday: 10 AM – 11 PM
-  2: { open: [10, 0], close: [22, 30] },  // Tuesday: 10 AM – 10:30 PM
+  2: { open: [10, 0], close: [23, 0] },  // Tuesday: 10 AM - 11 PM
   3: { open: [10, 0], close: [23, 0] },  // Wednesday: 10 AM – 11 PM
-  4: { open: [10, 0], close: [23, 0] },  // Thursday: 10 AM – 11 PM
+  4: null,  // Thursday: Closed for walk-in visits
   5: { open: [10, 0], close: [23, 0] },  // Friday: 10 AM – 11 PM
-  6: { open: [10, 0], close: [24, 0] },  // Saturday: 10 AM – 12 AM
+  6: { open: [10, 0], close: [23, 0] },  // Saturday: 10 AM - 11 PM
 };
 
 const FALLBACK_WEEKDAY_TEXT = [
-  "Sunday: 10:00 AM – 01:00 AM",
+  "Sunday: 10:00 AM - 11:00 PM",
   "Monday: 10:00 AM – 11:00 PM",
-  "Tuesday: 10:00 AM – 10:30 PM",
+  "Tuesday: 10:00 AM - 11:00 PM",
   "Wednesday: 10:00 AM – 11:00 PM",
-  "Thursday: 10:00 AM – 11:00 PM",
+  "Thursday: Closed",
   "Friday: 10:00 AM – 11:00 PM",
-  "Saturday: 10:00 AM – 12:00 AM"
+  "Saturday: 10:00 AM - 11:00 PM"
 ];
 
 const HOURS_ENDPOINT = 'https://pzm-business-hours.islam-thwabeh.workers.dev/hours';
@@ -43,14 +43,14 @@ const UI_TEXT = {
   en: {
     openNow: 'Open Now',
     closed: 'Closed',
-    outsideHours: 'We are still receiving your calls and messages outside working hours',
+    outsideHours: 'We are still receiving your calls and WhatsApp messages outside walk-in hours',
     today: 'Today',
     unavailable: 'Business hours unavailable.'
   },
   ar: {
     openNow: 'مفتوح الآن',
     closed: 'مغلق الآن',
-    outsideHours: 'نستقبل مكالماتكم ورسائلكم أيضاً خارج أوقات العمل',
+    outsideHours: 'نستقبل مكالماتكم ورسائلكم على واتساب أيضاً خارج أوقات الزيارة',
     today: 'اليوم',
     unavailable: 'ساعات العمل غير متاحة حالياً.'
   }
@@ -188,7 +188,11 @@ function parseStoreHours(weekdayText) {
     if (typeof dayIndex !== 'number') return null;
 
     const rangeText = line.substring(colonIndex + 1).trim();
-    if (!rangeText || /closed/i.test(rangeText)) return null;
+    if (!rangeText) return null;
+    if (/closed/i.test(rangeText)) {
+      parsed[dayIndex] = null;
+      continue;
+    }
 
     const normalizedRange = rangeText.replace(/[–—]/g, '-');
     const parts = normalizedRange.split('-');
