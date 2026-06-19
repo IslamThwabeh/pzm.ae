@@ -465,7 +465,7 @@ function Build-EnHtml($a) {
             </div>
             <div class="nav-actions" id="navActions">
                 <a href="tel:+971528026677" class="btn-login">Call Store</a>
-                <a href="https://wa.me/971528026677?text=Hi%2C%20I%27m%20interested%20in%20your%20services.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a>
+                <a href="https://wa.me/971588366841?text=Hi%2C%20I%27m%20interested%20in%20your%20services.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a>
             </div>
             <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
         </div>
@@ -481,7 +481,7 @@ function Build-EnHtml($a) {
                 <div class="blog-content">
 $sections
 
-                    <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting <a href="/areas/al-barsha.html">our Al Barsha store</a>. You can also <a href="$($a.money_en)">$($a.money_label_en.ToLower())</a>.</p>
+                    <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting <a href="/areas/al-barsha.html">our Al Barsha store</a>. You can also <a href="$($a.money_en)">$($a.money_label_en.ToLower())</a>.</p>
                 </div>
 
                 <aside class="blog-next-steps">
@@ -593,7 +593,7 @@ function Build-ArHtml($a) {
             </div>
             <div class="nav-actions" id="navActions">
                 <a href="tel:+971528026677" class="btn-login">اتصل بنا</a>
-                <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%2C%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">واتساب</a>
+                <a href="https://wa.me/971588366841?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%2C%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">واتساب</a>
             </div>
             <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
         </div>
@@ -609,7 +609,7 @@ function Build-ArHtml($a) {
                 <div class="blog-content">
 $sections
 
-                    <p>تريد رقماً درهمياً حقيقياً يناسب حالتك؟ <a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20%D8%B3%D8%A4%D8%A7%D9%84%20%D9%85%D9%86%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">راسلنا على واتساب</a> قبل الزيارة إلى <a href="/ar/areas/al-barsha.html">متجر البرشاء</a>. يمكنك أيضاً <a href="$($a.money_ar)">$($a.money_label_ar)</a>.</p>
+                    <p>تريد رقماً درهمياً حقيقياً يناسب حالتك؟ <a href="https://wa.me/971588366841?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20%D8%B3%D8%A4%D8%A7%D9%84%20%D9%85%D9%86%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">راسلنا على واتساب</a> قبل الزيارة إلى <a href="/ar/areas/al-barsha.html">متجر البرشاء</a>. يمكنك أيضاً <a href="$($a.money_ar)">$($a.money_label_ar)</a>.</p>
                 </div>
 
                 <aside class="blog-next-steps">
@@ -668,7 +668,7 @@ $newPostBlocks = foreach ($a in $articles) {
 
 $sectionsHtml
 
-      <p>Want a real AED number for your situation? <a href="https://wa.me/971528026677?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>``,
+      <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20$($a.slug)%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>``,
     excerpt: "$descEsc",
     image_url: "$imgRel",
     category: "$($a.category_en)",

@@ -53,7 +53,7 @@
         phoneAlt: 'الهاتف',
         phoneLabel: '+971 528 026 677',
         whatsappAlt: 'واتساب',
-        whatsappHref: 'https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85%20%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83%D9%85.%20(via%20pzm.ae)',
+        whatsappHref: 'https://wa.me/971588366841?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85%20%D9%88%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83%D9%85.%20(via%20pzm.ae)',
         whatsappLabel: 'راسلنا على واتساب',
         mapAlt: 'الموقع',
         mapLabel: 'افتح خرائط جوجل',
@@ -95,7 +95,7 @@
         phoneAlt: 'Phone',
         phoneLabel: '+971 528 026 677',
         whatsappAlt: 'WhatsApp',
-        whatsappHref: 'https://wa.me/971528026677?text=Hi%2C%20I%27m%20interested%20in%20the%20services%20listed%20on%20your%20website.%20Can%20you%20tell%20me%20more%3F%20(via%20pzm.ae)',
+        whatsappHref: 'https://wa.me/971588366841?text=Hi%2C%20I%27m%20interested%20in%20the%20services%20listed%20on%20your%20website.%20Can%20you%20tell%20me%20more%3F%20(via%20pzm.ae)',
         whatsappLabel: 'Request Help on WhatsApp',
         mapAlt: 'Location',
         mapLabel: 'Open Google Maps',
@@ -245,8 +245,8 @@ function injectWhatsAppFloat(isArabic) {
   if (document.getElementById('pzm-wa-float')) return;
 
   var waHref = isArabic
-    ? 'https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85.%20(via%20pzm.ae)'
-    : 'https://wa.me/971528026677?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20device%20or%20service.%20(via%20pzm.ae)';
+    ? 'https://wa.me/971588366841?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85.%20(via%20pzm.ae)'
+    : 'https://wa.me/971588366841?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20a%20device%20or%20service.%20(via%20pzm.ae)';
 
   var labels = isArabic ? {
     btnAria: 'دردش على واتساب',
