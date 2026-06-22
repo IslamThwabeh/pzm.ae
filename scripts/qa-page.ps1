@@ -35,7 +35,7 @@ Add-Result -Check "Canonical tag" -Pass ($content -match '<link\s+rel="canonical
 Add-Result -Check "Robots meta" -Pass ($content -match '<meta\s+name="robots"') -Details "Expected robots meta"
 Add-Result -Check "H1 present" -Pass ($content -match '<h1[\s>]') -Details "Expected one or more H1 tags"
 Add-Result -Check "JSON-LD present" -Pass ($content -match 'application/ld\+json') -Details "Expected at least one JSON-LD block"
-$hasWaLink = $content -match 'wa\.me/971528026677'
+$hasWaLink = $content -match 'wa\.me/971588366841'
 $hasViaSuffix = ($content -match '\(via pzm\.ae\)') -or ($content -match '\(via%20pzm\.ae\)')
 Add-Result -Check "WhatsApp via suffix" -Pass ($hasWaLink -and $hasViaSuffix) -Details "WhatsApp links should include (via pzm.ae)"
 Add-Result -Check "Phone link present" -Pass ($content -match 'tel:\+971528026677') -Details "Expected call link"
