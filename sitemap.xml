@@ -817,12 +817,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pzm.ae/services/device-care.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pzm.ae/services/gaming-laptops-dubai.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -841,14 +835,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pzm.ae/services/iphone-battery-replacement-al-barsha.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pzm.ae/services/iphone-care-al-barsha.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <loc>https://pzm.ae/services/iphone-device-care-al-barsha.html</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -872,12 +860,6 @@
   </url>
   <url>
     <loc>https://pzm.ae/services/macbook-care-dubai.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://pzm.ae/services/same-day-screen-care-al-barsha.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

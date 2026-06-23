@@ -183,7 +183,7 @@ const blogPosts = [
       <ul>
         <li>Compare specs-to-price, not just model names.</li>
         <li>Be flexible on color, storage, and generation.</li>
-        <li>Ask about open-box and certified used options for better value.</li>
+        <li>Ask about open-box and tested used options for better value.</li>
         <li>Lock your deal quickly when stock is confirmed.</li>
         <li>Prioritize warranty and after-sales support over a small short-term discount.</li>
       </ul>
@@ -191,7 +191,7 @@ const blogPosts = [
       <h3>Our view for the coming months</h3>
       <p>Price movement will likely remain model-specific rather than uniform across all categories. Devices with fragile supply or high demand may continue to fluctuate, while mainstream inventory should stay more predictable. Buyers who stay flexible and purchase from trusted local sellers can still get strong value.</p>
 
-      <p>If you want, our team can recommend current best-value options in real time based on your budget for <a href="/services/buy-iphone.html">iPhone</a>, <a href="/services/brand-new.html">brand-new devices</a>, <a href="/services/buy-used.html">certified used laptops and phones</a>, <a href="/services/gaming-pc.html">gaming PC builds</a>, or <a href="/services/accessories.html">accessories</a>. You can also use our <a href="/areas/al-barsha.html">Al Barsha store page</a> before visiting.</p>
+      <p>If you want, our team can recommend current best-value options in real time based on your budget for <a href="/services/buy-iphone.html">iPhone</a>, <a href="/services/brand-new.html">brand-new devices</a>, <a href="/services/buy-used.html">tested used laptops and phones</a>, <a href="/services/gaming-pc.html">gaming PC builds</a>, or <a href="/services/accessories.html">accessories</a>. You can also use our <a href="/areas/al-barsha.html">Al Barsha store page</a> before visiting.</p>
     `,
     excerpt: "A practical UAE market guide on how Iran-US geopolitical tensions can influence smartphone, laptop, and PC pricing, plus smart buying tips.",
     image_url: "images/blog/iran-us-tensions-mobile-pc-prices-uae-2026.jpg",
@@ -217,12 +217,12 @@ const blogPosts = [
       </ul>
 
       <h3>3. The used and refurbished market advantage</h3>
-      <p>One of the clearest winners in a tariff-driven price surge is the <a href="/services/buy-used.html">used and certified pre-owned market</a>. Devices that were imported before tariff increases carry their original cost basis, meaning buyers can find flagship phones and laptops at pre-tariff pricing. This is why demand for quality used devices has surged across Dubai in Q1 2026.</p>
+      <p>One of the clearest winners in a tariff-driven price surge is the <a href="/services/buy-used.html">used and tested pre-owned market</a>. Devices that were imported before tariff increases carry their original cost basis, meaning buyers can find flagship phones and laptops at pre-tariff pricing. This is why demand for quality used devices has surged across Dubai in Q1 2026.</p>
 
       <h3>4. Smart buying strategies during tariff uncertainty</h3>
       <ul>
         <li>Buy sooner rather than later — prices tend to step up, not down, during active tariff periods.</li>
-        <li>Consider <a href="/services/buy-used.html">certified used devices</a> for 20–40% savings over new retail.</li>
+        <li>Consider <a href="/services/buy-used.html">tested used devices</a> for 20–40% savings over new retail.</li>
         <li>Compare storage tiers carefully — higher-storage models often see larger percentage increases.</li>
         <li>If you have an older device to <a href="/services/sell-gadgets.html">trade in or sell</a>, its value has likely increased too.</li>
         <li>For <a href="/services/gaming-pc.html">gaming PC builds</a>, lock in GPU prices when available since restocks are unpredictable.</li>
@@ -248,7 +248,7 @@ const blogPosts = [
       <h3>2. How gold prices shift consumer spending in the UAE</h3>
       <p>When gold prices rise sharply, many UAE residents who hold gold see their net worth increase. This often leads to a confidence boost in discretionary spending — including electronics. Simultaneously, others tighten budgets because the cost of gold gifts for weddings, holidays, and savings goes up. The result is a split market: demand for both premium devices and budget-friendly options rises at the same time.</p>
 
-      <h3>3. Winner: the certified used and trade-in market</h3>
+      <h3>3. Winner: the tested used and trade-in market</h3>
       <p>High gold prices create an interesting dynamic for <a href="/services/buy-used.html">used electronics</a>. Consumers looking to offset rising gold costs for personal events may <a href="/services/sell-gadgets.html">sell or trade in their current phones and laptops</a> to free up cash. This increases the supply of quality pre-owned devices, creating better deals for buyers. If you are in the market for a <a href="/services/buy-used.html">used iPhone, MacBook, or gaming laptop</a>, now is a strong time to shop.</p>
 
       <h3>4. New device pricing in a high-gold environment</h3>
@@ -257,7 +257,7 @@ const blogPosts = [
       <h3>5. Practical advice for Dubai tech shoppers right now</h3>
       <ul>
         <li>If you have old devices collecting dust, their <a href="/services/sell-gadgets.html">trade-in value</a> is strong right now — sell while demand is high.</li>
-        <li>Consider <a href="/services/buy-used.html">certified pre-owned devices</a> to stretch your dirham further during uncertain economic conditions.</li>
+        <li>Consider <a href="/services/buy-used.html">tested pre-owned devices</a> to stretch your dirham further during uncertain economic conditions.</li>
         <li>For new purchases, the <a href="/services/buy-iphone.html">iPhone 17 series</a> and latest MacBooks remain competitively priced in the UAE compared to many global markets.</li>
         <li>If you need <a href="/services/index.html">device care</a> instead of replacement, it is an especially cost-effective choice when new device prices are elevated.</li>
         <li>Protect your investment with quality <a href="/services/accessories.html">cases, screen protectors, and accessories</a> — replacement costs are not going down.</li>
@@ -275,10 +275,10 @@ const blogPosts = [
   {
     title: "Used iPhone vs New iPhone in Dubai: Total Cost Guide (2026)",
     slug: "used-iphone-vs-new-iphone-dubai-2026",
-    content: `<p>Many buyers in Dubai ask the same question before upgrading: should you buy a brand-new iPhone or a certified used one? In 2026, the answer depends less on hype and more on total cost over 12 to 24 months. This guide breaks down where your money really goes so you can buy with confidence.</p>
+    content: `<p>Many buyers in Dubai ask the same question before upgrading: should you buy a brand-new iPhone or a tested used one? In 2026, the answer depends less on hype and more on total cost over 12 to 24 months. This guide breaks down where your money really goes so you can buy with confidence.</p>
 
       <h3>1. Upfront price gap is still the biggest factor</h3>
-      <p>A new iPhone gives you the newest chipset, full launch-year warranty period, and maximum battery health. A certified used iPhone typically saves 20 to 40 percent upfront, especially on one-generation-old Pro models. If your priority is value per dirham, that gap is hard to ignore. You can compare both options side by side at <a href="/services/buy-iphone.html">new iPhone stock</a> and <a href="/services/buy-used.html">certified used iPhones</a>.</p>
+      <p>A new iPhone gives you the newest chipset, full launch-year warranty period, and maximum battery health. A tested used iPhone typically saves 20 to 40 percent upfront, especially on one-generation-old Pro models. If your priority is value per dirham, that gap is hard to ignore. You can compare both options side by side at <a href="/services/buy-iphone.html">new iPhone stock</a> and <a href="/services/buy-used.html">tested used iPhones</a>.</p>
 
       <h3>2. Depreciation: where most people lose money</h3>
       <p>New phones lose value fastest in the first year. If you buy new at launch and sell after 12 months, the depreciation cost is often higher than expected. A used phone that already passed the first depreciation cycle usually holds value better over the same period. If you rotate devices often, used usually wins on total ownership cost.</p>
@@ -290,14 +290,14 @@ const blogPosts = [
       <ul>
         <li><strong>Buy new:</strong> You want the latest camera system, maximum long-term software runway, and lower uncertainty.</li>
         <li><strong>Buy used:</strong> You want top-tier performance without flagship launch pricing.</li>
-        <li><strong>Best hybrid move:</strong> Buy a certified used Pro model, then protect it with quality accessories and maintain battery health.</li>
+        <li><strong>Best hybrid move:</strong> Buy a tested used Pro model, then protect it with quality accessories and maintain battery health.</li>
       </ul>
 
       <h3>5. Smart way to reduce upgrade cost</h3>
       <p>If you already own a working device, check trade-in first. Converting your current phone into budget can narrow the gap between new and used options more than waiting for random discounts. Start from <a href="/services/sell-gadgets.html">sell and trade-in options</a>, then compare your final net cost across models.</p>
 
       <p>Want a quick recommendation for your budget? Message P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20compare%20new%20vs%20used%20iPhone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting the <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
-    excerpt: "Compare new vs certified used iPhones in Dubai using total ownership cost, depreciation, battery risk, and trade-in strategy.",
+    excerpt: "Compare new vs tested used iPhones in Dubai using total ownership cost, depreciation, battery risk, and trade-in strategy.",
     image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
     category: "Buying",
     date: "2026-05-22"
@@ -338,7 +338,7 @@ const blogPosts = [
     content: `<p>Buying at the right time can save you hundreds of dirhams on laptops in Dubai. Instead of chasing random discounts, use this month-by-month calendar to align your purchase with inventory cycles, back-to-school demand, and retail promotions.</p>
 
       <h3>1. January to February: strong for value hunters</h3>
-      <p>After holiday campaigns, many retailers rebalance stock. You can often find strong deals on previous-generation models and open-box units. If your budget is tight, compare <a href="/services/brand-new.html">brand-new laptops</a> with <a href="/services/buy-used.html">certified used inventory</a> in this period.</p>
+      <p>After holiday campaigns, many retailers rebalance stock. You can often find strong deals on previous-generation models and open-box units. If your budget is tight, compare <a href="/services/brand-new.html">brand-new laptops</a> with <a href="/services/buy-used.html">tested used inventory</a> in this period.</p>
 
       <h3>2. March to May: selective upgrades</h3>
       <p>This period is good for buyers who need a machine now and want stable pricing rather than peak discounts. It is also a smart time to trade in older devices before summer campaigns. Use <a href="/services/sell-gadgets.html">sell and trade-in options</a> to cut net purchase cost.</p>
@@ -379,7 +379,7 @@ const blogPosts = [
       <p>If damage is minor, be transparent and ask for an as-is valuation first. If the cost of improving the device is high relative to its value, selling as-is is usually cleaner. Our team can compare the as-is offer against upgrade options so you can decide without wasting time.</p>
 
       <h3>4. Trade-in vs private marketplace</h3>
-      <p>Private listings can sometimes get a higher price, but they cost time and carry no-show risk. Trade-in is usually faster, safer, and easier when you want to immediately move into a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">better certified used model</a>.</p>
+      <p>Private listings can sometimes get a higher price, but they cost time and carry no-show risk. Trade-in is usually faster, safer, and easier when you want to immediately move into a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">better tested used model</a>.</p>
 
       <h3>5. Quick checklist before you visit</h3>
       <ul>
@@ -410,7 +410,7 @@ const blogPosts = [
       </ul>
 
       <h3>2. Honest Dubai price math (AED)</h3>
-      <p>Brand-new 17 Pro Max sits 800-1,400 AED above 16 Pro Max at the same storage. A certified used 16 Pro Max in great condition sits 1,800-2,800 AED below a new 17 Pro Max — that second gap is where the real value lives. See live stock at <a href="/services/buy-iphone.html">new iPhone 17 line</a> and <a href="/services/buy-used.html">certified used iPhones</a>.</p>
+      <p>Brand-new 17 Pro Max sits 800-1,400 AED above 16 Pro Max at the same storage. A tested used 16 Pro Max in great condition sits 1,800-2,800 AED below a new 17 Pro Max — that second gap is where the real value lives. See live stock at <a href="/services/buy-iphone.html">new iPhone 17 line</a> and <a href="/services/buy-used.html">tested used iPhones</a>.</p>
 
       <h3>3. Trade-in math is the real upgrade math</h3>
       <p>The 16 Pro Max trade-in window is best in the first 6-9 months after the 17 launch. Get a same-day quote via <a href="/services/sell-gadgets.html">our sell & trade-in page</a> before deciding — the only number that matters is the net upgrade cost.</p>
@@ -758,7 +758,7 @@ const blogPosts = [
       <p>Pay for new Air M4 if you depend on AppleCare, want the brightest screen, plan to keep the laptop 6+ years, or run heavier workloads that benefit from M4 vs M2. A new M4 also has full 1-year warranty and the latest port speeds.</p>
 
       <h3>5) When used wins</h3>
-      <p>Pick used if your budget is under 3,500 AED, you want maximum AED-per-feature, or you are buying for a student/secondary use. A 30-day warranty plus a free battery health check covers the realistic risk.</p>
+      <p>Pick used if your budget is limited, you want stronger value per dirham, or you are buying for student or secondary use. Eligible PZM pre-owned units include a 6-month warranty, with battery condition and device notes explained before purchase.</p>
 
       <h3>6) Trade-in to shrink the gap</h3>
       <p>If you already own a laptop, do not skip a trade-in. Even a 2018 Intel MacBook Air in working condition takes 600–1,000 AED off either new or used. <a href="/services/sell-gadgets.html">Get a same-day quote</a> before you commit.</p>
@@ -1382,8 +1382,8 @@ const postJourneys = {
   "us-tariffs-2026-electronics-prices-dubai": {
     moneyPage: {
       href: "/services/buy-used.html",
-      label: "Compare certified used value",
-      shortLabel: "Certified used",
+      label: "Compare tested used value",
+      shortLabel: "Tested used",
       description: "The used devices page is the strongest hedge when new-device prices move fast."
     },
     areaPage: {
@@ -1410,7 +1410,7 @@ const postJourneys = {
   "used-iphone-vs-new-iphone-dubai-2026": {
     moneyPage: {
       href: "/services/buy-used.html",
-      label: "Compare certified used iPhone options",
+      label: "Compare tested used iPhone options",
       shortLabel: "Used iPhones",
       description: "Start with tested used iPhones if you want stronger value versus launch pricing."
     },
@@ -1522,9 +1522,9 @@ const postJourneys = {
   "best-used-macbook-dubai-2026": {
     moneyPage: {
       href: "/services/buy-used.html",
-      label: "Browse certified used MacBooks",
+      label: "Browse tested used MacBooks",
       shortLabel: "Used MacBooks",
-      description: "See current stock with 30-day warranty and a verified battery health number."
+      description: "See current stock with verified battery health and a 6-month warranty on eligible pre-owned units."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1578,9 +1578,9 @@ const postJourneys = {
   "best-used-iphone-under-1500-aed-dubai-2026": {
     moneyPage: {
       href: "/services/buy-used.html",
-      label: "Browse certified used iPhones",
+      label: "Browse tested used iPhones",
       shortLabel: "Used iPhones",
-      description: "Current stock under 1,500 AED with 30-day warranty and battery health verified."
+      description: "Current stock under 1,500 AED with verified battery health and a 6-month warranty on eligible pre-owned units."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1634,9 +1634,9 @@ const postJourneys = {
   "best-used-iphone-students-dubai-2026": {
     moneyPage: {
       href: "/services/buy-used.html",
-      label: "See certified used iPhones",
+      label: "See tested used iPhones",
       shortLabel: "Used iPhones",
-      description: "Tested battery, original screen, and a 30-day written warranty on every unit."
+      description: "Tested battery, clearly stated screen condition, and a 6-month warranty on eligible pre-owned units."
     },
     areaPage: {
       href: "/areas/al-barsha.html",
@@ -1664,7 +1664,7 @@ const postJourneys = {
       href: "/services/buy-used.html",
       label: "Browse used MacBook Air stock",
       shortLabel: "Used MacBook",
-      description: "Verified battery health, clean SSD, and a 30-day warranty on every unit."
+      description: "Verified battery condition, storage checks, and a 6-month warranty on eligible pre-owned units."
     },
     areaPage: {
       href: "/areas/al-barsha.html",

@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const descriptions = [
         "Get the best value for your old iPhones. Professional evaluation and instant payment.",
-        "Expert repair services for all your devices. Fast, reliable, and warranty-backed repairs.",
-        "Breathe new life into your MacBook with our professional repair and upgrade services.",
+        "Expert device care for phones and computers, with clear options and warranty-backed technical service.",
+        "Breathe new life into your MacBook with professional device care and upgrade services.",
         "Sell your old MacBook for the best price. Quick evaluation and same-day payment.",
-        "Comprehensive tech solutions under one roof. Sales, repairs, and professional support."
+        "Comprehensive tech solutions under one roof. Sales, device care, and professional support."
     ];
     
     slides.forEach((img, index) => {
