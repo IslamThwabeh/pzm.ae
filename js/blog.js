@@ -20,7 +20,7 @@ const blogPosts = [
       <h3>Why build with P Z M Computers & Mobile Phones -Sell New Used PC Build</h3>
       <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU pricing for custom builds</a>. From <a href="/areas/al-barsha.html">our Al Barsha store</a>, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. If you are comparing options before driving in from <a href="/areas/al-barsha.html">Al Barsha</a>, send your budget and target games first so we can narrow the right parts list. Want to discuss your dream build? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting.</p>`,
     excerpt: "Your 2026 guide to building the perfect gaming PC — from Ryzen 9000 and Arrow Lake CPUs to RTX 5070 and RX 9070 GPUs, with Dubai-specific buying advice.",
-    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.jpg",
+    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.webp",
     category: "Gaming",
     date: "2025-12-15"
   },
@@ -84,7 +84,7 @@ const blogPosts = [
       <h3>When to call in the professionals</h3>
       <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build offers PC diagnostics and care</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
-    image_url: "images/blog/essential-pc-maintenance-tips.jpg",
+    image_url: "images/blog/essential-pc-maintenance-tips.webp",
     category: "PC",
     date: "2026-02-08"
   },
@@ -115,7 +115,7 @@ const blogPosts = [
 
       <p>Visit <a href="/services/accessories.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
     excerpt: "The best phone and laptop accessories worth buying in 2026 — from tempered glass and MagSafe chargers to USB-C hubs and portable SSDs.",
-    image_url: "images/blog/latest-mobile-accessories-2026.jpg",
+    image_url: "images/blog/latest-mobile-accessories-2026.webp",
     category: "Accessories",
     date: "2026-02-20"
   },
@@ -157,7 +157,7 @@ const blogPosts = [
 
       <p><a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20phone%20battery%20drains%20fast%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your phone model and battery symptoms before visiting, especially if you are planning the trip from <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
     excerpt: "The real reasons your phone battery dies fast in 2026, which charging myths to ignore, and when it is time for a battery replacement.",
-    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
+    image_url: "images/blog/understanding-smartphone-battery-life.webp",
     category: "Mobile",
     date: "2026-03-05"
   },
@@ -194,7 +194,7 @@ const blogPosts = [
       <p>If you want, our team can recommend current best-value options in real time based on your budget for <a href="/services/buy-iphone.html">iPhone</a>, <a href="/services/brand-new.html">brand-new devices</a>, <a href="/services/buy-used.html">tested used laptops and phones</a>, <a href="/services/gaming-pc.html">gaming PC builds</a>, or <a href="/services/accessories.html">accessories</a>. You can also use our <a href="/areas/al-barsha.html">Al Barsha store page</a> before visiting.</p>
     `,
     excerpt: "A practical UAE market guide on how Iran-US geopolitical tensions can influence smartphone, laptop, and PC pricing, plus smart buying tips.",
-    image_url: "images/blog/iran-us-tensions-mobile-pc-prices-uae-2026.jpg",
+    image_url: "images/blog/iran-us-tensions-mobile-pc-prices-uae-2026.webp",
     category: "Market",
     date: "2026-03-18"
   },
@@ -233,7 +233,7 @@ const blogPosts = [
 
       <p>Our team at P Z M Computers & Mobile Phones -Sell New Used PC Build tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, message us on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before you travel for a quick quote.</p>`,
     excerpt: "How the latest US tariffs are pushing up smartphone, laptop, and gaming PC prices in Dubai — and practical strategies to get the best deals in 2026.",
-    image_url: "images/blog/us-tariffs-2026-electronics-prices-dubai.jpg",
+    image_url: "images/blog/us-tariffs-2026-electronics-prices-dubai.webp",
     category: "Market",
     date: "2026-03-25"
   },
@@ -268,7 +268,7 @@ const blogPosts = [
 
       <p>Visit P Z M Computers & Mobile Phones -Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">care</a>. Or reach out on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
-    image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.jpg",
+    image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.webp",
     category: "Market",
     date: "2026-03-28"
   },
@@ -391,7 +391,7 @@ const blogPosts = [
 
       <p>To get a fast estimate, send model, storage, and clear photos to P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-barsha.html">Al Barsha</a> or nearby areas.</p>`,
     excerpt: "Maximize trade-in value in Dubai with this 2026 guide on preparation, pricing factors, and when to sell your used phone.",
-    image_url: "images/blog/sell-used-phone-trade-in-dubai-2026.png",
+    image_url: "images/blog/sell-used-phone-trade-in-dubai-2026.webp",
     category: "Trade-in",
     date: "2026-05-26"
   },
@@ -417,7 +417,7 @@ const blogPosts = [
 
       <p>Message us on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20decide%20between%20iPhone%2017%20Pro%20Max%20and%2016%20Pro%20Max%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your current model and battery health for a personal recommendation before visiting <a href="/areas/al-barsha.html">Al Barsha</a>.</p>`,
     excerpt: "Honest 2026 upgrade comparison: iPhone 17 Pro Max vs 16 Pro Max in Dubai. Camera, chip, battery, AED price gap, and trade-in math.",
-    image_url: "images/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026.png",
+    image_url: "images/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026.webp",
     category: "Buying",
     date: "2026-05-30"
   },
@@ -678,7 +678,7 @@ const blogPosts = [
 
       <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20iphone-17-vs-iphone-17-pro-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
     excerpt: "iPhone 17 vs iPhone 17 Pro in Dubai 2026 — AED price gap, what you actually get for the extra spend, and which model wins for most buyers.",
-    image_url: "images/buy_iphone/iPhone_17_Pro_all_colors.jpg",
+    image_url: "images/buy_iphone/iPhone_17_Pro_all_colors.webp",
     category: "Buying",
     date: "2026-05-31"
   },
@@ -736,7 +736,7 @@ const blogPosts = [
 
       <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20macbook-air-m4-vs-macbook-pro-m4-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
     excerpt: "MacBook Air M4 vs MacBook Pro M4 in Dubai 2026 — AED price gap, who really needs the Pro display, and the cheaper Air spec that wins for most buyers.",
-    image_url: "images/macbook/macbook_air_13_M4.png",
+    image_url: "images/macbook/macbook_air_13_M4.webp",
     category: "MacBook",
     date: "2026-05-31"
   },
@@ -765,7 +765,7 @@ const blogPosts = [
 
       <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20used-macbook-air-vs-new-macbook-air-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
     excerpt: "Used MacBook Air vs new MacBook Air in Dubai 2026 — real AED gap by model, battery and software runway, and when used is the smarter buy.",
-    image_url: "images/macbook/macbook_air_13_M4.png",
+    image_url: "images/macbook/macbook_air_13_M4.webp",
     category: "Used",
     date: "2026-05-31"
   },
@@ -794,7 +794,7 @@ const blogPosts = [
 
       <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20best-gaming-pc-under-5000-aed-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
     excerpt: "Best gaming PC under 5,000 AED in Dubai 2026 — a real 1080p high-refresh parts list, AED breakdown, and what to upgrade later.",
-    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.jpg",
+    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.webp",
     category: "Gaming PC",
     date: "2026-05-31"
   },
@@ -823,7 +823,7 @@ const blogPosts = [
 
       <p>Want a real AED number for your situation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20question%20from%20best-gaming-pc-under-8000-aed-dubai-2026%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>`,
     excerpt: "Best gaming PC under 8,000 AED in Dubai 2026 — proper 1440p ultra parts list, AED breakdown, and where to spend or save.",
-    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.jpg",
+    image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.webp",
     category: "Gaming PC",
     date: "2026-05-31"
   },
@@ -959,7 +959,7 @@ const blogPosts = [
 
       <p>Need a real AED recommendation? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20read%20the%20iOS%2026.5%20article%20and%20want%20help%20choosing%20an%20iPhone.%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> or visit <a href="/areas/al-barsha.html">our Al Barsha store</a>.</p>`,
     excerpt: "iOS 26.5 brings encrypted RCS messaging, a new Pride wallpaper, Maps changes, and security updates. Here is what Dubai iPhone buyers should know before buying, trading in, or upgrading.",
-    image_url: "images/blog/ios-26-5-update-dubai.png",
+    image_url: "images/blog/ios-26-5-update-dubai.webp",
     category: "iPhone",
     date: "2026-06-11"
   },
@@ -1030,7 +1030,7 @@ const blogPosts = [
 
       <p>Need the phone ready before the next match? Send your model and issue on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20my%20phone%20ready%20for%20World%20Cup%202026.%20Model%3A%20%2C%20Issue%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Start with <a href="/services/index.html">device care</a>, compare <a href="/services/accessories.html">phone accessories</a>, or check <a href="/services/buy-used.html">tested used phones</a> if replacement makes more sense.</p>`,
     excerpt: "A practical World Cup 2026 phone checklist for Dubai fans: battery health, storage, chargers, power banks, screen protection, and when to care or upgrade.",
-    image_url: "images/blog/understanding-smartphone-battery-life.jpg",
+    image_url: "images/blog/understanding-smartphone-battery-life.webp",
     category: "Mobile",
     date: "2026-06-13"
   },
@@ -1140,7 +1140,7 @@ const blogPosts = [
 
       <p>If your stream still buffers, send your router model, TV model, and room layout on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20World%20Cup%202026%20stream%20keeps%20buffering.%20Router%3A%20%2C%20TV%3A%20%2C%20Room%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. PZM can help with <a href="/services/accessories.html">cables, chargers, power banks, and accessories</a>, plus <a href="/services/index.html">device checks</a> if the problem is your TV, phone, laptop, or streaming device.</p>`,
     excerpt: "Restore World Cup 2026 live stream buffering in Dubai with practical checks for Wi-Fi, router placement, streaming devices, HDMI, power, and hotspot backup.",
-    image_url: "images/blog/essential-pc-maintenance-tips.jpg",
+    image_url: "images/blog/essential-pc-maintenance-tips.webp",
     category: "Tech Tips",
     date: "2026-06-13"
   }
