@@ -1,0 +1,231 @@
+/* Services Section */
+.services {
+    padding: var(--space-lg);
+    background-color: var(--bg-white);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    padding: var(--space-lg) 0;
+    width: 100%;
+}
+
+a.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-md);
+    cursor: pointer;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-light);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    text-align: center;
+    aspect-ratio: 3/4;
+    max-width: 350px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    color: inherit;
+}
+
+.category-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-md);
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.category:hover img {
+    transform: scale(1.05);
+}
+
+.category h3 {
+    margin-top: auto;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    transition: color var(--transition-fast);
+}
+
+.category:hover h3 {
+    color: var(--primary-color);
+}
+
+.category--contain-mobile .category-img {
+    background-color: var(--bg-white);
+}
+
+/* Service Details Page */
+.service-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.service-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.service-description {
+    padding: var(--space-lg);
+    background-color: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.local-coverage {
+    border: 1px solid rgba(14, 165, 233, 0.12);
+}
+
+.local-coverage p {
+    margin-bottom: 16px;
+}
+
+.service-area-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.service-area-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.service-area-link:hover {
+    transform: translateY(-1px);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+[dir="rtl"] .service-details,
+[dir="rtl"] .service-description,
+[dir="rtl"] .services {
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: var(--space-md);
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+        padding: var(--space-md) 0;
+    }
+
+    a.category {
+        aspect-ratio: auto;
+        padding: var(--space-sm);
+    }
+
+    .category-img {
+        height: 150px;
+    }
+
+    .category--contain-mobile .category-img {
+        padding: var(--space-xs);
+        box-sizing: border-box;
+    }
+
+    .category--contain-mobile img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .category.category--contain-mobile:hover img {
+        transform: none;
+    }
+
+    .service-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .service-image {
+        max-height: 250px;
+    }
+
+    .service-image--contain-mobile {
+        display: block;
+        max-width: 340px;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        margin: 0 auto;
+        object-fit: contain;
+        object-position: center;
+        background-color: var(--bg-white);
+        padding: var(--space-sm);
+        box-sizing: border-box;
+    }
+
+    .service-description {
+        padding: var(--space-md);
+    }
+
+    .service-area-links {
+        gap: 8px;
+    }
+
+    .service-area-link {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    a.category {
+        max-width: 100%;
+    }
+}

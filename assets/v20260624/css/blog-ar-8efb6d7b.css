@@ -1,0 +1,50 @@
+html[lang="ar"] .blog-section,
+html[lang="ar"] .blog-grid,
+html[lang="ar"] .blog-card,
+html[lang="ar"] .blog-post,
+html[lang="ar"] .blog-post-content,
+html[lang="ar"] .blog-next-steps,
+html[lang="ar"] .blog-next-step-card {
+    direction: rtl;
+}
+
+html[lang="ar"] .blog-card,
+html[lang="ar"] .blog-content,
+html[lang="ar"] .blog-post-content,
+html[lang="ar"] .blog-next-step-card,
+html[lang="ar"] .blog-post-meta,
+html[lang="ar"] .blog-subheading {
+    text-align: right;
+}
+
+html[lang="ar"] .blog-hub-intro {
+    text-align: center;
+}
+
+html[lang="ar"] .blog-meta {
+    flex-direction: row-reverse;
+}
+
+html[lang="ar"] .blog-post-content ul,
+html[lang="ar"] .blog-post-content ol {
+    padding-right: var(--space-xl);
+    padding-left: 0;
+}
+
+html[lang="ar"] .blog-next-steps-label {
+    letter-spacing: normal;
+}
+
+html[lang="ar"] .blog-post-content code {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+@media (max-width: 768px) {
+    html[lang="ar"] .blog-subheading,
+    html[lang="ar"] .blog-content,
+    html[lang="ar"] .blog-post-content,
+    html[lang="ar"] .blog-next-step-card {
+        text-align: right;
+    }
+}

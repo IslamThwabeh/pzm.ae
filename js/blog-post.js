@@ -1,5 +1,5 @@
 // Import blog posts data
-import { blogPosts, postJourneys, formatBlogDate, getBlogPostHref, isStaticBlogPost } from './blog.js';
+import { blogPosts, postJourneys, formatBlogDate, getBlogPostHref, isStaticBlogPost } from '/js/blog.js';
 
 function setMetaContent(id, value) {
     const element = document.getElementById(id);
@@ -173,7 +173,7 @@ function displayBlogPost() {
     const postMeta = publishedLabel ? `<p class="blog-post-meta">Published ${publishedLabel}</p>` : '';
     
     postContent.innerHTML = `
-        <img src="${post.image_url}" alt="${post.title}" class="blog-post-image">
+        <img src="${post.image_url}" alt="${post.title}" class="blog-post-image" fetchpriority="high" decoding="async" loading="eager">
         <div class="blog-post-content">
             <span class="blog-category">${post.category}</span>
             ${postMeta}
