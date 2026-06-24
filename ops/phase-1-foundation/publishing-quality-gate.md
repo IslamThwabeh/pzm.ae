@@ -15,6 +15,7 @@ Use this gate for every new commercial page and article.
 2. One clear H1 in page content.
 3. Practical details included (pricing context, process, checks, ETA, warranty notes).
 4. Natural internal links to related service and area pages.
+5. Title is bucketed by page type: service/core titles are compact, blog titles keep primary keyword early, and title tags avoid repeated long brand/tagline suffixes.
 
 ## C) Technical And SEO
 
@@ -23,6 +24,9 @@ Use this gate for every new commercial page and article.
 3. Open Graph and Twitter card tags are present.
 4. JSON-LD is valid and matches visible content.
 5. Internal links use expected static URL style.
+6. GitHub Pages constraint is respected: do not rely on `.htaccess`, Nginx, or repo HTML for true per-page 301 redirects.
+7. Retired static pages are either restored as useful indexable content or kept as `noindex,follow` redirect fallbacks and excluded from `sitemap.xml`.
+8. `sitemap.xml` contains only canonical, indexable pages; no noindex pages, meta-refresh redirect shells, duplicate aliases, or interstitial routes.
 
 ## D) Conversion And Tracking
 

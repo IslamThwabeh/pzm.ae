@@ -4,9 +4,11 @@ Project Memory & Guardrails for P Z M Computers & Mobile Phones
 The official, legally‑verified business name is EXACTLY:
 P Z M Computers & Mobile Phones - Sell New Used PC Build
 
-    This MUST appear verbatim in: <title>, <h1>, footer, Open Graph, Twitter Cards, JSON‑LD name, meta description, and all visible text.
+    This MUST appear verbatim in legal/business identity surfaces: footer, Contact/About visible business facts, JSON-LD legal/business name fields, llms.txt, and full business profile copy.
 
     NEVER shorten it to "PZM", "P Z M Mobile", "PZM Computers", or any other variant.
+
+    SEO exception: HTML <title>, Open Graph title, Twitter title, and other character-limited snippets MAY use the short brand suffix "PZM" to avoid title-too-long warnings. Keep full legal name in visible business identity text and JSON-LD.
 
     The hyphen between Phones and Sell has a space on both sides: - Sell.
 
@@ -85,7 +87,16 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 
     llms.txt must exist at the root and contain the exact business name, address, phone, WhatsApp, hours, and 6‑month warranty.
 
-    sitemap.xml must be regenerated whenever new pages are added or old ones removed – it must NOT contain deleted district URLs or old -repair- routes.
+    sitemap.xml must be regenerated whenever new pages are added, removed, retired, redirected, or marked noindex.
+
+    sitemap.xml must include ONLY canonical, indexable pages. It must NOT contain deleted district URLs, old -repair- routes, noindex pages, meta-refresh redirect shells, WhatsApp/interstitial routes, or duplicate alias URLs.
+
+    This site is hosted on GitHub Pages. GitHub Pages cannot create per-page server-side 301 redirects from repo HTML. For retired URLs, use one of these safe choices:
+    1. Restore the page as real indexable content with unique title, meta description, H1, canonical, and useful body copy.
+    2. Keep the static fallback page as noindex,follow with the existing meta refresh, but remove it from sitemap.xml.
+    3. Use an external proxy/CDN redirect service if true HTTP 301 redirects are required.
+
+    Never remove a meta refresh from a retired thin page unless a real 301 is already live or the page has been restored as useful indexable content.
 
 🔴 MANDATORY RULE 8: Verification Guardrails
 
@@ -103,6 +114,10 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
     The Contact page working-hours display is controlled by /js/store-status.js. It fetches https://pzm-business-hours.islam-thwabeh.workers.dev/hours and falls back to local hardcoded hours. The website does not directly scrape Google Maps or Google Business Profile from the browser.
 
     Known cleanup risk to check before production: old image references such as macbook_repair_alternative.jpg must not appear in HTML, JSON-LD, scripts, sitemap, or image paths.
+
+    Title length guardrail: before publishing, check every edited <title>. Service/core pages should usually be 50-60 characters or less. Blog titles may be descriptive but should keep the primary keyword early and avoid repeated brand/tagline suffixes. Prefer the short suffix " | PZM" in titles.
+
+    Sitemap guardrail: before publishing, parse sitemap.xml and verify no listed local URL points to a page containing noindex or meta http-equiv="refresh".
 
 ✅ When Creating New Content
 
