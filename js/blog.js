@@ -1143,6 +1143,178 @@ const blogPosts = [
     image_url: "images/blog/essential-pc-maintenance-tips.webp",
     category: "Tech Tips",
     date: "2026-06-13"
+  },
+  {
+    title: "World Cup 2026 Today in UAE Time: Results, Next Matches, and Dubai Watch Setup",
+    slug: "world-cup-2026-today-uae-time-results-next-matches-dubai",
+    content: `<p><strong>Last updated: July 5, 2026.</strong> World Cup search demand in Dubai is moving from general schedules to today's results and the next UAE-time matches. Morocco beat Canada 3-0 and France beat Paraguay 1-0 in the Round of 16, while Brazil vs Norway and Mexico vs England are the next headline matches for UAE viewers.</p>
+
+      <h3>Today's confirmed Round of 16 results</h3>
+      <ul>
+        <li>Morocco 3-0 Canada</li>
+        <li>France 1-0 Paraguay</li>
+      </ul>
+
+      <h3>Next matches in UAE time</h3>
+      <ul>
+        <li><strong>Brazil vs Norway:</strong> Monday, July 6, 2026 at 12:00 AM GST</li>
+        <li><strong>Mexico vs England:</strong> Monday, July 6, 2026 at 4:00 AM GST</li>
+        <li><strong>Portugal vs Spain:</strong> Monday, July 6, 2026 at 11:00 PM GST</li>
+        <li><strong>United States vs Belgium:</strong> Tuesday, July 7, 2026 at 4:00 AM GST</li>
+        <li><strong>Argentina vs Egypt:</strong> Tuesday, July 7, 2026 at 8:00 PM GST</li>
+        <li><strong>Switzerland vs Colombia:</strong> Wednesday, July 8, 2026 at 12:00 AM GST</li>
+      </ul>
+
+      <h3>Dubai watch setup checklist before kickoff</h3>
+      <p>For late-night and early-morning matches, check the TV app login, restart the router, test HDMI, charge the remote, and keep a fast charger and power bank near the sofa. If friends are coming over, add one spare USB-C cable and a surge-protected extension strip.</p>
+
+      <h3>Phone and stream checks that prevent match-night problems</h3>
+      <ul>
+        <li>Battery health: if your iPhone drops fast below 40%, get it checked before the quarter-finals.</li>
+        <li>Screen: install a protector before guests, snacks, and late-night sofa drops do their thing.</li>
+        <li>Streaming: test from the exact room where you will watch, not beside the router.</li>
+        <li>Audio: connect the soundbar before kickoff so commentary and crowd noise are balanced.</li>
+      </ul>
+
+      <h3>Why this matters for PZM customers</h3>
+      <p>Most World Cup purchases are small but urgent: HDMI cables, chargers, power banks, phone screen protection, USB-C hubs, and quick device checks. If your TV, phone, laptop, or streaming box already has a problem, fix that first before buying extras.</p>
+
+      <p>Need help before tonight's UAE-time match? Send your TV model, phone model, router model, and budget on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20World%20Cup%202026%20today%20UAE%20time%20guide%20and%20want%20a%20watch%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Router%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also browse <a href="/services/accessories.html">accessories</a>, check <a href="/services/iphone-device-care-al-barsha.html">iPhone device care</a>, compare <a href="/services/gaming-pc.html">gaming PC options</a>, or plan a visit to <a href="/areas/al-barsha.html">PZM in Al Barsha</a>.</p>
+
+      <p>Sources checked: <a href="https://www.sbnation.com/soccer/1121525/2026-world-cup-round-of-16-scores-schedule" target="_blank" rel="noopener">SB Nation Round of 16 schedule</a> and <a href="https://www.theguardian.com/football/live/2026/jul/05/world-cup-2026-live-last-16-concludes-morocco-france-paraguay" target="_blank" rel="noopener">The Guardian live coverage</a>.</p>`,
+    excerpt: "Today's World Cup 2026 Round of 16 results, next matches in UAE time, and a Dubai watch setup checklist for phones, streams, cables, power, and accessories.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "World Cup",
+    date: "2026-07-05"
+  },
+  {
+    title: "Brazil vs Norway UAE Time: Dubai Fan Tech Checklist Before Kickoff",
+    slug: "brazil-vs-norway-uae-time-dubai-tech-checklist",
+    content: `<p><strong>Last updated: July 5, 2026.</strong> Brazil vs Norway is one of the biggest Round of 16 matches for Dubai fans. In UAE time, kickoff is Monday, July 6, 2026 at 12:00 AM GST, so your setup needs to be ready before midnight.</p>
+
+      <h3>Kickoff time for Dubai</h3>
+      <p>The match is listed at 4:00 PM ET on Sunday, July 5. Dubai is eight hours ahead during this period, so UAE viewers should plan for a midnight kickoff on Monday, July 6.</p>
+
+      <h3>Fast checklist before Brazil vs Norway</h3>
+      <ul>
+        <li>Charge your phone and power bank before 10:30 PM.</li>
+        <li>Test the streaming app and login before guests arrive.</li>
+        <li>Use a stable HDMI cable if you are casting from laptop or console.</li>
+        <li>Keep one USB-C cable and fast charger near the watching area.</li>
+        <li>Restart the router if your stream has been unstable this week.</li>
+      </ul>
+
+      <h3>For phone-heavy match nights</h3>
+      <p>Brazil matches usually mean photos, messages, clips, and group chats. If your battery health is weak, a midnight kickoff will expose it quickly. A battery check or power bank is cheaper than missing the second half with a dead phone.</p>
+
+      <h3>For TV and streaming</h3>
+      <p>If the stream freezes, do not blame the TV first. Check router placement, app updates, HDMI cable quality, and whether other devices are downloading updates. For the cleanest setup, use Ethernet where possible.</p>
+
+      <p>Need a quick Brazil vs Norway setup check? Send your phone, TV, and router model on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20Brazil%20vs%20Norway%20UAE%20time%20guide%20and%20need%20a%20match%20setup%20check.%20Phone%3A%20%2C%20TV%3A%20%2C%20Router%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. PZM can help with <a href="/services/accessories.html">chargers, power banks, HDMI cables, and screen protectors</a>, plus <a href="/services/iphone-device-care-al-barsha.html">phone checks</a> before the next big match.</p>`,
+    excerpt: "Brazil vs Norway kicks off at 12:00 AM GST on July 6 for UAE viewers. Use this Dubai checklist for streaming, phone battery, chargers, HDMI, and power banks.",
+    image_url: "images/PS5/WhitePS5.jpg",
+    category: "World Cup",
+    date: "2026-07-05"
+  },
+  {
+    title: "Mexico vs England UAE Time: Where Dubai Fans Should Prep Their Phone and Stream",
+    slug: "mexico-vs-england-uae-time-dubai-phone-stream-prep",
+    content: `<p><strong>Last updated: July 5, 2026.</strong> Mexico vs England is a late one for Dubai fans. Kickoff is Monday, July 6, 2026 at 4:00 AM GST, so this is less about a party setup and more about a reliable phone, stream, charger, and quiet audio setup.</p>
+
+      <h3>Kickoff time for Dubai</h3>
+      <p>The match is listed at 8:00 PM ET on Sunday, July 5. That converts to 4:00 AM GST on Monday, July 6 for UAE viewers.</p>
+
+      <h3>What to prep before sleeping</h3>
+      <ul>
+        <li>Set phone and TV reminders before midnight.</li>
+        <li>Charge your phone, headphones, remote, and power bank.</li>
+        <li>Open the streaming app once and confirm the account is signed in.</li>
+        <li>Keep a charger beside the sofa or bed if you plan to watch on mobile.</li>
+        <li>Use headphones if others at home are sleeping.</li>
+      </ul>
+
+      <h3>Phone battery warning signs</h3>
+      <p>If your iPhone loses 20-30% overnight or shuts down under 20%, do not rely on it as your only screen for a 4:00 AM match. Use a charger, power bank, or get the battery checked before later knockout games.</p>
+
+      <h3>Screen and protector check</h3>
+      <p>Early morning watching often means tired hands and accidental drops. If your screen protector is already cracked, replace it before the match instead of risking the main display.</p>
+
+      <p>Need your phone and stream ready before Mexico vs England? Send your phone model, battery health, and watching device on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20Mexico%20vs%20England%20UAE%20time%20guide%20and%20need%20phone%20or%20stream%20prep.%20Phone%3A%20%2C%20Battery%20health%3A%20%2C%20Watching%20device%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Start with <a href="/services/accessories.html">chargers and power banks</a>, <a href="/services/iphone-battery-replacement-al-barsha.html">iPhone battery help</a>, or <a href="/areas/al-barsha.html">our Al Barsha store page</a>.</p>`,
+    excerpt: "Mexico vs England starts at 4:00 AM GST on July 6 in Dubai. Prep your iPhone battery, stream, charger, headphones, and screen protector before the early kickoff.",
+    image_url: "images/blog/understanding-smartphone-battery-life.webp",
+    category: "World Cup",
+    date: "2026-07-05"
+  },
+  {
+    title: "Should You Wait for iPhone 18 in Dubai or Buy iPhone 17 Now?",
+    slug: "should-you-wait-iphone-18-dubai-or-buy-iphone-17-now",
+    content: `<p>Apple has not announced iPhone 18 yet. As of July 5, 2026, Apple's public iPhone lineup includes iPhone 17 Pro, iPhone Air, iPhone 17, iPhone 17e, and iPhone 16. So the honest buying question in Dubai is simple: wait for rumors, or make a real stock and trade-in decision today?</p>
+
+      <h3>What is known vs rumored</h3>
+      <p>Known: Apple currently sells the iPhone 17 family and related models publicly. Rumored: some reports suggest Apple may change its usual launch rhythm, with premium iPhone 18 Pro models and a foldable-style device possibly arriving before the standard iPhone 18. Apple has not confirmed those details.</p>
+
+      <h3>Buy iPhone 17 now if...</h3>
+      <ul>
+        <li>Your current phone battery is weak or unreliable.</li>
+        <li>You need a phone for travel, work, school, content, or business now.</li>
+        <li>You can get a fair trade-in value before older models drop further.</li>
+        <li>You want known specs, known accessories, and available stock.</li>
+      </ul>
+
+      <h3>Wait for iPhone 18 if...</h3>
+      <ul>
+        <li>Your current phone is still fast and has healthy battery life.</li>
+        <li>You only upgrade for Pro camera changes or new form factors.</li>
+        <li>You are comfortable with rumor uncertainty and possible launch delays.</li>
+        <li>You do not need a phone before the next Apple event cycle.</li>
+      </ul>
+
+      <h3>The Dubai trade-in angle</h3>
+      <p>Waiting can be smart, but trade-in values usually soften as launch season gets closer. If you own an iPhone 14, 15, 16, or 17 model, ask for a valuation now. Then compare the net upgrade cost against keeping your phone and replacing the battery or screen protector.</p>
+
+      <h3>Our sales recommendation</h3>
+      <p>If your phone is hurting daily life, buy or trade now. If your current iPhone is healthy and you only want the newest Pro model, wait while tracking official Apple news. Either way, do the math with your real battery health and storage, not only rumor headlines.</p>
+
+      <p>Want the net number? Send your current model, storage, battery health, condition, and target iPhone on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20iPhone%2018%20wait%20guide%20and%20want%20upgrade%2Ftrade-in%20advice.%20Current%20model%3A%20%2C%20Storage%3A%20%2C%20Battery%20health%3A%20%2C%20Target%20phone%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also check <a href="/services/buy-iphone.html">iPhone availability</a>, <a href="/services/sell-gadgets.html">trade-in options</a>, <a href="/services/buy-used.html">tested used phones</a>, or visit <a href="/areas/al-barsha.html">PZM in Al Barsha</a>.</p>
+
+      <p>Sources checked: <a href="https://www.apple.com/iphone/" target="_blank" rel="noopener">Apple iPhone lineup</a>, <a href="https://www.techradar.com/phones/iphone/iphone-tipped-for-major-launch-shake-up-in-2026-heres-when-to-expect-the-iphone-18-iphone-air-2-and-more" target="_blank" rel="noopener">TechRadar launch-rhythm reporting</a>, and <a href="https://www.t3.com/tech/iphones/no-new-iphone-18-this-year-as-new-leak-reiterates-apples-surprising-decision" target="_blank" rel="noopener">T3 rumor coverage</a>.</p>`,
+    excerpt: "Apple has not announced iPhone 18, so Dubai buyers should compare rumors against real iPhone 17 stock, battery health, and trade-in value before waiting.",
+    image_url: "images/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026.webp",
+    category: "iPhone",
+    date: "2026-07-05"
+  },
+  {
+    title: "iPhone 18 Pro Rumors vs iPhone 17 Pro Max: Dubai Upgrade Guide",
+    slug: "iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai",
+    content: `<p>iPhone 18 Pro is still rumor territory. Apple has not announced the iPhone 18 line, pricing, UAE availability, or final specs. That means Dubai buyers should treat every leak as a planning signal, not a buying fact.</p>
+
+      <h3>The safe comparison</h3>
+      <p>iPhone 17 Pro Max is a real device with known availability, accessories, repair paths, and trade-in math. iPhone 18 Pro is a future possibility. If your current phone works well, waiting may cost nothing. If your current phone is slow, cracked, or has weak battery life, waiting has a daily cost.</p>
+
+      <h3>What rumor followers are watching</h3>
+      <ul>
+        <li>Possible Pro-first launch timing</li>
+        <li>Camera and aperture changes</li>
+        <li>Chip and battery efficiency improvements</li>
+        <li>Any foldable or ultra-premium model announcement</li>
+      </ul>
+
+      <h3>What Dubai buyers should check today</h3>
+      <ul>
+        <li>Your current iPhone battery health</li>
+        <li>Storage size and resale demand</li>
+        <li>Screen/back glass condition</li>
+        <li>Whether iPhone 17 Pro Max already solves your camera and battery needs</li>
+      </ul>
+
+      <h3>Upgrade, trade, or wait?</h3>
+      <p>Upgrade now if the iPhone 17 Pro Max gives you the camera, battery, and performance you need today. Trade now if your current phone is still valuable and you want to reduce the net upgrade price. Wait if your current device is reliable and you specifically want to see Apple's next Pro announcement.</p>
+
+      <p>Want a practical answer without rumor noise? Send your model, storage, battery health, condition, and budget on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20iPhone%2018%20Pro%20rumors%20vs%20iPhone%2017%20Pro%20Max%20guide%20and%20want%20upgrade%20advice.%20Current%20model%3A%20%2C%20Storage%3A%20%2C%20Battery%20health%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. PZM can quote <a href="/services/sell-gadgets.html">trade-in value</a>, show <a href="/services/buy-iphone.html">iPhone availability</a>, or help you compare <a href="/services/buy-used.html">tested used iPhones</a>.</p>`,
+    excerpt: "A rumor-safe Dubai upgrade guide comparing iPhone 18 Pro expectations with the real iPhone 17 Pro Max buying, trade-in, and battery-health decision.",
+    image_url: "images/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026.webp",
+    category: "iPhone",
+    date: "2026-07-05"
   }
 ];
 
@@ -1186,7 +1358,12 @@ const staticBlogPostPaths = {
   "world-cup-2026-phone-checklist-dubai-fans": "/blog/world-cup-2026-phone-checklist-dubai-fans/",
   "world-cup-2026-schedule-uae-time-dubai-tech-checklist": "/blog/world-cup-2026-schedule-uae-time-dubai-tech-checklist/",
   "best-tv-soundbar-projector-world-cup-2026-dubai": "/blog/best-tv-soundbar-projector-world-cup-2026-dubai/",
-  "stop-buffering-world-cup-2026-live-streams-dubai": "/blog/stop-buffering-world-cup-2026-live-streams-dubai/"
+  "stop-buffering-world-cup-2026-live-streams-dubai": "/blog/stop-buffering-world-cup-2026-live-streams-dubai/",
+  "world-cup-2026-today-uae-time-results-next-matches-dubai": "/blog/world-cup-2026-today-uae-time-results-next-matches-dubai/",
+  "brazil-vs-norway-uae-time-dubai-tech-checklist": "/blog/brazil-vs-norway-uae-time-dubai-tech-checklist/",
+  "mexico-vs-england-uae-time-dubai-phone-stream-prep": "/blog/mexico-vs-england-uae-time-dubai-phone-stream-prep/",
+  "should-you-wait-iphone-18-dubai-or-buy-iphone-17-now": "/blog/should-you-wait-iphone-18-dubai-or-buy-iphone-17-now/",
+  "iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai": "/blog/iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai/"
 };
 
 const blogHubFeaturedSlugs = new Set([
@@ -1755,6 +1932,76 @@ const postJourneys = {
       label: "Visiting from Al Barsha?",
       shortLabel: "Al Barsha",
       description: "Use the Al Barsha page for route details and quick in-store pickup."
+    }
+  },
+  "world-cup-2026-today-uae-time-results-next-matches-dubai": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Prep tonight's watch setup",
+      shortLabel: "Match setup",
+      description: "Send TV, phone, router, and budget for cables, chargers, power, and stream checks."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visit PZM in Al Barsha",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for directions and quick in-store pickup before kickoff."
+    }
+  },
+  "brazil-vs-norway-uae-time-dubai-tech-checklist": {
+    moneyPage: {
+      href: "/services/accessories.html",
+      label: "Get midnight match essentials",
+      shortLabel: "Accessories",
+      description: "Chargers, power banks, HDMI cables, and stream-ready accessories for Brazil vs Norway."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visit PZM in Al Barsha",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for directions and quick in-store pickup before kickoff."
+    }
+  },
+  "mexico-vs-england-uae-time-dubai-phone-stream-prep": {
+    moneyPage: {
+      href: "/services/iphone-battery-replacement-al-barsha.html",
+      label: "Prep your phone battery",
+      shortLabel: "Phone battery",
+      description: "Check battery health, chargers, power banks, and screen protection before the 4 AM match."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visit PZM in Al Barsha",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for directions and quick in-store pickup before kickoff."
+    }
+  },
+  "should-you-wait-iphone-18-dubai-or-buy-iphone-17-now": {
+    moneyPage: {
+      href: "/services/buy-iphone.html",
+      label: "Compare iPhone stock and trade-in",
+      shortLabel: "iPhone upgrade",
+      description: "Send your current model and battery health for real upgrade math before waiting."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visit PZM in Al Barsha",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for directions and same-day upgrade advice."
+    }
+  },
+  "iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai": {
+    moneyPage: {
+      href: "/services/sell-gadgets.html",
+      label: "Get a trade-in quote first",
+      shortLabel: "Trade-in",
+      description: "Check your iPhone value before launch-season demand changes the upgrade math."
+    },
+    areaPage: {
+      href: "/areas/al-barsha.html",
+      label: "Visit PZM in Al Barsha",
+      shortLabel: "Al Barsha",
+      description: "Use the Al Barsha page for directions and same-day upgrade advice."
     }
   }
 };
