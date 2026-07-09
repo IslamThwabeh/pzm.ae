@@ -776,7 +776,13 @@
   </url>
   <url>
     <loc>https://pzm.ae/blog/iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai/</loc>
-    <lastmod>2026-07-05</lastmod>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/ar/blog/iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai/</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -40,8 +40,8 @@ $hasViaSuffix = ($content -match '\(via pzm\.ae\)') -or ($content -match '\(via%
 Add-Result -Check "WhatsApp via suffix" -Pass ($hasWaLink -and $hasViaSuffix) -Details "WhatsApp links should include (via pzm.ae)"
 Add-Result -Check "Phone link present" -Pass ($content -match 'tel:\+971528026677') -Details "Expected call link"
 
-$hasNavbarScript = $content -match '/js/navbar\.js|js/navbar\.js'
-$hasContactScript = $content -match '/js/contact-loader\.js|js/contact-loader\.js'
+$hasNavbarScript = $content -match '(?:/assets/v[^/]+)?/js/navbar(?:-[0-9a-f]{8})?\.js|(?:^|["''])js/navbar\.js'
+$hasContactScript = $content -match '(?:/assets/v[^/]+)?/js/contact-loader(?:-[0-9a-f]{8})?\.js|(?:^|["''])js/contact-loader\.js'
 Add-Result -Check "Navbar script reference" -Pass $hasNavbarScript -Details "Expected navbar script include"
 Add-Result -Check "Contact loader script reference" -Pass $hasContactScript -Details "Expected contact loader script include"
 
