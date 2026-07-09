@@ -9,7 +9,7 @@ const blogPosts = [
       <p>AMD's Ryzen 9000 series and Intel's Arrow Lake processors dominate the 2026 landscape. For pure gaming, the Ryzen 7 9800X3D remains the king of frame rates thanks to its massive 3D V-Cache. Intel's Core Ultra 7 265K offers excellent multi-threaded performance if you also stream or create content. Budget builders should look at the Ryzen 5 9600X — it handles 1080p and 1440p gaming without breaking a sweat.</p>
 
       <h3>GPU: Where your budget matters most</h3>
-      <p>NVIDIA's RTX 5070 Ti and AMD's RX 9070 XT are the mid-range champions this year, both delivering strong 1440p and entry-level 4K performance with ray tracing. If you want no-compromise 4K, the RTX 5080 is the sweet spot — the 5090 exists but is priced for enthusiasts only. With <a href="/services/gaming-pc.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's custom gaming PC builds</a>, we help you pick the right GPU for your monitor and game library.</p>
+      <p>NVIDIA's RTX 5070 Ti and AMD's RX 9070 XT are the mid-range champions this year, both delivering strong 1440p and entry-level 4K performance with ray tracing. If you want no-compromise 4K, the RTX 5080 is the sweet spot — the 5090 exists but is priced for enthusiasts only. With <a href="/services/gaming-pc.html">P Z M Computers & Mobile Phones - Sell New Used PC Build's custom gaming PC builds</a>, we help you pick the right GPU for your monitor and game library.</p>
 
       <h3>Memory and storage in 2026</h3>
       <p>DDR5 is now the standard — 32GB at 6000–6400 MT/s is the ideal configuration for gaming. Storage should be a 2TB Gen4 NVMe SSD at minimum. Game install sizes have grown significantly, with AAA titles regularly exceeding 150GB. A secondary 4TB drive keeps your full library accessible.</p>
@@ -17,7 +17,7 @@ const blogPosts = [
       <h3>Power supply and cooling</h3>
       <p>Modern GPUs are power-hungry. Budget at least 850W for a mid-range build and 1000W for high-end. Choose an 80+ Gold or Platinum certified PSU from a reputable brand. For cooling, a 360mm AIO liquid cooler handles any current CPU, while quality tower coolers like the Noctua NH-D15 G2 remain excellent air-cooling options.</p>
 
-      <h3>Why build with P Z M Computers & Mobile Phones -Sell New Used PC Build</h3>
+      <h3>Why build with P Z M Computers & Mobile Phones - Sell New Used PC Build</h3>
       <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU pricing for custom builds</a>. From <a href="/areas/al-barsha.html">our Al Barsha store</a>, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. If you are comparing options before driving in from <a href="/areas/al-barsha.html">Al Barsha</a>, send your budget and target games first so we can narrow the right parts list. Want to discuss your dream build? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting.</p>`,
     excerpt: "Your 2026 guide to building the perfect gaming PC — from Ryzen 9000 and Arrow Lake CPUs to RTX 5070 and RX 9070 GPUs, with Dubai-specific buying advice.",
     image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.webp",
@@ -50,10 +50,10 @@ const blogPosts = [
       </ul>
 
       <h3>4. Why buy from a trusted store vs. private sellers</h3>
-      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase care support</a> if anything comes up down the road.</p>
+      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Computers & Mobile Phones - Sell New Used PC Build's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase care support</a> if anything comes up down the road.</p>
 
       <h3>5. Trade up: sell your old device toward an upgrade</h3>
-      <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to P Z M Computers & Mobile Phones -Sell New Used PC Build for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
+      <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to P Z M Computers & Mobile Phones - Sell New Used PC Build for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
 
       <p>Browse our current <a href="/services/buy-used.html">used laptop inventory</a> or, if you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20am%20looking%20for%20a%20used%20laptop%20(via%20pzm.ae)" target="_blank" rel="noopener">message us on WhatsApp</a> with your requirements first.</p>`,
     excerpt: "How to find the best deals on used laptops in Dubai in 2026 — what to check, which models to target, and where to buy with confidence.",
@@ -67,7 +67,7 @@ const blogPosts = [
     content: `<p>Dubai's heat and dust are tough on computers. Whether you have a <a href="/services/gaming-pc.html">custom gaming PC</a> or a work desktop, regular maintenance prevents performance drops, sudden failures, and expensive care. Here are the most important things you should be doing in 2026.</p>
 
       <h3>1. Dust cleaning — the single most impactful thing you can do</h3>
-      <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
+      <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/index.html">P Z M Computers & Mobile Phones - Sell New Used PC Build for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
 
       <h3>2. Monitor your temperatures</h3>
       <p>Install HWiNFO64 (free) and check your CPU and GPU temperatures under load. For most modern processors, anything below 85°C under sustained load is acceptable. GPUs should stay below 90°C. If you are hitting higher numbers, it is time to clean, replace thermal paste, or upgrade your cooling solution. If heat stays high after a basic clean, ask about <a href="/services/gaming-pc.html">cooling and airflow upgrades</a> before a minor thermal issue turns into board damage. Thermal paste should be replaced every 2–3 years for best results.</p>
@@ -82,7 +82,7 @@ const blogPosts = [
       <p>Dubai's power grid is generally stable, but micro-surges and brownouts happen — especially during summer peak loads. Use a quality surge protector at minimum, or better yet, a UPS (uninterruptible power supply). A sudden power loss during a Windows update or BIOS flash can brick your system. A basic 650VA UPS costs less than a single component replacement.</p>
 
       <h3>When to call in the professionals</h3>
-      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build offers PC diagnostics and care</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
+      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones - Sell New Used PC Build offers PC diagnostics and care</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "images/blog/essential-pc-maintenance-tips.webp",
     category: "PC",
@@ -113,7 +113,7 @@ const blogPosts = [
         <li><strong>Portable SSDs:</strong> Samsung T7 Shield or SanDisk Extreme — fast, rugged, and perfect for backups and file transfers.</li>
       </ul>
 
-      <p>Visit <a href="/services/accessories.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
+      <p>Visit <a href="/services/accessories.html">P Z M Computers & Mobile Phones - Sell New Used PC Build's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
     excerpt: "The best phone and laptop accessories worth buying in 2026 — from tempered glass and MagSafe chargers to USB-C hubs and portable SSDs.",
     image_url: "images/blog/latest-mobile-accessories-2026.webp",
     category: "Accessories",
@@ -150,7 +150,7 @@ const blogPosts = [
         <li>Shows battery health below 80% (check Settings → Battery on iPhone)</li>
         <li>Charges noticeably faster than when new (smaller capacity fills faster)</li>
       </ul>
-      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">care that P Z M Computers & Mobile Phones -Sell New Used PC Build handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
+      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">care that P Z M Computers & Mobile Phones - Sell New Used PC Build handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
 
       <h3>4. Care, upgrade, or replace?</h3>
       <p>If your phone is 1–2 years old, a <a href="/services/index.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the restore is easier and cheaper than most people think.</p>
@@ -231,7 +231,7 @@ const blogPosts = [
       <h3>5. What we expect for the rest of 2026</h3>
       <p>Trade negotiations are ongoing, and tariff rates could change in either direction. However, the pattern from previous tariff cycles shows that retail prices are slow to come back down even after tariffs ease. The best strategy for Dubai buyers is to act on confirmed stock at current prices rather than waiting for theoretical reductions.</p>
 
-      <p>Our team at P Z M Computers & Mobile Phones -Sell New Used PC Build tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, message us on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before you travel for a quick quote.</p>`,
+      <p>Our team at P Z M Computers & Mobile Phones - Sell New Used PC Build tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, message us on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before you travel for a quick quote.</p>`,
     excerpt: "How the latest US tariffs are pushing up smartphone, laptop, and gaming PC prices in Dubai — and practical strategies to get the best deals in 2026.",
     image_url: "images/blog/us-tariffs-2026-electronics-prices-dubai.webp",
     category: "Market",
@@ -266,7 +266,7 @@ const blogPosts = [
       <h3>6. Our outlook</h3>
       <p>Gold prices are expected to remain elevated through 2026 as global uncertainty continues. For tech buyers in Dubai, this means being strategic: buy what you need now rather than waiting for prices to drop, consider the used market seriously, and maintain your current devices well. The best deals go to informed buyers who act when stock and pricing align.</p>
 
-      <p>Visit P Z M Computers & Mobile Phones -Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">care</a>. Or reach out on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
+      <p>Visit P Z M Computers & Mobile Phones - Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">care</a>. Or reach out on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
     image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.webp",
     category: "Market",
@@ -296,7 +296,7 @@ const blogPosts = [
       <h3>5. Smart way to reduce upgrade cost</h3>
       <p>If you already own a working device, check trade-in first. Converting your current phone into budget can narrow the gap between new and used options more than waiting for random discounts. Start from <a href="/services/sell-gadgets.html">sell and trade-in options</a>, then compare your final net cost across models.</p>
 
-      <p>Want a quick recommendation for your budget? Message P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20compare%20new%20vs%20used%20iPhone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting the <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
+      <p>Want a quick recommendation for your budget? Message P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20compare%20new%20vs%20used%20iPhone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting the <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
     excerpt: "Compare new vs tested used iPhones in Dubai using total ownership cost, depreciation, battery risk, and trade-in strategy.",
     image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
     category: "Buying",
@@ -326,7 +326,7 @@ const blogPosts = [
         <li><strong>Balanced buyer:</strong> desktop for home and a midrange laptop for work mobility.</li>
       </ul>
 
-      <p>If you are comparing options from <a href="/areas/al-barsha.html">Al Barsha</a>, send your game list, target resolution, and budget to P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20choose%20gaming%20laptop%20vs%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will suggest the strongest value setup.</p>`,
+      <p>If you are comparing options from <a href="/areas/al-barsha.html">Al Barsha</a>, send your game list, target resolution, and budget to P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20choose%20gaming%20laptop%20vs%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will suggest the strongest value setup.</p>`,
     excerpt: "A Dubai-focused 2026 comparison of gaming laptops vs gaming desktops, with performance, heat, upgrade, and cost guidance.",
     image_url: "images/2026-march/gaming-laptop-deep-cleaning.jpg",
     category: "Gaming",
@@ -352,7 +352,7 @@ const blogPosts = [
       <h3>5. Year-end strategy</h3>
       <p>As new models approach, current-generation inventory can become more flexible in price. If you do not need the newest chipset, this is one of the best windows to buy higher-tier specs at better value. For many buyers, a one-generation-old premium laptop outperforms a brand-new entry model for similar budget.</p>
 
-      <p>If you are planning a store visit from <a href="/areas/al-barsha.html">Al Barsha</a>, message P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20what%20is%20the%20best%20time%20to%20buy%20a%20laptop%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your budget and use case first so we can shortlist current best-value options.</p>`,
+      <p>If you are planning a store visit from <a href="/areas/al-barsha.html">Al Barsha</a>, message P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20what%20is%20the%20best%20time%20to%20buy%20a%20laptop%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your budget and use case first so we can shortlist current best-value options.</p>`,
     excerpt: "Use this 2026 Dubai laptop-buying calendar to time your purchase around stock cycles, promotions, and trade-in windows.",
     image_url: "images/buy_used/used_laptops_collection_main.webp",
     category: "Laptops",
@@ -389,7 +389,7 @@ const blogPosts = [
         <li>Note exact model, storage, and battery health in advance.</li>
       </ul>
 
-      <p>To get a fast estimate, send model, storage, and clear photos to P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-barsha.html">Al Barsha</a> or nearby areas.</p>`,
+      <p>To get a fast estimate, send model, storage, and clear photos to P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-barsha.html">Al Barsha</a> or nearby areas.</p>`,
     excerpt: "Maximize trade-in value in Dubai with this 2026 guide on preparation, pricing factors, and when to sell your used phone.",
     image_url: "images/blog/sell-used-phone-trade-in-dubai-2026.webp",
     category: "Trade-in",
@@ -1037,44 +1037,21 @@ const blogPosts = [
   {
     title: "World Cup 2026 Schedule in UAE Time: Dubai Fan Tech Checklist",
     slug: "world-cup-2026-schedule-uae-time-dubai-tech-checklist",
-    content: `<p>World Cup 2026 runs from June 11 to July 19, with group-stage matches first, then the Round of 32, Round of 16, quarter-finals, semi-finals, third-place match, and final. For Dubai fans, the most useful question is not only “what time is the match?” It is “is my screen, stream, phone, and power setup ready before kickoff in UAE time?”</p>
-
-      <h3>1) Use UAE time before you make plans</h3>
-      <p>Dubai is on Gulf Standard Time, UTC+4. Many match listings online show local stadium time, Eastern Time, Pacific Time, or UK time. Before you invite people, add the match to your calendar in UAE time and check whether it lands at dinner, late night, or early morning.</p>
-
-      <h3>2) Tournament windows to remember</h3>
+    content: `<p><strong>Updated July 9.</strong> The World Cup has reached the quarterfinals. The confirmed UAE-time schedule is:</p>
       <ul>
-        <li>Group stage: June 11 - June 27, 2026</li>
-        <li>Round of 32: June 28 - July 3, 2026</li>
-        <li>Round of 16: July 4 - July 7, 2026</li>
-        <li>Quarter-finals: July 9 - July 11, 2026</li>
-        <li>Semi-finals: July 14 - July 15, 2026</li>
-        <li>Final weekend: July 18 - July 19, 2026</li>
+        <li>France vs Morocco: July 10 at 12:00 AM GST</li>
+        <li>Spain vs Belgium: July 10 at 11:00 PM GST</li>
+        <li>Norway vs England: July 12 at 1:00 AM GST</li>
+        <li>Argentina vs Switzerland: July 12 at 5:00 AM GST</li>
       </ul>
-
-      <h3>3) The 60-minute pre-match checklist</h3>
+      <p>Semifinals follow on July 14-15, the third-place match is July 18, and the final is July 19.</p>
+      <h3>The 60-minute pre-match checklist</h3>
       <p>One hour before kickoff, restart the streaming device, check the app login, test the Wi-Fi in the watching room, charge the remote, and plug in the soundbar. This sounds basic, but most match-night problems are simple things discovered too late.</p>
-
-      <h3>4) Phone checklist for UAE-time matches</h3>
-      <p>If the match is late at night, your phone may already be at 30% by kickoff. Keep a USB-C charger, power bank, and spare cable near the sofa. If your battery health is weak, restore it before the knockout stage when match importance and phone usage both jump.</p>
-
-      <h3>5) Home setup checklist</h3>
-      <ul>
-        <li>Stable router or Ethernet path to the TV/streaming box</li>
-        <li>HDMI cable that supports your TV resolution and refresh rate</li>
-        <li>Soundbar or speaker tested before guests arrive</li>
-        <li>Surge-protected extension strip for TV, router, and chargers</li>
-        <li>Enough storage on phones for photos and videos</li>
-      </ul>
-
-      <h3>6) Best P Z M Computers & Mobile Phones -Sell New Used PC Build path for quick prep</h3>
-      <p>If you only have time for one store run, prioritize accessories: HDMI cable, charger, power bank, surge protector, and screen protector. If your TV, phone, or laptop has an existing issue, solve that before spending on extras.</p>
-
-      <p>Need help getting ready before the next UAE-time match? Send your phone model, TV model, and budget on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20a%20World%20Cup%202026%20UAE%20time%20match%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also start from <a href="/services/accessories.html">accessories</a>, <a href="/services/index.html">care services</a>, or our <a href="/areas/al-barsha.html">Al Barsha store page</a>.</p>`,
-    excerpt: "A Dubai fan checklist for World Cup 2026 in UAE time: schedule windows, pre-match tech checks, phone battery prep, streaming setup, and accessories.",
+      <p>See the standalone guide for complete tournament windows, phone, power, audio, and streaming preparation.</p>`,
+    excerpt: "Confirmed World Cup quarterfinal fixtures in UAE time, plus semifinal and final dates and a practical pre-match technology checklist.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "Accessories",
-    date: "2026-06-13"
+    date: "2026-07-09"
   },
   {
     title: "Best TV, Soundbar, and Projector Setup for World Cup 2026 in Dubai",
@@ -1145,105 +1122,41 @@ const blogPosts = [
     date: "2026-06-13"
   },
   {
-    title: "World Cup 2026 Today in UAE Time: Results, Next Matches, and Dubai Watch Setup",
+    title: "World Cup 2026 Quarterfinals in UAE Time: Results and Next Matches",
     slug: "world-cup-2026-today-uae-time-results-next-matches-dubai",
-    content: `<p><strong>Last updated: July 5, 2026.</strong> World Cup search demand in Dubai is moving from general schedules to today's results and the next UAE-time matches. Morocco beat Canada 3-0 and France beat Paraguay 1-0 in the Round of 16, while Brazil vs Norway and Mexico vs England are the next headline matches for UAE viewers.</p>
-
-      <h3>Today's confirmed Round of 16 results</h3>
+    content: `<p><strong>Updated July 9 before the first quarterfinal.</strong> France, Morocco, Spain, Belgium, Norway, England, Argentina, and Switzerland are the final eight.</p>
+      <h3>Quarterfinals in UAE time</h3>
       <ul>
-        <li>Morocco 3-0 Canada</li>
-        <li>France 1-0 Paraguay</li>
+        <li>France vs Morocco: July 10 at 12:00 AM</li>
+        <li>Spain vs Belgium: July 10 at 11:00 PM</li>
+        <li>Norway vs England: July 12 at 1:00 AM</li>
+        <li>Argentina vs Switzerland: July 12 at 5:00 AM</li>
       </ul>
-
-      <h3>Next matches in UAE time</h3>
-      <ul>
-        <li><strong>Brazil vs Norway:</strong> Monday, July 6, 2026 at 12:00 AM GST</li>
-        <li><strong>Mexico vs England:</strong> Monday, July 6, 2026 at 4:00 AM GST</li>
-        <li><strong>Portugal vs Spain:</strong> Monday, July 6, 2026 at 11:00 PM GST</li>
-        <li><strong>United States vs Belgium:</strong> Tuesday, July 7, 2026 at 4:00 AM GST</li>
-        <li><strong>Argentina vs Egypt:</strong> Tuesday, July 7, 2026 at 8:00 PM GST</li>
-        <li><strong>Switzerland vs Colombia:</strong> Wednesday, July 8, 2026 at 12:00 AM GST</li>
-      </ul>
-
-      <h3>Dubai watch setup checklist before kickoff</h3>
-      <p>For late-night and early-morning matches, check the TV app login, restart the router, test HDMI, charge the remote, and keep a fast charger and power bank near the sofa. If friends are coming over, add one spare USB-C cable and a surge-protected extension strip.</p>
-
-      <h3>Phone and stream checks that prevent match-night problems</h3>
-      <ul>
-        <li>Battery health: if your iPhone drops fast below 40%, get it checked before the quarter-finals.</li>
-        <li>Screen: install a protector before guests, snacks, and late-night sofa drops do their thing.</li>
-        <li>Streaming: test from the exact room where you will watch, not beside the router.</li>
-        <li>Audio: connect the soundbar before kickoff so commentary and crowd noise are balanced.</li>
-      </ul>
-
-      <h3>Why this matters for PZM customers</h3>
-      <p>Most World Cup purchases are small but urgent: HDMI cables, chargers, power banks, phone screen protection, USB-C hubs, and quick device checks. If your TV, phone, laptop, or streaming box already has a problem, fix that first before buying extras.</p>
-
-      <p>Need help before tonight's UAE-time match? Send your TV model, phone model, router model, and budget on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20World%20Cup%202026%20today%20UAE%20time%20guide%20and%20want%20a%20watch%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Router%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also browse <a href="/services/accessories.html">accessories</a>, check <a href="/services/iphone-device-care-al-barsha.html">iPhone device care</a>, compare <a href="/services/gaming-pc.html">gaming PC options</a>, or plan a visit to <a href="/areas/al-barsha.html">PZM in Al Barsha</a>.</p>
-
-      <p>Sources checked: <a href="https://www.sbnation.com/soccer/1121525/2026-world-cup-round-of-16-scores-schedule" target="_blank" rel="noopener">SB Nation Round of 16 schedule</a> and <a href="https://www.theguardian.com/football/live/2026/jul/05/world-cup-2026-live-last-16-concludes-morocco-france-paraguay" target="_blank" rel="noopener">The Guardian live coverage</a>.</p>`,
-    excerpt: "Today's World Cup 2026 Round of 16 results, next matches in UAE time, and a Dubai watch setup checklist for phones, streams, cables, power, and accessories.",
+      <p>The full article includes every Round-of-16 result, finals-week dates, source links, and a fast viewing checklist.</p>`,
+    excerpt: "All eight quarterfinalists, confirmed Round-of-16 results, and every World Cup quarterfinal converted to UAE time.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "World Cup",
-    date: "2026-07-05"
+    date: "2026-07-09"
   },
   {
-    title: "Brazil vs Norway UAE Time: Dubai Fan Tech Checklist Before Kickoff",
+    title: "Brazil 0-2 Norway: World Cup Result and What Comes Next",
     slug: "brazil-vs-norway-uae-time-dubai-tech-checklist",
-    content: `<p><strong>Last updated: July 5, 2026.</strong> Brazil vs Norway is one of the biggest Round of 16 matches for Dubai fans. In UAE time, kickoff is Monday, July 6, 2026 at 12:00 AM GST, so your setup needs to be ready before midnight.</p>
-
-      <h3>Kickoff time for Dubai</h3>
-      <p>The match is listed at 4:00 PM ET on Sunday, July 5. Dubai is eight hours ahead during this period, so UAE viewers should plan for a midnight kickoff on Monday, July 6.</p>
-
-      <h3>Fast checklist before Brazil vs Norway</h3>
-      <ul>
-        <li>Charge your phone and power bank before 10:30 PM.</li>
-        <li>Test the streaming app and login before guests arrive.</li>
-        <li>Use a stable HDMI cable if you are casting from laptop or console.</li>
-        <li>Keep one USB-C cable and fast charger near the watching area.</li>
-        <li>Restart the router if your stream has been unstable this week.</li>
-      </ul>
-
-      <h3>For phone-heavy match nights</h3>
-      <p>Brazil matches usually mean photos, messages, clips, and group chats. If your battery health is weak, a midnight kickoff will expose it quickly. A battery check or power bank is cheaper than missing the second half with a dead phone.</p>
-
-      <h3>For TV and streaming</h3>
-      <p>If the stream freezes, do not blame the TV first. Check router placement, app updates, HDMI cable quality, and whether other devices are downloading updates. For the cleanest setup, use Ethernet where possible.</p>
-
-      <p>Need a quick Brazil vs Norway setup check? Send your phone, TV, and router model on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20Brazil%20vs%20Norway%20UAE%20time%20guide%20and%20need%20a%20match%20setup%20check.%20Phone%3A%20%2C%20TV%3A%20%2C%20Router%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. PZM can help with <a href="/services/accessories.html">chargers, power banks, HDMI cables, and screen protectors</a>, plus <a href="/services/iphone-device-care-al-barsha.html">phone checks</a> before the next big match.</p>`,
-    excerpt: "Brazil vs Norway kicks off at 12:00 AM GST on July 6 for UAE viewers. Use this Dubai checklist for streaming, phone battery, chargers, HDMI, and power banks.",
+    content: `<p>Norway beat Brazil 2-0 in the Round of 16 and now faces England on Sunday, July 12 at 1:00 AM GST.</p>
+      <p>The full result page includes the next-match link and an updated early-morning viewing checklist.</p>`,
+    excerpt: "Norway eliminated Brazil 2-0 and now faces England in the World Cup quarterfinals at 1:00 AM GST on July 12.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "World Cup",
-    date: "2026-07-05"
+    date: "2026-07-09"
   },
   {
-    title: "Mexico vs England UAE Time: Where Dubai Fans Should Prep Their Phone and Stream",
+    title: "Mexico 2-3 England: World Cup Result and Next Match",
     slug: "mexico-vs-england-uae-time-dubai-phone-stream-prep",
-    content: `<p><strong>Last updated: July 5, 2026.</strong> Mexico vs England is a late one for Dubai fans. Kickoff is Monday, July 6, 2026 at 4:00 AM GST, so this is less about a party setup and more about a reliable phone, stream, charger, and quiet audio setup.</p>
-
-      <h3>Kickoff time for Dubai</h3>
-      <p>The match is listed at 8:00 PM ET on Sunday, July 5. That converts to 4:00 AM GST on Monday, July 6 for UAE viewers.</p>
-
-      <h3>What to prep before sleeping</h3>
-      <ul>
-        <li>Set phone and TV reminders before midnight.</li>
-        <li>Charge your phone, headphones, remote, and power bank.</li>
-        <li>Open the streaming app once and confirm the account is signed in.</li>
-        <li>Keep a charger beside the sofa or bed if you plan to watch on mobile.</li>
-        <li>Use headphones if others at home are sleeping.</li>
-      </ul>
-
-      <h3>Phone battery warning signs</h3>
-      <p>If your iPhone loses 20-30% overnight or shuts down under 20%, do not rely on it as your only screen for a 4:00 AM match. Use a charger, power bank, or get the battery checked before later knockout games.</p>
-
-      <h3>Screen and protector check</h3>
-      <p>Early morning watching often means tired hands and accidental drops. If your screen protector is already cracked, replace it before the match instead of risking the main display.</p>
-
-      <p>Need your phone and stream ready before Mexico vs England? Send your phone model, battery health, and watching device on <a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20the%20Mexico%20vs%20England%20UAE%20time%20guide%20and%20need%20phone%20or%20stream%20prep.%20Phone%3A%20%2C%20Battery%20health%3A%20%2C%20Watching%20device%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. Start with <a href="/services/accessories.html">chargers and power banks</a>, <a href="/services/iphone-battery-replacement-al-barsha.html">iPhone battery help</a>, or <a href="/areas/al-barsha.html">our Al Barsha store page</a>.</p>`,
-    excerpt: "Mexico vs England starts at 4:00 AM GST on July 6 in Dubai. Prep your iPhone battery, stream, charger, headphones, and screen protector before the early kickoff.",
+    content: `<p>England beat Mexico 3-2 in the Round of 16 and now faces Norway on Sunday, July 12 at 1:00 AM GST.</p>
+      <p>The full result page includes the next-match link and an updated phone, charger, and quiet-audio checklist.</p>`,
+    excerpt: "England beat Mexico 3-2 and now faces Norway in the World Cup quarterfinals at 1:00 AM GST on July 12.",
     image_url: "images/blog/understanding-smartphone-battery-life.webp",
     category: "World Cup",
-    date: "2026-07-05"
+    date: "2026-07-09"
   },
   {
     title: "Should You Wait for iPhone 18 in Dubai or Buy iPhone 17 Now?",
@@ -2066,7 +1979,7 @@ function displayBlogPosts() {
         <p>${post.excerpt}</p>
         <div class="blog-meta">
           <span>${dateLabel}</span>
-          <span>${journey ? journey.moneyPage.shortLabel : 'P Z M Computers & Mobile Phones -Sell New Used PC Build Dubai'}</span>
+          <span>${journey ? journey.moneyPage.shortLabel : 'P Z M Computers & Mobile Phones - Sell New Used PC Build Dubai'}</span>
         </div>
         <a href="${getBlogPostHref(post)}" class="read-more">Read More</a>
       </div>
