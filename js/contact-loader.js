@@ -23,6 +23,7 @@
         alBarsha: '/ar/areas/al-barsha.html',
         contact: '/contact-us.html',
         blog: '/ar/blog/',
+        faq: '/faq.html',
         warranty: '/warranty-information.html',
         returns: '/ar/return-policy.html',
         privacy: '/privacy-policy.html',
@@ -38,6 +39,7 @@
         alBarsha: '/areas/al-barsha.html',
         contact: '/contact-us.html',
         blog: '/blog.html',
+        faq: '/faq.html',
         warranty: '/warranty-information.html',
         returns: '/return-policy.html',
         privacy: '/privacy-policy.html',
@@ -48,7 +50,7 @@
   const copy = isArabic
     ? {
         sectionEyebrow: 'زر المتجر أو اتصل أو راسلنا',
-        sectionTitle: 'خطط لزيارتك إلى P Z M Computers & Mobile Phones -Sell New Used PC Build',
+        sectionTitle: 'خطط لزيارتك إلى P Z M Computers & Mobile Phones - Sell New Used PC Build',
         intro: 'ابدأ عبر واتساب لمعرفة التوفر والسعر أو تقييم جهازك قبل زيارة المتجر في البرشاء.',
         phoneAlt: 'الهاتف',
         phoneLabel: '+971 528 026 677',
@@ -59,7 +61,7 @@
         mapLabel: 'افتح خرائط جوجل',
         visitTitle: 'زوروا متجرنا في البرشاء',
         locationBadge: 'المتجر الرئيسي',
-        storeName: 'P Z M Computers & Mobile Phones -Sell New Used PC Build',
+        storeName: 'P Z M Computers & Mobile Phones - Sell New Used PC Build',
         addressLine1: 'داخل Union Coop Hypermarket، الطابق الأرضي',
         addressLine2: 'شارع حصة، البرشاء، دبي',
         supportTitle1: 'استجابة سريعة',
@@ -71,12 +73,13 @@
         storeTag1: 'زيارة مباشرة',
         storeTag2: 'مواقف سهلة',
         storeTag3: 'تنسيق الاستلام عند الطلب',
-        mapTitle: 'خريطة موقع P Z M Computers & Mobile Phones -Sell New Used PC Build',
+        mapTitle: 'خريطة موقع P Z M Computers & Mobile Phones - Sell New Used PC Build',
         footerHome: 'الرئيسية',
         footerAbout: 'من نحن',
         footerServices: 'الخدمات',
         footerDeviceCare: 'عناية الأجهزة',
         footerPcBuild: 'تجميع PC',
+        footerFaq: 'الأسئلة الشائعة',
         footerAlBarsha: 'البرشاء',
         footerContact: 'اتصل بنا',
         footerBlog: 'المدونة',
@@ -90,7 +93,7 @@
       }
     : {
         sectionEyebrow: 'Visit, Call or WhatsApp',
-        sectionTitle: 'Plan Your Visit to P Z M Computers & Mobile Phones -Sell New Used PC Build',
+        sectionTitle: 'Plan Your Visit to P Z M Computers & Mobile Phones - Sell New Used PC Build',
         intro: "Start on WhatsApp for stock checks, pricing, and trade-in guidance before you visit our Al Barsha store.",
         phoneAlt: 'Phone',
         phoneLabel: '+971 528 026 677',
@@ -101,7 +104,7 @@
         mapLabel: 'Open Google Maps',
         visitTitle: 'Visit Our Al Barsha Store',
         locationBadge: 'Local Store',
-        storeName: 'P Z M Computers & Mobile Phones -Sell New Used PC Build',
+        storeName: 'P Z M Computers & Mobile Phones - Sell New Used PC Build',
         addressLine1: 'Inside Union Coop Hypermarket, Ground Floor',
         addressLine2: 'Hessa Street, Al Barsha, Dubai',
         supportTitle1: 'Fast next-step help',
@@ -113,12 +116,13 @@
         storeTag1: 'Walk-in friendly',
         storeTag2: 'Easy parking',
         storeTag3: 'Pickup coordination on request',
-        mapTitle: 'P Z M Computers & Mobile Phones -Sell New Used PC Build location map',
+        mapTitle: 'P Z M Computers & Mobile Phones - Sell New Used PC Build location map',
         footerHome: 'Home',
         footerAbout: 'About',
         footerServices: 'Services',
         footerDeviceCare: 'Device Care',
-        footerPcBuild: 'PC Build',
+        footerPcBuild: 'PC Builds',
+        footerFaq: 'FAQs',
         footerAlBarsha: 'Al Barsha',
         footerContact: 'Contact',
         footerBlog: 'Blog',
@@ -200,16 +204,17 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">
+    <a class="footer-logo" href="${links.home}" aria-label="${copy.storeName}">
       ${copy.storeName}
       <small>${copy.footerTagline}</small>
-    </div>
+    </a>
     <div class="footer-links">
       <a href="${links.home}">${copy.footerHome}</a>
       <a href="${links.about}">${copy.footerAbout}</a>
       <a href="${links.services}">${copy.footerServices}</a>
       <a href="${links.deviceCare}">${copy.footerDeviceCare}</a>
       <a href="${links.pcBuild}">${copy.footerPcBuild}</a>
+      <a href="${links.faq}">${copy.footerFaq}</a>
       <a href="${links.alBarsha}">${copy.footerAlBarsha}</a>
       <a href="${links.contact}">${copy.footerContact}</a>
       <a href="${links.blog}">${copy.footerBlog}</a>

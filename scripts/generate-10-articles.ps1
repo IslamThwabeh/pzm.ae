@@ -395,7 +395,7 @@ function Build-EnHtml($a) {
     $headlineEsc = $a.title_en -replace '"','\"'
     $descEsc = $a.desc_en -replace '"','\"'
     $imgAbs = "https://pzm.ae$($a.image)"
-    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/blog/' + $a.slug + '/","url":"https://pzm.ae/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"en","author":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","url":"https://pzm.ae/"},"publisher":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
+    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/blog/' + $a.slug + '/","url":"https://pzm.ae/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"en","author":{"@type":"Organization","name":"P Z M Computers & Mobile Phones - Sell New Used PC Build","url":"https://pzm.ae/"},"publisher":{"@type":"Organization","name":"P Z M Computers & Mobile Phones - Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
     $faqJsonLd = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' + $faqJson + ']}'
 
 @"
@@ -404,9 +404,9 @@ function Build-EnHtml($a) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$($a.title_en) | P Z M Computers &amp; Mobile Phones -Sell New Used PC Build Dubai</title>
+    <title>$($a.title_en) | P Z M Computers &amp; Mobile Phones - Sell New Used PC Build Dubai</title>
     <meta name="description" content="$($a.desc_en)">
-    <meta name="keywords" content="$($a.slug -replace '-',' '), dubai 2026, P Z M Computers & Mobile Phones -Sell New Used PC Build al barsha">
+    <meta name="keywords" content="$($a.slug -replace '-',' '), dubai 2026, P Z M Computers & Mobile Phones - Sell New Used PC Build al barsha">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="/images/favico.ico" type="image/x-icon">
     <link rel="canonical" href="https://pzm.ae/blog/$($a.slug)/">
@@ -419,7 +419,7 @@ function Build-EnHtml($a) {
     <meta property="og:description" content="$($a.desc_en)">
     <meta property="og:url" content="https://pzm.ae/blog/$($a.slug)/">
     <meta property="og:image" content="$imgAbs">
-    <meta property="og:site_name" content="P Z M Computers &amp; Mobile Phones -Sell New Used PC Build">
+    <meta property="og:site_name" content="P Z M Computers &amp; Mobile Phones - Sell New Used PC Build">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="$($a.title_en)">
@@ -445,7 +445,7 @@ function Build-EnHtml($a) {
 <body>
     <nav class="navbar">
         <div class="navbar-inner">
-            <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M Computers &amp; Mobile Phones -Sell New Used PC Build</span></div></a>
+            <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M Computers &amp; Mobile Phones - Sell New Used PC Build</span></div></a>
             <div class="nav-links" id="navLinks">
                 <a href="/">Home</a>
                 <div class="nav-dropdown">
@@ -522,7 +522,7 @@ function Build-ArHtml($a) {
     $headlineEsc = $a.title_ar -replace '"','\"'
     $descEsc = $a.desc_ar -replace '"','\"'
     $imgAbs = "https://pzm.ae$($a.image)"
-    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/ar/blog/' + $a.slug + '/","url":"https://pzm.ae/ar/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"ar-AE","author":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","url":"https://pzm.ae/ar/"},"publisher":{"@type":"Organization","name":"P Z M Computers & Mobile Phones -Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
+    $articleJson = '{"@context":"https://schema.org","@type":"Article","headline":"' + $headlineEsc + '","description":"' + $descEsc + '","image":"' + $imgAbs + '","mainEntityOfPage":"https://pzm.ae/ar/blog/' + $a.slug + '/","url":"https://pzm.ae/ar/blog/' + $a.slug + '/","datePublished":"' + $date + '","dateModified":"' + $date + '","inLanguage":"ar-AE","author":{"@type":"Organization","name":"P Z M Computers & Mobile Phones - Sell New Used PC Build","url":"https://pzm.ae/ar/"},"publisher":{"@type":"Organization","name":"P Z M Computers & Mobile Phones - Sell New Used PC Build","logo":{"@type":"ImageObject","url":"https://pzm.ae/images/mini_logo.png"}}}'
     $faqJsonLd = '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[' + $faqJson + ']}'
 
 @"
@@ -531,7 +531,7 @@ function Build-ArHtml($a) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$($a.title_ar) | P Z M Computers &amp; Mobile Phones -Sell New Used PC Build دبي</title>
+    <title>$($a.title_ar) | P Z M Computers &amp; Mobile Phones - Sell New Used PC Build دبي</title>
     <meta name="description" content="$($a.desc_ar)">
     <meta name="keywords" content="$($a.slug -replace '-',' '), دبي 2026, P Z M البرشاء">
     <meta name="robots" content="index, follow">
@@ -546,7 +546,7 @@ function Build-ArHtml($a) {
     <meta property="og:description" content="$($a.desc_ar)">
     <meta property="og:url" content="https://pzm.ae/ar/blog/$($a.slug)/">
     <meta property="og:image" content="$imgAbs">
-    <meta property="og:site_name" content="P Z M Computers &amp; Mobile Phones -Sell New Used PC Build">
+    <meta property="og:site_name" content="P Z M Computers &amp; Mobile Phones - Sell New Used PC Build">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="$($a.title_ar)">
@@ -573,7 +573,7 @@ function Build-ArHtml($a) {
 <body>
     <nav class="navbar">
         <div class="navbar-inner">
-            <a href="/ar/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M Computers &amp; Mobile Phones -Sell New Used PC Build</span></div></a>
+            <a href="/ar/" class="logo"><div class="logo-group"><span class="logo-pzm">P Z M Computers &amp; Mobile Phones - Sell New Used PC Build</span></div></a>
             <div class="nav-links" id="navLinks">
                 <a href="/ar/">الرئيسية</a>
                 <div class="nav-dropdown">

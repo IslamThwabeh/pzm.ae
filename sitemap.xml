@@ -337,14 +337,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pzm.ae/blog-post.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://pzm.ae/blog.html</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -404,7 +398,13 @@
   </url>
   <url>
     <loc>https://pzm.ae/blog/custom-vs-prebuilt-gaming-pc-dubai-2026/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/blog/connect-laptop-phone-to-tv/</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -530,7 +530,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/blog/stop-buffering-world-cup-2026-live-streams-dubai/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -584,7 +584,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/blog/world-cup-2026-dubai-home-watch-party-tech-setup/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -604,6 +604,12 @@
     <loc>https://pzm.ae/contact-us.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pzm.ae/faq.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -655,14 +661,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pzm.ae/services/gaming-pc-dubai.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://pzm.ae/services/gaming-pc.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

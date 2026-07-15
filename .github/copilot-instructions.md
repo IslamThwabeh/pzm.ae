@@ -63,3 +63,13 @@ The mobile PageSpeed score (~70) is limited by third-party scripts (Elfsight, du
 
 **What actually improves Google visibility**: Product schema (prices, reviews, ratings), proper JSON-LD, content relevance, and correct `.html` links.
 
+## Direct Git Publishing
+
+When the user explicitly asks to push the current repository changes to `main`, use this repository-owner-approved workflow:
+
+1. `git add .`
+2. `git commit -m "<clear summary of the completed work>"`
+3. `git push origin main`
+
+Do not require GitHub CLI, a feature branch, or a pull request for that explicit direct-to-main instruction. Inspect and validate the working tree before publishing, and never push without explicit user authorization.
+

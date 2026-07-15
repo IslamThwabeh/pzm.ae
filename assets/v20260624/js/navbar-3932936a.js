@@ -1,4 +1,4 @@
-// P Z M Computers & Mobile Phones -Sell New Used PC Build Navbar — Mobile menu toggle & dropdown handling
+// P Z M Computers & Mobile Phones - Sell New Used PC Build Navbar — Mobile menu toggle & dropdown handling
 
 var LANGUAGE_SWITCH_ROUTES = {
     '/': '/ar/',

@@ -9,7 +9,7 @@ const blogPosts = [
       <p>AMD's Ryzen 9000 series and Intel's Arrow Lake processors dominate the 2026 landscape. For pure gaming, the Ryzen 7 9800X3D remains the king of frame rates thanks to its massive 3D V-Cache. Intel's Core Ultra 7 265K offers excellent multi-threaded performance if you also stream or create content. Budget builders should look at the Ryzen 5 9600X — it handles 1080p and 1440p gaming without breaking a sweat.</p>
 
       <h3>GPU: Where your budget matters most</h3>
-      <p>NVIDIA's RTX 5070 Ti and AMD's RX 9070 XT are the mid-range champions this year, both delivering strong 1440p and entry-level 4K performance with ray tracing. If you want no-compromise 4K, the RTX 5080 is the sweet spot — the 5090 exists but is priced for enthusiasts only. With <a href="/services/gaming-pc.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's custom gaming PC builds</a>, we help you pick the right GPU for your monitor and game library.</p>
+      <p>NVIDIA's RTX 5070 Ti and AMD's RX 9070 XT are the mid-range champions this year, both delivering strong 1440p and entry-level 4K performance with ray tracing. If you want no-compromise 4K, the RTX 5080 is the sweet spot — the 5090 exists but is priced for enthusiasts only. With <a href="/services/gaming-pc.html">P Z M Computers & Mobile Phones - Sell New Used PC Build's custom gaming PC builds</a>, we help you pick the right GPU for your monitor and game library.</p>
 
       <h3>Memory and storage in 2026</h3>
       <p>DDR5 is now the standard — 32GB at 6000–6400 MT/s is the ideal configuration for gaming. Storage should be a 2TB Gen4 NVMe SSD at minimum. Game install sizes have grown significantly, with AAA titles regularly exceeding 150GB. A secondary 4TB drive keeps your full library accessible.</p>
@@ -17,7 +17,7 @@ const blogPosts = [
       <h3>Power supply and cooling</h3>
       <p>Modern GPUs are power-hungry. Budget at least 850W for a mid-range build and 1000W for high-end. Choose an 80+ Gold or Platinum certified PSU from a reputable brand. For cooling, a 360mm AIO liquid cooler handles any current CPU, while quality tower coolers like the Noctua NH-D15 G2 remain excellent air-cooling options.</p>
 
-      <h3>Why build with P Z M Computers & Mobile Phones -Sell New Used PC Build</h3>
+      <h3>Why build with P Z M Computers & Mobile Phones - Sell New Used PC Build</h3>
       <p>Component sourcing in Dubai can be tricky with fluctuating <a href="/services/gaming-pc.html">GPU and CPU pricing for custom builds</a>. From <a href="/areas/al-barsha.html">our Al Barsha store</a>, we source parts at competitive rates and assemble your build with proper cable management, thermal paste application, and stress testing. If you are comparing options before driving in from <a href="/areas/al-barsha.html">Al Barsha</a>, send your budget and target games first so we can narrow the right parts list. Want to discuss your dream build? <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20build%20a%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">Message us on WhatsApp</a> before visiting.</p>`,
     excerpt: "Your 2026 guide to building the perfect gaming PC — from Ryzen 9000 and Arrow Lake CPUs to RTX 5070 and RX 9070 GPUs, with Dubai-specific buying advice.",
     image_url: "images/blog/how-to-choose-perfect-gaming-pc-build.webp",
@@ -50,10 +50,10 @@ const blogPosts = [
       </ul>
 
       <h3>4. Why buy from a trusted store vs. private sellers</h3>
-      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase care support</a> if anything comes up down the road.</p>
+      <p>Private marketplace deals look cheaper, but you have zero recourse if something fails a week later. At <a href="/services/buy-used.html">P Z M Computers & Mobile Phones - Sell New Used PC Build's used devices section</a>, every laptop is tested, cleaned, data-wiped, and comes with a warranty. We also offer <a href="/services/index.html">post-purchase care support</a> if anything comes up down the road.</p>
 
       <h3>5. Trade up: sell your old device toward an upgrade</h3>
-      <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to P Z M Computers & Mobile Phones -Sell New Used PC Build for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
+      <p>If you have a laptop you have outgrown, do not let it collect dust. <a href="/services/sell-gadgets.html">Bring it to P Z M Computers & Mobile Phones - Sell New Used PC Build for a trade-in valuation</a> — we buy working and even partially broken laptops. Put the value toward a <a href="/services/brand-new.html">new device</a> or a better used model. It is the smartest way to upgrade without paying full price.</p>
 
       <p>Browse our current <a href="/services/buy-used.html">used laptop inventory</a> or, if you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20am%20looking%20for%20a%20used%20laptop%20(via%20pzm.ae)" target="_blank" rel="noopener">message us on WhatsApp</a> with your requirements first.</p>`,
     excerpt: "How to find the best deals on used laptops in Dubai in 2026 — what to check, which models to target, and where to buy with confidence.",
@@ -67,7 +67,7 @@ const blogPosts = [
     content: `<p>Dubai's heat and dust are tough on computers. Whether you have a <a href="/services/gaming-pc.html">custom gaming PC</a> or a work desktop, regular maintenance prevents performance drops, sudden failures, and expensive care. Here are the most important things you should be doing in 2026.</p>
 
       <h3>1. Dust cleaning — the single most impactful thing you can do</h3>
-      <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
+      <p>Dust accumulation is the number one cause of PC overheating and component failure in Dubai. The fine desert dust clogs fans, coats heat sinks, and insulates components that need to stay cool. Open your case every 3–4 months and use compressed air to blow out dust from fans, GPU heat sinks, the CPU cooler, and the PSU vents. If you have never cleaned your PC and it is over a year old, consider bringing it to <a href="/services/index.html">P Z M Computers & Mobile Phones - Sell New Used PC Build for a professional deep clean</a> — we see machines running 15–20°C cooler after a thorough cleaning.</p>
 
       <h3>2. Monitor your temperatures</h3>
       <p>Install HWiNFO64 (free) and check your CPU and GPU temperatures under load. For most modern processors, anything below 85°C under sustained load is acceptable. GPUs should stay below 90°C. If you are hitting higher numbers, it is time to clean, replace thermal paste, or upgrade your cooling solution. If heat stays high after a basic clean, ask about <a href="/services/gaming-pc.html">cooling and airflow upgrades</a> before a minor thermal issue turns into board damage. Thermal paste should be replaced every 2–3 years for best results.</p>
@@ -82,7 +82,7 @@ const blogPosts = [
       <p>Dubai's power grid is generally stable, but micro-surges and brownouts happen — especially during summer peak loads. Use a quality surge protector at minimum, or better yet, a UPS (uninterruptible power supply). A sudden power loss during a Windows update or BIOS flash can brick your system. A basic 650VA UPS costs less than a single component replacement.</p>
 
       <h3>When to call in the professionals</h3>
-      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones -Sell New Used PC Build offers PC diagnostics and care</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
+      <p>If your PC is shutting down randomly, making unusual noises, or showing artifacts on screen, stop using it and get it diagnosed before the problem cascades. <a href="/services/index.html">P Z M Computers & Mobile Phones - Sell New Used PC Build offers PC diagnostics and care</a> for desktops and laptops. We also do <a href="/services/gaming-pc.html">performance upgrades</a> — adding RAM, swapping to an SSD, or upgrading your GPU. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20my%20PC%20needs%20maintenance%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> your symptoms for a quick assessment before the drive.</p>`,
     excerpt: "Keep your PC running cool and fast in Dubai's heat — essential maintenance tips for 2026 including dust cleaning, thermal paste, SSD health, and more.",
     image_url: "images/blog/essential-pc-maintenance-tips.webp",
     category: "PC",
@@ -113,7 +113,7 @@ const blogPosts = [
         <li><strong>Portable SSDs:</strong> Samsung T7 Shield or SanDisk Extreme — fast, rugged, and perfect for backups and file transfers.</li>
       </ul>
 
-      <p>Visit <a href="/services/accessories.html">P Z M Computers & Mobile Phones -Sell New Used PC Build's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
+      <p>Visit <a href="/services/accessories.html">P Z M Computers & Mobile Phones - Sell New Used PC Build's phone and laptop accessories section</a> in Al Barsha or, if you are coming from <a href="/areas/al-barsha.html">Al Barsha</a> or <a href="/areas/al-barsha.html">Al Barsha</a>, <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20need%20accessories%20for%20my%20device%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp us</a> with your device model so we can confirm the right fit before you visit.</p>`,
     excerpt: "The best phone and laptop accessories worth buying in 2026 — from tempered glass and MagSafe chargers to USB-C hubs and portable SSDs.",
     image_url: "images/blog/latest-mobile-accessories-2026.webp",
     category: "Accessories",
@@ -150,7 +150,7 @@ const blogPosts = [
         <li>Shows battery health below 80% (check Settings → Battery on iPhone)</li>
         <li>Charges noticeably faster than when new (smaller capacity fills faster)</li>
       </ul>
-      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">care that P Z M Computers & Mobile Phones -Sell New Used PC Build handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
+      <p>It is time for a battery replacement. This is a straightforward <a href="/services/index.html">care that P Z M Computers & Mobile Phones - Sell New Used PC Build handles same-day</a> for most iPhone and Samsung models. It costs a fraction of a new phone and gives your device another 1–2 years of life.</p>
 
       <h3>4. Care, upgrade, or replace?</h3>
       <p>If your phone is 1–2 years old, a <a href="/services/index.html">battery replacement</a> is a no-brainer. If it is 3+ years old and slow beyond just the battery, consider <a href="/services/sell-gadgets.html">trading it in</a> toward a <a href="/services/buy-iphone.html">new iPhone</a> or a <a href="/services/buy-used.html">quality used phone</a> that will last another 2–3 years. Either way, do not suffer through daily battery anxiety — the restore is easier and cheaper than most people think.</p>
@@ -231,7 +231,7 @@ const blogPosts = [
       <h3>5. What we expect for the rest of 2026</h3>
       <p>Trade negotiations are ongoing, and tariff rates could change in either direction. However, the pattern from previous tariff cycles shows that retail prices are slow to come back down even after tariffs ease. The best strategy for Dubai buyers is to act on confirmed stock at current prices rather than waiting for theoretical reductions.</p>
 
-      <p>Our team at P Z M Computers & Mobile Phones -Sell New Used PC Build tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, message us on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before you travel for a quick quote.</p>`,
+      <p>Our team at P Z M Computers & Mobile Phones - Sell New Used PC Build tracks pricing across all categories daily. Whether you need a <a href="/services/buy-iphone.html">new iPhone</a>, a <a href="/services/brand-new.html">brand-new laptop</a>, or a <a href="/services/gaming-pc.html">full gaming PC build</a>, we can help you find the best value at today's real market rates. If you are planning the visit from <a href="/areas/al-barsha.html">Al Barsha or Al Barsha</a>, message us on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before you travel for a quick quote.</p>`,
     excerpt: "How the latest US tariffs are pushing up smartphone, laptop, and gaming PC prices in Dubai — and practical strategies to get the best deals in 2026.",
     image_url: "images/blog/us-tariffs-2026-electronics-prices-dubai.webp",
     category: "Market",
@@ -266,7 +266,7 @@ const blogPosts = [
       <h3>6. Our outlook</h3>
       <p>Gold prices are expected to remain elevated through 2026 as global uncertainty continues. For tech buyers in Dubai, this means being strategic: buy what you need now rather than waiting for prices to drop, consider the used market seriously, and maintain your current devices well. The best deals go to informed buyers who act when stock and pricing align.</p>
 
-      <p>Visit P Z M Computers & Mobile Phones -Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">care</a>. Or reach out on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
+      <p>Visit P Z M Computers & Mobile Phones - Sell New Used PC Build in <a href="/areas/al-barsha.html">Al Barsha</a> for honest pricing on <a href="/services/buy-iphone.html">new iPhones</a>, <a href="/services/buy-used.html">used devices</a>, <a href="/services/gaming-pc.html">gaming PCs</a>, and <a href="/services/index.html">care</a>. Or reach out on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20ask%20about%20current%20prices%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> for a quick consultation.</p>`,
     excerpt: "Gold has surged past $3,100/oz in 2026. Here is how record gold prices affect smartphone, laptop, and PC buying decisions for consumers in Dubai.",
     image_url: "images/blog/gold-record-highs-tech-buyers-dubai-2026.webp",
     category: "Market",
@@ -296,7 +296,7 @@ const blogPosts = [
       <h3>5. Smart way to reduce upgrade cost</h3>
       <p>If you already own a working device, check trade-in first. Converting your current phone into budget can narrow the gap between new and used options more than waiting for random discounts. Start from <a href="/services/sell-gadgets.html">sell and trade-in options</a>, then compare your final net cost across models.</p>
 
-      <p>Want a quick recommendation for your budget? Message P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20compare%20new%20vs%20used%20iPhone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting the <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
+      <p>Want a quick recommendation for your budget? Message P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20compare%20new%20vs%20used%20iPhone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting the <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
     excerpt: "Compare new vs tested used iPhones in Dubai using total ownership cost, depreciation, battery risk, and trade-in strategy.",
     image_url: "images/buy_used/used_iphone_16_pro_max_main.webp",
     category: "Buying",
@@ -326,7 +326,7 @@ const blogPosts = [
         <li><strong>Balanced buyer:</strong> desktop for home and a midrange laptop for work mobility.</li>
       </ul>
 
-      <p>If you are comparing options from <a href="/areas/al-barsha.html">Al Barsha</a>, send your game list, target resolution, and budget to P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20choose%20gaming%20laptop%20vs%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will suggest the strongest value setup.</p>`,
+      <p>If you are comparing options from <a href="/areas/al-barsha.html">Al Barsha</a>, send your game list, target resolution, and budget to P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20help%20me%20choose%20gaming%20laptop%20vs%20gaming%20PC%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> and we will suggest the strongest value setup.</p>`,
     excerpt: "A Dubai-focused 2026 comparison of gaming laptops vs gaming desktops, with performance, heat, upgrade, and cost guidance.",
     image_url: "images/2026-march/gaming-laptop-deep-cleaning.jpg",
     category: "Gaming",
@@ -352,7 +352,7 @@ const blogPosts = [
       <h3>5. Year-end strategy</h3>
       <p>As new models approach, current-generation inventory can become more flexible in price. If you do not need the newest chipset, this is one of the best windows to buy higher-tier specs at better value. For many buyers, a one-generation-old premium laptop outperforms a brand-new entry model for similar budget.</p>
 
-      <p>If you are planning a store visit from <a href="/areas/al-barsha.html">Al Barsha</a>, message P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20what%20is%20the%20best%20time%20to%20buy%20a%20laptop%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your budget and use case first so we can shortlist current best-value options.</p>`,
+      <p>If you are planning a store visit from <a href="/areas/al-barsha.html">Al Barsha</a>, message P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20what%20is%20the%20best%20time%20to%20buy%20a%20laptop%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> with your budget and use case first so we can shortlist current best-value options.</p>`,
     excerpt: "Use this 2026 Dubai laptop-buying calendar to time your purchase around stock cycles, promotions, and trade-in windows.",
     image_url: "images/buy_used/used_laptops_collection_main.webp",
     category: "Laptops",
@@ -389,7 +389,7 @@ const blogPosts = [
         <li>Note exact model, storage, and battery health in advance.</li>
       </ul>
 
-      <p>To get a fast estimate, send model, storage, and clear photos to P Z M Computers & Mobile Phones -Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-barsha.html">Al Barsha</a> or nearby areas.</p>`,
+      <p>To get a fast estimate, send model, storage, and clear photos to P Z M Computers & Mobile Phones - Sell New Used PC Build on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20to%20sell%20my%20used%20phone%20in%20Dubai%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a> before visiting from <a href="/areas/al-barsha.html">Al Barsha</a> or nearby areas.</p>`,
     excerpt: "Maximize trade-in value in Dubai with this 2026 guide on preparation, pricing factors, and when to sell your used phone.",
     image_url: "images/blog/sell-used-phone-trade-in-dubai-2026.webp",
     category: "Trade-in",
@@ -1067,7 +1067,7 @@ const blogPosts = [
         <li>Enough storage on phones for photos and videos</li>
       </ul>
 
-      <h3>6) Best P Z M Computers & Mobile Phones -Sell New Used PC Build path for quick prep</h3>
+      <h3>6) Best P Z M Computers & Mobile Phones - Sell New Used PC Build path for quick prep</h3>
       <p>If you only have time for one store run, prioritize accessories: HDMI cable, charger, power bank, surge protector, and screen protector. If your TV, phone, or laptop has an existing issue, solve that before spending on extras.</p>
 
       <p>Need help getting ready before the next UAE-time match? Send your phone model, TV model, and budget on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20a%20World%20Cup%202026%20UAE%20time%20match%20setup%20check.%20TV%3A%20%2C%20Phone%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also start from <a href="/services/accessories.html">accessories</a>, <a href="/services/index.html">care services</a>, or our <a href="/areas/al-barsha.html">Al Barsha store page</a>.</p>`,
@@ -2074,7 +2074,7 @@ function displayBlogPosts() {
         <p>${post.excerpt}</p>
         <div class="blog-meta">
           <span>${dateLabel}</span>
-          <span>${journey ? journey.moneyPage.shortLabel : 'P Z M Computers & Mobile Phones -Sell New Used PC Build Dubai'}</span>
+          <span>${journey ? journey.moneyPage.shortLabel : 'P Z M Computers & Mobile Phones - Sell New Used PC Build Dubai'}</span>
         </div>
         <a href="${getBlogPostHref(post)}" class="read-more">Read More</a>
       </div>

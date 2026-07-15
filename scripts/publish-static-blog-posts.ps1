@@ -140,12 +140,12 @@ function Get-SchemaJson {
         inLanguage = 'en'
         author = [ordered]@{
             '@type' = 'Organization'
-            name = 'P Z M Computers & Mobile Phones -Sell New Used PC Build'
+            name = 'P Z M Computers & Mobile Phones - Sell New Used PC Build'
             url = 'https://pzm.ae/'
         }
         publisher = [ordered]@{
             '@type' = 'Organization'
-            name = 'P Z M Computers & Mobile Phones -Sell New Used PC Build'
+            name = 'P Z M Computers & Mobile Phones - Sell New Used PC Build'
             logo = [ordered]@{
                 '@type' = 'ImageObject'
                 url = 'https://pzm.ae/images/mini_logo.png'
@@ -192,7 +192,7 @@ function New-ArticleHtml {
     <meta property="og:description" content="__DESCRIPTION__">
     <meta property="og:url" content="__ARTICLE_URL__">
     <meta property="og:image" content="__OG_IMAGE__">
-    <meta property="og:site_name" content="P Z M Computers & Mobile Phones -Sell New Used PC Build">
+    <meta property="og:site_name" content="P Z M Computers & Mobile Phones - Sell New Used PC Build">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="__PAGE_TITLE__">
@@ -285,7 +285,7 @@ __CONTENT__
     $keywords = @(
         ($Post.slug -replace '-', ' '),
         "$($Post.category) guide Dubai",
-        'P Z M Computers & Mobile Phones -Sell New Used PC Build',
+        'P Z M Computers & Mobile Phones - Sell New Used PC Build',
         'Dubai electronics blog'
     ) -join ', '
 

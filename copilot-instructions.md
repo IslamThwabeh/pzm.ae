@@ -132,3 +132,13 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 🚫 NEVER DEVIATE FROM THESE RULES
 
 If you are unsure about any wording, routing, or schema field, ask the user or reference this file. Do not invent new branding, locations, or service names that conflict with these rules.
+
+🔵 DIRECT GIT PUBLISHING WORKFLOW
+
+When the user explicitly asks to push the current repository changes to `main`, use the repository owner's preferred direct workflow:
+
+1. `git add .`
+2. `git commit -m "<clear summary of the completed work>"`
+3. `git push origin main`
+
+For this explicit direct-to-main request, do not require GitHub CLI, a feature branch, or a pull request. Always inspect and validate the working tree first, and never push unless the user has explicitly authorized it.
