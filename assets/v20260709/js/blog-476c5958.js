@@ -964,7 +964,7 @@ const blogPosts = [
     date: "2026-06-11"
   },
   {
-    title: "World Cup 2026 in Dubai: Best Home Watch Party Tech Setup",
+    title: "World Cup 2026 Final Viewing Setup: Technology Checklist",
     slug: "world-cup-2026-dubai-home-watch-party-tech-setup",
     content: `<p>World Cup 2026 is the kind of month where one bad cable, weak Wi-Fi corner, or dying remote can ruin the best match of the night. If you are watching from Dubai, the smartest setup is not always a new TV. It is a clean, reliable mix of screen, sound, power, and phone backup that keeps the match running when friends arrive.</p>
 
@@ -995,13 +995,13 @@ const blogPosts = [
       <p>If you also play football games after the match, a PS5, console accessories, or a <a href="/services/gaming-pc.html">custom gaming PC</a> can turn World Cup month into a full entertainment upgrade. For most homes, though, restore the watching setup first and keep the gaming spend separate.</p>
 
       <p>Want a quick World Cup setup quote in Dubai? Send your TV model, room size, and budget on <a href="https://wa.me/971588366841?text=Hi%20P%20Z%20M%20Computers%20%26%20Mobile%20Phones%20-Sell%20New%20Used%20PC%20Build%2C%20I%20want%20a%20World%20Cup%202026%20home%20watch%20setup.%20TV%20model%3A%20%2C%20Budget%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also browse <a href="/services/accessories.html">accessories</a>, <a href="/services/brand-new.html">new devices</a>, or plan a visit to our <a href="/areas/al-barsha.html">Al Barsha store</a>.</p>`,
-    excerpt: "World Cup 2026 is match-night prime time. Here is a practical Dubai setup guide for Wi-Fi, sound, HDMI, chargers, power banks, and TV upgrades.",
+    excerpt: "Argentina vs Spain is Sunday, July 19 at 11:00 PM UAE time. Prepare the final viewing setup with checks for Wi-Fi, HDMI, audio, power, and phones.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "Accessories",
     date: "2026-06-13"
   },
   {
-    title: "World Cup 2026 Phone Checklist: Dubai Fans, Restore These Before Match Night",
+    title: "World Cup 2026 Phone Checklist for Finals Week",
     slug: "world-cup-2026-phone-checklist-dubai-fans",
     content: `<p>World Cup nights are hard on phones. People stream highlights, record reactions, join group chats, order food, book rides, and use navigation all in the same evening. If your phone is already slow, low on storage, or losing battery by dinner, restore it before the next big match.</p>
 
@@ -1037,18 +1037,15 @@ const blogPosts = [
   {
     title: "World Cup 2026 Schedule in UAE Time: Dubai Fan Tech Checklist",
     slug: "world-cup-2026-schedule-uae-time-dubai-tech-checklist",
-    content: `<p><strong>Updated July 9.</strong> The World Cup has reached the quarterfinals. The confirmed UAE-time schedule is:</p>
+    content: `<p><strong>Updated July 16.</strong> The World Cup final is set. The confirmed UAE-time fixture is:</p>
       <ul>
-        <li>France vs Morocco: July 10 at 12:00 AM GST</li>
-        <li>Spain vs Belgium: July 10 at 11:00 PM GST</li>
-        <li>Norway vs England: July 12 at 1:00 AM GST</li>
-        <li>Argentina vs Switzerland: July 12 at 5:00 AM GST</li>
+        <li>Argentina vs Spain: Sunday, July 19 at 11:00 PM GST</li>
       </ul>
-      <p>Semifinals follow on July 14-15, the third-place match is July 18, and the final is July 19.</p>
+      <p>Spain beat France 2-0 and Argentina beat England 2-1 in the semifinals.</p>
       <h3>The 60-minute pre-match checklist</h3>
       <p>One hour before kickoff, restart the streaming device, check the app login, test the Wi-Fi in the watching room, charge the remote, and plug in the soundbar. This sounds basic, but most match-night problems are simple things discovered too late.</p>
       <p>See the standalone guide for complete tournament windows, phone, power, audio, and streaming preparation.</p>`,
-    excerpt: "Confirmed World Cup quarterfinal fixtures in UAE time, plus semifinal and final dates and a practical pre-match technology checklist.",
+    excerpt: "Argentina vs Spain is Sunday, July 19 at 11:00 PM UAE time. See semifinal results and a practical pre-match technology checklist.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "Accessories",
     date: "2026-07-09"
@@ -1122,24 +1119,21 @@ const blogPosts = [
     date: "2026-06-13"
   },
   {
-    title: "World Cup 2026 Quarterfinals in UAE Time: Results and Next Matches",
+    title: "Argentina vs Spain World Cup Final 2026: UAE Time and Results",
     slug: "world-cup-2026-today-uae-time-results-next-matches-dubai",
-    content: `<p><strong>Updated July 9 before the first quarterfinal.</strong> France, Morocco, Spain, Belgium, Norway, England, Argentina, and Switzerland are the final eight.</p>
-      <h3>Quarterfinals in UAE time</h3>
+    content: `<p><strong>Updated July 16.</strong> Argentina face Spain in the World Cup final on Sunday, July 19.</p>
+      <h3>Final in UAE time</h3>
       <ul>
-        <li>France vs Morocco: July 10 at 12:00 AM</li>
-        <li>Spain vs Belgium: July 10 at 11:00 PM</li>
-        <li>Norway vs England: July 12 at 1:00 AM</li>
-        <li>Argentina vs Switzerland: July 12 at 5:00 AM</li>
+        <li>Argentina vs Spain: July 19 at 11:00 PM GST</li>
       </ul>
-      <p>The full article includes every Round-of-16 result, finals-week dates, source links, and a fast viewing checklist.</p>`,
-    excerpt: "All eight quarterfinalists, confirmed Round-of-16 results, and every World Cup quarterfinal converted to UAE time.",
+      <p>Spain beat France 2-0 and Argentina beat England 2-1 in the semifinals. The full article includes the knockout results, sources, and a fast viewing checklist.</p>`,
+    excerpt: "Argentina vs Spain is Sunday, July 19 at 11:00 PM UAE time, with semifinal results and a Dubai final-night checklist.",
     image_url: "images/PS5/WhitePS5.jpg",
     category: "World Cup",
     date: "2026-07-09"
   },
   {
-    title: "Brazil 0-2 Norway: World Cup Result and What Comes Next",
+    title: "Brazil 0-2 Norway: World Cup Result and What Came Next",
     slug: "brazil-vs-norway-uae-time-dubai-tech-checklist",
     content: `<p>Norway beat Brazil 2-0 in the Round of 16 and now faces England on Sunday, July 12 at 1:00 AM GST.</p>
       <p>The full result page includes the next-match link and an updated early-morning viewing checklist.</p>`,
@@ -1149,7 +1143,7 @@ const blogPosts = [
     date: "2026-07-09"
   },
   {
-    title: "Mexico 2-3 England: World Cup Result and Next Match",
+    title: "Mexico 2-3 England: World Cup Result and What Came Next",
     slug: "mexico-vs-england-uae-time-dubai-phone-stream-prep",
     content: `<p>England beat Mexico 3-2 in the Round of 16 and now faces Norway on Sunday, July 12 at 1:00 AM GST.</p>
       <p>The full result page includes the next-match link and an updated phone, charger, and quiet-audio checklist.</p>`,
