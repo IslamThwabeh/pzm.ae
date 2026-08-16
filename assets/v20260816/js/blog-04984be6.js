@@ -1289,7 +1289,9 @@ const staticBlogPostPaths = {
 const blogHubFeaturedSlugs = new Set([
   "how-to-choose-perfect-gaming-pc-build",
   "ios-26-5-2-security-update-iphone-dubai-2026",
+  "iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai",
   "macbook-air-vs-pro-dubai",
+  "should-you-wait-iphone-18-dubai-or-buy-iphone-17-now",
   "ultimate-guide-buying-used-laptops",
   "understanding-smartphone-battery-life"
 ]);
