@@ -146,7 +146,7 @@ $englishNav = @'
         <div class="navbar-inner">
             <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">PZM <span class="logo-store">Computers &amp; Phones Store</span></span><span class="logo-tagline">New&#8226;Used&#8226;Care&#8226;PC&#8226;Build</span></div></a>
             <div class="nav-links" id="navLinks"><a href="/">Home</a><a href="/services/index.html">Services</a><a href="/areas/al-barsha.html">Al Barsha</a><a href="/blog.html">Blog</a><a href="#contact">Contact</a></div>
-            <div class="nav-actions" id="navActions"><a href="tel:+971528026677" class="btn-login">Call Store</a><a href="https://wa.me/971588366841?text=Hi%20PZM%2C%20I%20read%20an%20evergreen%20buying%20guide%20and%20need%20current%20advice.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a></div>
+            <div class="nav-actions" id="navActions"><a href="tel:+971528026677" class="btn-login">Call Store</a><a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20read%20an%20evergreen%20buying%20guide%20and%20need%20current%20advice.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a></div>
             <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
         </div>
     </nav>
@@ -157,7 +157,7 @@ $arabicNav = @'
         <div class="navbar-inner">
             <a href="/ar/" class="logo"><div class="logo-group"><span class="logo-pzm">PZM <span class="logo-store">كمبيوتر وهواتف</span></span><span class="logo-tagline">جديد&#8226;مستعمل&#8226;عناية&#8226;تجميع</span></div></a>
             <div class="nav-links" id="navLinks"><a href="/ar/">الرئيسية</a><a href="/ar/services/">الخدمات</a><a href="/ar/areas/al-barsha.html">البرشاء</a><a href="/ar/blog/">المدونة</a><a href="#contact">اتصل بنا</a></div>
-            <div class="nav-actions" id="navActions"><a href="tel:+971528026677" class="btn-login">اتصل بالمتجر</a><a href="https://wa.me/971588366841?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20PZM%D8%8C%20%D9%82%D8%B1%D8%A3%D8%AA%20%D8%AF%D9%84%D9%8A%D9%84%D9%83%D9%85%20%D9%88%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%86%D8%B5%D9%8A%D8%AD%D8%A9%20%D8%AD%D8%A7%D9%84%D9%8A%D8%A9.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">واتساب</a></div>
+            <div class="nav-actions" id="navActions"><a href="tel:+971528026677" class="btn-login">اتصل بالمتجر</a><a href="https://wa.me/971528026677?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20PZM%D8%8C%20%D9%82%D8%B1%D8%A3%D8%AA%20%D8%AF%D9%84%D9%8A%D9%84%D9%83%D9%85%20%D9%88%D8%A3%D8%B1%D9%8A%D8%AF%20%D9%86%D8%B5%D9%8A%D8%AD%D8%A9%20%D8%AD%D8%A7%D9%84%D9%8A%D8%A9.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">واتساب</a></div>
             <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
         </div>
     </nav>
