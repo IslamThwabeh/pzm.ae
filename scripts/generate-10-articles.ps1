@@ -22,7 +22,7 @@ $articles = @(
    desc_ar='iPhone 17 مقابل iPhone 17 Pro في دبي 2026 — فرق السعر بالدرهم، وما الذي تحصل عليه فعلاً مقابل الإضافة، وأي الجهازين الأنسب لمعظم المشترين.'
    money_en='/services/buy-iphone.html'; money_ar='/ar/services/buy-iphone.html'
    money_label_en='Check iPhone 17 availability'; money_label_ar='تحقّق من توفر iPhone 17'
-   money_short_en='Buy iPhone'; money_short_ar='شراء iPhone'
+   money_short_en='Buy iPhone 17 Series'; money_short_ar='شراء سلسلة iPhone 17'
    money_desc_en='Live AED prices, colors, and storage in stock at the Al Barsha store.'
    money_desc_ar='أسعار درهم مباشرة، ألوان، ومساحات متوفرة في متجر البرشاء.'
    sections_en=@(
@@ -451,7 +451,7 @@ function Build-EnHtml($a) {
                 <div class="nav-dropdown">
                     <button class="nav-dropdown-trigger">Services</button>
                     <div class="nav-dropdown-content">
-                        <a href="/services/buy-iphone.html">Buy iPhone</a>
+                        <a href="/services/buy-iphone.html">Buy iPhone 17 Series</a>
                         <a href="/services/brand-new.html">New Devices</a>
                         <a href="/services/buy-used.html">Used Devices</a>
                         <a href="/services/index.html">Device Care</a>
@@ -579,7 +579,7 @@ function Build-ArHtml($a) {
                 <div class="nav-dropdown">
                     <button class="nav-dropdown-trigger">الخدمات</button>
                     <div class="nav-dropdown-content">
-                        <a href="/ar/services/buy-iphone.html">شراء iPhone</a>
+                        <a href="/ar/services/buy-iphone.html">شراء سلسلة iPhone 17</a>
                         <a href="/ar/services/brand-new.html">أجهزة جديدة</a>
                         <a href="/ar/services/buy-used.html">أجهزة مستعملة</a>
                         <a href="/ar/services/">العناية بالأجهزة</a>

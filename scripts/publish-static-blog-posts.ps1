@@ -223,7 +223,7 @@ function New-ArticleHtml {
                 <div class="nav-dropdown">
                     <button class="nav-dropdown-trigger">Services</button>
                     <div class="nav-dropdown-content">
-                        <a href="/services/buy-iphone.html">Buy iPhone</a>
+                        <a href="/services/buy-iphone.html">Buy iPhone 17 Series</a>
                         <a href="/services/brand-new.html">New Devices</a>
                         <a href="/services/buy-used.html">Used Devices</a>
                         <a href="/services/device-care.html">Care Services</a>

@@ -54,7 +54,7 @@ foreach ($line in $lines) {
         $out += '                <div class="nav-dropdown">'
         $out += '                    <button class="nav-dropdown-trigger">Services</button>'
         $out += '                    <div class="nav-dropdown-content">'
-        $out += "                        <a href=`"$svcPrerestore/buy-iphone.html`">Buy iPhone</a>"
+        $out += "                        <a href=`"$svcPrerestore/buy-iphone.html`">Buy iPhone 17 Series</a>"
         $out += "                        <a href=`"$svcPrerestore/brand-new.html`">New Devices</a>"
         $out += "                        <a href=`"$svcPrerestore/buy-used.html`">Used Devices</a>"
         $out += "                        <a href=`"$svcPrerestore/care.html`">Care Services</a>"
