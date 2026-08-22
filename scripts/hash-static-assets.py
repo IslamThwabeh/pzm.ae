@@ -224,8 +224,7 @@ def refresh_code_asset_hashes(root: Path, version: str, manifest: dict[str, str]
                 continue
             path = Path(rel)
             pattern = re.compile(
-                r"/assets/"
-                + re.escape(version)
+                r"/assets/v[0-9]{8,12}"
                 + r"/"
                 + re.escape(path.parent.as_posix())
                 + r"/"

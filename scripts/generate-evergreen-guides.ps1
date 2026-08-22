@@ -145,7 +145,7 @@ $englishNav = @'
     <nav class="navbar">
         <div class="navbar-inner">
             <a href="/" class="logo"><div class="logo-group"><span class="logo-pzm">PZM <span class="logo-store">Computers &amp; Phones Store</span></span><span class="logo-tagline">New&#8226;Used&#8226;Care&#8226;PC&#8226;Build</span></div></a>
-            <div class="nav-links" id="navLinks"><a href="/">Home</a><a href="/services/index.html">Services</a><a href="/areas/al-barsha.html">Al Barsha</a><a href="/blog.html">Blog</a><a href="#contact">Contact</a></div>
+            <div class="nav-links" id="navLinks"><a href="/">Home</a><a href="/services/">Services</a><a href="/areas/al-barsha.html">Al Barsha</a><a href="/blog.html">Blog</a><a href="#contact">Contact</a></div>
             <div class="nav-actions" id="navActions"><a href="tel:+971528026677" class="btn-login">Call Store</a><a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20read%20an%20evergreen%20buying%20guide%20and%20need%20current%20advice.%20(via%20pzm.ae)" class="btn-signup" target="_blank" rel="noopener">WhatsApp</a></div>
             <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
         </div>

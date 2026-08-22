@@ -1,0 +1,342 @@
+/* Contact Section */
+.contact {
+    padding: var(--space-xl);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.contact h2 {
+    margin-bottom: var(--space-lg);
+}
+
+.contact-header {
+    max-width: 760px;
+    margin: 0 auto var(--space-xl);
+    text-align: center;
+}
+
+.contact-eyebrow {
+    display: inline-block;
+    margin-bottom: 0.9rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(0, 200, 150, 0.1));
+    color: var(--primary-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-header p {
+    margin: 0 auto;
+    max-width: 680px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    padding: var(--space-lg);
+    background-color: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal);
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    background-color: var(--bg-white);
+}
+
+.contact-methods {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.contact-method:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-assurance-list {
+    display: grid;
+    gap: 12px;
+    margin-top: var(--space-lg);
+}
+
+.contact-assurance-item {
+    padding: 14px 16px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.contact-assurance-item strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+}
+
+.contact-assurance-item p {
+    margin: 0;
+    color: var(--text-light);
+    line-height: 1.65;
+}
+
+.contact-method a[href^="tel:"] {
+    direction: ltr;
+    unicode-bidi: plaintext;
+}
+
+.contact-icon-small {
+    width: 24px;
+    height: 24px;
+    transition: transform var(--transition-fast);
+}
+
+.contact-method:hover .contact-icon-small {
+    transform: scale(1.1);
+}
+
+.address {
+    padding: var(--space-lg);
+    background-color: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal);
+}
+
+.address:hover {
+    transform: translateY(-5px);
+}
+
+.address h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.location-badge {
+    display: inline-block;
+    margin-bottom: 0.9rem;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--accent-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.store-name {
+    margin-bottom: 0.45rem;
+    color: var(--text-dark);
+    font-size: 1.08rem;
+    font-weight: 700;
+}
+
+.store-address {
+    margin-bottom: 0.3rem;
+}
+
+.store-convenience {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1rem 0 1.2rem;
+}
+
+.store-convenience span {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    color: var(--text-dark);
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* Business Hours Section */
+.hours {
+    margin-top: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hours-item:last-child {
+    border-bottom: none;
+}
+
+.hours-day {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.95rem;
+    min-width: 100px;
+}
+
+.hours-time {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+/* Store Status Styles */
+#store-status {
+    margin-top: var(--space-md);
+}
+
+.open-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.open-status::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.closed-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.outside-hours-msg {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #4a5568;
+    font-style: italic;
+}
+
+.hours-today {
+    background: rgba(72, 187, 120, 0.08);
+    border-radius: 6px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Map Container */
+.map-container {
+    grid-column: 1 / -1;
+    margin-top: var(--space-xl);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 400px;
+    width: 100%;
+    transition: transform var(--transition-normal);
+}
+
+.map-container:hover {
+    transform: translateY(-5px);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+[dir="rtl"] .contact,
+[dir="rtl"] .contact-info,
+[dir="rtl"] .address {
+    text-align: right;
+}
+
+[dir="rtl"] .contact-header {
+    text-align: right;
+}
+
+[dir="rtl"] .contact-method:hover {
+    transform: translateX(-5px);
+}
+
+[dir="rtl"] .hours-item {
+    direction: rtl;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: var(--space-lg);
+    }
+
+    .contact-header {
+        margin-bottom: var(--space-lg);
+    }
+
+    .contact-header h2 {
+        font-size: 1.875rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .contact-info, 
+    .address {
+        padding: var(--space-md);
+    }
+
+    .store-convenience {
+        gap: 8px;
+    }
+
+    .map-container {
+        height: 300px;
+        margin-top: var(--space-lg);
+    }
+}

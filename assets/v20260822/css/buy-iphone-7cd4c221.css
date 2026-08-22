@@ -1,0 +1,579 @@
+/* ===================================================================
+   BUY iPHONE PAGE — Glass-Morphism Theme (2026 Refresh)
+   =================================================================== */
+
+/* Hero */
+.iphone-hero {
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 0;
+    background: linear-gradient(135deg, var(--dark, #0f172a) 0%, #1a2744 40%, var(--accent-dark, #0284c7) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.iphone-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 25% 40%, rgba(14,165,233,0.18) 0%, transparent 55%),
+                radial-gradient(circle at 75% 70%, rgba(0,200,150,0.12) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.iphone-hero::after {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -15%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(14,165,233,0.06) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.iphone-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: none;
+    position: relative;
+    z-index: 2;
+    letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.88);
+    font-weight: 400;
+    text-shadow: none;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+/* Model Sections */
+.iphone-model-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(226,232,240,0.5);
+    position: relative;
+}
+
+.iphone-model-section:last-of-type {
+    border-bottom: none;
+}
+
+.model-title {
+    font-size: 2.4rem;
+    color: var(--dark, #0f172a);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.model-description {
+    text-align: center;
+    color: var(--gray-500, #64748b);
+    font-size: 1.15rem;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* Premium/Pro badges */
+.iphone-model-section:nth-of-type(2) {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 80px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+}
+
+.iphone-model-section:nth-of-type(2)::before {
+    content: 'PREMIUM';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.iphone-model-section:nth-of-type(3)::before {
+    content: 'PRO';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--primary, #00c896), var(--accent, #0ea5e9));
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+/* Single Display Layout */
+.iphone-single-display {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.iphone-card-large {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.iphone-card-large:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 50px rgba(14, 165, 233, 0.15);
+}
+
+.iphone-image-container {
+    width: 50%;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(241,245,249,0.9) 0%, rgba(226,232,240,0.6) 100%);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.iphone-image-large {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.iphone-card-large:hover .iphone-image-large {
+    transform: scale(1.02);
+}
+
+.iphone-info-large {
+    padding: 40px;
+    text-align: center;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.iphone-info-large h3 {
+    font-size: 2rem;
+    color: var(--dark, #0f172a);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.colors-list {
+    font-size: 1.15rem;
+    color: var(--gray-500, #64748b);
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.price {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.contact-price {
+    color: var(--gray-500, #64748b);
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.offer-note {
+    font-size: 1rem;
+    color: var(--gray-400, #94a3b8);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.buy-btn-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.buy-btn-large:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.45);
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+/* Benefits Section */
+.benefits-section {
+    background: transparent;
+    padding: 80px 20px;
+    margin-top: 20px;
+}
+
+.benefits-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--dark, #0f172a);
+    margin-bottom: 50px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 36px 28px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(14, 165, 233, 0.12);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 18px;
+    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    color: var(--dark, #0f172a);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    color: var(--gray-500, #64748b);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Browse More + How to Order (class-based styling for inline-style removal) */
+.browse-more-section {
+    text-align: center;
+    padding: 60px 24px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.browse-more-section .section-subtitle {
+    font-size: 1.5rem;
+    color: var(--gray-500, #64748b);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.browse-more-section h2 {
+    font-size: 2rem;
+    color: var(--dark, #0f172a);
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.browse-more-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.browse-more-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--accent, #0ea5e9), var(--primary, #00c896));
+    color: white;
+    padding: 18px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(14,165,233,0.3);
+}
+
+.browse-more-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(14,165,233,0.45);
+}
+
+.browse-more-links a.alt {
+    background: linear-gradient(135deg, var(--dark, #0f172a), #1e293b);
+    box-shadow: 0 4px 20px rgba(15,23,42,0.3);
+}
+
+.browse-more-links a.alt:hover {
+    box-shadow: 0 6px 25px rgba(15,23,42,0.4);
+}
+
+/* How to Order */
+.how-to-order {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 48px 24px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.how-to-order h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark, #0f172a);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.how-to-order .subtitle {
+    text-align: center;
+    color: var(--gray-500, #64748b);
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+.order-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.order-method-card {
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 28px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid rgba(226,232,240,0.6);
+    transition: all 0.3s ease;
+}
+
+.order-method-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.order-method-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.order-method-card h3 {
+    color: var(--dark, #0f172a);
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.order-method-card p {
+    color: var(--gray-500, #64748b);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.order-method-card a {
+    color: var(--accent, #0ea5e9);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.order-method-card a:hover {
+    color: var(--primary, #00c896);
+}
+
+.how-to-order .footer-note {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: var(--gray-400, #94a3b8);
+}
+
+.how-to-order .footer-note a {
+    color: var(--accent, #0ea5e9);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.how-to-order .footer-note a:hover {
+    color: var(--primary, #00c896);
+}
+
+/* Contact Section Override */
+.contact-section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .iphone-hero {
+        padding: 60px 20px;
+    }
+
+    .iphone-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+
+    .model-title {
+        font-size: 1.8rem;
+    }
+
+    .model-description {
+        font-size: 1.05rem;
+    }
+
+    .iphone-model-section {
+        padding: 60px 20px;
+    }
+
+    .iphone-card-large {
+        flex-direction: column;
+    }
+
+    .iphone-image-container {
+        width: 100%;
+    }
+
+    .iphone-model-section::before {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .iphone-info-large h3 {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .buy-btn-large {
+        padding: 16px 32px;
+        font-size: 1.05rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .benefits-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .browse-more-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-methods {
+        grid-template-columns: 1fr;
+    }
+}

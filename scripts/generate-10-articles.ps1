@@ -454,7 +454,7 @@ function Build-EnHtml($a) {
                         <a href="/services/buy-iphone.html">Buy iPhone 17 Series</a>
                         <a href="/services/brand-new.html">New Devices</a>
                         <a href="/services/buy-used.html">Used Devices</a>
-                        <a href="/services/index.html">Device Care</a>
+                        <a href="/services/">Device Care</a>
                         <a href="/services/gaming-pc.html">Gaming PC</a>
                         <a href="/services/sell-gadgets.html">Sell Devices</a>
                         <a href="/services/accessories.html">Accessories</a>
