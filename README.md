@@ -2,6 +2,18 @@
 
 Static website for P Z M Computers & Mobile Phones - Sell New Used PC Build, hosted on GitHub Pages.
 
+## Hosting Architecture
+
+- `pzm.ae` is published exclusively from this repository through GitHub Pages
+  using `.github/workflows/static.yml`.
+- `shop.pzm.ae` is a separate Cloudflare Pages/Workers deployment; its
+  application source and deployment are not managed by this repository.
+- Cloudflare provides authoritative DNS for the domain, but `pzm.ae` must not
+  be treated as a Cloudflare Pages/Workers site or placed behind a new proxy
+  without explicit owner approval.
+- Legacy `pzm.ae` redirects follow the GitHub Pages fallback rules in
+  `copilot-instructions.md` and `ops/seo-404-remediation/`.
+
 ## Phase 1 Operations Pack
 
 Implementation assets for "Foundation And Controls" are in:
@@ -30,6 +42,12 @@ Implementation assets for "Foundation And Controls" are in:
 - `ops/phase-3-market-enhancements/phase-3c-intent-differentiation.md`
 - `ops/phase-3-market-enhancements/phase-3d-arabic-localization.md`
 - `ops/phase-3-market-enhancements/phase-3e-measurement-loop.md`
+
+## Search Console 404 Remediation
+
+- `ops/seo-404-remediation/README.md`
+- `ops/seo-404-remediation/legacy-url-decisions.csv`
+- `scripts/check-legacy-url-decisions.py`
 
 ## QA Helper Script
 

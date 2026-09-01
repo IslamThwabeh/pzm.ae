@@ -91,16 +91,22 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 
     sitemap.xml must include ONLY canonical, indexable pages. It must NOT contain deleted district URLs, old -repair- routes, noindex pages, meta-refresh redirect shells, WhatsApp/interstitial routes, or duplicate alias URLs.
 
-    This site is hosted on GitHub Pages. GitHub Pages cannot create per-page server-side 301 redirects from repo HTML. For retired URLs, use one of these safe choices:
+    HOSTING BOUNDARY: pzm.ae is published exclusively from this repository through GitHub Pages. shop.pzm.ae is a separate Cloudflare Pages/Workers deployment whose application source is outside this repository. Cloudflare being authoritative DNS does not make pzm.ae a Cloudflare Pages/Workers site. Never proxy the pzm.ae apex, migrate it, or create Cloudflare Workers/Pages resources for it without explicit user approval.
+
+    GitHub Pages cannot create per-page server-side 301 redirects from repo HTML. For retired pzm.ae URLs, use one of these safe choices:
     1. Restore the page as real indexable content with unique title, meta description, H1, canonical, and useful body copy.
     2. Keep the static fallback page as noindex,follow with the existing meta refresh, but remove it from sitemap.xml.
     3. Use an external proxy/CDN redirect service if true HTTP 301 redirects are required.
+
+    Handle shop.pzm.ae redirects only in its separate Cloudflare Pages/Workers environment. Do not create shop.pzm.ae application routes in this repository.
+
+    Narrow legacy-path exception: a noindex redirect fallback filename may retain an old banned term or retired location only when it is required to catch a documented inbound legacy URL in ops/seo-404-remediation/legacy-url-decisions.csv. This exception never permits new indexable content, sitemap entries, canonical targets, navigation links, or new marketing URLs using that term or location.
 
     Never remove a meta refresh from a retired thin page unless a real 301 is already live or the page has been restored as useful indexable content.
 
 🔴 MANDATORY RULE 8: Verification Guardrails
 
-    Verification scripts MUST exclude copilot-instructions.md from banned-word, old-district, old-route, and old-brand scans because this file intentionally documents forbidden examples.
+    Verification scripts MUST exclude copilot-instructions.md, AGENTS.md, the ops/seo-404-remediation decision register/runbook, and the exact approved legacy fallback files listed by that register from banned-word, old-district, old-route, and old-brand scans. These files intentionally document or catch forbidden historical examples. Do not exclude ordinary indexable content.
 
     Do not run blind global replacements for repair, fix, technical support, or service center. Inspect page text, URLs, JSON-LD, image filenames, scripts, sitemap entries, and internal links separately before editing.
 
