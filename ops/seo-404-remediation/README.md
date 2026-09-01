@@ -119,11 +119,10 @@ redirect directly to their final live canonical target in one hop.
 
 ## Phase 3 - Build and preview host-specific redirects
 
-Status: in progress. The nine GitHub Pages fallback files covering 11 approved
-`pzm.ae` source variants are built and locally validated. The four approved
-`shop.pzm.ae` redirect exceptions were deployed as Cloudflare Single Redirects
-on 2026-09-01 and verified against the live site. Their runbook is in the
-separate project at
+Status: complete. The nine GitHub Pages fallback files covering 11 approved
+`pzm.ae` source variants and the four approved `shop.pzm.ae` Cloudflare Single
+Redirect exceptions were deployed on 2026-09-01 and verified against the live
+sites. The storefront runbook is in the separate project at
 `C:\Users\islamt\shop-pzm.ae\ops\gsc-404-remediation-shop-alias-2026-09-01.md`.
 
 Cloudflare rule order after deployment:
@@ -172,6 +171,17 @@ Exit criteria:
 - Production deployment command and rollback command are ready.
 
 ## Phase 4 - Deploy and production verification
+
+Status: complete on 2026-09-01.
+
+- GitHub commit: `aaba73874cc8c481dbb747918540b10e1c108adf`
+- GitHub Pages workflow run: `33554641621` (successful)
+- All 11 approved `pzm.ae` aliases serve the expected `noindex,follow` static
+  fallback with a zero-second meta refresh and matching canonical target.
+- All four approved `shop.pzm.ae` aliases return a one-hop 301 with the expected
+  `Location`, preserve query strings, and end at HTTP 200 targets.
+- The sitemap and representative unrelated storefront behavior remain
+  unchanged.
 
 Codex actions, after explicit approval:
 

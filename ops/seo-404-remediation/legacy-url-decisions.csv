@@ -1,15 +1,15 @@
 source_url,category,decision,target_url,rationale,status
 https://pzm.ae/areas/jumeirah/,area,keep_404,,Intentionally retired unsupported location page,proposed
-https://pzm.ae/areas,area,redirect,https://pzm.ae/areas/al-barsha.html,Retired area hub has one current supported area destination,implemented_local
-https://pzm.ae/ar/blog/macbook-repair-or-replace-al-barsha/,blog,redirect,https://pzm.ae/ar/services/buy-used.html,Current replacement path resolves to the Arabic used-device canonical page,implemented_local
-https://pzm.ae/services/same-day-screen-repair-al-barsha.html,service,redirect,https://pzm.ae/services/iphone-device-care-al-barsha.html,Current replacement path resolves to the canonical iPhone device-care page,implemented_local
+https://pzm.ae/areas,area,redirect,https://pzm.ae/areas/al-barsha.html,Retired area hub has one current supported area destination,deployed_verified_pages
+https://pzm.ae/ar/blog/macbook-repair-or-replace-al-barsha/,blog,redirect,https://pzm.ae/ar/services/buy-used.html,Current replacement path resolves to the Arabic used-device canonical page,deployed_verified_pages
+https://pzm.ae/services/same-day-screen-repair-al-barsha.html,service,redirect,https://pzm.ae/services/iphone-device-care-al-barsha.html,Current replacement path resolves to the canonical iPhone device-care page,deployed_verified_pages
 https://pzm.ae/product/prod-mo4qvjs4-gox7cc/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/product/prod-mo4qv5w2-u43t77/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/ar/areas/jbr.html,area,keep_404,,Intentionally retired unsupported location page,proposed
 https://pzm.ae/services/iphone-repair-dubai-marina.html,service,keep_404,,Retired location-specific service with no equivalent supported-location page,proposed
-https://pzm.ae/ar/areas/,area,redirect,https://pzm.ae/ar/areas/al-barsha.html,Retired Arabic area hub has one current supported area destination,implemented_local
+https://pzm.ae/ar/areas/,area,redirect,https://pzm.ae/ar/areas/al-barsha.html,Retired Arabic area hub has one current supported area destination,deployed_verified_pages
 https://pzm.ae/product/prod-mo4qusjn-ixzug8/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
-https://pzm.ae/areas/index.html,area,redirect,https://pzm.ae/areas/al-barsha.html,Legacy area hub alias,implemented_local
+https://pzm.ae/areas/index.html,area,redirect,https://pzm.ae/areas/al-barsha.html,Legacy area hub alias,deployed_verified_pages
 https://pzm.ae/product/prod-mo4quu5q-738u4c,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/services/laptop-repair-al-quoz.html,service,keep_404,,Retired location-specific service with no equivalent supported-location page,proposed
 https://pzm.ae/ar/blog/top-5-iphone-repair-tips/,blog,review,,Needs performance and backlink review before choosing a replacement or retirement,proposed
@@ -21,23 +21,23 @@ https://pzm.ae/blog/macbook-not-charging-dubai-usbc-battery-port-repair-2026/,bl
 https://shop.pzm.ae/areas/emirates-hills/,area,keep_404,,Redirecting hostname does not create an equivalent current location page,proposed
 https://pzm.ae/services/computer-shop/,service,review,,Possible service-hub or laptop-shop replacement requires intent review,proposed
 https://pzm.ae/areas/al-quoz.html,area,keep_404,,Intentionally retired unsupported location page,proposed
-https://pzm.ae/services/repair.html,service,redirect,https://pzm.ae/services/iphone-device-care-al-barsha.html,Current replacement path resolves to the canonical iPhone device-care page,implemented_local
+https://pzm.ae/services/repair.html,service,redirect,https://pzm.ae/services/iphone-device-care-al-barsha.html,Current replacement path resolves to the canonical iPhone device-care page,deployed_verified_pages
 https://pzm.ae/areas/jbr.html,area,keep_404,,Intentionally retired unsupported location page,proposed
 https://pzm.ae/areas/jumeirah-village.html,area,keep_404,,Intentionally retired unsupported location page,proposed
 https://pzm.ae/product/prod-mnnylj55-ahu1yf/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/areas/tecom.html,area,keep_404,,Intentionally retired unsupported location page,proposed
-https://pzm.ae/areas/,area,redirect,https://pzm.ae/areas/al-barsha.html,Legacy area hub alias,implemented_local
+https://pzm.ae/areas/,area,redirect,https://pzm.ae/areas/al-barsha.html,Legacy area hub alias,deployed_verified_pages
 https://pzm.ae/areas/emirates-hills.html,area,keep_404,,Intentionally retired unsupported location page,proposed
 https://pzm.ae/product/prod-mo4qtzwv-6l7kb9/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/product/prod-mo4qu70a-3nkedx/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/areas/jumeirah.html,area,keep_404,,Intentionally retired unsupported location page,proposed
 https://pzm.ae/areas/dubai-marina.html,area,keep_404,,Intentionally retired unsupported location page,proposed
-https://pzm.ae/services/repair,service,redirect,https://pzm.ae/services/iphone-device-care-al-barsha.html,Legacy extensionless alias resolves to the canonical iPhone device-care page,implemented_local
+https://pzm.ae/services/repair,service,redirect,https://pzm.ae/services/iphone-device-care-al-barsha.html,Legacy extensionless alias resolves to the canonical iPhone device-care page,deployed_verified_pages
 https://shop.pzm.ae/product/prod-mnnyld0a-ejxqds/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/areas/tecom/,area,keep_404,,Intentionally retired unsupported location page,proposed
 https://shop.pzm.ae/areas,area,redirect,https://pzm.ae/areas/al-barsha.html,Legacy hostname and area hub alias,deployed_verified_external
 https://shop.pzm.ae/areas/al-barsha/,area,redirect,https://pzm.ae/areas/al-barsha.html,Direct hostname and canonical path replacement,deployed_verified_external
-https://pzm.ae/areas/al-barsha/,area,redirect,https://pzm.ae/areas/al-barsha.html,Canonical path alias,implemented_local
+https://pzm.ae/areas/al-barsha/,area,redirect,https://pzm.ae/areas/al-barsha.html,Canonical path alias,deployed_verified_pages
 https://shop.pzm.ae/areas/tecom,area,keep_404,,Redirecting hostname does not create an equivalent current location page,proposed
 https://pzm.ae/cart,cart,keep_404,,Retired cart route with no current online-cart replacement,proposed
 https://shop.pzm.ae/areas/,area,redirect,https://pzm.ae/areas/al-barsha.html,Legacy hostname and area hub alias,deployed_verified_external
@@ -59,7 +59,7 @@ https://pzm.ae/product/prod-mo4qutbh-1i7n4y,product,keep_404,,Retired legacy cat
 https://pzm.ae/product/prod-mnnylguu-t5h6b2/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/product/prod-mnnz7kbm-9xdr7p/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/product/prod-mnnz7boc-pchv3y/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
-https://pzm.ae/services/secondhand/,service,redirect,https://pzm.ae/services/buy-used.html,Current replacement path resolves to the canonical used-device page,implemented_local
+https://pzm.ae/services/secondhand/,service,redirect,https://pzm.ae/services/buy-used.html,Current replacement path resolves to the canonical used-device page,deployed_verified_pages
 https://pzm.ae/product/prod-mknvxaif-cv1v8g/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
 https://pzm.ae/product/prod-mke7jjyb-sokfrf/,product,keep_404,,Retired legacy catalog product with no known exact successor,proposed
-https://pzm.ae/ar/return-policy/,policy,redirect,https://pzm.ae/ar/return-policy.html,Canonical path alias,implemented_local
+https://pzm.ae/ar/return-policy/,policy,redirect,https://pzm.ae/ar/return-policy.html,Canonical path alias,deployed_verified_pages
