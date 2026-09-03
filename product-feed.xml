@@ -1,270 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>P Z M Computers &amp; Mobile Phones - Sell New Used PC Build</title>
-    <link>https://pzm.ae</link>
-    <description>New and used electronics in Al Barsha, Dubai</description>
-
-    <!-- ==================== NEW iPhones ==================== -->
-    <!-- Exact brand-new inventory variants from the current owner stock list. -->
+    <title>P Z M Computers &amp; Mobile Phones - Sell New Used PC Build Inventory</title>
+    <link>https://pzm.ae/</link>
+    <description>Current public inventory; availability should be confirmed before visiting.</description>
     <item>
-      <g:id>iphone-17-pro-max-esim-256-new</g:id>
-      <g:title>iPhone 17 Pro Max eSIM 256GB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro Max eSIM with 256GB storage. Current listed price; confirm availability before visiting.</g:description>
+      <g:id>iphone-17-pro-max-esim-256gb-new</g:id>
+      <g:title>iPhone 17 Pro Max eSIM — 256GB - new</g:title>
+      <g:description>New iPhone 17 Pro Max eSIM — 256GB.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg</g:image_link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/buy_iphone/iPhone_17_Pro_Max_all_colors-55c7582f.webp</g:image_link>
       <g:availability>in_stock</g:availability>
-      <g:price>4950 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-pro-esim-256-new</g:id>
-      <g:title>iPhone 17 Pro eSIM 256GB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro eSIM with 256GB storage. Current listed price; confirm availability before visiting.</g:description>
+      <g:price>4700 AED</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Apple</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>iphone-17-pro-esim-256gb-new</g:id>
+      <g:title>iPhone 17 Pro eSIM — 256GB - new</g:title>
+      <g:description>New iPhone 17 Pro eSIM — 256GB.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_all_colors.jpg</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>4650 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-pro-max-esim-512-new</g:id>
-      <g:title>iPhone 17 Pro Max eSIM 512GB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro Max eSIM with 512GB storage. Current listed price; confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>5900 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-pro-esim-512-new</g:id>
-      <g:title>iPhone 17 Pro eSIM 512GB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro eSIM with 512GB storage. Current listed price; confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_all_colors.jpg</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>5200 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-pro-max-esim-1tb-new</g:id>
-      <g:title>iPhone 17 Pro Max eSIM 1TB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro Max eSIM with 1TB storage. Current listed price; confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_Max_all_colors.jpg</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>6400 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-pro-esim-1tb-new</g:id>
-      <g:title>iPhone 17 Pro eSIM 1TB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro eSIM with 1TB storage. Current listed price; confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_all_colors.jpg</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>5900 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-pro-tdra-256-new</g:id>
-      <g:title>iPhone 17 Pro TDRA 256GB - Brand New</g:title>
-      <g:description>Brand-new iPhone 17 Pro TDRA with 256GB storage. One piece listed; confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Pro_all_colors.jpg</g:image_link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/buy_iphone/iPhone_17_Pro_all_colors-6434095e.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>4400 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-    <item>
-      <g:id>iphone-17-air-blue-1tb-new</g:id>
-      <g:title>iPhone 17 Air Blue 1TB - Brand New</g:title>
-      <g:description>Brand-new blue iPhone 17 Air with 1TB storage. One piece listed; confirm availability before visiting.</g:description>
+      <g:condition>new</g:condition>
+      <g:brand>Apple</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>iphone-17-air-esim-256gb-new</g:id>
+      <g:title>iPhone 17 Air eSIM — 256GB - new</g:title>
+      <g:description>New iPhone 17 Air eSIM — 256GB.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_iphone/iPhone_17_Air_all_colors.jpg</g:image_link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/buy_iphone/iPhone_17_Air_all_colors-6c9150ec.jpg</g:image_link>
       <g:availability>in_stock</g:availability>
-      <g:price>5500 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Apple</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <!-- ==================== NEW Samsung Phones ==================== -->
-
-    <item>
-      <g:id>samsung-a56-5g-new</g:id>
-      <g:title>Samsung Galaxy A56 5G 128GB 8GB RAM - Brand New</g:title>
-      <g:description>Brand-new Samsung Galaxy A56 5G with 128GB storage and 8GB RAM. Current listed price; confirm availability before visiting.</g:description>
+      <g:price>3450 AED</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Apple</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>iphone-17-pro-max-512gb-new</g:id>
+      <g:title>iPhone 17 Pro Max — 512GB - new</g:title>
+      <g:description>New iPhone 17 Pro Max — 512GB. 1 pc available Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/brand_new/samsung_a56_5g.webp</g:image_link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/buy_iphone/iPhone_17_Pro_Max_all_colors-55c7582f.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>4400 AED</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Apple</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>samsung-galaxy-s25-ultra-256gb-new</g:id>
+      <g:title>Samsung Galaxy S25 Ultra 256GB - new</g:title>
+      <g:description>New Samsung Galaxy S25 Ultra 256GB.  Confirm availability before visiting.</g:description>
+      <g:link>https://pzm.ae/services/brand-new.html</g:link>
+      <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>2850 AED</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Samsung</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>samsung-galaxy-a56-5g-128gb-8gb-ram-new</g:id>
+      <g:title>Samsung Galaxy A56 5G 128GB / 8GB RAM - new</g:title>
+      <g:description>New Samsung Galaxy A56 5G 128GB / 8GB RAM.  Confirm availability before visiting.</g:description>
+      <g:link>https://pzm.ae/services/brand-new.html</g:link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/brand_new/samsung_a56_5g-8aaa14ce.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>1350 AED</g:price>
       <g:condition>new</g:condition>
       <g:brand>Samsung</g:brand>
-      <g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-      <g:product_type>Electronics &gt; Smartphones &gt; Samsung Galaxy</g:product_type>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>samsung-a36-5g-new</g:id>
-      <g:title>Samsung Galaxy A36 5G 128GB 6GB RAM - Brand New</g:title>
-      <g:description>Brand-new Samsung Galaxy A36 5G with 128GB storage and 6GB RAM. Current listed price; confirm availability before visiting.</g:description>
+    </item>    <item>
+      <g:id>samsung-galaxy-a36-5g-128gb-6gb-ram-new</g:id>
+      <g:title>Samsung Galaxy A36 5G 128GB / 6GB RAM - new</g:title>
+      <g:description>New Samsung Galaxy A36 5G 128GB / 6GB RAM.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/brand_new/samsung_a36_5g.webp</g:image_link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/brand_new/samsung_a36_5g-c7e78cb7.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>985 AED</g:price>
       <g:condition>new</g:condition>
       <g:brand>Samsung</g:brand>
-      <g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-      <g:product_type>Electronics &gt; Smartphones &gt; Samsung Galaxy</g:product_type>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>samsung-a17-4g-new</g:id>
-      <g:title>Samsung Galaxy A17 4G 128GB 4GB RAM - Brand New</g:title>
-      <g:description>Brand-new Samsung Galaxy A17 4G with 128GB storage and 4GB RAM. Current listed price; confirm availability before visiting.</g:description>
+    </item>    <item>
+      <g:id>honor-x7e-128gb-6gb-ram-new</g:id>
+      <g:title>Honor X7e 128GB / 6GB RAM - new</g:title>
+      <g:description>New Honor X7e 128GB / 6GB RAM.  Confirm availability before visiting.</g:description>
+      <g:link>https://pzm.ae/services/brand-new.html</g:link>
+      <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>785 AED</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Honor</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>samsung-galaxy-xcover7-5g-128gb-6gb-ram-new</g:id>
+      <g:title>Samsung Galaxy XCover7 5G 128GB / 6GB RAM - new</g:title>
+      <g:description>New Samsung Galaxy XCover7 5G 128GB / 6GB RAM.  Confirm availability before visiting.</g:description>
+      <g:link>https://pzm.ae/services/brand-new.html</g:link>
+      <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>785 AED</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>Samsung</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>samsung-galaxy-a17-4g-128gb-4gb-ram-new</g:id>
+      <g:title>Samsung Galaxy A17 4G 128GB / 4GB RAM - new</g:title>
+      <g:description>New Samsung Galaxy A17 4G 128GB / 4GB RAM.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
       <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>650 AED</g:price>
       <g:condition>new</g:condition>
       <g:brand>Samsung</g:brand>
-      <g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-      <g:product_type>Electronics &gt; Smartphones &gt; Samsung Galaxy</g:product_type>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>samsung-a07-4g-new</g:id>
-      <g:title>Samsung Galaxy A07 4G 64GB 4GB RAM - Brand New</g:title>
-      <g:description>Brand-new Samsung Galaxy A07 4G with 64GB storage and 4GB RAM. Current listed price; confirm availability before visiting.</g:description>
+    </item>    <item>
+      <g:id>samsung-galaxy-a07-4g-64gb-4gb-ram-new</g:id>
+      <g:title>Samsung Galaxy A07 4G 64GB / 4GB RAM - new</g:title>
+      <g:description>New Samsung Galaxy A07 4G 64GB / 4GB RAM.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
       <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>485 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Samsung</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>samsung-a06-4g-new</g:id>
-      <g:title>Samsung Galaxy A06 4G 64GB 4GB RAM - Brand New</g:title>
-      <g:description>Brand-new Samsung Galaxy A06 4G with 64GB storage and 4GB RAM. Current listed price; confirm availability before visiting.</g:description>
+      <g:condition>new</g:condition>
+      <g:brand>Samsung</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>samsung-galaxy-a06-4g-64gb-4gb-ram-new</g:id>
+      <g:title>Samsung Galaxy A06 4G 64GB / 4GB RAM - new</g:title>
+      <g:description>New Samsung Galaxy A06 4G 64GB / 4GB RAM.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
       <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>450 AED</g:price>
-      <g:condition>new</g:condition><g:brand>Samsung</g:brand><g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <!-- ==================== NEW Gaming Consoles ==================== -->
-
-    <item>
+      <g:condition>new</g:condition>
+      <g:brand>Samsung</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
       <g:id>nintendo-switch-new</g:id>
-      <g:title>Nintendo Switch Console - Brand New</g:title>
-      <g:description>Brand-new Nintendo Switch gaming console. One piece listed; confirm availability before visiting.</g:description>
+      <g:title>Nintendo Switch - new</g:title>
+      <g:description>New Nintendo Switch. 1 pc available Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/brand_new/nintendo_switch.webp</g:image_link>
+      <g:image_link>https://pzm.ae/assets/v20260624/images/brand_new/nintendo_switch-a346ee08.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>1100 AED</g:price>
       <g:condition>new</g:condition>
       <g:brand>Nintendo</g:brand>
-      <g:google_product_category>Electronics &gt; Video Game Consoles</g:google_product_category>
-      <g:product_type>Electronics &gt; Gaming &gt; Gaming Consoles</g:product_type>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>xbox-one-new</g:id>
-      <g:title>Xbox One Console - Brand New</g:title>
-      <g:description>Brand-new Xbox One console. Two pieces listed; confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/brand-new.html</g:link>
-      <g:image_link>https://pzm.ae/images/Catigories/mini_brand_new.webp</g:image_link>
+    </item>    <item>
+      <g:id>iphone-17-pro-max-silver-physical-sim-256gb-used</g:id>
+      <g:title>iPhone 17 Pro Max Silver Physical SIM 256GB - used</g:title>
+      <g:description>Used iPhone 17 Pro Max Silver Physical SIM 256GB. Battery 91% · Original condition Confirm availability before visiting.</g:description>
+      <g:link>https://pzm.ae/services/buy-used.html</g:link>
+      <g:image_link>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</g:image_link>
       <g:availability>in_stock</g:availability>
-      <g:price>650 AED</g:price>
-      <g:condition>new</g:condition>
-      <g:brand>Microsoft</g:brand>
-      <g:google_product_category>Electronics &gt; Video Game Consoles</g:google_product_category>
-      <g:product_type>Electronics &gt; Gaming &gt; Gaming Consoles</g:product_type>
+      <g:price>4100 AED</g:price>
+      <g:condition>used</g:condition>
+      <g:brand>Apple</g:brand>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <!-- ==================== CURRENT PRE-OWNED INVENTORY WITH PRODUCT IMAGES ==================== -->
-
-    <item>
-      <g:id>iphone-16-pro-max-used</g:id>
-      <g:title>iPhone 16 Pro Max 256GB Desert Titanium - Used</g:title>
-      <g:description>Pre-owned iPhone 16 Pro Max with 256GB storage in Desert Titanium and 100% battery health. Confirm availability before visiting.</g:description>
+    </item>    <item>
+      <g:id>iphone-17-pro-orange-512gb-used</g:id>
+      <g:title>iPhone 17 Pro Orange 512GB - used</g:title>
+      <g:description>Used iPhone 17 Pro Orange 512GB. Battery 100% · Like-new condition · TDRA Confirm availability before visiting.</g:description>
+      <g:link>https://pzm.ae/services/buy-used.html</g:link>
+      <g:image_link>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>4100 AED</g:price>
+      <g:condition>used</g:condition>
+      <g:brand>Apple</g:brand>
+      <g:identifier_exists>false</g:identifier_exists>
+    </item>    <item>
+      <g:id>iphone-16-pro-max-desert-256gb-used</g:id>
+      <g:title>iPhone 16 Pro Max Desert 256GB - used</g:title>
+      <g:description>Used iPhone 16 Pro Max Desert 256GB. Battery 100% Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/buy-used.html</g:link>
       <g:image_link>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>3450 AED</g:price>
       <g:condition>used</g:condition>
       <g:brand>Apple</g:brand>
-      <g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-      <g:product_type>Electronics &gt; Smartphones &gt; Used Apple iPhone</g:product_type>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>iphone-16-pro-white-used</g:id>
-      <g:title>iPhone 16 Pro 256GB White - Used</g:title>
-      <g:description>Pre-owned white iPhone 16 Pro with 256GB storage, 92% battery health, and never fixed before. Confirm availability before visiting.</g:description>
+    </item>    <item>
+      <g:id>samsung-galaxy-z-fold7-12gb-512gb-used</g:id>
+      <g:title>Samsung Galaxy Z Fold7 12GB / 512GB - used</g:title>
+      <g:description>Used Samsung Galaxy Z Fold7 12GB / 512GB. Original condition Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/buy-used.html</g:link>
       <g:image_link>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</g:image_link>
       <g:availability>in_stock</g:availability>
-      <g:price>3100 AED</g:price>
+      <g:price>4850 AED</g:price>
       <g:condition>used</g:condition>
-      <g:brand>Apple</g:brand>
-      <g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-      <g:product_type>Electronics &gt; Smartphones &gt; Used Apple iPhone</g:product_type>
+      <g:brand>Samsung</g:brand>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>iphone-15-pro-max-used</g:id>
-      <g:title>iPhone 15 Pro Max 512GB Black - Used</g:title>
-      <g:description>Pre-owned black iPhone 15 Pro Max with 512GB storage, 84% battery health, and never fixed before. Confirm availability before visiting.</g:description>
+    </item>    <item>
+      <g:id>samsung-galaxy-s25-ultra-12gb-512gb-used</g:id>
+      <g:title>Samsung Galaxy S25 Ultra 12GB / 512GB - used</g:title>
+      <g:description>Used Samsung Galaxy S25 Ultra 12GB / 512GB.  Confirm availability before visiting.</g:description>
       <g:link>https://pzm.ae/services/buy-used.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_used/used_iphone_15_pro_max_main.webp</g:image_link>
+      <g:image_link>https://pzm.ae/images/buy_used/used_iphone_16_pro_max_main.webp</g:image_link>
       <g:availability>in_stock</g:availability>
-      <g:price>2850 AED</g:price>
+      <g:price>2650 AED</g:price>
       <g:condition>used</g:condition>
-      <g:brand>Apple</g:brand>
-      <g:google_product_category>Electronics &gt; Communications &gt; Telephony &gt; Mobile Phones</g:google_product_category>
-      <g:product_type>Electronics &gt; Smartphones &gt; Used Apple iPhone</g:product_type>
+      <g:brand>Samsung</g:brand>
       <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>macbook-air-m2-used</g:id>
-      <g:title>MacBook Air M2 2022 8GB 256GB - Used</g:title>
-      <g:description>Pre-owned 13-inch MacBook Air M2 with 8GB RAM, 256GB SSD, 100% battery health, box included, and never fixed before. Confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/buy-used.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>2500 AED</g:price>
-      <g:condition>used</g:condition>
-      <g:brand>Apple</g:brand>
-      <g:google_product_category>Electronics &gt; Computers &gt; Laptops</g:google_product_category>
-      <g:product_type>Electronics &gt; Laptops &gt; Apple MacBook</g:product_type>
-      <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-    <item>
-      <g:id>lg-ultragear-oled-45-used</g:id>
-      <g:title>LG 45" UltraGear OLED 240Hz Gaming Monitor - Used</g:title>
-      <g:description>Pre-owned LG UltraGear 45GR95QE-B 45-inch WQHD OLED curved gaming monitor with 240Hz refresh rate, 0.03ms response time, 21:9 aspect ratio, and HDR10. Confirm availability before visiting.</g:description>
-      <g:link>https://pzm.ae/services/buy-used.html</g:link>
-      <g:image_link>https://pzm.ae/images/buy_used/used_laptops_collection_main.webp</g:image_link>
-      <g:availability>in_stock</g:availability>
-      <g:price>4100 AED</g:price>
-      <g:condition>used</g:condition>
-      <g:brand>LG</g:brand>
-      <g:google_product_category>Electronics &gt; Computers &gt; Computer Monitors</g:google_product_category>
-      <g:product_type>Electronics &gt; Monitors &gt; Gaming Monitors</g:product_type>
-      <g:identifier_exists>false</g:identifier_exists>
-    </item>
-
-  </channel>
+    </item>  </channel>
 </rss>
