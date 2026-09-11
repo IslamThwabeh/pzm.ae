@@ -732,22 +732,8 @@
         ]
     }
     </script>
-    <script>
-        document.addEventListener('click', function (event) {
-            if (!event.target || typeof event.target.closest !== 'function') return;
-            var link = event.target.closest('[data-whatsapp-channel-link]');
-            if (!link || typeof window.gtag !== 'function') return;
-            window.gtag('event', 'pzm_whatsapp_channel_click', {
-                event_category: 'engagement',
-                event_label: link.dataset.channelPlacement || 'homepage',
-                link_text: (link.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 120),
-                page_path: window.location.pathname
-            });
-        }, true);
-    </script>
-
     <!-- ===== SCRIPTS ===== -->
-    <script src="/assets/v20260822/js/navbar-f8082a58.js" defer></script>
+    <script src="/assets/v20260822/js/navbar-5625cc25.js" defer></script>
     <script>
         function toggleFaq(button) {
             const item = button.closest('.faq-item');
