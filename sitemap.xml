@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pzm.ae/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/areas/al-barsha.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -212,7 +212,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/services/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -224,13 +224,13 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/services/brand-new.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pzm.ae/ar/services/buy-iphone.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -296,7 +296,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/areas/al-barsha.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -554,7 +554,7 @@
   </url>
   <url>
     <loc>https://pzm.ae/services/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -566,13 +566,13 @@
   </url>
   <url>
     <loc>https://pzm.ae/services/brand-new.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://pzm.ae/services/buy-iphone.html</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -668,25 +668,25 @@
   </url>
   <url>
     <loc>https://pzm.ae/ar/blog/should-you-wait-iphone-18-dubai-or-buy-iphone-17-now/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pzm.ae/blog/should-you-wait-iphone-18-dubai-or-buy-iphone-17-now/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://pzm.ae/blog/iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pzm.ae/ar/blog/iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -756,4 +756,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url><loc>https://pzm.ae/iphone-18-pro-dubai.html</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pzm.ae/ar/iphone-18-pro-dubai.html</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

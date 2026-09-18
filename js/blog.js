@@ -1153,67 +1153,22 @@ const blogPosts = [
     date: "2026-07-19"
   },
   {
-    title: "Should You Wait for iPhone 18 in Dubai or Buy iPhone 17 Now?",
+    title: "iPhone 18 Pro or iPhone 17 in Dubai?",
     slug: "should-you-wait-iphone-18-dubai-or-buy-iphone-17-now",
-    content: `<p>Apple has not announced iPhone 18 yet. As of July 5, 2026, Apple's public iPhone lineup includes iPhone 17 Pro, iPhone Air, iPhone 17, iPhone 17e, and iPhone 16. So the honest buying question in Dubai is simple: wait for rumors, or make a real stock and trade-in decision today?</p>
-
-      <h3>What is known vs rumored</h3>
-      <p>Known: Apple currently sells the iPhone 17 family and related models publicly. Rumored: some reports suggest Apple may change its usual launch rhythm, with premium iPhone 18 Pro models and a foldable-style device possibly arriving before the standard iPhone 18. Apple has not confirmed those details.</p>
-
-      <h3>Buy iPhone 17 now if...</h3>
-      <ul>
-        <li>Your current phone battery is weak or unreliable.</li>
-        <li>You need a phone for travel, work, school, content, or business now.</li>
-        <li>You can get a fair trade-in value before older models drop further.</li>
-        <li>You want known specs, known accessories, and available stock.</li>
-      </ul>
-
-      <h3>Wait for iPhone 18 if...</h3>
-      <ul>
-        <li>Your current phone is still fast and has healthy battery life.</li>
-        <li>You only upgrade for Pro camera changes or new form factors.</li>
-        <li>You are comfortable with rumor uncertainty and possible launch delays.</li>
-        <li>You do not need a phone before the next Apple event cycle.</li>
-      </ul>
-
-      <h3>The Dubai trade-in angle</h3>
-      <p>Waiting can be smart, but trade-in values usually soften as launch season gets closer. If you own an iPhone 14, 15, 16, or 17 model, ask for a valuation now. Then compare the net upgrade cost against keeping your phone and replacing the battery or screen protector.</p>
-
-      <h3>Our sales recommendation</h3>
-      <p>If your phone is hurting daily life, buy or trade now. If your current iPhone is healthy and you only want the newest Pro model, wait while tracking official Apple news. Either way, do the math with your real battery health and storage, not only rumor headlines.</p>
-
-      <p>Want the net number? Send your current model, storage, battery health, condition, and target iPhone on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20read%20the%20iPhone%2018%20wait%20guide%20and%20want%20upgrade%2Ftrade-in%20advice.%20Current%20model%3A%20%2C%20Storage%3A%20%2C%20Battery%20health%3A%20%2C%20Target%20phone%3A%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>. You can also check <a href="/services/buy-iphone.html">iPhone availability</a>, <a href="/services/sell-gadgets.html">trade-in options</a>, <a href="/services/buy-used.html">tested used phones</a>, or visit <a href="/areas/al-barsha.html">PZM in Al Barsha</a>.</p>
-
-      <p>Sources checked: <a href="https://www.apple.com/iphone/" target="_blank" rel="noopener">Apple iPhone lineup</a>, <a href="https://www.techradar.com/phones/iphone/iphone-tipped-for-major-launch-shake-up-in-2026-heres-when-to-expect-the-iphone-18-iphone-air-2-and-more" target="_blank" rel="noopener">TechRadar launch-rhythm reporting</a>, and <a href="https://www.t3.com/tech/iphones/no-new-iphone-18-this-year-as-new-leak-reiterates-apples-surprising-decision" target="_blank" rel="noopener">T3 rumor coverage</a>.</p>`,
-    excerpt: "Apple has not announced iPhone 18, so Dubai buyers should compare rumors against real iPhone 17 stock, battery health, and trade-in value before waiting.",
-    image_url: "images/blog/iphone-17-pro-max-vs-16-pro-max-dubai-2026.webp",
+    content: `<p>Apple has announced iPhone 18 Pro and Pro Max. Compare both with the iPhone 17 range based on your needs and current availability. <a href="/iphone-18-pro-dubai.html">Explore the official Pro models and ask PZM for a current quote</a>.</p>`,
+    excerpt: "Compare the officially announced iPhone 18 Pro and Pro Max with iPhone 17 options in Dubai, then ask for a current PZM quote.",
+    image_url: "images/buy_iphone/iphone-18-pro-abstract-launch.webp",
     category: "iPhone",
-    date: "2026-07-05"
+    date: "2026-09-18"
   },
   {
-    title: "iPhone 18 Pro Price Rumors & Dubai Buyer Guide",
+    title: "iPhone 18 Pro and Pro Max: Official Dubai Buyer Guide",
     slug: "iphone-18-pro-rumors-vs-iphone-17-pro-max-dubai",
-    content: `<p><strong>Apple has not announced the iPhone 18 Pro, its final specifications, launch date, or UAE price.</strong> This source-checked guide separates reported details and analyst estimates from official facts.</p>
-
-      <h3>What the price report says</h3>
-      <p>MacRumors reports an IDC-based estimate of $1,249–$1,299 for iPhone 18 Pro and $1,349–$1,399 for iPhone 18 Pro Max. Simple AED conversions are useful for planning, but they are not UAE retail forecasts.</p>
-
-      <h3>What reports are watching</h3>
-      <ul>
-        <li>Possible September 2026 Pro launch and spring 2027 standard-model launch</li>
-        <li>A20-generation chip and variable-aperture camera</li>
-        <li>Thicker body, larger reported batteries, and C2 modem</li>
-        <li>A first foldable iPhone with no confirmed product name</li>
-      </ul>
-
-      <h3>Wait or buy now?</h3>
-      <p>Wait if your current iPhone is reliable and the rumored camera is your main reason to upgrade. Buy now if battery, storage, or reliability already affects your day. Check trade-in value either way so you have a real baseline for the net cost.</p>
-
-      <p>Read the complete guide for a claim-status table, corrected price ranges, sources, and local buying advice. Then send your model, storage, battery health, condition, and budget on <a href="https://wa.me/971528026677?text=Hi%20PZM%2C%20I%20read%20the%20iPhone%2018%20Pro%20price%20rumor%20guide%20and%20want%20upgrade%20advice.%20(via%20pzm.ae)" target="_blank" rel="noopener">WhatsApp</a>.</p>`,
-    excerpt: "Reported iPhone 18 Pro prices and upgrades, clearly separated from what Apple has officially confirmed, with practical Dubai buying advice.",
-    image_url: "assets/v20260709/images/blog/iphone-18-pro-price-rumors-concept-2026-4c8da942.webp",
+    content: `<p>Apple has announced iPhone 18 Pro and iPhone 18 Pro Max. Earlier rumors and price estimates are superseded by Apple's <a href="https://www.apple.com/ae/iphone-18-pro/specs/">official UAE specifications</a>.</p><p>Both models use A20 Pro and a 48MP Pro Fusion camera system. The Pro has a 6.3-inch display; Pro Max has a 6.9-inch display. PZM's prices and availability are confirmed on enquiry. <a href="/iphone-18-pro-dubai.html">Explore the models and ask our Al Barsha team for a current quote</a>.</p>`,
+    excerpt: "Official iPhone 18 Pro and Pro Max specifications, with a direct path to ask PZM for current prices and availability.",
+    image_url: "images/buy_iphone/iphone-18-pro-abstract-launch.webp",
     category: "iPhone",
-    date: "2026-07-09"
+    date: "2026-09-18"
   },
   {
     title: "iOS 26.5.2 Security Update in Dubai: What iPhone Users Should Know",

@@ -8,6 +8,8 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/services/': '/ar/services/',
     '/services/index.html': '/ar/services/',
     '/services/brand-new.html': '/ar/services/brand-new.html',
+    '/iphone-18-pro-dubai.html': '/ar/iphone-18-pro-dubai.html',
+    '/ar/iphone-18-pro-dubai.html': '/iphone-18-pro-dubai.html',
     '/services/buy-iphone.html': '/ar/services/buy-iphone.html',
     '/services/buy-used.html': '/ar/services/buy-used.html',
     '/services/used-iphone-al-barsha.html': '/ar/services/used-iphone-al-barsha.html',
