@@ -31,6 +31,7 @@ areas/al-barsha.html
 - **Store hours**: Rendered by `js/store-status.js`.
 - **FAQ widget**: Elfsight (id `elfsight-app-f5d197a3-7325-43ff-a3fa-787de403682f`) — configured externally, not in repo.
 - **WhatsApp**: All links use `wa.me/971528026677` with `?text=` prefilled messages ending in `(via pzm.ae)`.
+- **Canonical contact number**: The only approved phone and WhatsApp number is `+971 52 802 6677`. Use `+971528026677` for `tel:` and schema, and `https://wa.me/971528026677` for WhatsApp. Never introduce a temporary or alternate number. Update both source scripts and any versioned asset loaded by published HTML.
 
 ## SEO
 

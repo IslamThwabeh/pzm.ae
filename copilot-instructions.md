@@ -14,6 +14,22 @@ P Z M Computers & Mobile Phones - Sell New Used PC Build
 
     If any existing page, schema, crawler file, script, or metadata contains "P Z M Computers & Mobile Phones -Sell New Used PC Build", normalize it to "P Z M Computers & Mobile Phones - Sell New Used PC Build".
 
+🔴 MANDATORY RULE 1A: Canonical Phone And WhatsApp Number
+
+The only approved customer contact number is:
+
+    +971 52 802 6677
+
+    Use this same number for both voice calls and WhatsApp everywhere.
+
+    Machine-readable telephone value: +971528026677
+
+    WhatsApp base URL: https://wa.me/971528026677
+
+    Do not restore or introduce a temporary, previous, alternate, department, or campaign-specific number in visible text, links, JavaScript, JSON-LD, crawler files, generated pages, or versioned assets.
+
+    When changing shared contact code, update the deployed versioned asset referenced by the HTML pages as well as its source file.
+
 🔴 MANDATORY RULE 2: Forbidden Terminology
 
 The following words are BANNED from ALL content, image filenames, and URLs:
