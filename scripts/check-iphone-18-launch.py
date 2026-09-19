@@ -69,6 +69,8 @@ items={x.text for x in sitemap.findall('.//{*}loc')}
 for path in pages[:2]: assert 'https://pzm.ae/'+path in items
 assert 'launch-home-feature' in (root/'index.html').read_text(encoding='utf-8')
 assert 'launch-home-feature' in (root/'ar/index.html').read_text(encoding='utf-8')
+assert 'Buy iPhone 17 Series' not in (root/'index.html').read_text(encoding='utf-8')
+assert 'شراء سلسلة iPhone 17' not in (root/'ar/index.html').read_text(encoding='utf-8')
 for path in discovery:
     source=(root/path).read_text(encoding='utf-8')
     assert source.count('launch-discovery-strip')==1, path
