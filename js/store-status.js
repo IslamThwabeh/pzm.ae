@@ -3,23 +3,23 @@
 // Store hours: [openHour, openMin, closeHour, closeMin]
 // closeHour > 23 means next day (e.g. 25 = 1 AM next day)
 const FALLBACK_STORE_HOURS = {
-  0: { open: [10, 0], close: [23, 0] },  // Sunday: 10 AM - 11 PM
-  1: { open: [10, 0], close: [23, 0] },  // Monday: 10 AM – 11 PM
-  2: { open: [10, 0], close: [23, 0] },  // Tuesday: 10 AM - 11 PM
-  3: { open: [10, 0], close: [23, 0] },  // Wednesday: 10 AM – 11 PM
-  4: null,  // Thursday: Closed for walk-in visits
-  5: { open: [10, 0], close: [23, 0] },  // Friday: 10 AM – 11 PM
-  6: { open: [10, 0], close: [23, 0] },  // Saturday: 10 AM - 11 PM
+  0: { open: [10, 0], close: [23, 30] }, // Sunday
+  1: { open: [11, 0], close: [23, 0] },  // Monday
+  2: { open: [11, 0], close: [23, 0] },  // Tuesday
+  3: { open: [11, 0], close: [23, 0] },  // Wednesday
+  4: { open: [11, 0], close: [23, 0] },  // Thursday
+  5: { open: [10, 30], close: [23, 0] }, // Friday
+  6: { open: [10, 0], close: [23, 30] }, // Saturday
 };
 
 const FALLBACK_WEEKDAY_TEXT = [
-  "Sunday: 10:00 AM - 11:00 PM",
-  "Monday: 10:00 AM – 11:00 PM",
-  "Tuesday: 10:00 AM - 11:00 PM",
-  "Wednesday: 10:00 AM – 11:00 PM",
-  "Thursday: Closed",
-  "Friday: 10:00 AM – 11:00 PM",
-  "Saturday: 10:00 AM - 11:00 PM"
+  "Sunday: 10:00 AM - 11:30 PM",
+  "Monday: 11:00 AM - 11:00 PM",
+  "Tuesday: 11:00 AM - 11:00 PM",
+  "Wednesday: 11:00 AM - 11:00 PM",
+  "Thursday: 11:00 AM - 11:00 PM",
+  "Friday: 10:30 AM - 11:00 PM",
+  "Saturday: 10:00 AM - 11:30 PM"
 ];
 
 const HOURS_ENDPOINT = 'https://pzm-business-hours.islam-thwabeh.workers.dev/hours';
@@ -232,6 +232,10 @@ function fetchLiveHours() {
       return response.json();
     })
     .then(function (payload) {
+      // A Worker fallback is not live Google Business Profile data. Keep the
+      // verified local schedule instead of allowing stale remote defaults to
+      // overwrite it.
+      if (payload && !Array.isArray(payload) && payload.source === 'fallback') return;
       const nextHours = Array.isArray(payload) ? payload : (Array.isArray(payload && payload.hours) ? payload.hours : null);
       if (!nextHours || nextHours.length === 0) return;
 

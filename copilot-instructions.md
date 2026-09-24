@@ -76,10 +76,8 @@ Every ComputerStore or LocalBusiness schema MUST contain:
 
     "addressLocality": "Al Barsha" (NEVER "Dubai" as the locality – Dubai is the region, but locality must be Al Barsha).
 
-    "openingHoursSpecification" with Thursday closed:
-    json
-
-    { "dayOfWeek": "Thursday", "opens": "00:00", "closes": "00:00", "description": "Closed" }
+    "openingHoursSpecification" matching the approved schedule:
+    Monday through Thursday 11:00-23:00; Friday 10:30-23:00; Saturday and Sunday 10:00-23:30.
 
     areaServed, alternateName, additionalName, brand, and legalName are FORBIDDEN – remove them if they appear.
 
@@ -89,9 +87,7 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 
     6-month warranty
 
-    10 AM – 11 PM
-
-    Thursday closed
+    Monday through Thursday: 11 AM – 11 PM; Friday: 10:30 AM – 11 PM; Saturday and Sunday: 10 AM – 11:30 PM
 
     Union Coop Hypermarket
 
@@ -126,12 +122,7 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 
     Do not run blind global replacements for repair, fix, technical support, or service center. Inspect page text, URLs, JSON-LD, image filenames, scripts, sitemap entries, and internal links separately before editing.
 
-    Thursday closed schema should be accepted in this exact form:
-    json
-
-    { "dayOfWeek": "Thursday", "opens": "00:00", "closes": "00:00", "description": "Closed" }
-
-    Do NOT require "opens": "Closed" or "closes": "Closed" in JSON-LD checks.
+    Opening-hours schema must match the approved seven-day schedule in Rule 5. Do not represent any regular day as closed.
 
     The Contact page working-hours display is controlled by /js/store-status.js. It fetches https://pzm-business-hours.islam-thwabeh.workers.dev/hours and falls back to local hardcoded hours. The website does not directly scrape Google Maps or Google Business Profile from the browser.
 
