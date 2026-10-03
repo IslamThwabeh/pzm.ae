@@ -36,3 +36,10 @@ Reduce cooling to two visible case fans, a CPU cooler and a two-fan graphics
 card. Add restrained cyan/magenta RGB accents to RAM, interior and case fans,
 keeping hardware clear in daylight. No extra hands, logos, text or prices.
 The original assets remain intact. All four PC-build tiles use this revision.
+
+## User-supplied final image
+
+Supersedes the generated v2: `/images/home/pc-build-owner-approved-2026.jpg`.
+Copied unchanged from `Gemini_Generated_Image_j6g7i0j6g7i0j6g7.jpg`, supplied
+by the user. No regeneration, cropping or retouching. All four English/Arabic
+homepage and services-hub PC-build tiles now use this image.
