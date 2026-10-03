@@ -25,3 +25,14 @@ Selected assets, optimized to 960 x 640 JPEG for delivery:
 Original generated PNGs retained locally in `images/home/`; deployed HTML uses
 the compressed JPEG siblings. Replaced dated selling and PC-build images on the
 homepages and the shared PC-build tile on both services hubs.
+
+## PC image owner refinement
+
+Final deployed asset: `/images/home/pc-build-2026-v2.jpg`.
+Edited with the built-in image-generation tool using the original PC-build PNG.
+Prompt: Preserve the black PC, bright workbench and camera angle; retain exactly
+one gloved hand holding the screwdriver and remove the lower hand/forearm.
+Reduce cooling to two visible case fans, a CPU cooler and a two-fan graphics
+card. Add restrained cyan/magenta RGB accents to RAM, interior and case fans,
+keeping hardware clear in daylight. No extra hands, logos, text or prices.
+The original assets remain intact. All four PC-build tiles use this revision.
