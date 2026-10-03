@@ -60,7 +60,7 @@
 .stock-section { padding-top: 32px; }
 .stock-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .stock-card { border: 1px solid #dfe5e2; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
-.stock-card img { width: 100%; height: 180px; object-fit: contain; background: #f5f6f5; }
+.stock-card img { width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: contain; background: #000; }
 .stock-card-content { padding: 20px; display: flex; flex: 1; flex-direction: column; gap: 8px; }
 .stock-card h2 { font-size: 20px; margin: 0; }
 .stock-card p { font-size: 14px; color: #586166; }
@@ -144,8 +144,7 @@
   .product-hero h1 { font-size: 30px; }
   .product-hero p { font-size: 14px; }
   .stock-grid, .repair-topics, .repair-steps { grid-template-columns: 1fr; }
-  .stock-card { display: grid; grid-template-columns: 110px minmax(0, 1fr); }
-  .stock-card img { height: 100%; min-height: 220px; }
+  .stock-card { display: flex; flex-direction: column; }
   .stock-card-content { padding: 16px; }
   .stock-card h2 { font-size: 18px; }
   .stock-card .stock-price { font-size: 24px; }
