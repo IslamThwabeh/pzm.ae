@@ -4,6 +4,8 @@ from urllib.parse import quote
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
+if 'owner-experience' in (ROOT / 'iphone-18-pro-dubai.html').read_text(encoding='utf-8'):
+    raise SystemExit('The owner-approved retail pages supersede this launch-only builder. Edit the current HTML pages directly; do not overwrite stock prices or navigation with the old launch template.')
 BUSINESS = 'P Z M Computers & Mobile Phones - Sell New Used PC Build'
 DATE = '2026-09-18'
 PHONE = '971528026677'  # Matches the existing navbar/contact links.

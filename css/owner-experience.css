@@ -1,0 +1,158 @@
+/* Owner-approved retail and repair surfaces. */
+.owner-experience { background: #fff; color: #20252a; }
+.owner-experience .navbar { background: #fff; border-bottom: 1px solid #e4e7e8; }
+.owner-experience .navbar-inner { gap: 20px; }
+.owner-experience .logo { width: 250px; flex-shrink: 0; font-size: 13px; line-height: 1.4; letter-spacing: 0; }
+.owner-experience .nav-links { gap: 18px; }
+.owner-experience .nav-actions { gap: 8px; flex-shrink: 0; }
+.owner-experience .btn-signup, .owner-experience .btn-login { border-radius: 6px; }
+.owner-experience a:focus-visible, .owner-experience button:focus-visible,
+.owner-experience select:focus-visible { outline: 3px solid #087e66; outline-offset: 4px; }
+.owner-experience .nav-dropdown:focus-within .nav-dropdown-content { opacity: 1; visibility: visible; transform: translateX(-50%); }
+.owner-experience[dir="rtl"] .nav-dropdown:focus-within .nav-dropdown-content { transform: translateX(50%); }
+.retail-intro, .retail-section, .retail-guide, .repair-section { width: min(1200px, calc(100% - 48px)); margin: 0 auto; }
+.retail-intro { padding: 24px 0 20px; }
+.retail-location { color: #087e66; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+.retail-intro h1 { max-width: 900px; font-size: 28px; line-height: 1.25; letter-spacing: 0; }
+.retail-intro p:last-child { margin-top: 8px; color: #535c62; font-size: 14px; }
+.retail-section { padding: 0 0 36px; }
+.retail-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 16px; }
+.retail-heading h2 { font-size: 22px; letter-spacing: 0; }
+.retail-heading a { font-size: 13px; font-weight: 700; color: #087e66; text-decoration: underline; text-underline-offset: 4px; }
+.retail-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.retail-tile { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid #e0e5e4; border-radius: 8px; background: #fff; transition: border-color .15s, box-shadow .15s; }
+.retail-tile:hover { border-color: #087e66; box-shadow: 0 5px 18px #14292312; }
+.retail-tile-media { background: #f3f5f4; height: 150px; overflow: hidden; }
+.retail-tile-media img { height: 100%; width: 100%; object-fit: cover; }
+.retail-tile-media.product img { object-fit: contain; }
+.retail-tile-copy { padding: 14px 16px; display: flex; flex: 1; flex-direction: column; }
+.retail-tile h3 { font-size: 18px; line-height: 1.35; letter-spacing: 0; margin: 0 0 5px; }
+.retail-tile p { font-size: 13px; line-height: 1.55; color: #586166; margin: 0 0 10px; }
+.retail-tile-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #087e66; font-size: 13px; font-weight: 700; }
+.retail-tile-foot span:last-child { font-size: 20px; }
+.retail-extra { display: flex; flex-wrap: wrap; gap: 12px 24px; padding-top: 18px; font-size: 14px; font-weight: 600; }
+.retail-extra a { text-decoration: underline; text-underline-offset: 4px; }
+.retail-proof { background: #f2f7f4; border-block: 1px solid #dfe9e2; padding: 15px 24px; }
+.retail-proof-inner { max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font-size: 13px; }
+.retail-proof strong { color: #087e66; }
+.retail-guide { padding: 36px 0; }
+.retail-guide h2, .repair-section h2 { font-size: 24px; margin-bottom: 14px; letter-spacing: 0; }
+.retail-guide p { font-size: 14px; line-height: 1.8; color: #535c62; margin-bottom: 10px; }
+.retail-guide a { color: #087e66; }
+.owner-experience .section { background: transparent; }
+.owner-experience .info-panel, .owner-experience .local-actions-panel { border-radius: 0; box-shadow: none; border: 0; background: transparent; }
+.owner-experience .appointment-section { background: #f5f7f6; }
+.owner-experience .appointment-card { border-radius: 8px; }
+.owner-experience .section-header h2 { letter-spacing: 0; }
+.product-hero { position: relative; isolation: isolate; background: #000; color: #fff; min-height: 580px; padding: 38px 24px 300px; text-align: center; }
+.product-hero > img { position: absolute; z-index: -1; inset: auto 0 0; height: 340px; width: 100%; object-fit: contain; }
+.product-hero h1 { color: #fff; font-size: 44px; letter-spacing: 0; margin-bottom: 10px; }
+.product-hero p { color: #e1e4e5; font-size: 16px; margin: 0 auto 16px; max-width: 680px; }
+.product-hero .retail-location { color: #97dfca; }
+.experience-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; }
+.experience-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 11px 18px; border-radius: 6px; font-size: 14px; line-height: 1.4; font-weight: 700; background: #087e66; color: #fff !important; text-align: center; }
+.experience-button:hover { background: #065d4c; }
+.experience-button.secondary { color: #20252a !important; background: #fff; border: 1px solid #cbd5d0; }
+.stock-section { padding-top: 32px; }
+.stock-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.stock-card { border: 1px solid #dfe5e2; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+.stock-card img { width: 100%; height: 180px; object-fit: contain; background: #f5f6f5; }
+.stock-card-content { padding: 20px; display: flex; flex: 1; flex-direction: column; gap: 8px; }
+.stock-card h2 { font-size: 20px; margin: 0; }
+.stock-card p { font-size: 14px; color: #586166; }
+.stock-card .stock-price { font-size: 26px; color: #20252a; font-weight: 800; }
+.stock-card .experience-button { margin-top: auto; }
+.stock-status { font-size: 12px; color: #087e66; font-weight: 700; }
+.stock-note { margin: 14px 0 0; font-size: 12px; color: #647068; }
+.inventory-shortcuts { width: min(1100px, calc(100% - 32px)); margin: 0 auto 20px; display: flex; flex-wrap: wrap; gap: 10px 20px; font-size: 13px; font-weight: 700; }
+.inventory-shortcuts a { color: #087e66; text-decoration: underline; text-underline-offset: 4px; }
+.owner-experience .inventory-hero { padding: 24px 16px; }
+.owner-experience .inventory-hero h1 { font-size: 28px; letter-spacing: 0; }
+.owner-experience .inventory-hero p { font-size: 14px; max-width: 780px; }
+.owner-experience .inventory-hero.brand-new { background: #edf5f1; }
+.owner-experience .inventory-hero::before, .owner-experience .inventory-hero::after { display: none; }
+.owner-experience .inventory-hero h1, .owner-experience .inventory-hero p { color: #20252a; }
+.owner-experience:has(.repair-enquiry) #pzm-wa-float,
+.owner-experience:has(.product-hero) #pzm-wa-float { display: none !important; }
+.owner-experience .inventory-section { padding-top: 20px; padding-bottom: 20px; }
+.owner-experience .inventory-category-title { font-size: 22px; letter-spacing: 0; }
+.owner-experience .inventory-list { border-radius: 8px; box-shadow: none; border: 1px solid #e0e5e2; }
+.owner-experience .preowned-inspection { border-top: 1px solid #e0e5e2; }
+.product-comparison { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 18px; }
+.product-comparison th, .product-comparison td { padding: 14px 12px; text-align: start; border-bottom: 1px solid #e0e5e2; }
+.product-comparison th { background: #f2f7f4; }
+.repair-hero { position: relative; min-height: 540px; isolation: isolate; padding: 48px 24px 260px; background: #111; color: #fff; text-align: center; }
+.repair-hero img { position: absolute; z-index: -1; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.repair-hero::after { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, #000d, #0006 60%, #0002); }
+.repair-hero h1 { color: #fff; font-size: 40px; letter-spacing: 0; }
+.repair-hero p { max-width: 620px; margin: 14px auto 0; color: #fff; line-height: 1.7; }
+.repair-section { padding: 36px 0; border-bottom: 1px solid #e3e8e5; }
+.repair-section > p { max-width: 800px; color: #535c62; margin-bottom: 20px; }
+.repair-topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 30px; }
+.repair-topics article { padding-top: 14px; border-top: 2px solid #bfd7cb; }
+.repair-topics h3 { font-size: 18px; margin-bottom: 8px; }
+.repair-topics p { font-size: 14px; color: #535c62; line-height: 1.75; }
+.repair-steps { counter-reset: steps; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.repair-steps article { counter-increment: steps; }
+.repair-steps article::before { content: '0' counter(steps); display: block; font-size: 24px; font-weight: 800; color: #087e66; margin-bottom: 10px; }
+.repair-steps h3 { font-size: 17px; margin-bottom: 8px; }
+.repair-steps p { font-size: 14px; color: #535c62; }
+.experience-faq details { border-bottom: 1px solid #dfe5e2; padding: 18px 0; }
+.experience-faq summary { cursor: pointer; font-weight: 700; font-size: 15px; }
+.experience-faq details p { margin-top: 12px; font-size: 14px; line-height: 1.75; color: #535c62; }
+.repair-enquiry { display: grid; grid-template-columns: 1fr 1fr auto; align-items: end; gap: 14px; margin: 22px 0; }
+.repair-enquiry label { font-size: 13px; font-weight: 700; }
+.repair-enquiry select { width: 100%; margin-top: 6px; padding: 12px; min-height: 46px; border: 1px solid #bbc8c1; border-radius: 6px; background: #fff; color: #20252a; font: inherit; }
+.repair-enquiry .experience-button { min-height: 46px; }
+.owner-experience .care-section { padding: 36px 0; background: transparent; border-radius: 0; box-shadow: none; }
+.owner-experience .care-card { border-radius: 8px; box-shadow: none; }
+.owner-experience .care-section h2 { letter-spacing: 0; }
+.owner-experience .care-hero { min-height: 540px; padding: 48px 24px; }
+.owner-experience .care-hero__copy h1 { font-size: 40px; letter-spacing: 0; }
+.owner-experience .care-trust { border-radius: 0; box-shadow: none; }
+@media (min-width: 769px) and (max-width: 1100px) {
+  .owner-experience .nav-links { gap: 10px; }
+  .owner-experience .logo { width: 190px; font-size: 11px; }
+  .owner-experience .nav-actions .btn-login { display: none; }
+}
+@media (max-width: 768px) {
+  .owner-experience .navbar { padding: 0 16px; }
+  .owner-experience .logo { width: 245px; max-width: calc(100% - 48px); font-size: 11px; }
+  .owner-experience .nav-links.open { gap: 0; }
+  .retail-intro, .retail-section, .retail-guide, .repair-section { width: calc(100% - 32px); }
+  .retail-intro { padding: 20px 0 18px; }
+  .retail-intro h1 { font-size: 22px; }
+  .retail-intro p:last-child { font-size: 13px; }
+  .retail-heading { margin-bottom: 12px; }
+  .retail-heading h2 { font-size: 18px; }
+  .owner-experience .inventory-hero h1 { font-size: 22px; }
+  .retail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .retail-tile-media { height: 104px; }
+  .retail-tile-copy { padding: 12px; }
+  .retail-tile h3 { font-size: 16px; }
+  .retail-tile p { font-size: 12px; }
+  .retail-tile-foot { font-size: 12px; }
+  .retail-proof-inner { justify-content: center; text-align: center; }
+  .product-hero { min-height: 490px; padding: 28px 16px 210px; }
+  .product-hero > img { height: 230px; }
+  .product-hero h1 { font-size: 30px; }
+  .product-hero p { font-size: 14px; }
+  .stock-grid, .repair-topics, .repair-steps { grid-template-columns: 1fr; }
+  .stock-card { display: grid; grid-template-columns: 110px minmax(0, 1fr); }
+  .stock-card img { height: 100%; min-height: 220px; }
+  .stock-card-content { padding: 16px; }
+  .stock-card h2 { font-size: 18px; }
+  .stock-card .stock-price { font-size: 24px; }
+  .product-comparison { font-size: 12px; }
+  .product-comparison th, .product-comparison td { padding: 12px 6px; }
+  .repair-hero { min-height: 470px; padding: 32px 16px 180px; }
+  .repair-hero h1 { font-size: 30px; }
+  .repair-hero p { font-size: 14px; }
+  .owner-experience .care-hero { min-height: 480px; padding: 32px 16px; }
+  .owner-experience .care-hero__copy h1 { font-size: 30px; }
+  .repair-enquiry { grid-template-columns: 1fr; }
+  .retail-guide h2, .repair-section h2 { font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .owner-experience *, .owner-experience *::before, .owner-experience *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}

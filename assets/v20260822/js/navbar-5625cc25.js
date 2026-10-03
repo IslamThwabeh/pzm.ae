@@ -1,6 +1,10 @@
 // P Z M Computers & Mobile Phones - Sell New Used PC Build Navbar — Mobile menu toggle & dropdown handling
 
 var LANGUAGE_SWITCH_ROUTES = {
+    '/services/iphone-device-care-al-barsha.html': '/ar/services/iphone-device-care-al-barsha.html',
+    '/ar/services/iphone-device-care-al-barsha.html': '/services/iphone-device-care-al-barsha.html',
+    '/services/macbook-repair-al-barsha.html': '/ar/services/macbook-repair-al-barsha.html',
+    '/ar/services/macbook-repair-al-barsha.html': '/services/macbook-repair-al-barsha.html',
     '/': '/ar/',
     '/index.html': '/ar/',
     '/about.html': '/ar/about.html',
@@ -8,6 +12,8 @@ var LANGUAGE_SWITCH_ROUTES = {
     '/services/': '/ar/services/',
     '/services/index.html': '/ar/services/',
     '/services/brand-new.html': '/ar/services/brand-new.html',
+    '/iphone-18-pro-dubai.html': '/ar/iphone-18-pro-dubai.html',
+    '/ar/iphone-18-pro-dubai.html': '/iphone-18-pro-dubai.html',
     '/services/buy-iphone.html': '/ar/services/buy-iphone.html',
     '/services/buy-used.html': '/ar/services/buy-used.html',
     '/services/used-iphone-al-barsha.html': '/ar/services/used-iphone-al-barsha.html',
@@ -150,6 +156,9 @@ var WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/0029VbDKyOU6hENr1ktFAq1
 var WHATSAPP_CHANNEL_SESSION_KEY = 'pzm_whatsapp_channel_popup_dismissed';
 
 function isWhatsAppChannelPopupPage() {
+    if (document.body.classList.contains('owner-experience')) {
+        return false;
+    }
     var robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta && (robotsMeta.getAttribute('content') || '').toLowerCase().indexOf('noindex') !== -1) {
         return false;
@@ -335,6 +344,8 @@ function toggleMenu() {
 
     navLinks.classList.toggle('open');
     navActions.classList.toggle('open');
+    var menuButton = document.getElementById('hamburger');
+    if (menuButton) menuButton.setAttribute('aria-expanded', String(isOpening));
 
     // Move nav-actions to body when open (escapes backdrop-filter containing block)
     if (isOpening) {
@@ -365,6 +376,8 @@ document.addEventListener('DOMContentLoaded', function () {
             link.addEventListener('click', function () {
                 document.getElementById('navLinks').classList.remove('open');
                 document.getElementById('navActions').classList.remove('open');
+                var menuButton = document.getElementById('hamburger');
+                if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -387,6 +400,8 @@ document.addEventListener('DOMContentLoaded', function () {
             var navLinks = document.getElementById('navLinks');
             var navActions = document.getElementById('navActions');
             if (navLinks) navLinks.classList.remove('open');
+            var menuButton = document.getElementById('hamburger');
+            if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
             if (navActions) {
                 navActions.classList.remove('open');
                 // Return nav-actions to navbar if it was moved to body

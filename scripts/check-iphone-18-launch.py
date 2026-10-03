@@ -21,7 +21,7 @@ class Read(HTMLParser):
         if tag=='img': self.images.append(a.get('src',''))
         if tag=='a':
             self.links.append(a.get('href',''))
-            if 'launch-enquiry' in a.get('class',''): self.enquiries.append((a.get('data-model'),a.get('href','')))
+            if any(c in a.get('class','').split() for c in ('launch-enquiry', 'product-enquiry')): self.enquiries.append((a.get('data-model'),a.get('href','')))
         if tag=='link':
             if a.get('rel')=='canonical': self.canonical.append(a.get('href'))
             if a.get('rel')=='alternate': self.alternates.append((a.get('hreflang'),a.get('href')))
@@ -48,7 +48,7 @@ for path in pages:
         u=urlparse(href)
         assert u.netloc=='wa.me' and u.path=='/971528026677', (path,href)
         msg=parse_qs(u.query)['text'][0]
-        assert model in msg and msg.endswith('via pzm.ae'), (path,msg)
+        assert model in msg and msg.endswith(('via pzm.ae', '(via pzm.ae)')), (path,msg)
         assert ('price' in msg or 'السعر' in msg), (path,msg)
         assert 'AED 0' not in raw and 'price: 0' not in raw
     print(path, 'enquiries:',len(p.enquiries),'JSON-LD:',len(p.scripts))
@@ -60,20 +60,24 @@ for path in pages[:2]:
     for lang,route in [('en','iphone-18-pro-dubai.html'),('ar-AE','ar/iphone-18-pro-dubai.html'),('x-default','iphone-18-pro-dubai.html')]:
         assert (lang,'https://pzm.ae/'+route) in p.alternates
     graph=p.scripts[0]['@graph']
-    assert len([x for x in graph if x['@type']=='Product'])==2
-    assert all('offers' not in x for x in graph)
+    products = [x for x in graph if x['@type']=='Product']
+    assert len(products)==3
+    assert sorted(x['offers']['price'] for x in products)==[5300,6350,7100]
+    assert all(x['offers']['priceCurrency']=='AED' for x in products)
+    assert len(p.enquiries)==3
     assert len([x for x in graph if x['@type']=='FAQPage'][0]['mainEntity'])==5
 
 sitemap=ET.parse(root/'sitemap.xml')
 items={x.text for x in sitemap.findall('.//{*}loc')}
 for path in pages[:2]: assert 'https://pzm.ae/'+path in items
-assert 'launch-home-feature' in (root/'index.html').read_text(encoding='utf-8')
-assert 'launch-home-feature' in (root/'ar/index.html').read_text(encoding='utf-8')
+assert 'retail-grid' in (root/'index.html').read_text(encoding='utf-8')
+assert 'retail-grid' in (root/'ar/index.html').read_text(encoding='utf-8')
 assert 'Buy iPhone 17 Series' not in (root/'index.html').read_text(encoding='utf-8')
 assert 'شراء سلسلة iPhone 17' not in (root/'ar/index.html').read_text(encoding='utf-8')
 for path in discovery:
     source=(root/path).read_text(encoding='utf-8')
-    assert source.count('launch-discovery-strip')==1, path
+    if 'owner-experience' not in source:
+        assert source.count('launch-discovery-strip')==1, path
     assert ('/ar/iphone-18-pro-dubai.html' if path.startswith('ar/') else '/iphone-18-pro-dubai.html') in source, path
 for path in editorial:
     source=(root/path).read_text(encoding='utf-8')
@@ -85,5 +89,5 @@ for path in editorial:
 for name,size in [('iphone-18-pro-abstract-launch.webp',(1600,900)),('iphone-18-pro-abstract-launch-960.webp',(960,960)),('iphone-18-pro-abstract-launch-640.webp',(640,640))]:
     with Image.open(root/'images/buy_iphone'/name) as im: assert im.size==size and im.format=='WEBP'
 for path in pages[:2]:
-    assert '/images/buy_iphone/iphone-18-pro-abstract-launch-640.webp' in parsed[path].images
+    assert '/images/buy_iphone/iphone-18-pro-finishes.jpg' in parsed[path].images
 print('Launch checks passed')

@@ -30,6 +30,20 @@ The only approved customer contact number is:
 
     When changing shared contact code, update the deployed versioned asset referenced by the HTML pages as well as its source file.
 
+## Owner-approved iPhone and MacBook repair exception (2026-10-03)
+
+The business owner explicitly approved iPhone Repair and MacBook Repair pages,
+homepage placement, and customer-facing repair wording. The user confirmed this
+approval and authorized implementation. This exception supersedes the repair
+ban below for these two services, their English/Arabic pages, navigation,
+metadata, structured data, sitemap entries, crawler files, and related assets. It does not
+authorize other banned terminology, other locations, or hosting changes.
+Keep existing useful care URLs stable where possible; new repair URLs are
+permitted for these two services. Preserve documented legacy fallback behavior.
+Website approval does not imply eligibility for paid repair advertising.
+The homepage must lead with products and services; visit/availability guidance
+belongs after the product and service content.
+
 🔴 MANDATORY RULE 2: Forbidden Terminology
 
 The following words are BANNED from ALL content, image filenames, and URLs:
