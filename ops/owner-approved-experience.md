@@ -5,6 +5,9 @@ Approved on 2026-10-03 by the business owner, relayed and confirmed by the user.
 - Lead the homepage with iPhone 18 Pro Max, iPhone Repair, MacBook Repair,
   Second-Hand Devices, New Devices, and Custom PC Builds.
 - Move visit guidance and availability messaging below the offerings.
+- Owner follow-up: add Sell Your Phone and Sell Your PC as the first two
+  homepage choices in both languages, with device-specific valuation enquiries.
+  The homepage now has eight choices; service hubs retain their six destinations.
 - Permit repair wording for iPhone and MacBook, including associated routes,
   metadata, navigation, schema, and sitemap. Other guardrails remain in force.
 - Retain the established iPhone care canonical URL as the real repair page.

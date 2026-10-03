@@ -93,7 +93,12 @@ for name in PAGES:
 
 for language in ('', 'ar/'):
     source = (ROOT / language / 'index.html').read_text(encoding='utf-8')
-    assert source.count('class="retail-tile"') == 6
+    tiles = re.findall(r'<a class="retail-tile(?: selling-tile)?"[\s\S]*?</a>', source)
+    assert len(tiles) == 8
+    for tile, device in zip(tiles[:2], ('phone', 'PC')):
+        message = parse_qs(urlparse(re.search(r'href="([^"]+)"', tile)[1]).query)['text'][0]
+        assert 'بيع' in message or 'sell' in message
+        assert ('هاتف' in message or 'phone' in message) if device == 'phone' else ('كمبيوتر' in message or 'PC' in message)
     assert source.index('retail-grid') < source.index('id="visit"')
     for route in ('services/iphone-device-care-al-barsha.html', 'services/macbook-repair-al-barsha.html'):
         assert f'href="/{language}{route}"' in source
