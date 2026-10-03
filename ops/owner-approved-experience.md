@@ -20,7 +20,13 @@ Official product imagery and specifications were retrieved from Apple UAE:
 https://www.apple.com/ae/iphone-18-pro/ and
 https://www.apple.com/ae/iphone-18-pro/specs/.
 
-Stock prices are supplied by the store, not taken from Apple's retail prices.
+Later on 2026-10-03, the owner requested removal of fixed iPhone 18 prices.
+Those three variants remain on the website with price enquiries through
+WhatsApp, but are excluded from the merchant feed because no fixed price is
+being advertised. Remove their price offers from structured data and use a
+model ItemList instead. The website retains 102 listings; the feed has 99 items.
+
+Other stock prices are supplied by the store, not taken from Apple's retail prices.
 Confirm quantities, colors, and final warranty terms with the store.
 
 This approval does not establish Google Ads eligibility for repair campaigns.

@@ -30,6 +30,14 @@ The only approved customer contact number is:
 
     When changing shared contact code, update the deployed versioned asset referenced by the HTML pages as well as its source file.
 
+## Owner-approved iPhone 18 pricing policy (2026-10-03)
+
+The owner requested removal of fixed iPhone 18 prices because they change
+frequently. Keep these models enquiry-only in English and Arabic: no fixed
+amounts in visible content, metadata, WhatsApp messages, analytics, or schema.
+Exclude them from the merchant feed until an approved stable price is provided;
+do not publish an invalid or zero-price offer. Other device prices are unchanged.
+
 ## Owner-approved iPhone and MacBook repair exception (2026-10-03)
 
 The business owner explicitly approved iPhone Repair and MacBook Repair pages,

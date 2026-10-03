@@ -49,7 +49,7 @@ for path in pages:
         assert u.netloc=='wa.me' and u.path=='/971528026677', (path,href)
         msg=parse_qs(u.query)['text'][0]
         assert model in msg and msg.endswith(('via pzm.ae', '(via pzm.ae)')), (path,msg)
-        assert ('price' in msg or 'السعر' in msg), (path,msg)
+        assert ('price' in msg or 'سعر' in msg), (path,msg)
         assert 'AED 0' not in raw and 'price: 0' not in raw
     print(path, 'enquiries:',len(p.enquiries),'JSON-LD:',len(p.scripts))
 
@@ -60,10 +60,10 @@ for path in pages[:2]:
     for lang,route in [('en','iphone-18-pro-dubai.html'),('ar-AE','ar/iphone-18-pro-dubai.html'),('x-default','iphone-18-pro-dubai.html')]:
         assert (lang,'https://pzm.ae/'+route) in p.alternates
     graph=p.scripts[0]['@graph']
-    products = [x for x in graph if x['@type']=='Product']
-    assert len(products)==3
-    assert sorted(x['offers']['price'] for x in products)==[5300,6350,7100]
-    assert all(x['offers']['priceCurrency']=='AED' for x in products)
+    assert not any(x['@type'] in ('Product', 'Offer') for x in graph)
+    models = [x for x in graph if x['@type']=='ItemList'][0]
+    assert models['numberOfItems']==3 and len(models['itemListElement'])==3
+    assert not re.search(r'\b(?:5,?300|6,?350|7,?100)\b', (root/path).read_text(encoding='utf-8'))
     assert len(p.enquiries)==3
     assert len([x for x in graph if x['@type']=='FAQPage'][0]['mainEntity'])==5
 

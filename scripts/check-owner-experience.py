@@ -106,17 +106,23 @@ for kind in ('brand-new', 'buy-used'):
     for language in ('', 'ar/'):
         source = (ROOT / language / f'services/{kind}.html').read_text(encoding='utf-8')
         names = re.findall(r'<span class="item-name">(.*?)</span>', source)
-        prices = re.findall(r'<span class="item-price">(.*?)</span>', source)
+        prices = re.findall(r'<span class="item-price(?: enquiry-price)?">(.*?)</span>', source)
+        prices = ['enquiry-only' if p in ("Ask for today's price", 'اسأل عن سعر اليوم') else p for p in prices]
         inventories.append(list(zip(names, prices)))
     assert inventories[0] == inventories[1], (kind, 'EN/AR inventory differs')
 
 feed = ET.parse(ROOT / 'product-feed.xml')
 items = feed.findall('.//item')
-assert len(items) == 102
+assert len(items) == 99
 google = {'g': 'http://base.google.com/ns/1.0'}
 iphone = [item for item in items if item.find('g:title', google).text.startswith('iPhone 18')]
-assert sorted(item.find('g:price', google).text for item in iphone) == ['5300.00 AED', '6350.00 AED', '7100.00 AED']
-assert all('iphone-18-pro-finishes.jpg' in item.find('g:image_link', google).text for item in iphone)
+assert not iphone, 'Enquiry-only iPhone 18 models must not publish fixed merchant prices'
+for language in ('', 'ar/'):
+    source = (ROOT / language / 'services/brand-new.html').read_text(encoding='utf-8')
+    for item in re.findall(r'<a class="inventory-item"[\s\S]*?</a>', source):
+        if re.search(r'<span class="item-name">iPhone 18', item):
+            assert not re.search(r'\b(?:5,?300|6,?350|7,?100)\b', unquote(item)), item
+            assert ('Ask for today' in item or 'اسأل عن سعر اليوم' in item)
 
 sitemap = ET.parse(ROOT / 'sitemap.xml')
 locations = [node.text for node in sitemap.findall('.//{*}loc')]
@@ -137,4 +143,4 @@ for language in ('', 'ar/'):
 
 assert (ROOT / 'js/navbar.js').read_bytes() == (ROOT / 'assets/v20260822/js/navbar-5625cc25.js').read_bytes()
 assert (ROOT / 'js/contact-loader.js').read_bytes() == (ROOT / 'assets/v20260822/js/contact-loader-58f75adf.js').read_bytes()
-print('PASS: inventory parity (102 products), stock prices, assets, redirects, and', len(locations), 'sitemap targets')
+print('PASS: inventory parity (102 website listings, 99 merchant items), enquiry-only iPhone 18, assets, redirects, and', len(locations), 'sitemap targets')

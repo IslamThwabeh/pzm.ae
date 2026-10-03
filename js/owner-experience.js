@@ -21,7 +21,7 @@
   document.querySelectorAll('.product-enquiry').forEach(function (link) {
     link.addEventListener('click', function () {
       if (typeof window.gtag !== 'function') return;
-      var item = { item_name: link.getAttribute('data-model'), price: Number(link.getAttribute('data-price')), currency: 'AED' };
+      var item = { item_name: link.getAttribute('data-model'), item_variant: link.getAttribute('data-variant') };
       window.gtag('event', 'select_item', { items: [item] });
       window.gtag('event', 'generate_lead', { item_name: item.item_name, method: 'WhatsApp', page_path: location.pathname });
     });
