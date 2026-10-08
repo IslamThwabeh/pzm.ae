@@ -1,7 +1,7 @@
 # pzm.ae Project Guidelines
 
 ## Overview
-Static HTML website for P Z M Computers & Mobile Phones -Sell New Used PC Build in Al Barsha, Dubai.
+Static HTML website for P Z M Computers & Mobile Phones - Sell New Used PC Build in Al Barsha, Dubai.
 Hosted on GitHub Pages at **pzm.ae**. No server-side rendering or build step for the HTML pages.
 
 ## Site Structure
