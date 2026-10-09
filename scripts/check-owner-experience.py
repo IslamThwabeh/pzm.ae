@@ -105,7 +105,7 @@ for language in ('', 'ar/'):
     assert source.index('retail-grid') < source.index('id="visit"')
     for route in ('services/iphone-device-care-al-barsha.html', 'services/macbook-repair-al-barsha.html'):
         assert f'href="/{language}{route}"' in source
-    for kind, count in [('brand-new', 10), ('buy-used', 92)]:
+    for kind, count in [('brand-new', 11), ('buy-used', 91)]:
         source = (ROOT / language / f'services/{kind}.html').read_text(encoding='utf-8')
         assert source.count('class="inventory-item"') == count, (language, kind)
 
@@ -121,7 +121,7 @@ for kind in ('brand-new', 'buy-used'):
 
 feed = ET.parse(ROOT / 'product-feed.xml')
 items = feed.findall('.//item')
-assert len(items) == 99
+assert len(items) == 98
 google = {'g': 'http://base.google.com/ns/1.0'}
 iphone = [item for item in items if item.find('g:title', google).text.startswith('iPhone 18')]
 assert not iphone, 'Enquiry-only iPhone 18 models must not publish fixed merchant prices'
@@ -151,4 +151,4 @@ for language in ('', 'ar/'):
 
 assert (ROOT / 'js/navbar.js').read_bytes() == (ROOT / 'assets/v20260822/js/navbar-5625cc25.js').read_bytes()
 assert (ROOT / 'js/contact-loader.js').read_bytes() == (ROOT / 'assets/v20260822/js/contact-loader-58f75adf.js').read_bytes()
-print('PASS: inventory parity (102 website listings, 99 merchant items), enquiry-only iPhone 18, assets, redirects, and', len(locations), 'sitemap targets')
+print('PASS: inventory parity (102 website listings, 98 merchant items), enquiry-only iPhone 18, assets, redirects, and', len(locations), 'sitemap targets')
