@@ -2,10 +2,15 @@ from html import escape
 from pathlib import Path
 from urllib.parse import quote
 import re
+import argparse
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = Path(r"C:\Users\islamt\.codex\attachments\5c62478a-ac41-4532-ad6f-23cb36779824\Pasted text.txt")
+parser = argparse.ArgumentParser(description="Update bilingual inventory and merchant feed from an owner stock list.")
+parser.add_argument("source", type=Path, help="Path to the owner stock list")
+parser.add_argument("--ps5-price", type=int, help="Confirmed price for the ambiguous PS5 one-controller listing")
+args = parser.parse_args()
+SOURCE = args.source
 WA = "https://wa.me/971528026677"
 SITE = "https://pzm.ae"
 IPHONE_IMG = "/assets/v20260624/images/buy_iphone/iPhone_17_Pro_Max_all_colors-55c7582f.webp"
@@ -40,7 +45,7 @@ def split_price(raw):
 
 
 def clean_name(raw):
-    name = re.sub(r"\b00\d{5,}\b", " ", raw)
+    name = re.sub(r"(?<!\d)00\d{5,}\b", " ", raw)
     name = re.sub(r"(?i)\bnever\s+fix(?:ed|befofe|beford|before)?\s*(?:before|beford|befofe)?\b", " ", name)
     name = re.sub(r"(?i)\bnew battery\b", "new battery", name)
     name = re.sub(r"(?i)\bwith cd\b", "with disc drive", name)
@@ -53,12 +58,17 @@ def clean_name(raw):
     name = re.sub(r"(?i)\brayzen\b", "Ryzen", name)
     name = re.sub(r"(?i)\biphones?\b", lambda m: "iPhone" if m.group(0).lower().startswith("iphone") else m.group(0), name)
     name = re.sub(r"\s*/\s*not for sale.*$", "", name, flags=re.I)
+    name = re.sub(r"(?i)\b(\d+)\s*aed\b", " ", name)
     name = re.sub(r"\s+", " ", name).strip(" -")
     return name
 
 
 def brand_for(name):
     first = name.split()[0].strip("|")
+    if first.lower() == "gaming":
+        for token, brand in (("lenovo", "Lenovo"), ("inspiron", "Dell"), ("asus", "ASUS"), ("lg", "LG")):
+            if token in name.lower():
+                return brand
     mapping = {
         "IPHONE": "Apple", "iPhone": "Apple", "IPAD": "Apple", "APPLE": "Apple", "Apple": "Apple",
         "Airpod": "Apple", "AirPods": "Apple", "MacBook": "Apple", "MACKBOOK": "Apple",
@@ -69,7 +79,7 @@ def brand_for(name):
         "PS5": "Sony", "PS4": "Sony", "XBOX": "Microsoft",
         "Lenovo": "Lenovo", "HP": "HP", "Dell": "Dell", "DELL": "Dell",
         "MICROSOFT": "Microsoft", "HUAWEI": "Huawei", "BVATE": "BVATE",
-        "Gaming": "LG", "ASUS": "ASUS", "Philips": "Philips",
+        "JBL": "JBL", "Gaming": "LG", "ASUS": "ASUS", "Philips": "Philips",
     }
     return mapping.get(first, first)
 
@@ -129,6 +139,8 @@ def replace_section(source, section_id, cards_html):
 def normalize_item(raw, condition, href):
     name_part, price = split_price(raw)
     name = clean_name(name_part)
+    if re.match(r"(?i)^PS5\s+1\s+Controller\b", name) and price == 170:
+        price = args.ps5_price
     return item(name, price, condition, image_for(name, condition == "new"), href)
 
 
