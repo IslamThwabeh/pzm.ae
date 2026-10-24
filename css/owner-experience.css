@@ -29,6 +29,7 @@
 .retail-tile-media { background: #f3f5f4; height: 150px; overflow: hidden; }
 .retail-tile-media img { height: 100%; width: 100%; object-fit: cover; }
 .retail-tile-media.product img { object-fit: contain; }
+.retail-grid.selling-grid .retail-tile-media { height: auto; aspect-ratio: 3 / 2; }
 .retail-tile-copy { padding: 14px 16px; display: flex; flex: 1; flex-direction: column; }
 .retail-tile h3 { font-size: 18px; line-height: 1.35; letter-spacing: 0; margin: 0 0 5px; }
 .retail-tile p { font-size: 13px; line-height: 1.55; color: #586166; margin: 0 0 10px; }

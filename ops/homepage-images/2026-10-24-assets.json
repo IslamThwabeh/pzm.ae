@@ -1,0 +1,66 @@
+[
+  {
+    "name": "iphone-18-pro-max",
+    "source": "exec-4e4df04a-0320-4a0e-826a-76955af31681.png",
+    "assets": [
+      "/images/home/2026-10-24/iphone-18-pro-max-480.webp",
+      "/images/home/2026-10-24/iphone-18-pro-max-960.webp"
+    ]
+  },
+  {
+    "name": "iphone-care",
+    "source": "exec-715b1703-7d0c-4117-beb4-181bcff53fc5.png",
+    "assets": [
+      "/images/home/2026-10-24/iphone-care-480.webp",
+      "/images/home/2026-10-24/iphone-care-960.webp"
+    ]
+  },
+  {
+    "name": "macbook-care",
+    "source": "exec-e35ed5ee-e8c8-4426-9920-645ee7ce5a8d.png",
+    "assets": [
+      "/images/home/2026-10-24/macbook-care-480.webp",
+      "/images/home/2026-10-24/macbook-care-960.webp"
+    ]
+  },
+  {
+    "name": "sell-phone",
+    "source": "exec-a4c4223d-f3e9-4aae-b92b-5aa17ae82b4b.png",
+    "assets": [
+      "/images/home/2026-10-24/sell-phone-480.webp",
+      "/images/home/2026-10-24/sell-phone-960.webp"
+    ]
+  },
+  {
+    "name": "sell-pc",
+    "source": "exec-116761c9-cde9-475a-98cb-680b551315a0.png",
+    "assets": [
+      "/images/home/2026-10-24/sell-pc-480.webp",
+      "/images/home/2026-10-24/sell-pc-960.webp"
+    ]
+  },
+  {
+    "name": "preowned-devices",
+    "source": "exec-20d77e0a-3c53-4b84-aaca-85e5e5dc5b19.png",
+    "assets": [
+      "/images/home/2026-10-24/preowned-devices-480.webp",
+      "/images/home/2026-10-24/preowned-devices-960.webp"
+    ]
+  },
+  {
+    "name": "new-devices",
+    "source": "exec-92c2cb15-b8c9-4431-9db1-becb6e80fec8.png",
+    "assets": [
+      "/images/home/2026-10-24/new-devices-480.webp",
+      "/images/home/2026-10-24/new-devices-960.webp"
+    ]
+  },
+  {
+    "name": "custom-pc",
+    "source": "exec-4fd5b6a1-30cc-4098-9060-1b22e032467d.png",
+    "assets": [
+      "/images/home/2026-10-24/custom-pc-480.webp",
+      "/images/home/2026-10-24/custom-pc-960.webp"
+    ]
+  }
+]
