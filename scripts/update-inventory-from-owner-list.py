@@ -8,8 +8,15 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description="Update bilingual inventory and merchant feed from an owner stock list.")
 parser.add_argument("source", type=Path, help="Path to the owner stock list")
-parser.add_argument("--ps5-price", type=int, help="Confirmed price for the ambiguous PS5 one-controller listing")
+parser.add_argument("--enquiry-price", type=int, action="append", default=[], help="Unconfirmed source price to replace with an enquiry; may be repeated")
+parser.add_argument("--price-correction", action="append", default=[], metavar="SOURCE=CORRECTED", help="Correct a typo in a source price; may be repeated")
 args = parser.parse_args()
+try:
+    price_corrections = dict(tuple(map(int, pair.split("="))) for pair in args.price_correction)
+    if any(source <= 0 or corrected <= 0 for source, corrected in price_corrections.items()):
+        raise ValueError("Prices must be positive")
+except (ValueError, TypeError):
+    parser.error("Price corrections must use positive integers: SOURCE=CORRECTED")
 SOURCE = args.source
 WA = "https://wa.me/971528026677"
 SITE = "https://pzm.ae"
@@ -30,13 +37,13 @@ def parse_sections(text):
         if line.startswith("*****"):
             current = line.strip("* ").strip()
             sections[current] = []
-        elif line.startswith("-") and current:
-            sections[current].append(line[1:].strip())
+        elif current:
+            sections[current].append(line.removeprefix("-").strip())
     return sections
 
 
 def split_price(raw):
-    match = re.search(r"(?i)\b(\d{2,5})\s*aed\b", raw)
+    match = re.search(r"(?i)\b(\d+)\s*aed\b", raw)
     if not match:
         return raw, None
     price = int(match.group(1))
@@ -56,6 +63,8 @@ def clean_name(raw):
     name = re.sub(r"(?i)\bph(i?)lps\b", "Philips", name)
     name = re.sub(r"(?i)\bmackbook\b", "MacBook", name)
     name = re.sub(r"(?i)\brayzen\b", "Ryzen", name)
+    name = re.sub(r"(?i)\bglod\b", "Gold", name)
+    name = re.sub(r"(?i)\bphyscal\b", "Physical", name)
     name = re.sub(r"(?i)\biphones?\b", lambda m: "iPhone" if m.group(0).lower().startswith("iphone") else m.group(0), name)
     name = re.sub(r"\s*/\s*not for sale.*$", "", name, flags=re.I)
     name = re.sub(r"(?i)\b(\d+)\s*aed\b", " ", name)
@@ -133,20 +142,34 @@ def replace_section(source, section_id, cards_html):
         rf'(<section class="inventory-section" id="{re.escape(section_id)}">\s*<h2 class="inventory-category-title">.*?</h2>\s*<div class="inventory-list">)(.*?)(\s*</div>\s*</section>)',
         re.S,
     )
-    return pattern.sub(lambda m: m.group(1) + "\n" + cards_html + "\n" + m.group(3), source, count=1)
+    updated, count = pattern.subn(lambda m: m.group(1) + "\n" + cards_html + "\n" + m.group(3).lstrip("\r\n"), source, count=1)
+    if count != 1:
+        raise ValueError(f"Missing inventory section: {section_id}")
+    return updated
 
 
 def normalize_item(raw, condition, href):
     name_part, price = split_price(raw)
     name = clean_name(name_part)
     if re.match(r"(?i)^PS5\s+1\s+Controller\b", name) and price == 170:
-        price = args.ps5_price
+        name = "PS5 Controller"
+    if price in args.enquiry_price:
+        price = None
+    else:
+        price = price_corrections.get(price, price)
     return item(name, price, condition, image_for(name, condition == "new"), href)
 
 
 sections = parse_sections(SOURCE.read_text(encoding="utf-8"))
 
-brand_iphones = [item(clean_name(split_price(x)[0]), None, "new", IPHONE18_IMG, "/services/brand-new.html") for x in sections["Brand New IPHones"]]
+brand_iphones = []
+for raw in sections["Brand New IPHones"]:
+    product = normalize_item(raw, "new", "/services/brand-new.html")
+    if re.match(r"(?i)^iPhone 18\b", product["name"]):
+        # Owner policy: these models remain enquiry-only until stable prices are approved.
+        product["price"] = None
+        product["image"] = IPHONE18_IMG
+    brand_iphones.append(product)
 brand_samsung = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["Brand New Samsung"]]
 brand_gaming = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["GAMING CONSOLE Brand New"]]
 brand_speakers = [item(clean_name(x), None, "new", USED_IMG, "/services/brand-new.html") for x in sections["Brand New Speakers"]]
@@ -183,7 +206,7 @@ for rel in ("services/buy-used.html", "ar/services/buy-used.html"):
         source = replace_section(source, section_id, "\n".join(card(p, "ar" if rel.startswith("ar/") else "en") for p in products))
     path.write_text(source, encoding="utf-8", newline="\n")
 
-feed_products = brand_samsung + brand_gaming + [p for group in used_groups.values() for p in group if p["price"] is not None]
+feed_products = [p for group in (*brand_groups.values(), *used_groups.values()) for p in group if p["price"] is not None]
 
 ET.register_namespace("g", "http://base.google.com/ns/1.0")
 rss = ET.Element("rss", {"version": "2.0"})

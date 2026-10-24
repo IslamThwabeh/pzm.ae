@@ -1,4 +1,6 @@
 """Validate owner-approved retail pages, inventory parity and sitemap targets."""
+from collections import Counter
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, unquote
@@ -105,7 +107,7 @@ for language in ('', 'ar/'):
     assert source.index('retail-grid') < source.index('id="visit"')
     for route in ('services/iphone-device-care-al-barsha.html', 'services/macbook-repair-al-barsha.html'):
         assert f'href="/{language}{route}"' in source
-    for kind, count in [('brand-new', 11), ('buy-used', 95)]:
+    for kind, count in [('brand-new', 17), ('buy-used', 93)]:
         source = (ROOT / language / f'services/{kind}.html').read_text(encoding='utf-8')
         assert source.count('class="inventory-item"') == count, (language, kind)
 
@@ -121,10 +123,24 @@ for kind in ('brand-new', 'buy-used'):
 
 feed = ET.parse(ROOT / 'product-feed.xml')
 items = feed.findall('.//item')
-assert len(items) == 102
+assert len(items) == 101
 google = {'g': 'http://base.google.com/ns/1.0'}
 iphone = [item for item in items if item.find('g:title', google).text.startswith('iPhone 18')]
 assert not iphone, 'Enquiry-only iPhone 18 models must not publish fixed merchant prices'
+
+# Every priced website listing must have the same name, price and condition in the feed.
+# Counter preserves separate units whose public descriptions happen to be identical.
+website_offers = []
+for kind, condition in [('brand-new', 'new'), ('buy-used', 'used')]:
+    source = (ROOT / f'services/{kind}.html').read_text(encoding='utf-8')
+    for card in re.findall(r'<a class="inventory-item"[\s\S]*?</a>', source):
+        name = re.search(r'<span class="item-name">(.*?)</span>', card)[1]
+        price = re.search(r'<span class="item-price(?: enquiry-price)?">(.*?)</span>', card)[1]
+        if price.endswith(' AED'):
+            website_offers.append((unescape(name), f"{int(price[:-4].replace(',', '')):.2f} AED", condition))
+feed_offers = [(node.find('g:title', google).text, node.find('g:price', google).text,
+                node.find('g:condition', google).text) for node in items]
+assert Counter(website_offers) == Counter(feed_offers), 'Merchant feed differs from priced website inventory'
 for language in ('', 'ar/'):
     source = (ROOT / language / 'services/brand-new.html').read_text(encoding='utf-8')
     for item in re.findall(r'<a class="inventory-item"[\s\S]*?</a>', source):
@@ -151,4 +167,4 @@ for language in ('', 'ar/'):
 
 assert (ROOT / 'js/navbar.js').read_bytes() == (ROOT / 'assets/v20260822/js/navbar-5625cc25.js').read_bytes()
 assert (ROOT / 'js/contact-loader.js').read_bytes() == (ROOT / 'assets/v20260822/js/contact-loader-58f75adf.js').read_bytes()
-print('PASS: inventory parity (106 website listings, 102 merchant items), enquiry-only iPhone 18, assets, redirects, and', len(locations), 'sitemap targets')
+print('PASS: inventory parity (110 website listings, 101 merchant items), enquiry-only iPhone 18, assets, redirects, and', len(locations), 'sitemap targets')
