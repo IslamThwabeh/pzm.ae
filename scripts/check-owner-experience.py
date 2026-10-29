@@ -107,7 +107,13 @@ for language in ('', 'ar/'):
     assert source.index('retail-grid') < source.index('id="visit"')
     for route in ('services/iphone-device-care-al-barsha.html', 'services/macbook-repair-al-barsha.html'):
         assert f'href="/{language}{route}"' in source
-    for kind, count in [('brand-new', 17), ('buy-used', 93)]:
+    channel = 'https://whatsapp.com/channel/0029VbDKyOU6hENr1ktFAq1a'
+    shortcuts = re.search(r'<div class="retail-extra">(.*?)</div>', source, re.S)[1]
+    assert channel in shortcuts and 'data-whatsapp-channel-link' in shortcuts, (language, 'Missing permanent channel link')
+    navbar_assets = re.findall(r'<script[^>]*src="([^"]*navbar[^\"]+)"', source)
+    assert len(navbar_assets) == 1
+    assert local_target(navbar_assets[0], ROOT / language / 'index.html').read_bytes() == (ROOT / 'js/navbar.js').read_bytes(), (language, 'Deployed navbar differs from source')
+    for kind, count in [('brand-new', 17), ('buy-used', 87)]:
         source = (ROOT / language / f'services/{kind}.html').read_text(encoding='utf-8')
         assert source.count('class="inventory-item"') == count, (language, kind)
 
@@ -123,7 +129,7 @@ for kind in ('brand-new', 'buy-used'):
 
 feed = ET.parse(ROOT / 'product-feed.xml')
 items = feed.findall('.//item')
-assert len(items) == 101
+assert len(items) == 95
 google = {'g': 'http://base.google.com/ns/1.0'}
 iphone = [item for item in items if item.find('g:title', google).text.startswith('iPhone 18')]
 assert not iphone, 'Enquiry-only iPhone 18 models must not publish fixed merchant prices'
@@ -167,4 +173,4 @@ for language in ('', 'ar/'):
 
 assert (ROOT / 'js/navbar.js').read_bytes() == (ROOT / 'assets/v20260822/js/navbar-5625cc25.js').read_bytes()
 assert (ROOT / 'js/contact-loader.js').read_bytes() == (ROOT / 'assets/v20260822/js/contact-loader-58f75adf.js').read_bytes()
-print('PASS: inventory parity (110 website listings, 101 merchant items), enquiry-only iPhone 18, assets, redirects, and', len(locations), 'sitemap targets')
+print('PASS: inventory parity (104 website listings, 95 merchant items), enquiry-only iPhone 18, channel links, assets, redirects, and', len(locations), 'sitemap targets')

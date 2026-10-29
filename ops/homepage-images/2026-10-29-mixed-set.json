@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-29",
+  "status": "Approved for publication on 2026-10-29",
+  "method": "Built-in image_gen for two workshop adaptations; existing approved assets for the remaining selections",
+  "selections": [
+    {
+      "card": "iPhone 18 Pro Max",
+      "asset": "/images/home/2026-10-29/iphone-pro-max-finishes-960.webp",
+      "source": "Older product artwork",
+      "responsiveAssets": [
+        "/images/home/2026-10-29/iphone-pro-max-finishes-480.webp",
+        "/images/home/2026-10-29/iphone-pro-max-finishes-960.webp"
+      ]
+    },
+    {
+      "card": "iPhone Repair",
+      "asset": "/images/home/2026-10-29/iphone-care-warm-960.webp",
+      "source": "Older service scene adapted without people or hands",
+      "responsiveAssets": [
+        "/images/home/2026-10-29/iphone-care-warm-480.webp",
+        "/images/home/2026-10-29/iphone-care-warm-960.webp"
+      ]
+    },
+    {
+      "card": "MacBook Repair",
+      "asset": "/images/home/2026-10-29/macbook-product-960.webp",
+      "source": "Older product artwork",
+      "responsiveAssets": [
+        "/images/home/2026-10-29/macbook-product-480.webp",
+        "/images/home/2026-10-29/macbook-product-960.webp"
+      ]
+    },
+    {
+      "card": "Sell Your Phone",
+      "asset": "/images/home/2026-10-24/sell-phone-960.webp",
+      "source": "Retained current photo",
+      "responsiveAssets": [
+        "/images/home/2026-10-24/sell-phone-480.webp",
+        "/images/home/2026-10-24/sell-phone-960.webp"
+      ]
+    },
+    {
+      "card": "Sell Your PC",
+      "asset": "/images/home/2026-10-29/sell-pc-workbench-960.webp",
+      "source": "Earlier PC valuation scene",
+      "responsiveAssets": [
+        "/images/home/2026-10-29/sell-pc-workbench-480.webp",
+        "/images/home/2026-10-29/sell-pc-workbench-960.webp"
+      ]
+    },
+    {
+      "card": "Second-Hand Devices",
+      "asset": "/images/home/2026-10-24/preowned-devices-960.webp",
+      "source": "Retained current photo",
+      "responsiveAssets": [
+        "/images/home/2026-10-24/preowned-devices-480.webp",
+        "/images/home/2026-10-24/preowned-devices-960.webp"
+      ]
+    },
+    {
+      "card": "New Devices",
+      "asset": "/images/home/2026-10-24/new-devices-960.webp",
+      "source": "Retained current photo",
+      "responsiveAssets": [
+        "/images/home/2026-10-24/new-devices-480.webp",
+        "/images/home/2026-10-24/new-devices-960.webp"
+      ]
+    },
+    {
+      "card": "Custom PC Builds",
+      "asset": "/images/home/2026-10-29/custom-pc-warm-960.webp",
+      "source": "Older PC scene adapted without people or hands",
+      "responsiveAssets": [
+        "/images/home/2026-10-29/custom-pc-warm-480.webp",
+        "/images/home/2026-10-29/custom-pc-warm-960.webp"
+      ]
+    }
+  ],
+  "responsiveWidths": [
+    480,
+    960
+  ],
+  "prompts": [
+    {
+      "key": "iphone_care_warm",
+      "prompt": "Use case: precise-object-edit. Edit this existing website service photograph into a warmer, convincing electronics-workbench image with NO PEOPLE OR HANDS. Preserve the older photograph's daylight, warm shelf lighting, real-workshop feel, pale counter, charcoal work mat and believable tools. Remove the technician completely, including face, torso, arms, gloves, hands and every human reflection. Recompose to a landscape 3:2 medium close-up of the workbench: one intact modern iPhone resting in a small desktop testing stand as the main subject, a normal charging cable physically connected, a softly lit black/teal screen without words, and a precision screwdriver resting alongside. A compact microscope and a few upright phones on a shelf provide softly blurred background context. Everything sits naturally on a surface. Fill the frame with the service setup, keep the main phone clearly readable at small homepage-card size, with generous breathing room. Replace the city view with diffuse light through frosted glass; no recognizable skyline or location. No broken screen, no disassembled phone, no floating objects, no fake logos, signage, labels, captions, watermark, letters or numbers. Do not imply this is a documentary photo of the actual store. Natural imperfections, restrained warm highlights, true metal/glass textures; avoid sterile gray studio photography and CGI gloss."
+    },
+    {
+      "key": "custom_pc_warm",
+      "prompt": "Use case: precise-object-edit. Edit this existing gaming-PC workshop photograph, preserving its completed PC tower, visible GPU and CPU cooler, realistic cables, colorful but restrained RGB fans, workbench setting and recognizable older-image energy. Remove the entire human arm, glove and hand and their shadows/reflections, naturally reconstructing the obscured GPU/case area and counter. Place the screwdriver flat on the workbench beside the tower. Remove all lettering, branding, fake logos and labels from the PC, background boxes, plant pot and keyboard mat; keep any remaining boxes plain and softly blurred. Make the light warmer and inviting with soft daylight plus subtle amber background shelf lighting, retaining real charcoal metal, glass, circuit boards and realistic RGB accents. Produce a standalone landscape 3:2 photograph with the whole tower comfortably inside the central frame, close enough for a homepage card. Every object rests on a physical surface. An orderly tool tray on the counter can suggest PC assembly without any person. NO people, hands, arms, body parts, gloves, human silhouettes or human reflections. No floating tools, sparks, exploded components, text, captions or watermark. Avoid sterile catalog styling, over-saturated neon and CGI gloss. This is conceptual service imagery, not documentary photography of the actual shop."
+    }
+  ]
+}

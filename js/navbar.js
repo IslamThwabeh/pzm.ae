@@ -156,7 +156,9 @@ var WHATSAPP_CHANNEL_URL = 'https://whatsapp.com/channel/0029VbDKyOU6hENr1ktFAq1
 var WHATSAPP_CHANNEL_SESSION_KEY = 'pzm_whatsapp_channel_popup_dismissed';
 
 function isWhatsAppChannelPopupPage() {
-    if (document.body.classList.contains('owner-experience')) {
+    var pathname = normalizePathname(window.location.pathname);
+    var homepagePaths = ['/', '/index.html', '/ar/', '/ar/index.html'];
+    if (document.body.classList.contains('owner-experience') && homepagePaths.indexOf(pathname) === -1) {
         return false;
     }
     var robotsMeta = document.querySelector('meta[name="robots"]');
@@ -164,7 +166,6 @@ function isWhatsAppChannelPopupPage() {
         return false;
     }
 
-    var pathname = normalizePathname(window.location.pathname);
     var exactPages = [
         '/', '/index.html', '/ar/', '/ar/index.html',
         '/about.html', '/ar/about.html',
