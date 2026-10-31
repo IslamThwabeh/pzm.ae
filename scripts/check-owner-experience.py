@@ -113,7 +113,7 @@ for language in ('', 'ar/'):
     navbar_assets = re.findall(r'<script[^>]*src="([^"]*navbar[^\"]+)"', source)
     assert len(navbar_assets) == 1
     assert local_target(navbar_assets[0], ROOT / language / 'index.html').read_bytes() == (ROOT / 'js/navbar.js').read_bytes(), (language, 'Deployed navbar differs from source')
-    for kind, count in [('brand-new', 17), ('buy-used', 87)]:
+    for kind, count in [('brand-new', 16), ('buy-used', 91)]:
         source = (ROOT / language / f'services/{kind}.html').read_text(encoding='utf-8')
         assert source.count('class="inventory-item"') == count, (language, kind)
 
@@ -129,7 +129,7 @@ for kind in ('brand-new', 'buy-used'):
 
 feed = ET.parse(ROOT / 'product-feed.xml')
 items = feed.findall('.//item')
-assert len(items) == 95
+assert len(items) == 98
 google = {'g': 'http://base.google.com/ns/1.0'}
 iphone = [item for item in items if item.find('g:title', google).text.startswith('iPhone 18')]
 assert not iphone, 'Enquiry-only iPhone 18 models must not publish fixed merchant prices'
@@ -151,7 +151,7 @@ for language in ('', 'ar/'):
     source = (ROOT / language / 'services/brand-new.html').read_text(encoding='utf-8')
     for item in re.findall(r'<a class="inventory-item"[\s\S]*?</a>', source):
         if re.search(r'<span class="item-name">iPhone 18', item):
-            assert not re.search(r'\b(?:5,?300|6,?350|7,?100)\b', unquote(item)), item
+            assert not re.search(r'\b\d[\d,]*(?:\.\d+)?\s*AED\b', unquote(item), re.I), item
             assert ('Ask for today' in item or 'اسأل عن سعر اليوم' in item)
 
 sitemap = ET.parse(ROOT / 'sitemap.xml')
@@ -173,4 +173,4 @@ for language in ('', 'ar/'):
 
 assert (ROOT / 'js/navbar.js').read_bytes() == (ROOT / 'assets/v20260822/js/navbar-5625cc25.js').read_bytes()
 assert (ROOT / 'js/contact-loader.js').read_bytes() == (ROOT / 'assets/v20260822/js/contact-loader-58f75adf.js').read_bytes()
-print('PASS: inventory parity (104 website listings, 95 merchant items), enquiry-only iPhone 18, channel links, assets, redirects, and', len(locations), 'sitemap targets')
+print('PASS: inventory parity (107 website listings, 98 merchant items), enquiry-only iPhone 18, channel links, assets, redirects, and', len(locations), 'sitemap targets')

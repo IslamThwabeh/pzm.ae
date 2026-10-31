@@ -65,6 +65,9 @@ def clean_name(raw):
     name = re.sub(r"(?i)\brayzen\b", "Ryzen", name)
     name = re.sub(r"(?i)\bglod\b", "Gold", name)
     name = re.sub(r"(?i)\bphyscal\b", "Physical", name)
+    name = re.sub(r"(?i)\bopne box\b", "Open Box", name)
+    name = re.sub(r"(?i)\bfringer print\b", "fingerprint", name)
+    name = re.sub(r"(?i)(\b\d+GB)\s+pcs\b", r"\1", name)
     name = re.sub(r"(?i)\biphones?\b", lambda m: "iPhone" if m.group(0).lower().startswith("iphone") else m.group(0), name)
     name = re.sub(r"\s*/\s*not for sale.*$", "", name, flags=re.I)
     name = re.sub(r"(?i)\b(\d+)\s*aed\b", " ", name)
@@ -74,8 +77,10 @@ def clean_name(raw):
 
 def brand_for(name):
     first = name.split()[0].strip("|")
+    if first.lower() in ("iphone", "ipad", "apple", "airpod", "airpods", "macbook"):
+        return "Apple"
     if first.lower() == "gaming":
-        for token, brand in (("lenovo", "Lenovo"), ("inspiron", "Dell"), ("asus", "ASUS"), ("lg", "LG")):
+        for token, brand in (("lenovo", "Lenovo"), ("inspiron", "Dell"), ("omen", "HP"), ("asus", "ASUS"), ("lg", "LG")):
             if token in name.lower():
                 return brand
     mapping = {
@@ -88,7 +93,7 @@ def brand_for(name):
         "PS5": "Sony", "PS4": "Sony", "XBOX": "Microsoft",
         "Lenovo": "Lenovo", "HP": "HP", "Dell": "Dell", "DELL": "Dell",
         "MICROSOFT": "Microsoft", "HUAWEI": "Huawei", "BVATE": "BVATE",
-        "JBL": "JBL", "Gaming": "LG", "ASUS": "ASUS", "Philips": "Philips",
+        "JBL": "JBL", "Gaming": "LG", "ASUS": "ASUS", "Philips": "Philips", "NVIDIA": "NVIDIA",
     }
     return mapping.get(first, first)
 
@@ -101,6 +106,8 @@ def image_for(name, new=False):
         return SAMSUNG_IMG
     if "nintendo" in low:
         return SWITCH_IMG
+    if low.startswith("nvidia geforce"):
+        return "/images/home/2026-10-24/custom-pc-480.webp"
     return USED_IMG
 
 
@@ -153,6 +160,11 @@ def normalize_item(raw, condition, href):
     name = clean_name(name_part)
     if re.match(r"(?i)^PS5\s+1\s+Controller\b", name) and price == 170:
         name = "PS5 Controller"
+    if re.match(r"(?i)^GPU\s+RTX\s+3070\b", name):
+        name = "NVIDIA GeForce RTX 3070 graphics card"
+    if re.match(r"(?i)^SAMSUNG\s+Z\s+Flip\s+48GB/256GB\b", name):
+        # The source merges the model and RAM; publish only the unambiguous details.
+        name = "Samsung Galaxy Z Flip 256GB"
     if price in args.enquiry_price:
         price = None
     else:
@@ -173,17 +185,21 @@ for raw in sections["Brand New IPHones"]:
 brand_samsung = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["Brand New Samsung"]]
 brand_gaming = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["GAMING CONSOLE Brand New"]]
 brand_speakers = [item(clean_name(x), None, "new", USED_IMG, "/services/brand-new.html") for x in sections["Brand New Speakers"]]
+console_stock = sections["GAMING CONSOLE Preowned"]
+component_stock = [raw for raw in console_stock if re.match(r"(?i)^GPU\b", raw)]
 
 used_groups = {
     "phones": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned Phones"]],
     "laptops": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned LAPTOPS"] if "not for sale" not in x.lower()],
     "tablets": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned Tablets"]],
     "accessories": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned APPLE WATCH - & AIRPODS / Apple Pincel"]],
-    "consoles": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["GAMING CONSOLE Preowned"]],
-    "gaming": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned PC/ Gaming PC"]],
+    "consoles": [normalize_item(x, "used", "/services/buy-used.html") for x in console_stock if x not in component_stock],
+    "gaming": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned PC/ Gaming PC"] + component_stock],
     "monitors": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["Preowned MONITOR"]],
     "all-in-one": [normalize_item(x, "used", "/services/buy-used.html") for x in sections["All in One PC"]],
 }
+for product in used_groups["laptops"]:
+    product["image"] = "/assets/v20260822/images/buy_used/used_laptops_collection_main-513c937d.webp"
 
 brand_groups = {
     "iphone": brand_iphones,
@@ -202,6 +218,17 @@ for rel in ("services/brand-new.html", "ar/services/brand-new.html"):
 for rel in ("services/buy-used.html", "ar/services/buy-used.html"):
     path = ROOT / rel
     source = path.read_text(encoding="utf-8")
+    labels = (
+        (("href=\"#gaming\">كمبيوتر مكتبي</a>", "href=\"#gaming\">كمبيوتر وقطع</a>"),
+         ("class=\"inventory-category-title\">كمبيوتر مكتبي مستعمل</h2>", "class=\"inventory-category-title\">كمبيوتر مكتبي وقطع مستعملة</h2>"),
+         ('"name": "أجهزة كمبيوتر مكتبية مستعملة",', '"name": "أجهزة كمبيوتر مكتبية وقطع مستعملة",'))
+        if rel.startswith("ar/") else
+        (("href=\"#gaming\">Desktop PCs</a>", "href=\"#gaming\">PCs &amp; components</a>"),
+         ("class=\"inventory-category-title\">Pre-Owned Desktop PCs</h2>", "class=\"inventory-category-title\">Pre-Owned Desktop PCs &amp; Components</h2>"),
+         ('"name": "Used PCs",', '"name": "Used PCs and Components",'))
+    )
+    for old, new in labels:
+        source = source.replace(old, new)
     for section_id, products in used_groups.items():
         source = replace_section(source, section_id, "\n".join(card(p, "ar" if rel.startswith("ar/") else "en") for p in products))
     path.write_text(source, encoding="utf-8", newline="\n")
