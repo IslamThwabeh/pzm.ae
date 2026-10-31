@@ -163,8 +163,8 @@ def normalize_item(raw, condition, href):
     if re.match(r"(?i)^GPU\s+RTX\s+3070\b", name):
         name = "NVIDIA GeForce RTX 3070 graphics card"
     if re.match(r"(?i)^SAMSUNG\s+Z\s+Flip\s+48GB/256GB\b", name):
-        # The source merges the model and RAM; publish only the unambiguous details.
-        name = "Samsung Galaxy Z Flip 256GB"
+        # Best reading of the merged model/RAM, matching Samsung's official configuration.
+        name = "Samsung Galaxy Z Flip4 8GB/256GB"
     if price in args.enquiry_price:
         price = None
     else:
