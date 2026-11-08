@@ -36,6 +36,8 @@ def parse_sections(text):
             continue
         if line.startswith("*****"):
             current = line.strip("* ").strip()
+            if current == "Brand New IPHones & I PAD":
+                current = "Brand New IPHones"
             sections[current] = []
         elif current:
             sections[current].append(line.removeprefix("-").strip())
@@ -211,6 +213,8 @@ brand_groups = {
 for rel in ("services/brand-new.html", "ar/services/brand-new.html"):
     path = ROOT / rel
     source = path.read_text(encoding="utf-8")
+    source = source.replace('class="inventory-category-title">Brand New iPhones</h2>', 'class="inventory-category-title">Brand New iPhones &amp; iPads</h2>')
+    source = source.replace('class="inventory-category-title">هواتف iPhone جديدة</h2>', 'class="inventory-category-title">هواتف iPhone وأجهزة iPad جديدة</h2>')
     for section_id, products in brand_groups.items():
         source = replace_section(source, section_id, "\n".join(card(p, "ar" if rel.startswith("ar/") else "en") for p in products))
     path.write_text(source, encoding="utf-8", newline="\n")
