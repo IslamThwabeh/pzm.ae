@@ -113,7 +113,7 @@ for language in ('', 'ar/'):
     navbar_assets = re.findall(r'<script[^>]*src="([^"]*navbar[^\"]+)"', source)
     assert len(navbar_assets) == 1
     assert local_target(navbar_assets[0], ROOT / language / 'index.html').read_bytes() == (ROOT / 'js/navbar.js').read_bytes(), (language, 'Deployed navbar differs from source')
-    for kind, count in [('brand-new', 16), ('buy-used', 91)]:
+    for kind, count in [('brand-new', 18), ('buy-used', 95)]:
         source = (ROOT / language / f'services/{kind}.html').read_text(encoding='utf-8')
         assert source.count('class="inventory-item"') == count, (language, kind)
 
@@ -129,7 +129,7 @@ for kind in ('brand-new', 'buy-used'):
 
 feed = ET.parse(ROOT / 'product-feed.xml')
 items = feed.findall('.//item')
-assert len(items) == 98
+assert len(items) == 103
 google = {'g': 'http://base.google.com/ns/1.0'}
 iphone = [item for item in items if item.find('g:title', google).text.startswith('iPhone 18')]
 assert not iphone, 'Enquiry-only iPhone 18 models must not publish fixed merchant prices'
@@ -171,6 +171,8 @@ for language in ('', 'ar/'):
     assert 'https://pzm.ae/' + language + 'services/macbook-repair-al-barsha.html' in source
     assert 'https://pzm.ae/' + language + 'services/macbook-care-al-barsha.html' not in locations
 
-assert (ROOT / 'js/navbar.js').read_bytes() == (ROOT / 'assets/v20260822/js/navbar-5625cc25.js').read_bytes()
-assert (ROOT / 'js/contact-loader.js').read_bytes() == (ROOT / 'assets/v20260822/js/contact-loader-58f75adf.js').read_bytes()
-print('PASS: inventory parity (107 website listings, 98 merchant items), enquiry-only iPhone 18, channel links, assets, redirects, and', len(locations), 'sitemap targets')
+homepage = (ROOT / 'index.html').read_text(encoding='utf-8')
+for script in ('navbar', 'contact-loader'):
+    deployed = re.search(r'<script[^>]*src="([^"]*/js/' + script + r'(?:-[0-9a-f]{8})?\.js)"', homepage)[1]
+    assert (ROOT / f'js/{script}.js').read_bytes() == local_target(deployed, ROOT / 'index.html').read_bytes()
+print('PASS: inventory parity (113 website listings, 103 merchant items), enquiry-only iPhone 18, channel links, assets, redirects, and', len(locations), 'sitemap targets')

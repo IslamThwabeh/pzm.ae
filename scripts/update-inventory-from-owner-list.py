@@ -69,6 +69,7 @@ def clean_name(raw):
     name = re.sub(r"(?i)\bphyscal\b", "Physical", name)
     name = re.sub(r"(?i)\bopne box\b", "Open Box", name)
     name = re.sub(r"(?i)\bfringer print\b", "fingerprint", name)
+    name = re.sub(r"(?i)\bGUP\b", "GPU", name)
     name = re.sub(r"(?i)(\b\d+GB)\s+pcs\b", r"\1", name)
     name = re.sub(r"(?i)\biphones?\b", lambda m: "iPhone" if m.group(0).lower().startswith("iphone") else m.group(0), name)
     name = re.sub(r"\s*/\s*not for sale.*$", "", name, flags=re.I)
@@ -164,7 +165,7 @@ def normalize_item(raw, condition, href):
         name = "PS5 Controller"
     if re.match(r"(?i)^GPU\s+RTX\s+3070\b", name):
         name = "NVIDIA GeForce RTX 3070 graphics card"
-    if re.match(r"(?i)^SAMSUNG\s+Z\s+Flip\s+48GB/256GB\b", name):
+    if re.match(r"(?i)^SAMSUNG\s+Z\s+Flip\s+(?:4\s+)?48GB/256GB\b", name):
         # Best reading of the merged model/RAM, matching Samsung's official configuration.
         name = "Samsung Galaxy Z Flip4 8GB/256GB"
     if price in args.enquiry_price:
@@ -186,7 +187,7 @@ for raw in sections["Brand New IPHones"]:
     brand_iphones.append(product)
 brand_samsung = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["Brand New Samsung"]]
 brand_gaming = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["GAMING CONSOLE Brand New"]]
-brand_speakers = [item(clean_name(x), None, "new", USED_IMG, "/services/brand-new.html") for x in sections["Brand New Speakers"]]
+brand_speakers = [normalize_item(x, "new", "/services/brand-new.html") for x in sections["Brand New Speakers"]]
 console_stock = sections["GAMING CONSOLE Preowned"]
 component_stock = [raw for raw in console_stock if re.match(r"(?i)^GPU\b", raw)]
 

@@ -30,6 +30,14 @@ The only approved customer contact number is:
 
     When changing shared contact code, update the deployed versioned asset referenced by the HTML pages as well as its source file.
 
+## Owner-confirmed Google Maps hours (2026-11-19)
+
+The owner supplied the current Google Maps schedule and requested exact website
+parity: Monday through Thursday 11:00–23:00; Friday 10:30–23:00; Saturday and
+Sunday 10:30–23:30. This supersedes the previous 10:00 weekend opening. Keep
+English/Arabic visible text, JSON-LD, llms.txt and the deployed opening-status
+script consistent with this schedule.
+
 ## Owner-approved iPhone 18 pricing policy (2026-10-03)
 
 The owner requested removal of fixed iPhone 18 prices because they change
@@ -99,7 +107,7 @@ Every ComputerStore or LocalBusiness schema MUST contain:
     "addressLocality": "Al Barsha" (NEVER "Dubai" as the locality – Dubai is the region, but locality must be Al Barsha).
 
     "openingHoursSpecification" matching the approved schedule:
-    Monday through Thursday 11:00-23:00; Friday 10:30-23:00; Saturday and Sunday 10:00-23:30.
+    Monday through Thursday 11:00-23:00; Friday 10:30-23:00; Saturday and Sunday 10:30-23:30.
 
     areaServed, alternateName, additionalName, brand, and legalName are FORBIDDEN – remove them if they appear.
 
@@ -109,7 +117,7 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 
     6-month warranty
 
-    Monday through Thursday: 11 AM – 11 PM; Friday: 10:30 AM – 11 PM; Saturday and Sunday: 10 AM – 11:30 PM
+    Monday through Thursday: 11 AM – 11 PM; Friday: 10:30 AM – 11 PM; Saturday and Sunday: 10:30 AM – 11:30 PM
 
     Union Coop Hypermarket
 

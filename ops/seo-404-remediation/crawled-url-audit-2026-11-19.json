@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://pzm.ae/blog.html?post=guide-to-buying-used-iphone",
+    "status": 200,
+    "final": "https://pzm.ae/blog.html?post=guide-to-buying-used-iphone",
+    "canonical": "https://pzm.ae/blog.html",
+    "robots": [
+      "index, follow"
+    ],
+    "refresh": []
+  },
+  {
+    "url": "https://pzm.ae/blog/?slug=latest-mobile-accessories-2025",
+    "status": 200,
+    "final": "https://pzm.ae/blog/?slug=latest-mobile-accessories-2025",
+    "canonical": "https://pzm.ae/blog.html",
+    "robots": [
+      "noindex, follow"
+    ],
+    "refresh": [
+      "0; url=/blog.html"
+    ]
+  },
+  {
+    "url": "https://pzm.ae/llms.txt",
+    "status": 200,
+    "final": "https://pzm.ae/llms.txt",
+    "canonical": null,
+    "robots": [],
+    "refresh": []
+  },
+  {
+    "url": "https://pzm.ae/blog.html?post=workstation-pc-build-for-office",
+    "status": 200,
+    "final": "https://pzm.ae/blog.html?post=workstation-pc-build-for-office",
+    "canonical": "https://pzm.ae/blog.html",
+    "robots": [
+      "index, follow"
+    ],
+    "refresh": []
+  },
+  {
+    "url": "https://pzm.ae/blog/world-cup-2026-dubai-home-watch-party-tech-setup/",
+    "status": 200,
+    "final": "https://pzm.ae/blog/world-cup-2026-dubai-home-watch-party-tech-setup/",
+    "canonical": "https://pzm.ae/blog/world-cup-2026-dubai-home-watch-party-tech-setup/",
+    "robots": [
+      "noindex, follow"
+    ],
+    "refresh": []
+  },
+  {
+    "url": "https://pzm.ae/blog-post.html?slug=gold-record-highs-tech-buyers-dubai-2026",
+    "status": 200,
+    "final": "https://pzm.ae/blog-post.html?slug=gold-record-highs-tech-buyers-dubai-2026",
+    "canonical": "https://pzm.ae/blog-post.html",
+    "robots": [
+      "noindex, follow"
+    ],
+    "refresh": []
+  },
+  {
+    "url": "https://pzm.ae/ar/services/iphone-repair-dubai-marina.html",
+    "status": 404
+  },
+  {
+    "url": "https://pzm.ae/services/laptop-repair-al-barsha.html",
+    "status": 404
+  },
+  {
+    "url": "https://pzm.ae/return-policy.html",
+    "status": 200,
+    "final": "https://pzm.ae/return-policy.html",
+    "canonical": "https://pzm.ae/return-policy.html",
+    "robots": [
+      "index, follow"
+    ],
+    "refresh": []
+  },
+  {
+    "url": "https://pzm.ae/blog/same-day-phone-screen-repair-explained/",
+    "status": 404
+  },
+  {
+    "url": "https://pzm.ae/product/prod-mntdtfjh-cb8f5v/",
+    "status": 404
+  },
+  {
+    "url": "https://pzm.ae/product/prod-mo4qu27n-k24acc",
+    "status": 404
+  }
+]

@@ -3,23 +3,23 @@
 // Store hours: [openHour, openMin, closeHour, closeMin]
 // closeHour > 23 means next day (e.g. 25 = 1 AM next day)
 const FALLBACK_STORE_HOURS = {
-  0: { open: [10, 0], close: [23, 30] }, // Sunday
+  0: { open: [10, 30], close: [23, 30] }, // Sunday
   1: { open: [11, 0], close: [23, 0] },  // Monday
   2: { open: [11, 0], close: [23, 0] },  // Tuesday
   3: { open: [11, 0], close: [23, 0] },  // Wednesday
   4: { open: [11, 0], close: [23, 0] },  // Thursday
   5: { open: [10, 30], close: [23, 0] }, // Friday
-  6: { open: [10, 0], close: [23, 30] }, // Saturday
+  6: { open: [10, 30], close: [23, 30] }, // Saturday
 };
 
 const FALLBACK_WEEKDAY_TEXT = [
-  "Sunday: 10:00 AM - 11:30 PM",
+  "Sunday: 10:30 AM - 11:30 PM",
   "Monday: 11:00 AM - 11:00 PM",
   "Tuesday: 11:00 AM - 11:00 PM",
   "Wednesday: 11:00 AM - 11:00 PM",
   "Thursday: 11:00 AM - 11:00 PM",
   "Friday: 10:30 AM - 11:00 PM",
-  "Saturday: 10:00 AM - 11:30 PM"
+  "Saturday: 10:30 AM - 11:30 PM"
 ];
 
 const HOURS_ENDPOINT = 'https://pzm-business-hours.islam-thwabeh.workers.dev/hours';

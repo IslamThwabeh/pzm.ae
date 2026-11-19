@@ -1,5 +1,5 @@
 // Loads the shared contact section + footer into any page
-// Usage: <div id="contact-section"></div> then <script src="/assets/v20260822/js/contact-loader-517a4859.js"></script>
+// Usage: <div id="contact-section"></div> then <script src="/js/contact-loader.js"></script>
 // Floating WhatsApp button + 24/7 modal are injected on every page that loads this script.
 
 (function () {
@@ -237,7 +237,7 @@
   // Load store-status.js to populate hours & open/closed badge
   if (!document.querySelector('script[data-store-status-loader="true"]')) {
     var script = document.createElement('script');
-    script.src = '/assets/v20260822/js/store-status-c6e905af.js';
+    script.src = '/assets/v20261119/js/store-status-295d0513.js';
     script.dataset.storeStatusLoader = 'true';
     document.body.appendChild(script);
   }
