@@ -237,7 +237,7 @@
   // Load store-status.js to populate hours & open/closed badge
   if (!document.querySelector('script[data-store-status-loader="true"]')) {
     var script = document.createElement('script');
-    script.src = '/assets/v20261119/js/store-status-295d0513.js';
+    script.src = '/assets/v20261120/js/store-status-e1ffd721.js';
     script.dataset.storeStatusLoader = 'true';
     document.body.appendChild(script);
   }

@@ -79,6 +79,9 @@ def clean_name(raw):
 
 
 def brand_for(name):
+    if re.match(r"(?i)^(?:Gaming PC\b|CORE i[3579]\b|INTEL Xeon CPU\b)", name):
+        # CPU/GPU vendors do not establish a custom desktop's system brand.
+        return None
     first = name.split()[0].strip("|")
     if first.lower() in ("iphone", "ipad", "apple", "airpod", "airpods", "macbook"):
         return "Apple"
@@ -97,6 +100,7 @@ def brand_for(name):
         "Lenovo": "Lenovo", "HP": "HP", "Dell": "Dell", "DELL": "Dell",
         "MICROSOFT": "Microsoft", "HUAWEI": "Huawei", "BVATE": "BVATE",
         "JBL": "JBL", "Gaming": "LG", "ASUS": "ASUS", "Philips": "Philips", "NVIDIA": "NVIDIA",
+        "GOOGLE": "Google",
     }
     return mapping.get(first, first)
 
@@ -161,6 +165,10 @@ def replace_section(source, section_id, cards_html):
 def normalize_item(raw, condition, href):
     name_part, price = split_price(raw)
     name = clean_name(name_part)
+    if name.startswith("Gaming PC AMD Ryzen i5 7th GEN "):
+        # Contradictory CPU wording in the 20 November owner list: omit it
+        # until the owner confirms the processor; retain the supplied GPU/RAM.
+        name = name.replace("AMD Ryzen i5 7th GEN ", "", 1)
     if re.match(r"(?i)^PS5\s+1\s+Controller\b", name) and price == 170:
         name = "PS5 Controller"
     if re.match(r"(?i)^GPU\s+RTX\s+3070\b", name):
@@ -264,12 +272,14 @@ for idx, p in enumerate(feed_products, 1):
     ET.SubElement(node, "{http://base.google.com/ns/1.0}availability").text = "in_stock"
     ET.SubElement(node, "{http://base.google.com/ns/1.0}price").text = f"{p['price']:.2f} AED"
     ET.SubElement(node, "{http://base.google.com/ns/1.0}condition").text = cond
-    ET.SubElement(node, "{http://base.google.com/ns/1.0}brand").text = brand_for(p["name"])
+    brand = brand_for(p["name"])
+    if brand:
+        ET.SubElement(node, "{http://base.google.com/ns/1.0}brand").text = brand
     ET.SubElement(node, "{http://base.google.com/ns/1.0}identifier_exists").text = "false"
 
 tree = ET.ElementTree(rss)
 ET.indent(tree, space="  ")
-tree.write(ROOT / "product-feed.xml", encoding="UTF-8", xml_declaration=True)
+(ROOT / "product-feed.xml").write_bytes(ET.tostring(rss, encoding="UTF-8", xml_declaration=True))
 
 print("brand-new website items:", sum(len(v) for v in brand_groups.values()))
 print("used website items:", sum(len(v) for v in used_groups.values()))

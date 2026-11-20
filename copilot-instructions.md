@@ -38,6 +38,14 @@ Sunday 10:30–23:30. This supersedes the previous 10:00 weekend opening. Keep
 English/Arabic visible text, JSON-LD, llms.txt and the deployed opening-status
 script consistent with this schedule.
 
+## Owner-chosen manual hours updates (2026-11-20)
+
+The owner stopped the Google Business Profile API setup and chose manual
+working-hours updates. The opening-status script must use the approved local
+schedule without fetching a Google API or the old hours Worker. Do not resume
+the access application, create OAuth credentials, enable billing or deploy the
+prepared Business Profile Worker unless the owner explicitly requests it.
+
 ## Owner-approved iPhone 18 pricing policy (2026-10-03)
 
 The owner requested removal of fixed iPhone 18 prices because they change
@@ -154,7 +162,7 @@ The following facts MUST appear as visible HTML text (not just in schema) on the
 
     Opening-hours schema must match the approved seven-day schedule in Rule 5. Do not represent any regular day as closed.
 
-    The Contact page working-hours display is controlled by /js/store-status.js. It fetches https://pzm-business-hours.islam-thwabeh.workers.dev/hours and falls back to local hardcoded hours. The website does not directly scrape Google Maps or Google Business Profile from the browser.
+    The Contact page working-hours display is controlled by /js/store-status.js using the owner-approved local schedule. It does not fetch Google APIs or the old hours Worker. Update the source and its current content-hashed asset together when the owner supplies new hours.
 
     Known cleanup risk to check before production: old image references such as macbook_repair_alternative.jpg must not appear in HTML, JSON-LD, scripts, sitemap, or image paths.
 

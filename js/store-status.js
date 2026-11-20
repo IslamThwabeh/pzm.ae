@@ -2,7 +2,7 @@
 
 // Store hours: [openHour, openMin, closeHour, closeMin]
 // closeHour > 23 means next day (e.g. 25 = 1 AM next day)
-const FALLBACK_STORE_HOURS = {
+const STORE_HOURS = {
   0: { open: [10, 30], close: [23, 30] }, // Sunday
   1: { open: [11, 0], close: [23, 0] },  // Monday
   2: { open: [11, 0], close: [23, 0] },  // Tuesday
@@ -12,7 +12,7 @@ const FALLBACK_STORE_HOURS = {
   6: { open: [10, 30], close: [23, 30] }, // Saturday
 };
 
-const FALLBACK_WEEKDAY_TEXT = [
+const WEEKDAY_TEXT = [
   "Sunday: 10:30 AM - 11:30 PM",
   "Monday: 11:00 AM - 11:00 PM",
   "Tuesday: 11:00 AM - 11:00 PM",
@@ -22,8 +22,8 @@ const FALLBACK_WEEKDAY_TEXT = [
   "Saturday: 10:30 AM - 11:30 PM"
 ];
 
-const HOURS_ENDPOINT = 'https://pzm-business-hours.islam-thwabeh.workers.dev/hours';
-const HOURS_FETCH_TIMEOUT_MS = 5000;
+// The owner chose manual hours updates on 20 November 2026.
+// Keep this schedule aligned with the visible HTML, JSON-LD and llms.txt.
 const DAY_INDEX = {
   sunday: 0,
   monday: 1,
@@ -56,9 +56,6 @@ const UI_TEXT = {
   }
 };
 
-let activeWeekdayText = FALLBACK_WEEKDAY_TEXT.slice();
-let activeStoreHours = { ...FALLBACK_STORE_HOURS };
-
 function getCurrentLocale() {
   const lang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
   const path = window.location.pathname;
@@ -80,7 +77,7 @@ function isStoreOpen() {
   const currentMinutes = hour * 60 + minute;
 
   // Check today's hours
-  const today = activeStoreHours[day];
+  const today = STORE_HOURS[day];
   if (!today) return false;
   const openMinutes = today.open[0] * 60 + today.open[1];
   const closeMinutes = today.close[0] * 60 + today.close[1];
@@ -95,7 +92,7 @@ function isStoreOpen() {
 
   // Check if we're in the after-midnight portion of yesterday's hours
   const yesterday = (day + 6) % 7;
-  const yesterdayHours = activeStoreHours[yesterday];
+  const yesterdayHours = STORE_HOURS[yesterday];
   if (!yesterdayHours) return false;
   const yesterdayClose = yesterdayHours.close[0] * 60 + yesterdayHours.close[1];
   if (yesterdayClose > 24 * 60) {
@@ -123,7 +120,7 @@ function updateStoreStatus() {
       `<p class="outside-hours-msg">${copy.outsideHours}</p>`;
   }
 
-  displayHours(activeWeekdayText);
+  displayHours(WEEKDAY_TEXT);
 }
 
 function displayHours(weekdayText) {
@@ -157,103 +154,6 @@ function displayHours(weekdayText) {
   hoursElement.innerHTML = hoursHTML;
 }
 
-function parseTime12h(timeText) {
-  const match = String(timeText).trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
-  if (!match) return null;
-
-  let hour = parseInt(match[1], 10);
-  const minute = parseInt(match[2], 10);
-  const period = match[3].toUpperCase();
-
-  if (period === 'AM') {
-    if (hour === 12) hour = 0;
-  } else if (hour !== 12) {
-    hour += 12;
-  }
-
-  return [hour, minute];
-}
-
-function parseStoreHours(weekdayText) {
-  if (!Array.isArray(weekdayText) || weekdayText.length === 0) return null;
-
-  const parsed = {};
-  for (let i = 0; i < weekdayText.length; i += 1) {
-    const line = String(weekdayText[i] || '').trim();
-    const colonIndex = line.indexOf(':');
-    if (colonIndex === -1) return null;
-
-    const dayName = line.substring(0, colonIndex).trim().toLowerCase();
-    const dayIndex = DAY_INDEX[dayName];
-    if (typeof dayIndex !== 'number') return null;
-
-    const rangeText = line.substring(colonIndex + 1).trim();
-    if (!rangeText) return null;
-    if (/closed/i.test(rangeText)) {
-      parsed[dayIndex] = null;
-      continue;
-    }
-
-    const normalizedRange = rangeText.replace(/[–—]/g, '-');
-    const parts = normalizedRange.split('-');
-    if (parts.length !== 2) return null;
-
-    const open = parseTime12h(parts[0]);
-    const close = parseTime12h(parts[1]);
-    if (!open || !close) return null;
-
-    let closeMinutes = close[0] * 60 + close[1];
-    const openMinutes = open[0] * 60 + open[1];
-    if (closeMinutes <= openMinutes) {
-      closeMinutes += 24 * 60;
-    }
-
-    parsed[dayIndex] = {
-      open: open,
-      close: [Math.floor(closeMinutes / 60), closeMinutes % 60]
-    };
-  }
-
-  return Object.keys(parsed).length === 7 ? parsed : null;
-}
-
-function fetchLiveHours() {
-  const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
-  const timeoutId = setTimeout(function () {
-    if (controller) controller.abort();
-  }, HOURS_FETCH_TIMEOUT_MS);
-
-  fetch(HOURS_ENDPOINT, {
-    signal: controller ? controller.signal : undefined,
-    cache: 'no-store'
-  })
-    .then(function (response) {
-      if (!response.ok) throw new Error('hours fetch failed');
-      return response.json();
-    })
-    .then(function (payload) {
-      // A Worker fallback is not live Google Business Profile data. Keep the
-      // verified local schedule instead of allowing stale remote defaults to
-      // overwrite it.
-      if (payload && !Array.isArray(payload) && payload.source === 'fallback') return;
-      const nextHours = Array.isArray(payload) ? payload : (Array.isArray(payload && payload.hours) ? payload.hours : null);
-      if (!nextHours || nextHours.length === 0) return;
-
-      const parsed = parseStoreHours(nextHours);
-      if (!parsed) return;
-
-      activeWeekdayText = nextHours;
-      activeStoreHours = parsed;
-      updateStoreStatus();
-    })
-    .catch(function () {
-      // Keep fallback hours unchanged when endpoint is unavailable.
-    })
-    .finally(function () {
-      clearTimeout(timeoutId);
-    });
-}
-
 // Run immediately if DOM is ready (e.g. loaded dynamically by contact-loader),
 // otherwise wait for DOMContentLoaded
 if (document.readyState === 'loading') {
@@ -264,6 +164,5 @@ if (document.readyState === 'loading') {
 
 function init() {
   updateStoreStatus();
-  fetchLiveHours();
   setInterval(updateStoreStatus, 60000);
 }
