@@ -55,7 +55,7 @@ def split_price(raw):
 
 def clean_name(raw):
     name = re.sub(r"(?<!\d)00\d{5,}\b", " ", raw)
-    name = re.sub(r"(?i)\bnever\s+fix(?:ed|befofe|beford|before)?\s*(?:before|beford|befofe)?\b", " ", name)
+    name = re.sub(r"(?i)\bnever\s+fix(?:ed|befofe|beford|before)?\s*(?:before|befor|beford|befofe)?\b", " ", name)
     name = re.sub(r"(?i)\bnew battery\b", "new battery", name)
     name = re.sub(r"(?i)\bwith cd\b", "with disc drive", name)
     name = re.sub(r"(?i)\bwith dc\b", "with disc drive", name)
@@ -167,7 +167,7 @@ def normalize_item(raw, condition, href):
     name = clean_name(name_part)
     if name.startswith("Gaming PC AMD Ryzen i5 7th GEN "):
         # Contradictory CPU wording in the 20 November owner list: omit it
-        # until the owner confirms the processor; retain the supplied GPU/RAM.
+        # as agreed by the owner; retain the supplied GPU/RAM.
         name = name.replace("AMD Ryzen i5 7th GEN ", "", 1)
     if re.match(r"(?i)^PS5\s+1\s+Controller\b", name) and price == 170:
         name = "PS5 Controller"
